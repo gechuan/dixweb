@@ -4,7 +4,6 @@
   "description": "记录 AI 工具、提示词工程、工作流拆解、音乐、必读文章与个人项目，写给愿意把 AI 真正用起来的人。",
   "author": "Chuan",
   "brand": "Deep Into X",
-  "role": "前字节 AI 产品经理 · Next Token 联合主理人",
   "tagline": "先上手试试， 再看看能走到哪",
   "nav": [
     {
@@ -29,10 +28,6 @@
       "href": "/podcast"
     },
     {
-      "label": "现在",
-      "href": "/now"
-    },
-    {
       "label": "工具箱",
       "href": "/uses"
     },
@@ -42,10 +37,10 @@
     }
   ],
   "social": {
-    "x": "https://x.com/vista8",
-    "xLabel": "X @vista8",
-    "github": "https://github.com/joeseesun",
-    "blog": "https://blog.qiaomu.ai/",
+    "x": "https://x.com/gechuan",
+    "xLabel": "X @gechuan",
+    "github": "https://github.com/gechuan",
+    "blog": "https://nsdr.deepintox.com",
     "blogLabel": "乔木博客",
     "airss": "https://airss.qiaomu.ai/",
     "airssLabel": "乔木 AI 资讯",
