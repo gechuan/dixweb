@@ -1,10 +1,9 @@
 {
   "siteUrl": "https://www.deepintox.com",
-  "title": "向阳乔木 · 做更多事，让更多人知道",
-  "description": "前字节产品经理向阳乔木的 AI 实践笔记。记录 AI 工具、提示词工程、工作流拆解、音乐、必读文章与个人项目，写给愿意把 AI 真正用起来的人。",
-  "author": "向阳乔木",
-  "brand": "向阳乔木",
-  "avatar": "/assets/avatar.png",
-  "role": "前字节 AI 产品经理 · Next Token 联合主理人",
-  "tagline": "做更多事，让更多人知道。"
+  "title": "DIX · 先上手试试，再看看能走到哪",
+  "description": "记录 AI 工具、提示词工程、工作流拆解、音乐、必读文章与个人项目，写给愿意把 AI 真正用起来的人。",
+  "author": "Chuan",
+  "brand": "Deep Into X",
+  "avatar": "/assets/weblogo.jpg",
+  "tagline": "先上手试试，再看看能走到哪"
 }
