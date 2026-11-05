@@ -205,17 +205,6 @@ content:
             fields:
               - { name: label, label: 文案, type: string }
               - { name: href, label: 链接, type: string }
-      - name: music
-        label: 音乐区块
-        type: object
-        fields:
-          - { name: queueTitle, label: 队列标题, type: string }
-          - name: more
-            label: 更多链接
-            type: object
-            fields:
-              - { name: label, label: 文案, type: string }
-              - { name: href, label: 链接, type: string }
       - name: friendsSection
         label: 朋友推荐区块
         type: object
