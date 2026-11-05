@@ -15,6 +15,9 @@
     { "label": "音乐", "text": "用 AI 写歌，放在乔木音乐。" }
   ],
   "tags": ["AI 产品", "提示词工程", "工作流拆解", "自媒体运营", "GEO / AI 营销"],
+  "eyebrow": "ABOUT · 关于",
+  "updated": "2026年10月28日",
+  "tags": ["AI 产品", "提示词工程", "工作流拆解", "自媒体运营", "GEO / AI 营销"],
   "facts": [
     { "value": "100", "label": "上线项目" },
     { "value": "10,671", "label": "GitHub Star" },
