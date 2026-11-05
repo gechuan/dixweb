@@ -2,26 +2,56 @@
   "eyebrow": "ABOUT · 关于",
   "title": "做更多事，让更多人知道",
   "updated": "2026年10月28日",
-  "lede": "我是<em>向阳乔木</em>，前字节跳动商业化 AI 产品经理，连续创业者，与姚金刚老师合著《AI 领导力》和《AI 营销：从 SEO 到 GEO》。离开字节后，我把每天用 AI 的方式写成专栏，已经坚持了三年。",
+  "lede": "我是<em>Chuan</em>。把每天用 AI 的方式留下来。",
   "paragraphs": [
     "我写的东西只有一个标准：<em>先跑通，再动笔</em>。工具我先用，提示词我先验证，方法论我先确认能复用，再写给别人看。",
     "相信 AI 不是答案，而是<em>提问的新方式</em>。把复杂的东西拆到每天能用的一块，是我做事的方法。"
   ],
   "doing": [
-    { "label": "写作", "text": "在<em>乔木博客</em>和公众号「向阳乔木推荐看」写 AI 工具评测、提示词工程、工作流拆解和播客解读。" },
-    { "label": "写书", "text": "和姚金刚老师一起，把 AI 实践中的方法写成书，已合著《AI 领导力》和《AI 营销：从 SEO 到 GEO》。" },
-    { "label": "开源", "text": "把自己的工作流做成 Agent Skills 和 Obsidian 插件，放在 GitHub。" },
-    { "label": "播客", "text": "和杨攀、歸藏、橘子一起主理 Next Token｜词元之外，每周圆桌聊值得关注的 AI。" },
-    { "label": "音乐", "text": "用 AI 写歌，放在乔木音乐。" }
+    {
+      "label": "写作",
+      "text": "在<em>乔木博客</em>和公众号「向阳乔木推荐看」写 AI 工具评测、提示词工程、工作流拆解和播客解读。"
+    },
+    {
+      "label": "写书",
+      "text": "和姚金刚老师一起，把 AI 实践中的方法写成书，已合著《AI 领导力》和《AI 营销：从 SEO 到 GEO》。"
+    },
+    {
+      "label": "开源",
+      "text": "把自己的工作流做成 Agent Skills 和 Obsidian 插件，放在 GitHub。"
+    },
+    {
+      "label": "播客",
+      "text": "和杨攀、歸藏、橘子一起主理 Next Token｜词元之外，每周圆桌聊值得关注的 AI。"
+    },
+    {
+      "label": "音乐",
+      "text": "用 AI 写歌，放在乔木音乐。"
+    }
   ],
-  "tags": ["AI 产品", "提示词工程", "工作流拆解", "自媒体运营", "GEO / AI 营销"],
-  "eyebrow": "ABOUT · 关于",
-  "updated": "2026年10月28日",
-  "tags": ["AI 产品", "提示词工程", "工作流拆解", "自媒体运营", "GEO / AI 营销"],
+  "tags": [
+    "AI 产品",
+    "提示词工程",
+    "工作流拆解",
+    "自媒体运营",
+    "GEO / AI 营销"
+  ],
   "facts": [
-    { "value": "100", "label": "上线项目" },
-    { "value": "10,671", "label": "GitHub Star" },
-    { "value": "2,340", "label": "GitHub 关注" },
-    { "value": "8", "label": "期 Next Token" }
+    {
+      "value": "100",
+      "label": "上线项目"
+    },
+    {
+      "value": "10,671",
+      "label": "GitHub Star"
+    },
+    {
+      "value": "2,340",
+      "label": "GitHub 关注"
+    },
+    {
+      "value": "8",
+      "label": "期 Next Token"
+    }
   ]
 }
