@@ -1,0 +1,380 @@
+[
+  {
+    "name": "Renoise",
+    "category": "AI 视频创作",
+    "tagline": "给营销和创作者用的 AI 视频与图片创作套件",
+    "summary": "把 Seedance、Kling、Midjourney、GPT Image 等主流模型放在一个工作台里，生成视频、图片和音频；角色和产品能保持一致，还能把素材增强到 4K，用 Renoise Agent 规划分镜。",
+    "audience": "做广告片、短视频、电商素材的创作者和营销团队",
+    "chips": [
+      "多模型视频生成"
+    ],
+    "cta": "马上试试",
+    "url": "https://renoise.ai/",
+    "logo": "https://renoise.ai/apple-touch-icon.png",
+    "logoText": ""
+  },
+  {
+    "name": "AIwatch.ai",
+    "category": "AI 数据榜单",
+    "tagline": "郎瀚威主导的 AI 产品数据榜",
+    "summary": "追踪 15,000+ 个 Web 端 AI 产品的访问量与增长，按 50+ 个细分领域分类，每月发布 AI 网站和 AI App 数据榜，还有 GenAI 流量年报、季报和 CES、GTC 逛展地图。",
+    "audience": "做 AI 产品、投资和市场研究的人",
+    "chips": [
+      "月度数据榜"
+    ],
+    "cta": "去看榜单",
+    "url": "https://aiwatch.ai/",
+    "logo": "",
+    "logoText": "A"
+  },
+  {
+    "name": "白艾莉 · Alice",
+    "category": "AI 陪伴 · Personal Agent",
+    "tagline": "活在真实时间线里的 AI 朋友与共创社区",
+    "summary": "她住在上海徐汇，有随真实时间运转的日程、朋友圈和旅行；能文字、语音、视频通话和屏幕共享，你的问候与礼物会改写她的明天，还能结识共同朋友、亲手捏出新角色。",
+    "audience": "想要一个懂你、能聊天也能帮忙的 AI 伙伴的人",
+    "chips": [
+      "全模态对话"
+    ],
+    "cta": "和她聊聊",
+    "url": "https://alice.fans/",
+    "logo": "https://img.alice.fans/avatars/avatar_256.png",
+    "logoText": ""
+  },
+  {
+    "name": "小山学堂",
+    "category": "AI 课程",
+    "tagline": "洛小山主讲的 AI 产品课，从入门到精通，免费学习",
+    "summary": "从零基础到大模型原理、Prompt 工程、RAG、Agent 工程、成本优化和 AI 产品心理学，358 个交互知识点，配 350 道自测题，帮普通用户和 AI 产品经理建立完整的认知框架。",
+    "audience": "想系统学 AI 的产品经理和零基础用户",
+    "chips": [
+      "358 个交互知识点"
+    ],
+    "cta": "开始学习",
+    "url": "https://xueai.app/",
+    "logo": "https://xueai.miyang.cn/favicon.ico",
+    "logoText": ""
+  },
+  {
+    "name": "WaytoAGI · 通往 AGI 之路",
+    "category": "AI 知识库",
+    "tagline": "最大最全的中文 AI 开源知识库和社区",
+    "summary": "汇聚上千个 AI 网站和工具、提示词、智能体和行业资讯，每天精选知识库内容，还有共学课程、线下活动和「未来硅世界」这样的社区栏目，陪你一起走在通往 AGI 的路上。",
+    "audience": "想系统学 AI、找工具和同行的人",
+    "chips": [
+      "AI 知识库"
+    ],
+    "cta": "进入知识库",
+    "url": "https://www.waytoagi.com/",
+    "logo": "https://www.waytoagi.com/favicon.ico",
+    "logoText": ""
+  },
+  {
+    "name": "YouMind",
+    "category": "AI 创作",
+    "tagline": "从素材、灵感到成稿的 AI Creation Studio",
+    "summary": "适合经常做内容、课程、方案和长文的人。它把素材收集、AI 对话、创作输出放在同一个空间里，核心价值是让零散资料真的流向可发布作品。",
+    "audience": "内容创作者、老师、产品/市场负责人",
+    "chips": [
+      "素材到作品"
+    ],
+    "cta": "马上试试",
+    "url": "https://youmind.com/pricing?ref=VZTY2Q",
+    "logo": "https://tuijian.qiaomu.ai/logos/youmind.png",
+    "logoText": ""
+  },
+  {
+    "name": "Happycapy",
+    "category": "Agent 电脑",
+    "tagline": "把浏览器变成给普通人用的 Agent-native computer",
+    "summary": "适合想用 Claude Code 和各类 Agent，但不想天天面对命令行的人。它强调可视化桌面、私有沙盒、内置 Skills 和 24/7 任务交付。",
+    "audience": "创作者、独立开发者、想把任务交给 Agent 的人",
+    "chips": [
+      "浏览器内 Claude Code"
+    ],
+    "cta": "马上试试",
+    "url": "https://happycapy.ai/signup?invite_ref=VP5UvPnY",
+    "logo": "https://tuijian.qiaomu.ai/logos/happycapy.svg",
+    "logoText": ""
+  },
+  {
+    "name": "Bloome",
+    "category": "多人 Agent 协作",
+    "tagline": "把 AI Agent 拉进群聊，一起分工交付结果",
+    "summary": "适合团队或社群把 Agent 当作协作者使用。它不是单人聊天框，而是围绕群聊、角色分工和多 Agent 协作来组织任务。",
+    "audience": "小团队、社群运营、Agent 工作流玩家",
+    "chips": [
+      "群聊式协作"
+    ],
+    "cta": "马上试试",
+    "url": "https://bloome.im/",
+    "logo": "https://tuijian.qiaomu.ai/logos/bloome.png",
+    "logoText": ""
+  },
+  {
+    "name": "Floatboat",
+    "category": "个人公司工作台",
+    "tagline": "面向 one-person company 的桌面 AI 工作空间",
+    "summary": "适合一个人或小团队同时处理产品、内容、客户和自动化。它主打学习你的工作流、连接大量工具，并把重复任务沉淀成可执行流程。",
+    "audience": "独立创业者、创作者、2-5 人小团队",
+    "chips": [
+      "桌面工作空间"
+    ],
+    "cta": "马上试试",
+    "url": "https://floatboat.ai/?invite=4W2USKDTUZ",
+    "logo": "https://tuijian.qiaomu.ai/logos/floatboat.svg",
+    "logoText": ""
+  },
+  {
+    "name": "AIGoCode",
+    "category": "AI 编程",
+    "tagline": "把 AI 编程、使用管理和团队协作整合到一个工作台",
+    "summary": "适合希望稳定使用 AI 编程能力，同时需要配额管理、团队协作和中文服务支持的开发者。它更像面向日常开发的 AI 编程工作台。",
+    "audience": "开发者、技术团队、AI Coding 重度用户",
+    "chips": [
+      "统一编码工作台"
+    ],
+    "cta": "马上试试",
+    "url": "https://aigocode.com/invite/AP5KFJWJ",
+    "logo": "https://tuijian.qiaomu.ai/logos/aigocode.png",
+    "logoText": ""
+  },
+  {
+    "name": "PipeLLM",
+    "category": "AI Coding 中转",
+    "tagline": "给主流 AI 编程工具使用的统一后端入口",
+    "summary": "适合已经在用 Claude Code、Cursor、Cline 等工具的人。配置 API Base URL 后，把不同 AI Coding 客户端接到同一个后端服务上。",
+    "audience": "Claude Code / Cursor / Cline 用户",
+    "chips": [
+      "兼容主流编码工具"
+    ],
+    "cta": "马上试试",
+    "url": "https://code.pipellm.ai/login?ref=vbsdxpv8",
+    "logo": "https://tuijian.qiaomu.ai/logos/pipellm.svg",
+    "logoText": ""
+  },
+  {
+    "name": "Raycast",
+    "category": "效率启动器",
+    "tagline": "把应用、命令、AI 和扩展都收进键盘启动器",
+    "summary": "适合习惯键盘流的 Mac 和 Windows 用户。它把应用启动、扩展商店、AI、剪贴板、窗口管理、Quicklinks 和 Snippets 放进一个快速可靠的 launcher。",
+    "audience": "设计师、开发者、知识工作者、键盘流用户",
+    "chips": [
+      "键盘优先"
+    ],
+    "cta": "马上试试",
+    "url": "https://www.raycast.com/",
+    "logo": "https://tuijian.qiaomu.ai/logos/raycast.png",
+    "logoText": ""
+  },
+  {
+    "name": "AIHot",
+    "category": "AI 热点情报",
+    "tagline": "卡兹克做的中文 AI 热点雷达和日报站",
+    "summary": "把 AI 圈的模型、产品、行业、论文和技巧动态按时间线、热度和日报组织起来，适合快速判断今天哪些信息值得追。",
+    "audience": "AI 自媒体、研究员、产品经理、热点观察者",
+    "chips": [
+      "每日 AI 日报"
+    ],
+    "cta": "马上试试",
+    "url": "https://aihot.virxact.com/",
+    "logo": "https://tuijian.qiaomu.ai/logos/aihot.svg",
+    "logoText": ""
+  },
+  {
+    "name": "牛马AI",
+    "category": "本地 AI Agent",
+    "tagline": "Yangyi 的本地化 AI 人机协同基站",
+    "summary": "强调数据不出本地、离线运行、Skill 市场和自动化任务编排；把文档、音视频、表格和本地应用接进 AI 工作流。",
+    "audience": "隐私敏感工作者、超级个体、内容/数据/项目运营",
+    "chips": [
+      "数据不出本地"
+    ],
+    "cta": "马上试试",
+    "url": "https://newmax.cc/",
+    "logo": "https://tuijian.qiaomu.ai/logos/newmax.png",
+    "logoText": ""
+  },
+  {
+    "name": "CodePilot",
+    "category": "AI Agent 桌面端",
+    "tagline": "歸藏的多模型 AI Agent 桌面客户端",
+    "summary": "一个客户端连接 17+ AI 服务商、MCP 扩展和项目上下文，支持多会话、Code / Plan / Ask、权限确认、Persona、Memory 和 Skills。",
+    "audience": "AI Coding 用户、开源玩家、需要自带 Key 的开发者",
+    "chips": [
+      "17+ 服务商"
+    ],
+    "cta": "马上试试",
+    "url": "https://www.codepilot.sh/",
+    "logo": "https://tuijian.qiaomu.ai/logos/codepilot.png",
+    "logoText": ""
+  },
+  {
+    "name": "ColaOS",
+    "category": "Agent OS",
+    "tagline": "橘子的个人 AI 操作系统",
+    "summary": "Cola 生活在你的电脑里，记住你是谁，并能在应用之间行动和成长；更像长期陪伴协作的个人 AI，而不只是工具。",
+    "audience": "想要个人 AI 伙伴、Agent OS 早期体验者",
+    "chips": [
+      "记忆与成长"
+    ],
+    "cta": "马上试试",
+    "url": "https://colaos.ai/",
+    "logo": "https://tuijian.qiaomu.ai/logos/colaos.png",
+    "logoText": ""
+  },
+  {
+    "name": "CCSwitch",
+    "category": "AI 编程配置",
+    "tagline": "统一管理 AI 编程 CLI 的供应商、路由和会话",
+    "summary": "面向 Claude Code、Codex、Gemini CLI、OpenCode、OpenClaw 和 Hermes Agent 等工具，集中管理供应商配置、本地路由、MCP、Skills、会话和用量统计。",
+    "audience": "多 AI Coding CLI 用户、中转/API 切换重度用户",
+    "chips": [
+      "供应商切换"
+    ],
+    "cta": "马上试试",
+    "url": "https://ccswitch.io/",
+    "logo": "https://tuijian.qiaomu.ai/logos/ccswitch.png",
+    "logoText": ""
+  },
+  {
+    "name": "OpenDesign",
+    "category": "AI 设计工作台",
+    "tagline": "黄巍的本地优先开源 AI 设计工作空间",
+    "summary": "把 Claude Code、Codex、Cursor、Gemini、OpenCode、Qwen 等本地 coding agent 变成设计引擎，用 Skills 和可携带的 DESIGN.md 系统生成原型、仪表盘、幻灯片和品牌资产。",
+    "audience": "设计师、产品经理、AI Coding 用户、独立开发者",
+    "chips": [
+      "本地优先"
+    ],
+    "cta": "马上试试",
+    "url": "https://open-design.ai/",
+    "logo": "https://tuijian.qiaomu.ai/logos/opendesign.svg",
+    "logoText": ""
+  },
+  {
+    "name": "Dokie",
+    "category": "AI PPT",
+    "tagline": "月光的 AI 演示文稿生成和编辑工具",
+    "summary": "把主题、笔记、文档、链接或表格资料快速整理成结构清晰、排版干净的商业演示文稿，并支持继续编辑和导出 PPTX。",
+    "audience": "商务汇报、课程培训、销售方案、内容创作者",
+    "chips": [
+      "AI 生成 PPT"
+    ],
+    "cta": "马上试试",
+    "url": "https://www.dokie.ai/invite/Z94XzmgOPWdA",
+    "logo": "https://tuijian.qiaomu.ai/logos/dokie.png",
+    "logoText": ""
+  },
+  {
+    "name": "WeSight",
+    "category": "Agent 桌面工作台",
+    "tagline": "苍何的本地 CLI Agent 桌面控制台",
+    "summary": "开源桌面 AI Agent 工作空间，把 Claude Code、Codex、Kimi Code、OpenClaw、Hermes、OpenCode、Qwen Code 等本地 Agent 放进可视化聊天、工具、文件、模型、权限和运行指标面板里。",
+    "audience": "AI Coding 用户、本地 Agent 玩家、团队自动化工作流",
+    "chips": [
+      "本地 Agent 控制台"
+    ],
+    "cta": "马上试试",
+    "url": "https://wesight.ai/",
+    "logo": "https://tuijian.qiaomu.ai/logos/wesight.png",
+    "logoText": ""
+  },
+  {
+    "name": "Mole",
+    "category": "Mac 系统工具",
+    "tagline": "Tw93 的原生 Mac 清理、卸载和状态监控工具",
+    "summary": "把清理垃圾、管理软件更新、彻底卸载应用、运行维护、分析磁盘占用和查看实时状态放进一个原生 macOS 应用；CLI 版本免费开源，Mac App 提供可视化审查、菜单栏 HUD 和更完整的桌面体验。",
+    "audience": "Mac 用户、开发者、想替代 CleanMyMac / AppCleaner 的人",
+    "chips": [
+      "原生 Mac App"
+    ],
+    "cta": "马上试试",
+    "url": "https://mole.fit/",
+    "logo": "https://tuijian.qiaomu.ai/logos/mole.png",
+    "logoText": ""
+  },
+  {
+    "name": "NemoVideo",
+    "category": "AI 视频编辑",
+    "tagline": "用聊天完成剪辑、爆款分析和成片交付的 AI 视频 Agent",
+    "summary": "把剪辑需求直接交给视频编辑 Agent，它可以帮你找爆款、分析趋势，并处理剪辑、字幕、音频和粗剪，适合快速做可发布的短视频内容。",
+    "audience": "短视频创作者、营销团队、电商视频、视频剪辑师",
+    "chips": [
+      "聊天式剪辑"
+    ],
+    "cta": "马上试试",
+    "url": "https://www.nemovideo.com/",
+    "logo": "https://tuijian.qiaomu.ai/logos/nemovideo.png",
+    "logoText": ""
+  },
+  {
+    "name": "Medeo",
+    "category": "AI 视频生成",
+    "tagline": "聊天式 AI 视频生成器，从想法到专业视频",
+    "summary": "用对话把文本、音频、图片、视频或链接变成专业视频，不需要复杂剪辑技能；适合从想法、URL、博客和已有素材快速生成视频。",
+    "audience": "YouTube 自动化、解释视频、营销视频、无露脸内容",
+    "chips": [
+      "聊天生成视频"
+    ],
+    "cta": "马上试试",
+    "url": "https://www.medeo.app/",
+    "logo": "https://tuijian.qiaomu.ai/logos/medeo.svg",
+    "logoText": ""
+  },
+  {
+    "name": "Cherry Studio",
+    "category": "多模型 AI 客户端",
+    "tagline": "免费开源的跨平台多模型 AI 助手",
+    "summary": "支持 Windows、macOS、Linux，集成 300+ AI 模型，覆盖 OpenAI、Claude、Gemini、DeepSeek 等；提供 AI 对话、知识库、绘图和翻译。",
+    "audience": "多模型用户、本地大模型玩家、跨平台桌面 AI 助手",
+    "chips": [
+      "300+ 模型"
+    ],
+    "cta": "马上试试",
+    "url": "https://cherryai.com.cn/",
+    "logo": "https://tuijian.qiaomu.ai/logos/cherryai.png",
+    "logoText": ""
+  },
+  {
+    "name": "Firework Design",
+    "category": "AI 前端设计",
+    "tagline": "Brad 强的 Claude Code 多方案前端设计工作流",
+    "summary": "开源 Claude Code 工作流：一次提示词探索多种设计方向，像评审团一样比较，再综合优点并打磨成可交付页面。",
+    "audience": "前端页面、落地页、设计探索、Claude Code 用户",
+    "chips": [
+      "多方案探索"
+    ],
+    "cta": "马上试试",
+    "url": "https://yizhiyanhua-ai.github.io/fireworks-design/",
+    "logo": "https://tuijian.qiaomu.ai/logos/firework-design.svg",
+    "logoText": ""
+  },
+  {
+    "name": "HiAPI",
+    "category": "AI API 平台",
+    "tagline": "彭总的一站式 AI API 平台，一个 key 接入多类模型",
+    "summary": "面向开发者的 AI API 平台，用统一入口接入图像、视频、音乐和文本生成 API，适合把多模态模型能力快速接进产品和自动化工作流。",
+    "audience": "开发者、AI 应用团队、多模态 API 调用者",
+    "chips": [
+      "单 key 接入"
+    ],
+    "cta": "马上试试",
+    "url": "https://www.hiapi.ai/zh/register?aff=NIWx",
+    "logo": "https://tuijian.qiaomu.ai/logos/hiapi.svg",
+    "logoText": ""
+  },
+  {
+    "name": "Pexo",
+    "category": "AI 视频 Agent",
+    "tagline": "用自然对话把想法变成视频的 AI 视频 Agent",
+    "summary": "通过对话把想法推进到高质量视频，覆盖文本、图片、URL、音频、脚本到视频，以及 AI 图像、音乐和唇形同步等创作能力。",
+    "audience": "短视频、电商产品视频、解释视频、社媒内容",
+    "chips": [
+      "对话生成视频"
+    ],
+    "cta": "马上试试",
+    "url": "https://pexo.ai/",
+    "logo": "https://tuijian.qiaomu.ai/logos/pexo.png",
+    "logoText": ""
+  }
+]

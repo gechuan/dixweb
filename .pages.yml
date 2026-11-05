@@ -1,0 +1,259 @@
+# Pages CMS configuration: https://pagescms.org
+# Point Pages CMS at this repo and it will expose these collections for
+# editing in the browser or on mobile.
+
+media:
+  - name: assets
+    input: public/assets
+    output: /assets
+
+content:
+  - name: site
+    label: 站点设置
+    path: src/data/site.json
+    type: file
+    format: json
+    fields:
+      - { name: siteUrl, label: 站点 URL, type: string }
+      - { name: title, label: 站点标题, type: string }
+      - { name: description, label: 站点描述, type: text }
+      - { name: author, label: 作者, type: string }
+      - { name: brand, label: 站点名称, type: string }
+      - { name: avatar, label: 头像, type: image }
+      - { name: role, label: 身份说明, type: string }
+      - { name: tagline, label: 标语, type: string }
+      - name: umami
+        label: Umami 统计
+        type: object
+        fields:
+          - { name: src, label: script.js 地址, type: string, description: 例如 https://umami.example.com/script.js，留空则不加载 }
+          - { name: websiteId, label: 网站 ID, type: string }
+
+  - name: home
+    label: 首页
+    path: src/data/home.json
+    type: file
+    format: json
+    fields:
+      - name: hero
+        label: 首屏
+        type: object
+        fields:
+          - name: titleLines
+            label: 大标题（支持 <span class="r"> 高亮）
+            type: string
+            list: true
+          - { name: lede, label: 自我介绍（支持 <b> 加粗）, type: text }
+      - name: cols
+        label: 本期目录三栏
+        type: object
+        list: true
+        fields:
+          - { name: title, label: 栏目名, type: string }
+          - name: more
+            label: 更多链接
+            type: object
+            fields:
+              - { name: label, label: 文案, type: string }
+              - { name: href, label: 链接, type: string }
+          - name: entries
+            label: 条目
+            type: object
+            list: true
+            fields:
+              - { name: date, label: 日期, type: string }
+              - { name: tag, label: 标签, type: string }
+              - { name: title, label: 标题, type: string }
+              - { name: url, label: 链接, type: string }
+      - name: now
+        label: 今天做了啥
+        type: object
+        fields:
+          - { name: title, label: 标题, type: string }
+          - { name: date, label: 日期, type: string }
+          - { name: body, label: 内容, type: text }
+      - name: subscribe
+        label: 订阅区
+        type: object
+        fields:
+          - { name: title, label: 标题（\n 表示换行）, type: text }
+          - { name: body, label: 说明, type: text }
+
+  - name: notes
+    label: 随想
+    path: src/data/notes.json
+    type: file
+    format: json
+    fields:
+      - { name: lede, label: 页面说明, type: text }
+      - name: entries
+        label: 随想列表
+        type: object
+        list: true
+        fields:
+          - { name: id, label: ID（唯一，如 n-20261105a）, type: string }
+          - { name: author, label: 作者, type: string }
+          - { name: datetime, label: 时间（ISO 格式）, type: string }
+          - { name: datelabel, label: 显示时间, type: string }
+          - { name: html, label: 内容（HTML）, type: rich-text, format: html }
+
+  - name: podcast
+    label: 播客
+    path: src/data/podcast.json
+    type: file
+    format: json
+    fields:
+      - name: episodes
+        label: Next Token 单集
+        type: object
+        list: true
+        fields:
+          - { name: date, label: 日期, type: string }
+          - { name: meta, label: 期数, type: string }
+          - { name: title, label: 标题, type: string }
+          - { name: summary, label: 摘要, type: text }
+          - { name: url, label: 链接, type: string }
+
+  - name: projects
+    label: 项目
+    path: src/data/projects.json
+    type: file
+    format: json
+    fields:
+      - name: featured
+        label: 首页精选
+        type: object
+        list: true
+        fields:
+          - { name: name, label: 名称, type: string }
+          - { name: tag, label: 分类标签, type: string }
+          - { name: description, label: 描述, type: text }
+          - { name: url, label: 链接, type: string }
+          - { name: stat, label: 数据展示, type: string }
+      - name: groups
+        label: 项目分组
+        type: object
+        list: true
+        fields:
+          - { name: id, label: 分组 ID, type: string }
+          - { name: title, label: 分组名, type: string }
+          - { name: note, label: 分组说明, type: text }
+          - { name: downloads, label: 累计下载, type: string }
+          - name: items
+            label: 项目
+            type: object
+            list: true
+            fields:
+              - { name: name, label: 名称, type: string }
+              - { name: category, label: 类别 ID, type: string }
+              - { name: badge, label: 徽标, type: string }
+              - { name: description, label: 描述, type: text }
+              - { name: url, label: 链接, type: string }
+              - { name: stat, label: 数据展示, type: string }
+
+  - name: friends
+    label: 朋友推荐
+    path: src/data/friends.json
+    type: object
+    list: true
+    fields:
+      - { name: name, label: 名称, type: string }
+      - { name: category, label: 分类, type: string }
+      - { name: tagline, label: 一句话介绍, type: string }
+      - { name: summary, label: 详细介绍, type: text }
+      - { name: audience, label: 适合人群, type: string }
+      - name: chips
+        label: 亮点标签
+        type: string
+        list: true
+      - { name: cta, label: 按钮文案, type: string }
+      - { name: url, label: 链接, type: string }
+      - { name: logo, label: Logo 图片 URL, type: image }
+      - { name: logoText, label: 无 Logo 时的文字, type: string }
+
+  - name: music
+    label: 音乐
+    path: src/data/music.json
+    type: file
+    format: json
+    fields:
+      - { name: kicker, label: 栏目标语, type: string }
+      - name: tracks
+        label: 歌曲
+        type: object
+        list: true
+        fields:
+          - { name: title, label: 歌名, type: string }
+          - { name: artist, label: 艺术家, type: string }
+          - { name: album, label: 专辑, type: string }
+          - { name: dateLabel, label: 日期（YYYY/MM/DD）, type: string }
+          - { name: url, label: 歌曲页链接, type: string }
+          - { name: audioUrl, label: 音频地址, type: string }
+          - { name: apiUrl, label: 歌词 API 地址, type: string, description: 可选，返回歌词 JSON 或 LRC }
+          - { name: coverUrl, label: 封面地址, type: image }
+
+  - name: uses
+    label: 工具箱
+    path: src/data/uses.json
+    type: file
+    format: json
+    fields:
+      - name: groups
+        label: 分组
+        type: object
+        list: true
+        fields:
+          - { name: title, label: 分组名, type: string }
+          - name: items
+            label: 工具
+            type: object
+            list: true
+            fields:
+              - { name: name, label: 名称, type: string }
+              - { name: url, label: 链接, type: string }
+              - { name: desc, label: 说明, type: text }
+
+  - name: about
+    label: 关于
+    path: src/data/about.json
+    type: file
+    format: json
+    fields:
+      - { name: title, label: 标题, type: string }
+      - { name: lede, label: 开头介绍（支持 <em>）, type: text }
+      - name: paragraphs
+        label: 段落（支持 <em>）
+        type: text
+        list: true
+      - name: doing
+        label: 我在做什么
+        type: object
+        list: true
+        fields:
+          - { name: label, label: 主题, type: string }
+          - { name: text, label: 内容, type: text }
+      - name: facts
+        label: 数据
+        type: object
+        list: true
+        fields:
+          - { name: value, label: 数值, type: string }
+          - { name: label, label: 说明, type: string }
+
+  - name: now
+    label: 现在
+    path: src/data/now.json
+    type: file
+    format: json
+    fields:
+      - { name: title, label: 标题, type: string }
+      - { name: lede, label: 说明, type: text }
+      - name: items
+        label: 正在做的事
+        type: object
+        list: true
+        fields:
+          - { name: title, label: 标题, type: string }
+          - { name: text, label: 内容, type: text }
+          - { name: href, label: 链接, type: string }
+          - { name: linkLabel, label: 链接文案, type: string }

@@ -1,0 +1,111 @@
+{
+  "hero": {
+    "titleLines": ["做更多事，", "让<span class=\"r\">更多人</span>知道。"],
+    "lede": "我是<em>向阳乔木</em>，前字节跳动商业化 AI 产品经理，《AI领导力》合著者。我把真正跑通的 AI 工作流做成工具和开源项目，再写成笔记、录成播客，让更多人用得上。",
+    "primaryCta": { "label": "看看我做的事", "href": "/projects" },
+    "secondaryCta": { "label": "读最新博客", "href": "#notes" },
+    "proof": [
+      { "value": "100", "label": "个上线的网站与开源项目", "href": "/projects" },
+      { "value": "008", "label": "期 Next Token 播客", "href": "/podcast" },
+      { "value": "10,671", "label": "颗 GitHub Star", "href": "https://github.com/joeseesun" }
+    ]
+  },
+  "cols": [
+    {
+      "title": "博客",
+      "more": { "label": "全部", "href": "https://blog.qiaomu.ai/" },
+      "entries": [
+        { "date": "11.02", "tag": "AI工具", "title": "TRAE 个人助理限免一周，实测感觉编程PA时代来了！", "url": "https://blog.qiaomu.ai/trae-personal-agent-free-trial" },
+        { "date": "10.08", "tag": "播客解读", "title": "每天涨10%、没花一分钱营销：这个只有短信入口的AI助理，一年交易额快到10亿美元", "url": "https://blog.qiaomu.ai/instinct-ai-assistant-sms-growth" },
+        { "date": "09.20", "tag": "AI资讯", "title": "手机卷到头了，下一个让人忍不住掏钱的新物种，长这样", "url": "https://blog.qiaomu.ai/qiyuan-personal-robots-q1-t1" }
+      ]
+    },
+    {
+      "title": "播客",
+      "more": { "label": "全部", "href": "/podcast" },
+      "entries": [
+        { "date": "11.02", "tag": "第 8 期", "title": "A 社上市，泡沫破裂前夜？AI 短剧之外，钱和流量都去哪儿了？", "url": "https://nexttoken.tv/weekly/008" },
+        { "date": "10.26", "tag": "第 7 期", "title": "DeepSeek 极速狂飙，AI 游戏新机会，AI 改造老家电", "url": "https://nexttoken.tv/weekly/007" },
+        { "date": "10.19", "tag": "第 6 期", "title": "AI 逆向挡不住，Grok Bot、Muse 用上头：干活还是过家家？", "url": "https://nexttoken.tv/weekly/006" }
+      ]
+    },
+    {
+      "title": "乔木 AI 资讯",
+      "more": { "label": "全部", "href": "https://airss.qiaomu.ai/" },
+      "entries": [
+        { "date": "11.05", "tag": "乔木风格重写", "title": "Joe Rogan Experience 2576 - Peter McCullough 博士", "url": "https://rss.qiaomu.ai/articles/joe-rogan-experience-2576-peter-mccullough-%E5%8D%9A%E5%A3%AB--f302780af17e/rewrite" },
+        { "date": "11.05", "tag": "乔木风格重写", "title": "开放模型经济如今规模有多大？", "url": "https://rss.qiaomu.ai/articles/%E5%BC%80%E6%94%BE%E6%A8%A1%E5%9E%8B%E7%BB%8F%E6%B5%8E%E5%A6%82%E4%BB%8A%E8%A7%84%E6%A8%A1%E6%9C%89%E5%A4%9A%E5%A4%A7--2bb5fab546b7/rewrite" },
+        { "date": "11.05", "tag": "乔木风格重写", "title": "[AINews] Latent Space 幕后：Kill My SaaS、Jev 与 2026 年的 AI | AIEi 上海", "url": "https://rss.qiaomu.ai/articles/ainews-latent-space-%E5%B9%95%E5%90%8E-kill-my-saas-jev-%E4%B8%8E-2026-%E5%B9%B4%E7%9A%84-ai-aiei-%E4%B8%8A%E6%B5%B7--b86223fee2a1/rewrite" }
+      ]
+    }
+  ],
+  "now": {
+    "title": "今天做了啥",
+    "date": "2026年10月28日",
+    "body": "把「乔木 AI 资讯」收录到网站：免费阅读十多个 AI Newsletter、国内外 AI 播客与优秀公众号，英文内容转成中文，支持网页、Obsidian 和 DeepSeek Harness。",
+    "more": { "label": "查看进展与阅读入口", "href": "/now#today" }
+  },
+  "podcast": {
+    "kicker": "Podcast · Every week",
+    "titleLines": ["每周一张圆桌，", "聊真正值得关注的 AI。"],
+    "more": { "label": "全部播客", "href": "/podcast" },
+    "latest": {
+      "no": "No. 008",
+      "show": "Next Token｜词元之外",
+      "date": "2026/11/02",
+      "title": "A 社上市，泡沫破裂前夜？AI 短剧之外，钱和流量都去哪儿了？",
+      "summary": "从 AI 公司的估值与融资，到 AI 搜索如何分配流量，再到短剧创作、科学研究和双十一购物车：四位主理人聊泡沫、价值、创意与信任。",
+      "hosts": ["杨攀", "歸藏", "橘子", "向阳乔木"],
+      "listen": [
+        { "label": "收听与文字稿", "href": "https://nexttoken.tv/weekly/008" },
+        { "label": "小宇宙", "href": "https://www.xiaoyuzhoufm.com/podcast/6a9956fafbb9512fc83ddbb5" },
+        { "label": "YouTube", "href": "https://www.youtube.com/channel/UC_9pr_usdNG29RauPFwIFQw" },
+        { "label": "B 站", "href": "https://space.bilibili.com/3745066753461159" }
+      ]
+    },
+    "eps": [
+      { "no": "007", "title": "DeepSeek 极速狂飙，AI 游戏新机会，AI 改造老家电", "meta": "Next Token · 2026年10月26日", "href": "https://nexttoken.tv/weekly/007" },
+      { "no": "006", "title": "AI 逆向挡不住，Grok Bot、Muse 用上头：干活还是过家家？", "meta": "Next Token · 2026年10月19日", "href": "https://nexttoken.tv/weekly/006" },
+      { "no": "005", "title": "国庆补课：PA 大战白热化；游戏、软件、硬件，一切都将开源？", "meta": "Next Token · 2026年10月8日", "href": "https://nexttoken.tv/weekly/005" },
+      { "no": "018", "title": "大厂那套方法论，出来后反而没用", "meta": "未来硅世界 · 嘉宾 王启源", "href": "https://blog.qiaomu.ai/big-tech-to-indie-developer" }
+    ]
+  },
+  "about": {
+    "kicker": "About · 关于",
+    "titleLines": ["不追风口，", "只写亲测过的实践。"],
+    "paragraphs": [
+      "我是<em>向阳乔木</em>，前字节跳动商业化 AI 产品经理，连续创业者。从字节离开后，把每天用 AI 的方式写成专栏，这件事已经坚持了三年。",
+      "这里没有「颠覆」「革命性」「下一代」的口号。每一篇都来自真实的工作流：工具我先用，提示词我先跑通，方法论我先验证可复用，再写下来。",
+      "相信 AI 不是答案，而是<em>提问的新方式</em>。把复杂的东西拆到每天能用的一块，是我做事的方法。"
+    ],
+    "tags": ["AI 产品", "提示词工程", "工作流拆解", "自媒体运营", "GEO / AI 营销"],
+    "facts": [
+      { "value": "100", "label": "上线项目" },
+      { "value": "10,671", "label": "GitHub Star" },
+      { "value": "2,340", "label": "GitHub 关注" },
+      { "value": "8", "label": "期 Next Token" }
+    ]
+  },
+  "projects": {
+    "kicker": "Projects · 100 live",
+    "titleLines": ["我每天在用的，", "和我做出来的。"],
+    "more": { "label": "全部 100 个项目", "href": "/projects" }
+  },
+  "music": {
+    "queueTitle": "最近上传",
+    "more": { "label": "全部歌曲", "href": "https://music.qiaomu.ai/" }
+  },
+  "friendsSection": {
+    "kicker": "Friends · 乔木推荐",
+    "titleLines": ["朋友们正在做的，", "也值得被认真看见。"]
+  },
+  "subscribe": {
+    "title": "每周二，\n一篇值得读完的实践笔记。",
+    "body": "新的实践笔记、工具发现、工作流拆解和音乐更新，会在博客、公众号和这些站点里陆续出现。不发口号，只写跑通后的东西。",
+    "cta": { "label": "扫码关注公众号", "modal": "follow" },
+    "links": [
+      { "label": "X @vista8", "href": "https://x.com/vista8" },
+      { "label": "GitHub", "href": "https://github.com/joeseesun" }
+    ]
+  }
+}

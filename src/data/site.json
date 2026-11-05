@@ -1,0 +1,66 @@
+{
+  "siteUrl": "https://example.com",
+  "title": "向阳乔木 · 做更多事，让更多人知道",
+  "description": "前字节产品经理向阳乔木的 AI 实践笔记。记录 AI 工具、提示词工程、工作流拆解、音乐、必读文章与个人项目，写给愿意把 AI 真正用起来的人。",
+  "author": "向阳乔木",
+  "brand": "向阳乔木",
+  "avatar": "/assets/avatar.png",
+  "role": "前字节 AI 产品经理 · Next Token 联合主理人",
+  "tagline": "做更多事，让更多人知道。",
+  "nav": [
+    { "label": "首页", "href": "/", "match": "home" },
+    { "label": "博客", "href": "/#notes" },
+    { "label": "随想", "href": "/notes" },
+    { "label": "项目", "href": "/projects" },
+    { "label": "播客", "href": "/podcast" },
+    { "label": "现在", "href": "/now" },
+    { "label": "工具箱", "href": "/uses" },
+    { "label": "关于", "href": "/about" }
+  ],
+  "social": {
+    "x": "https://x.com/vista8",
+    "xLabel": "X @vista8",
+    "github": "https://github.com/joeseesun",
+    "blog": "https://blog.qiaomu.ai/",
+    "blogLabel": "乔木博客",
+    "airss": "https://airss.qiaomu.ai/",
+    "airssLabel": "乔木 AI 资讯",
+    "rss": "/notes/rss.xml",
+    "music": "https://music.qiaomu.ai/",
+    "musicLabel": "乔木音乐",
+    "tuijian": "https://tuijian.qiaomu.ai/",
+    "tuijianLabel": "乔木推荐",
+    "nexttoken": "https://nexttoken.tv/",
+    "nexttokenLabel": "Next Token｜词元之外"
+  },
+  "stats": {
+    "projects": "100",
+    "podcastEpisodes": "008",
+    "githubStars": "10,671"
+  },
+  "dateline": {
+    "episodeLabel": "本周播客 Next Token #008",
+    "episodeUrl": "https://nexttoken.tv/weekly/008"
+  },
+  "umami": {
+    "src": "",
+    "websiteId": "",
+    "note": "填入自托管 Umami 的 script.js 地址和网站 ID，留空则不加载统计脚本"
+  },
+  "footer": {
+    "friends": [
+      { "label": "Next Token｜词元之外", "href": "https://nexttoken.tv/" },
+      { "label": "杨攀同学", "href": "https://yangpan.com/" },
+      { "label": "歸藏", "href": "https://www.guizang.ai/" },
+      { "label": "姚金刚", "href": "https://www.laoyao.cn/" },
+      { "label": "小互", "href": "https://xiaohu.ai/" },
+      { "label": "橘子", "href": "https://orangesai.com/" },
+      { "label": "AI 炼金术", "href": "https://ailianjinshu.com/" },
+      { "label": "高阳", "href": "https://gaoyang.dev/" }
+    ],
+    "colo": "表达自我，连接彼此 · Web 2.0 Next",
+    "coloUrl": "https://web20next.com/zh/manifesto",
+    "copyright": "© 2026 向阳乔木 · QIAOMU.AI",
+    "repos": "https://github.com/joeseesun?tab=repositories"
+  }
+}

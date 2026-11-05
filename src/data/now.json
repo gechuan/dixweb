@@ -1,0 +1,26 @@
+{
+  "eyebrow": "NOW · 现在",
+  "title": "最近，我在做这些",
+  "updated": "2026年10月28日",
+  "lede": "这是一页「现在」，灵感来自 nownownow.com：记录今天做了啥，也写下此刻正在投入时间的事。",
+  "today": {
+    "title": "今天做了啥",
+    "date": "2026 年 10 月 28 日",
+    "subtitle": "把乔木 AI 资讯收录到网站",
+    "paragraphs": [
+      "如果你关心国内外的 AI 资讯和工具，这个免费产品值得收藏。",
+      "乔木 AI 资讯收录了我这几年常看的十多个 AI Newsletter、国内外的知名 AI 播客和国内的优秀公众号。英文内容都会转成中文，方便大家阅读。",
+      "除了网页端，还提供 Obsidian 插件和 DeepSeek Harness 插件，可以在熟悉的工作区里阅读、摘录和与 AI 伴读。今天把它的官网和三端入口补充到本站，方便大家找到。"
+    ],
+    "links": [
+      { "label": "打开网页版", "href": "https://airss.qiaomu.ai/" },
+      { "label": "安装 Obsidian 插件", "href": "https://airss.qiaomu.ai/" }
+    ]
+  },
+  "items": [
+    { "title": "开源 Agent Skills", "text": "把自己每天用的工作流整理成可安装、可评测的 Skills：写作、配图、视频剪辑、SEO、下载、发布。代码都在 GitHub，精选在项目页。", "href": "https://github.com/joeseesun", "linkLabel": "GitHub" },
+    { "title": "QMReader 与阅读工具", "text": "乔木 AI 资讯提供网页、Obsidian 和 DeepSeek Harness 三个入口，聚合 AI Newsletter、播客与公众号，方便用中文阅读；同时继续打磨 QMReader 的文章对话和 iOS 阅读器。", "href": "https://airss.qiaomu.ai/", "linkLabel": "乔木 AI 资讯" },
+    { "title": "播客", "text": "每周和杨攀、歸藏、橘子录一期 Next Token；同时把喜欢的英文 AI 播客做成中文精读站：Lex Fridman、All-In、No Priors、Training Data、Cognitive Revolution 等。", "href": "/podcast", "linkLabel": "见播客页" },
+    { "title": "写作与音乐", "text": "每周在博客更新实践笔记；有空就用 AI 写歌，放在乔木音乐。", "href": "https://music.qiaomu.ai/", "linkLabel": "乔木音乐" }
+  ]
+}

@@ -1,0 +1,54 @@
+---
+import Layout from '../layouts/Layout.astro';
+import site from '../data/site.json';
+import about from '../data/about.json';
+---
+
+<Layout title={`关于 · ${site.brand}`} description={about.lede.replace(/<[^>]*>/g, '')}>
+  <header class="page-head">
+    <div class="wrap">
+      <div class="sec-eyebrow"><span class="dot"></span>{about.eyebrow}</div>
+      <h1>{about.title}</h1>
+      <p class="page-updated">更新于 {about.updated}</p>
+    </div>
+  </header>
+  <section class="page-sec">
+    <div class="wrap">
+      <div class="about">
+        <div>
+          <div class="prose">
+            <p class="first" set:html={about.lede.replace(/<em>/g, '<span class="em">').replace(/<\/em>/g, '</span>')} />
+            {about.paragraphs.map((p) => (
+              <p set:html={p.replace(/<em>/g, '<span class="em">').replace(/<\/em>/g, '</span>')} />
+            ))}
+          </div>
+          <div class="sec-head" style="margin-top:48px">
+            <div class="sec-eyebrow"><span class="dot"></span>DOING · 我在做什么</div>
+          </div>
+          <div class="prose page-intro">
+            {about.doing.map((item) => (
+              <p><strong>{item.label}</strong>：{item.text}</p>
+            ))}
+          </div>
+          <div class="tags">
+            {about.tags.map((tag) => <span>{tag}</span>)}
+          </div>
+          <div class="facts">
+            {about.facts.map((f) => (
+              <div><b>{f.value}</b><small>{f.label}</small></div>
+            ))}
+          </div>
+        </div>
+        <aside class="now">
+          <div class="h"><b>合作与联系</b></div>
+          <p>
+            X：<a class="ext" href={site.social.x} target="_blank" rel="noopener noreferrer">@vista8</a><br />
+            GitHub：<a class="ext" href={site.social.github} target="_blank" rel="noopener noreferrer">joeseesun</a>
+          </p>
+          <p>欢迎就 AI 工作流咨询、内容合作、播客嘉宾邀约联系我。</p>
+          <a class="more" href="/projects">查看全部项目</a>
+        </aside>
+      </div>
+    </div>
+  </section>
+</Layout>

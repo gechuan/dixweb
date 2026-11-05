@@ -1,0 +1,5 @@
+/* System fallbacks for platforms without GenRyuMin / Newsreader webfonts. */
+:root {
+  --serif: GenRyuMin, "Noto Serif SC", "Source Han Serif SC", "Songti SC", "STSong", "SimSun", serif;
+  --latin: "Newsreader", Georgia, "Songti SC", serif;
+}

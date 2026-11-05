@@ -1,0 +1,320 @@
+---
+import Layout from '../layouts/Layout.astro';
+import site from '../data/site.json';
+import home from '../data/home.json';
+import projects from '../data/projects.json';
+import music from '../data/music.json';
+import friends from '../data/friends.json';
+
+const ext = { target: '_blank', rel: 'noopener noreferrer' };
+---
+
+<Layout>
+  <section class="hero">
+    <div class="wrap">
+      <h1 id="hero-title">
+        {home.hero.titleLines.map((line) => (
+          <span class="ln"><span set:html={line} /></span>
+        ))}
+      </h1>
+      <div class="hero-foot">
+        <div>
+          <p class="lede" set:html={home.hero.lede.replace(/<em>/g, '<b>').replace(/<\/em>/g, '</b>')} />
+          <div class="acts">
+            <a class="btn" href={home.hero.primaryCta.href}>
+              {home.hero.primaryCta.label}
+              <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
+            </a>
+            <a class="more" href={home.hero.secondaryCta.href}>{home.hero.secondaryCta.label}</a>
+          </div>
+        </div>
+        <ul class="proof" aria-label="做过的事">
+          {home.hero.proof.map((p) => (
+            <li>
+              <a href={p.href} {...(p.href.startsWith('http') ? ext : {})}>
+                <b>{p.value}</b>
+                <span>{p.label}</span>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="contents" id="notes" aria-label="本期目录">
+    <div class="wrap">
+      <div class="contents-h">
+        <b>本期目录</b>
+        <span class="latin">{new Date().getFullYear()}年{new Date().getMonth() + 1}月{new Date().getDate()}日</span>
+      </div>
+      <div class="cols">
+        {home.cols.map((col) => (
+          <div class="col">
+            <div class="col-h">
+              <b>{col.title}</b>
+              <a class="more" href={col.more.href} {...(col.more.href.startsWith('http') ? ext : {})}>{col.more.label}</a>
+            </div>
+            {col.entries.map((entry) => (
+              <a class="entry" href={entry.url} {...ext}>
+                <div class="m"><span class="latin">{entry.date}</span>{entry.tag}</div>
+                <h3>{entry.title}</h3>
+              </a>
+            ))}
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="podcast" aria-labelledby="podcast-title">
+    <div class="wrap">
+      <div class="sh">
+        <div class="t">
+          <span class="k">{home.podcast.kicker}</span>
+          <h2 id="podcast-title">{home.podcast.titleLines[0]}<br />{home.podcast.titleLines[1]}</h2>
+        </div>
+        <a class="more" href={home.podcast.more.href}>{home.podcast.more.label}</a>
+      </div>
+      <div class="pod">
+        <article class="pod-main">
+          <div class="show">
+            <b class="latin">{home.podcast.latest.no}</b>
+            <span>{home.podcast.latest.show}</span>
+            <span class="latin">{home.podcast.latest.date}</span>
+          </div>
+          <h3><a href={home.podcast.latest.listen[0].href} {...ext}>{home.podcast.latest.title}</a></h3>
+          <p>{home.podcast.latest.summary}</p>
+          <div class="hosts">
+            <span class="av">
+              {home.podcast.latest.hosts.map((h) => (
+                <img src={site.avatar} width="32" height="32" alt={h} title={h} loading="lazy" />
+              ))}
+            </span>
+            <span>{home.podcast.latest.hosts.join('、')}</span>
+          </div>
+          <div class="listen">
+            {home.podcast.latest.listen.map((l, i) => (
+              i === 0
+                ? <a class="btn" href={l.href} {...ext}>{l.label}<svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a>
+                : <a href={l.href} {...ext}>{l.label}</a>
+            ))}
+          </div>
+        </article>
+        <div class="eps">
+          {home.podcast.eps.map((ep) => (
+            <a class="ep" href={ep.href} {...ext}>
+              <span class="n latin">{ep.no}</span>
+              <div>
+                <h4>{ep.title}</h4>
+                <small>{ep.meta}</small>
+              </div>
+            </a>
+          ))}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="projects" aria-labelledby="projects-title">
+    <div class="wrap">
+      <div class="sh">
+        <div class="t">
+          <span class="k">{home.projects.kicker}</span>
+          <h2 id="projects-title">{home.projects.titleLines[0]}<br />{home.projects.titleLines[1]}</h2>
+        </div>
+        <a class="more" href={home.projects.more.href}>{home.projects.more.label}</a>
+      </div>
+      <div class="proj">
+        {projects.featured.map((p) => (
+          <a class="pr" href={p.url} {...ext}>
+            <div class="pt">
+              <h3>{p.name}</h3>
+              {p.tag && <span class="tag">{p.tag}</span>}
+            </div>
+            <p>{p.description}</p>
+            <span class="d">{p.stat}</span>
+            <span class="a" aria-hidden="true">↗</span>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="band" id="music" aria-labelledby="music-title" data-music>
+    <div class="wrap">
+      <div class="cover">
+        <img data-cover src={music.tracks[0].coverUrl} width="240" height="240" alt="" loading="lazy" />
+      </div>
+      <div class="deck">
+        <span class="k">{music.kicker}</span>
+        <h3 id="music-title" data-title>{music.tracks[0].title}</h3>
+        <div class="meta" data-meta>
+          {[music.tracks[0].artist, music.tracks[0].album, music.tracks[0].dateLabel].filter(Boolean).join(' · ')}
+        </div>
+        <p class="lyric" data-lyric aria-live="off">
+          <span data-line>&nbsp;</span>
+          <span class="next" data-next>&nbsp;</span>
+        </p>
+        <div class="seek">
+          <span class="t" data-elapsed>0:00</span>
+          <input type="range" min="0" max="1000" value="0" step="1" data-seek aria-label="播放进度" />
+          <span class="t" data-duration>--:--</span>
+        </div>
+        <div class="ctl">
+          <button type="button" class="ctl-btn" data-shuffle aria-pressed="false" aria-label="随机播放" title="随机播放">
+            <svg viewBox="0 0 24 24"><path d="M16 3h5v5M4 20 21 3M21 16v5h-5M15 15l6 6M4 4l5 5"></path></svg>
+          </button>
+          <button type="button" class="ctl-btn" data-prev aria-label="上一首" title="上一首">
+            <svg viewBox="0 0 24 24"><path d="M19 20 9 12l10-8v16ZM5 19V5"></path></svg>
+          </button>
+          <button type="button" class="play" data-play aria-label="播放">
+            <svg class="tri" viewBox="0 0 24 24"><path d="M8 5v14l11-7Z"></path></svg>
+            <svg class="pause" viewBox="0 0 24 24"><path d="M7 5h3.5v14H7zM13.5 5H17v14h-3.5z"></path></svg>
+          </button>
+          <button type="button" class="ctl-btn" data-next aria-label="下一首" title="下一首">
+            <svg viewBox="0 0 24 24"><path d="m5 4 10 8-10 8V4ZM19 5v14"></path></svg>
+          </button>
+          <a class="ctl-btn" href={music.tracks[0].url} data-link {...ext} aria-label="在乔木音乐打开" title="在乔木音乐打开">
+            <svg viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"></path></svg>
+          </a>
+        </div>
+        <audio data-audio preload="none"></audio>
+      </div>
+      <div class="queue">
+        <div class="queue-h">
+          <b>{home.music.queueTitle}</b>
+          <a class="more" href={home.music.more.href} {...ext}>{home.music.more.label}</a>
+        </div>
+        <ol>
+          {music.tracks.map((track, i) => (
+            <li>
+              <button type="button" data-track={i} aria-current={i === 0 ? 'true' : undefined}>
+                <span class="no latin">{String(i + 1).padStart(2, '0')}</span>
+                <span class="eq" aria-hidden="true"><i></i><i></i><i></i></span>
+                <span class="nm">{track.title}</span>
+                <span class="dt latin">{track.dateLabel.slice(5)}</span>
+              </button>
+            </li>
+          ))}
+        </ol>
+      </div>
+    </div>
+    <script type="application/json" id="music-data" set:html={JSON.stringify(music.tracks)} />
+  </section>
+
+  <section class="sec" id="friends" aria-labelledby="friends-title">
+    <div class="wrap">
+      <div class="sh">
+        <div class="t">
+          <span class="k">{home.friendsSection.kicker}</span>
+          <h2 id="friends-title">{home.friendsSection.titleLines[0]}<br />{home.friendsSection.titleLines[1]}</h2>
+        </div>
+        <a class="more" href={site.social.tuijian} {...ext}>去{site.social.tuijianLabel}看更多</a>
+      </div>
+      <div class="fr" data-friends role="region" aria-roledescription="轮播" aria-label="朋友的产品">
+        <div class="fr-stage">
+          <div class="fr-slides" data-slides aria-live="polite">
+            {friends.map((f, i) => (
+              <article class="fr-slide" data-slide={i} aria-roledescription="幻灯片" aria-label={`${i + 1} / ${friends.length}：${f.name}`} hidden={i !== 0}>
+                <div class="fr-head">
+                  <span class="fr-logo">
+                    {f.logo
+                      ? <img src={f.logo} width="64" height="64" alt="" loading={i === 0 ? 'eager' : 'lazy'} decoding="async" />
+                      : <b>{f.logoText || f.name.slice(0, 1)}</b>}
+                  </span>
+                  <div>
+                    <span class="fr-cat">{f.category}</span>
+                    <h3>{f.name}</h3>
+                  </div>
+                </div>
+                <p class="fr-tag">{f.tagline}</p>
+                <p class="fr-sum">{f.summary}</p>
+                <p class="fr-for"><span>适合</span>{f.audience}</p>
+                <div class="fr-chips">
+                  {f.chips.map((chip) => <span>{chip}</span>)}
+                </div>
+                <a class="btn" href={f.url} {...ext} rel="noopener noreferrer sponsored">
+                  {f.cta}
+                  <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
+                </a>
+              </article>
+            ))}
+          </div>
+          <div class="fr-ctrl">
+            <button type="button" class="fr-btn" data-prev aria-label="上一个">
+              <svg viewBox="0 0 24 24"><path d="M15 6l-6 6 6 6"></path></svg>
+            </button>
+            <button type="button" class="fr-btn" data-next aria-label="下一个">
+              <svg viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"></path></svg>
+            </button>
+            <span class="fr-count latin"><b data-current>01</b> / {friends.length}</span>
+          </div>
+        </div>
+        <div class="fr-wall" role="group" aria-label="选择要看的产品">
+          {friends.map((f, i) => (
+            <button type="button" class="fr-tile" data-go={i} aria-label={f.name} aria-current={i === 0 ? 'true' : undefined}>
+              {f.logo
+                ? <img src={f.logo} width="40" height="40" alt="" loading="lazy" decoding="async" />
+                : <b>{f.logoText || f.name.slice(0, 1)}</b>}
+              <span>{f.name}</span>
+            </button>
+          ))}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="about" aria-labelledby="about-title" style="padding-top:40px">
+    <div class="wrap">
+      <div class="sh">
+        <div class="t">
+          <span class="k">{home.about.kicker}</span>
+          <h2 id="about-title">{home.about.titleLines[0]}<br />{home.about.titleLines[1]}</h2>
+        </div>
+      </div>
+      <div class="about">
+        <div>
+          <div class="prose">
+            {home.about.paragraphs.map((p, i) => (
+              <p class={i === 0 ? 'first' : undefined} set:html={p.replace(/<em>/g, '<span class="em">').replace(/<\/em>/g, '</span>')} />
+            ))}
+          </div>
+          <div class="tags">
+            {home.about.tags.map((tag) => <span>{tag}</span>)}
+          </div>
+          <div class="facts">
+            {home.about.facts.map((f) => (
+              <div><b>{f.value}</b><small>{f.label}</small></div>
+            ))}
+          </div>
+        </div>
+        <aside class="now" id="now">
+          <div class="h">
+            <b>{home.now.title}</b>
+            <small>{home.now.date}</small>
+          </div>
+          <p>{home.now.body}</p>
+          <a class="more" href={home.now.more.href}>{home.now.more.label}</a>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <section class="subscribe" id="subscribe" aria-labelledby="subscribe-title">
+    <div class="wrap">
+      <img class="sub-av" src={site.avatar} width="64" height="64" alt="" loading="lazy" />
+      <h2 id="subscribe-title" set:html={home.subscribe.title.replace(/\n/g, '<br />')} />
+      <p>{home.subscribe.body}</p>
+      <div class="acts">
+        <button type="button" class="btn" data-modal-open={home.subscribe.cta.modal}>
+          {home.subscribe.cta.label}
+          <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
+        </button>
+        {home.subscribe.links.map((l) => (
+          <a class="more" href={l.href} {...ext}>{l.label}</a>
+        ))}
+      </div>
+    </div>
+  </section>
+</Layout>

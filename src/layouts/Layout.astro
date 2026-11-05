@@ -1,0 +1,181 @@
+---
+import '../styles/global.css';
+import '../styles/fonts.css';
+import site from '../data/site.json';
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const { title = site.title, description = site.description } = Astro.props;
+
+const now = new Date();
+const weekdays = ['日', '一', '二', '三', '四', '五', '六'];
+const dateLabel = `${now.getFullYear()}年${now.getMonth() + 1}月${now.getDate()}日星期${weekdays[now.getDay()]}`;
+const isoWeek = (() => {
+  const d = new Date(Date.UTC(now.getFullYear(), now.getMonth(), now.getDate()));
+  const dayNum = d.getUTCDay() || 7;
+  d.setUTCDate(d.getUTCDate() + 4 - dayNum);
+  const yearStart = new Date(Date.UTC(d.getUTCFullYear(), 0, 1));
+  return Math.ceil(((d.getTime() - yearStart.getTime()) / 86400000 + 1) / 7);
+})();
+
+const path = Astro.url.pathname.replace(/\/$/, '') || '/';
+const isCurrent = (href: string) => {
+  const base = href.split('#')[0].replace(/\/$/, '') || '/';
+  if (base === '/') return path === '/';
+  return path === base || path.startsWith(base + '/');
+};
+---
+
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#121212" media="(prefers-color-scheme: dark)" />
+    <meta name="color-scheme" content="light dark" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta name="author" content={site.author} />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="generator" content={Astro.generator} />
+    <link rel="icon" href={site.avatar} />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+    <script is:inline>
+      // Apply the saved theme before first paint so there is no flash.
+      try {
+        const t = localStorage.getItem('theme');
+        if (t === 'dark' || t === 'light') document.documentElement.dataset.theme = t;
+      } catch {}
+      document.documentElement.classList.add('js');
+    </script>
+    {site.umami.src && site.umami.websiteId && (
+      <script is:inline defer src={site.umami.src} data-website-id={site.umami.websiteId}></script>
+    )}
+  </head>
+  <body
+    data-qr-follow="/assets/qr-follow.png"
+    data-qr-reward="/assets/qr-reward.png"
+    data-github={site.social.github}
+    data-x={site.social.x}
+  >
+    <a class="skip-link" href="#main">跳到主要内容</a>
+
+    <header class="mast" id="mast">
+      <div class="wrap">
+        <div class="mast-date">
+          <span>{dateLabel}</span>
+          <span class="latin">Week {isoWeek}</span>
+          <a class="ext" href={site.dateline.episodeUrl} target="_blank" rel="noopener noreferrer">{site.dateline.episodeLabel}</a>
+        </div>
+        <a class="brand" href="/" aria-label={`${site.author}首页`}>
+          <img class="avatar" src={site.avatar} width="48" height="48" alt="" />
+          <span class="wm">{site.brand}</span>
+        </a>
+        <div class="tools">
+          <button class="icon-btn" type="button" data-modal-open="reward" aria-label="打赏支持" title="打赏支持">
+            <svg viewBox="0 0 24 24"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10Z"></path></svg>
+          </button>
+          <a class="icon-btn" href={site.social.github} target="_blank" rel="noopener noreferrer" aria-label="GitHub" title="GitHub">
+            <svg viewBox="0 0 24 24"><path d="M9 19c-4 1.4-4-2-6-2.5M15 21v-3.5a3 3 0 0 0-.9-2.4c2.9-.3 6-1.4 6-6.4a5 5 0 0 0-1.4-3.5 4.6 4.6 0 0 0-.1-3.5s-1.1-.3-3.6 1.4a12.3 12.3 0 0 0-6.4 0C6.1 1.4 5 1.7 5 1.7a4.6 4.6 0 0 0-.1 3.5 5 5 0 0 0-1.4 3.5c0 5 3.1 6.1 6 6.4a3 3 0 0 0-.9 2.4V21"></path></svg>
+          </a>
+          <button class="icon-btn" type="button" data-theme-toggle aria-label="切换深色模式" title="切换深色模式">
+            <svg class="moon" viewBox="0 0 24 24"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5Z"></path></svg>
+            <svg class="sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path></svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <div class="navbar" id="navbar">
+      <div class="wrap">
+        <a class="mini" href="/" tabindex="-1" aria-hidden="true">
+          <img src={site.avatar} width="28" height="28" alt="" />{site.brand}
+        </a>
+        <nav class="nav" aria-label="主导航">
+          {site.nav.map((item) => (
+            <a href={item.href} aria-current={isCurrent(item.href) && !item.href.includes('#') ? 'page' : undefined}>
+              {item.label}
+            </a>
+          ))}
+        </nav>
+        <button class="sub-btn" type="button" data-modal-open="follow">订阅</button>
+      </div>
+    </div>
+
+    <main id="main">
+      <slot />
+    </main>
+
+    <footer class="foot">
+      <div class="wrap">
+        <div class="colo">
+          <b><img src={site.avatar} width="28" height="28" alt="" loading="lazy" />{site.brand}</b>
+          {site.tagline}
+        </div>
+        <div>
+          <h5>内容</h5>
+          <ul>
+            <li><a href={site.social.blog} target="_blank" rel="noopener noreferrer">{site.social.blogLabel}</a></li>
+            <li><a href={site.social.airss} target="_blank" rel="noopener noreferrer">{site.social.airssLabel}</a></li>
+            <li><a href="/podcast">播客</a></li>
+            <li><a href="/notes">随想</a> · <a href={site.social.rss} aria-label="随想 RSS 订阅">RSS</a></li>
+            <li><a href="/uses">工具箱</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5>项目</h5>
+          <ul>
+            <li><a href="/projects">全部项目</a></li>
+            <li><a href={site.social.tuijian} target="_blank" rel="noopener noreferrer">{site.social.tuijianLabel}</a></li>
+            <li><a href={site.social.music} target="_blank" rel="noopener noreferrer">{site.social.musicLabel}</a></li>
+            <li><a href={site.footer.repos} target="_blank" rel="noopener noreferrer">开源仓库</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5>关于</h5>
+          <ul>
+            <li><a href="/about">关于我</a></li>
+            <li><a href="/now">现在在做</a></li>
+            <li><button type="button" data-modal-open="follow">公众号「向阳乔木推荐看」</button></li>
+            <li><button type="button" data-modal-open="reward">打赏支持</button></li>
+            <li><a href={site.social.x} target="_blank" rel="noopener noreferrer">X @vista8</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="wrap links" aria-label="友情链接">
+        <h5>友情链接</h5>
+        <ul>
+          {site.footer.friends.map((f) => (
+            <li><a href={f.href} target="_blank" rel="noopener">{f.label}</a></li>
+          ))}
+        </ul>
+      </div>
+      <div class="foot-b">
+        <div class="wrap">
+          <span>{site.footer.copyright}</span>
+          <a href={site.footer.coloUrl} target="_blank" rel="noopener noreferrer" title="阅读 Web 2.0 Next 宣言">{site.footer.colo}</a>
+          <span>{site.role}</span>
+        </div>
+      </div>
+    </footer>
+
+    <div class="modal-layer" data-modal-layer hidden>
+      <div class="modal-backdrop" data-modal-close></div>
+      <section class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modal-title" tabindex="-1">
+        <button class="modal-close" type="button" data-modal-close aria-label="关闭">
+          <svg viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"></path></svg>
+        </button>
+        <div data-modal-content></div>
+      </section>
+    </div>
+
+    <script>
+      import { initSite } from '../scripts/site';
+      initSite();
+    </script>
+  </body>
+</html>

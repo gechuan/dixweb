@@ -1,0 +1,63 @@
+---
+import Layout from '../layouts/Layout.astro';
+import site from '../data/site.json';
+import projects from '../data/projects.json';
+
+const groups = projects.groups;
+const filters = [
+  { key: 'all', label: '全部', count: groups.reduce((a, g) => a + g.items.length, 0) },
+  ...groups.map((g) => ({ key: g.id, label: g.title, count: g.items.length })),
+];
+const stats = `${groups.reduce((a, g) => a + g.items.length, 0)} 个项目 · ${groups.filter((g) => g.id !== 'obsidian' && g.id !== 'chrome' && g.id !== 'skills' && g.id !== 'dev').length} 组分类`;
+const ext = { target: '_blank', rel: 'noopener noreferrer' };
+---
+
+<Layout title={`项目 · ${site.brand}`} description="我每天在用的，和我做出来的。这些项目都来自真实需求。能开源就开源，能放出来就放出来。">
+  <header class="page-head">
+    <div class="wrap">
+      <div class="sec-eyebrow"><span class="dot"></span>PROJECTS · 项目</div>
+      <h1>我每天在用的，和我做出来的</h1>
+      <div class="prose page-intro"><p>这些项目都来自真实需求。能开源就开源，能放出来就放出来。</p></div>
+      <p class="page-stats">
+        <span><b data-project-count>{filters[0].count}</b> 个项目</span>
+        <span>{stats}</span>
+      </p>
+    </div>
+  </header>
+  <section class="page-sec">
+    <div class="wrap">
+      <div class="filter-bar" data-project-filters role="toolbar" aria-label="按类别筛选">
+        {filters.map((f, i) => (
+          <button type="button" class="chip" data-filter={f.key} aria-pressed={i === 0 ? 'true' : 'false'}>
+            {f.label} <span>{f.count}</span>
+          </button>
+        ))}
+      </div>
+      <div data-project-grid>
+        {groups.map((group) => (
+          <section class="pgroup" id={group.id} data-project-group aria-labelledby={`g-${group.id}`}>
+            <header class="pgroup-h">
+              <h2 id={`g-${group.id}`}>{group.title}</h2>
+              <span class="latin">{group.items.length}</span>
+              {group.downloads && <span class="pgroup-dl">累计下载 <b class="latin">{group.downloads}</b></span>}
+            </header>
+            {group.note && <p class="pgroup-note">{group.note}</p>}
+            <div class="proj">
+              {group.items.map((item) => (
+                <a class="pr" href={item.url} {...ext} data-category={item.category}>
+                  <div class="pt">
+                    <h3>{item.name}</h3>
+                    {item.badge && <span class="tag">{item.badge}</span>}
+                  </div>
+                  <p>{item.description}</p>
+                  {item.stat && <span class="d">{item.stat}</span>}
+                  <span class="a" aria-hidden="true">↗</span>
+                </a>
+              ))}
+            </div>
+          </section>
+        ))}
+      </div>
+    </div>
+  </section>
+</Layout>

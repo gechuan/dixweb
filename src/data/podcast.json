@@ -1,0 +1,327 @@
+{
+  "nextToken": {
+    "eyebrow": "WEEKLY · 每周更新",
+    "name": "Next Token｜词元之外",
+    "description": "一档关注 AI 技术、产品、创业与创作的中文视频播客。主理人：杨攀、歸藏、橘子、向阳乔木。每期都有完整文字稿。",
+    "platforms": [
+      {
+        "label": "小宇宙",
+        "url": "https://www.xiaoyuzhoufm.com/podcast/6a9956fafbb9512fc83ddbb5"
+      },
+      {
+        "label": "Apple 播客",
+        "url": "https://podcasts.apple.com/us/podcast/id6809305832"
+      },
+      {
+        "label": "Spotify",
+        "url": "https://open.spotify.com/show/2xCECrt8be0mcGmnlpL9Au"
+      },
+      {
+        "label": "YouTube",
+        "url": "https://www.youtube.com/channel/UC_9pr_usdNG29RauPFwIFQw"
+      },
+      {
+        "label": "B 站",
+        "url": "https://space.bilibili.com/3745066753461159"
+      },
+      {
+        "label": "音频 RSS",
+        "url": "https://anchor.fm/s/116d068f0/podcast/rss"
+      }
+    ],
+    "moreLinks": [
+      {
+        "label": "节目官网与文字稿",
+        "url": "https://nexttoken.tv/"
+      },
+      {
+        "label": "节目 RSS",
+        "url": "https://nexttoken.tv/weekly/rss.xml"
+      }
+    ]
+  },
+  "futureSilicon": {
+    "eyebrow": "WAYTOAGI · 双周更新",
+    "name": "未来硅世界",
+    "description": "每双周的周六，向阳乔木、姚金刚、尼克西、元子和朋友围炉夜话，带着行业和故事聊 AI。",
+    "platforms": [
+      {
+        "label": "往期记录",
+        "url": "https://waytoagi.feishu.cn/wiki/VQmCwiXEGiNNIokmjO8ciaqfn6d"
+      },
+      {
+        "label": "直播间",
+        "url": "https://vc.feishu.cn/j/108720872"
+      }
+    ],
+    "episode": {
+      "url": "https://blog.qiaomu.ai/big-tech-to-indie-developer",
+      "date": "2026年7月4日",
+      "meta": [
+        "第 18 期",
+        "嘉宾 王启源"
+      ],
+      "title": "大厂那套方法论，出来后反而没用",
+      "summary": "前微软 × 字节工程师转型独立开发：人机分工反转的一年，独立开发者只剩下 1% 的活，那 1% 是什么。"
+    }
+  },
+  "digests": {
+    "kicker": "Digests · 中文精读站",
+    "title": "把好播客读透",
+    "groups": [
+      {
+        "label": "海外播客",
+        "items": [
+          {
+            "url": "https://lex.qiaomu.ai/",
+            "name": "Lex Fridman 播客中文站",
+            "badge": "网站",
+            "description": "506 期全收录：官方音频、视频、双语文稿和中文精读。",
+            "domain": "lex.qiaomu.ai"
+          },
+          {
+            "url": "https://allin.qiaomu.ai/",
+            "name": "All-In 播客中文版",
+            "badge": "网站",
+            "description": "硅谷四位投资人的每周圆桌，全部单集的音频、视频、文稿和中文精读。",
+            "domain": "allin.qiaomu.ai"
+          },
+          {
+            "url": "https://cogrev.qiaomu.ai/",
+            "name": "Cognitive Revolution 中文精读",
+            "badge": "网站",
+            "description": "Nathan Labenz 的 AI 深度访谈，全部 389 期中文导航与精读。",
+            "domain": "cogrev.qiaomu.ai"
+          },
+          {
+            "url": "https://nopriors.qiaomu.ai/",
+            "name": "No Priors 中文精读",
+            "badge": "网站",
+            "description": "Sarah Guo 与 Elad Gil 的 AI 创投播客，全部 185 期中文精读。",
+            "domain": "nopriors.qiaomu.ai"
+          },
+          {
+            "url": "https://trainingdata.qiaomu.ai/",
+            "name": "Training Data 中文精读",
+            "badge": "网站",
+            "description": "红杉资本的 AI 对话，全部 112 期中文精读。",
+            "domain": "trainingdata.qiaomu.ai"
+          },
+          {
+            "url": "https://unsupervised.qiaomu.ai/",
+            "name": "Unsupervised Learning 中文精读",
+            "badge": "网站",
+            "description": "Jacob Effron 的 AI 研究者访谈，全部 103 期中文精读。",
+            "domain": "unsupervised.qiaomu.ai"
+          },
+          {
+            "url": "https://youtube.qiaomu.ai/",
+            "name": "AI 播客索引",
+            "badge": "网站",
+            "description": "YouTube 上值得听的 AI 播客合集：中文简介、文字稿状态和总结入口。",
+            "domain": "youtube.qiaomu.ai"
+          }
+        ]
+      },
+      {
+        "label": "中文播客",
+        "items": [
+          {
+            "url": "https://zhangxiaojun.qiaomu.ai/",
+            "name": "张小珺商业访谈录 精读",
+            "badge": "网站",
+            "description": "2 到 7 小时的长对话，聚焦人物表达与高密度前沿信息，15 篇精读附音频。",
+            "domain": "zhangxiaojun.qiaomu.ai"
+          },
+          {
+            "url": "https://42zhangjing.qiaomu.ai/",
+            "name": "42章经 精读",
+            "badge": "网站",
+            "description": "曲凯和聪明人聊创业与 AI 认知，16 篇精读附音频。",
+            "domain": "42zhangjing.qiaomu.ai"
+          },
+          {
+            "url": "https://latetalk.qiaomu.ai/",
+            "name": "晚点聊 LateTalk 精读",
+            "badge": "网站",
+            "description": "《晚点》程曼祺等人的一手科技访谈，15 篇精读附音频。",
+            "domain": "latetalk.qiaomu.ai"
+          },
+          {
+            "url": "https://crossing.qiaomu.ai/",
+            "name": "十字路口 Crossing 精读",
+            "badge": "网站",
+            "description": "Koji 和 Ronghui 聊 AI 给各行各业带来的变革，15 篇精读附音频。",
+            "domain": "crossing.qiaomu.ai"
+          },
+          {
+            "url": "https://aialchemy.qiaomu.ai/",
+            "name": "AI 炼金术 精读",
+            "badge": "网站",
+            "description": "徐文浩和任鑫聊 AI 的本质变化与商业机会，15 篇精读附音频。",
+            "domain": "aialchemy.qiaomu.ai"
+          },
+          {
+            "url": "https://mianji.qiaomu.ai/",
+            "name": "面基 精读",
+            "badge": "网站",
+            "description": "每个话题都请一线经验者来聊，15 篇精读附音频。",
+            "domain": "mianji.qiaomu.ai"
+          },
+          {
+            "url": "https://35huan.qiaomu.ai/",
+            "name": "三五环 精读",
+            "badge": "网站",
+            "description": "刘飞和城市里的局内人聊天，15 篇精读附音频。",
+            "domain": "35huan.qiaomu.ai"
+          },
+          {
+            "url": "https://zhixing.qiaomu.ai/",
+            "name": "知行小酒馆 精读",
+            "badge": "网站",
+            "description": "有知有行出品的投资与生活节目，15 篇精读附音频。",
+            "domain": "zhixing.qiaomu.ai"
+          }
+        ]
+      }
+    ]
+  },
+  "episodes": [
+    {
+      "show": "next-token",
+      "date": "2026/11/02",
+      "meta": "第 8 期",
+      "title": "A 社上市，泡沫破裂前夜？AI 短剧之外，钱和流量都去哪儿了？",
+      "summary": "从 AI 公司的估值与融资，到 AI 搜索如何分配流量，再到短剧创作、科学研究和双十一购物车：四位主理人聊泡沫、价值、创意与信任。",
+      "url": "https://nexttoken.tv/weekly/008"
+    },
+    {
+      "show": "next-token",
+      "date": "2026/10/26",
+      "meta": "第 7 期",
+      "title": "DeepSeek 极速狂飙，AI 游戏新机会，AI 改造老家电",
+      "summary": "从 DeepSeek 提速到 AI 游戏，从旧电视改造到语音小硬件：四位主理人聊实际动手体验、Agent 工作流与安全边界。",
+      "url": "https://nexttoken.tv/weekly/007"
+    },
+    {
+      "show": "next-token",
+      "date": "2026/10/19",
+      "meta": "第 6 期",
+      "title": "AI 逆向挡不住，Grok Bot、Muse 用上头：干活还是过家家？",
+      "summary": "让 AI 给鼠标写一个 macOS 驱动，把手机录好的视频交给 Bot 剪辑、配素材、做封面，再拉几个影视角色组成自己的“AI 公司”——这一期，我们继续聊 Personal Agent，不过这次有了更多真正用起来的故事…",
+      "url": "https://nexttoken.tv/weekly/006"
+    },
+    {
+      "show": "next-token",
+      "date": "2026/10/08",
+      "meta": "第 5 期",
+      "title": "国庆补课：PA 大战白热化；游戏、软件、硬件，一切都将开源？",
+      "summary": "国庆假期，Personal Agent 成了我们的共同话题。我们从 Dots 放进 Codex 后的上手体验、记忆与云电脑权限聊起，讨论 Agent 应该是助理还是数字分身；再聊 Instinct 的订房和商旅模式，以及…",
+      "url": "https://nexttoken.tv/weekly/005"
+    },
+    {
+      "show": "next-token",
+      "date": "2026/09/27",
+      "meta": "第 4 期",
+      "title": "Opus 5.5 越界，Muse 爆火，以及中国到底有没有 AI 产品经理？",
+      "summary": "模型开始抢剪辑师的活，Agent 开始替普通人办事，留给产品经理的工作到底是什么？从 Opus 5.5 的创作能力、Muse 的日常体验，聊到创业、分发与信任。",
+      "url": "https://nexttoken.tv/weekly/004"
+    },
+    {
+      "show": "next-token",
+      "date": "2026/09/21",
+      "meta": "第 3 期",
+      "title": "火线解读 Jev 新范式；用 Agent 还得买带鱼屏？",
+      "summary": "从 Jev 的高频判断，聊到多模态、小模型和代码配乐，再到 Agent 的屏幕、硬盘、账号与数据边界。工具越能干，真实工作现场的新问题越具体。",
+      "url": "https://nexttoken.tv/weekly/003"
+    },
+    {
+      "show": "next-token",
+      "date": "2026/09/13",
+      "meta": "第 2 期",
+      "title": "iPhone Duo 发布，Astra 会用电脑就算 AGI 吗？",
+      "summary": "会用电脑、能完成任务，就算 AGI 吗？从真实工作流到折叠屏交互，四位主理人聊模型能力、人的判断与创作实践。",
+      "url": "https://nexttoken.tv/weekly/002"
+    },
+    {
+      "show": "next-token",
+      "date": "2026/09/04",
+      "meta": "第 1 期",
+      "title": "大模型进入“斩杀线”大战，Token 就是新货币",
+      "summary": "从 GLM-5.3 Flash、MiniMax H3，到 WorkBuddy、AI 硬件与 Hugging Face 收购话题；四位联合主理人沿着一周新闻，聊模型成本、原厂 Agent、AI 应用回暖，以及每个人都必须闭…",
+      "url": "https://nexttoken.tv/weekly/001"
+    },
+    {
+      "show": "future-silicon",
+      "date": "2026年7月4日",
+      "meta": "第 18 期 嘉宾 王启源",
+      "title": "大厂那套方法论，出来后反而没用",
+      "summary": "前微软 × 字节工程师转型独立开发：人机分工反转的一年，独立开发者只剩下 1% 的活，那 1% 是什么。",
+      "url": "https://blog.qiaomu.ai/big-tech-to-indie-developer"
+    },
+    {
+      "show": "",
+      "date": "2026/10/08",
+      "meta": "",
+      "title": "每天涨10%、没花一分钱营销：这个只有短信入口的AI助理，一年交易额快到10亿美元",
+      "summary": "Instinct 这家公司成立大约一年，没有App，没有网页端，用户靠发短信、打电话、发邮件跟它交流。它的邀请码每人只有5个，二手平台上有人以300美元的价格倒卖。 创始人透露，平台年交易额已经逼近10亿美元，其中一半是…",
+      "url": "https://blog.qiaomu.ai/instinct-ai-assistant-sms-growth"
+    },
+    {
+      "show": "",
+      "date": "2026/08/06",
+      "meta": "",
+      "title": "MIT博士“叛逃“物理系：我要用物理学重写AI的底层逻辑",
+      "summary": "https://www.xiaoyuzhoufm.com/episode/6a69b07eb581962ce2bd4d97 2024 年 4 月，一篇挂在 arXiv 上的论文在技术社群里炸开了锅。 有人说，统治深度学习…",
+      "url": "https://blog.qiaomu.ai/physics-rewriting-ai"
+    },
+    {
+      "show": "",
+      "date": "2026/08/05",
+      "meta": "",
+      "title": "CEO上个月在 AI 上花了 1.3 万美元，然后说「自动化是个谎言」",
+      "summary": "Dan Shipper 上个月的 Codex 账单是 13,000 美元，他的 COO 给了他一个白眼。 但他不打算减少用量。 Every 的 Slack 里现在有 20 个 agent 和 20 个人类，一起工作。 代…",
+      "url": "https://blog.qiaomu.ai/automation-is-a-lie"
+    },
+    {
+      "show": "",
+      "date": "2026/08/04",
+      "meta": "",
+      "title": "vLLM 背后的人：一个开源项目如何长成一家公司",
+      "summary": "这期商业访谈录也超级精彩，了解到很多关于 Deepseek 的厉害之处。 小宇宙博客地址： https://www.xiaoyuzhoufm.com/episode/6a66ed17a3fec224d5a3f744 AI…",
+      "url": "https://blog.qiaomu.ai/vllm-open-source-company"
+    },
+    {
+      "show": "",
+      "date": "2026/07/31",
+      "meta": "",
+      "title": "一个产品经理读完200篇AI论文后，看见了别人看不见的边界",
+      "summary": "张小珺的播客都很优秀，但我经常会回听这一期播客，对于理解大模型发展很有帮助，常听常新。 https://www.xiaoyuzhoufm.com/episode/68ff9d1b083a71a4eb86c52c 谢青池在…",
+      "url": "https://blog.qiaomu.ai/product-manager-ai-papers"
+    },
+    {
+      "show": "",
+      "date": "2026/07/04",
+      "meta": "",
+      "title": "人机分工反转的一年：独立开发者只剩下 1% 的活，那 1% 是什么",
+      "summary": "今天邀请我的前同事、好友王启源参加「未来硅世界」第十八期的直播。 直播回放在这里： https://waytoagi.feishu.cn/minutes/obcnmd5jbdj54q46193458vu 让 Claude…",
+      "url": "https://blog.qiaomu.ai/big-tech-to-indie-developer"
+    },
+    {
+      "show": "",
+      "date": "2026/07/01",
+      "meta": "",
+      "title": "从伽罗瓦到夸克：需要200年验证的想法，AI能产生吗？",
+      "summary": "一个 19 岁的少年，在监狱里写下了一套没人看懂的数学笔记。 他把笔记托付给朋友，请他转交给当时最伟大的数学家高斯，朋友尽力了，但没有成功。 这个少年在一场决斗中死去，年仅 20 岁。 又过了二十年，一位叫刘维尔的数学家…",
+      "url": "https://blog.qiaomu.ai/ai-generative-theory-from-galois-to-quarks"
+    },
+    {
+      "show": "",
+      "date": "2026/06/30",
+      "meta": "",
+      "title": "创业动力耗尽之后，靠什么撑下去？",
+      "summary": "钱，是最好用的启动燃料，也是最先烧完的那种。 Ali Abdaal 在一次活动上被问到：怎么在失去动力之后，还能让自己继续做下去？ 他的回答，出乎意料地朴素。 钱和乐趣，都是短效燃料 创业初期，钱是最直接的动力。 第一笔…",
+      "url": "https://blog.qiaomu.ai/what-sustains-you-after-entrepreneurial-burnout"
+    }
+  ]
+}

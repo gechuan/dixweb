@@ -1,0 +1,52 @@
+---
+import Layout from '../layouts/Layout.astro';
+import site from '../data/site.json';
+import now from '../data/now.json';
+
+const ext = { target: '_blank', rel: 'noopener noreferrer' };
+---
+
+<Layout title={`现在 · ${site.brand}`} description={now.lede.replace(/<[^>]*>/g, '')}>
+  <header class="page-head">
+    <div class="wrap">
+      <div class="sec-eyebrow"><span class="dot"></span>NOW · 现在</div>
+      <h1>最近，我在做这些</h1>
+      <p class="page-updated">更新于 {now.updated}</p>
+      <div class="prose page-intro"><p>{now.lede}</p></div>
+    </div>
+  </header>
+  <section class="sec page-sec" id="today">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="sec-eyebrow"><span class="dot"></span>TODAY · 今天做了啥</div>
+        <h2>{now.today.subtitle}</h2>
+        <p class="page-updated">{now.today.date}</p>
+      </div>
+      <div class="prose">
+        {now.today.paragraphs.map((p) => <p>{p}</p>)}
+      </div>
+      <div class="page-actions">
+        {now.today.links.map((l) => (
+          <a class="btn-primary" href={l.href} {...(l.href.startsWith('http') ? ext : {})}>
+            {l.label}
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+  <section class="page-sec">
+    <div class="wrap">
+      {now.items.map((item) => (
+        <div class="pgroup">
+          <header class="pgroup-h">
+            <h2>{item.title}</h2>
+          </header>
+          <div class="prose page-intro">
+            <p set:html={`${item.text}${item.href ? ` <a href="${item.href}">${item.linkLabel}</a>。` : ''}`} />
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+</Layout>

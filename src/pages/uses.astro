@@ -1,0 +1,42 @@
+---
+import Layout from '../layouts/Layout.astro';
+import site from '../data/site.json';
+import uses from '../data/uses.json';
+---
+
+<Layout title={`工具箱 · ${site.brand}`} description={uses.lede}>
+  <header class="page-head">
+    <div class="wrap">
+      <div class="sec-eyebrow"><span class="dot"></span>{uses.eyebrow}</div>
+      <h1>{uses.title}</h1>
+      <div class="prose page-intro"><p>{uses.lede}</p></div>
+      <p class="page-updated">更新于 {uses.updated}</p>
+    </div>
+  </header>
+  <section class="page-sec">
+    <div class="wrap">
+      <div class="uses-groups">
+        {uses.groups.map((group) => (
+          <div class="uses-group">
+            <h2>{group.title}</h2>
+            <ul>
+              {group.items.map((item) => (
+                <li>
+                  <a href={item.url} target="_blank" rel="noopener noreferrer">{item.name}</a>
+                  <p>{item.desc}</p>
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))}
+      </div>
+      <div class="page-actions">
+        <a class="btn-primary" href={uses.more.href} target="_blank" rel="noopener noreferrer">
+          {uses.more.label}
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
+        </a>
+        <span class="page-lede">{uses.more.text}</span>
+      </div>
+    </div>
+  </section>
+</Layout>

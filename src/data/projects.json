@@ -1,0 +1,942 @@
+{
+  "featured": [
+    {
+      "name": "乔木 AI 资讯",
+      "tag": "阅读与资讯",
+      "description": "免费 AI 资讯阅读工具，汇集十多个 AI Newsletter、国内外知名 AI 播客与优秀公众号，英文内容转成中文；支持网页、Obsidian 和 DeepSeek Harness。",
+      "url": "https://airss.qiaomu.ai/",
+      "badge": "",
+      "stat": "airss.qiaomu.ai"
+    },
+    {
+      "name": "乔木剪藏",
+      "tag": "Chrome 插件",
+      "description": "Chrome 插件：读文章、看视频、听播客，边读边问边记，把摘录和自己的理解存进 Obsidian。",
+      "url": "https://github.com/joeseesun/qiaomu-clipper",
+      "badge": "",
+      "stat": "★ 409"
+    },
+    {
+      "name": "乔木 X 助手",
+      "tag": "Chrome 插件",
+      "description": "Chrome 插件：少刷噪音，多写想法。X 回复整理、书签、AI 写作与文章草稿。",
+      "url": "https://github.com/joeseesun/qiaomu-x-helper",
+      "badge": "",
+      "stat": "★ 32"
+    },
+    {
+      "name": "乔木快捷提示词",
+      "tag": "Chrome 插件",
+      "description": "Chrome 插件：侧边栏管理提示词，输入快捷短语自动展开，内置中文提示词库。",
+      "url": "https://chromewebstore.google.com/",
+      "badge": "",
+      "stat": "Chrome 商店"
+    },
+    {
+      "name": "黑客书架 · HackerBooks",
+      "tag": "阅读与资讯",
+      "description": "从 Hacker News 多年讨论中发现值得读的书，按提及与推荐探索书单、作者和阅读方向。",
+      "url": "https://hackerbooks.qiaomu.ai/",
+      "badge": "",
+      "stat": "hackerbooks.qiaomu.ai"
+    },
+    {
+      "name": "乔木阅读 · Qiaomu Reader",
+      "tag": "Obsidian 插件",
+      "description": "在 Obsidian 与 DeepSeek Harness 中读书、划线、AI 伴读，把理解留成可回溯的 Markdown 笔记。官网提供两个版本的功能介绍与安装指南。",
+      "url": "https://reader.qiaomu.ai/",
+      "badge": "",
+      "stat": "★ 163"
+    },
+    {
+      "name": "乔木闪记 · Jot",
+      "tag": "Obsidian 插件",
+      "description": "Mac 与 Windows 速记工具：一个快捷键，把想法、选中文字、截图和文件收进 Obsidian 今日日记，自动带上来源。免费开源。",
+      "url": "https://jot.qiaomu.ai/",
+      "badge": "",
+      "stat": "★ 44"
+    }
+  ],
+  "groups": [
+    {
+      "id": "obsidian",
+      "title": "Obsidian 插件",
+      "note": "已上架 Obsidian 社区插件市场，搜索名称即可安装。下载量来自 Obsidian 官方统计，每小时更新。",
+      "downloads": "31,161",
+      "items": [
+        {
+          "name": "乔木阅读 · Qiaomu Reader",
+          "category": "obsidian",
+          "description": "在 Obsidian 与 DeepSeek Harness 中读书、划线、AI 伴读，把理解留成可回溯的 Markdown 笔记。官网提供两个版本的功能介绍与安装指南。",
+          "badge": "开源",
+          "url": "https://reader.qiaomu.ai/",
+          "stat": "↓ 10,495"
+        },
+        {
+          "name": "Qiaomu AI RSS",
+          "category": "obsidian",
+          "description": "在 Obsidian 里读 RSS 与本地 Markdown，中文 AI 改写与翻译，一键存成笔记。",
+          "badge": "开源",
+          "url": "https://github.com/joeseesun/qiaomu-ai-rss",
+          "stat": "↓ 9,126"
+        },
+        {
+          "name": "Qiaomu Home",
+          "category": "obsidian",
+          "description": "安静的起始页：搜索、新建，接着读、接着听、接着写。",
+          "badge": "开源",
+          "url": "https://github.com/joeseesun/qiaomu-home",
+          "stat": "↓ 4,326"
+        },
+        {
+          "name": "Qiaomu Agent",
+          "category": "obsidian",
+          "description": "用本地 AI Agent 或模型 API 和你的笔记库对话。",
+          "badge": "开源",
+          "url": "https://github.com/joeseesun/qiaomu-agent",
+          "stat": "↓ 2,892"
+        },
+        {
+          "name": "Qiaomu Radio",
+          "category": "obsidian",
+          "description": "边读边写边听：发现并播放全球直播电台。",
+          "badge": "开源",
+          "url": "https://github.com/joeseesun/qiaomu-radio",
+          "stat": "↓ 1,876"
+        },
+        {
+          "name": "Qiaomu Design",
+          "category": "obsidian",
+          "description": "用 AI 生图、图库和自由画布做可编辑的封面与海报。",
+          "badge": "开源",
+          "url": "https://github.com/joeseesun/qiaomu-cover-design",
+          "stat": "↓ 1,106"
+        },
+        {
+          "name": "Qiaomu UI Learn",
+          "category": "obsidian",
+          "description": "学 UI 设计：13,500+ 真实界面、双语 UI 词典和风格库。",
+          "badge": "开源",
+          "url": "https://github.com/joeseesun/qiaomu-ui-learn",
+          "stat": "↓ 567"
+        },
+        {
+          "name": "Qiaomu Publish",
+          "category": "obsidian",
+          "description": "在 Obsidian 写好，预览公众号排版、做封面，一键发到草稿箱。",
+          "badge": "开源",
+          "url": "https://github.com/joeseesun/qiaomu-publish",
+          "stat": "↓ 541"
+        },
+        {
+          "name": "Qiaomu Audio",
+          "category": "obsidian",
+          "description": "把笔记导出成音频或带字幕视频，光标处朗读，还能语音输入。",
+          "badge": "开源",
+          "url": "https://github.com/joeseesun/qiaomu-audio",
+          "stat": "↓ 232"
+        },
+        {
+          "name": "乔木闪记 · Jot",
+          "category": "obsidian",
+          "description": "Mac 与 Windows 速记工具：一个快捷键，把想法、选中文字、截图和文件收进 Obsidian 今日日记，自动带上来源。免费开源。",
+          "badge": "开源",
+          "url": "https://jot.qiaomu.ai/",
+          "stat": "★ 44"
+        }
+      ]
+    },
+    {
+      "id": "chrome",
+      "title": "Chrome 插件",
+      "note": "浏览器里的小工具，安装包见各自仓库的 Releases。",
+      "downloads": "",
+      "items": [
+        {
+          "name": "乔木剪藏",
+          "category": "chrome",
+          "description": "Chrome 插件：读文章、看视频、听播客，边读边问边记，把摘录和自己的理解存进 Obsidian。",
+          "badge": "Chrome 插件",
+          "url": "https://clipper.qiaomu.ai/",
+          "stat": "★ 409"
+        },
+        {
+          "name": "乔木 X 助手",
+          "category": "chrome",
+          "description": "Chrome 插件：少刷噪音，多写想法。X 回复整理、书签、AI 写作与文章草稿。",
+          "badge": "Chrome 插件",
+          "url": "https://xhelper.qiaomu.ai/",
+          "stat": "★ 32"
+        },
+        {
+          "name": "乔木快捷提示词",
+          "category": "chrome",
+          "description": "Chrome 插件：侧边栏管理提示词，输入快捷短语自动展开，内置中文提示词库。",
+          "badge": "Chrome 插件",
+          "url": "https://chromewebstore.google.com/detail/%E4%B9%94%E6%9C%A8%E5%BF%AB%E6%8D%B7%E6%8F%90%E7%A4%BA%E8%AF%8D/ndfmbdiaclladmoeifbhlkacllmfhjej",
+          "stat": "Chrome 商店"
+        }
+      ]
+    },
+    {
+      "id": "reading",
+      "title": "阅读与资讯",
+      "note": "",
+      "downloads": "",
+      "items": [
+        {
+          "name": "乔木 AI 资讯",
+          "category": "reading",
+          "description": "免费 AI 资讯阅读工具，汇集十多个 AI Newsletter、国内外知名 AI 播客与优秀公众号，英文内容转成中文；支持网页、Obsidian 和 DeepSeek Harness。",
+          "badge": "网站",
+          "url": "https://airss.qiaomu.ai/",
+          "stat": "airss.qiaomu.ai"
+        },
+        {
+          "name": "黑客书架 · HackerBooks",
+          "category": "reading",
+          "description": "从 Hacker News 多年讨论中发现值得读的书，按提及与推荐探索书单、作者和阅读方向。",
+          "badge": "网站",
+          "url": "https://hackerbooks.qiaomu.ai/",
+          "stat": "hackerbooks.qiaomu.ai"
+        },
+        {
+          "name": "乔木 HN 速读",
+          "category": "reading",
+          "description": "给中文开发者和产品人的 Hacker News 速读：精选、升温榜和评论摘要。",
+          "badge": "网站",
+          "url": "https://hn.qiaomu.ai/",
+          "stat": "hn.qiaomu.ai"
+        },
+        {
+          "name": "乔木 arXiv",
+          "category": "reading",
+          "description": "AI 每日精选论文，中文解读、全文搜索、一键读原文。",
+          "badge": "网站",
+          "url": "https://arxiv.qiaomu.ai/",
+          "stat": "arxiv.qiaomu.ai"
+        },
+        {
+          "name": "乔木 Kindle 助手",
+          "category": "reading",
+          "description": "Mac 应用：把 Markdown、Obsidian 笔记和 EPUB、PDF 等电子书转成适合墨水屏的版本，可先译成中英对照，再经 Wi-Fi 发到装有 KOReader 的 Kindle。免费开源。",
+          "badge": "开源",
+          "url": "https://kindle.qiaomu.ai/",
+          "stat": "★ 52"
+        },
+        {
+          "name": "HackerPapers · 论文精选",
+          "category": "reading",
+          "description": "从 Hacker News 热议论文中发现值得读的研究，配中文标题、导读与高赞评论翻译。",
+          "badge": "网站",
+          "url": "https://hackerpapers.qiaomu.ai/",
+          "stat": "hackerpapers.qiaomu.ai"
+        },
+        {
+          "name": "HackerURLs · 经典文章",
+          "category": "reading",
+          "description": "收集反复登上 Hacker News 首页的经典文章，配中文导读与高赞评论翻译。",
+          "badge": "网站",
+          "url": "https://hackerurls.qiaomu.ai/",
+          "stat": "hackerurls.qiaomu.ai"
+        },
+        {
+          "name": "HN 写作课",
+          "category": "reading",
+          "description": "从工程师、作家和编辑在 Hacker News 的讨论中学习写作，阅读中文导读、实用要点与评论翻译。",
+          "badge": "网站",
+          "url": "https://hn-writing.qiaomu.ai/",
+          "stat": "hn-writing.qiaomu.ai"
+        },
+        {
+          "name": "黑客生意经 · HackerBiz",
+          "category": "reading",
+          "description": "从 Hacker News 讨论中整理独立开发、SaaS 定价、盈利与创业案例，保留原帖与数字来源。",
+          "badge": "网站",
+          "url": "https://hackerbiz.qiaomu.ai/",
+          "stat": "hackerbiz.qiaomu.ai"
+        },
+        {
+          "name": "GitHub 开源增长雷达",
+          "category": "reading",
+          "description": "GitHub Stars Top 100 与快速增长 Top 100 数据站。",
+          "badge": "网站",
+          "url": "https://github.qiaomu.ai/",
+          "stat": "github.qiaomu.ai"
+        },
+        {
+          "name": "Qiaomu Trending",
+          "category": "reading",
+          "description": "跨国家、跨来源的趋势解读台。",
+          "badge": "网站",
+          "url": "https://trending.qiaomu.ai/",
+          "stat": "trending.qiaomu.ai"
+        },
+        {
+          "name": "乔木书签",
+          "category": "reading",
+          "description": "乔木收藏并摘要过的 AI 工具、文章、工作流与设计灵感。",
+          "badge": "网站",
+          "url": "https://links.qiaomu.ai/",
+          "stat": "links.qiaomu.ai"
+        },
+        {
+          "name": "Lenny 播客与 Newsletter 知识库",
+          "category": "reading",
+          "description": "搜索和学习 Lenny Rachitsky 的 638 篇播客转录与 Newsletter。",
+          "badge": "开源",
+          "url": "https://github.com/joeseesun/lennys-podcast-newsletter",
+          "stat": "★ 181"
+        },
+        {
+          "name": "乔木 SimpleUI",
+          "category": "reading",
+          "description": "Kindle / KOReader 手机式读书首页：精选资讯、划线 AI 翻译与问答。",
+          "badge": "开源",
+          "url": "https://kindle.qiaomu.ai/#simpleui",
+          "stat": "★ 167"
+        },
+        {
+          "name": "qmreader-floatboat",
+          "category": "reading",
+          "description": "乔木 RSS 阅读工作台：在 Floatboat 里读乔木精选、改写与翻译，并交给原生 AI 伴读 · Qiaomu RSS reader for Floatboat",
+          "badge": "开源",
+          "url": "https://rss.qiaomu.ai",
+          "stat": "★ 1"
+        }
+      ]
+    },
+    {
+      "id": "podcasts",
+      "title": "播客精读",
+      "note": "把喜欢的播客做成中文精读站：音频、文字稿和中文导读放在一起。",
+      "downloads": "",
+      "items": [
+        {
+          "name": "Lex Fridman 播客中文站",
+          "category": "podcasts",
+          "description": "506 期全收录：官方音频、视频、双语文稿和中文精读。",
+          "badge": "网站",
+          "url": "https://lex.qiaomu.ai/",
+          "stat": "lex.qiaomu.ai"
+        },
+        {
+          "name": "All-In 播客中文版",
+          "category": "podcasts",
+          "description": "硅谷四位投资人的每周圆桌，全部单集的音频、视频、文稿和中文精读。",
+          "badge": "网站",
+          "url": "https://allin.qiaomu.ai/",
+          "stat": "allin.qiaomu.ai"
+        },
+        {
+          "name": "Cognitive Revolution 中文精读",
+          "category": "podcasts",
+          "description": "Nathan Labenz 的 AI 深度访谈，全部 389 期中文导航与精读。",
+          "badge": "网站",
+          "url": "https://cogrev.qiaomu.ai/",
+          "stat": "cogrev.qiaomu.ai"
+        },
+        {
+          "name": "No Priors 中文精读",
+          "category": "podcasts",
+          "description": "Sarah Guo 与 Elad Gil 的 AI 创投播客，全部 185 期中文精读。",
+          "badge": "网站",
+          "url": "https://nopriors.qiaomu.ai/",
+          "stat": "nopriors.qiaomu.ai"
+        },
+        {
+          "name": "Training Data 中文精读",
+          "category": "podcasts",
+          "description": "红杉资本的 AI 对话，全部 112 期中文精读。",
+          "badge": "网站",
+          "url": "https://trainingdata.qiaomu.ai/",
+          "stat": "trainingdata.qiaomu.ai"
+        },
+        {
+          "name": "Unsupervised Learning 中文精读",
+          "category": "podcasts",
+          "description": "Jacob Effron 的 AI 研究者访谈，全部 103 期中文精读。",
+          "badge": "网站",
+          "url": "https://unsupervised.qiaomu.ai/",
+          "stat": "unsupervised.qiaomu.ai"
+        },
+        {
+          "name": "AI 播客索引",
+          "category": "podcasts",
+          "description": "YouTube 上值得听的 AI 播客合集：中文简介、文字稿状态和总结入口。",
+          "badge": "网站",
+          "url": "https://youtube.qiaomu.ai/",
+          "stat": "youtube.qiaomu.ai"
+        },
+        {
+          "name": "张小珺商业访谈录 精读",
+          "category": "podcasts",
+          "description": "2 到 7 小时的长对话，聚焦人物表达与高密度前沿信息，15 篇精读附音频。",
+          "badge": "网站",
+          "url": "https://zhangxiaojun.qiaomu.ai/",
+          "stat": "zhangxiaojun.qiaomu.ai"
+        },
+        {
+          "name": "42章经 精读",
+          "category": "podcasts",
+          "description": "曲凯和聪明人聊创业与 AI 认知，16 篇精读附音频。",
+          "badge": "网站",
+          "url": "https://42zhangjing.qiaomu.ai/",
+          "stat": "42zhangjing.qiaomu.ai"
+        },
+        {
+          "name": "晚点聊 LateTalk 精读",
+          "category": "podcasts",
+          "description": "《晚点》程曼祺等人的一手科技访谈，15 篇精读附音频。",
+          "badge": "网站",
+          "url": "https://latetalk.qiaomu.ai/",
+          "stat": "latetalk.qiaomu.ai"
+        },
+        {
+          "name": "十字路口 Crossing 精读",
+          "category": "podcasts",
+          "description": "Koji 和 Ronghui 聊 AI 给各行各业带来的变革，15 篇精读附音频。",
+          "badge": "网站",
+          "url": "https://crossing.qiaomu.ai/",
+          "stat": "crossing.qiaomu.ai"
+        },
+        {
+          "name": "AI 炼金术 精读",
+          "category": "podcasts",
+          "description": "徐文浩和任鑫聊 AI 的本质变化与商业机会，15 篇精读附音频。",
+          "badge": "网站",
+          "url": "https://aialchemy.qiaomu.ai/",
+          "stat": "aialchemy.qiaomu.ai"
+        },
+        {
+          "name": "面基 精读",
+          "category": "podcasts",
+          "description": "每个话题都请一线经验者来聊，15 篇精读附音频。",
+          "badge": "网站",
+          "url": "https://mianji.qiaomu.ai/",
+          "stat": "mianji.qiaomu.ai"
+        },
+        {
+          "name": "三五环 精读",
+          "category": "podcasts",
+          "description": "刘飞和城市里的局内人聊天，15 篇精读附音频。",
+          "badge": "网站",
+          "url": "https://35huan.qiaomu.ai/",
+          "stat": "35huan.qiaomu.ai"
+        },
+        {
+          "name": "知行小酒馆 精读",
+          "category": "podcasts",
+          "description": "有知有行出品的投资与生活节目，15 篇精读附音频。",
+          "badge": "网站",
+          "url": "https://zhixing.qiaomu.ai/",
+          "stat": "zhixing.qiaomu.ai"
+        }
+      ]
+    },
+    {
+      "id": "ai-tools",
+      "title": "AI 工具",
+      "note": "",
+      "downloads": "",
+      "items": [
+        {
+          "name": "乔木 App 评价洞察",
+          "category": "ai-tools",
+          "description": "搜索任意 iOS App，用 AI 把 App Store 评价变成痛点、机会和版本风险。",
+          "badge": "网站",
+          "url": "https://appreview.qiaomu.ai/",
+          "stat": "appreview.qiaomu.ai"
+        },
+        {
+          "name": "乔木推荐",
+          "category": "ai-tools",
+          "description": "精选朋友们的 AI 产品、效率工具和乔木自有工具站。",
+          "badge": "网站",
+          "url": "https://tuijian.qiaomu.ai/",
+          "stat": "tuijian.qiaomu.ai"
+        },
+        {
+          "name": "乔木 LLM 擂台",
+          "category": "ai-tools",
+          "description": "同一提示词并行对比多个大模型的创意写作与前端开发表现。",
+          "badge": "网站",
+          "url": "https://benchmark.qiaomu.ai/",
+          "stat": "benchmark.qiaomu.ai"
+        }
+      ]
+    },
+    {
+      "id": "skills",
+      "title": "Agent Skills",
+      "note": "可以装进 Claude Code、Codex 等 Agent 的开源 Skills。",
+      "downloads": "",
+      "items": [
+        {
+          "name": "Skill 推荐网",
+          "category": "skills",
+          "description": "按类别精选 Agent Skills，附详细介绍、推荐理由和 GitHub 原始文档。",
+          "badge": "网站",
+          "url": "https://skills.qiaomu.ai/",
+          "stat": "skills.qiaomu.ai"
+        },
+        {
+          "name": "qiaomu-anything-to-notebooklm",
+          "category": "skills",
+          "description": "把公众号、网页、YouTube、PDF 等各种来源一键整理进 NotebookLM。",
+          "badge": "开源",
+          "url": "https://github.com/joeseesun/qiaomu-anything-to-notebooklm",
+          "stat": "★ 6,467"
+        },
+        {
+          "name": "qiaomu-mondo-poster-design",
+          "category": "skills",
+          "description": "一句话生成大师级海报、书籍和专辑封面，自动匹配 20 位传奇设计师风格。",
+          "badge": "开源",
+          "url": "https://github.com/joeseesun/qiaomu-mondo-poster-design",
+          "stat": "★ 1,351"
+        },
+        {
+          "name": "qiaomu-design",
+          "category": "skills",
+          "description": "偏执型设计顾问 Skill：反 AI 味设计、风格试衣间和 58 站设计系统库。",
+          "badge": "开源",
+          "url": "https://github.com/joeseesun/qiaomu-design",
+          "stat": "★ 673"
+        },
+        {
+          "name": "qiaomu-opencli-skills",
+          "category": "skills",
+          "description": "用 opencli 操作 B 站、知乎、X、小红书、YouTube 等内容平台。",
+          "badge": "开源",
+          "url": "https://github.com/joeseesun/qiaomu-opencli-skills",
+          "stat": "★ 997"
+        },
+        {
+          "name": "qiaomu-goal-meta-skill",
+          "category": "skills",
+          "description": "把模糊的 Codex 任务改写成带验收、约束和迭代策略的 /goal 指令。",
+          "badge": "开源",
+          "url": "https://github.com/joeseesun/qiaomu-goal-meta-skill",
+          "stat": "★ 906"
+        },
+        {
+          "name": "qiaomu-markdown-proxy",
+          "category": "skills",
+          "description": "把任意网址抓成干净的 Markdown，支持需要登录的页面。",
+          "badge": "开源",
+          "url": "https://github.com/joeseesun/qiaomu-markdown-proxy",
+          "stat": "★ 509"
+        },
+        {
+          "name": "qiaomu-seo",
+          "category": "skills",
+          "description": "覆盖 Google、Bing 和 AI 搜索的网站 SEO 审计、诊断与优化 Skill。",
+          "badge": "开源",
+          "url": "https://github.com/joeseesun/qiaomu-seo",
+          "stat": "★ 470"
+        },
+        {
+          "name": "qiaomu-download",
+          "category": "skills",
+          "description": "通用视频下载 Skill：YouTube、B 站、X、抖音等平台一句话下载。",
+          "badge": "开源",
+          "url": "https://github.com/joeseesun/qiaomu-download",
+          "stat": "★ 438"
+        },
+        {
+          "name": "qiaomu-novel-generator",
+          "category": "skills",
+          "description": "从一个故事想法生成完整、抓人的中文原创短篇小说。",
+          "badge": "开源",
+          "url": "https://github.com/joeseesun/qiaomu-novel-generator",
+          "stat": "★ 396"
+        },
+        {
+          "name": "qiaomu-meta-skill",
+          "category": "skills",
+          "description": "把工作流变成可研究、可评测、可发布的 Agent Skill。",
+          "badge": "开源",
+          "url": "https://github.com/joeseesun/qiaomu-meta-skill",
+          "stat": "★ 389"
+        },
+        {
+          "name": "qiaomu-cut-skill",
+          "category": "skills",
+          "description": "智能视频导演 Skill：素材治理、双语字幕、品牌包装与可复现渲染。",
+          "badge": "开源",
+          "url": "https://github.com/joeseesun/qiaomu-cut-skill",
+          "stat": "★ 377"
+        },
+        {
+          "name": "qiaomu-knowledge-site-creator",
+          "category": "skills",
+          "description": "一句话生成任意领域的知识学习网站，自动创作内容并部署。",
+          "badge": "开源",
+          "url": "https://github.com/joeseesun/qiaomu-knowledge-site-creator",
+          "stat": "★ 366"
+        },
+        {
+          "name": "qiaomu-info-card-designer",
+          "category": "skills",
+          "description": "把任意文字变成杂志质感的信息卡片，并自动截图成图片。",
+          "badge": "开源",
+          "url": "https://github.com/joeseesun/qiaomu-info-card-designer",
+          "stat": "★ 276"
+        },
+        {
+          "name": "qiaomu-ai-prd",
+          "category": "skills",
+          "description": "把一句话产品想法变成 AI 可实现的 PRD：约束、指标和验收标准。",
+          "badge": "开源",
+          "url": "https://github.com/joeseesun/qiaomu-ai-prd",
+          "stat": "★ 214"
+        },
+        {
+          "name": "music-genre-finder",
+          "category": "skills",
+          "description": "基于 RateYourMusic 5947 个流派的音乐风格查询与推荐 Skill。",
+          "badge": "开源",
+          "url": "https://github.com/joeseesun/music-genre-finder",
+          "stat": "★ 184"
+        },
+        {
+          "name": "qiaomu-wx-video",
+          "category": "skills",
+          "description": "下载微信视频号视频和直播回放的 Skill。",
+          "badge": "开源",
+          "url": "https://github.com/joeseesun/qiaomu-wx-video",
+          "stat": "★ 140"
+        },
+        {
+          "name": "qiaomu-epub-book-generator",
+          "category": "skills",
+          "description": "从 Markdown 生成专业 EPUB 电子书，兼容微信读书。",
+          "badge": "开源",
+          "url": "https://github.com/joeseesun/qiaomu-epub-book-generator",
+          "stat": "★ 139"
+        },
+        {
+          "name": "qiaomu-codex-imagegen",
+          "category": "skills",
+          "description": "让任何 Agent 调用 Codex 内置生图，附小红书、视频封面和海报技巧。",
+          "badge": "开源",
+          "url": "https://github.com/joeseesun/qiaomu-codex-imagegen",
+          "stat": "★ 136"
+        },
+        {
+          "name": "qiaomu-bento-ppt",
+          "category": "skills",
+          "description": "生成乔木风格的 Bento 版式演示文稿，单个 HTML 文件即可放映。",
+          "badge": "开源",
+          "url": "https://github.com/joeseesun/qiaomu-bento-ppt",
+          "stat": "★ 126"
+        },
+        {
+          "name": "yt-search-download",
+          "category": "skills",
+          "description": "在 Claude Code 里搜索和下载 YouTube 视频。",
+          "badge": "开源",
+          "url": "https://github.com/joeseesun/yt-search-download",
+          "stat": "★ 118"
+        },
+        {
+          "name": "defuddle-skill",
+          "category": "skills",
+          "description": "让 Claude Code 用 defuddle 从网页里提取干净的正文。",
+          "badge": "开源",
+          "url": "https://github.com/joeseesun/defuddle-skill",
+          "stat": "★ 112"
+        },
+        {
+          "name": "qiaomu-macos-dev",
+          "category": "skills",
+          "description": "一句话开发精致的 Mac App：图标、设置与关于、自动更新、公证 DMG、GitHub 发布 · Agent skill for one-shot native macOS apps",
+          "badge": "开源",
+          "url": "https://github.com/joeseesun/qiaomu-macos-dev",
+          "stat": "★ 8"
+        }
+      ]
+    },
+    {
+      "id": "learning",
+      "title": "学习站",
+      "note": "",
+      "downloads": "",
+      "items": [
+        {
+          "name": "有用 · 一天学会的知识",
+          "category": "learning",
+          "description": "29 个领域、290 套花一天学会、之后一直用得上的知识。",
+          "badge": "网站",
+          "url": "https://useful.qiaomu.ai/",
+          "stat": "useful.qiaomu.ai"
+        },
+        {
+          "name": "乔木课堂",
+          "category": "learning",
+          "description": "用动手实验学 AI，每一课留下一个可打开、可分享的真实作品。",
+          "badge": "网站",
+          "url": "https://class.qiaomu.ai/",
+          "stat": "class.qiaomu.ai"
+        },
+        {
+          "name": "Codex 入门学习站",
+          "category": "learning",
+          "description": "给 Codex 新手的第一小时：安装登录、四段式提示词、看 diff 和失败追问。",
+          "badge": "网站",
+          "url": "https://codex.qiaomu.ai/",
+          "stat": "codex.qiaomu.ai"
+        },
+        {
+          "name": "这个控件叫什么？",
+          "category": "learning",
+          "description": "UI 视觉词典：认出界面元素的真名，再精准地指挥 AI 写前端。",
+          "badge": "网站",
+          "url": "https://learnui.qiaomu.ai/",
+          "stat": "learnui.qiaomu.ai"
+        },
+        {
+          "name": "思维模型 Wiki",
+          "category": "learning",
+          "description": "用图讲清全球专家的思维框架。",
+          "badge": "网站",
+          "url": "https://mm.qiaomu.ai/",
+          "stat": "mm.qiaomu.ai"
+        },
+        {
+          "name": "FDE 资源精选",
+          "category": "learning",
+          "description": "面向 Forward Deployed Engineer 的工具、方法论、案例与求职资源。",
+          "badge": "网站",
+          "url": "https://fde.qiaomu.ai/",
+          "stat": "fde.qiaomu.ai"
+        },
+        {
+          "name": "道德经配图版",
+          "category": "learning",
+          "description": "把《道德经》拆成逐句漫画卡片：原文、白话和连续的配图故事。",
+          "badge": "网站",
+          "url": "https://daodejing.qiaomu.ai/",
+          "stat": "daodejing.qiaomu.ai"
+        },
+        {
+          "name": "词根词缀记忆工坊",
+          "category": "learning",
+          "description": "像搭积木一样记单词：掌握 300 个词根，解锁 3 万多个英语单词。",
+          "badge": "开源",
+          "url": "https://word-root-workshop.vercel.app",
+          "stat": "★ 235"
+        },
+        {
+          "name": "AI 工程论文清单 2025",
+          "category": "learning",
+          "description": "120+ 篇 AI 工程必读论文，覆盖大模型、多模态、RAG、Agent 和扩散模型。",
+          "badge": "开源",
+          "url": "https://github.com/joeseesun/AI_Papers_2025",
+          "stat": "★ 103"
+        }
+      ]
+    },
+    {
+      "id": "creative",
+      "title": "创作与设计",
+      "note": "",
+      "downloads": "",
+      "items": [
+        {
+          "name": "乔木剪辑 Qiaomu Cut",
+          "category": "creative",
+          "description": "打开浏览器就能剪视频：多轨时间轴、加文字、本地导出 MP4，素材不上传。",
+          "badge": "网站",
+          "url": "https://cut.qiaomu.ai/",
+          "stat": "cut.qiaomu.ai"
+        },
+        {
+          "name": "乔木画布 Poster Studio",
+          "category": "creative",
+          "description": "在线做小红书封面、知识卡片和社媒海报，支持 AI 生图与一键导出。",
+          "badge": "网站",
+          "url": "https://ps.qiaomu.ai/",
+          "stat": "ps.qiaomu.ai"
+        },
+        {
+          "name": "Opus 代码生成视频提示词",
+          "category": "creative",
+          "description": "用 Claude 写代码生成视频：54 个案例和可直接复制的提示词。",
+          "badge": "开源",
+          "url": "https://github.com/joeseesun/opus-video-prompts",
+          "stat": "★ 950"
+        },
+        {
+          "name": "qiaomu-cover-fonts",
+          "category": "creative",
+          "description": "乔木封面设计的默认开源字库，中英文 OFL 字体，已子集化。",
+          "badge": "开源",
+          "url": "https://github.com/joeseesun/qiaomu-cover-fonts",
+          "stat": "★ 122"
+        },
+        {
+          "name": "qiaomu-ui-learn-dsh",
+          "category": "creative",
+          "description": "原版乔木 UI 学习的 DeepSeek Harness 迁移版：13561 设计参考、106 交互标本、审美测验与 Markdown 学习笔记",
+          "badge": "开源",
+          "url": "https://github.com/joeseesun/qiaomu-ui-learn-dsh",
+          "stat": "★ 80"
+        },
+        {
+          "name": "qiaomu-poster",
+          "category": "creative",
+          "description": "Commercial event posters from URLs, briefs and logos. Brand-led layouts, editable typography, verified QR codes, and 18 real cases.",
+          "badge": "开源",
+          "url": "https://github.com/joeseesun/qiaomu-poster",
+          "stat": "★ 6"
+        },
+        {
+          "name": "qiaomu-cover-design-dsh",
+          "category": "creative",
+          "description": "Original Qiaomu cover canvas, templates, typography and AI design for DeepSeek Harness",
+          "badge": "开源",
+          "url": "https://github.com/joeseesun/qiaomu-cover-design-dsh",
+          "stat": "★ 3"
+        },
+        {
+          "name": "qiaomu-blog-publisher-dsh",
+          "category": "creative",
+          "description": "原版乔木博客发布器的 DeepSeek Harness 版本，保留博客分类、草稿和 R2 图片音视频上传",
+          "badge": "开源",
+          "url": "https://github.com/joeseesun/qiaomu-blog-publisher-dsh",
+          "stat": "★ 1"
+        },
+        {
+          "name": "qiaomu-publish-dsh",
+          "category": "creative",
+          "description": "原版乔木 Publish 的 DeepSeek Harness 版本：42 主题、公众号排版、X/知乎/小红书草稿、封面与长图导出",
+          "badge": "开源",
+          "url": "https://github.com/joeseesun/qiaomu-publish-dsh",
+          "stat": "★ 1"
+        }
+      ]
+    },
+    {
+      "id": "music-fun",
+      "title": "音乐与娱乐",
+      "note": "",
+      "downloads": "",
+      "items": [
+        {
+          "name": "乔木音乐",
+          "category": "music-fun",
+          "description": "乔木用 AI 做的歌，带歌词同步的在线播放器。",
+          "badge": "网站",
+          "url": "https://music.qiaomu.ai/",
+          "stat": "music.qiaomu.ai"
+        },
+        {
+          "name": "乔木电台",
+          "category": "music-fun",
+          "description": "选一种此刻的心情，进入会随反馈调整的全球直播电台流。",
+          "badge": "网站",
+          "url": "https://radio.qiaomu.ai/",
+          "stat": "radio.qiaomu.ai"
+        },
+        {
+          "name": "AI 鼓机 DR-808",
+          "category": "music-fun",
+          "description": "纯浏览器运行的 8 音轨 16 步进鼓机。",
+          "badge": "网站",
+          "url": "https://drum.qiaomu.ai/",
+          "stat": "drum.qiaomu.ai"
+        },
+        {
+          "name": "在线调音器",
+          "category": "music-fun",
+          "description": "YIN 算法的高精度在线调音器，支持吉他、贝斯、尤克里里。",
+          "badge": "网站",
+          "url": "https://tune.qiaomu.ai/",
+          "stat": "tune.qiaomu.ai"
+        },
+        {
+          "name": "乔木电影清单 IMDb Top 250",
+          "category": "music-fun",
+          "description": "IMDb Top 250 的中文片名、摘要和口碑，标记看过、想看和收藏。",
+          "badge": "网站",
+          "url": "https://aha.qiaomu.ai/",
+          "stat": "aha.qiaomu.ai"
+        }
+      ]
+    },
+    {
+      "id": "dev",
+      "title": "开发者工具",
+      "note": "",
+      "downloads": "",
+      "items": [
+        {
+          "name": "lark-cli 中文介绍",
+          "category": "dev",
+          "description": "飞书官方 CLI：让人和 AI Agent 在终端里操作飞书文档、多维表格和消息。",
+          "badge": "网站",
+          "url": "https://larkcli.qiaomu.ai/",
+          "stat": "larkcli.qiaomu.ai"
+        },
+        {
+          "name": "乔木博客开源模板",
+          "category": "dev",
+          "description": "基于 Next.js、Cloudflare D1 和 R2 的开源博客模板。",
+          "badge": "开源",
+          "url": "https://github.com/joeseesun/qiaomu-blog-opensource",
+          "stat": "★ 301"
+        },
+        {
+          "name": "quickshare",
+          "category": "dev",
+          "description": "快速分享大模型生成的 HTML、Markdown、SVG 和 Mermaid 代码。",
+          "badge": "开源",
+          "url": "https://github.com/joeseesun/quickshare",
+          "stat": "★ 136"
+        },
+        {
+          "name": "hackerbooks-cn",
+          "category": "dev",
+          "description": "黑客书架 — Hacker News 评论中被提及书籍的中文镜像站（纯静态、无构建） / Chinese edition of hackerbooks.org",
+          "badge": "开源",
+          "url": "https://github.com/joeseesun/hackerbooks-cn",
+          "stat": "★ 18"
+        },
+        {
+          "name": "ai-fushengji",
+          "category": "dev",
+          "description": "AI 浮生记：40 天生存交易，AI 梗图、模型搭子、显卡行情与千禧年打工桌面。",
+          "badge": "开源",
+          "url": "https://fusheng.qiaomu.ai/",
+          "stat": "★ 2"
+        },
+        {
+          "name": "qiaomu-agent-dsh",
+          "category": "dev",
+          "description": "Work in progress: original Qiaomu Agent UI and full functionality migration to DeepSeek Harness",
+          "badge": "开源",
+          "url": "https://github.com/joeseesun/qiaomu-agent-dsh",
+          "stat": "★ 1"
+        },
+        {
+          "name": "qiaomu-audio-dsh",
+          "category": "dev",
+          "description": "Original Qiaomu Audio UI, speech, dictation and media export for DeepSeek Harness",
+          "badge": "开源",
+          "url": "https://github.com/joeseesun/qiaomu-audio-dsh",
+          "stat": "★ 1"
+        },
+        {
+          "name": "aicodinghunt",
+          "category": "dev",
+          "description": "乔木 AI 工具猎场",
+          "badge": "开源",
+          "url": "https://aicodinghunt.qiaomu.ai",
+          "stat": "aicodinghunt.qiaomu.ai"
+        }
+      ]
+    }
+  ]
+}
