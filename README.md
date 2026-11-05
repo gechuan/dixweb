@@ -43,14 +43,15 @@ npm run preview
 
 ## 部署到 Cloudflare
 
-### Pages（静态托管）
+### Workers（静态托管，推荐）
 
-1. Cloudflare 控制台 → Workers & Pages → Create → Pages → Connect to Git，选择本仓库。
-2. 构建配置：
-   - Build command: `npm run build`
-   - Build output directory: `dist`
-   - Node 版本：环境变量 `NODE_VERSION` 设为 `22`（或更高）
-3. 保存后首次构建，得到 `*.pages.dev` 域名。
+1. Cloudflare 控制台 → Workers & Pages → Create → Connect to Git，选择本仓库。
+2. 保持默认即可：构建命令 `npm run build`，部署命令 `npx wrangler deploy`（根目录的 `wrangler.jsonc` 已配置好静态资源目录 `dist` 和 404 处理）。
+3. 首次部署得到 `dixweb.<你的子域>.workers.dev` 域名。若构建报 Node 版本问题，在项目 Settings → Variables 里加 `NODE_VERSION` = `22`。
+
+### Pages（经典静态托管，二选一）
+
+不想用 Workers 流程的话，在 Create 界面切到 Pages 标签页连同一个仓库，构建命令 `npm run build`，输出目录 `dist`。
 
 ### 自定义域名（DNS）
 
