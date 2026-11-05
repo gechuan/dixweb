@@ -52,7 +52,7 @@ const isCurrent = (href: string) => {
       } catch {}
       document.documentElement.classList.add('js');
     </script>
-    {site.umami.src && site.umami.websiteId && (
+    {site.umami?.src && site.umami?.websiteId && (
       <script is:inline defer src={site.umami.src} data-website-id={site.umami.websiteId}></script>
     )}
   </head>
