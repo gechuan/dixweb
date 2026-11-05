@@ -95,7 +95,7 @@ content:
           - { name: author, label: 作者, type: string }
           - { name: datetime, label: 时间（ISO 格式）, type: string }
           - { name: datelabel, label: 显示时间, type: string }
-          - { name: html, label: 内容（HTML）, type: rich-text, format: html }
+          - { name: html, label: 内容（HTML）, type: text }
 
   - name: podcast
     label: 播客
@@ -154,22 +154,27 @@ content:
   - name: friends
     label: 朋友推荐
     path: src/data/friends.json
-    type: object
-    list: true
+    type: file
+    format: json
     fields:
-      - { name: name, label: 名称, type: string }
-      - { name: category, label: 分类, type: string }
-      - { name: tagline, label: 一句话介绍, type: string }
-      - { name: summary, label: 详细介绍, type: text }
-      - { name: audience, label: 适合人群, type: string }
-      - name: chips
-        label: 亮点标签
-        type: string
+      - name: items
+        label: 推荐列表
+        type: object
         list: true
-      - { name: cta, label: 按钮文案, type: string }
-      - { name: url, label: 链接, type: string }
-      - { name: logo, label: Logo 图片 URL, type: image }
-      - { name: logoText, label: 无 Logo 时的文字, type: string }
+        fields:
+          - { name: name, label: 名称, type: string }
+          - { name: category, label: 分类, type: string }
+          - { name: tagline, label: 一句话介绍, type: string }
+          - { name: summary, label: 详细介绍, type: text }
+          - { name: audience, label: 适合人群, type: string }
+          - name: chips
+            label: 亮点标签
+            type: string
+            list: true
+          - { name: cta, label: 按钮文案, type: string }
+          - { name: url, label: 链接, type: string }
+          - { name: logo, label: Logo 图片 URL, type: image }
+          - { name: logoText, label: 无 Logo 时的文字, type: string }
 
   - name: music
     label: 音乐

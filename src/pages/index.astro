@@ -215,8 +215,8 @@ const ext = { target: '_blank', rel: 'noopener noreferrer' };
       <div class="fr" data-friends role="region" aria-roledescription="轮播" aria-label="朋友的产品">
         <div class="fr-stage">
           <div class="fr-slides" data-slides aria-live="polite">
-            {friends.map((f, i) => (
-              <article class="fr-slide" data-slide={i} aria-roledescription="幻灯片" aria-label={`${i + 1} / ${friends.length}：${f.name}`} hidden={i !== 0}>
+            {friends.items.map((f, i) => (
+              <article class="fr-slide" data-slide={i} aria-roledescription="幻灯片" aria-label={`${i + 1} / ${friends.items.length}：${f.name}`} hidden={i !== 0}>
                 <div class="fr-head">
                   <span class="fr-logo">
                     {f.logo
@@ -248,11 +248,11 @@ const ext = { target: '_blank', rel: 'noopener noreferrer' };
             <button type="button" class="fr-btn" data-next aria-label="下一个">
               <svg viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"></path></svg>
             </button>
-            <span class="fr-count latin"><b data-current>01</b> / {friends.length}</span>
+            <span class="fr-count latin"><b data-current>01</b> / {friends.items.length}</span>
           </div>
         </div>
         <div class="fr-wall" role="group" aria-label="选择要看的产品">
-          {friends.map((f, i) => (
+          {friends.items.map((f, i) => (
             <button type="button" class="fr-tile" data-go={i} aria-label={f.name} aria-current={i === 0 ? 'true' : undefined}>
               {f.logo
                 ? <img src={f.logo} width="40" height="40" alt="" loading="lazy" decoding="async" />

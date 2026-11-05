@@ -1,4 +1,5 @@
-[
+{
+  "items": [
   {
     "name": "Renoise",
     "category": "AI 视频创作",
@@ -377,4 +378,5 @@
     "logo": "https://tuijian.qiaomu.ai/logos/pexo.png",
     "logoText": ""
   }
-]
+  ]
+}
