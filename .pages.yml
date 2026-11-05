@@ -409,28 +409,6 @@ content:
           - { name: logo, label: Logo 图片 URL, type: image }
           - { name: logoText, label: 无 Logo 时的文字, type: string }
 
-  - name: music
-    label: 音乐
-    path: src/data/music.json
-    type: file
-    format: json
-    fields:
-      - { name: kicker, label: 栏目标语, type: string }
-      - { name: moreLabel, label: 更多链接文案, type: string }
-      - { name: emptyLyric, label: 无歌词提示, type: string }
-      - name: tracks
-        label: 歌曲
-        type: object
-        list: true
-        fields:
-          - { name: title, label: 歌名, type: string }
-          - { name: artist, label: 艺术家, type: string }
-          - { name: album, label: 专辑, type: string }
-          - { name: dateLabel, label: 日期（YYYY/MM/DD）, type: string }
-          - { name: url, label: 歌曲页链接, type: string }
-          - { name: audioUrl, label: 音频地址, type: string }
-          - { name: apiUrl, label: 歌词 API 地址, type: string, description: 可选，返回歌词 JSON 或 LRC }
-          - { name: coverUrl, label: 封面地址, type: image }
 
   - name: uses
     label: 工具箱
