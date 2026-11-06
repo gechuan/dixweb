@@ -154,9 +154,6 @@ const ext = { target: '_blank', rel: 'noopener noreferrer' };
               <p class={i === 0 ? 'first' : undefined} set:html={p.replace(/<em>/g, '<span class="em">').replace(/<\/em>/g, '</span>')} />
             ))}
           </div>
-          <div class="tags">
-            {home.about.tags.map((tag) => <span>{tag}</span>)}
-          </div>
           <div class="facts">
             {home.about.facts.map((f) => (
               <div><b>{f.value}</b><small>{f.label}</small></div>
