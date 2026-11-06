@@ -29,7 +29,6 @@ npm run preview
 | `notes.json` | 随想列表 |
 | `podcast.json` | 播客节目、单集、中文精读站 |
 | `projects.json` | 项目分组与首页精选 |
-| `uses.json` | 工具箱 |
 | `now.json` / `about.json` | 「现在」页与「关于」页 |
 
 ### 用 Pages CMS 云编辑
@@ -92,7 +91,7 @@ npm run preview
 └── src/
     ├── data/           # 全部内容数据（JSON）
     ├── layouts/        # 共享布局（页头、导航、页脚、弹窗）
-    ├── pages/          # 首页、随想、项目、播客、现在、工具箱、关于、404、RSS
+    ├── pages/          # 首页、随想、项目、播客、现在、关于、404、RSS
     ├── scripts/site.ts # 主题切换、播放器、轮播、筛选等交互
     └── styles/         # 设计系统样式
 ```
