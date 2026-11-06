@@ -238,23 +238,5 @@
       "label": "查看进展与阅读入口",
       "href": "/now#today"
     }
-  },
-  "subscribe": {
-    "title": "每周二，\n一篇值得读完的实践笔记。",
-    "body": "新的实践笔记、工具发现和工作流拆解，会在博客、公众号和这些站点里陆续出现。不发口号，只写跑通后的东西。",
-    "cta": {
-      "label": "扫码关注公众号",
-      "modal": "follow"
-    },
-    "links": [
-      {
-        "label": "X @gechuan",
-        "href": "https://x.com/gechuan"
-      },
-      {
-        "label": "GitHub",
-        "href": "https://github.com/gechuan"
-      }
-    ]
   }
 }

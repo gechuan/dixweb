@@ -175,20 +175,4 @@ const ext = { target: '_blank', rel: 'noopener noreferrer' };
     </div>
   </section>
 
-  <section class="subscribe" id="subscribe" aria-labelledby="subscribe-title">
-    <div class="wrap">
-      <img class="sub-av" src={site.avatar} width="64" height="64" alt="" loading="lazy" />
-      <h2 id="subscribe-title" set:html={home.subscribe.title.replace(/\n/g, '<br />')} />
-      <p>{home.subscribe.body}</p>
-      <div class="acts">
-        <button type="button" class="btn" data-modal-open={home.subscribe.cta.modal}>
-          {home.subscribe.cta.label}
-          <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
-        </button>
-        {home.subscribe.links.map((l) => (
-          <a class="more" href={l.href} {...ext}>{l.label}</a>
-        ))}
-      </div>
-    </div>
-  </section>
 </Layout>

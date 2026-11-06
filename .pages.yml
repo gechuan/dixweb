@@ -207,26 +207,6 @@ content:
             fields:
               - { name: label, label: 文案, type: string }
               - { name: href, label: 链接, type: string }
-      - name: subscribe
-        label: 订阅区
-        type: object
-        fields:
-          - { name: title, label: 标题（\n 表示换行）, type: text }
-          - { name: body, label: 说明, type: text }
-          - name: cta
-            label: 主按钮
-            type: object
-            fields:
-              - { name: label, label: 文案, type: string }
-              - { name: modal, label: 打开的弹窗（follow/reward）, type: string }
-          - name: links
-            label: 外部链接
-            type: object
-            list: true
-            fields:
-              - { name: label, label: 文案, type: string }
-              - { name: href, label: 链接, type: string }
-
   - name: notes
     label: 随想
     path: src/data/notes.json

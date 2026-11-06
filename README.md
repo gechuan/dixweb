@@ -25,7 +25,7 @@ npm run preview
 | 文件 | 内容 |
 | --- | --- |
 | `site.json` | 站点设置、导航、社交链接、Umami 配置 |
-| `home.json` | 首屏、本期目录、播客摘要、今天做了啥、订阅区 |
+| `home.json` | 首屏、本期目录、播客摘要、今天做了啥 |
 | `notes.json` | 随想列表 |
 | `podcast.json` | 播客节目、单集、中文精读站 |
 | `projects.json` | 项目分组与首页精选 |
