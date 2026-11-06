@@ -205,23 +205,6 @@ content:
             fields:
               - { name: label, label: 文案, type: string }
               - { name: href, label: 链接, type: string }
-      - name: music
-        label: 音乐区块
-        type: object
-        fields:
-          - { name: queueTitle, label: 队列标题, type: string }
-          - name: more
-            label: 更多链接
-            type: object
-            fields:
-              - { name: label, label: 文案, type: string }
-              - { name: href, label: 链接, type: string }
-      - name: friendsSection
-        label: 朋友推荐区块
-        type: object
-        fields:
-          - { name: kicker, label: 眉题, type: string }
-          - { name: titleLines, label: 标题（按行拆分）, type: string, list: true }
       - name: now
         label: 今天做了啥
         type: object
@@ -300,29 +283,6 @@ content:
             fields:
               - { name: label, label: 文案, type: string }
               - { name: url, label: 链接, type: string }
-      - name: futureSilicon
-        label: 未来硅世界
-        type: object
-        fields:
-          - { name: eyebrow, label: 眉题, type: string }
-          - { name: name, label: 节目名, type: string }
-          - { name: description, label: 介绍, type: text }
-          - name: platforms
-            label: 相关链接
-            type: object
-            list: true
-            fields:
-              - { name: label, label: 平台, type: string }
-              - { name: url, label: 链接, type: string }
-          - name: episode
-            label: 最新一期
-            type: object
-            fields:
-              - { name: url, label: 链接, type: string }
-              - { name: date, label: 日期, type: string }
-              - { name: meta, label: 标签, type: string, list: true }
-              - { name: title, label: 标题, type: string }
-              - { name: summary, label: 摘要, type: text }
       - name: digests
         label: 中文精读站
         type: object
@@ -395,55 +355,7 @@ content:
               - { name: url, label: 链接, type: string }
               - { name: stat, label: 数据展示, type: string }
 
-  - name: friends
-    label: 朋友推荐
-    path: src/data/friends.json
-    type: file
-    format: json
-    fields:
-      - name: items
-        label: 推荐列表
-        type: object
-        list: true
-        fields:
-          - { name: name, label: 名称, type: string }
-          - { name: category, label: 分类, type: string }
-          - { name: tagline, label: 一句话介绍, type: string }
-          - { name: summary, label: 详细介绍, type: text }
-          - { name: audience, label: 适合人群, type: string }
-          - name: chips
-            label: 亮点标签
-            type: string
-            list: true
-          - { name: cta, label: 按钮文案, type: string }
-          - { name: url, label: 链接, type: string }
-          - { name: logo, label: Logo 图片 URL, type: image }
-          - { name: logoText, label: 无 Logo 时的文字, type: string }
-
-  - name: music
-    label: 音乐
-    path: src/data/music.json
-    type: file
-    format: json
-    fields:
-      - { name: kicker, label: 栏目标语, type: string }
-      - { name: moreLabel, label: 更多链接文案, type: string }
-      - { name: emptyLyric, label: 无歌词提示, type: string }
-      - name: tracks
-        label: 歌曲
-        type: object
-        list: true
-        fields:
-          - { name: title, label: 歌名, type: string }
-          - { name: artist, label: 艺术家, type: string }
-          - { name: album, label: 专辑, type: string }
-          - { name: dateLabel, label: 日期（YYYY/MM/DD）, type: string }
-          - { name: url, label: 歌曲页链接, type: string }
-          - { name: audioUrl, label: 音频地址, type: string }
-          - { name: apiUrl, label: 歌词 API 地址, type: string, description: 可选，返回歌词 JSON 或 LRC }
-          - { name: coverUrl, label: 封面地址, type: image }
-
-  - name: uses
+    - name: uses
     label: 工具箱
     path: src/data/uses.json
     type: file
