@@ -12,7 +12,7 @@
       "name": "乔木剪藏",
       "tag": "Chrome 插件",
       "description": "Chrome 插件：读文章、看视频、听播客，边读边问边记，把摘录和自己的理解存进 Obsidian。",
-      "url": "https://github.com/joeseesun/qiaomu-clipper",
+      "url": "https://github.com/gechuan/qiaomu-clipper",
       "badge": "",
       "stat": "★ 409"
     },
@@ -20,7 +20,7 @@
       "name": "乔木 X 助手",
       "tag": "Chrome 插件",
       "description": "Chrome 插件：少刷噪音，多写想法。X 回复整理、书签、AI 写作与文章草稿。",
-      "url": "https://github.com/joeseesun/qiaomu-x-helper",
+      "url": "https://github.com/gechuan/qiaomu-x-helper",
       "badge": "",
       "stat": "★ 32"
     },
@@ -77,7 +77,7 @@
           "category": "obsidian",
           "description": "在 Obsidian 里读 RSS 与本地 Markdown，中文 AI 改写与翻译，一键存成笔记。",
           "badge": "开源",
-          "url": "https://github.com/joeseesun/qiaomu-ai-rss",
+          "url": "https://github.com/gechuan/qiaomu-ai-rss",
           "stat": "↓ 9,126"
         },
         {
@@ -85,7 +85,7 @@
           "category": "obsidian",
           "description": "安静的起始页：搜索、新建，接着读、接着听、接着写。",
           "badge": "开源",
-          "url": "https://github.com/joeseesun/qiaomu-home",
+          "url": "https://github.com/gechuan/qiaomu-home",
           "stat": "↓ 4,326"
         },
         {
@@ -93,7 +93,7 @@
           "category": "obsidian",
           "description": "用本地 AI Agent 或模型 API 和你的笔记库对话。",
           "badge": "开源",
-          "url": "https://github.com/joeseesun/qiaomu-agent",
+          "url": "https://github.com/gechuan/qiaomu-agent",
           "stat": "↓ 2,892"
         },
         {
@@ -101,7 +101,7 @@
           "category": "obsidian",
           "description": "边读边写边听：发现并播放全球直播电台。",
           "badge": "开源",
-          "url": "https://github.com/joeseesun/qiaomu-radio",
+          "url": "https://github.com/gechuan/qiaomu-radio",
           "stat": "↓ 1,876"
         },
         {
@@ -109,7 +109,7 @@
           "category": "obsidian",
           "description": "用 AI 生图、图库和自由画布做可编辑的封面与海报。",
           "badge": "开源",
-          "url": "https://github.com/joeseesun/qiaomu-cover-design",
+          "url": "https://github.com/gechuan/qiaomu-cover-design",
           "stat": "↓ 1,106"
         },
         {
@@ -117,7 +117,7 @@
           "category": "obsidian",
           "description": "学 UI 设计：13,500+ 真实界面、双语 UI 词典和风格库。",
           "badge": "开源",
-          "url": "https://github.com/joeseesun/qiaomu-ui-learn",
+          "url": "https://github.com/gechuan/qiaomu-ui-learn",
           "stat": "↓ 567"
         },
         {
@@ -125,7 +125,7 @@
           "category": "obsidian",
           "description": "在 Obsidian 写好，预览公众号排版、做封面，一键发到草稿箱。",
           "badge": "开源",
-          "url": "https://github.com/joeseesun/qiaomu-publish",
+          "url": "https://github.com/gechuan/qiaomu-publish",
           "stat": "↓ 541"
         },
         {
@@ -133,7 +133,7 @@
           "category": "obsidian",
           "description": "把笔记导出成音频或带字幕视频，光标处朗读，还能语音输入。",
           "badge": "开源",
-          "url": "https://github.com/joeseesun/qiaomu-audio",
+          "url": "https://github.com/gechuan/qiaomu-audio",
           "stat": "↓ 232"
         },
         {
@@ -285,7 +285,7 @@
           "category": "reading",
           "description": "搜索和学习 Lenny Rachitsky 的 638 篇播客转录与 Newsletter。",
           "badge": "开源",
-          "url": "https://github.com/joeseesun/lennys-podcast-newsletter",
+          "url": "https://github.com/gechuan/lennys-podcast-newsletter",
           "stat": "★ 181"
         },
         {
@@ -485,7 +485,7 @@
           "category": "skills",
           "description": "把公众号、网页、YouTube、PDF 等各种来源一键整理进 NotebookLM。",
           "badge": "开源",
-          "url": "https://github.com/joeseesun/qiaomu-anything-to-notebooklm",
+          "url": "https://github.com/gechuan/qiaomu-anything-to-notebooklm",
           "stat": "★ 6,467"
         },
         {
@@ -493,7 +493,7 @@
           "category": "skills",
           "description": "一句话生成大师级海报、书籍和专辑封面，自动匹配 20 位传奇设计师风格。",
           "badge": "开源",
-          "url": "https://github.com/joeseesun/qiaomu-mondo-poster-design",
+          "url": "https://github.com/gechuan/qiaomu-mondo-poster-design",
           "stat": "★ 1,351"
         },
         {
@@ -501,7 +501,7 @@
           "category": "skills",
           "description": "偏执型设计顾问 Skill：反 AI 味设计、风格试衣间和 58 站设计系统库。",
           "badge": "开源",
-          "url": "https://github.com/joeseesun/qiaomu-design",
+          "url": "https://github.com/gechuan/qiaomu-design",
           "stat": "★ 673"
         },
         {
@@ -509,7 +509,7 @@
           "category": "skills",
           "description": "用 opencli 操作 B 站、知乎、X、小红书、YouTube 等内容平台。",
           "badge": "开源",
-          "url": "https://github.com/joeseesun/qiaomu-opencli-skills",
+          "url": "https://github.com/gechuan/qiaomu-opencli-skills",
           "stat": "★ 997"
         },
         {
@@ -517,7 +517,7 @@
           "category": "skills",
           "description": "把模糊的 Codex 任务改写成带验收、约束和迭代策略的 /goal 指令。",
           "badge": "开源",
-          "url": "https://github.com/joeseesun/qiaomu-goal-meta-skill",
+          "url": "https://github.com/gechuan/qiaomu-goal-meta-skill",
           "stat": "★ 906"
         },
         {
@@ -525,7 +525,7 @@
           "category": "skills",
           "description": "把任意网址抓成干净的 Markdown，支持需要登录的页面。",
           "badge": "开源",
-          "url": "https://github.com/joeseesun/qiaomu-markdown-proxy",
+          "url": "https://github.com/gechuan/qiaomu-markdown-proxy",
           "stat": "★ 509"
         },
         {
@@ -533,7 +533,7 @@
           "category": "skills",
           "description": "覆盖 Google、Bing 和 AI 搜索的网站 SEO 审计、诊断与优化 Skill。",
           "badge": "开源",
-          "url": "https://github.com/joeseesun/qiaomu-seo",
+          "url": "https://github.com/gechuan/qiaomu-seo",
           "stat": "★ 470"
         },
         {
@@ -541,7 +541,7 @@
           "category": "skills",
           "description": "通用视频下载 Skill：YouTube、B 站、X、抖音等平台一句话下载。",
           "badge": "开源",
-          "url": "https://github.com/joeseesun/qiaomu-download",
+          "url": "https://github.com/gechuan/qiaomu-download",
           "stat": "★ 438"
         },
         {
@@ -549,7 +549,7 @@
           "category": "skills",
           "description": "从一个故事想法生成完整、抓人的中文原创短篇小说。",
           "badge": "开源",
-          "url": "https://github.com/joeseesun/qiaomu-novel-generator",
+          "url": "https://github.com/gechuan/qiaomu-novel-generator",
           "stat": "★ 396"
         },
         {
@@ -557,7 +557,7 @@
           "category": "skills",
           "description": "把工作流变成可研究、可评测、可发布的 Agent Skill。",
           "badge": "开源",
-          "url": "https://github.com/joeseesun/qiaomu-meta-skill",
+          "url": "https://github.com/gechuan/qiaomu-meta-skill",
           "stat": "★ 389"
         },
         {
@@ -565,7 +565,7 @@
           "category": "skills",
           "description": "智能视频导演 Skill：素材治理、双语字幕、品牌包装与可复现渲染。",
           "badge": "开源",
-          "url": "https://github.com/joeseesun/qiaomu-cut-skill",
+          "url": "https://github.com/gechuan/qiaomu-cut-skill",
           "stat": "★ 377"
         },
         {
@@ -573,7 +573,7 @@
           "category": "skills",
           "description": "一句话生成任意领域的知识学习网站，自动创作内容并部署。",
           "badge": "开源",
-          "url": "https://github.com/joeseesun/qiaomu-knowledge-site-creator",
+          "url": "https://github.com/gechuan/qiaomu-knowledge-site-creator",
           "stat": "★ 366"
         },
         {
@@ -581,7 +581,7 @@
           "category": "skills",
           "description": "把任意文字变成杂志质感的信息卡片，并自动截图成图片。",
           "badge": "开源",
-          "url": "https://github.com/joeseesun/qiaomu-info-card-designer",
+          "url": "https://github.com/gechuan/qiaomu-info-card-designer",
           "stat": "★ 276"
         },
         {
@@ -589,7 +589,7 @@
           "category": "skills",
           "description": "把一句话产品想法变成 AI 可实现的 PRD：约束、指标和验收标准。",
           "badge": "开源",
-          "url": "https://github.com/joeseesun/qiaomu-ai-prd",
+          "url": "https://github.com/gechuan/qiaomu-ai-prd",
           "stat": "★ 214"
         },
         {
@@ -597,7 +597,7 @@
           "category": "skills",
           "description": "基于 RateYourMusic 5947 个流派的音乐风格查询与推荐 Skill。",
           "badge": "开源",
-          "url": "https://github.com/joeseesun/music-genre-finder",
+          "url": "https://github.com/gechuan/music-genre-finder",
           "stat": "★ 184"
         },
         {
@@ -605,7 +605,7 @@
           "category": "skills",
           "description": "下载微信视频号视频和直播回放的 Skill。",
           "badge": "开源",
-          "url": "https://github.com/joeseesun/qiaomu-wx-video",
+          "url": "https://github.com/gechuan/qiaomu-wx-video",
           "stat": "★ 140"
         },
         {
@@ -613,7 +613,7 @@
           "category": "skills",
           "description": "从 Markdown 生成专业 EPUB 电子书，兼容微信读书。",
           "badge": "开源",
-          "url": "https://github.com/joeseesun/qiaomu-epub-book-generator",
+          "url": "https://github.com/gechuan/qiaomu-epub-book-generator",
           "stat": "★ 139"
         },
         {
@@ -621,7 +621,7 @@
           "category": "skills",
           "description": "让任何 Agent 调用 Codex 内置生图，附小红书、视频封面和海报技巧。",
           "badge": "开源",
-          "url": "https://github.com/joeseesun/qiaomu-codex-imagegen",
+          "url": "https://github.com/gechuan/qiaomu-codex-imagegen",
           "stat": "★ 136"
         },
         {
@@ -629,7 +629,7 @@
           "category": "skills",
           "description": "生成乔木风格的 Bento 版式演示文稿，单个 HTML 文件即可放映。",
           "badge": "开源",
-          "url": "https://github.com/joeseesun/qiaomu-bento-ppt",
+          "url": "https://github.com/gechuan/qiaomu-bento-ppt",
           "stat": "★ 126"
         },
         {
@@ -637,7 +637,7 @@
           "category": "skills",
           "description": "在 Claude Code 里搜索和下载 YouTube 视频。",
           "badge": "开源",
-          "url": "https://github.com/joeseesun/yt-search-download",
+          "url": "https://github.com/gechuan/yt-search-download",
           "stat": "★ 118"
         },
         {
@@ -645,7 +645,7 @@
           "category": "skills",
           "description": "让 Claude Code 用 defuddle 从网页里提取干净的正文。",
           "badge": "开源",
-          "url": "https://github.com/joeseesun/defuddle-skill",
+          "url": "https://github.com/gechuan/defuddle-skill",
           "stat": "★ 112"
         },
         {
@@ -653,7 +653,7 @@
           "category": "skills",
           "description": "一句话开发精致的 Mac App：图标、设置与关于、自动更新、公证 DMG、GitHub 发布 · Agent skill for one-shot native macOS apps",
           "badge": "开源",
-          "url": "https://github.com/joeseesun/qiaomu-macos-dev",
+          "url": "https://github.com/gechuan/qiaomu-macos-dev",
           "stat": "★ 8"
         }
       ]
@@ -733,7 +733,7 @@
           "category": "learning",
           "description": "120+ 篇 AI 工程必读论文，覆盖大模型、多模态、RAG、Agent 和扩散模型。",
           "badge": "开源",
-          "url": "https://github.com/joeseesun/AI_Papers_2025",
+          "url": "https://github.com/gechuan/AI_Papers_2025",
           "stat": "★ 103"
         }
       ]
@@ -765,7 +765,7 @@
           "category": "creative",
           "description": "用 Claude 写代码生成视频：54 个案例和可直接复制的提示词。",
           "badge": "开源",
-          "url": "https://github.com/joeseesun/opus-video-prompts",
+          "url": "https://github.com/gechuan/opus-video-prompts",
           "stat": "★ 950"
         },
         {
@@ -773,7 +773,7 @@
           "category": "creative",
           "description": "乔木封面设计的默认开源字库，中英文 OFL 字体，已子集化。",
           "badge": "开源",
-          "url": "https://github.com/joeseesun/qiaomu-cover-fonts",
+          "url": "https://github.com/gechuan/qiaomu-cover-fonts",
           "stat": "★ 122"
         },
         {
@@ -781,7 +781,7 @@
           "category": "creative",
           "description": "原版乔木 UI 学习的 DeepSeek Harness 迁移版：13561 设计参考、106 交互标本、审美测验与 Markdown 学习笔记",
           "badge": "开源",
-          "url": "https://github.com/joeseesun/qiaomu-ui-learn-dsh",
+          "url": "https://github.com/gechuan/qiaomu-ui-learn-dsh",
           "stat": "★ 80"
         },
         {
@@ -789,7 +789,7 @@
           "category": "creative",
           "description": "Commercial event posters from URLs, briefs and logos. Brand-led layouts, editable typography, verified QR codes, and 18 real cases.",
           "badge": "开源",
-          "url": "https://github.com/joeseesun/qiaomu-poster",
+          "url": "https://github.com/gechuan/qiaomu-poster",
           "stat": "★ 6"
         },
         {
@@ -797,7 +797,7 @@
           "category": "creative",
           "description": "Original Qiaomu cover canvas, templates, typography and AI design for DeepSeek Harness",
           "badge": "开源",
-          "url": "https://github.com/joeseesun/qiaomu-cover-design-dsh",
+          "url": "https://github.com/gechuan/qiaomu-cover-design-dsh",
           "stat": "★ 3"
         },
         {
@@ -805,7 +805,7 @@
           "category": "creative",
           "description": "原版乔木博客发布器的 DeepSeek Harness 版本，保留博客分类、草稿和 R2 图片音视频上传",
           "badge": "开源",
-          "url": "https://github.com/joeseesun/qiaomu-blog-publisher-dsh",
+          "url": "https://github.com/gechuan/qiaomu-blog-publisher-dsh",
           "stat": "★ 1"
         },
         {
@@ -813,7 +813,7 @@
           "category": "creative",
           "description": "原版乔木 Publish 的 DeepSeek Harness 版本：42 主题、公众号排版、X/知乎/小红书草稿、封面与长图导出",
           "badge": "开源",
-          "url": "https://github.com/joeseesun/qiaomu-publish-dsh",
+          "url": "https://github.com/gechuan/qiaomu-publish-dsh",
           "stat": "★ 1"
         }
       ]
@@ -885,7 +885,7 @@
           "category": "dev",
           "description": "基于 Next.js、Cloudflare D1 和 R2 的开源博客模板。",
           "badge": "开源",
-          "url": "https://github.com/joeseesun/qiaomu-blog-opensource",
+          "url": "https://github.com/gechuan/qiaomu-blog-opensource",
           "stat": "★ 301"
         },
         {
@@ -893,7 +893,7 @@
           "category": "dev",
           "description": "快速分享大模型生成的 HTML、Markdown、SVG 和 Mermaid 代码。",
           "badge": "开源",
-          "url": "https://github.com/joeseesun/quickshare",
+          "url": "https://github.com/gechuan/quickshare",
           "stat": "★ 136"
         },
         {
@@ -901,7 +901,7 @@
           "category": "dev",
           "description": "黑客书架 — Hacker News 评论中被提及书籍的中文镜像站（纯静态、无构建） / Chinese edition of hackerbooks.org",
           "badge": "开源",
-          "url": "https://github.com/joeseesun/hackerbooks-cn",
+          "url": "https://github.com/gechuan/hackerbooks-cn",
           "stat": "★ 18"
         },
         {
@@ -917,7 +917,7 @@
           "category": "dev",
           "description": "Work in progress: original Qiaomu Agent UI and full functionality migration to DeepSeek Harness",
           "badge": "开源",
-          "url": "https://github.com/joeseesun/qiaomu-agent-dsh",
+          "url": "https://github.com/gechuan/qiaomu-agent-dsh",
           "stat": "★ 1"
         },
         {
@@ -925,7 +925,7 @@
           "category": "dev",
           "description": "Original Qiaomu Audio UI, speech, dictation and media export for DeepSeek Harness",
           "badge": "开源",
-          "url": "https://github.com/joeseesun/qiaomu-audio-dsh",
+          "url": "https://github.com/gechuan/qiaomu-audio-dsh",
           "stat": "★ 1"
         },
         {

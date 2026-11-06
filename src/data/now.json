@@ -18,7 +18,7 @@
     ]
   },
   "items": [
-    { "title": "开源 Agent Skills", "text": "把自己每天用的工作流整理成可安装、可评测的 Skills：写作、配图、视频剪辑、SEO、下载、发布。代码都在 GitHub，精选在项目页。", "href": "https://github.com/joeseesun", "linkLabel": "GitHub" },
+    { "title": "开源 Agent Skills", "text": "把自己每天用的工作流整理成可安装、可评测的 Skills：写作、配图、视频剪辑、SEO、下载、发布。代码都在 GitHub，精选在项目页。", "href": "https://github.com/gechuan", "linkLabel": "GitHub" },
     { "title": "QMReader 与阅读工具", "text": "乔木 AI 资讯提供网页、Obsidian 和 DeepSeek Harness 三个入口，聚合 AI Newsletter、播客与公众号，方便用中文阅读；同时继续打磨 QMReader 的文章对话和 iOS 阅读器。", "href": "https://airss.qiaomu.ai/", "linkLabel": "乔木 AI 资讯" },
     { "title": "播客", "text": "每周和杨攀、歸藏、橘子录一期 Next Token；同时把喜欢的英文 AI 播客做成中文精读站：Lex Fridman、All-In、No Priors、Training Data、Cognitive Revolution 等。", "href": "/podcast", "linkLabel": "见播客页" },
     { "title": "写作与音乐", "text": "每周在博客更新实践笔记；有空就用 AI 写歌，放在乔木音乐。", "href": "https://music.qiaomu.ai/", "linkLabel": "乔木音乐" }

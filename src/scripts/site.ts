@@ -249,18 +249,18 @@ function modalContent(kind: ModalKind, qr: { follow: string; reward: string }, s
     return `
       <div class="modal-content">
         <h2 id="modal-title">打赏支持</h2>
-        <p>如果这些工具、文章或推荐对你有帮助，可以请乔木喝杯咖啡。</p>
+        <p>如果这些工具、文章或推荐对你有帮助，可以请Chuan 喝杯咖啡。</p>
         <img class="qr-image" src="${qr.reward}" width="220" height="220" alt="打赏二维码" />
       </div>`;
   }
   return `
     <div class="modal-content">
-      <h2 id="modal-title">关注向阳乔木</h2>
-      <p>微信扫码关注公众号「向阳乔木推荐看」</p>
+      <h2 id="modal-title">欢迎关注</h2>
+      <p>微信扫码关注公众号「Deep Into X」</p>
       <img class="qr-image" src="${qr.follow}" width="220" height="220" alt="公众号二维码" />
       <div class="modal-links">
         <a href="${social.github}" target="_blank" rel="noopener noreferrer">GitHub</a>
-        <a href="${social.x}" target="_blank" rel="noopener noreferrer">X @vista8</a>
+        <a href="${social.x}" target="_blank" rel="noopener noreferrer">X @gechuan</a>
       </div>
     </div>`;
 }

@@ -3,7 +3,6 @@ import Layout from '../layouts/Layout.astro';
 import site from '../data/site.json';
 import home from '../data/home.json';
 import projects from '../data/projects.json';
-import music from '../data/music.json';
 import friends from '../data/friends.json';
 
 const ext = { target: '_blank', rel: 'noopener noreferrer' };
@@ -139,68 +138,6 @@ const ext = { target: '_blank', rel: 'noopener noreferrer' };
         ))}
       </div>
     </div>
-  </section>
-
-  <section class="band" id="music" aria-labelledby="music-title" data-music>
-    <div class="wrap">
-      <div class="cover">
-        <img data-cover src={music.tracks[0].coverUrl} width="240" height="240" alt="" loading="lazy" />
-      </div>
-      <div class="deck">
-        <span class="k">{music.kicker}</span>
-        <h3 id="music-title" data-title>{music.tracks[0].title}</h3>
-        <div class="meta" data-meta>
-          {[music.tracks[0].artist, music.tracks[0].album, music.tracks[0].dateLabel].filter(Boolean).join(' · ')}
-        </div>
-        <p class="lyric" data-lyric aria-live="off">
-          <span data-line>&nbsp;</span>
-          <span class="next" data-next>&nbsp;</span>
-        </p>
-        <div class="seek">
-          <span class="t" data-elapsed>0:00</span>
-          <input type="range" min="0" max="1000" value="0" step="1" data-seek aria-label="播放进度" />
-          <span class="t" data-duration>--:--</span>
-        </div>
-        <div class="ctl">
-          <button type="button" class="ctl-btn" data-shuffle aria-pressed="false" aria-label="随机播放" title="随机播放">
-            <svg viewBox="0 0 24 24"><path d="M16 3h5v5M4 20 21 3M21 16v5h-5M15 15l6 6M4 4l5 5"></path></svg>
-          </button>
-          <button type="button" class="ctl-btn" data-prev aria-label="上一首" title="上一首">
-            <svg viewBox="0 0 24 24"><path d="M19 20 9 12l10-8v16ZM5 19V5"></path></svg>
-          </button>
-          <button type="button" class="play" data-play aria-label="播放">
-            <svg class="tri" viewBox="0 0 24 24"><path d="M8 5v14l11-7Z"></path></svg>
-            <svg class="pause" viewBox="0 0 24 24"><path d="M7 5h3.5v14H7zM13.5 5H17v14h-3.5z"></path></svg>
-          </button>
-          <button type="button" class="ctl-btn" data-next aria-label="下一首" title="下一首">
-            <svg viewBox="0 0 24 24"><path d="m5 4 10 8-10 8V4ZM19 5v14"></path></svg>
-          </button>
-          <a class="ctl-btn" href={music.tracks[0].url} data-link {...ext} aria-label="在乔木音乐打开" title="在乔木音乐打开">
-            <svg viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"></path></svg>
-          </a>
-        </div>
-        <audio data-audio preload="none"></audio>
-      </div>
-      <div class="queue">
-        <div class="queue-h">
-          <b>{home.music.queueTitle}</b>
-          <a class="more" href={home.music.more.href} {...ext}>{home.music.more.label}</a>
-        </div>
-        <ol>
-          {music.tracks.map((track, i) => (
-            <li>
-              <button type="button" data-track={i} aria-current={i === 0 ? 'true' : undefined}>
-                <span class="no latin">{String(i + 1).padStart(2, '0')}</span>
-                <span class="eq" aria-hidden="true"><i></i><i></i><i></i></span>
-                <span class="nm">{track.title}</span>
-                <span class="dt latin">{track.dateLabel.slice(5)}</span>
-              </button>
-            </li>
-          ))}
-        </ol>
-      </div>
-    </div>
-    <script type="application/json" id="music-data" set:html={JSON.stringify(music.tracks)} />
   </section>
 
   <section class="sec" id="friends" aria-labelledby="friends-title">
