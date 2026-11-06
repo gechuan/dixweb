@@ -449,14 +449,6 @@
           "stat": "appreview.qiaomu.ai"
         },
         {
-          "name": "乔木推荐",
-          "category": "ai-tools",
-          "description": "精选朋友们的 AI 产品、效率工具和乔木自有工具站。",
-          "badge": "网站",
-          "url": "https://tuijian.qiaomu.ai/",
-          "stat": "tuijian.qiaomu.ai"
-        },
-        {
           "name": "乔木 LLM 擂台",
           "category": "ai-tools",
           "description": "同一提示词并行对比多个大模型的创意写作与前端开发表现。",
@@ -591,14 +583,6 @@
           "badge": "开源",
           "url": "https://github.com/gechuan/qiaomu-ai-prd",
           "stat": "★ 214"
-        },
-        {
-          "name": "music-genre-finder",
-          "category": "skills",
-          "description": "基于 RateYourMusic 5947 个流派的音乐风格查询与推荐 Skill。",
-          "badge": "开源",
-          "url": "https://github.com/gechuan/music-genre-finder",
-          "stat": "★ 184"
         },
         {
           "name": "qiaomu-wx-video",
@@ -819,22 +803,14 @@
       ]
     },
     {
-      "id": "music-fun",
-      "title": "音乐与娱乐",
+      "id": "fun",
+      "title": "娱乐",
       "note": "",
       "downloads": "",
       "items": [
         {
-          "name": "乔木音乐",
-          "category": "music-fun",
-          "description": "乔木用 AI 做的歌，带歌词同步的在线播放器。",
-          "badge": "网站",
-          "url": "https://music.qiaomu.ai/",
-          "stat": "music.qiaomu.ai"
-        },
-        {
           "name": "乔木电台",
-          "category": "music-fun",
+          "category": "fun",
           "description": "选一种此刻的心情，进入会随反馈调整的全球直播电台流。",
           "badge": "网站",
           "url": "https://radio.qiaomu.ai/",
@@ -842,7 +818,7 @@
         },
         {
           "name": "AI 鼓机 DR-808",
-          "category": "music-fun",
+          "category": "fun",
           "description": "纯浏览器运行的 8 音轨 16 步进鼓机。",
           "badge": "网站",
           "url": "https://drum.qiaomu.ai/",
@@ -850,7 +826,7 @@
         },
         {
           "name": "在线调音器",
-          "category": "music-fun",
+          "category": "fun",
           "description": "YIN 算法的高精度在线调音器，支持吉他、贝斯、尤克里里。",
           "badge": "网站",
           "url": "https://tune.qiaomu.ai/",
@@ -858,7 +834,7 @@
         },
         {
           "name": "乔木电影清单 IMDb Top 250",
-          "category": "music-fun",
+          "category": "fun",
           "description": "IMDb Top 250 的中文片名、摘要和口碑，标记看过、想看和收藏。",
           "badge": "网站",
           "url": "https://aha.qiaomu.ai/",

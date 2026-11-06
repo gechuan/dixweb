@@ -130,8 +130,6 @@ const isCurrent = (href: string) => {
           <h5>项目</h5>
           <ul>
             <li><a href="/projects">全部项目</a></li>
-            <li><a href={site.social.tuijian} target="_blank" rel="noopener noreferrer">{site.social.tuijianLabel}</a></li>
-            <li><a href={site.social.music} target="_blank" rel="noopener noreferrer">{site.social.musicLabel}</a></li>
             <li><a href={site.footer.repos} target="_blank" rel="noopener noreferrer">开源仓库</a></li>
           </ul>
         </div>
@@ -145,14 +143,6 @@ const isCurrent = (href: string) => {
             <li><a href={site.social.x} target="_blank" rel="noopener noreferrer">X @gechuan</a></li>
           </ul>
         </div>
-      </div>
-      <div class="wrap links" aria-label="友情链接">
-        <h5>友情链接</h5>
-        <ul>
-          {site.footer.friends.map((f) => (
-            <li><a href={f.href} target="_blank" rel="noopener">{f.label}</a></li>
-          ))}
-        </ul>
       </div>
       <div class="foot-b">
         <div class="wrap">

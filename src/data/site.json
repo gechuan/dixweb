@@ -1,7 +1,7 @@
 {
   "siteUrl": "https://www.deepintox.com",
   "title": "Chuan· 先上手试试，再看看能走到哪",
-  "description": "记录 AI 工具、提示词工程、工作流拆解、音乐、必读文章与个人项目，写给愿意把 AI 真正用起来的人。",
+  "description": "记录 AI 工具、提示词工程、工作流拆解、必读文章与个人项目，写给愿意把 AI 真正用起来的人。",
   "author": "Chuan",
   "brand": "Deep Into X",
   "avatar": "/assets/ai-image-6aebd6ebc9493ef70d931cf0-1.jpg",
@@ -46,10 +46,6 @@
     "airss": "https://airss.qiaomu.ai/",
     "airssLabel": "乔木 AI 资讯",
     "rss": "/notes/rss.xml",
-    "music": "https://music.qiaomu.ai/",
-    "musicLabel": "乔木音乐",
-    "tuijian": "https://tuijian.qiaomu.ai/",
-    "tuijianLabel": "乔木推荐",
     "nexttoken": "https://nexttoken.tv/",
     "nexttokenLabel": "Next Token｜词元之外"
   },
@@ -66,40 +62,6 @@
     "note": "填入自托管 Umami 的 script.js 地址和网站 ID，留空则不加载统计脚本"
   },
   "footer": {
-    "friends": [
-      {
-        "label": "Next Token｜词元之外",
-        "href": "https://nexttoken.tv/"
-      },
-      {
-        "label": "杨攀同学",
-        "href": "https://yangpan.com/"
-      },
-      {
-        "label": "歸藏",
-        "href": "https://www.guizang.ai/"
-      },
-      {
-        "label": "姚金刚",
-        "href": "https://www.laoyao.cn/"
-      },
-      {
-        "label": "小互",
-        "href": "https://xiaohu.ai/"
-      },
-      {
-        "label": "橘子",
-        "href": "https://orangesai.com/"
-      },
-      {
-        "label": "AI 炼金术",
-        "href": "https://ailianjinshu.com/"
-      },
-      {
-        "label": "高阳",
-        "href": "https://gaoyang.dev/"
-      }
-    ],
     "colo": "把手弄脏，看看不一样的世界",
     "coloUrl": "https://web20next.com/zh/manifesto",
     "copyright": "© 2026 Chuan · Deep Into X",

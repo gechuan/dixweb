@@ -68,13 +68,6 @@ content:
         label: 页脚
         type: object
         fields:
-          - name: friends
-            label: 友情链接
-            type: object
-            list: true
-            fields:
-              - { name: label, label: 名称, type: string }
-              - { name: href, label: 链接, type: string }
           - { name: colo, label: 宣言文案, type: string }
           - { name: coloUrl, label: 宣言链接, type: string }
           - { name: copyright, label: 版权文案, type: string }

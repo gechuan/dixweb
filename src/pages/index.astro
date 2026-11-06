@@ -3,7 +3,6 @@ import Layout from '../layouts/Layout.astro';
 import site from '../data/site.json';
 import home from '../data/home.json';
 import projects from '../data/projects.json';
-import friends from '../data/friends.json';
 
 const ext = { target: '_blank', rel: 'noopener noreferrer' };
 ---
@@ -136,68 +135,6 @@ const ext = { target: '_blank', rel: 'noopener noreferrer' };
             <span class="a" aria-hidden="true">↗</span>
           </a>
         ))}
-      </div>
-    </div>
-  </section>
-
-  <section class="sec" id="friends" aria-labelledby="friends-title">
-    <div class="wrap">
-      <div class="sh">
-        <div class="t">
-          <span class="k">{home.friendsSection.kicker}</span>
-          <h2 id="friends-title">{home.friendsSection.titleLines[0]}<br />{home.friendsSection.titleLines[1]}</h2>
-        </div>
-        <a class="more" href={site.social.tuijian} {...ext}>去{site.social.tuijianLabel}看更多</a>
-      </div>
-      <div class="fr" data-friends role="region" aria-roledescription="轮播" aria-label="朋友的产品">
-        <div class="fr-stage">
-          <div class="fr-slides" data-slides aria-live="polite">
-            {friends.items.map((f, i) => (
-              <article class="fr-slide" data-slide={i} aria-roledescription="幻灯片" aria-label={`${i + 1} / ${friends.items.length}：${f.name}`} hidden={i !== 0}>
-                <div class="fr-head">
-                  <span class="fr-logo">
-                    {f.logo
-                      ? <img src={f.logo} width="64" height="64" alt="" loading={i === 0 ? 'eager' : 'lazy'} decoding="async" />
-                      : <b>{f.logoText || f.name.slice(0, 1)}</b>}
-                  </span>
-                  <div>
-                    <span class="fr-cat">{f.category}</span>
-                    <h3>{f.name}</h3>
-                  </div>
-                </div>
-                <p class="fr-tag">{f.tagline}</p>
-                <p class="fr-sum">{f.summary}</p>
-                <p class="fr-for"><span>适合</span>{f.audience}</p>
-                <div class="fr-chips">
-                  {f.chips.map((chip) => <span>{chip}</span>)}
-                </div>
-                <a class="btn" href={f.url} {...ext} rel="noopener noreferrer sponsored">
-                  {f.cta}
-                  <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
-                </a>
-              </article>
-            ))}
-          </div>
-          <div class="fr-ctrl">
-            <button type="button" class="fr-btn" data-prev aria-label="上一个">
-              <svg viewBox="0 0 24 24"><path d="M15 6l-6 6 6 6"></path></svg>
-            </button>
-            <button type="button" class="fr-btn" data-next aria-label="下一个">
-              <svg viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"></path></svg>
-            </button>
-            <span class="fr-count latin"><b data-current>01</b> / {friends.items.length}</span>
-          </div>
-        </div>
-        <div class="fr-wall" role="group" aria-label="选择要看的产品">
-          {friends.items.map((f, i) => (
-            <button type="button" class="fr-tile" data-go={i} aria-label={f.name} aria-current={i === 0 ? 'true' : undefined}>
-              {f.logo
-                ? <img src={f.logo} width="40" height="40" alt="" loading="lazy" decoding="async" />
-                : <b>{f.logoText || f.name.slice(0, 1)}</b>}
-              <span>{f.name}</span>
-            </button>
-          ))}
-        </div>
       </div>
     </div>
   </section>

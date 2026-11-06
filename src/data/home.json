@@ -230,20 +230,6 @@
       "href": "/projects"
     }
   },
-  "music": {
-    "queueTitle": "最近上传",
-    "more": {
-      "label": "全部歌曲",
-      "href": "https://music.qiaomu.ai/"
-    }
-  },
-  "friendsSection": {
-    "kicker": "Friends · 乔木推荐",
-    "titleLines": [
-      "朋友们正在做的，",
-      "也值得被认真看见。"
-    ]
-  },
   "now": {
     "title": "今天做了啥",
     "date": "2026年10月28日",
@@ -255,7 +241,7 @@
   },
   "subscribe": {
     "title": "每周二，\n一篇值得读完的实践笔记。",
-    "body": "新的实践笔记、工具发现、工作流拆解和音乐更新，会在博客、公众号和这些站点里陆续出现。不发口号，只写跑通后的东西。",
+    "body": "新的实践笔记、工具发现和工作流拆解，会在博客、公众号和这些站点里陆续出现。不发口号，只写跑通后的东西。",
     "cta": {
       "label": "扫码关注公众号",
       "modal": "follow"

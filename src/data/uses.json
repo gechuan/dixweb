@@ -1,13 +1,8 @@
 {
   "eyebrow": "USES · 工具箱",
   "title": "我每天在用的工具",
-  "lede": "我在写作、编程、做视频和做音乐时真正每天打开的工具。不收广告，只列在用的。",
+  "lede": "我在写作、编程和做视频时真正每天打开的工具。不收广告，只列在用的。",
   "updated": "2026年10月27日",
-  "eyebrow": "USES · 工具箱",
-  "title": "我每天在用的工具",
-  "lede": "我在写作、编程、做视频和做音乐时真正每天打开的工具。不收广告，只列在用的。",
-  "updated": "2026年10月27日",
-  "more": { "label": "乔木推荐", "text": "朋友们做的 AI 产品和我在用的效率工具，一页看完。", "href": "https://tuijian.qiaomu.ai/" },
   "groups": [
     {
       "title": "AI 编程与 Agent",
@@ -34,13 +29,6 @@
       ]
     },
     {
-      "title": "音乐与视频",
-      "items": [
-        { "name": "Suno", "url": "https://suno.com/", "desc": "乔木音乐里的歌都从这里开始。" },
-        { "name": "乔木剪辑", "url": "https://jtmusic.qiaomu.ai/", "desc": "浏览器里剪短视频，素材不上传。" }
-      ]
-    },
-    {
       "title": "建站与运维",
       "items": [
         { "name": "Astro", "url": "https://astro.build/", "desc": "这个网站用它构建。" },
@@ -49,6 +37,5 @@
         { "name": "Umami", "url": "https://umami.is/", "desc": "自托管的隐私友好统计。" }
       ]
     }
-  ],
-  "more": { "label": "乔木推荐", "text": "朋友们做的 AI 产品和我在用的效率工具，一页看完。", "href": "https://tuijian.qiaomu.ai/" }
+  ]
 }

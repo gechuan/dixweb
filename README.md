@@ -29,8 +29,6 @@ npm run preview
 | `notes.json` | 随想列表 |
 | `podcast.json` | 播客节目、单集、中文精读站 |
 | `projects.json` | 项目分组与首页精选 |
-| `friends.json` | 朋友推荐轮播 |
-| `music.json` | 播放器曲目 |
 | `uses.json` | 工具箱 |
 | `now.json` / `about.json` | 「现在」页与「关于」页 |
 
@@ -38,7 +36,7 @@ npm run preview
 
 1. 把仓库推到 GitHub。
 2. 打开 [pagescms.org](https://pagescms.org)，用 GitHub 登录并选择这个仓库。
-3. CMS 会读取根目录的 `.pages.yml`，自动生成「随想」「项目」「朋友推荐」等编辑界面，手机上也能改。
+3. CMS 会读取根目录的 `.pages.yml`，自动生成「随想」「项目」等编辑界面，手机上也能改。
 4. 保存即提交到仓库；如果接了 Cloudflare Pages 的 Git 集成，推送后自动重新构建上线。
 
 ## 部署到 Cloudflare
