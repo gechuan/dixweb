@@ -5,6 +5,7 @@ import home from '../data/home.json';
 import projects from '../data/projects.json';
 
 const ext = { target: '_blank', rel: 'noopener noreferrer' };
+const dateLabel = `${new Date().getFullYear()}年${new Date().getMonth() + 1}月${new Date().getDate()}日`;
 ---
 
 <Layout>
@@ -44,7 +45,7 @@ const ext = { target: '_blank', rel: 'noopener noreferrer' };
     <div class="wrap">
       <div class="contents-h">
         <b>本期目录</b>
-        <span class="latin">{new Date().getFullYear()}年{new Date().getMonth() + 1}月{new Date().getDate()}日</span>
+        <span class="latin" data-current-date>{dateLabel}</span>
       </div>
       <div class="cols">
         {home.cols.map((col) => (

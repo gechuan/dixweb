@@ -10,16 +10,27 @@ interface Props {
 
 const { title = site.title, description = site.description } = Astro.props;
 
-const now = new Date();
-const weekdays = ['日', '一', '二', '三', '四', '五', '六'];
-const dateLabel = `${now.getFullYear()}年${now.getMonth() + 1}月${now.getDate()}日星期${weekdays[now.getDay()]}`;
-const isoWeek = (() => {
-  const d = new Date(Date.UTC(now.getFullYear(), now.getMonth(), now.getDate()));
-  const dayNum = d.getUTCDay() || 7;
-  d.setUTCDate(d.getUTCDate() + 4 - dayNum);
-  const yearStart = new Date(Date.UTC(d.getUTCFullYear(), 0, 1));
-  return Math.ceil(((d.getTime() - yearStart.getTime()) / 86400000 + 1) / 7);
-})();
+const dateParts = new Intl.DateTimeFormat('zh-CN', {
+  timeZone: 'Asia/Shanghai',
+  year: 'numeric',
+  month: 'numeric',
+  day: 'numeric',
+  weekday: 'long',
+}).formatToParts(new Date());
+const getDatePart = (type: Intl.DateTimeFormatPartTypes) =>
+  dateParts.find((part) => part.type === type)?.value ?? '';
+const dateLabel = `${getDatePart('year')}年${getDatePart('month')}月${getDatePart('day')}日${getDatePart('weekday')}`;
+const [year, month, day] = new Intl.DateTimeFormat('en-CA', {
+  timeZone: 'Asia/Shanghai',
+  year: 'numeric',
+  month: '2-digit',
+  day: '2-digit',
+}).format(new Date()).split('-').map(Number);
+const isoDate = new Date(Date.UTC(year, month - 1, day));
+const dayNum = isoDate.getUTCDay() || 7;
+isoDate.setUTCDate(isoDate.getUTCDate() + 4 - dayNum);
+const yearStart = new Date(Date.UTC(isoDate.getUTCFullYear(), 0, 1));
+const isoWeek = Math.ceil(((isoDate.getTime() - yearStart.getTime()) / 86400000 + 1) / 7);
 
 const path = Astro.url.pathname.replace(/\/$/, '') || '/';
 const isCurrent = (href: string) => {
@@ -67,8 +78,8 @@ const isCurrent = (href: string) => {
     <header class="mast" id="mast">
       <div class="wrap">
         <div class="mast-date">
-          <span>{dateLabel}</span>
-          <span class="latin">Week {isoWeek}</span>
+          <span data-current-date>{dateLabel}</span>
+          <span class="latin" data-current-week>Week {isoWeek}</span>
           <a class="ext" href={site.dateline.episodeUrl} target="_blank" rel="noopener noreferrer">{site.dateline.episodeLabel}</a>
         </div>
         <a class="brand" href="/" aria-label={`${site.author}首页`}>

@@ -36,6 +36,40 @@ function initNavbar() {
   }).observe(mast);
 }
 
+function updateCurrentDates() {
+  const timeZone = 'Asia/Shanghai';
+  const now = new Date();
+  const dateParts = new Intl.DateTimeFormat('zh-CN', {
+    timeZone,
+    year: 'numeric',
+    month: 'numeric',
+    day: 'numeric',
+    weekday: 'long',
+  }).formatToParts(now);
+  const getPart = (type: Intl.DateTimeFormatPartTypes) =>
+    dateParts.find((part) => part.type === type)?.value ?? '';
+  const dateLabel = `${getPart('year')}年${getPart('month')}月${getPart('day')}日${getPart('weekday')}`;
+
+  const [year, month, day] = new Intl.DateTimeFormat('en-CA', {
+    timeZone,
+    year: 'numeric',
+    month: '2-digit',
+    day: '2-digit',
+  }).format(now).split('-').map(Number);
+  const isoDate = new Date(Date.UTC(year, month - 1, day));
+  const dayNum = isoDate.getUTCDay() || 7;
+  isoDate.setUTCDate(isoDate.getUTCDate() + 4 - dayNum);
+  const yearStart = new Date(Date.UTC(isoDate.getUTCFullYear(), 0, 1));
+  const week = Math.ceil(((isoDate.getTime() - yearStart.getTime()) / 86400000 + 1) / 7);
+
+  $$('[data-current-date]').forEach((element) => {
+    element.textContent = dateLabel;
+  });
+  $$('[data-current-week]').forEach((element) => {
+    element.textContent = `Week ${week}`;
+  });
+}
+
 type ModalKind = 'reward' | 'follow';
 
 function modalContent(kind: ModalKind, qr: { follow: string; reward: string }, social: { github: string; x: string }) {
@@ -150,6 +184,7 @@ export function initSite() {
   };
   initTheme();
   initNavbar();
+  updateCurrentDates();
   initModal(qr, social);
   initFilters();
 }
