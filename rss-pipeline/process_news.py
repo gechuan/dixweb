@@ -37,7 +37,7 @@ def parse_args() -> argparse.Namespace:
 def main() -> int:
     args = parse_args()
     if args.provider == "deepseek":
-        api_key = os.environ.get("DEEPSEEK_API_KEY")
+        api_key = os.environ.get("DEEPSEEK_API_KEY", "").strip()
         if not api_key:
             raise SystemExit("DEEPSEEK_API_KEY is required for the full DeepSeek provider")
         provider = DeepSeekProvider(api_key, os.environ.get("DEEPSEEK_MODEL", "deepseek-chat"))
