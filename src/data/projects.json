@@ -1,7 +1,7 @@
 {
   "featured": [
     {
-      "name": "乔木 AI 资讯",
+      "name": "DIX AI 资讯",
       "tag": "阅读与资讯",
       "description": "免费 AI 资讯阅读工具，汇集十多个 AI Newsletter、国内外知名 AI 播客与优秀公众号，英文内容转成中文；支持网页、Obsidian 和 DeepSeek Harness。",
       "url": "https://airss.qiaomu.ai/",
@@ -9,7 +9,7 @@
       "stat": "airss.qiaomu.ai"
     },
     {
-      "name": "乔木剪藏",
+      "name": "DIX剪藏",
       "tag": "Chrome 插件",
       "description": "Chrome 插件：读文章、看视频、听播客，边读边问边记，把摘录和自己的理解存进 Obsidian。",
       "url": "https://github.com/gechuan/qiaomu-clipper",
@@ -17,7 +17,7 @@
       "stat": "★ 409"
     },
     {
-      "name": "乔木 X 助手",
+      "name": "DIX X 助手",
       "tag": "Chrome 插件",
       "description": "Chrome 插件：少刷噪音，多写想法。X 回复整理、书签、AI 写作与文章草稿。",
       "url": "https://github.com/gechuan/qiaomu-x-helper",
@@ -25,7 +25,7 @@
       "stat": "★ 32"
     },
     {
-      "name": "乔木快捷提示词",
+      "name": "DIX快捷提示词",
       "tag": "Chrome 插件",
       "description": "Chrome 插件：侧边栏管理提示词，输入快捷短语自动展开，内置中文提示词库。",
       "url": "https://chromewebstore.google.com/",
@@ -41,7 +41,7 @@
       "stat": "hackerbooks.qiaomu.ai"
     },
     {
-      "name": "乔木阅读 · Qiaomu Reader",
+      "name": "DIX阅读 · DIX Reader",
       "tag": "Obsidian 插件",
       "description": "在 Obsidian 与 DeepSeek Harness 中读书、划线、AI 伴读，把理解留成可回溯的 Markdown 笔记。官网提供两个版本的功能介绍与安装指南。",
       "url": "https://reader.qiaomu.ai/",
@@ -49,7 +49,7 @@
       "stat": "★ 163"
     },
     {
-      "name": "乔木闪记 · Jot",
+      "name": "DIX闪记 · Jot",
       "tag": "Obsidian 插件",
       "description": "Mac 与 Windows 速记工具：一个快捷键，把想法、选中文字、截图和文件收进 Obsidian 今日日记，自动带上来源。免费开源。",
       "url": "https://jot.qiaomu.ai/",
@@ -65,7 +65,7 @@
       "downloads": "31,161",
       "items": [
         {
-          "name": "乔木阅读 · Qiaomu Reader",
+          "name": "DIX阅读 · DIX Reader",
           "category": "obsidian",
           "description": "在 Obsidian 与 DeepSeek Harness 中读书、划线、AI 伴读，把理解留成可回溯的 Markdown 笔记。官网提供两个版本的功能介绍与安装指南。",
           "badge": "开源",
@@ -73,7 +73,7 @@
           "stat": "↓ 10,495"
         },
         {
-          "name": "Qiaomu AI RSS",
+          "name": "DIX AI RSS",
           "category": "obsidian",
           "description": "在 Obsidian 里读 RSS 与本地 Markdown，中文 AI 改写与翻译，一键存成笔记。",
           "badge": "开源",
@@ -81,7 +81,7 @@
           "stat": "↓ 9,126"
         },
         {
-          "name": "Qiaomu Home",
+          "name": "DIX Home",
           "category": "obsidian",
           "description": "安静的起始页：搜索、新建，接着读、接着听、接着写。",
           "badge": "开源",
@@ -89,7 +89,7 @@
           "stat": "↓ 4,326"
         },
         {
-          "name": "Qiaomu Agent",
+          "name": "DIX Agent",
           "category": "obsidian",
           "description": "用本地 AI Agent 或模型 API 和你的笔记库对话。",
           "badge": "开源",
@@ -97,7 +97,7 @@
           "stat": "↓ 2,892"
         },
         {
-          "name": "Qiaomu Radio",
+          "name": "DIX Radio",
           "category": "obsidian",
           "description": "边读边写边听：发现并播放全球直播电台。",
           "badge": "开源",
@@ -105,7 +105,7 @@
           "stat": "↓ 1,876"
         },
         {
-          "name": "Qiaomu Design",
+          "name": "DIX Design",
           "category": "obsidian",
           "description": "用 AI 生图、图库和自由画布做可编辑的封面与海报。",
           "badge": "开源",
@@ -113,7 +113,7 @@
           "stat": "↓ 1,106"
         },
         {
-          "name": "Qiaomu UI Learn",
+          "name": "DIX UI Learn",
           "category": "obsidian",
           "description": "学 UI 设计：13,500+ 真实界面、双语 UI 词典和风格库。",
           "badge": "开源",
@@ -121,7 +121,7 @@
           "stat": "↓ 567"
         },
         {
-          "name": "Qiaomu Publish",
+          "name": "DIX Publish",
           "category": "obsidian",
           "description": "在 Obsidian 写好，预览公众号排版、做封面，一键发到草稿箱。",
           "badge": "开源",
@@ -129,7 +129,7 @@
           "stat": "↓ 541"
         },
         {
-          "name": "Qiaomu Audio",
+          "name": "DIX Audio",
           "category": "obsidian",
           "description": "把笔记导出成音频或带字幕视频，光标处朗读，还能语音输入。",
           "badge": "开源",
@@ -137,7 +137,7 @@
           "stat": "↓ 232"
         },
         {
-          "name": "乔木闪记 · Jot",
+          "name": "DIX闪记 · Jot",
           "category": "obsidian",
           "description": "Mac 与 Windows 速记工具：一个快捷键，把想法、选中文字、截图和文件收进 Obsidian 今日日记，自动带上来源。免费开源。",
           "badge": "开源",
@@ -153,7 +153,7 @@
       "downloads": "",
       "items": [
         {
-          "name": "乔木剪藏",
+          "name": "DIX剪藏",
           "category": "chrome",
           "description": "Chrome 插件：读文章、看视频、听播客，边读边问边记，把摘录和自己的理解存进 Obsidian。",
           "badge": "Chrome 插件",
@@ -161,7 +161,7 @@
           "stat": "★ 409"
         },
         {
-          "name": "乔木 X 助手",
+          "name": "DIX X 助手",
           "category": "chrome",
           "description": "Chrome 插件：少刷噪音，多写想法。X 回复整理、书签、AI 写作与文章草稿。",
           "badge": "Chrome 插件",
@@ -169,7 +169,7 @@
           "stat": "★ 32"
         },
         {
-          "name": "乔木快捷提示词",
+          "name": "DIX快捷提示词",
           "category": "chrome",
           "description": "Chrome 插件：侧边栏管理提示词，输入快捷短语自动展开，内置中文提示词库。",
           "badge": "Chrome 插件",
@@ -185,7 +185,7 @@
       "downloads": "",
       "items": [
         {
-          "name": "乔木 AI 资讯",
+          "name": "DIX AI 资讯",
           "category": "reading",
           "description": "免费 AI 资讯阅读工具，汇集十多个 AI Newsletter、国内外知名 AI 播客与优秀公众号，英文内容转成中文；支持网页、Obsidian 和 DeepSeek Harness。",
           "badge": "网站",
@@ -201,7 +201,7 @@
           "stat": "hackerbooks.qiaomu.ai"
         },
         {
-          "name": "乔木 HN 速读",
+          "name": "DIX HN 速读",
           "category": "reading",
           "description": "给中文开发者和产品人的 Hacker News 速读：精选、升温榜和评论摘要。",
           "badge": "网站",
@@ -209,7 +209,7 @@
           "stat": "hn.qiaomu.ai"
         },
         {
-          "name": "乔木 arXiv",
+          "name": "DIX arXiv",
           "category": "reading",
           "description": "AI 每日精选论文，中文解读、全文搜索、一键读原文。",
           "badge": "网站",
@@ -217,7 +217,7 @@
           "stat": "arxiv.qiaomu.ai"
         },
         {
-          "name": "乔木 Kindle 助手",
+          "name": "DIX Kindle 助手",
           "category": "reading",
           "description": "Mac 应用：把 Markdown、Obsidian 笔记和 EPUB、PDF 等电子书转成适合墨水屏的版本，可先译成中英对照，再经 Wi-Fi 发到装有 KOReader 的 Kindle。免费开源。",
           "badge": "开源",
@@ -265,7 +265,7 @@
           "stat": "github.qiaomu.ai"
         },
         {
-          "name": "Qiaomu Trending",
+          "name": "DIX Trending",
           "category": "reading",
           "description": "跨国家、跨来源的趋势解读台。",
           "badge": "网站",
@@ -273,9 +273,9 @@
           "stat": "trending.qiaomu.ai"
         },
         {
-          "name": "乔木书签",
+          "name": "DIX书签",
           "category": "reading",
-          "description": "乔木收藏并摘要过的 AI 工具、文章、工作流与设计灵感。",
+          "description": "DIX收藏并摘要过的 AI 工具、文章、工作流与设计灵感。",
           "badge": "网站",
           "url": "https://links.qiaomu.ai/",
           "stat": "links.qiaomu.ai"
@@ -289,7 +289,7 @@
           "stat": "★ 181"
         },
         {
-          "name": "乔木 SimpleUI",
+          "name": "DIX SimpleUI",
           "category": "reading",
           "description": "Kindle / KOReader 手机式读书首页：精选资讯、划线 AI 翻译与问答。",
           "badge": "开源",
@@ -299,7 +299,7 @@
         {
           "name": "qmreader-floatboat",
           "category": "reading",
-          "description": "乔木 RSS 阅读工作台：在 Floatboat 里读乔木精选、改写与翻译，并交给原生 AI 伴读 · Qiaomu RSS reader for Floatboat",
+          "description": "DIX RSS 阅读工作台：在 Floatboat 里读DIX精选、改写与翻译，并交给原生 AI 伴读 · DIX RSS reader for Floatboat",
           "badge": "开源",
           "url": "https://rss.qiaomu.ai",
           "stat": "★ 1"
@@ -441,7 +441,7 @@
       "downloads": "",
       "items": [
         {
-          "name": "乔木 App 评价洞察",
+          "name": "DIX App 评价洞察",
           "category": "ai-tools",
           "description": "搜索任意 iOS App，用 AI 把 App Store 评价变成痛点、机会和版本风险。",
           "badge": "网站",
@@ -449,7 +449,7 @@
           "stat": "appreview.qiaomu.ai"
         },
         {
-          "name": "乔木 LLM 擂台",
+          "name": "DIX LLM 擂台",
           "category": "ai-tools",
           "description": "同一提示词并行对比多个大模型的创意写作与前端开发表现。",
           "badge": "网站",
@@ -611,7 +611,7 @@
         {
           "name": "qiaomu-bento-ppt",
           "category": "skills",
-          "description": "生成乔木风格的 Bento 版式演示文稿，单个 HTML 文件即可放映。",
+          "description": "生成DIX风格的 Bento 版式演示文稿，单个 HTML 文件即可放映。",
           "badge": "开源",
           "url": "https://github.com/gechuan/qiaomu-bento-ppt",
           "stat": "★ 126"
@@ -657,7 +657,7 @@
           "stat": "useful.qiaomu.ai"
         },
         {
-          "name": "乔木课堂",
+          "name": "DIX课堂",
           "category": "learning",
           "description": "用动手实验学 AI，每一课留下一个可打开、可分享的真实作品。",
           "badge": "网站",
@@ -729,7 +729,7 @@
       "downloads": "",
       "items": [
         {
-          "name": "乔木剪辑 Qiaomu Cut",
+          "name": "DIX剪辑 DIX Cut",
           "category": "creative",
           "description": "打开浏览器就能剪视频：多轨时间轴、加文字、本地导出 MP4，素材不上传。",
           "badge": "网站",
@@ -737,7 +737,7 @@
           "stat": "cut.qiaomu.ai"
         },
         {
-          "name": "乔木画布 Poster Studio",
+          "name": "DIX画布 Poster Studio",
           "category": "creative",
           "description": "在线做小红书封面、知识卡片和社媒海报，支持 AI 生图与一键导出。",
           "badge": "网站",
@@ -755,7 +755,7 @@
         {
           "name": "qiaomu-cover-fonts",
           "category": "creative",
-          "description": "乔木封面设计的默认开源字库，中英文 OFL 字体，已子集化。",
+          "description": "DIX封面设计的默认开源字库，中英文 OFL 字体，已子集化。",
           "badge": "开源",
           "url": "https://github.com/gechuan/qiaomu-cover-fonts",
           "stat": "★ 122"
@@ -763,7 +763,7 @@
         {
           "name": "qiaomu-ui-learn-dsh",
           "category": "creative",
-          "description": "原版乔木 UI 学习的 DeepSeek Harness 迁移版：13561 设计参考、106 交互标本、审美测验与 Markdown 学习笔记",
+          "description": "原版DIX UI 学习的 DeepSeek Harness 迁移版：13561 设计参考、106 交互标本、审美测验与 Markdown 学习笔记",
           "badge": "开源",
           "url": "https://github.com/gechuan/qiaomu-ui-learn-dsh",
           "stat": "★ 80"
@@ -779,7 +779,7 @@
         {
           "name": "qiaomu-cover-design-dsh",
           "category": "creative",
-          "description": "Original Qiaomu cover canvas, templates, typography and AI design for DeepSeek Harness",
+          "description": "Original DIX cover canvas, templates, typography and AI design for DeepSeek Harness",
           "badge": "开源",
           "url": "https://github.com/gechuan/qiaomu-cover-design-dsh",
           "stat": "★ 3"
@@ -787,7 +787,7 @@
         {
           "name": "qiaomu-blog-publisher-dsh",
           "category": "creative",
-          "description": "原版乔木博客发布器的 DeepSeek Harness 版本，保留博客分类、草稿和 R2 图片音视频上传",
+          "description": "原版DIX博客发布器的 DeepSeek Harness 版本，保留博客分类、草稿和 R2 图片音视频上传",
           "badge": "开源",
           "url": "https://github.com/gechuan/qiaomu-blog-publisher-dsh",
           "stat": "★ 1"
@@ -795,7 +795,7 @@
         {
           "name": "qiaomu-publish-dsh",
           "category": "creative",
-          "description": "原版乔木 Publish 的 DeepSeek Harness 版本：42 主题、公众号排版、X/知乎/小红书草稿、封面与长图导出",
+          "description": "原版DIX Publish 的 DeepSeek Harness 版本：42 主题、公众号排版、X/知乎/小红书草稿、封面与长图导出",
           "badge": "开源",
           "url": "https://github.com/gechuan/qiaomu-publish-dsh",
           "stat": "★ 1"
@@ -809,7 +809,7 @@
       "downloads": "",
       "items": [
         {
-          "name": "乔木电台",
+          "name": "DIX电台",
           "category": "fun",
           "description": "选一种此刻的心情，进入会随反馈调整的全球直播电台流。",
           "badge": "网站",
@@ -833,7 +833,7 @@
           "stat": "tune.qiaomu.ai"
         },
         {
-          "name": "乔木电影清单 IMDb Top 250",
+          "name": "DIX电影清单 IMDb Top 250",
           "category": "fun",
           "description": "IMDb Top 250 的中文片名、摘要和口碑，标记看过、想看和收藏。",
           "badge": "网站",
@@ -857,7 +857,7 @@
           "stat": "larkcli.qiaomu.ai"
         },
         {
-          "name": "乔木博客开源模板",
+          "name": "DIX博客开源模板",
           "category": "dev",
           "description": "基于 Next.js、Cloudflare D1 和 R2 的开源博客模板。",
           "badge": "开源",
@@ -891,7 +891,7 @@
         {
           "name": "qiaomu-agent-dsh",
           "category": "dev",
-          "description": "Work in progress: original Qiaomu Agent UI and full functionality migration to DeepSeek Harness",
+          "description": "Work in progress: original DIX Agent UI and full functionality migration to DeepSeek Harness",
           "badge": "开源",
           "url": "https://github.com/gechuan/qiaomu-agent-dsh",
           "stat": "★ 1"
@@ -899,7 +899,7 @@
         {
           "name": "qiaomu-audio-dsh",
           "category": "dev",
-          "description": "Original Qiaomu Audio UI, speech, dictation and media export for DeepSeek Harness",
+          "description": "Original DIX Audio UI, speech, dictation and media export for DeepSeek Harness",
           "badge": "开源",
           "url": "https://github.com/gechuan/qiaomu-audio-dsh",
           "stat": "★ 1"
@@ -907,7 +907,7 @@
         {
           "name": "aicodinghunt",
           "category": "dev",
-          "description": "乔木 AI 工具猎场",
+          "description": "DIX AI 工具猎场",
           "badge": "开源",
           "url": "https://aicodinghunt.qiaomu.ai",
           "stat": "aicodinghunt.qiaomu.ai"

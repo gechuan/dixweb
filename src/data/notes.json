@@ -3,56 +3,56 @@
   "entries": [
     {
       "id": "n-tnv3wb3szd",
-      "author": "向阳乔木",
+      "author": "Chuan",
       "datetime": "2026-11-02T06:40:59.000Z",
       "datelabel": "11月2日 14:40",
       "html": "<p>啊，我说andrej karpathy从哪获取的HackerNews数据开发的HackerTube。</p><p>原来 Huggingface 上能直接可以下载 12G 的数据。</p><p>刚看到有人做了HackerBooks 网站。</p><p>有了这个数据集，可以玩的东西很多啊！<br><br>下载地址：<a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://huggingface.co/datasets/open-index/hacker-news\">https://huggingface.co/datasets/open-index/hacker-news</a></p><div class=\"note-media\" data-count=\"1\"><img src=\"https://blog.qiaomu.ai/api/images/image/2026/11/a32b39d4d2454ffb-image.png\" alt=\"\" loading=\"lazy\">"
     },
     {
       "id": "n-tnv3ct4t66",
-      "author": "向阳乔木",
+      "author": "Chuan",
       "datetime": "2026-11-02T06:29:17.000Z",
       "datelabel": "11月2日 14:29",
       "html": "<p>昨天看了藏师傅用iPhone Duo 的体验，退烧了。<br>很多应用都没适配，操作体验是真的糟糕。</p><p>而且手机很沉，不如 iPhone Air，等明年 4 月份换手机吧。</p><p>不过最近朋友都对oppo 的产品赞不绝口，有点种草。</p>"
     },
     {
       "id": "n-tnno55z2fa",
-      "author": "向阳乔木",
+      "author": "Chuan",
       "datetime": "2026-10-29T06:17:29.000Z",
       "datelabel": "10月29日 14:17",
       "html": "<p>腾讯的AI 趣味知识学习社区：懂了鸭<br><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://dongleya.qq.com/\">https://dongleya.qq.com/</a><br><br>目前在内测，关注官方公众号后回复“内测”能拿到邀请码体验。</p><div class=\"note-media\" data-count=\"1\"><img src=\"https://blog.qiaomu.ai/api/images/image/2026/10/3c4b051cb616c934-a913a322728d7600d182dd2231494db5.png\" alt=\"\" loading=\"lazy\">"
     },
     {
       "id": "n-tnnig6mr34",
-      "author": "向阳乔木",
+      "author": "Chuan",
       "datetime": "2026-10-29T04:14:30.000Z",
       "datelabel": "10月29日 12:14",
       "html": "<p>今天到杭州了，住西溪湿地公园附近。从北方出发的，果然衣服穿多了，非常热，哈哈。</p>"
     },
     {
       "id": "n-tnmrriisy8",
-      "author": "向阳乔木",
+      "author": "Chuan",
       "datetime": "2026-10-28T18:38:06.000Z",
       "datelabel": "10月29日 02:38",
       "html": "<p><strong>看 Simon 老哥写的最新一篇文章还挺有同感的。</strong><br><br>2025 年 11 月，Opus 4.5 / GPT-5.1 让 Vibe Coding 成为拐点。<br><br>前几天看 DHH 的访谈，他也是从Opus 4.5 开始真正开始被 AI 能力震撼到的。<br><br>今年2026 年 10 月，Claude Opus 5.5 让 Vibe Gaming 成为拐点。</p><p><strong>主要是能力大幅提升，3D 建模、音乐生成、游戏设计。</strong></p><p><br><strong>瓶颈已转移到“点子”和生态</strong>。<br><br>GPT-6 Astra 能做游戏，但趣味感不如Opus 5.5，估计年底才能赶上。<br><br><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://simonwillison.net/2026/Oct/28/vibe-game-development/\">https://simonwillison.net/2026/Oct/28/vibe-game-development/</a></p>"
     },
     {
       "id": "n-tnmn07pyk3",
-      "author": "向阳乔木",
+      "author": "Chuan",
       "datetime": "2026-10-28T16:55:19.000Z",
       "datelabel": "10月29日 00:55",
       "html": "<p><strong>感觉自己运气好，Claude 账号一个都没被封过，不是凡尔赛啊。</strong><br><br>想想是可能是因为没开 200 刀账号，一直都是 20 刀，开两个换着用。<br><br>做法上跟大家说说：<br><br>1. 注册 Claude 用自己域名邮箱，路由指向 Gmail 账号，只需绑定一个域名到 cloudflare 就行。 <br>Email Service -> Email Routing -> Routing rules 创建邮箱<br><br>2. IP 用自己 vultr 服务器搭的魔法，好像也不会跳验证，日常都用这个。<br><br>3. 用免费 Claude 账号随便对话正常用，可以多备2-3 个。<br><br>4. iOS 海外 AppStore 账号下载 Claude 客户端，AppStore 充值余额，用余额支付升级 20 刀订阅。安卓手机绑定众安银行卡到谷歌商店，直接升级。<br><br>日常也没刻意只用 Claude cli，直接官方客户端用就行。<br>也没改电脑时区，也没改过语言，对话也一直是中文。<br><br>可能是幸存者偏差？</p><div class=\"note-media\" data-count=\"1\"><img src=\"https://blog.qiaomu.ai/api/images/image/2026/10/0dd2d56e1557a3dd-cleanshot-2026-10-29-at-00.49.06-2x.png\" alt=\"\" loading=\"lazy\">"
     },
     {
       "id": "n-tnmlmrik8b",
-      "author": "向阳乔木",
+      "author": "Chuan",
       "datetime": "2026-10-28T16:25:39.000Z",
       "datelabel": "10月29日 00:25",
-      "html": "<p>又有冲动想买 VPS了，原因是既然把 乔木 AI RSS 资讯给大家用。<br>那么稳定性和速度还挺关键的。<br><br>不过看来看去，搬瓦工和 Dmit 好像对中国线路有优化，但一个贵，一个没货。<br><br>求推荐好用的海外 VPS，性价比高，国内又访问速度不错。</p>"
+      "html": "<p>又有冲动想买 VPS了，原因是既然把 DIX AI RSS 资讯给大家用。<br>那么稳定性和速度还挺关键的。<br><br>不过看来看去，搬瓦工和 Dmit 好像对中国线路有优化，但一个贵，一个没货。<br><br>求推荐好用的海外 VPS，性价比高，国内又访问速度不错。</p>"
     },
     {
       "id": "n-tnmlcg3w8a",
-      "author": "向阳乔木",
+      "author": "Chuan",
       "datetime": "2026-10-28T16:19:28.000Z",
       "datelabel": "10月29日 00:19",
       "html": "<video src=\"https://blog.qiaomu.ai/api/images/video/2026/10/iLqNXNQHgM--.mp4\" controls=\"\" playsinline=\"\" preload=\"metadata\"></video><p>测试下新功能</p>"

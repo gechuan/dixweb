@@ -1,0 +1,898 @@
+[
+  {
+    "name": "dwarkesh.com",
+    "title": "dwarkesh.com",
+    "xmlUrl": "https://www.dwarkeshpatel.com/feed",
+    "htmlUrl": "https://dwarkesh.com",
+    "category": "AI 前沿"
+  },
+  {
+    "name": "garymarcus.substack.com",
+    "title": "garymarcus.substack.com",
+    "xmlUrl": "https://garymarcus.substack.com/feed",
+    "htmlUrl": "https://garymarcus.substack.com",
+    "category": "AI 前沿"
+  },
+  {
+    "name": "geohot.github.io",
+    "title": "geohot.github.io",
+    "xmlUrl": "https://geohot.github.io/blog/feed.xml",
+    "htmlUrl": "https://geohot.github.io",
+    "category": "AI 前沿"
+  },
+  {
+    "name": "simonwillison.net",
+    "title": "simonwillison.net",
+    "xmlUrl": "https://simonwillison.net/atom/everything/",
+    "htmlUrl": "https://simonwillison.net",
+    "category": "AI 前沿"
+  },
+  {
+    "name": "anildash.com",
+    "title": "anildash.com",
+    "xmlUrl": "https://anildash.com/feed.xml",
+    "htmlUrl": "https://anildash.com",
+    "category": "产品、设计与商业"
+  },
+  {
+    "name": "blog.jim-nielsen.com",
+    "title": "blog.jim-nielsen.com",
+    "xmlUrl": "https://blog.jim-nielsen.com/feed.xml",
+    "htmlUrl": "https://blog.jim-nielsen.com",
+    "category": "产品、设计与商业"
+  },
+  {
+    "name": "daringfireball.net",
+    "title": "daringfireball.net",
+    "xmlUrl": "https://daringfireball.net/feeds/main",
+    "htmlUrl": "https://daringfireball.net",
+    "category": "产品、设计与商业"
+  },
+  {
+    "name": "tedium.co",
+    "title": "tedium.co",
+    "xmlUrl": "https://feed.tedium.co/",
+    "htmlUrl": "https://tedium.co",
+    "category": "产品、设计与商业"
+  },
+  {
+    "name": "wheresyoured.at",
+    "title": "wheresyoured.at",
+    "xmlUrl": "https://www.wheresyoured.at/rss/",
+    "htmlUrl": "https://wheresyoured.at",
+    "category": "产品、设计与商业"
+  },
+  {
+    "name": "krebsonsecurity.com",
+    "title": "krebsonsecurity.com",
+    "xmlUrl": "https://krebsonsecurity.com/feed/",
+    "htmlUrl": "https://krebsonsecurity.com",
+    "category": "安全"
+  },
+  {
+    "name": "lcamtuf.substack.com",
+    "title": "lcamtuf.substack.com",
+    "xmlUrl": "https://lcamtuf.substack.com/feed",
+    "htmlUrl": "https://lcamtuf.substack.com",
+    "category": "安全"
+  },
+  {
+    "name": "troyhunt.com",
+    "title": "troyhunt.com",
+    "xmlUrl": "https://www.troyhunt.com/rss/",
+    "htmlUrl": "https://troyhunt.com",
+    "category": "安全"
+  },
+  {
+    "name": "berthub.eu",
+    "title": "berthub.eu",
+    "xmlUrl": "https://berthub.eu/articles/index.xml",
+    "htmlUrl": "https://berthub.eu",
+    "category": "工程与编程"
+  },
+  {
+    "name": "buttondown.com/hillelwayne",
+    "title": "buttondown.com/hillelwayne",
+    "xmlUrl": "https://buttondown.com/hillelwayne/rss",
+    "htmlUrl": "https://buttondown.com/hillelwayne",
+    "category": "工程与编程"
+  },
+  {
+    "name": "lucumr.pocoo.org",
+    "title": "lucumr.pocoo.org",
+    "xmlUrl": "https://lucumr.pocoo.org/feed.atom",
+    "htmlUrl": "https://lucumr.pocoo.org",
+    "category": "工程与编程"
+  },
+  {
+    "name": "martinalderson.com",
+    "title": "martinalderson.com",
+    "xmlUrl": "https://martinalderson.com/feed.xml",
+    "htmlUrl": "https://martinalderson.com",
+    "category": "工程与编程"
+  },
+  {
+    "name": "matklad.github.io",
+    "title": "matklad.github.io",
+    "xmlUrl": "https://matklad.github.io/feed.xml",
+    "htmlUrl": "https://matklad.github.io",
+    "category": "工程与编程"
+  },
+  {
+    "name": "miguelgrinberg.com",
+    "title": "miguelgrinberg.com",
+    "xmlUrl": "https://blog.miguelgrinberg.com/feed",
+    "htmlUrl": "https://miguelgrinberg.com",
+    "category": "工程与编程"
+  },
+  {
+    "name": "mitchellh.com",
+    "title": "mitchellh.com",
+    "xmlUrl": "https://mitchellh.com/feed.xml",
+    "htmlUrl": "https://mitchellh.com",
+    "category": "工程与编程"
+  },
+  {
+    "name": "nesbitt.io",
+    "title": "nesbitt.io",
+    "xmlUrl": "https://nesbitt.io/feed.xml",
+    "htmlUrl": "https://nesbitt.io",
+    "category": "工程与编程"
+  },
+  {
+    "name": "seangoedecke.com",
+    "title": "seangoedecke.com",
+    "xmlUrl": "https://www.seangoedecke.com/rss.xml",
+    "htmlUrl": "https://seangoedecke.com",
+    "category": "工程与编程"
+  },
+  {
+    "name": "dfarq.homeip.net",
+    "title": "dfarq.homeip.net",
+    "xmlUrl": "https://dfarq.homeip.net/feed/",
+    "htmlUrl": "https://dfarq.homeip.net",
+    "category": "硬件"
+  },
+  {
+    "name": "idiallo.com",
+    "title": "idiallo.com",
+    "xmlUrl": "https://idiallo.com/feed.rss",
+    "htmlUrl": "https://idiallo.com",
+    "category": "硬件"
+  },
+  {
+    "name": "jeffgeerling.com",
+    "title": "jeffgeerling.com",
+    "xmlUrl": "https://www.jeffgeerling.com/blog.xml",
+    "htmlUrl": "https://jeffgeerling.com",
+    "category": "硬件"
+  },
+  {
+    "name": "righto.com",
+    "title": "righto.com",
+    "xmlUrl": "https://www.righto.com/feeds/posts/default",
+    "htmlUrl": "https://righto.com",
+    "category": "硬件"
+  },
+  {
+    "name": "xeiaso.net",
+    "title": "xeiaso.net",
+    "xmlUrl": "https://xeiaso.net/blog.rss",
+    "htmlUrl": "https://xeiaso.net",
+    "category": "硬件"
+  },
+  {
+    "name": "construction-physics.com",
+    "title": "construction-physics.com",
+    "xmlUrl": "https://www.construction-physics.com/feed",
+    "htmlUrl": "https://construction-physics.com",
+    "category": "观点与杂谈"
+  },
+  {
+    "name": "devblogs.microsoft.com/oldnewthing",
+    "title": "devblogs.microsoft.com/oldnewthing",
+    "xmlUrl": "https://devblogs.microsoft.com/oldnewthing/feed",
+    "htmlUrl": "https://devblogs.microsoft.com/oldnewthing",
+    "category": "观点与杂谈"
+  },
+  {
+    "name": "dynomight.net",
+    "title": "dynomight.net",
+    "xmlUrl": "https://dynomight.net/feed.xml",
+    "htmlUrl": "https://dynomight.net",
+    "category": "观点与杂谈"
+  },
+  {
+    "name": "entropicthoughts.com",
+    "title": "entropicthoughts.com",
+    "xmlUrl": "https://entropicthoughts.com/feed.xml",
+    "htmlUrl": "https://entropicthoughts.com",
+    "category": "观点与杂谈"
+  },
+  {
+    "name": "evanhahn.com",
+    "title": "evanhahn.com",
+    "xmlUrl": "https://evanhahn.com/feed.xml",
+    "htmlUrl": "https://evanhahn.com",
+    "category": "观点与杂谈"
+  },
+  {
+    "name": "experimental-history.com",
+    "title": "experimental-history.com",
+    "xmlUrl": "https://www.experimental-history.com/feed",
+    "htmlUrl": "https://experimental-history.com",
+    "category": "观点与杂谈"
+  },
+  {
+    "name": "filfre.net",
+    "title": "filfre.net",
+    "xmlUrl": "https://www.filfre.net/feed/",
+    "htmlUrl": "https://filfre.net",
+    "category": "观点与杂谈"
+  },
+  {
+    "name": "johndcook.com",
+    "title": "johndcook.com",
+    "xmlUrl": "https://www.johndcook.com/blog/feed/",
+    "htmlUrl": "https://johndcook.com",
+    "category": "观点与杂谈"
+  },
+  {
+    "name": "maurycyz.com",
+    "title": "maurycyz.com",
+    "xmlUrl": "https://maurycyz.com/index.xml",
+    "htmlUrl": "https://maurycyz.com",
+    "category": "观点与杂谈"
+  },
+  {
+    "name": "pluralistic.net",
+    "title": "pluralistic.net",
+    "xmlUrl": "https://pluralistic.net/feed/",
+    "htmlUrl": "https://pluralistic.net",
+    "category": "观点与杂谈"
+  },
+  {
+    "name": "shkspr.mobi",
+    "title": "shkspr.mobi",
+    "xmlUrl": "https://shkspr.mobi/blog/feed/",
+    "htmlUrl": "https://shkspr.mobi",
+    "category": "观点与杂谈"
+  },
+  {
+    "name": "AI Alignment Forum",
+    "title": "AI Alignment Forum",
+    "xmlUrl": "https://www.alignmentforum.org/feed.xml",
+    "htmlUrl": "https://www.alignmentforum.org",
+    "category": "AI 前沿"
+  },
+  {
+    "name": "AI Explained",
+    "title": "AI Explained",
+    "xmlUrl": "https://www.youtube.com/feeds/videos.xml?channel_id=UCNJ1Ymd5yFuUPtn21xtRbbw",
+    "htmlUrl": "https://www.youtube.com/@aiexplained-official",
+    "category": "AI 前沿"
+  },
+  {
+    "name": "AI Search",
+    "title": "AI Search",
+    "xmlUrl": "https://www.youtube.com/feeds/videos.xml?channel_id=UCIgnGlGkVRhd4qNFcEwLL4A",
+    "htmlUrl": "https://www.youtube.com/@theAIsearch",
+    "category": "AI 前沿"
+  },
+  {
+    "name": "Artificial Intelligence Made Simple",
+    "title": "Artificial Intelligence Made Simple",
+    "xmlUrl": "https://www.artificialintelligencemadesimple.com/feed",
+    "htmlUrl": "https://www.artificialintelligencemadesimple.com",
+    "category": "AI 前沿"
+  },
+  {
+    "name": "David Ondrej",
+    "title": "David Ondrej",
+    "xmlUrl": "https://www.youtube.com/feeds/videos.xml?channel_id=UCPGrgwfbkjTIgPoOh2q1BAg",
+    "htmlUrl": "https://www.youtube.com/channel/UCPGrgwfbkjTIgPoOh2q1BAg",
+    "category": "AI 前沿"
+  },
+  {
+    "name": "Dwarkesh Podcast",
+    "title": "Dwarkesh Podcast",
+    "xmlUrl": "https://www.dwarkesh.com/feed",
+    "htmlUrl": "https://www.dwarkesh.com",
+    "category": "AI 前沿"
+  },
+  {
+    "name": "Epoch AI",
+    "title": "Epoch AI",
+    "xmlUrl": "https://epochai.substack.com/feed",
+    "htmlUrl": "https://epoch.ai",
+    "category": "AI 前沿"
+  },
+  {
+    "name": "Exploring Language Models",
+    "title": "Exploring Language Models",
+    "xmlUrl": "https://maartengrootendorst.substack.com/feed",
+    "htmlUrl": "https://maartengrootendorst.substack.com",
+    "category": "AI 前沿"
+  },
+  {
+    "name": "Exponential View",
+    "title": "Exponential View",
+    "xmlUrl": "https://exponentialview.substack.com/feed",
+    "htmlUrl": "https://www.exponentialview.co",
+    "category": "AI 前沿"
+  },
+  {
+    "name": "FuturePulse",
+    "title": "FuturePulse",
+    "xmlUrl": "https://futurpulse.com/feed",
+    "htmlUrl": "https://futurpulse.com/",
+    "category": "AI 前沿"
+  },
+  {
+    "name": "Handy AI",
+    "title": "Handy AI",
+    "xmlUrl": "https://handyai.substack.com/feed",
+    "htmlUrl": "https://handyai.substack.com/",
+    "category": "AI 前沿"
+  },
+  {
+    "name": "Hard Fork",
+    "title": "Hard Fork",
+    "xmlUrl": "https://feeds.simplecast.com/6HKOhNgS",
+    "htmlUrl": "https://www.nytimes.com/column/hard-fork",
+    "category": "AI 前沿"
+  },
+  {
+    "name": "Latent.Space",
+    "title": "Latent.Space",
+    "xmlUrl": "https://www.latent.space/feed",
+    "htmlUrl": "https://www.latent.space",
+    "category": "AI 前沿"
+  },
+  {
+    "name": "LessWrong",
+    "title": "LessWrong",
+    "xmlUrl": "https://www.lesswrong.com/feed.xml",
+    "htmlUrl": "https://www.lesswrong.com",
+    "category": "AI 前沿"
+  },
+  {
+    "name": "Lex Fridman",
+    "title": "Lex Fridman",
+    "xmlUrl": "https://lexfridman.com/feed/",
+    "htmlUrl": "https://lexfridman.com",
+    "category": "AI 前沿"
+  },
+  {
+    "name": "MIT Tech Review",
+    "title": "MIT Tech Review",
+    "xmlUrl": "https://www.technologyreview.com/feed/",
+    "htmlUrl": "https://www.technologyreview.com",
+    "category": "AI 前沿"
+  },
+  {
+    "name": "Machine Learning Mastery",
+    "title": "Machine Learning Mastery",
+    "xmlUrl": "https://machinelearningmastery.com/blog/feed/",
+    "htmlUrl": "https://machinelearningmastery.com",
+    "category": "AI 前沿"
+  },
+  {
+    "name": "Platformer",
+    "title": "Platformer",
+    "xmlUrl": "https://www.platformer.news/feed",
+    "htmlUrl": "https://www.platformer.news",
+    "category": "AI 前沿"
+  },
+  {
+    "name": "TechCrunch",
+    "title": "TechCrunch",
+    "xmlUrl": "https://techcrunch.com/feed/",
+    "htmlUrl": "https://techcrunch.com",
+    "category": "AI 前沿"
+  },
+  {
+    "name": "The Verge",
+    "title": "The Verge",
+    "xmlUrl": "https://www.theverge.com/rss/index.xml",
+    "htmlUrl": "https://www.theverge.com",
+    "category": "AI 前沿"
+  },
+  {
+    "name": "a16z podcast",
+    "title": "a16z podcast",
+    "xmlUrl": "https://feeds.simplecast.com/JGE3yC0V",
+    "htmlUrl": "https://a16z.com/podcasts/",
+    "category": "AI 前沿"
+  },
+  {
+    "name": "量子位",
+    "title": "量子位",
+    "xmlUrl": "https://www.qbitai.com/feed",
+    "htmlUrl": "https://www.qbitai.com/",
+    "category": "AI 前沿"
+  },
+  {
+    "name": "20VC",
+    "title": "20VC",
+    "xmlUrl": "https://rss.libsyn.com/shows/61840/destinations/240976.xml",
+    "htmlUrl": "https://www.20vc.com",
+    "category": "产品、设计与商业"
+  },
+  {
+    "name": "@andrewchen",
+    "title": "@andrewchen",
+    "xmlUrl": "https://andrewchen.substack.com/feed",
+    "htmlUrl": "https://andrewchen.substack.com",
+    "category": "产品、设计与商业"
+  },
+  {
+    "name": "Abnormal Returns",
+    "title": "Abnormal Returns",
+    "xmlUrl": "https://abnormalreturns.com/feed/",
+    "htmlUrl": "https://abnormalreturns.com",
+    "category": "产品、设计与商业"
+  },
+  {
+    "name": "Alex Hormozi",
+    "title": "Alex Hormozi",
+    "xmlUrl": "https://rss2.flightcast.com/zz5nwp81tktx53wb8fw6qq7j.xml",
+    "htmlUrl": "https://www.acquisition.com/",
+    "category": "产品、设计与商业"
+  },
+  {
+    "name": "All Content from Business Insider",
+    "title": "All Content from Business Insider",
+    "xmlUrl": "https://feeds.businessinsider.com/custom/all",
+    "htmlUrl": "https://www.businessinsider.com",
+    "category": "产品、设计与商业"
+  },
+  {
+    "name": "All-In Podcast",
+    "title": "All-In Podcast",
+    "xmlUrl": "https://rss.libsyn.com/shows/254861/destinations/1928300.xml",
+    "htmlUrl": "https://www.allin.com",
+    "category": "产品、设计与商业"
+  },
+  {
+    "name": "Apoorv's notes",
+    "title": "Apoorv's notes",
+    "xmlUrl": "https://tailwinds.substack.com/feed",
+    "htmlUrl": "https://apoorv03.com",
+    "category": "产品、设计与商业"
+  },
+  {
+    "name": "Artificial Investment",
+    "title": "Artificial Investment",
+    "xmlUrl": "https://artificialinvestment.substack.com/feed",
+    "htmlUrl": "https://artificialinvestment.substack.com",
+    "category": "产品、设计与商业"
+  },
+  {
+    "name": "Bankless",
+    "title": "Bankless",
+    "xmlUrl": "https://www.bankless.com/rss/feed",
+    "htmlUrl": "https://www.bankless.com",
+    "category": "产品、设计与商业"
+  },
+  {
+    "name": "Big Technology",
+    "title": "Big Technology",
+    "xmlUrl": "https://www.bigtechnology.com/feed",
+    "htmlUrl": "https://www.bigtechnology.com",
+    "category": "产品、设计与商业"
+  },
+  {
+    "name": "Bloomberg Business",
+    "title": "Bloomberg Business",
+    "xmlUrl": "https://www.bloomberg.com/feeds/business/news.rss",
+    "htmlUrl": "https://www.bloomberg.com",
+    "category": "产品、设计与商业"
+  },
+  {
+    "name": "CB Insights",
+    "title": "CB Insights",
+    "xmlUrl": "https://www.cbinsights.com/research/feed/",
+    "htmlUrl": "https://www.cbinsights.com",
+    "category": "产品、设计与商业"
+  },
+  {
+    "name": "Clouded Judgement",
+    "title": "Clouded Judgement",
+    "xmlUrl": "https://cloudedjudgement.substack.com/feed",
+    "htmlUrl": "https://cloudedjudgement.substack.com",
+    "category": "产品、设计与商业"
+  },
+  {
+    "name": "CoinDesk",
+    "title": "CoinDesk",
+    "xmlUrl": "https://www.coindesk.com/arc/outboundfeeds/rss/",
+    "htmlUrl": "https://www.coindesk.com",
+    "category": "产品、设计与商业"
+  },
+  {
+    "name": "Contrary Research",
+    "title": "Contrary Research",
+    "xmlUrl": "https://contraryresearch.substack.com/feed",
+    "htmlUrl": "https://contraryresearch.substack.com",
+    "category": "产品、设计与商业"
+  },
+  {
+    "name": "Dan Hock's Essays",
+    "title": "Dan Hock's Essays",
+    "xmlUrl": "https://www.danhock.co/feed",
+    "htmlUrl": "https://www.danhock.co",
+    "category": "产品、设计与商业"
+  },
+  {
+    "name": "Decrypt",
+    "title": "Decrypt",
+    "xmlUrl": "https://decrypt.co/feed",
+    "htmlUrl": "https://decrypt.co",
+    "category": "产品、设计与商业"
+  },
+  {
+    "name": "Digital Native",
+    "title": "Digital Native",
+    "xmlUrl": "https://digitalnative.substack.com/feed",
+    "htmlUrl": "https://digitalnative.substack.com",
+    "category": "产品、设计与商业"
+  },
+  {
+    "name": "Fast Company",
+    "title": "Fast Company",
+    "xmlUrl": "https://www.fastcompany.com/rss.xml",
+    "htmlUrl": "https://www.fastcompany.com/",
+    "category": "产品、设计与商业"
+  },
+  {
+    "name": "Genuine Impact",
+    "title": "Genuine Impact",
+    "xmlUrl": "https://genuineimpact.substack.com/feed",
+    "htmlUrl": "https://genuineimpact.substack.com/",
+    "category": "产品、设计与商业"
+  },
+  {
+    "name": "Heartcore Insights",
+    "title": "Heartcore Insights",
+    "xmlUrl": "https://heartcore.substack.com/feed",
+    "htmlUrl": "https://heartcore.substack.com/",
+    "category": "产品、设计与商业"
+  },
+  {
+    "name": "How They Make Money",
+    "title": "How They Make Money",
+    "xmlUrl": "https://www.appeconomyinsights.com/feed",
+    "htmlUrl": "https://www.appeconomyinsights.com/",
+    "category": "产品、设计与商业"
+  },
+  {
+    "name": "Implications, by Scott Belsky",
+    "title": "Implications, by Scott Belsky",
+    "xmlUrl": "https://scottbelsky.substack.com/feed",
+    "htmlUrl": "https://scottbelsky.substack.com",
+    "category": "产品、设计与商业"
+  },
+  {
+    "name": "Investing 101",
+    "title": "Investing 101",
+    "xmlUrl": "https://investing101.substack.com/feed",
+    "htmlUrl": "https://investing101.substack.com/",
+    "category": "产品、设计与商业"
+  },
+  {
+    "name": "Lenny's Newsletter",
+    "title": "Lenny's Newsletter",
+    "xmlUrl": "https://www.lennysnewsletter.com/feed",
+    "htmlUrl": "https://www.lennysnewsletter.com",
+    "category": "产品、设计与商业"
+  },
+  {
+    "name": "MacSparky",
+    "title": "MacSparky",
+    "xmlUrl": "https://www.macsparky.com/feed/",
+    "htmlUrl": "https://www.macsparky.com",
+    "category": "产品、设计与商业"
+  },
+  {
+    "name": "Matt Levine",
+    "title": "Matt Levine",
+    "xmlUrl": "https://www.bloomberg.com/opinion/authors/ARbTQlRLRjE/matthew-s-levine.rss",
+    "htmlUrl": "https://www.bloomberg.com/opinion/authors/ARbTQlRLRjE/matthew-s-levine",
+    "category": "产品、设计与商业"
+  },
+  {
+    "name": "Net Interest",
+    "title": "Net Interest",
+    "xmlUrl": "https://www.netinterest.co/feed",
+    "htmlUrl": "https://www.netinterest.co",
+    "category": "产品、设计与商业"
+  },
+  {
+    "name": "Sequoia Capital",
+    "title": "Sequoia Capital",
+    "xmlUrl": "https://www.sequoiacap.com/feed/",
+    "htmlUrl": "https://www.sequoiacap.com",
+    "category": "产品、设计与商业"
+  },
+  {
+    "name": "Stratechery",
+    "title": "Stratechery",
+    "xmlUrl": "https://stratechery.com/feed/",
+    "htmlUrl": "https://stratechery.com",
+    "category": "产品、设计与商业"
+  },
+  {
+    "name": "Tanay's Newsletter",
+    "title": "Tanay's Newsletter",
+    "xmlUrl": "https://tanay.substack.com/feed",
+    "htmlUrl": "https://tanay.substack.com",
+    "category": "产品、设计与商业"
+  },
+  {
+    "name": "The Diary Of A CEO",
+    "title": "The Diary Of A CEO",
+    "xmlUrl": "https://rss2.flightcast.com/xmsftuzjjykcmqwolaqn6mdn",
+    "htmlUrl": "https://stevenbartlett.com",
+    "category": "产品、设计与商业"
+  },
+  {
+    "name": "The Generalist",
+    "title": "The Generalist",
+    "xmlUrl": "https://thegeneralist.substack.com/feed",
+    "htmlUrl": "https://thegeneralist.substack.com",
+    "category": "产品、设计与商业"
+  },
+  {
+    "name": "Y Combinator",
+    "title": "Y Combinator",
+    "xmlUrl": "https://www.ycombinator.com/blog/feed",
+    "htmlUrl": "https://www.ycombinator.com",
+    "category": "产品、设计与商业"
+  },
+  {
+    "name": "a16z crypto",
+    "title": "a16z crypto",
+    "xmlUrl": "https://a16zcrypto.com/feed/",
+    "htmlUrl": "https://a16zcrypto.com",
+    "category": "产品、设计与商业"
+  },
+  {
+    "name": "人人都是产品经理",
+    "title": "人人都是产品经理",
+    "xmlUrl": "https://www.woshipm.com/feed",
+    "htmlUrl": "https://www.woshipm.com/",
+    "category": "产品、设计与商业"
+  },
+  {
+    "name": "小众软件",
+    "title": "小众软件",
+    "xmlUrl": "https://www.appinn.com/feed/",
+    "htmlUrl": "https://www.appinn.com/",
+    "category": "产品、设计与商业"
+  },
+  {
+    "name": "极客公园",
+    "title": "极客公园",
+    "xmlUrl": "https://www.geekpark.net/rss",
+    "htmlUrl": "https://www.geekpark.net/",
+    "category": "产品、设计与商业"
+  },
+  {
+    "name": "白鲸出海",
+    "title": "白鲸出海",
+    "xmlUrl": "https://www.baijingapp.com/feed",
+    "htmlUrl": "https://www.baijingapp.com/",
+    "category": "产品、设计与商业"
+  },
+  {
+    "name": "钛媒体",
+    "title": "钛媒体",
+    "xmlUrl": "https://www.tmtpost.com/rss.xml",
+    "htmlUrl": "https://www.tmtpost.com/",
+    "category": "产品、设计与商业"
+  },
+  {
+    "name": "集思录",
+    "title": "集思录",
+    "xmlUrl": "https://www.jisilu.cn/feed",
+    "htmlUrl": "https://www.jisilu.cn/",
+    "category": "产品、设计与商业"
+  },
+  {
+    "name": "Danny's Newsletter",
+    "title": "Danny's Newsletter",
+    "xmlUrl": "https://zendannyy.substack.com/feed",
+    "htmlUrl": "https://zendannyy.substack.com",
+    "category": "安全"
+  },
+  {
+    "name": "Ars Technica - All content",
+    "title": "Ars Technica - All content",
+    "xmlUrl": "https://feeds.arstechnica.com/arstechnica/index/",
+    "htmlUrl": "https://arstechnica.com",
+    "category": "工程与编程"
+  },
+  {
+    "name": "Coding With Lewis",
+    "title": "Coding With Lewis",
+    "xmlUrl": "https://www.youtube.com/feeds/videos.xml?channel_id=UCWI-ohtRu8eEeDj93hmUsUQ",
+    "htmlUrl": "https://www.youtube.com/@CodingWithLewis",
+    "category": "工程与编程"
+  },
+  {
+    "name": "Hacker News",
+    "title": "Hacker News",
+    "xmlUrl": "https://news.ycombinator.com/rss",
+    "htmlUrl": "https://news.ycombinator.com/",
+    "category": "工程与编程"
+  },
+  {
+    "name": "Herman's Blog",
+    "title": "Herman's Blog",
+    "xmlUrl": "https://herman.bearblog.dev/feed/",
+    "htmlUrl": "https://herman.bearblog.dev/",
+    "category": "工程与编程"
+  },
+  {
+    "name": "IndyDevDan",
+    "title": "IndyDevDan",
+    "xmlUrl": "https://www.youtube.com/feeds/videos.xml?channel_id=UC_x36zCEGilGpB1m-V4gmjg",
+    "htmlUrl": "https://www.youtube.com/@indydevdan",
+    "category": "工程与编程"
+  },
+  {
+    "name": "The Pragmatic Engineer",
+    "title": "The Pragmatic Engineer",
+    "xmlUrl": "https://blog.pragmaticengineer.com/feed",
+    "htmlUrl": "https://blog.pragmaticengineer.com",
+    "category": "工程与编程"
+  },
+  {
+    "name": "Vitalik Buterin",
+    "title": "Vitalik Buterin",
+    "xmlUrl": "https://vitalik.eth.limo/feed.xml",
+    "htmlUrl": "https://vitalik.eth.limo",
+    "category": "工程与编程"
+  },
+  {
+    "name": "月光博客",
+    "title": "月光博客",
+    "xmlUrl": "https://www.williamlong.info/rss.xml",
+    "htmlUrl": "https://www.williamlong.info/",
+    "category": "工程与编程"
+  },
+  {
+    "name": "阮一峰的网络日志",
+    "title": "阮一峰的网络日志",
+    "xmlUrl": "https://feeds.feedburner.com/ruanyifeng",
+    "htmlUrl": "https://www.ruanyifeng.com/blog/",
+    "category": "工程与编程"
+  },
+  {
+    "name": "EE Times",
+    "title": "EE Times",
+    "xmlUrl": "https://www.eetimes.com/feed/",
+    "htmlUrl": "https://www.eetimes.com",
+    "category": "硬件"
+  },
+  {
+    "name": "Engadget",
+    "title": "Engadget",
+    "xmlUrl": "https://www.engadget.com/rss.xml",
+    "htmlUrl": "https://www.engadget.com",
+    "category": "硬件"
+  },
+  {
+    "name": "Brain Pickings",
+    "title": "Brain Pickings",
+    "xmlUrl": "https://www.themarginalian.org/feed/",
+    "htmlUrl": "https://www.themarginalian.org",
+    "category": "观点与杂谈"
+  },
+  {
+    "name": "Gaming in China",
+    "title": "Gaming in China",
+    "xmlUrl": "https://danielcamilo.substack.com/feed",
+    "htmlUrl": "https://danielcamilo.substack.com/",
+    "category": "观点与杂谈"
+  },
+  {
+    "name": "Knight First Amendment Institute",
+    "title": "Knight First Amendment Institute",
+    "xmlUrl": "https://knightcolumbia.org/rss",
+    "htmlUrl": "https://knightcolumbia.org",
+    "category": "观点与杂谈"
+  },
+  {
+    "name": "Marginal REVOLUTION",
+    "title": "Marginal REVOLUTION",
+    "xmlUrl": "https://marginalrevolution.com/feed",
+    "htmlUrl": "https://marginalrevolution.com",
+    "category": "观点与杂谈"
+  },
+  {
+    "name": "Not Boring by Packy McCormick",
+    "title": "Not Boring by Packy McCormick",
+    "xmlUrl": "https://www.notboring.co/feed",
+    "htmlUrl": "https://www.notboring.co",
+    "category": "观点与杂谈"
+  },
+  {
+    "name": "Overcoming Bias",
+    "title": "Overcoming Bias",
+    "xmlUrl": "https://www.overcomingbias.com/feed",
+    "htmlUrl": "https://www.overcomingbias.com",
+    "category": "观点与杂谈"
+  },
+  {
+    "name": "The Technium",
+    "title": "The Technium",
+    "xmlUrl": "https://kk.org/thetechnium/feed/",
+    "htmlUrl": "https://kk.org/thetechnium",
+    "category": "观点与杂谈"
+  },
+  {
+    "name": "环球科学",
+    "title": "环球科学",
+    "xmlUrl": "https://www.huanqiukexue.com/?feed=rss2",
+    "htmlUrl": "https://huanqiukexue.com/",
+    "category": "观点与杂谈"
+  },
+  {
+    "name": "42章经",
+    "title": "42章经",
+    "xmlUrl": "https://feed.xyzfm.space/evgg6xle9rdc",
+    "htmlUrl": "https://www.xiaoyuzhoufm.com/podcast/648b0b641c48983391a63f98",
+    "category": "产品、设计与商业"
+  },
+  {
+    "name": "晚点聊 LateTalk",
+    "title": "晚点聊 LateTalk",
+    "xmlUrl": "https://feeds.fireside.fm/latetalk/rss",
+    "htmlUrl": "https://www.xiaoyuzhoufm.com/podcast/61933ace1b4320461e91fd55",
+    "category": "产品、设计与商业"
+  },
+  {
+    "name": "半拿铁",
+    "title": "半拿铁",
+    "xmlUrl": "https://proxy.wavpub.com/caffebreve.xml",
+    "htmlUrl": "https://www.xiaoyuzhoufm.com/podcast/62382c1103bea1ebfffa1c00",
+    "category": "产品、设计与商业"
+  },
+  {
+    "name": "十字路口Crossing",
+    "title": "十字路口Crossing",
+    "xmlUrl": "https://feed.xyzfm.space/68fyjknth9hj",
+    "htmlUrl": "https://www.xiaoyuzhoufm.com/podcast/60502e253c92d4f62c2a9577",
+    "category": "AI 前沿"
+  },
+  {
+    "name": "AI炼金术",
+    "title": "AI炼金术",
+    "xmlUrl": "https://www.ximalaya.com/album/74194808.xml",
+    "htmlUrl": "https://www.xiaoyuzhoufm.com/podcast/63e9ef4de99bdef7d39944c8",
+    "category": "AI 前沿"
+  },
+  {
+    "name": "三五环",
+    "title": "三五环",
+    "xmlUrl": "https://proxy.wavpub.com/35huan.xml",
+    "htmlUrl": "https://www.xiaoyuzhoufm.com/podcast/5e280fab418a84a0461faa3c",
+    "category": "观点与杂谈"
+  },
+  {
+    "name": "知行小酒馆",
+    "title": "知行小酒馆",
+    "xmlUrl": "https://feed.xyzfm.space/j8yp8gxkmgqr",
+    "htmlUrl": "https://www.xiaoyuzhoufm.com/podcast/6013f9f58e2f7ee375cf4216",
+    "category": "产品、设计与商业"
+  },
+  {
+    "name": "面基",
+    "title": "面基",
+    "xmlUrl": "https://feed.xyzfm.space/6hpdgggtxpxb",
+    "htmlUrl": "https://www.xiaoyuzhoufm.com/podcast/6388760f22567e8ea6ad070f",
+    "category": "观点与杂谈"
+  }
+]

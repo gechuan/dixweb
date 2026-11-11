@@ -1,0 +1,104 @@
+---
+import Layout from '../layouts/Layout.astro';
+import '../styles/rss.css';
+import site from '../data/site.json';
+import rss from '../data/rss.json';
+
+const ext = { target: '_blank', rel: 'noopener noreferrer' };
+
+// 同一内容的多版本发布（如特辑重发）只保留首条
+const seen = new Set<string>();
+const stream = rss.stream.filter((item) => {
+  const key = item.zh_title.replace(/[【[].*?[】\]]/g, '').replace(/\s+/g, '');
+  if (seen.has(key)) return false;
+  seen.add(key);
+  return true;
+});
+
+const cats = new Map<string, number>();
+stream.forEach((item) => cats.set(item.category, (cats.get(item.category) ?? 0) + 1));
+const filters = [
+  { key: 'all', label: '全部', count: stream.length },
+  ...Array.from(cats, ([key, count]) => ({ key, label: key, count })),
+];
+---
+
+<Layout
+  title={`资讯 · ${site.brand}`}
+  description={`每日 AI 资讯：编辑导读、跨源话题与时间流。每天从 ${rss.stats.sources_total} 个 RSS 信源采集昨日内容。`}
+>
+  <header class="page-head">
+    <div class="wrap">
+      <div class="sec-eyebrow"><span class="dot"></span>NEWS · 资讯</div>
+      <h1>AI 的昨天，一页看完</h1>
+      <div class="prose page-intro">
+        <p>
+          每天从 {rss.stats.sources_total} 个 RSS 信源采集昨日内容，聚成编辑导读、跨源话题与时间流。
+        </p>
+      </div>
+      <p class="page-stats">
+        <span><b>{rss.stats.sources_total}</b> 个信源</span>
+        <span><b>{rss.stats.sources_returned}</b> 个当日更新</span>
+        <span><b data-project-count>{stream.length}</b> 条入选</span>
+      </p>
+    </div>
+  </header>
+
+  <section class="page-sec" id="headline">
+    <div class="wrap">
+      <div class="sec-eyebrow"><span class="dot"></span>HEADLINE · 今日头条</div>
+      <h2 class="rss-headline">{rss.headline}</h2>
+    </div>
+  </section>
+
+  <section class="page-sec" id="topics">
+    <div class="wrap">
+      <div class="sec-eyebrow"><span class="dot"></span>TOPICS · 今日话题</div>
+      <div class="topics-grid">
+        {rss.topics.map((topic) => (
+          <article class="topic-card">
+            <h3>{topic.title}</h3>
+            <p>{topic.summary}</p>
+            <p class="topic-sources links">
+              {topic.items.length} 个来源
+              {topic.items.map((item) => (
+                <a href={item.link} {...ext} title={item.zh_title}>{item.source}</a>
+              ))}
+            </p>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="page-sec" id="stream">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="sec-eyebrow"><span class="dot"></span>STREAM · 时间流</div>
+        <h2>昨日的全部更新</h2>
+      </div>
+      <div class="filter-bar" data-project-filters role="toolbar" aria-label="按类别筛选">
+        {filters.map((filter, index) => (
+          <button type="button" class="chip" data-filter={filter.key} aria-pressed={index === 0 ? 'true' : 'false'}>
+            {filter.label} <span>{filter.count}</span>
+          </button>
+        ))}
+      </div>
+      <div data-project-grid>
+        <div class="reading-list">
+          {stream.map((item) => (
+            <a class="reader-item" href={item.link} {...ext} data-category={item.category}>
+              <span class="reader-date">{item.source}</span>
+              <div>
+                <div class="reader-meta"><span>{item.category}</span></div>
+                <h3>{item.zh_title}</h3>
+                {item.orig_title !== item.zh_title && <p class="rss-orig">{item.orig_title}</p>}
+              </div>
+              <span class="reader-arrow" aria-hidden="true">→</span>
+            </a>
+          ))}
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

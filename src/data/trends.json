@@ -1,0 +1,269 @@
+{
+  "updatedAt": "2026年11月11日 09:50",
+  "sources": [
+    {
+      "id": "huggingface",
+      "title": "Hugging Face Papers",
+      "href": "https://huggingface.co/papers",
+      "note": "热门研究，看到模型与智能体方法的下一批方向。",
+      "items": [
+        {
+          "id": "20e80f25501ca9744b83361ace71d95b",
+          "title": "EmoHarness：用 Meta-Harness 演化提升多模态情感理解",
+          "summary": "小型多模态模型有个常见问题：当文字、语气和画面传递的情绪互相矛盾时，它们容易判断错误。EmoHarness 的思路很直接，它不改动模型参数，只在模型外面包一层 harness（提示词、参数设置和验证代码），让冻结的学生模型在一个被设计过的流程里做情绪判断。 这篇论文值得看的地方在于，它把“提升小模型能力”的注意力从训练转向了上下文工程。而且作者做了一件少见…",
+          "href": "https://arxiv.org/abs/2611.11994",
+          "meta": "arXiv 2611.11994",
+          "date": "11月9日"
+        },
+        {
+          "id": "23f5bbec54734fc071e82aa343e19798",
+          "title": "Sage-Taiyi：面向科学发现的元认知架构",
+          "summary": "这篇论文值得看的地方，不在“又做了一个科研智能体”，而在它把 元认知 当成架构的核心组件，让系统先判断“我现在懂到什么程度”，再决定下一步研究什么、怎么研究。 科研智能体这两年大多在拼检索、拼工具调用、拼写作流水线。Sage-Taiyi 换了个角度：让系统显式地监控自己对证据、假设、未解问题的理解状态，并据此调整研究目标和推理方法。 摘要里给了两个数字：在…",
+          "href": "https://arxiv.org/abs/2611.12762",
+          "meta": "arXiv 2611.12762",
+          "date": "11月9日"
+        },
+        {
+          "id": "4352e2d79c2aac85f194ecec24726fc6",
+          "title": "SWAM：以跨模态对齐扩展世界动作模型",
+          "summary": "世界动作模型（World Action Model）这两年在具身智能方向热度不低，但大多数工作把“语言和视频已经对齐好了”当成默认前提。SWAM 这篇论文盯的正是这个前提： 当你加入动作学习，原有的语言视频对齐可能会被破坏 。 这是一篇偏工程和训练配方的研究，作者整理了约 47,000 小时的数据，把“语言视频监督”“语言视频动作监督”“两者联合”三种设置…",
+          "href": "https://arxiv.org/abs/2611.12870",
+          "meta": "arXiv 2611.12870",
+          "date": "11月8日"
+        },
+        {
+          "id": "8f9edadb55df057774304048045193ab",
+          "title": "InfraRSI：利用递归自我改进优化训练基础设施",
+          "summary": "训练大模型的成本，很大一块不在算法，而在基础设施调优。InfraRSI 想做的事，是让 AI 自己动手改训练基础设施，并且改完还能验证确实变快了。 这篇值得看的地方在于，它没有停留在“让模型写个 kernel”这种单点优化上。分布式训练里，启动参数、算子实现、通信调度是绑在一起的，动一处就可能 OOM、编译冲突、测出来数字抖动，甚至悄悄跑出数值偏差。 这篇…",
+          "href": "https://arxiv.org/abs/2611.11558",
+          "meta": "arXiv 2611.11558",
+          "date": "11月8日"
+        },
+        {
+          "id": "7082a682f311f31b87d1d996a77e0df5",
+          "title": "创意启动：将过程与成果解耦，以摆脱创意悖论",
+          "summary": "AI 领域很多最重要的目标，从攻克疾病到提出新科学理论，本质上都要求创造力。但创造力偏偏很难通过训练获得，这里有个绕不开的矛盾：拿过去的创造性成果反复训练，模型只会更容易复现那些具体成果，反而压住了真正想要的创造性。 这篇论文想从根上绕开这个矛盾。它的立场是： 创造力应该被建模成一种过程，而不是某个作品自带的属性 。于是作者提出 Creative Prim…",
+          "href": "https://arxiv.org/abs/2611.11740",
+          "meta": "arXiv 2611.11740",
+          "date": "11月8日"
+        },
+        {
+          "id": "7582c0b032709ea4900007bab9a1f46b",
+          "title": "FraudBench：AI 欺骗行为的法律评估",
+          "summary": "这篇论文值得看，原因很直接：它把“AI 会不会骗人”这个有点虚的问题，换成了法律上可判定的问题，欺诈。 做法也很硬核。作者从美国真实判例里抽出 159 个场景，交给法律专家校验，然后让模型在三种自主程度下作答：给建议、代写消息、直接替用户执行。最后按“是否构成虚假陈述或隐瞒重大事实”来打分。 也就是说，它衡量的不是模型有没有说错话，而是模型会不会在没人明确…",
+          "href": "https://arxiv.org/abs/2611.12167",
+          "meta": "arXiv 2611.12167",
+          "date": "11月8日"
+        },
+        {
+          "id": "75d112e97991cb891e6b47f8e393f4f4",
+          "title": "面向通用灵巧操作的异构触觉表征学习",
+          "summary": "触觉传感器是灵巧操作绕不开的一环，但现实很尴尬：市面上的触觉传感器各有各的物理原理，压阻式、磁式、视触觉式，输出格式、噪声特性、采样率全不一样。结果是每换一种传感器，模型就得重新适配一遍，跨传感器的触觉数据基本无法复用。 这篇论文想做的事，是把“触觉理解”从具体传感器的物理特性里解耦出来。作者提出 LingBot-Touch ，一个触觉基础模型，让不同传感…",
+          "href": "https://arxiv.org/abs/2611.12806",
+          "meta": "arXiv 2611.12806",
+          "date": "11月8日"
+        },
+        {
+          "id": "7bfa61b6f59da147ca89f20bac712267",
+          "title": "Click3R：通过稀疏对应点击实现交互式立体 3D 重建",
+          "summary": "前馈式三维重建模型现在做得很快，一次前向就能出结果。问题是它只给一个答案，错了也改不了。遇到重复纹理、对称结构、大视角变化、无纹理区域，模型很容易在几何上判断失误，用户只能干看着。 Click3R 想解决的就是这个“不可撤销”的问题。它让用户在一对图像上点几组跨视角对应点，模型据此把几何约束注入重建网络，把错掉的深度和位姿往正确方向拉。 这篇论文值得看的地…",
+          "href": "https://arxiv.org/abs/2611.12875",
+          "meta": "arXiv 2611.12875",
+          "date": "11月8日"
+        },
+        {
+          "id": "99b403fea57164c5e965e35851b9d7f9",
+          "title": "世界模型需要多少次曝光？在测试时学习未见过的游戏机制",
+          "summary": "世界模型能不能在完全陌生的环境里快速学会新规则，这个问题现在有了一个比较具体的答案。 论文把“机制”定义成一条规则：某个动作或交互会改变环境的哪一部分。模型每看到一次机制发生，就算一次 exposure。他们问的是，世界模型需要多少次 exposure，才能预测新环境里的机制效果。 这个问题值得看，因为它把“世界模型泛化能力”从一句口号拆成了可测量的量。…",
+          "href": "https://arxiv.org/abs/2611.12324",
+          "meta": "arXiv 2611.12324",
+          "date": "11月8日"
+        },
+        {
+          "id": "a0a9cf69a00e981300e25bebd0c27a6f",
+          "title": "Reframe：面向智能体视觉推理的观测对齐多教师同策略蒸馏",
+          "summary": "视觉智能体用工具时有个很实际的毛病：工具调了，返回的截图或视频帧也拿到了，模型却常常视而不见，还是按自己原来的猜测往下答。这篇 Reframe 就盯着这个缝隙做文章。 它把对齐的对象从输出分布挪到了 观测状态 上。这个提法值得注意，因为多教师蒸馏通常只管学生说什么像不像老师，不太管学生在推理过程中到底看到了什么。 论文来自 arXiv，也可以直接看 PDF…",
+          "href": "https://arxiv.org/abs/2611.12886",
+          "meta": "arXiv 2611.12886",
+          "date": "11月8日"
+        }
+      ]
+    },
+    {
+      "id": "producthunt",
+      "title": "Product Hunt",
+      "href": "https://www.producthunt.com",
+      "note": "新产品发布，观察用户正在为什么工作流付费。",
+      "items": [
+        {
+          "id": "0cd4eaba608fb0ebb67385670ecc794c",
+          "title": "MuJoCo 4：自带工作室的机器人物理引擎",
+          "summary": "Google 又给 Nano Banana 迭代了，这次是 2.1 版本，而且几乎同步塞进了搜索的 AI Mode。 据 Barry Schwartz 在 Search Engine Roundtable 的报道，Google 今天正式发布 Nano Banana 2.1，这是其最新的图像生成与编辑模型。官方表态是：新模型“在多项指标上超越了此前所有版本”…",
+          "href": "https://www.producthunt.com/products/google",
+          "meta": "Maker · Zac Zuo",
+          "date": "11月10日"
+        },
+        {
+          "id": "038e1096181710fc0c7871344e8b460a",
+          "title": "AppuBot：在 Mac 或云端操作你真实应用的 AI 队友",
+          "summary": "一个还没上线的产品，官网只有一句介绍和一张图，值不值得花时间关注？ AppuBot 目前就是这个状态。它挂在 Product Hunt 的预告页上，正式亮相排到 2027 年第三周，投票、评论、评分全部锁定，连 Upvotes 都要等开榜才解锁。 能确认的信息只有一句： AI teammates that use your real apps, on yo…",
+          "href": "https://www.producthunt.com/products/appubot",
+          "meta": "Maker · Sarthak Gupta",
+          "date": "11月10日"
+        },
+        {
+          "id": "6eba9d76eabe6746f3def82a29fec409",
+          "title": "HitPay Agentic Discovery：让 AI 智能体发现并购买你的商品",
+          "summary": "小商家在 AI 购物这件事上，正在被系统性地漏掉。 原因不复杂：ChatGPT 这类助手已经能回答“帮我推荐一款 50 新币以内的陶瓷马克杯”，但它们读不到大多数小店的商品目录。价格、库存、规格散落在人类才能看懂的网页里，机器抓不到，自然也推荐不了。 HitPay 新出的 Agentic Discovery 就是冲着这个缺口来的。它是 HitPay Lab…",
+          "href": "https://www.producthunt.com/products/hitpay-agentic-discovery",
+          "meta": "Maker · Aditya Haripurkar",
+          "date": "11月10日"
+        },
+        {
+          "id": "08fa538cb58becc8bfcf9d97bba9137e",
+          "title": "Dover Startup Jobs：优秀初创公司与优秀人才的相遇之地",
+          "summary": "免费发布招聘信息，候选人全是冲着早期创业公司来的，听起来像招聘方的理想场景。但 Dover Startup Jobs 有个前提： 想发职位，得先注册 Dover ATS 。这不是一个独立招聘板，而是 Dover 招聘系统伸出来的一条获客通道。 它到底解决什么问题 创业公司招人有两个老难题。一是预算紧，LinkedIn 和 Indeed 的招聘位按点击或按职…",
+          "href": "https://www.producthunt.com/products/dover",
+          "meta": "Maker · George Carollo",
+          "date": "11月10日"
+        },
+        {
+          "id": "96e3a0f8b0184db026776dfbd9efdbe8",
+          "title": "openring：无平台费的开源语音 AI 智能体",
+          "summary": "一个产品在 Product Hunt 上架了，但它的官网打不开，Product Hunt 页面上也只剩下一句报错信息。这种情况该怎么判断它值不值得看？ openring 目前就处在这么个状态。它在 Product Hunt 上有条目，指向的官网是 PyPI 上的 openring 页面。但抓取这个页面时，返回的不是项目介绍，而是 Fastly 的拦截提示：…",
+          "href": "https://www.producthunt.com/products/openring",
+          "meta": "Maker · Alan Rocha",
+          "date": "11月10日"
+        },
+        {
+          "id": "58c4b4e5424a9ee14c88a0e4c27537b0",
+          "title": "Seldon：像真实客户一样使用你产品的行为 QA 智能体",
+          "summary": "一个反常识的数字：Seldon 声称它的模拟用户和真人在完整流程里做出一致选择的比例达到 87%。这个数字如果站得住，意味着很多产品决策可以先在“虚拟人群”里跑一遍，再决定要不要动真格。 Seldon 是 Product Hunt 上出现的一个项目，它给自己的定位不是又一个用户画像工具，而是一家应用研究实验室，想建立一套模拟人类行为的新标准。官网的标题很直…",
+          "href": "https://www.producthunt.com/products/seldon",
+          "meta": "Maker · Chris Messina",
+          "date": "11月10日"
+        },
+        {
+          "id": "26c05483ccd7b81a2dba1f43cc042ac2",
+          "title": "Clive：让 Claude 等 AI 帮你设置 iPhone 闹钟",
+          "summary": "Product Hunt 上出现了一个叫 Clive 的条目，标题一句话：Build everything, effortlessly。 听起来野心不小。但点进官网会发现，能拿到的信息也就这一句，外加一个订阅框，提示用户留下邮箱等待 CliveAgents 的后续进展。 换句话说，目前没有可验证的产品。 没有功能截图，没有使用文档，没有定价，没有团队介绍，…",
+          "href": "https://www.producthunt.com/products/clive",
+          "meta": "Maker · Connor Spencer",
+          "date": "11月10日"
+        },
+        {
+          "id": "79220c48a27feaa560d5921a8800481d",
+          "title": "Almanzor：为你的文档提供带引用答案的 AI + MCP 服务器",
+          "summary": "一个产品想把 CRM、收件箱、财务、融资和文档全塞进同一个工作台，还让 AI Agent 学着你的方式去操作。这是 Almanzor 在 Product Hunt 上给出的说法，落地页挂在 StartupStarter 上。 先把边界说清楚：目前能拿到的公开信息，只有这一句产品描述和它的落地页。官网抓取回来的内容与 Product Hunt 摘要几乎一字不…",
+          "href": "https://www.producthunt.com/products/almanzor",
+          "meta": "Maker · Victor Elexpe",
+          "date": "11月10日"
+        },
+        {
+          "id": "7181e49ba383955339e19aef7bd86203",
+          "title": "Inspo by Context.dev：为你的编程 Agent 提供真实网站灵感",
+          "summary": "给 AI 智能体喂网页数据，最头疼的往往是那些“看起来成功了”的失败。 状态码返回 200，程序没报错，结果拿回来的却是一堆还没渲染完的单页应用空壳 HTML。智能体拿着这堆残缺的半成品去推理，结果自然是一本正经地胡说八道。 最近在 Product Hunt 上亮相的 Rusteerio by Context.dev，其实是 Y Combinator 孵化…",
+          "href": "https://www.producthunt.com/products/context-dev",
+          "meta": "Maker · Ely",
+          "date": "11月10日"
+        },
+        {
+          "id": "b78b43f62fb3b9dead58a5feaa13fff4",
+          "title": "Kumiko：面向超宽屏与大屏 Mac 的 AI 窗口管理器",
+          "summary": "Mac 上的窗口管理工具多到用不过来，但绝大多数有个共同假设：你的屏幕是 16:9。一旦换成 21:9 甚至 32:9 的超宽屏，那些按比例切一半、切四分之一的快捷键就显得很笨，切出来的窗口瘦长一条，什么都放不下。 Kumiko 就是冲着这个缝隙来的。它是一个面向大屏和超宽屏 Mac 的窗口管理器，核心卖点一句话能说完： 你的大屏，靠“说”来摆。 先说不用…",
+          "href": "https://www.producthunt.com/products/kumiko-2",
+          "meta": "Maker · Atul Jha",
+          "date": "11月10日"
+        }
+      ]
+    },
+    {
+      "id": "github_trending",
+      "title": "GitHub Trending",
+      "href": "https://github.com/trending",
+      "note": "开源项目热度，看到工程实践与开发工具的新势能。",
+      "items": [
+        {
+          "id": "ff70619cacf9df1e6af24d7b286882f4",
+          "title": "Diolinux/PhotoGIMP",
+          "summary": "从 Photoshop 叛逃到 GIMP，最难受的不是功能缺失，而是肌肉记忆全部作废。快捷键按下去没反应，工具栏位置对不上，整个人像被扔进一个长得差不多的陌生房间。 PhotoGIMP 就是来解决这个问题的。它是一个开源补丁包，把 GIMP 3.0 的界面和快捷键全面向 Photoshop 对齐。装完之后，GIMP 的工具栏布局、快捷键映射、窗口面板位置都…",
+          "href": "https://github.com/Diolinux/PhotoGIMP",
+          "meta": "Daily Trending",
+          "date": "GitHub"
+        },
+        {
+          "id": "ff3f996411e0e9cf2d8155470541da3d",
+          "title": "opengeos/GeoLibre",
+          "summary": "在浏览器里打开一个 GIS 应用，不装任何软件，就能加载 3D 纽约城市模型、直接跑 700 多种空间分析工具，甚至还能在火星地图上测量距离。听起来像科幻片，但 GeoLibre 已经做到了。 GeoLibre 是一个轻量级、云原生的开源 GIS 平台，核心卖点就一个： 随处运行 。浏览器、桌面、手机、Jupyter Notebook，甚至 Android…",
+          "href": "https://github.com/opengeos/GeoLibre",
+          "meta": "Daily Trending",
+          "date": "GitHub"
+        },
+        {
+          "id": "fe4b74c6b39aa9e60ea0a7ef0e57288f",
+          "title": "oblien/openship",
+          "summary": "一个开源项目，把 Vercel 和 Netlify 的核心能力塞进了你自己的服务器。指向一个仓库，它负责构建、发布、路由、配 TLS 证书，还能从桌面应用、网页面板或命令行三个入口操作。 这就是 oblien/openship，一个自带 CI/CD 的自托管部署平台。官网在 openship.io，最近在 trendshift.io 上冒了头。 先决定一件…",
+          "href": "https://github.com/oblien/openship",
+          "meta": "Daily Trending",
+          "date": "GitHub"
+        },
+        {
+          "id": "fd5ce44739acf4b0bac83fedd5def186",
+          "title": "Tencent/WeKnora",
+          "summary": "Open-source LLM knowledge platform: turn raw documents into a queryable RAG, an autonomous reasoning agent, and a self-maintaining Wiki. https://weknora.weixin.qq.com | English |…",
+          "href": "https://github.com/Tencent/WeKnora",
+          "meta": "Daily Trending",
+          "date": "GitHub"
+        },
+        {
+          "id": "fcf05130d66cf3e6b882e99c00d1c239",
+          "title": "superdesigndev/treg",
+          "summary": "OpenRouter for agent tools. Join community here: https://discord.gg/6mQYYfFMAn https://treg.to Treg (OpenRouter for Tools) OpenRouter, but for agent tools instead of models. Point…",
+          "href": "https://github.com/superdesigndev/treg",
+          "meta": "Daily Trending",
+          "date": "GitHub"
+        },
+        {
+          "id": "fcc6f8ed1162d1fc6df964e56a5ba44f",
+          "title": "activeloopai/hivemind",
+          "summary": "一个工程师的 Agent 周一搞定了一段棘手的数据库迁移。周二，全组所有人的 Agent 都能照着执行同样的操作。 这不是靠人写文档传下去的。是 Agent 自己把经验挖出来、写成技能、同步给了团队里每一个 Agent。 这个项目叫 Hivemind，来自 Activeloop（Y Combinator 背书，做 Deeplake 数据平台的团队）。一句话…",
+          "href": "https://github.com/activeloopai/hivemind",
+          "meta": "Daily Trending",
+          "date": "GitHub"
+        },
+        {
+          "id": "fc8615ddc839cc313e9f9a3bb575c851",
+          "title": "humanlayer/skills",
+          "summary": "skills Claude Code skills from HumanLayer . Installation npx skills add humanlayer/skills --skill SKILLNAME Available Skills improve-claude-md Rewrites your CLAUDE.md using blocks…",
+          "href": "https://github.com/humanlayer/skills",
+          "meta": "Daily Trending",
+          "date": "GitHub"
+        },
+        {
+          "id": "fc77c52adc301ec68480e8d0ef7ae637",
+          "title": "davila7/claude-code-templates",
+          "summary": "一个命令，把 Claude Code 武装到牙齿 用 Claude Code 写代码的人，可能都遇到过这样的场景：想让 AI 理解你的项目上下文，但它就是不知道你常用的测试框架、代码规范或者数据库连接方式。 每次都要在 prompt 里反复交代，像在教一个健忘的实习生。 davila7/claude-code-templates 这个开源项目，就是为了解决…",
+          "href": "https://github.com/davila7/claude-code-templates",
+          "meta": "Daily Trending",
+          "date": "GitHub"
+        },
+        {
+          "id": "fc22b39a3dfef1c6af9db88f6921d1c2",
+          "title": "manaflow-ai/cmux",
+          "summary": "Open source Ghostty-based macOS terminal with vertical tabs and notifications for AI coding agents. Built for multitasking, organization, and programmability. https://cmux.com cmu…",
+          "href": "https://github.com/manaflow-ai/cmux",
+          "meta": "Daily Trending",
+          "date": "GitHub"
+        },
+        {
+          "id": "fbc77e345cc192615ec19277eb2f4f7c",
+          "title": "alirezarezvani/claude-skills",
+          "summary": "345 Claude Code skills & agent skills & plugins (30+ Agents, 70+ custom commands, 330+ skills, customizable references, scripts)for Claude Code, Codex, Gemini CLI, Cursor, and 8 m…",
+          "href": "https://github.com/alirezarezvani/claude-skills",
+          "meta": "Daily Trending",
+          "date": "GitHub"
+        }
+      ]
+    }
+  ]
+}

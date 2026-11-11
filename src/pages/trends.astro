@@ -1,0 +1,84 @@
+---
+import Layout from '../layouts/Layout.astro';
+import site from '../data/site.json';
+import trends from '../data/trends.json';
+
+const filters = [
+  { key: 'all', label: '全部', count: trends.sources.reduce((total, source) => total + source.items.length, 0) },
+  ...trends.sources.map((source) => ({ key: source.id, label: source.title, count: source.items.length })),
+];
+const ext = { target: '_blank', rel: 'noopener noreferrer' };
+---
+
+<Layout title={`探索 · ${site.brand}`} description="看研究、产品和开源项目的最新趋势。数据来自 Hugging Face Papers、Product Hunt 与 GitHub Trending。">
+  <header class="page-head">
+    <div class="wrap">
+      <div class="sec-eyebrow"><span class="dot"></span>TRENDS · 探索</div>
+      <h1>看新技术和产品正在流向哪里</h1>
+      <div class="prose page-intro">
+        <p>Hugging Face 看研究，Product Hunt 看产品，GitHub 看工程。三个信号放在一起，看得更远一点。</p>
+      </div>
+      <p class="page-stats">
+        <span><b data-project-count>{filters[0].count}</b> 条趋势</span>
+        <span>更新于 <b class="latin">{trends.updatedAt}</b></span>
+      </p>
+    </div>
+  </header>
+
+  <section class="page-sec">
+    <div class="wrap">
+      <div class="filter-bar" data-project-filters role="toolbar" aria-label="按趋势来源筛选">
+        {filters.map((filter, index) => (
+          <button type="button" class="chip" data-filter={filter.key} aria-pressed={index === 0 ? 'true' : 'false'}>
+            {filter.label} <span>{filter.count}</span>
+          </button>
+        ))}
+      </div>
+
+      <div data-project-grid>
+        {trends.sources.map((source) => (
+          <section class="pgroup" id={source.id} data-project-group aria-labelledby={`trend-${source.id}`}>
+            <header class="pgroup-h">
+              <h2 id={`trend-${source.id}`}>{source.title}</h2>
+              <span class="latin">{source.items.length}</span>
+              <a class="more trend-source" href={source.href} {...ext}>查看来源</a>
+            </header>
+            <p class="pgroup-note">{source.note}</p>
+            <div class="proj">
+              {source.items.map((item) => (
+                <a class="pr" href={item.href} {...ext} data-category={source.id}>
+                  <div class="pt">
+                    <h3>{item.title}</h3>
+                    <span class="tag">{item.date}</span>
+                  </div>
+                  <p>{item.summary}</p>
+                  <span class="d">{item.meta}</span>
+                  <span class="a" aria-hidden="true">↗</span>
+                </a>
+              ))}
+            </div>
+          </section>
+        ))}
+      </div>
+    </div>
+  </section>
+</Layout>
+
+<style>
+.trend-source {
+  margin-left: auto;
+}
+
+@media (max-width: 1080px) {
+  .trend-source {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 860px) {
+  .pgroup-h .trend-source {
+    order: 3;
+    width: 100%;
+  }
+}
+</style>

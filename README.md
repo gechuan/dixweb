@@ -16,7 +16,17 @@ npm install
 npm run dev       # http://localhost:4321
 npm run build     # 产物在 dist/
 npm run preview
+npm run deploy      # 构建并部署当前内容
+./scripts/update-content.sh  # 生成昨日资讯并刷新趋势
 ```
+
+## 云端每日自动更新
+
+GitHub Actions 会在每天 08:30（Asia/Shanghai）执行 `scripts/update-content.sh`，
+提交新的数据并部署到 Cloudflare；本机不需要保持运行。需要在仓库 secrets 中配置：
+
+- `DEEPSEEK_API_KEY`
+- `CLOUDFLARE_API_TOKEN`
 
 ## 内容编辑
 

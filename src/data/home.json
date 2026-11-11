@@ -36,7 +36,7 @@
       "title": "博客",
       "more": {
         "label": "全部",
-        "href": "https://blog.qiaomu.ai/"
+        "href": "https://blog.deepintox.com/"
       },
       "entries": [
         {
@@ -95,19 +95,19 @@
       "entries": [
         {
           "date": "11.05",
-          "tag": "乔木风格重写",
+          "tag": "DIX风格重写",
           "title": "Joe Rogan Experience 2576 - Peter McCullough 博士",
           "url": "https://rss.qiaomu.ai/articles/joe-rogan-experience-2576-peter-mccullough-%E5%8D%9A%E5%A3%AB--f302780af17e/rewrite"
         },
         {
           "date": "11.05",
-          "tag": "乔木风格重写",
+          "tag": "DIX风格重写",
           "title": "开放模型经济如今规模有多大？",
           "url": "https://rss.qiaomu.ai/articles/%E5%BC%80%E6%94%BE%E6%A8%A1%E5%9E%8B%E7%BB%8F%E6%B5%8E%E5%A6%82%E4%BB%8A%E8%A7%84%E6%A8%A1%E6%9C%89%E5%A4%9A%E5%A4%A7--2bb5fab546b7/rewrite"
         },
         {
           "date": "11.05",
-          "tag": "乔木风格重写",
+          "tag": "DIX风格重写",
           "title": "[AINews] Latent Space 幕后：Kill My SaaS、Jev 与 2026 年的 AI | AIEi 上海",
           "url": "https://rss.qiaomu.ai/articles/ainews-latent-space-%E5%B9%95%E5%90%8E-kill-my-saas-jev-%E4%B8%8E-2026-%E5%B9%B4%E7%9A%84-ai-aiei-%E4%B8%8A%E6%B5%B7--b86223fee2a1/rewrite"
         }
@@ -134,7 +134,7 @@
         "杨攀",
         "歸藏",
         "橘子",
-        "向阳乔木"
+        "Chuan"
       ],
       "listen": [
         {
@@ -222,10 +222,10 @@
   "now": {
     "title": "今天做了啥",
     "date": "2026年10月28日",
-    "body": "把「乔木 AI 资讯」收录到网站：免费阅读十多个 AI Newsletter、国内外 AI 播客与优秀公众号，英文内容转成中文，支持网页、Obsidian 和 DeepSeek Harness。",
+    "body": "把「DIX AI 资讯」收录到网站：免费阅读十多个 AI Newsletter、国内外 AI 播客与优秀公众号，英文内容转成中文，支持网页、Obsidian 和 DeepSeek Harness。",
     "more": {
       "label": "查看进展与阅读入口",
-      "href": "/now#today"
+      "href": "/rss"
     }
   }
 }
