@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026年11月12日 15:33",
+  "updatedAt": "2026年11月12日 18:57",
   "sources": [
     {
       "id": "huggingface",
@@ -7,6 +7,14 @@
       "href": "https://huggingface.co/papers",
       "note": "热门研究，看到模型与智能体方法的下一批方向。",
       "items": [
+        {
+          "id": "37f0fe8c5086999893240d940a7ff578",
+          "title": "SteerDistill：通过闭环教师引导量化 LLM Agent",
+          "summary": "低比特量化能把 LLM Agent 的推理成本压下来，但代价常常是任务成功率下滑。这篇论文有意思的地方在于，它没有停在“量化掉点”这个结论上，而是去翻失败的 rollout，看量化后的 Agent 到底错在哪。 作者发现，失败往往不是模型变笨了，是它 漏看了任务要求或环境条件 ，于是产生的环境状态转移和全精度参考轨迹对不上。这个观察挺关键：错误发生在行为层…",
+          "href": "https://arxiv.org/abs/2611.13410",
+          "meta": "arXiv 2611.13410",
+          "date": "11月10日"
+        },
         {
           "id": "0da7b505e4cff343934a615b2056c07b",
           "title": "ExRL：通过执行长度控制实现长块策略的样本高效在线适配",
@@ -32,11 +40,27 @@
           "date": "11月10日"
         },
         {
+          "id": "4fd05dcf37bf5fde9ab2c1f4aa5412b1",
+          "title": "按需精度：小型本地模型在不确定解码步提升权重比特",
+          "summary": "这篇论文的问题很具体，也很工程： 本地小模型解码时，权重精度能不能按需给？ 现在的做法通常是一整段生成固定一个精度，要么全程 8-bit，要么全程 4-bit。这篇论文试的是另一种分配：权重存 8-bit，默认用高 4 位解码，只有当低精度输出的分布看起来“不确定”时，才把这一步重做成 8-bit。 模型是 Qwen3-0.6B，基准是 GSM8K，量化是…",
+          "href": "https://arxiv.org/abs/2611.14418",
+          "meta": "arXiv 2611.14418",
+          "date": "11月9日"
+        },
+        {
           "id": "4808eefa9327842253e0c0e70e39ad0d",
           "title": "TorchCurves：可微参数化曲线",
           "summary": "曲线能不能像权重一样被训练？TorchCurves 给的答案是能，而且做得挺干净。 这篇论文来自 Hugging Face 每日论文，作者 Alex Shtoff。它不是一个新模型，而是一个 PyTorch 库：把向量值参数曲线当成可学习的基本单元。对做连续特征嵌入、Kolmogorov-Arnold 网络（KAN）或者函数型回归的人来说，这类工具能省掉不…",
           "href": "https://arxiv.org/abs/2611.14516",
           "meta": "arXiv 2611.14516",
+          "date": "11月9日"
+        },
+        {
+          "id": "86461ce4ad54bb4527cdb690b8735caa",
+          "title": "对齐从何而来，又意味着什么？细看柏拉图表示假说",
+          "summary": "这篇论文值得看，理由很直接： 柏拉图表示假说（PRH）这几年被引用得太顺了，但它的证据链其实没那么稳。 新模型还符不符合这个趋势、相似度指标本身会不会被模型规模带偏、跨模态对齐到底算高还是算低，这几个问题一直缺一个系统回答。 作者把“对齐”这件事拆开来看：先定位它在哪一层、哪些维度上出现，再检查新语言模型是否还延续能力与对齐同步的趋势，最后给跨模态相似度补…",
+          "href": "https://arxiv.org/abs/2611.12869",
+          "meta": "arXiv 2611.12869",
           "date": "11月9日"
         },
         {
@@ -62,30 +86,6 @@
           "href": "https://arxiv.org/abs/2611.13907",
           "meta": "arXiv 2611.13907",
           "date": "11月9日"
-        },
-        {
-          "id": "9d8b464aee63a77c500df5d90412d645",
-          "title": "WaveGen：通过内部频谱轨迹学习实现真正的端到端波形生成",
-          "summary": "TTS 这条技术栈已经很久没被真正撼动了：文本进去，中间塞一个梅尔谱或者音频 codec 的隐变量，再拿声码器还原波形。WaveGen 想干的事很直接， 把这个中间层拿掉，文本直接生成波形 。 这件事值得看，不是因为\"端到端\"这个词好听，而是因为它同时砍掉了四样东西：神经音频 codec、梅尔声码器、VAE 隐空间、时长预测器。连 BERT 文本特征和 W…",
-          "href": "https://arxiv.org/abs/2611.12527",
-          "meta": "arXiv 2611.12527",
-          "date": "11月9日"
-        },
-        {
-          "id": "bbca5b1dafb1e54ea866be84a8f5161f",
-          "title": "PhyRubric：基于评分标准的文生视频物理常识诊断评估",
-          "summary": "视频生成模型越来越像“世界模拟器”，但一个基本问题还没解决：它生成的画面，真的符合物理常识吗？ 现有评测大多靠人看视频打一个总分。这个分数主观，而且只告诉你“不好”，不告诉你 违反的是哪条物理规律 。PhyRubric 想改掉这个评测方式：先给每条 caption 建一份评分细则，再让评分落在带时间戳的证据上。 这篇值得看的地方在于，它把“物理常识评测”从…",
-          "href": "https://arxiv.org/abs/2611.13576",
-          "meta": "arXiv 2611.13576",
-          "date": "11月9日"
-        },
-        {
-          "id": "cfd8bddb0cc29ce826cfaa7c4f1a913b",
-          "title": "市场条件化 JEPA：从不可预测的市场冲击中学习",
-          "summary": "金融时序里有一大块波动，来自单个资产自己的历史根本预测不了的市场冲击。按资产各训一个自监督模型的做法，会把这部分变化当成无法消除的噪声处理掉。 这篇论文的出发点是： 与其把市场冲击当噪声，不如把它显式喂进预测器 。作者在潜在因子模型的框架下证明，把已经实现的市场因子作为条件，资产对市场的暴露度（也就是 beta 这类东西）就从“可选信息”变成了“最优预测的…",
-          "href": "https://arxiv.org/abs/2611.13572",
-          "meta": "arXiv 2611.13572",
-          "date": "11月9日"
         }
       ]
     },
@@ -96,84 +96,84 @@
       "note": "新产品发布，观察用户正在为什么工作流付费。",
       "items": [
         {
-          "id": "ecc46150ef2b891270db01852a187b44",
-          "title": "Reddit Reviews：汇集 subreddit 口碑的产品页面",
-          "summary": "Reddit 上有一种内容，电商平台永远抄不走：一个人花了三个月用坏三台咖啡机之后写下的长帖。现在 Reddit 想把这些帖子变成生意。 2026 年 11 月 10 日，Reddit 正式推出 Reddit Reviews，把多年积累的 subreddit 产品讨论整理成可搜索的评测中心，配 AI 摘要、情绪分布图和主题筛选，每个结论都能点回原始评论。首…",
-          "href": "https://www.producthunt.com/products/reddit",
+          "id": "3444957625ad026d3f4ae038f284777b",
+          "title": "Didit MCP：用于身份验证与欺诈检测的 MCP 服务器",
+          "summary": "身份验证这件事，过去是给人用的。填表、拍照、活体检测，每一步都假设屏幕前坐着一个真人。Didit 这次把它交给了 AI Agent。 Didit MCP 做的事情可以用一句话说清：把 Didit 的身份验证平台接到任何支持 Model Context Protocol 的客户端上，让 Agent 用自然语言直接跑 KYC、KYB、AML 筛查和交易监控。…",
+          "href": "https://www.producthunt.com/products/didit-3",
+          "meta": "Maker · Alberto Rosas",
+          "date": "11月12日"
+        },
+        {
+          "id": "2e425ef957380ea91ea72d2e6a17b0e7",
+          "title": "Hoy for Mac：对讲机、AirDrop 与 Messages 的结合体",
+          "summary": "Walkie-talkie meets AirDrop meets Messages",
+          "href": "https://www.producthunt.com/products/hoy-for-mac",
+          "meta": "Maker · Dominik Kandravý",
+          "date": "11月12日"
+        },
+        {
+          "id": "4adc7cc366993ee1c224c20f32c28fb0",
+          "title": "Crossfade：让编码 Agent 在你打开的 Figma 文件中做设计",
+          "summary": "Figma 的 MCP 服务器有个隐性成本：Agent 干活是循环的，读一次、改一次、截个图自查、再改。每一步都算调用次数，而 Figma 那边是按次数计费的。 Crossfade 的思路很直接：把这个桥接搬到本地，让调用次数这件事消失。 它到底做了什么 Crossfade 是一个跑在 Figma 桌面端里的插件。装上之后，Claude Code、Code…",
+          "href": "https://www.producthunt.com/products/crossfade",
+          "meta": "Maker · Sabarish Sanjay",
+          "date": "11月12日"
+        },
+        {
+          "id": "e418a1b3d6ecf2b14b0a512a00fef7aa",
+          "title": "Offstage Cloud：为 AI Agent 提供按需 macOS 沙箱",
+          "summary": "AI Agent 想跑通 iOS 和 Mac 开发流程，一直卡在一个很现实的问题上：它需要一台真正的 macOS 机器。Linux 容器再便宜，也装不了 Xcode，开不了 iOS 模拟器。Offstage Cloud 想解决的正是这个缺口。 它到底提供什么 按 Offstage Cloud 在 Product Hunt 上的描述，这是一个按需启动的 ma…",
+          "href": "https://www.producthunt.com/products/offstage-cloud",
+          "meta": "Maker · Viraat Das",
+          "date": "11月12日"
+        },
+        {
+          "id": "b82298e0f2fce3381e75a21c647b09f9",
+          "title": "Oxagen：Agent 共享与维护上下文的控制中心",
+          "summary": "一个团队同时跑十几个 AI Agent，月底账单出来，没人说得清哪笔钱是谁花的、花在哪个任务上。这不是假设，是多数团队上 Agent 之后的真实状态。 Oxagen 想解决的正是这件事。它给自己的定位叫 Agent 控制平面 ，说白了就是给自主 Agent 做“人事管理”：每个 Agent 有身份、有权限、有预算、有工具清单，干过的活全部留档可查。 它管的…",
+          "href": "https://www.producthunt.com/products/oxagen",
+          "meta": "Maker · Mac Anderson",
+          "date": "11月12日"
+        },
+        {
+          "id": "ac110af5495c2d7e07a5d32e5c21ecec",
+          "title": "Blendra：录制一次流程，生成属于你的 Playwright 测试项目",
+          "summary": "端到端测试最烦人的地方，往往不是写第一版，而是三个月后它挂了，没人知道为什么。Blendra 想解决的正是这个问题：在 Chrome 里录一遍操作，直接生成属于你自己的 Playwright 代码，跑在云端，失败时用大白话告诉你原因。 产品本身是一个 Chrome 扩展，叫 Blendra Recorder，官网在 blendra.app。目前版本 0.6…",
+          "href": "https://www.producthunt.com/products/blendra",
+          "meta": "Maker · Blend Emini",
+          "date": "11月12日"
+        },
+        {
+          "id": "3dd57004f3341fabcfa3ea684d06d049",
+          "title": "Nameshot：自动为截图命名",
+          "summary": "Mac 桌面上躺着一堆名字像乱码的文件：“Screenshot 2026-10-12 at 9.41.07 AM”。你知道里面有张重要的收据，但打开之前，它和另外三十张截图长得一模一样。 Nameshot 想解决的就是这件小事。它把这些机器命名的截图，改成“Passive-Aggressive Roommate Note”“FaceTime Call wi…",
+          "href": "https://www.producthunt.com/products/nameshot-2",
           "meta": "Maker · Chris Messina",
-          "date": "11月11日"
+          "date": "11月12日"
         },
         {
-          "id": "fc3de63824f9eec7e3b8cc8fb17d359b",
-          "title": "bonds chat：你和朋友放鸽子就会消失的多人 AI",
-          "summary": "用群聊直接生成共享应用，这个叫 bonds 的 AI 信使想重新定义聊天 一个 AI 信使，能在群聊里直接生成共享应用。这是 bonds 在 Product Hunt 上的自我描述。听起来有点抽象，拆开看其实很具体。 bonds 的定位是群聊场景的 AI 助手。它的核心逻辑是： 当聊天内容积累到需要工具来管理时，AI 自动在聊天内部创建一个共享应用 。比如…",
-          "href": "https://www.producthunt.com/products/bonds-2",
-          "meta": "Maker · Sebastian Linares",
-          "date": "11月11日"
+          "id": "bd50e9b9d666d25b6e04178109ed9a10",
+          "title": "Jot 2.0：选中文本连按两次 Shift，即刻生成 Markdown 文件",
+          "summary": "Select text, tap Shift twice, it's a markdown file",
+          "href": "https://www.producthunt.com/products/jot-2-0",
+          "meta": "Maker · Mohak Bajaj",
+          "date": "11月12日"
         },
         {
-          "id": "0be99e7a829f5079f43611dbc170a229",
-          "title": "Mister Blocks：用乐高积木生成图片，AI 再为你推荐拼搭方案",
-          "summary": "一堆散落的乐高积木，拍张照，AI 就能给你四套能真正拼出来的图纸。这事听起来简单，难点全在“能真正拼出来”这五个字上。 Mister Blocks 是个网页工具，把一张散件照片变成可执行的搭建方案。它先识别照片里有哪些零件，再只用这些零件生成四套不同的模型，每套都配可旋转的 3D 分步说明。核心卖点不是生成好看的设计，而是 生成物理上成立的设计 。 先数清…",
-          "href": "https://www.producthunt.com/products/mister-blocks",
-          "meta": "Maker · Oleksandr Gamaniuk",
-          "date": "11月11日"
+          "id": "6c5ecefa8da39105b9c27c568c8fcc3e",
+          "title": "WizardNote：手机自动转录语音笔记并保存为 Markdown",
+          "summary": "语音笔记这类工具，最尴尬的地方在于：它一边承诺帮你记住一切，一边把录音传到某个看不见的服务器上。WizardNote 切的就是这个痛点， 录音和转写全程跑在手机上，不联网也能用 。 官网首页挂着一句用户评价：“First one I came across, that doesn't send data outside my phone.” 这句话基本就是…",
+          "href": "https://www.producthunt.com/products/wizardnote",
+          "meta": "Maker · Jan Langhans",
+          "date": "11月12日"
         },
         {
-          "id": "e9b0c61494d939c51b6f0661a9ce8a9a",
-          "title": "RigSpark：了解哪款 AI 适合在你的电脑上运行",
-          "summary": "本地跑 AI 这件事，卡人的往往不是模型，而是“我这台机器到底能跑哪个”。网上教程给的建议经常是猜的，下载几十 GB 之后才发现显存不够，或者跑起来慢到没法用。 RigSpark 想解决的就是这一步。它先给你的硬件做体检，再决定跑什么。 先给结论，再给下载 RigSpark 的核心是一个叫 Sparky 的推荐引擎。它读取本机的 RAM、GPU、显存和磁盘…",
-          "href": "https://www.producthunt.com/products/rigspark",
-          "meta": "Maker · Shashank Mishra",
-          "date": "11月11日"
-        },
-        {
-          "id": "aabe2074eee4f4b468cf186fd5f7f7e1",
-          "title": "Earlybird：2900 万参数语音转文字，词未说完即输出",
-          "summary": "语音转文字这件事，大家默认的节奏是「等你说完，我再出字」。Earlybird 想改掉这个节奏：它在说话人还没把词说完的时候，就把词吐出来了。 这是 Earlybird 的核心卖点。按 Product Hunt 页面上的描述，它是一个 29M 参数、17 MB 的端侧语音识别模型，能在说话人说完每个词之前约 90 毫秒就把这个词正确预测出来，并且给每个词附带…",
-          "href": "https://www.producthunt.com/products/earlybird-5",
-          "meta": "Maker · Sahil Mahendrakar",
-          "date": "11月11日"
-        },
-        {
-          "id": "3dd5ab22832df191560e41d30f0fd7ab",
-          "title": "Binqo：Mac 刘海里的一个小伙伴",
-          "summary": "Mac 屏幕顶部那个刘海，除了藏摄像头和菜单栏，还能住进一个会眨眼、会打瞌睡、会跟着音乐蹦跶的小家伙。 这是 Binqo 在做的事。它是一款免费的 Mac 应用，把 AI 助手、剪贴板、文件暂存、专注计时、会议记录这些零碎功能，全塞进了刘海那一小块区域里。产品在 Product Hunt 上发布，官网可以直接下载。 先搞清楚它到底是什么 Binqo 不是又…",
-          "href": "https://www.producthunt.com/products/binqo",
-          "meta": "Maker · Raphael Griffiths",
-          "date": "11月11日"
-        },
-        {
-          "id": "3135b32eed0e240369d491644919ffff",
-          "title": "Xolace：为那些还称不上心理问题的糟糕日子而设",
-          "summary": "一款情绪日记 App 在 Product Hunt 上架，主打 AI 陪伴，14 个评分拿到 4.5 分，年费 59.99 美元。它想解决的问题听起来很朴素： 大多数人不是不开心，只是说不清自己怎么了。 它到底是个什么产品 Xolace 的定位是 AI 情绪与感受日记，官方描述里直接点名了焦虑和压力这两个场景。它只在 App Store 分发，iPhone…",
-          "href": "https://www.producthunt.com/products/xolace",
-          "meta": "Maker · Nathaniel E. Adama",
-          "date": "11月11日"
-        },
-        {
-          "id": "c3f171599aa763e2a357f72865f1c675",
-          "title": "Skipbox：低价快速的 GitHub Actions 运行器，分钟数不限",
-          "summary": "一个挂在 Product Hunt 上的条目，点进官网，落在 GitHub 个人主页上，页面上是几个 Java 和 Visual Basic 的测试仓库。这基本就是 Skipbox 目前能查到的全部。 先把边界说清楚： 没有可用的产品信息 。 Product Hunt 上这个条目的标题是 Skipbox，摘要却是一段 GitHub 用户页的抓取文本，讲的是…",
-          "href": "https://www.producthunt.com/products/skipbox",
-          "meta": "Maker · Tomoya",
-          "date": "11月11日"
-        },
-        {
-          "id": "d010b6627c5be18626b3000872d852d4",
-          "title": "Padrail：把 MacBook 触控板边缘变成控制区",
-          "summary": "MacBook 触控板面积越做越大，但绝大多数人只用了它的滑动和点按。四周那圈边缘，基本是闲置的。 Padrail 想做的事很直接： 把触控板的四条边变成快捷键 。右边调音量，左边调亮度，下边管键盘背光，上边则跟着当前 App 变。 这套分配有它的道理。音量、亮度、键盘灯是系统级操作，位置固定，用几次就能形成肌肉记忆，不需要看屏幕。真正有意思的是上边缘，它…",
-          "href": "https://www.producthunt.com/products/padrail",
-          "meta": "Maker · Ivan",
-          "date": "11月11日"
-        },
-        {
-          "id": "45bd5a08b6d9457d6751e0500ca7e14a",
-          "title": "Mitra MCP：让 AI Agent 接入你的个人电话线路",
-          "summary": "一个 AI 助手，能替你打电话，还能让 Claude 和 ChatGPT 直接调用它。这两件事放在一起，才是 Mitra 这次上 Product Hunt 的真正看点。 先搞清楚 Mitra 本身是什么 Mitra 不是那种只会聊天的助手。从帮助中心的结构看，它的核心能力是 替你打电话 ：告诉它打给谁、要问什么、什么样的结果算好，然后它去执行。 配套的还有…",
-          "href": "https://www.producthunt.com/products/mitra-5",
-          "meta": "Maker · Sai Mandava",
-          "date": "11月11日"
+          "id": "66748128b167a444996b0f0148634700",
+          "title": "Skysoon：精美天气时间线与倒计时",
+          "summary": "天气 App 的老问题是：它告诉你现在几度，却不告诉你接下来会怎样。 你打开天气 App，看到“59 度，多云”，然后呢？要不要带伞？几点开始变冷？太阳还有多久下山？这些真正影响决策的信息，往往要自己在一堆图表里拼。 Skysoon 想解决的就是这个。它把温度、云量、降雨和日照放在一条时间轴上，再给你几个倒计时，直接回答“还有多久”。 一条时间轴，把一天摊…",
+          "href": "https://www.producthunt.com/products/skysoon",
+          "meta": "Maker · David Abbet",
+          "date": "11月12日"
         }
       ]
     },
@@ -183,6 +183,14 @@
       "href": "https://github.com/trending",
       "note": "开源项目热度，看到工程实践与开发工具的新势能。",
       "items": [
+        {
+          "id": "ffab34672c211aff4951e69da1a20fd6",
+          "title": "GoogleChrome/modern-web-guidance-src",
+          "summary": "Google 的 Chrome 团队联合微软 Edge、Mozilla Firefox 和 MDN，一起做了个东西，专门治 AI 写前端代码时爱用老套路的毛病。 仓库叫 GoogleChrome/modern-web-guidance-src，是 Modern Web Guidance 的源码库，里面装着编写、校准、评估这套指南的全部代码和文档。 问题出在…",
+          "href": "https://github.com/GoogleChrome/modern-web-guidance-src",
+          "meta": "Daily Trending",
+          "date": "GitHub"
+        },
         {
           "id": "ff70619cacf9df1e6af24d7b286882f4",
           "title": "Diolinux/PhotoGIMP",
@@ -252,14 +260,6 @@
           "title": "manaflow-ai/cmux",
           "summary": "Open source Ghostty-based macOS terminal with vertical tabs and notifications for AI coding agents. Built for multitasking, organization, and programmability. https://cmux.com cmu…",
           "href": "https://github.com/manaflow-ai/cmux",
-          "meta": "Daily Trending",
-          "date": "GitHub"
-        },
-        {
-          "id": "fbc77e345cc192615ec19277eb2f4f7c",
-          "title": "alirezarezvani/claude-skills",
-          "summary": "345 Claude Code skills & agent skills & plugins (30+ Agents, 70+ custom commands, 330+ skills, customizable references, scripts)for Claude Code, Codex, Gemini CLI, Cursor, and 8 m…",
-          "href": "https://github.com/alirezarezvani/claude-skills",
           "meta": "Daily Trending",
           "date": "GitHub"
         }
