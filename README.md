@@ -1,12 +1,13 @@
-# qmwebsite
+# Deep Into X 网站
 
-以 [Astro](https://astro.build/) 复刻的个人网站模板：内容数据化、可云编辑、部署到 Cloudflare、带自托管统计。
+以 [Astro](https://astro.build/) 构建的个人网站：内容数据化、可云编辑、部署到 Cloudflare Workers Static Assets，并由 GitHub Actions 每日自动更新「资讯」与「探索」。
 
 ## 技术栈
 
 - **Astro**：静态构建，零默认客户端 JS，交互脚本按需加载
 - **Pages CMS**：通过仓库里的 `.pages.yml` 在浏览器和手机上编辑内容
-- **Cloudflare Pages**：静态托管 + 自动构建，DNS 与 Workers 也在 Cloudflare
+- **Cloudflare Workers Static Assets**：静态托管与自定义域名
+- **GitHub Actions**：每日抓取、构建、提交数据快照并部署
 - **Umami**（自托管）：隐私友好的访问统计，通过 `src/data/site.json` 配置
 
 ## 本地开发
@@ -23,10 +24,8 @@ npm run deploy      # 构建并部署当前内容
 ## 云端每日自动更新
 
 GitHub Actions 会在每天 08:30（Asia/Shanghai）执行 `scripts/update-content.sh`，
-提交新的数据并部署到 Cloudflare；本机不需要保持运行。需要在仓库 secrets 中配置：
-
-- `DEEPSEEK_API_KEY`
-- `CLOUDFLARE_API_TOKEN`
+提交新的数据并部署到 Cloudflare；本机不需要保持运行。部署、secrets、验证与回滚见
+[DEPLOYMENT.md](./DEPLOYMENT.md)。
 
 ## 内容编辑
 
@@ -39,36 +38,21 @@ GitHub Actions 会在每天 08:30（Asia/Shanghai）执行 `scripts/update-conte
 | `notes.json` | 随想列表 |
 | `podcast.json` | 播客节目、单集、中文精读站 |
 | `projects.json` | 项目分组与首页精选 |
-| `now.json` / `about.json` | 「现在」页与「关于」页 |
+| `rss.json` | 每日 AI 资讯数据 |
+| `trends.json` | 探索趋势数据 |
+| `about.json` | 「关于」页 |
 
 ### 用 Pages CMS 云编辑
 
 1. 把仓库推到 GitHub。
 2. 打开 [pagescms.org](https://pagescms.org)，用 GitHub 登录并选择这个仓库。
 3. CMS 会读取根目录的 `.pages.yml`，自动生成「随想」「项目」等编辑界面，手机上也能改。
-4. 保存即提交到仓库；如果接了 Cloudflare Pages 的 Git 集成，推送后自动重新构建上线。
+4. 保存即提交到仓库；推送后手动触发 Daily content update，或按 [DEPLOYMENT.md](./DEPLOYMENT.md) 部署。
 
 ## 部署到 Cloudflare
 
-### Workers（静态托管，推荐）
-
-1. Cloudflare 控制台 → Workers & Pages → Create → Connect to Git，选择本仓库。
-2. 保持默认即可：构建命令 `npm run build`，部署命令 `npx wrangler deploy`（根目录的 `wrangler.jsonc` 已配置好静态资源目录 `dist` 和 404 处理）。
-3. 首次部署得到 `dixweb.<你的子域>.workers.dev` 域名。若构建报 Node 版本问题，在项目 Settings → Variables 里加 `NODE_VERSION` = `22`。
-
-### Pages（经典静态托管，二选一）
-
-不想用 Workers 流程的话，在 Create 界面切到 Pages 标签页连同一个仓库，构建命令 `npm run build`，输出目录 `dist`。
-
-### 自定义域名（DNS）
-
-1. 域名的 DNS 托管在 Cloudflare（或把 NS 迁过去）。
-2. Pages 项目 → Custom domains → 添加域名，例如 `www.example.com`。
-3. 按提示加一条 CNAME 记录指向 `your-project.pages.dev`，开启代理（橙色云）即自动获得 HTTPS。
-
-### Workers（可选）
-
-静态站本身不需要 Worker。后续如果要加 API（例如表单、随想发布接口），在 `wrangler.toml` 里加 Worker 并绑定路由即可，Pages 与 Worker 同域路由不冲突。
+当前生产方案是 Cloudflare Workers Static Assets，Worker 名称为 `dixweb`。完整部署说明见
+[DEPLOYMENT.md](./DEPLOYMENT.md)。
 
 ## 接入自托管 Umami
 
@@ -95,13 +79,16 @@ GitHub Actions 会在每天 08:30（Asia/Shanghai）执行 `scripts/update-conte
 ## 目录结构
 
 ```
+├── .github/workflows/ # 每日内容更新与部署
 ├── .pages.yml          # Pages CMS 配置
 ├── astro.config.mjs
 ├── public/assets/      # 头像、二维码等静态资源
+├── rss-pipeline/       # 资讯抓取与 DeepSeek 处理脚本
+├── scripts/            # 构建前抓取与内容更新脚本
 └── src/
     ├── data/           # 全部内容数据（JSON）
     ├── layouts/        # 共享布局（页头、导航、页脚、弹窗）
-    ├── pages/          # 首页、随想、项目、播客、现在、关于、404、RSS
+    ├── pages/          # 首页、随想、项目、播客、探索、资讯、关于、404、RSS
     ├── scripts/site.ts # 主题切换、播放器、轮播、筛选等交互
     └── styles/         # 设计系统样式
 ```
