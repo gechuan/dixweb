@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026年11月11日 10:47",
+  "updatedAt": "2026年11月12日 15:33",
   "sources": [
     {
       "id": "huggingface",
@@ -8,84 +8,84 @@
       "note": "热门研究，看到模型与智能体方法的下一批方向。",
       "items": [
         {
-          "id": "20e80f25501ca9744b83361ace71d95b",
-          "title": "EmoHarness：用 Meta-Harness 演化提升多模态情感理解",
-          "summary": "小型多模态模型有个常见问题：当文字、语气和画面传递的情绪互相矛盾时，它们容易判断错误。EmoHarness 的思路很直接，它不改动模型参数，只在模型外面包一层 harness（提示词、参数设置和验证代码），让冻结的学生模型在一个被设计过的流程里做情绪判断。 这篇论文值得看的地方在于，它把“提升小模型能力”的注意力从训练转向了上下文工程。而且作者做了一件少见…",
-          "href": "https://arxiv.org/abs/2611.11994",
-          "meta": "arXiv 2611.11994",
+          "id": "0da7b505e4cff343934a615b2056c07b",
+          "title": "ExRL：通过执行长度控制实现长块策略的样本高效在线适配",
+          "summary": "长动作块（long action chunk）已经是机器人策略里的常见做法，一次预测几十个时间步，执行起来连贯。问题出在后面：如果想让这类策略在新任务上继续适应，用现有 RL 方法微调，样本消耗会大到不现实。 这篇 ExRL 提了个很讨巧的切口： 不去优化动作本身，而是优化每个动作块该执行多长 。这个思路值得做机器人策略落地的人看一眼。 这篇论文想解决什么…",
+          "href": "https://arxiv.org/abs/2611.13482",
+          "meta": "arXiv 2611.13482",
+          "date": "11月10日"
+        },
+        {
+          "id": "2b7337268e6075f3ff9540872b74bad5",
+          "title": "Tree-Ising：用比特级 Ising 编辑修复语言模型",
+          "summary": "这篇论文值得看的地方，是它把一个听起来很科幻的操作变得可计算了。 MIT 之前有个工作叫 weight-space programming：让一个前沿 LLM 智能体直接读模型权重，然后写出一段修复补丁，全程不用梯度。那个例子花了 158 轮智能体交互、8970 万 token、50 次前向请求，才把 Qwen3.5-0.8B 的推理循环修好。 Tree-…",
+          "href": "https://arxiv.org/abs/2611.14210",
+          "meta": "arXiv 2611.14210",
+          "date": "11月10日"
+        },
+        {
+          "id": "3636ea05a11ef797c28b01e39d845650",
+          "title": "因果神经元回路是否独特且可迁移？",
+          "summary": "这篇论文问了一个很实在的问题：当我们说“敲掉这 18 个神经元，模型就把 Scar 答成 Simba”，这个演示到底证明了什么？ 证明的是这组神经元 有影响 。没证明的是：组里哪些是必需的、换一组行不行、换个问法还灵不灵。作者把这几个缺口挨个测了一遍。 对做机制可解释性的人来说，这比又一个漂亮的干预 demo 有价值。它拆的是“电路发现”这件事本身的可信度…",
+          "href": "https://arxiv.org/abs/2611.13885",
+          "meta": "arXiv 2611.13885",
+          "date": "11月10日"
+        },
+        {
+          "id": "4808eefa9327842253e0c0e70e39ad0d",
+          "title": "TorchCurves：可微参数化曲线",
+          "summary": "曲线能不能像权重一样被训练？TorchCurves 给的答案是能，而且做得挺干净。 这篇论文来自 Hugging Face 每日论文，作者 Alex Shtoff。它不是一个新模型，而是一个 PyTorch 库：把向量值参数曲线当成可学习的基本单元。对做连续特征嵌入、Kolmogorov-Arnold 网络（KAN）或者函数型回归的人来说，这类工具能省掉不…",
+          "href": "https://arxiv.org/abs/2611.14516",
+          "meta": "arXiv 2611.14516",
           "date": "11月9日"
         },
         {
-          "id": "23f5bbec54734fc071e82aa343e19798",
-          "title": "Sage-Taiyi：面向科学发现的元认知架构",
-          "summary": "这篇论文值得看的地方，不在“又做了一个科研智能体”，而在它把 元认知 当成架构的核心组件，让系统先判断“我现在懂到什么程度”，再决定下一步研究什么、怎么研究。 科研智能体这两年大多在拼检索、拼工具调用、拼写作流水线。Sage-Taiyi 换了个角度：让系统显式地监控自己对证据、假设、未解问题的理解状态，并据此调整研究目标和推理方法。 摘要里给了两个数字：在…",
-          "href": "https://arxiv.org/abs/2611.12762",
-          "meta": "arXiv 2611.12762",
+          "id": "4c0745042d56b12b328dd36971853eaa",
+          "title": "在 GRPO 中，密集奖励值得消耗这些 token 吗？",
+          "summary": "这篇论文值得看，因为它挑战了 RLVR 里一个正在被广泛接受的直觉：给推理过程更细的奖励，应该比只奖励最终答案更有效。 作者把问题换了个问法： 如果给密集奖励和标准 GRPO 一样的算力预算，它还赢吗？ 答案在 1,668 次训练里被反复检验。结论不太舒服：很多密集奖励的优势，来自它偷偷多花了 token。 这篇论文想解决什么 RLVR 训练语言模型推理，…",
+          "href": "https://arxiv.org/abs/2611.13560",
+          "meta": "arXiv 2611.13560",
           "date": "11月9日"
         },
         {
-          "id": "4352e2d79c2aac85f194ecec24726fc6",
-          "title": "SWAM：以跨模态对齐扩展世界动作模型",
-          "summary": "世界动作模型（World Action Model）这两年在具身智能方向热度不低，但大多数工作把“语言和视频已经对齐好了”当成默认前提。SWAM 这篇论文盯的正是这个前提： 当你加入动作学习，原有的语言视频对齐可能会被破坏 。 这是一篇偏工程和训练配方的研究，作者整理了约 47,000 小时的数据，把“语言视频监督”“语言视频动作监督”“两者联合”三种设置…",
-          "href": "https://arxiv.org/abs/2611.12870",
-          "meta": "arXiv 2611.12870",
-          "date": "11月8日"
+          "id": "524c23983e2a1b0f5a19b4cda1377e97",
+          "title": "MMDM：大规模多任务决策能力评测",
+          "summary": "这篇论文值得看，因为它不是在又刷一个榜单，而是在追问一件更实际的事：当模型不再一步步写推理过程，而是 一次前向直接给出结构化决策 ，它到底行不行。 MMDM 这个基准专门测这类“直接决策”模型。它把场景做得更接近真实使用：长上下文、大选项空间、选项之间有逻辑依赖，还要处理多选和软标签。摘要里最扎眼的一组数字是，Perplexity Decider-V1.2…",
+          "href": "https://arxiv.org/abs/2611.14309",
+          "meta": "arXiv 2611.14309",
+          "date": "11月9日"
         },
         {
-          "id": "8f9edadb55df057774304048045193ab",
-          "title": "InfraRSI：利用递归自我改进优化训练基础设施",
-          "summary": "训练大模型的成本，很大一块不在算法，而在基础设施调优。InfraRSI 想做的事，是让 AI 自己动手改训练基础设施，并且改完还能验证确实变快了。 这篇值得看的地方在于，它没有停留在“让模型写个 kernel”这种单点优化上。分布式训练里，启动参数、算子实现、通信调度是绑在一起的，动一处就可能 OOM、编译冲突、测出来数字抖动，甚至悄悄跑出数值偏差。 这篇…",
-          "href": "https://arxiv.org/abs/2611.11558",
-          "meta": "arXiv 2611.11558",
-          "date": "11月8日"
+          "id": "77798cc2e42b59b5ce433b3c463d6a9e",
+          "title": "EVAThink：证据充分性引导的视频理解自适应思考训练",
+          "summary": "视频理解里有个常被忽略的变量： 帧预算固定时，抽到的帧到底够不够回答问题 。 够，直接答就行；不够，硬答容易错，反而需要显式推理把零散线索串起来。EVAThink 抓的就是这个分岔点，训练模型自己判断该走哪条路。 这篇值得看的地方在于，它把“要不要思考”当成一个可训练的选择，而不是全局开关。对做视频理解和多模态推理产品的读者，这个思路有直接参考价值。 这篇…",
+          "href": "https://arxiv.org/abs/2611.13907",
+          "meta": "arXiv 2611.13907",
+          "date": "11月9日"
         },
         {
-          "id": "7082a682f311f31b87d1d996a77e0df5",
-          "title": "创意启动：将过程与成果解耦，以摆脱创意悖论",
-          "summary": "AI 领域很多最重要的目标，从攻克疾病到提出新科学理论，本质上都要求创造力。但创造力偏偏很难通过训练获得，这里有个绕不开的矛盾：拿过去的创造性成果反复训练，模型只会更容易复现那些具体成果，反而压住了真正想要的创造性。 这篇论文想从根上绕开这个矛盾。它的立场是： 创造力应该被建模成一种过程，而不是某个作品自带的属性 。于是作者提出 Creative Prim…",
-          "href": "https://arxiv.org/abs/2611.11740",
-          "meta": "arXiv 2611.11740",
-          "date": "11月8日"
+          "id": "9d8b464aee63a77c500df5d90412d645",
+          "title": "WaveGen：通过内部频谱轨迹学习实现真正的端到端波形生成",
+          "summary": "TTS 这条技术栈已经很久没被真正撼动了：文本进去，中间塞一个梅尔谱或者音频 codec 的隐变量，再拿声码器还原波形。WaveGen 想干的事很直接， 把这个中间层拿掉，文本直接生成波形 。 这件事值得看，不是因为\"端到端\"这个词好听，而是因为它同时砍掉了四样东西：神经音频 codec、梅尔声码器、VAE 隐空间、时长预测器。连 BERT 文本特征和 W…",
+          "href": "https://arxiv.org/abs/2611.12527",
+          "meta": "arXiv 2611.12527",
+          "date": "11月9日"
         },
         {
-          "id": "7582c0b032709ea4900007bab9a1f46b",
-          "title": "FraudBench：AI 欺骗行为的法律评估",
-          "summary": "这篇论文值得看，原因很直接：它把“AI 会不会骗人”这个有点虚的问题，换成了法律上可判定的问题，欺诈。 做法也很硬核。作者从美国真实判例里抽出 159 个场景，交给法律专家校验，然后让模型在三种自主程度下作答：给建议、代写消息、直接替用户执行。最后按“是否构成虚假陈述或隐瞒重大事实”来打分。 也就是说，它衡量的不是模型有没有说错话，而是模型会不会在没人明确…",
-          "href": "https://arxiv.org/abs/2611.12167",
-          "meta": "arXiv 2611.12167",
-          "date": "11月8日"
+          "id": "bbca5b1dafb1e54ea866be84a8f5161f",
+          "title": "PhyRubric：基于评分标准的文生视频物理常识诊断评估",
+          "summary": "视频生成模型越来越像“世界模拟器”，但一个基本问题还没解决：它生成的画面，真的符合物理常识吗？ 现有评测大多靠人看视频打一个总分。这个分数主观，而且只告诉你“不好”，不告诉你 违反的是哪条物理规律 。PhyRubric 想改掉这个评测方式：先给每条 caption 建一份评分细则，再让评分落在带时间戳的证据上。 这篇值得看的地方在于，它把“物理常识评测”从…",
+          "href": "https://arxiv.org/abs/2611.13576",
+          "meta": "arXiv 2611.13576",
+          "date": "11月9日"
         },
         {
-          "id": "75d112e97991cb891e6b47f8e393f4f4",
-          "title": "面向通用灵巧操作的异构触觉表征学习",
-          "summary": "触觉传感器是灵巧操作绕不开的一环，但现实很尴尬：市面上的触觉传感器各有各的物理原理，压阻式、磁式、视触觉式，输出格式、噪声特性、采样率全不一样。结果是每换一种传感器，模型就得重新适配一遍，跨传感器的触觉数据基本无法复用。 这篇论文想做的事，是把“触觉理解”从具体传感器的物理特性里解耦出来。作者提出 LingBot-Touch ，一个触觉基础模型，让不同传感…",
-          "href": "https://arxiv.org/abs/2611.12806",
-          "meta": "arXiv 2611.12806",
-          "date": "11月8日"
-        },
-        {
-          "id": "7bfa61b6f59da147ca89f20bac712267",
-          "title": "Click3R：通过稀疏对应点击实现交互式立体 3D 重建",
-          "summary": "前馈式三维重建模型现在做得很快，一次前向就能出结果。问题是它只给一个答案，错了也改不了。遇到重复纹理、对称结构、大视角变化、无纹理区域，模型很容易在几何上判断失误，用户只能干看着。 Click3R 想解决的就是这个“不可撤销”的问题。它让用户在一对图像上点几组跨视角对应点，模型据此把几何约束注入重建网络，把错掉的深度和位姿往正确方向拉。 这篇论文值得看的地…",
-          "href": "https://arxiv.org/abs/2611.12875",
-          "meta": "arXiv 2611.12875",
-          "date": "11月8日"
-        },
-        {
-          "id": "99b403fea57164c5e965e35851b9d7f9",
-          "title": "世界模型需要多少次曝光？在测试时学习未见过的游戏机制",
-          "summary": "世界模型能不能在完全陌生的环境里快速学会新规则，这个问题现在有了一个比较具体的答案。 论文把“机制”定义成一条规则：某个动作或交互会改变环境的哪一部分。模型每看到一次机制发生，就算一次 exposure。他们问的是，世界模型需要多少次 exposure，才能预测新环境里的机制效果。 这个问题值得看，因为它把“世界模型泛化能力”从一句口号拆成了可测量的量。…",
-          "href": "https://arxiv.org/abs/2611.12324",
-          "meta": "arXiv 2611.12324",
-          "date": "11月8日"
-        },
-        {
-          "id": "a0a9cf69a00e981300e25bebd0c27a6f",
-          "title": "Reframe：面向智能体视觉推理的观测对齐多教师同策略蒸馏",
-          "summary": "视觉智能体用工具时有个很实际的毛病：工具调了，返回的截图或视频帧也拿到了，模型却常常视而不见，还是按自己原来的猜测往下答。这篇 Reframe 就盯着这个缝隙做文章。 它把对齐的对象从输出分布挪到了 观测状态 上。这个提法值得注意，因为多教师蒸馏通常只管学生说什么像不像老师，不太管学生在推理过程中到底看到了什么。 论文来自 arXiv，也可以直接看 PDF…",
-          "href": "https://arxiv.org/abs/2611.12886",
-          "meta": "arXiv 2611.12886",
-          "date": "11月8日"
+          "id": "cfd8bddb0cc29ce826cfaa7c4f1a913b",
+          "title": "市场条件化 JEPA：从不可预测的市场冲击中学习",
+          "summary": "金融时序里有一大块波动，来自单个资产自己的历史根本预测不了的市场冲击。按资产各训一个自监督模型的做法，会把这部分变化当成无法消除的噪声处理掉。 这篇论文的出发点是： 与其把市场冲击当噪声，不如把它显式喂进预测器 。作者在潜在因子模型的框架下证明，把已经实现的市场因子作为条件，资产对市场的暴露度（也就是 beta 这类东西）就从“可选信息”变成了“最优预测的…",
+          "href": "https://arxiv.org/abs/2611.13572",
+          "meta": "arXiv 2611.13572",
+          "date": "11月9日"
         }
       ]
     },
@@ -96,84 +96,84 @@
       "note": "新产品发布，观察用户正在为什么工作流付费。",
       "items": [
         {
-          "id": "0cd4eaba608fb0ebb67385670ecc794c",
-          "title": "MuJoCo 4：自带工作室的机器人物理引擎",
-          "summary": "Google 又给 Nano Banana 迭代了，这次是 2.1 版本，而且几乎同步塞进了搜索的 AI Mode。 据 Barry Schwartz 在 Search Engine Roundtable 的报道，Google 今天正式发布 Nano Banana 2.1，这是其最新的图像生成与编辑模型。官方表态是：新模型“在多项指标上超越了此前所有版本”…",
-          "href": "https://www.producthunt.com/products/google",
-          "meta": "Maker · Zac Zuo",
-          "date": "11月10日"
-        },
-        {
-          "id": "038e1096181710fc0c7871344e8b460a",
-          "title": "AppuBot：在 Mac 或云端操作你真实应用的 AI 队友",
-          "summary": "一个还没上线的产品，官网只有一句介绍和一张图，值不值得花时间关注？ AppuBot 目前就是这个状态。它挂在 Product Hunt 的预告页上，正式亮相排到 2027 年第三周，投票、评论、评分全部锁定，连 Upvotes 都要等开榜才解锁。 能确认的信息只有一句： AI teammates that use your real apps, on yo…",
-          "href": "https://www.producthunt.com/products/appubot",
-          "meta": "Maker · Sarthak Gupta",
-          "date": "11月10日"
-        },
-        {
-          "id": "6eba9d76eabe6746f3def82a29fec409",
-          "title": "HitPay Agentic Discovery：让 AI 智能体发现并购买你的商品",
-          "summary": "小商家在 AI 购物这件事上，正在被系统性地漏掉。 原因不复杂：ChatGPT 这类助手已经能回答“帮我推荐一款 50 新币以内的陶瓷马克杯”，但它们读不到大多数小店的商品目录。价格、库存、规格散落在人类才能看懂的网页里，机器抓不到，自然也推荐不了。 HitPay 新出的 Agentic Discovery 就是冲着这个缺口来的。它是 HitPay Lab…",
-          "href": "https://www.producthunt.com/products/hitpay-agentic-discovery",
-          "meta": "Maker · Aditya Haripurkar",
-          "date": "11月10日"
-        },
-        {
-          "id": "08fa538cb58becc8bfcf9d97bba9137e",
-          "title": "Dover Startup Jobs：优秀初创公司与优秀人才的相遇之地",
-          "summary": "免费发布招聘信息，候选人全是冲着早期创业公司来的，听起来像招聘方的理想场景。但 Dover Startup Jobs 有个前提： 想发职位，得先注册 Dover ATS 。这不是一个独立招聘板，而是 Dover 招聘系统伸出来的一条获客通道。 它到底解决什么问题 创业公司招人有两个老难题。一是预算紧，LinkedIn 和 Indeed 的招聘位按点击或按职…",
-          "href": "https://www.producthunt.com/products/dover",
-          "meta": "Maker · George Carollo",
-          "date": "11月10日"
-        },
-        {
-          "id": "96e3a0f8b0184db026776dfbd9efdbe8",
-          "title": "openring：无平台费的开源语音 AI 智能体",
-          "summary": "一个产品在 Product Hunt 上架了，但它的官网打不开，Product Hunt 页面上也只剩下一句报错信息。这种情况该怎么判断它值不值得看？ openring 目前就处在这么个状态。它在 Product Hunt 上有条目，指向的官网是 PyPI 上的 openring 页面。但抓取这个页面时，返回的不是项目介绍，而是 Fastly 的拦截提示：…",
-          "href": "https://www.producthunt.com/products/openring",
-          "meta": "Maker · Alan Rocha",
-          "date": "11月10日"
-        },
-        {
-          "id": "58c4b4e5424a9ee14c88a0e4c27537b0",
-          "title": "Seldon：像真实客户一样使用你产品的行为 QA 智能体",
-          "summary": "一个反常识的数字：Seldon 声称它的模拟用户和真人在完整流程里做出一致选择的比例达到 87%。这个数字如果站得住，意味着很多产品决策可以先在“虚拟人群”里跑一遍，再决定要不要动真格。 Seldon 是 Product Hunt 上出现的一个项目，它给自己的定位不是又一个用户画像工具，而是一家应用研究实验室，想建立一套模拟人类行为的新标准。官网的标题很直…",
-          "href": "https://www.producthunt.com/products/seldon",
+          "id": "ecc46150ef2b891270db01852a187b44",
+          "title": "Reddit Reviews：汇集 subreddit 口碑的产品页面",
+          "summary": "Reddit 上有一种内容，电商平台永远抄不走：一个人花了三个月用坏三台咖啡机之后写下的长帖。现在 Reddit 想把这些帖子变成生意。 2026 年 11 月 10 日，Reddit 正式推出 Reddit Reviews，把多年积累的 subreddit 产品讨论整理成可搜索的评测中心，配 AI 摘要、情绪分布图和主题筛选，每个结论都能点回原始评论。首…",
+          "href": "https://www.producthunt.com/products/reddit",
           "meta": "Maker · Chris Messina",
-          "date": "11月10日"
+          "date": "11月11日"
         },
         {
-          "id": "26c05483ccd7b81a2dba1f43cc042ac2",
-          "title": "Clive：让 Claude 等 AI 帮你设置 iPhone 闹钟",
-          "summary": "Product Hunt 上出现了一个叫 Clive 的条目，标题一句话：Build everything, effortlessly。 听起来野心不小。但点进官网会发现，能拿到的信息也就这一句，外加一个订阅框，提示用户留下邮箱等待 CliveAgents 的后续进展。 换句话说，目前没有可验证的产品。 没有功能截图，没有使用文档，没有定价，没有团队介绍，…",
-          "href": "https://www.producthunt.com/products/clive",
-          "meta": "Maker · Connor Spencer",
-          "date": "11月10日"
+          "id": "fc3de63824f9eec7e3b8cc8fb17d359b",
+          "title": "bonds chat：你和朋友放鸽子就会消失的多人 AI",
+          "summary": "用群聊直接生成共享应用，这个叫 bonds 的 AI 信使想重新定义聊天 一个 AI 信使，能在群聊里直接生成共享应用。这是 bonds 在 Product Hunt 上的自我描述。听起来有点抽象，拆开看其实很具体。 bonds 的定位是群聊场景的 AI 助手。它的核心逻辑是： 当聊天内容积累到需要工具来管理时，AI 自动在聊天内部创建一个共享应用 。比如…",
+          "href": "https://www.producthunt.com/products/bonds-2",
+          "meta": "Maker · Sebastian Linares",
+          "date": "11月11日"
         },
         {
-          "id": "79220c48a27feaa560d5921a8800481d",
-          "title": "Almanzor：为你的文档提供带引用答案的 AI + MCP 服务器",
-          "summary": "一个产品想把 CRM、收件箱、财务、融资和文档全塞进同一个工作台，还让 AI Agent 学着你的方式去操作。这是 Almanzor 在 Product Hunt 上给出的说法，落地页挂在 StartupStarter 上。 先把边界说清楚：目前能拿到的公开信息，只有这一句产品描述和它的落地页。官网抓取回来的内容与 Product Hunt 摘要几乎一字不…",
-          "href": "https://www.producthunt.com/products/almanzor",
-          "meta": "Maker · Victor Elexpe",
-          "date": "11月10日"
+          "id": "0be99e7a829f5079f43611dbc170a229",
+          "title": "Mister Blocks：用乐高积木生成图片，AI 再为你推荐拼搭方案",
+          "summary": "一堆散落的乐高积木，拍张照，AI 就能给你四套能真正拼出来的图纸。这事听起来简单，难点全在“能真正拼出来”这五个字上。 Mister Blocks 是个网页工具，把一张散件照片变成可执行的搭建方案。它先识别照片里有哪些零件，再只用这些零件生成四套不同的模型，每套都配可旋转的 3D 分步说明。核心卖点不是生成好看的设计，而是 生成物理上成立的设计 。 先数清…",
+          "href": "https://www.producthunt.com/products/mister-blocks",
+          "meta": "Maker · Oleksandr Gamaniuk",
+          "date": "11月11日"
         },
         {
-          "id": "7181e49ba383955339e19aef7bd86203",
-          "title": "Inspo by Context.dev：为你的编程 Agent 提供真实网站灵感",
-          "summary": "给 AI 智能体喂网页数据，最头疼的往往是那些“看起来成功了”的失败。 状态码返回 200，程序没报错，结果拿回来的却是一堆还没渲染完的单页应用空壳 HTML。智能体拿着这堆残缺的半成品去推理，结果自然是一本正经地胡说八道。 最近在 Product Hunt 上亮相的 Rusteerio by Context.dev，其实是 Y Combinator 孵化…",
-          "href": "https://www.producthunt.com/products/context-dev",
-          "meta": "Maker · Ely",
-          "date": "11月10日"
+          "id": "e9b0c61494d939c51b6f0661a9ce8a9a",
+          "title": "RigSpark：了解哪款 AI 适合在你的电脑上运行",
+          "summary": "本地跑 AI 这件事，卡人的往往不是模型，而是“我这台机器到底能跑哪个”。网上教程给的建议经常是猜的，下载几十 GB 之后才发现显存不够，或者跑起来慢到没法用。 RigSpark 想解决的就是这一步。它先给你的硬件做体检，再决定跑什么。 先给结论，再给下载 RigSpark 的核心是一个叫 Sparky 的推荐引擎。它读取本机的 RAM、GPU、显存和磁盘…",
+          "href": "https://www.producthunt.com/products/rigspark",
+          "meta": "Maker · Shashank Mishra",
+          "date": "11月11日"
         },
         {
-          "id": "b78b43f62fb3b9dead58a5feaa13fff4",
-          "title": "Kumiko：面向超宽屏与大屏 Mac 的 AI 窗口管理器",
-          "summary": "Mac 上的窗口管理工具多到用不过来，但绝大多数有个共同假设：你的屏幕是 16:9。一旦换成 21:9 甚至 32:9 的超宽屏，那些按比例切一半、切四分之一的快捷键就显得很笨，切出来的窗口瘦长一条，什么都放不下。 Kumiko 就是冲着这个缝隙来的。它是一个面向大屏和超宽屏 Mac 的窗口管理器，核心卖点一句话能说完： 你的大屏，靠“说”来摆。 先说不用…",
-          "href": "https://www.producthunt.com/products/kumiko-2",
-          "meta": "Maker · Atul Jha",
-          "date": "11月10日"
+          "id": "aabe2074eee4f4b468cf186fd5f7f7e1",
+          "title": "Earlybird：2900 万参数语音转文字，词未说完即输出",
+          "summary": "语音转文字这件事，大家默认的节奏是「等你说完，我再出字」。Earlybird 想改掉这个节奏：它在说话人还没把词说完的时候，就把词吐出来了。 这是 Earlybird 的核心卖点。按 Product Hunt 页面上的描述，它是一个 29M 参数、17 MB 的端侧语音识别模型，能在说话人说完每个词之前约 90 毫秒就把这个词正确预测出来，并且给每个词附带…",
+          "href": "https://www.producthunt.com/products/earlybird-5",
+          "meta": "Maker · Sahil Mahendrakar",
+          "date": "11月11日"
+        },
+        {
+          "id": "3dd5ab22832df191560e41d30f0fd7ab",
+          "title": "Binqo：Mac 刘海里的一个小伙伴",
+          "summary": "Mac 屏幕顶部那个刘海，除了藏摄像头和菜单栏，还能住进一个会眨眼、会打瞌睡、会跟着音乐蹦跶的小家伙。 这是 Binqo 在做的事。它是一款免费的 Mac 应用，把 AI 助手、剪贴板、文件暂存、专注计时、会议记录这些零碎功能，全塞进了刘海那一小块区域里。产品在 Product Hunt 上发布，官网可以直接下载。 先搞清楚它到底是什么 Binqo 不是又…",
+          "href": "https://www.producthunt.com/products/binqo",
+          "meta": "Maker · Raphael Griffiths",
+          "date": "11月11日"
+        },
+        {
+          "id": "3135b32eed0e240369d491644919ffff",
+          "title": "Xolace：为那些还称不上心理问题的糟糕日子而设",
+          "summary": "一款情绪日记 App 在 Product Hunt 上架，主打 AI 陪伴，14 个评分拿到 4.5 分，年费 59.99 美元。它想解决的问题听起来很朴素： 大多数人不是不开心，只是说不清自己怎么了。 它到底是个什么产品 Xolace 的定位是 AI 情绪与感受日记，官方描述里直接点名了焦虑和压力这两个场景。它只在 App Store 分发，iPhone…",
+          "href": "https://www.producthunt.com/products/xolace",
+          "meta": "Maker · Nathaniel E. Adama",
+          "date": "11月11日"
+        },
+        {
+          "id": "c3f171599aa763e2a357f72865f1c675",
+          "title": "Skipbox：低价快速的 GitHub Actions 运行器，分钟数不限",
+          "summary": "一个挂在 Product Hunt 上的条目，点进官网，落在 GitHub 个人主页上，页面上是几个 Java 和 Visual Basic 的测试仓库。这基本就是 Skipbox 目前能查到的全部。 先把边界说清楚： 没有可用的产品信息 。 Product Hunt 上这个条目的标题是 Skipbox，摘要却是一段 GitHub 用户页的抓取文本，讲的是…",
+          "href": "https://www.producthunt.com/products/skipbox",
+          "meta": "Maker · Tomoya",
+          "date": "11月11日"
+        },
+        {
+          "id": "d010b6627c5be18626b3000872d852d4",
+          "title": "Padrail：把 MacBook 触控板边缘变成控制区",
+          "summary": "MacBook 触控板面积越做越大，但绝大多数人只用了它的滑动和点按。四周那圈边缘，基本是闲置的。 Padrail 想做的事很直接： 把触控板的四条边变成快捷键 。右边调音量，左边调亮度，下边管键盘背光，上边则跟着当前 App 变。 这套分配有它的道理。音量、亮度、键盘灯是系统级操作，位置固定，用几次就能形成肌肉记忆，不需要看屏幕。真正有意思的是上边缘，它…",
+          "href": "https://www.producthunt.com/products/padrail",
+          "meta": "Maker · Ivan",
+          "date": "11月11日"
+        },
+        {
+          "id": "45bd5a08b6d9457d6751e0500ca7e14a",
+          "title": "Mitra MCP：让 AI Agent 接入你的个人电话线路",
+          "summary": "一个 AI 助手，能替你打电话，还能让 Claude 和 ChatGPT 直接调用它。这两件事放在一起，才是 Mitra 这次上 Product Hunt 的真正看点。 先搞清楚 Mitra 本身是什么 Mitra 不是那种只会聊天的助手。从帮助中心的结构看，它的核心能力是 替你打电话 ：告诉它打给谁、要问什么、什么样的结果算好，然后它去执行。 配套的还有…",
+          "href": "https://www.producthunt.com/products/mitra-5",
+          "meta": "Maker · Sai Mandava",
+          "date": "11月11日"
         }
       ]
     },

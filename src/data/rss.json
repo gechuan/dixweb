@@ -1,1398 +1,1138 @@
 {
-  "date": "2026-11-10",
-  "weekday": "周二",
+  "date": "2026-11-11",
+  "weekday": "周三",
   "stats": {
     "sources_total": 128,
-    "sources_returned": 69,
-    "items_in_window": 171,
-    "items_kept": 151,
-    "items_filtered": 20,
+    "sources_returned": 68,
+    "items_in_window": 133,
+    "items_kept": 116,
+    "items_filtered": 17,
     "topics": 7
   },
-  "headline": "Anthropic将IPO发行价区间定为70至78美元，估值最高达1.4万亿美元；其Claude Fable 5.2发布后获多方评测，被认为重夺全球第一LLM宝座，但定价高昂。谷歌推出两款新型专用AI芯片，主打隐私保护与海量内存，明确瞄准英伟达的市场地位。英伟达方面，媒体围绕黄仁勋婚外情传闻、与中国间谍关联指控及股东诉讼展开报道，并讨论继任者问题与公司前景，相关讨论还涉及美国商务部对Megaspeed调查中止一事。",
+  "headline": "英伟达两天市值蒸发4300亿美元，黄仁勋面临辞职呼声，股东起诉公司及CEO，共和党人威胁传唤黄仁勋，另有报道称英伟达干预美国对Megaspeed芯片走私的调查。Anthropic启动IPO路演，创始人将套现17.5亿美元，相关路演视频流出，Gary Marcus公开呼吁拒绝Anthropic的IPO。Grok Build编程代理泄露大量机密信息，部分属于SpaceX相关数据，Near AI也发生泄露事件暴露用户详情及18个AI代理的数据。Kraken母公司Payward将200只英国和欧盟股票以xStocks形式上链，xStocks资产规模突破11亿美元。",
   "topics": [
     {
       "id": "T1",
-      "title": "英伟达黄仁勋相关争议持续发酵",
-      "summary": "多家媒体围绕英伟达CEO黄仁勋的婚外情传闻、与中国间谍关联指控及股东诉讼展开报道，并讨论其继任者问题与公司前景。相关讨论还涉及美国商务部对Megaspeed调查中止一事。",
+      "title": "英伟达市值暴跌与黄仁勋面临的多重压力",
+      "summary": "英伟达两天市值蒸发4300亿美元，黄仁勋面临辞职呼声，股东起诉公司及CEO，共和党人威胁传唤黄仁勋。同时有报道称英伟达干预美国对Megaspeed芯片走私的调查，公司治理专家也在关注此事。",
       "items": [
         {
-          "orig_title": "Nvidia has a Jensen Huang problem—and no obvious successor",
-          "source": "Ars Technica - All content",
-          "category": "工程与编程",
-          "link": "https://arstechnica.com/gadgets/2026/11/nvidia-has-a-jensen-huang-problem-and-no-obvious-successor/",
-          "zh_title": "英伟达面临黄仁勋难题——且没有明显的继任者"
-        },
-        {
-          "orig_title": "U.S. Commerce Dept. Inquiry Into Megaspeed Was Halted After Nvidia Name-Dropped Trump Appointee",
-          "source": "daringfireball.net",
-          "category": "产品、设计与商业",
-          "link": "https://www.nytimes.com/2026/11/09/business/economy/nvidia-megaspeed-investigation-huang.html?unlocked_article_code=1.PVE.GxBL.iBpBoc8Y4tnb",
-          "zh_title": "美国商务部对Megaspeed的调查在英伟达点名特朗普任命官员后中止"
-        },
-        {
-          "orig_title": "Nvidia, Jensen Huang Sued by Shareholders Over Alleged Ties to Suspected Chinese Spy",
+          "orig_title": "Nvidia Sheds $430B in Two Days as Jensen Huang Faces Calls to Resign",
           "source": "Decrypt",
           "category": "产品、设计与商业",
-          "link": "https://decrypt.co/382913/nvidia-jensen-huang-sued-by-shareholders-over-alleged-ties-to-suspected-chinese-spy",
-          "zh_title": "英伟达及黄仁勋因涉嫌与疑似中国间谍有关联被股东起诉"
+          "link": "https://decrypt.co/382991/nvidia-sheds-430b-in-two-days-as-jensen-huang-faces-calls-to-resign",
+          "zh_title": "英伟达两天市值蒸发 4300 亿美元，黄仁勋面临辞职呼声"
         },
         {
-          "orig_title": "The Jensen Huang Affair",
-          "source": "Hard Fork",
+          "orig_title": "Nvidia’s crisis has corporate governance experts reaching for the popcorn",
+          "source": "TechCrunch",
           "category": "AI 前沿",
-          "link": "https://www.nytimes.com/column/hard-fork",
-          "zh_title": "黄仁勋事件"
+          "link": "https://techcrunch.com/2026/11/10/nvidias-crisis-has-corporate-governance-experts-reaching-for-the-popcorn/",
+          "zh_title": "英伟达危机令公司治理专家搬好小板凳看戏"
         },
         {
-          "orig_title": "The Jensen Huang Story Gets Worse, Washington vs. New York, Silicon Valley",
-          "source": "Stratechery",
+          "orig_title": "NVIDIA shareholders are suing the company and CEO Jensen Huang",
+          "source": "Engadget",
+          "category": "硬件",
+          "link": "https://www.engadget.com/2312947/nvidia-shareholders-are-suing-the-company-and-ceo-jensen-huang/",
+          "zh_title": "英伟达股东起诉该公司及 CEO 黄仁勋"
+        },
+        {
+          "orig_title": "Nvidia Erases 2026 Gains as Republicans Threaten Jensen Huang With Subpoena",
+          "source": "Decrypt",
           "category": "产品、设计与商业",
-          "link": "https://stratechery.com/2026/the-jensen-huang-story-gets-worse-washington-vs-new-york-silicon-valley/",
-          "zh_title": "黄仁勋的故事愈演愈烈，华盛顿对纽约，硅谷"
+          "link": "https://decrypt.co/382974/nvidia-erases-2026-gains-republicans-threaten-ceo-subpoena",
+          "zh_title": "英伟达回吐 2026 年涨幅，共和党人威胁传唤黄仁勋"
         },
         {
-          "orig_title": "Bloomberg Was Onto Megaspeed’s Game a Year Ago",
+          "orig_title": "Jensen's Bizarre Adventure",
+          "source": "wheresyoured.at",
+          "category": "产品、设计与商业",
+          "link": "https://www.wheresyoured.at/jensens-bizarre-adventure/",
+          "zh_title": "Jensen的奇妙冒险"
+        },
+        {
+          "orig_title": "Bloomberg: ‘Nvidia Intervened in U.S. Probe of Megaspeed Chip Smuggling’",
           "source": "daringfireball.net",
           "category": "产品、设计与商业",
-          "link": "https://www.bloomberg.com/news/features/2025-12-22/nvidia-partner-megaspeed-draws-china-chip-smuggling-concerns-in-us",
-          "zh_title": "彭博社一年前就看穿了 Megaspeed 的把戏"
+          "link": "https://www.bloomberg.com/news/articles/2026-11-09/nvidia-intervened-in-us-probe-of-megaspeed-chip-smuggling",
+          "zh_title": "彭博社：“英伟达干预美国对Megaspeed芯片走私的调查”"
         }
       ]
     },
     {
       "id": "T2",
-      "title": "Anthropic估值与Claude Fable 5.2发布",
-      "summary": "Anthropic将IPO发行价区间定为70至78美元，估值最高达1.4万亿美元。同时其Claude Fable 5.2模型发布后获得多方评测，被认为重夺全球第一LLM宝座，但定价高昂。",
+      "title": "Anthropic启动IPO路演",
+      "summary": "Anthropic启动IPO路演，创始人将套现17.5亿美元，相关路演视频流出。Gary Marcus公开呼吁拒绝Anthropic的IPO，同时有分析指出Anthropic拥有一些锚定投资者。",
       "items": [
         {
-          "orig_title": "Anthropic Sets IPO Price Range at $70 to $78, Valuing Company at Up to $1.4 Trillion",
-          "source": "Decrypt",
-          "category": "产品、设计与商业",
-          "link": "https://decrypt.co/382939/anthropic-sets-ipo-price-range-at-70-to-78-valuing-company-at-up-to-1-4-trillion",
-          "zh_title": "Anthropic将IPO发行价区间定为70至78美元，公司估值最高达1.4万亿美元"
-        },
-        {
-          "orig_title": "[AINews] Fable 5.2 retakes World #1 LLM spot as $ANT IPO roadshow begins",
-          "source": "Latent.Space",
-          "category": "AI 前沿",
-          "link": "https://latent.space/p/ainews-fable-5-2-retakes-world-1-llm-spot-as-ant-ipo-roadshow-begins/",
-          "zh_title": "[AINews] Fable 5.2重夺全球第一LLM宝座，$ANT IPO路演启动"
-        },
-        {
-          "orig_title": "Quoting Prompting Claude Fable 5.2",
+          "orig_title": "Anthropic's IPO roadshow video",
           "source": "simonwillison.net",
           "category": "AI 前沿",
-          "link": "https://simonwillison.net/2026/Nov/10/prompting-claude-fable-52/",
-          "zh_title": "引用Prompting Claude Fable 5.2"
+          "link": "https://simonwillison.net/2026/Nov/11/anthropic-ipo-roadshow/",
+          "zh_title": "Anthropic 的 IPO 路演视频"
         },
         {
-          "orig_title": "Anthropic's Claude Fable 5.2 and Mythos 5.0 Are Impressive, But Be Prepared to Sell a Kidney to Afford Them",
-          "source": "Decrypt",
+          "orig_title": "Anthropic 启动 IPO 路演，创始人将套现 17.5 亿美元；谷歌最强 AI 模型正式开放；任天堂招新：经典游戏保存员",
+          "source": "极客公园",
           "category": "产品、设计与商业",
-          "link": "https://decrypt.co/382897/anthropic-claude-fable-5-2-and-mythos-5-2-impressive-and-expensive",
-          "zh_title": "Anthropic 的 Claude Fable 5.2 和 Mythos 5.0 令人印象深刻，但要做好卖肾才买得起的准备"
+          "link": "http://www.geekpark.net/news/373796",
+          "zh_title": "Anthropic 启动 IPO 路演，创始人将套现 17.5 亿美元；谷歌最强 AI 模型正式开放；任天堂招新：经典游戏保存员"
         },
         {
-          "orig_title": "Claude Fable 5.2 review: fast, creative, and finally not annoying",
-          "source": "Lenny's Newsletter",
+          "orig_title": "Gary Marcus: ‘Just Say No to Anthropic’s IPO’",
+          "source": "daringfireball.net",
           "category": "产品、设计与商业",
-          "link": "https://www.lennysnewsletter.com/p/claude-fable-52-review-fast-creative",
-          "zh_title": "Claude Fable 5.2 评测：快速、有创意，终于不再烦人"
+          "link": "https://garymarcus.substack.com/p/just-say-no-to-anthropics-ipo?r=3k69a0",
+          "zh_title": "Gary Marcus：‘对 Anthropic 的 IPO 直接说不’"
+        },
+        {
+          "orig_title": "Anthropic Has Some Anchor Investors",
+          "source": "Matt Levine",
+          "category": "产品、设计与商业",
+          "link": "https://www.bloomberg.com/opinion/newsletters/2026-11-10/anthropic-has-some-anchor-investors",
+          "zh_title": "Anthropic 拥有一些锚定投资者"
         }
       ]
     },
     {
       "id": "T3",
-      "title": "谷歌扩展AI芯片产品线",
-      "summary": "谷歌推出两款新型专用AI芯片，主打隐私保护与海量内存，明确瞄准英伟达的市场地位。",
+      "title": "Grok编程代理泄露机密数据",
+      "summary": "Grok Build编程代理泄露大量机密信息，部分属于SpaceX相关数据。另有报道称一个Grok氛围编程代理泄露了敏感的SpaceX数据，Near AI也发生泄露事件暴露用户详情及18个AI代理的数据。",
       "items": [
         {
-          "orig_title": "Google broadens its AI hardware portfolio with two new specialized chips",
-          "source": "TechCrunch",
-          "category": "AI 前沿",
-          "link": "https://techcrunch.com/2026/11/10/google-broadens-its-ai-hardware-portfolio-with-two-new-specialized-chips/",
-          "zh_title": "谷歌扩展其AI硬件产品线，推出两款新型专用芯片"
+          "orig_title": "A Grok vibe-coding agent leaked sensitive SpaceXSI data",
+          "source": "Engadget",
+          "category": "硬件",
+          "link": "https://www.engadget.com/2313187/grok-build-leaked-sensitive-spacexsi-data/",
+          "zh_title": "一个 Grok 氛围编程代理泄露了敏感的 SpaceXSI 数据"
         },
         {
-          "orig_title": "Google Takes Aim at Nvidia With New AI Chips Built for Privacy and Massive Memory",
+          "orig_title": "Grok Build coding agent leaks oodles of confidential info, some belonging to SpaceXSI",
+          "source": "Ars Technica - All content",
+          "category": "工程与编程",
+          "link": "https://arstechnica.com/security/2026/11/grok-build-coding-agent-leaks-oodles-of-confidential-info-some-belonging-to-spacexsi/",
+          "zh_title": "Grok Build 编程代理泄露大量机密信息，部分属于 SpaceXSI"
+        },
+        {
+          "orig_title": "Near AI Breach Exposes User Details and Data From 18 AI Agents",
           "source": "Decrypt",
           "category": "产品、设计与商业",
-          "link": "https://decrypt.co/382874/google-nvidia-new-ai-chips-privacy-massive-memory-ai",
-          "zh_title": "谷歌推出为隐私和海量内存打造的新 AI 芯片，瞄准英伟达"
+          "link": "https://decrypt.co/382965/near-ai-breach-exposes-user-details-data-ai-agents",
+          "zh_title": "Near AI 泄露事件暴露用户详情及 18 个 AI 代理的数据"
         }
       ]
     },
     {
       "id": "T4",
-      "title": "AI数据中心电力与能源压力",
-      "summary": "多篇报道聚焦AI数据中心面临的电力困境：电费账单分摊、电网容量分配、数据中心反弹实为电力问题，以及为获取动力涡轮机而购买二手喷气发动机。",
+      "title": "Kraken将英国和欧盟股票代币化上链",
+      "summary": "Kraken母公司Payward将200只英国和欧盟股票以xStocks形式上链，xStocks资产规模突破11亿美元。纽交所前总裁称股票发行人是代币化的关键，Bullish正构建其平台。",
       "items": [
         {
-          "orig_title": "The AI Power Bill: Who Gets Grid Capacity, and Who Bears the Risk?",
-          "source": "EE Times",
-          "category": "硬件",
-          "link": "https://www.eetimes.com/the-ai-power-bill-who-gets-grid-capacity-and-who-bears-the-risk/",
-          "zh_title": "AI电费账单：谁获得电网容量，谁承担风险？"
-        },
-        {
-          "orig_title": "The Download: Pelosi’s successor targets AI and data centers face power woes",
-          "source": "MIT Tech Review",
-          "category": "AI 前沿",
-          "link": "https://www.technologyreview.com/2026/11/10/1148150/the-download-pelosi-successor-ai-regulation-data-center-backlash/",
-          "zh_title": "今日下载：佩洛西继任者瞄准AI，数据中心面临电力困境"
-        },
-        {
-          "orig_title": "AI Data Centers Are Buying Used Jet Engines as New Power Turbines Take Six Years",
+          "orig_title": "Kraken Parent Payward Brings 200 UK and EU Stocks Onchain as xStocks",
           "source": "Decrypt",
           "category": "产品、设计与商业",
-          "link": "https://decrypt.co/382890/ai-data-centers-used-jet-engines-power-turbines",
-          "zh_title": "AI 数据中心正购买二手喷气发动机，因为新动力涡轮机需要六年才能交付"
+          "link": "https://decrypt.co/383000/kraken-parent-payward-brings-200-uk-and-eu-stocks-onchain-as-xstocks",
+          "zh_title": "Kraken 母公司 Payward 将 200 只英国和欧盟股票以 xStocks 形式上链"
         },
         {
-          "orig_title": "The backlash about data centers might really just be about electricity",
-          "source": "MIT Tech Review",
-          "category": "AI 前沿",
-          "link": "https://www.technologyreview.com/2026/11/09/1148194/the-backlash-about-data-centers-might-really-just-be-about-electricity/",
-          "zh_title": "对数据中心的反弹可能真的只是关于电力"
+          "orig_title": "Kraken's xStocks adds 200 UK and EU shares as its assets top $1.1 billion",
+          "source": "CoinDesk",
+          "category": "产品、设计与商业",
+          "link": "https://www.coindesk.com/business/2026/11/11/kraken-s-xstocks-adds-200-uk-and-eu-shares-as-its-assets-top-usd1-1-billion",
+          "zh_title": "Kraken 的 xStocks 新增 200 只英国和欧盟股票，资产规模突破 11 亿美元"
+        },
+        {
+          "orig_title": "Former NYSE president says stock issuers hold the key to tokenization as Bullish builds its platform",
+          "source": "CoinDesk",
+          "category": "产品、设计与商业",
+          "link": "https://www.coindesk.com/business/2026/11/10/former-nyse-president-says-stock-issuers-hold-the-key-to-tokenization-as-bullish-builds-its-platform",
+          "zh_title": "纽交所前总裁称股票发行人是代币化的关键，Bullish 正构建其平台"
         }
       ]
     },
     {
       "id": "T5",
-      "title": "千问办公2.0押注Team Agent",
-      "summary": "千问办公2.0发布，重点从个人效率转向组织效率，押注Team Agent方向。多家媒体对其企业AI流水线能力进行了实测与分析。",
+      "title": "谷歌DeepMind的AI科研与数学验证进展",
+      "summary": "谷歌AlphaGenome 2深入探究疾病的细胞根源，DeepMind对Signal的关键部分进行了数学验证。相关讨论还涉及当AI成为神谕时数学会怎样。",
       "items": [
         {
-          "orig_title": "千问办公 2.0 发布：个人效率之外，还有组织效率这道题",
-          "source": "人人都是产品经理",
-          "category": "产品、设计与商业",
-          "link": "https://www.woshipm.com/ai/6491851.html",
-          "zh_title": "千问办公2.0发布：个人效率之外，还有组织效率这道题"
-        },
-        {
-          "orig_title": "千问办公押注 Team Agent，企业 AI 的流水线时刻真的来了",
-          "source": "极客公园",
-          "category": "产品、设计与商业",
-          "link": "http://www.geekpark.net/news/373760",
-          "zh_title": "千问办公押注Team Agent，企业AI的流水线时刻真的来了"
-        },
-        {
-          "orig_title": "千问办公2.0卷向Team Agent，我们用它跑了一遍编辑部日常",
-          "source": "量子位",
+          "orig_title": "Google’s AlphaGenome 2 zooms in on the cellular roots of disease",
+          "source": "The Verge",
           "category": "AI 前沿",
-          "link": "https://www.qbitai.com/2026/11/508798.html",
-          "zh_title": "千问办公 2.0 卷向 Team Agent，我们用它跑了一遍编辑部日常"
+          "link": "https://www.theverge.com/ai-artificial-intelligence/1031524/google-deepmind-alphagenome-2-genetic-ai-model",
+          "zh_title": "谷歌的 AlphaGenome 2 深入探究疾病的细胞根源"
+        },
+        {
+          "orig_title": "Google DeepMind just mathematically verified key parts of Signal",
+          "source": "Ars Technica - All content",
+          "category": "工程与编程",
+          "link": "https://arstechnica.com/ai/2026/11/signals-encryption-just-passed-an-ai-powered-mathematical-checkup/",
+          "zh_title": "谷歌 DeepMind 刚刚对 Signal 的关键部分进行了数学验证"
+        },
+        {
+          "orig_title": "What happens to mathematics when AI becomes an oracle?",
+          "source": "Ars Technica - All content",
+          "category": "工程与编程",
+          "link": "https://arstechnica.com/science/2026/11/what-happens-to-mathematics-when-ai-becames-an-oracle/",
+          "zh_title": "当 AI 成为神谕，数学会怎样？"
         }
       ]
     },
     {
       "id": "T6",
-      "title": "Seedream 5.5图像编辑能力升级",
-      "summary": "Seedream 5.5全量上线，多轮编辑能力被视为里程碑级别，在100轮图像编辑测试中表现稳定，相关海量案例被分享。",
+      "title": "欧盟拟禁止应用暗黑模式与未成年人战利品箱",
+      "summary": "欧洲希望禁止应用中的暗黑模式以及面向未成年人的战利品箱。同时纽约州AI安全法生效，OpenAI、Anthropic面临新监管。",
       "items": [
         {
-          "orig_title": "Seedream 5.5 全量上线，多轮编辑能力里程碑级别，海量案例分享！",
-          "source": "人人都是产品经理",
-          "category": "产品、设计与商业",
-          "link": "https://www.woshipm.com/ai/6491698.html",
-          "zh_title": "Seedream 5.5 全量上线，多轮编辑能力里程碑级别，海量案例分享！"
+          "orig_title": "Europe wants to ban 'dark patterns' in apps and loot boxes for minors",
+          "source": "Engadget",
+          "category": "硬件",
+          "link": "https://www.engadget.com/2313329/europe-wants-to-ban-dark-patterns-in-apps-and-loot-boxes-for-minors/",
+          "zh_title": "欧洲希望禁止应用中的“暗黑模式”以及面向未成年人的战利品箱"
         },
         {
-          "orig_title": "100轮图像编辑这道「毙刷题」，新出的Seedream 5.5稳上来了！",
-          "source": "量子位",
+          "orig_title": "OpenAI, Anthropic face new oversight as New York’s AI safety law takes effect",
+          "source": "TechCrunch",
           "category": "AI 前沿",
-          "link": "https://www.qbitai.com/2026/11/508828.html",
-          "zh_title": "100 轮图像编辑这道「毙刷题」，新出的 Seedream 5.5 稳上来了！"
+          "link": "https://techcrunch.com/2026/11/10/openai-anthropic-face-new-oversight-as-new-yorks-ai-safety-law-takes-effect/",
+          "zh_title": "纽约州 AI 安全法生效，OpenAI、Anthropic 面临新监管"
         }
       ]
     },
     {
       "id": "T7",
-      "title": "AI模型实测对比：Fable 5.2与竞品",
-      "summary": "多篇实测文章将Claude Fable 5.2与DeepSeek、Kimi K3.1、GPT 6.2 sol、Opus 5.5等模型进行对比，讨论审美与能力格局变化。",
+      "title": "AI代理工具与编码协作新进展",
+      "summary": "Plurai希望借助自动驾驶汽车的方法帮助AI代理更好工作，Databricks的新AI代理向CEO直言不讳。OpenAI在AI Engineer Code Summit上谈与Codex协作的新方式，Resend的Zeno Rocha谈为代理而设计。",
       "items": [
         {
-          "orig_title": "Claude Fable 5.2 实测，DeepSeek、Kimi K3.1 迎战",
-          "source": "人人都是产品经理",
-          "category": "产品、设计与商业",
-          "link": "https://www.woshipm.com/ai/6491795.html",
-          "zh_title": "Claude Fable 5.2实测，DeepSeek、Kimi K3.1迎战"
-        },
-        {
-          "orig_title": "实测还在灰度的GPT 6.2 sol，Opus5.5的审美霸权时代要结束了",
-          "source": "人人都是产品经理",
-          "category": "产品、设计与商业",
-          "link": "https://www.woshipm.com/ai/6491705.html",
-          "zh_title": "实测还在灰度的GPT 6.2 sol，Opus5.5的审美霸权时代要结束了"
-        },
-        {
-          "orig_title": "Fable 5.2首批实测来了！网友：Opus突然不香了",
-          "source": "量子位",
+          "orig_title": "Databricks’ new AI agent tells CEO Ali Ghodsi the unvarnished truth",
+          "source": "TechCrunch",
           "category": "AI 前沿",
-          "link": "https://www.qbitai.com/2026/11/508912.html",
-          "zh_title": "Fable 5.2首批实测来了！网友：Opus突然不香了"
+          "link": "https://techcrunch.com/2026/11/11/databricks-new-ai-agent-tells-ceo-ali-ghodsi-the-unvarnished-truth/",
+          "zh_title": "Databricks 的新 AI 代理向 CEO Ali Ghodsi 直言不讳地道出真相"
+        },
+        {
+          "orig_title": "Plurai wants to help AI agents work better using the same approach that helped get self-driving cars to roads",
+          "source": "TechCrunch",
+          "category": "AI 前沿",
+          "link": "https://techcrunch.com/2026/11/11/plurai-wants-to-help-ai-agents-work-better-using-the-same-approach-that-helped-get-self-driving-cars-to-roads/",
+          "zh_title": "Plurai 希望借助曾助力自动驾驶汽车上路的相同方法，帮助 AI 代理更好地工作"
+        },
+        {
+          "orig_title": "AI Engineer Code Summit: OpenAI on New Ways of Working With Codex",
+          "source": "Latent.Space",
+          "category": "AI 前沿",
+          "link": "https://latent.space/p/codex-work/",
+          "zh_title": "AI Engineer Code Summit：OpenAI 谈与 Codex 协作的新方式"
+        },
+        {
+          "orig_title": "Designing for Agents — Zeno Rocha, Resend",
+          "source": "Latent.Space",
+          "category": "AI 前沿",
+          "link": "https://latent.space/p/resend/",
+          "zh_title": "为代理而设计——Zeno Rocha，Resend"
         }
       ]
     }
   ],
   "stream": [
     {
-      "orig_title": "The best strategy to protect against getting hacked is surprisingly old-school",
+      "orig_title": "The best early Black Friday deals you can already shop",
+      "source": "The Verge",
+      "category": "AI 前沿",
+      "link": "https://www.theverge.com/gadgets/1028991/black-friday-best-early-deals-2026",
+      "zh_title": "你现在就能入手的最佳黑色星期五早期优惠"
+    },
+    {
+      "orig_title": "Years after the stabbing death of Cash App founder Bob Lee, a judge delivers a prison sentence",
       "source": "Fast Company",
       "category": "产品、设计与商业",
-      "link": "https://www.fastcompany.com/91634951/best-strategy-protect-against-getting-hacked-surprisingly-old-school",
-      "zh_title": "防范黑客入侵的最佳策略出人意料地老派"
+      "link": "https://www.fastcompany.com/91640217/years-after-stabbing-death-cash-app-founder-bob-lee-judge-delivers-prison-sentence",
+      "zh_title": "Cash App 创始人 Bob Lee 遇刺身亡数年后，法官作出监禁判决"
     },
     {
-      "orig_title": "Google broadens its AI hardware portfolio with two new specialized chips",
+      "orig_title": "Sharge’s eye-catching MacBook charger is over 25 percent off",
+      "source": "The Verge",
+      "category": "AI 前沿",
+      "link": "https://www.theverge.com/gadgets/1031301/sharge-140w-gan-charger-lenovo-yoga-mini-desktop-pc-deal-sale",
+      "zh_title": "Sharge 引人注目的 MacBook 充电器降价超过 25%"
+    },
+    {
+      "orig_title": "Trump wanted little Kei trucks for America, Toyota makes it happen",
+      "source": "Ars Technica - All content",
+      "category": "工程与编程",
+      "link": "https://arstechnica.com/cars/2026/11/toyota-resurrects-scion-with-right-hand-drive-kei-trucks/",
+      "zh_title": "特朗普希望美国引入小型 Kei 卡车，丰田将其变为现实"
+    },
+    {
+      "orig_title": "Anthropic's IPO roadshow video",
+      "source": "simonwillison.net",
+      "category": "AI 前沿",
+      "link": "https://simonwillison.net/2026/Nov/11/anthropic-ipo-roadshow/",
+      "zh_title": "Anthropic 的 IPO 路演视频"
+    },
+    {
+      "orig_title": "Siri co-founder backs Helix for its voice ID tech",
       "source": "TechCrunch",
       "category": "AI 前沿",
-      "link": "https://techcrunch.com/2026/11/10/google-broadens-its-ai-hardware-portfolio-with-two-new-specialized-chips/",
-      "zh_title": "谷歌扩展其AI硬件产品线，推出两款新型专用芯片"
+      "link": "https://techcrunch.com/2026/11/11/siri-co-founder-backs-helix-for-its-voice-id-tech/",
+      "zh_title": "Siri 联合创始人力挺 Helix 的语音身份识别技术"
     },
     {
-      "orig_title": "Plume affiliate lands broker-dealer license to bring real U.S. assets onchain",
-      "source": "CoinDesk",
-      "category": "产品、设计与商业",
-      "link": "https://www.coindesk.com/markets/2026/11/10/emb-10-am-et-plume-affiliate-gets-the-legal-green-light-to-trade-regulated-security-entitlements-onchain",
-      "zh_title": "Plume关联公司获得经纪交易商牌照，将真实美国资产引入链上"
-    },
-    {
-      "orig_title": "Florida’s new Republican governor wants to bring NASA headquarters to the Sunshine State. Could it happen?",
-      "source": "Fast Company",
-      "category": "产品、设计与商业",
-      "link": "https://www.fastcompany.com/91637510/floridas-new-republican-governor-wants-to-bring-nasa-headquarters-to-the-sunshine-state-could-it-happen",
-      "zh_title": "佛罗里达州新任共和党州长希望将NASA总部迁至阳光州。这能实现吗？"
-    },
-    {
-      "orig_title": "N-able takes its remote access service offline after researcher publishes dozens of zero-day bugs",
-      "source": "TechCrunch",
-      "category": "AI 前沿",
-      "link": "https://techcrunch.com/2026/11/10/n-able-takes-its-remote-access-service-offline-after-researcher-publishes-dozens-of-zero-day-bugs/",
-      "zh_title": "研究员公布数十个零日漏洞后，N-able将其远程访问服务下线"
-    },
-    {
-      "orig_title": "Meta’s AI agent Muse lands on Apple Watch and Android Wear OS",
-      "source": "TechCrunch",
-      "category": "AI 前沿",
-      "link": "https://techcrunch.com/2026/11/10/metas-ai-agent-muse-lands-on-apple-watch-and-wear-os/",
-      "zh_title": "Meta的AI智能体Muse登陆Apple Watch和Android Wear OS"
-    },
-    {
-      "orig_title": "HubSpot’s Co-Founder on Finding Your Next Startup Idea",
-      "source": "a16z podcast",
-      "category": "AI 前沿",
-      "link": "https://a16z.simplecast.com/episodes/hubspots-co-founder-on-finding-your-next-startup-idea-J9uhCiZA",
-      "zh_title": "HubSpot联合创始人谈如何找到你的下一个创业点子"
-    },
-    {
-      "orig_title": "OurCal",
-      "source": "daringfireball.net",
-      "category": "产品、设计与商业",
-      "link": "https://ourcal.com/?utm_source=daringfireball&utm_medium=sponsorship&utm_content=post-thankyou",
-      "zh_title": "OurCal"
-    },
-    {
-      "orig_title": "State of the tech job market: late 2026",
-      "source": "Lenny's Newsletter",
-      "category": "产品、设计与商业",
-      "link": "https://www.lennysnewsletter.com/p/state-of-the-tech-job-market-late",
-      "zh_title": "科技就业市场现状：2026年末"
-    },
-    {
-      "orig_title": "Solana's Jupiter Expands Beyond Trading With Token Baskets, Yield Vaults and New Portfolio",
-      "source": "Decrypt",
-      "category": "产品、设计与商业",
-      "link": "https://decrypt.co/382836/solanas-jupiter-expands-beyond-trading-with-token-baskets-yield-vaults-and-new-portfolio",
-      "zh_title": "Solana的Jupiter拓展交易之外业务，推出代币篮子、收益金库和新投资组合"
-    },
-    {
-      "orig_title": "Microsoft employee price list from 1987",
+      "orig_title": "I didn’t write a program with emoji, but I did use a control character",
       "source": "devblogs.microsoft.com/oldnewthing",
       "category": "观点与杂谈",
-      "link": "https://devblogs.microsoft.com/oldnewthing/20261110-00/?p=112843/",
-      "zh_title": "微软1987年的员工价目表"
+      "link": "https://devblogs.microsoft.com/oldnewthing/20261111-00/?p=112848/",
+      "zh_title": "我没有用表情符号写程序，但我确实用了一个控制字符"
     },
     {
-      "orig_title": "Reddit is turning user conversations into AI-powered product reviews",
+      "orig_title": "Databricks’ new AI agent tells CEO Ali Ghodsi the unvarnished truth",
       "source": "TechCrunch",
       "category": "AI 前沿",
-      "link": "https://techcrunch.com/2026/11/10/reddit-is-turning-user-conversations-into-ai-powered-product-reviews/",
-      "zh_title": "Reddit正将用户对话转化为AI驱动的产品评测"
+      "link": "https://techcrunch.com/2026/11/11/databricks-new-ai-agent-tells-ceo-ali-ghodsi-the-unvarnished-truth/",
+      "zh_title": "Databricks 的新 AI 代理向 CEO Ali Ghodsi 直言不讳地道出真相"
     },
     {
-      "orig_title": "New WhatsApp head wants to make the app easier to use, give its AI more chops",
-      "source": "TechCrunch",
+      "orig_title": "Ocarina of Time is even better if you use a smartphone app",
+      "source": "The Verge",
       "category": "AI 前沿",
-      "link": "https://techcrunch.com/2026/11/10/new-whatsapp-head-wants-to-make-the-app-easier-to-use-give-its-ai-more-chops/",
-      "zh_title": "WhatsApp新任负责人希望让应用更易用，并赋予其AI更强能力"
+      "link": "https://www.theverge.com/games/1031321/the-legend-of-zelda-ocarina-of-time-notes-app-gold-skulltula",
+      "zh_title": "如果你使用智能手机应用，《时之笛》会更加出色"
     },
     {
-      "orig_title": "DeepMind reveals Gemini Robotics 2.5 and open safety benchmark \"ASIMOV-jailbreak\"",
-      "source": "Ars Technica - All content",
-      "category": "工程与编程",
-      "link": "https://arstechnica.com/google/2026/11/deepmind-reveals-gemini-robotics-2-5-and-open-safety-benchmark-asimov-jailbreak/",
-      "zh_title": "DeepMind发布Gemini Robotics 2.5及开放安全基准“ASIMOV-jailbreak”"
+      "orig_title": "Google’s AlphaGenome 2 zooms in on the cellular roots of disease",
+      "source": "The Verge",
+      "category": "AI 前沿",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1031524/google-deepmind-alphagenome-2-genetic-ai-model",
+      "zh_title": "谷歌的 AlphaGenome 2 深入探究疾病的细胞根源"
     },
     {
-      "orig_title": "People Detection in Confined Spaces: Elevator Application",
-      "source": "EE Times",
-      "category": "硬件",
-      "link": "https://www.eetimes.com/people-detection-in-confined-spaces-elevator-application/",
-      "zh_title": "密闭空间内的人员检测：电梯应用"
-    },
-    {
-      "orig_title": "The AI Power Bill: Who Gets Grid Capacity, and Who Bears the Risk?",
-      "source": "EE Times",
-      "category": "硬件",
-      "link": "https://www.eetimes.com/the-ai-power-bill-who-gets-grid-capacity-and-who-bears-the-risk/",
-      "zh_title": "AI电费账单：谁获得电网容量，谁承担风险？"
-    },
-    {
-      "orig_title": "Nvidia has a Jensen Huang problem—and no obvious successor",
-      "source": "Ars Technica - All content",
-      "category": "工程与编程",
-      "link": "https://arstechnica.com/gadgets/2026/11/nvidia-has-a-jensen-huang-problem-and-no-obvious-successor/",
-      "zh_title": "英伟达面临黄仁勋难题——且没有明显的继任者"
-    },
-    {
-      "orig_title": "小渔排班宣布永久免费：开发了 8 年的轮班日历，无广告、无订阅",
-      "source": "小众软件",
-      "category": "产品、设计与商业",
-      "link": "https://www.appinn.com/xiaoyu-shift-calendar-free/",
-      "zh_title": "小渔排班宣布永久免费：开发了8年的轮班日历，无广告、无订阅"
-    },
-    {
-      "orig_title": "Safari 27.3 Adds Support for Global Privacy Control",
-      "source": "daringfireball.net",
-      "category": "产品、设计与商业",
-      "link": "https://pxlnv.com/linklog/safari-global-privacy-control/",
-      "zh_title": "Safari 27.3新增对全球隐私控制的支持"
-    },
-    {
-      "orig_title": "FDA warns GLP-1 drugs may pose risk of rare condition that causes vision loss",
-      "source": "Ars Technica - All content",
-      "category": "工程与编程",
-      "link": "https://arstechnica.com/health/2026/11/glp-1-drugs-may-increase-risk-of-vision-loss-from-rare-condition-fda-warns/",
-      "zh_title": "FDA警告GLP-1药物可能带来导致视力丧失的罕见病症风险"
-    },
-    {
-      "orig_title": "Research links: developing investment talent",
+      "orig_title": "Personal finance links: shrinking spending opportunities",
       "source": "Abnormal Returns",
       "category": "产品、设计与商业",
-      "link": "https://abnormalreturns.com/2026/11/10/research-links-developing-investment-talent/",
-      "zh_title": "研究链接：培养投资人才"
+      "link": "https://abnormalreturns.com/2026/11/11/personal-finance-links-shrinking-spending-opportunities/",
+      "zh_title": "个人理财链接：不断缩小的支出机会"
     },
     {
-      "orig_title": "4000万失能老人背后，为何有笔至今算不平的照护账？",
-      "source": "钛媒体",
-      "category": "产品、设计与商业",
-      "link": "https://www.tmtpost.com/8200404.html",
-      "zh_title": "4000万失能老人背后，为何有笔至今算不平的照护账？"
+      "orig_title": "Europe wants to ban 'dark patterns' in apps and loot boxes for minors",
+      "source": "Engadget",
+      "category": "硬件",
+      "link": "https://www.engadget.com/2313329/europe-wants-to-ban-dark-patterns-in-apps-and-loot-boxes-for-minors/",
+      "zh_title": "欧洲希望禁止应用中的“暗黑模式”以及面向未成年人的战利品箱"
     },
     {
-      "orig_title": "第三代国潮来袭：藏在桌面与旷野里的中国智造",
-      "source": "钛媒体",
-      "category": "产品、设计与商业",
-      "link": "https://www.tmtpost.com/8200254.html",
-      "zh_title": "第三代国潮来袭：藏在桌面与旷野里的中国智造"
-    },
-    {
-      "orig_title": "‘A Scandal at the Center of the Economy’",
-      "source": "daringfireball.net",
-      "category": "产品、设计与商业",
-      "link": "https://www.theatlantic.com/technology/2026/11/jensen-huang-chinese-spy/689357/?gift=aQyUJR7AIw1mJWdQ6Ed6yPI8n1FlV88MR9f9IZruvFA&",
-      "zh_title": "“经济核心的一桩丑闻”"
-    },
-    {
-      "orig_title": "U.S. Commerce Dept. Inquiry Into Megaspeed Was Halted After Nvidia Name-Dropped Trump Appointee",
-      "source": "daringfireball.net",
-      "category": "产品、设计与商业",
-      "link": "https://www.nytimes.com/2026/11/09/business/economy/nvidia-megaspeed-investigation-huang.html?unlocked_article_code=1.PVE.GxBL.iBpBoc8Y4tnb",
-      "zh_title": "美国商务部对Megaspeed的调查在英伟达点名特朗普任命官员后中止"
-    },
-    {
-      "orig_title": "Decrypt Money Account Gets Confidential Transfers With Solana Privacy Firm Helius",
-      "source": "Decrypt",
-      "category": "产品、设计与商业",
-      "link": "https://decrypt.co/382806/decrypt-money-account-gets-confidential-transfers-with-solana-privacy-firm-helius",
-      "zh_title": "Decrypt Money账户通过与Solana隐私公司Helius合作实现机密转账"
-    },
-    {
-      "orig_title": "Balanced Incomplete Block Designs",
-      "source": "johndcook.com",
-      "category": "观点与杂谈",
-      "link": "https://www.johndcook.com/blog/2026/11/10/bibd/",
-      "zh_title": "平衡不完全区组设计"
-    },
-    {
-      "orig_title": "Polestar has a new look with its Formula 2030 concept",
+      "orig_title": "Google DeepMind just mathematically verified key parts of Signal",
       "source": "Ars Technica - All content",
       "category": "工程与编程",
-      "link": "https://arstechnica.com/cars/2026/11/polestar-has-a-new-look-with-its-formula-2030-concept/",
-      "zh_title": "极星以Formula 2030概念车展现全新面貌"
+      "link": "https://arstechnica.com/ai/2026/11/signals-encryption-just-passed-an-ai-powered-mathematical-checkup/",
+      "zh_title": "谷歌 DeepMind 刚刚对 Signal 的关键部分进行了数学验证"
     },
     {
-      "orig_title": "Anthropic Sets IPO Price Range at $70 to $78, Valuing Company at Up to $1.4 Trillion",
+      "orig_title": "Decrypt Becomes First News Publisher to Offer Perps Trading, Powered by Solana's Phoenix",
       "source": "Decrypt",
       "category": "产品、设计与商业",
-      "link": "https://decrypt.co/382939/anthropic-sets-ipo-price-range-at-70-to-78-valuing-company-at-up-to-1-4-trillion",
-      "zh_title": "Anthropic将IPO发行价区间定为70至78美元，公司估值最高达1.4万亿美元"
+      "link": "https://decrypt.co/382992/decrypt-becomes-first-news-publisher-to-offer-perps-trading-powered-by-solanas-phoenix",
+      "zh_title": "Decrypt 成为首家提供永续合约交易的新闻出版商，由 Solana 的 Phoenix 提供支持"
     },
     {
-      "orig_title": "Adobe brings AI agents and new creative tools to Photoshop, Premiere, and Firefly",
+      "orig_title": "Plurai wants to help AI agents work better using the same approach that helped get self-driving cars to roads",
       "source": "TechCrunch",
       "category": "AI 前沿",
-      "link": "https://techcrunch.com/2026/11/10/adobe-adds-more-ai-to-its-products-and-launches-an-mcp/",
-      "zh_title": "Adobe将AI智能体和新创意工具引入Photoshop、Premiere和Firefly"
+      "link": "https://techcrunch.com/2026/11/11/plurai-wants-to-help-ai-agents-work-better-using-the-same-approach-that-helped-get-self-driving-cars-to-roads/",
+      "zh_title": "Plurai 希望借助曾助力自动驾驶汽车上路的相同方法，帮助 AI 代理更好地工作"
     },
     {
-      "orig_title": "Moody’s Taps Chainlink to Send Credit Ratings Across Multiple Blockchains",
-      "source": "Decrypt",
-      "category": "产品、设计与商业",
-      "link": "https://decrypt.co/382888/moodys-chainlink-credit-ratings-across-multiple-blockchains",
-      "zh_title": "穆迪借助Chainlink在多个区块链上发布信用评级"
-    },
-    {
-      "orig_title": "Live Rewind and the Awkwardness of What",
+      "orig_title": "Creator Studio Early Automation Tests",
       "source": "MacSparky",
       "category": "产品、设计与商业",
-      "link": "https://www.macsparky.com/blog/2026/11/live-rewind-and-the-awkwardness-of-what/",
-      "zh_title": "Live Rewind与“什么”的尴尬"
+      "link": "https://www.macsparky.com/blog/2026/11/creator-studio-early-automation-tests/",
+      "zh_title": "创作者工作室早期自动化测试"
     },
     {
-      "orig_title": "Bluetooth® High Data Throughput: a Foundation for Next Generation Wireless Experiences",
-      "source": "EE Times",
+      "orig_title": "What should I ask Simon Sebag Montefiore?",
+      "source": "Marginal REVOLUTION",
+      "category": "观点与杂谈",
+      "link": "https://marginalrevolution.com/marginalrevolution/2026/11/what-should-i-ask-simon-sebag-montefiore.html?utm_source=rss&utm_medium=rss&utm_campaign=what-should-i-ask-simon-sebag-montefiore",
+      "zh_title": "我该问 Simon Sebag Montefiore 什么？"
+    },
+    {
+      "orig_title": "Of Miracles and Moats",
+      "source": "Not Boring by Packy McCormick",
+      "category": "观点与杂谈",
+      "link": "https://www.notboring.co/p/of-miracles-and-moats",
+      "zh_title": "奇迹与护城河"
+    },
+    {
+      "orig_title": "The Download: preserving minds and weighing open AI risks",
+      "source": "MIT Tech Review",
+      "category": "AI 前沿",
+      "link": "https://www.technologyreview.com/2026/11/11/1148424/the-download-preserving-minds-open-ai-risks/",
+      "zh_title": "下载：保存心智与权衡开放 AI 风险"
+    },
+    {
+      "orig_title": "Claude Code + Obsidian: My family’s AI brain | Scott Farrar",
+      "source": "Lenny's Newsletter",
+      "category": "产品、设计与商业",
+      "link": "https://www.lennysnewsletter.com/p/claude-code-obsidian-my-familys-ai",
+      "zh_title": "Claude Code + Obsidian：我家庭的 AI 大脑 | Scott Farrar"
+    },
+    {
+      "orig_title": "Microsoft's Automatic Super Resolution is now officially out for the ROG Xbox Ally X",
+      "source": "Engadget",
       "category": "硬件",
-      "link": "https://www.eetimes.com/bluetooth-high-data-throughput-a-foundation-for-next-generation-wireless-experiences/",
-      "zh_title": "蓝牙®高数据吞吐量：下一代无线体验的基础"
+      "link": "https://www.engadget.com/2313202/microsoft-automatic-super-resolution-comes-to-rog-xbox-ally-x/",
+      "zh_title": "微软的自动超级分辨率功能现已在 ROG Xbox Ally X 上正式推出"
     },
     {
-      "orig_title": "U.S. CPI rose stronger than expected 0.4% in October; core rate rose 0.3%",
+      "orig_title": "Meet Spiko, the largest tokenized fund in the world you’ve probably never heard about",
       "source": "CoinDesk",
       "category": "产品、设计与商业",
-      "link": "https://www.coindesk.com/markets/2026/11/10/u-s-cpi-rose-stronger-than-expected-0-4-in-october-core-rate-rose-0-3",
-      "zh_title": "美国10月CPI涨幅超预期达0.4%；核心CPI上涨0.3%"
+      "link": "https://www.coindesk.com/business/2026/11/11/meet-spiko-the-largest-tokenized-fund-in-the-world-you-ve-probably-never-heard-about",
+      "zh_title": "认识一下 Spiko，全球最大的代币化基金，你可能从未听说过"
     },
     {
-      "orig_title": "亚朵集团三季度营收34.29亿元，酒店业务稳健发展；欧莱雅进博会首发五大成果；优衣库进博会聚焦可持续发展 ｜消研所周报",
-      "source": "钛媒体",
-      "category": "产品、设计与商业",
-      "link": "https://www.tmtpost.com/8200086.html",
-      "zh_title": "亚朵集团三季度营收34.29亿元，酒店业务稳健发展；欧莱雅进博会首发五大成果；优衣库进博会聚焦可持续发展｜消研所周报"
-    },
-    {
-      "orig_title": "Morning Minute: Vitalik Recasts ETH as a Store of Value",
+      "orig_title": "Kraken Parent Payward Brings 200 UK and EU Stocks Onchain as xStocks",
       "source": "Decrypt",
       "category": "产品、设计与商业",
-      "link": "https://decrypt.co/382931/morning-minute-vitalik-recasts-eth-as-a-store-of-value",
-      "zh_title": "早间简报：Vitalik将ETH重新定位为价值储存手段"
+      "link": "https://decrypt.co/383000/kraken-parent-payward-brings-200-uk-and-eu-stocks-onchain-as-xstocks",
+      "zh_title": "Kraken 母公司 Payward 将 200 只英国和欧盟股票以 xStocks 形式上链"
     },
     {
-      "orig_title": "The Download: Pelosi’s successor targets AI and data centers face power woes",
-      "source": "MIT Tech Review",
-      "category": "AI 前沿",
-      "link": "https://www.technologyreview.com/2026/11/10/1148150/the-download-pelosi-successor-ai-regulation-data-center-backlash/",
-      "zh_title": "今日下载：佩洛西继任者瞄准AI，数据中心面临电力困境"
+      "orig_title": "A Grok vibe-coding agent leaked sensitive SpaceXSI data",
+      "source": "Engadget",
+      "category": "硬件",
+      "link": "https://www.engadget.com/2313187/grok-build-leaked-sensitive-spacexsi-data/",
+      "zh_title": "一个 Grok 氛围编程代理泄露了敏感的 SpaceXSI 数据"
     },
     {
-      "orig_title": "🥡 DoorDash: The $17B Instacart Bet",
-      "source": "How They Make Money",
-      "category": "产品、设计与商业",
-      "link": "https://www.appeconomyinsights.com/p/doordash-the-17b-instacart-bet",
-      "zh_title": "🥡 DoorDash：170亿美元的Instacart押注"
-    },
-    {
-      "orig_title": "Evolving metal extraction processes",
-      "source": "MIT Tech Review",
-      "category": "AI 前沿",
-      "link": "https://www.technologyreview.com/2026/11/10/1147726/evolving-metal-extraction-processes/",
-      "zh_title": "不断演进的金属提取工艺"
-    },
-    {
-      "orig_title": "Ripple Prime head Marc Asch to step down, Noel Kimmel named successor",
-      "source": "CoinDesk",
-      "category": "产品、设计与商业",
-      "link": "https://www.coindesk.com/business/2026/11/09/ripple-prime-head-marc-asch-to-step-down-noel-kimmel-named-successor",
-      "zh_title": "Ripple Prime负责人Marc Asch将卸任，Noel Kimmel被任命为继任者"
-    },
-    {
-      "orig_title": "Book Review: The Unfinished Harauld Hughes - Richard Ayoade ★★★⯪☆",
+      "orig_title": "HowTo: Fix Eufy HomeBase 2 Storage Full Issues",
       "source": "shkspr.mobi",
       "category": "观点与杂谈",
-      "link": "https://shkspr.mobi/blog/2026/11/book-review-the-unfinished-harauld-hughes-richard-ayoade/",
-      "zh_title": "书评：《未完成的哈罗德·休斯》——理查德·阿尤阿德 ★★★⯪☆"
+      "link": "https://shkspr.mobi/blog/2026/11/howto-fix-eufy-homebase-2-storage-full-issues/",
+      "zh_title": "教程：修复 Eufy HomeBase 2 存储已满问题"
     },
     {
-      "orig_title": "Ukraine’s fiber-optic drones get squeezed by AI data center demand",
-      "source": "Ars Technica - All content",
-      "category": "工程与编程",
-      "link": "https://arstechnica.com/gadgets/2026/11/ukraines-fiber-optic-drones-get-squeezed-by-ai-data-center-demand/",
-      "zh_title": "乌克兰光纤无人机因AI数据中心需求而受到挤压"
+      "orig_title": "Nvidia Sheds $430B in Two Days as Jensen Huang Faces Calls to Resign",
+      "source": "Decrypt",
+      "category": "产品、设计与商业",
+      "link": "https://decrypt.co/382991/nvidia-sheds-430b-in-two-days-as-jensen-huang-faces-calls-to-resign",
+      "zh_title": "英伟达两天市值蒸发 4300 亿美元，黄仁勋面临辞职呼声"
     },
     {
-      "orig_title": "Novell’s lawsuits with Microsoft",
+      "orig_title": "Microsoft Windows first announced Nov 10, 1983",
       "source": "dfarq.homeip.net",
       "category": "硬件",
-      "link": "https://dfarq.homeip.net/novells-lawsuits-with-microsoft/?utm_source=rss&utm_medium=rss&utm_campaign=novells-lawsuits-with-microsoft",
-      "zh_title": "Novell与微软的诉讼"
+      "link": "https://dfarq.homeip.net/microsoft-windows-first-announced-nov-10-1983/?utm_source=rss&utm_medium=rss&utm_campaign=microsoft-windows-first-announced-nov-10-1983",
+      "zh_title": "微软 Windows 于 1983 年 11 月 10 日首次发布"
     },
     {
-      "orig_title": "Chinese Short Dramas Own Overseas Attention but Not Yet the Profits",
-      "source": "钛媒体",
+      "orig_title": "2027 Chevrolet Bolt review: RIP to the GOAT of low-cost electric motoring",
+      "source": "Engadget",
+      "category": "硬件",
+      "link": "https://www.engadget.com/2312913/2027-chevrolet-bolt-review/",
+      "zh_title": "2027 款雪佛兰 Bolt 评测：告别低成本电动汽车之王"
+    },
+    {
+      "orig_title": "No.226 文曲星的三十年往事",
+      "source": "半拿铁",
       "category": "产品、设计与商业",
-      "link": "https://www.tmtpost.com/8200340.html",
-      "zh_title": "中国短剧在海外赢得关注，但尚未盈利"
+      "link": "https://www.ximalaya.com/sound/1031865947",
+      "zh_title": "第226期 文曲星的三十年往事"
     },
     {
-      "orig_title": "Review: Apple's M6 MacBook Pro is good, but it's missing all the exciting stuff",
-      "source": "Ars Technica - All content",
-      "category": "工程与编程",
-      "link": "https://arstechnica.com/gadgets/2026/11/review-apples-1999-m6-macbook-pro-feels-stuck-in-the-middle/",
-      "zh_title": "评测：苹果M6 MacBook Pro不错，但缺少所有令人兴奋的东西"
-    },
-    {
-      "orig_title": "CEO Interview: PROMEDIUS",
-      "source": "CB Insights",
-      "category": "产品、设计与商业",
-      "link": "https://www.cbinsights.com/research/ceo-interview-promedius/",
-      "zh_title": "CEO访谈：PROMEDIUS"
-    },
-    {
-      "orig_title": "Executive Interview: TALON",
-      "source": "CB Insights",
-      "category": "产品、设计与商业",
-      "link": "https://www.cbinsights.com/research/executive-interview-talon/",
-      "zh_title": "高管访谈：TALON"
-    },
-    {
-      "orig_title": "Executive Interview: Helios One",
-      "source": "CB Insights",
-      "category": "产品、设计与商业",
-      "link": "https://www.cbinsights.com/research/executive-interview-helios-one/",
-      "zh_title": "高管访谈：Helios One"
-    },
-    {
-      "orig_title": "Checking the AI audit of Saez and Zucman’s research.",
-      "source": "Marginal REVOLUTION",
-      "category": "观点与杂谈",
-      "link": "https://marginalrevolution.com/marginalrevolution/2026/11/checking-the-ai-audit-of-saez-and-zucmans-research.html?utm_source=rss&utm_medium=rss&utm_campaign=checking-the-ai-audit-of-saez-and-zucmans-research",
-      "zh_title": "核查Saez和Zucman研究的AI审计"
-    },
-    {
-      "orig_title": "Nvidia, Jensen Huang Sued by Shareholders Over Alleged Ties to Suspected Chinese Spy",
-      "source": "Decrypt",
-      "category": "产品、设计与商业",
-      "link": "https://decrypt.co/382913/nvidia-jensen-huang-sued-by-shareholders-over-alleged-ties-to-suspected-chinese-spy",
-      "zh_title": "英伟达及黄仁勋因涉嫌与疑似中国间谍有关联被股东起诉"
-    },
-    {
-      "orig_title": "Executive Interview: Humanly",
-      "source": "CB Insights",
-      "category": "产品、设计与商业",
-      "link": "https://www.cbinsights.com/research/executive-interview-humanly/",
-      "zh_title": "高管访谈：Humanly"
-    },
-    {
-      "orig_title": "The Jensen Huang Affair",
-      "source": "Hard Fork",
+      "orig_title": "What the Internet Boom Teaches Us About the AI Buildout | Mike Volpi",
+      "source": "a16z podcast",
       "category": "AI 前沿",
-      "link": "https://www.nytimes.com/column/hard-fork",
-      "zh_title": "黄仁勋事件"
+      "link": "https://a16z.simplecast.com/episodes/what-the-internet-boom-teaches-us-about-the-ai-buildout-mike-volpi-C_gHjXbG",
+      "zh_title": "互联网热潮对 AI 建设的启示 | Mike Volpi"
     },
     {
-      "orig_title": "The Jensen Huang Story Gets Worse, Washington vs. New York, Silicon Valley",
+      "orig_title": "Intel Earnings, AMD Earnings, Intel and AMD’s Divergence",
       "source": "Stratechery",
       "category": "产品、设计与商业",
-      "link": "https://stratechery.com/2026/the-jensen-huang-story-gets-worse-washington-vs-new-york-silicon-valley/",
-      "zh_title": "黄仁勋的故事愈演愈烈，华盛顿对纽约，硅谷"
+      "link": "https://stratechery.com/2026/intel-earnings-amd-earnings-intel-and-amds-divergence/",
+      "zh_title": "英特尔财报、AMD 财报、英特尔与 AMD 的分化"
     },
     {
-      "orig_title": "怎么给AI建立一套稳定的小红书爆款内容拆解标准？！",
-      "source": "人人都是产品经理",
+      "orig_title": "Avalanche Won Over the NYSE. Now It Has to ‘Capture Value’ for AVAX",
+      "source": "Decrypt",
       "category": "产品、设计与商业",
-      "link": "https://www.woshipm.com/share/6491804.html",
-      "zh_title": "如何为AI建立一套稳定的小红书爆款内容拆解标准？！"
+      "link": "https://decrypt.co/382988/avalanche-won-over-the-nyse-now-it-has-to-capture-value-for-avax",
+      "zh_title": "Avalanche 赢得了纽交所，现在必须为 AVAX“捕获价值”"
     },
     {
-      "orig_title": "意义与归属：超越产品和服务，消费世界的新商品",
-      "source": "人人都是产品经理",
-      "category": "产品、设计与商业",
-      "link": "https://www.woshipm.com/share/6491806.html",
-      "zh_title": "意义与归属：超越产品和服务，消费世界的新商品"
-    },
-    {
-      "orig_title": "用WorkBuddy从零复刻一条完整爆款视频",
-      "source": "人人都是产品经理",
-      "category": "产品、设计与商业",
-      "link": "https://www.woshipm.com/ai/6491798.html",
-      "zh_title": "用WorkBuddy从零复刻一条完整爆款视频"
-    },
-    {
-      "orig_title": "Claude Fable 5.2 实测，DeepSeek、Kimi K3.1 迎战",
-      "source": "人人都是产品经理",
-      "category": "产品、设计与商业",
-      "link": "https://www.woshipm.com/ai/6491795.html",
-      "zh_title": "Claude Fable 5.2实测，DeepSeek、Kimi K3.1迎战"
-    },
-    {
-      "orig_title": "千问办公 2.0 发布：个人效率之外，还有组织效率这道题",
-      "source": "人人都是产品经理",
-      "category": "产品、设计与商业",
-      "link": "https://www.woshipm.com/ai/6491851.html",
-      "zh_title": "千问办公2.0发布：个人效率之外，还有组织效率这道题"
-    },
-    {
-      "orig_title": "等位超5000桌，餐饮排队王，为什么都爱开在高端商场？",
-      "source": "钛媒体",
-      "category": "产品、设计与商业",
-      "link": "https://www.tmtpost.com/8198486.html",
-      "zh_title": "等位超5000桌，餐饮排队王，为什么都爱开在高端商场？"
-    },
-    {
-      "orig_title": "猪肉不停降价，给了“云南猪王”更多磨练二代的机会",
-      "source": "钛媒体",
-      "category": "产品、设计与商业",
-      "link": "https://www.tmtpost.com/8198696.html",
-      "zh_title": "猪肉不停降价，给了“云南猪王”更多磨练二代的机会"
-    },
-    {
-      "orig_title": "管窥AI游戏的产业现状，从Roblox这份“意外”的财报",
-      "source": "钛媒体",
-      "category": "产品、设计与商业",
-      "link": "https://www.tmtpost.com/8199114.html",
-      "zh_title": "管窥AI游戏的产业现状，从Roblox这份“意外”的财报"
-    },
-    {
-      "orig_title": "美女陪打LOL，腾讯入局AI游戏陪伴，会走米哈游的老路吗？",
-      "source": "钛媒体",
-      "category": "产品、设计与商业",
-      "link": "https://www.tmtpost.com/8199749.html",
-      "zh_title": "美女陪打LOL，腾讯入局AI游戏陪伴，会走米哈游的老路吗？"
-    },
-    {
-      "orig_title": "Watch This If You Don’t Know What Business To Start | Ep 1014",
-      "source": "Alex Hormozi",
-      "category": "产品、设计与商业",
-      "link": "https://pscrb.fm/rss/p/episode.flightcast.com/01M715EXZJ1HQDXP4S3G9HPGHS.mp3",
-      "zh_title": "如果你不知道要创业做什么，请看这期 | 第1014期"
-    },
-    {
-      "orig_title": "从芯片到千比特整机，超导量子计算还有一场硬仗",
-      "source": "量子位",
-      "category": "AI 前沿",
-      "link": "https://www.qbitai.com/2026/11/509017.html",
-      "zh_title": "从芯片到千比特整机，超导量子计算还有一场硬仗"
-    },
-    {
-      "orig_title": "What It Takes to Let a Farm Robot Work Alone",
-      "source": "EE Times",
+      "orig_title": "Apple is shutting down its online Support Community on November 20",
+      "source": "Engadget",
       "category": "硬件",
-      "link": "https://www.eetimes.com/what-it-takes-to-let-a-farm-robot-work-alone/",
-      "zh_title": "让农场机器人自主工作需要什么"
+      "link": "https://www.engadget.com/2313147/apple-shuts-down-support-community-forum/",
+      "zh_title": "苹果将于 11 月 20 日关闭其在线支持社区"
     },
     {
-      "orig_title": "*Godzilla: Minus Zero* (no spoilers)",
-      "source": "Marginal REVOLUTION",
-      "category": "观点与杂谈",
-      "link": "https://marginalrevolution.com/marginalrevolution/2026/11/godzilla-minus-zero-no-spoilers.html?utm_source=rss&utm_medium=rss&utm_campaign=godzilla-minus-zero-no-spoilers",
-      "zh_title": "《哥斯拉：负零》（无剧透）"
-    },
-    {
-      "orig_title": "规模化分享我 Vibe-Coding 的提示词",
-      "source": "人人都是产品经理",
-      "category": "产品、设计与商业",
-      "link": "https://www.woshipm.com/ai/6491716.html",
-      "zh_title": "规模化分享我 Vibe-Coding 的提示词"
-    },
-    {
-      "orig_title": "Seedream 5.5 全量上线，多轮编辑能力里程碑级别，海量案例分享！",
-      "source": "人人都是产品经理",
-      "category": "产品、设计与商业",
-      "link": "https://www.woshipm.com/ai/6491698.html",
-      "zh_title": "Seedream 5.5 全量上线，多轮编辑能力里程碑级别，海量案例分享！"
-    },
-    {
-      "orig_title": "实测还在灰度的GPT 6.2 sol，Opus5.5的审美霸权时代要结束了",
-      "source": "人人都是产品经理",
-      "category": "产品、设计与商业",
-      "link": "https://www.woshipm.com/ai/6491705.html",
-      "zh_title": "实测还在灰度的GPT 6.2 sol，Opus5.5的审美霸权时代要结束了"
-    },
-    {
-      "orig_title": "从“一脑多机”到“一脑多手”，蚂蚁灵波开源LingBot-Touch触觉基础模型",
-      "source": "量子位",
-      "category": "AI 前沿",
-      "link": "https://www.qbitai.com/2026/11/508996.html",
-      "zh_title": "从“一脑多机”到“一脑多手”，蚂蚁灵波开源LingBot-Touch触觉基础模型"
-    },
-    {
-      "orig_title": "Agent自演进驶入“双轨时代”！openJiuwen首发TTSE经验学习框架",
-      "source": "量子位",
-      "category": "AI 前沿",
-      "link": "https://www.qbitai.com/2026/11/508998.html",
-      "zh_title": "Agent自演进驶入“双轨时代”！openJiuwen首发TTSE经验学习框架"
-    },
-    {
-      "orig_title": "成立四个月，融资过亿美金：TensorWorld物原科技要跑通“物理真实”路线",
-      "source": "量子位",
-      "category": "AI 前沿",
-      "link": "https://www.qbitai.com/2026/11/508991.html",
-      "zh_title": "成立四个月，融资过亿美金：TensorWorld物原科技要跑通“物理真实”路线"
-    },
-    {
-      "orig_title": "We Source Chips Others Cannot Secure, 2026",
-      "source": "EE Times",
-      "category": "硬件",
-      "link": "https://www.eetimes.com/we-source-chips-others-cannot-secure-2026/",
-      "zh_title": "我们采购他人无法获取的芯片，2026"
-    },
-    {
-      "orig_title": "达卯科技与浦东环保能源战略合作，黎明智算中心算电协同平台启动",
-      "source": "量子位",
-      "category": "AI 前沿",
-      "link": "https://www.qbitai.com/2026/11/508985.html",
-      "zh_title": "达卯科技与浦东环保能源战略合作，黎明智算中心算电协同平台启动"
-    },
-    {
-      "orig_title": "Introducing Our Smallest, Most Efficient Model: Muse Ember",
-      "source": "simonwillison.net",
-      "category": "AI 前沿",
-      "link": "https://simonwillison.net/2026/Nov/10/muse-ember/",
-      "zh_title": "推出我们最小、最高效的模型：Muse Ember"
-    },
-    {
-      "orig_title": "Token卷到触觉了！机器人终于有了通用手感",
-      "source": "量子位",
-      "category": "AI 前沿",
-      "link": "https://www.qbitai.com/2026/11/508919.html",
-      "zh_title": "Token卷到触觉了！机器人终于有了通用手感"
-    },
-    {
-      "orig_title": "Fable 5.2首批实测来了！网友：Opus突然不香了",
-      "source": "量子位",
-      "category": "AI 前沿",
-      "link": "https://www.qbitai.com/2026/11/508912.html",
-      "zh_title": "Fable 5.2首批实测来了！网友：Opus突然不香了"
-    },
-    {
-      "orig_title": "福利｜复旦「学术版 Codex」双十一积分翻倍！",
-      "source": "小众软件",
-      "category": "产品、设计与商业",
-      "link": "https://www.appinn.com/qiewenpaper-1111/",
-      "zh_title": "福利｜复旦「学术版 Codex」双十一积分翻倍！"
-    },
-    {
-      "orig_title": "[AINews] Fable 5.2 retakes World #1 LLM spot as $ANT IPO roadshow begins",
-      "source": "Latent.Space",
-      "category": "AI 前沿",
-      "link": "https://latent.space/p/ainews-fable-5-2-retakes-world-1-llm-spot-as-ant-ipo-roadshow-begins/",
-      "zh_title": "[AINews] Fable 5.2重夺全球第一LLM宝座，$ANT IPO路演启动"
-    },
-    {
-      "orig_title": "沙特TikTok Shop直播排班：3人小团队怎么扛住女性主播的时段与人力缺口？",
-      "source": "白鲸出海",
-      "category": "产品、设计与商业",
-      "link": "https://www.baijing.cn/question/638651",
-      "zh_title": "沙特TikTok Shop直播排班：3人小团队怎么扛住女性主播的时段与人力缺口？"
-    },
-    {
-      "orig_title": "同样的话术素材，沙特直播间留人率为什么差这么多？",
-      "source": "白鲸出海",
-      "category": "产品、设计与商业",
-      "link": "https://www.baijing.cn/question/638650",
-      "zh_title": "同样的话术素材，沙特直播间留人率为什么差这么多？"
-    },
-    {
-      "orig_title": "GigaDevice New-Gen High-Performance MCU Portfolio for Full-Scenario Industrial Applications",
-      "source": "EE Times",
-      "category": "硬件",
-      "link": "https://www.eetimes.com/gigadevice-new-gen-high-performance-mcu-portfolio-for-full-scenario-industrial-applications/",
-      "zh_title": "兆易创新新一代高性能MCU产品组合，面向全场景工业应用"
-    },
-    {
-      "orig_title": "独立站红人佣金给到20%，为什么欧美红人接了brief却不肯发内容？",
-      "source": "白鲸出海",
-      "category": "产品、设计与商业",
-      "link": "https://www.baijing.cn/question/638649",
-      "zh_title": "独立站红人佣金给到20%，为什么欧美红人接了brief却不肯发内容？"
-    },
-    {
-      "orig_title": "中国汽车市场，不止一种赢法 | 极客车间",
-      "source": "极客公园",
-      "category": "产品、设计与商业",
-      "link": "http://www.geekpark.net/news/373765",
-      "zh_title": "中国汽车市场，不止一种赢法 | 极客车间"
-    },
-    {
-      "orig_title": "印尼美妆跨境清真认证，5人团队该怎么排期才不耽误上新？",
-      "source": "白鲸出海",
-      "category": "产品、设计与商业",
-      "link": "https://www.baijing.cn/question/638648",
-      "zh_title": "印尼美妆跨境清真认证，5人团队该怎么排期才不耽误上新？"
-    },
-    {
-      "orig_title": "在浏览器里运行《极品飞车·地下狂飙2》支持联机",
-      "source": "小众软件",
-      "category": "产品、设计与商业",
-      "link": "https://www.appinn.com/nfsu2-browser-multiplayer/",
-      "zh_title": "在浏览器里运行《极品飞车·地下狂飙2》支持联机"
-    },
-    {
-      "orig_title": "*Unbeatable: The Brutally Honest Case for Free Markets*",
-      "source": "Marginal REVOLUTION",
-      "category": "观点与杂谈",
-      "link": "https://marginalrevolution.com/marginalrevolution/2026/11/unbeatable-the-brutally-honest-case-for-free-markets.html?utm_source=rss&utm_medium=rss&utm_campaign=unbeatable-the-brutally-honest-case-for-free-markets",
-      "zh_title": "*无懈可击：为自由市场直言不讳的辩护*"
-    },
-    {
-      "orig_title": "法国 ASA 单次安装涨到 4.2 欧，还要不要继续加预算？",
-      "source": "白鲸出海",
-      "category": "产品、设计与商业",
-      "link": "https://www.baijing.cn/question/638647",
-      "zh_title": "法国ASA单次安装涨到4.2欧，还要不要继续加预算？"
-    },
-    {
-      "orig_title": "Quoting Prompting Claude Fable 5.2",
-      "source": "simonwillison.net",
-      "category": "AI 前沿",
-      "link": "https://simonwillison.net/2026/Nov/10/prompting-claude-fable-52/",
-      "zh_title": "引用Prompting Claude Fable 5.2"
-    },
-    {
-      "orig_title": "独立站刚起量，加拿大GST/HST注册和报税该什么时候排进运营节奏？",
-      "source": "白鲸出海",
-      "category": "产品、设计与商业",
-      "link": "https://www.baijing.cn/question/638646",
-      "zh_title": "独立站刚起量，加拿大GST/HST注册和报税该什么时候排进运营节奏？"
-    },
-    {
-      "orig_title": "ATT 之后法国 ASA 成本涨了四成，现在还要不要继续投？",
-      "source": "白鲸出海",
-      "category": "产品、设计与商业",
-      "link": "https://www.baijing.cn/question/638645",
-      "zh_title": "ATT之后法国ASA成本涨了四成，现在还要不要继续投？"
-    },
-    {
-      "orig_title": "墨西哥近岸外包工厂的IMMEX报关新规落地后，我们的供应链数据该怎么对齐才算合规？",
-      "source": "白鲸出海",
-      "category": "产品、设计与商业",
-      "link": "https://www.baijing.cn/question/638644",
-      "zh_title": "墨西哥近岸外包工厂的IMMEX报关新规落地后，我们的供应链数据该怎么对齐才算合规？"
-    },
-    {
-      "orig_title": "Swarm Rebuild Is Not the Cursor Marketplace Attack",
-      "source": "FuturePulse",
-      "category": "AI 前沿",
-      "link": "https://futurpulse.com/swarm-rebuild-is-not-the-cursor-marketplace-attack/",
-      "zh_title": "Swarm重建并非Cursor应用商店攻击事件"
-    },
-    {
-      "orig_title": "阿联酋站选品备货总压错款，中东退货率到底该怎么算进选品模型？",
-      "source": "白鲸出海",
-      "category": "产品、设计与商业",
-      "link": "https://www.baijing.cn/question/638643",
-      "zh_title": "阿联酋站选品备货总压错款，中东退货率到底该怎么算进选品模型？"
-    },
-    {
-      "orig_title": "千问办公押注 Team Agent，企业 AI 的流水线时刻真的来了",
-      "source": "极客公园",
-      "category": "产品、设计与商业",
-      "link": "http://www.geekpark.net/news/373760",
-      "zh_title": "千问办公押注Team Agent，企业AI的流水线时刻真的来了"
-    },
-    {
-      "orig_title": "XRP Ledger maps out quantum-proof accounts, with no extra fees for users",
+      "orig_title": "Kraken's xStocks adds 200 UK and EU shares as its assets top $1.1 billion",
       "source": "CoinDesk",
       "category": "产品、设计与商业",
-      "link": "https://www.coindesk.com/tech/2026/11/10/xrp-ledger-maps-out-quantum-proof-accounts-with-no-extra-fees-for-users",
-      "zh_title": "XRP账本规划抗量子账户，用户无需额外付费"
+      "link": "https://www.coindesk.com/business/2026/11/11/kraken-s-xstocks-adds-200-uk-and-eu-shares-as-its-assets-top-usd1-1-billion",
+      "zh_title": "Kraken 的 xStocks 新增 200 只英国和欧盟股票，资产规模突破 11 亿美元"
     },
     {
-      "orig_title": "日本短剧 App 投放素材本地化后点击率反降三成，问题出在哪？",
-      "source": "白鲸出海",
-      "category": "产品、设计与商业",
-      "link": "https://www.baijing.cn/question/638642",
-      "zh_title": "日本短剧App投放素材本地化后点击率反降三成，问题出在哪？"
-    },
-    {
-      "orig_title": "啊？？？用 AI 替自己看小姐姐跳舞？？？｜对谈超线性学院鸭哥",
-      "source": "AI炼金术",
-      "category": "AI 前沿",
-      "link": "https://www.ximalaya.com/sound/1031626765",
-      "zh_title": "啊？？？用AI替自己看小姐姐跳舞？？？｜对谈超线性学院鸭哥"
-    },
-    {
-      "orig_title": "德国站订阅续费被拒付率到 4.7%，欧洲本地支付方式该先补哪个？",
-      "source": "白鲸出海",
-      "category": "产品、设计与商业",
-      "link": "https://www.baijing.cn/question/638641",
-      "zh_title": "德国站订阅续费被拒付率到4.7%，欧洲本地支付方式该先补哪个？"
-    },
-    {
-      "orig_title": "印尼站美妆类目突然要求上传清真认证，没证的链接是不是只能下架？",
-      "source": "白鲸出海",
-      "category": "产品、设计与商业",
-      "link": "https://www.baijing.cn/question/638640",
-      "zh_title": "印尼站美妆类目突然要求上传清真认证，没证的链接是不是只能下架？"
-    },
-    {
-      "orig_title": "[Sponsor] WorkOS: Let Agents Use Your Tools Without Giving Them Free Rein",
-      "source": "daringfireball.net",
-      "category": "产品、设计与商业",
-      "link": "https://www.workos.com/airlock?utm_source=daringfireball&utm_medium=newsletter&utm_campaign=q42026",
-      "zh_title": "[赞助] WorkOS：让智能体使用你的工具，但不给它们完全自由"
-    },
-    {
-      "orig_title": "亚马逊美国站 ACOS 从 22% 涨到 41%，备货和退货两头挤压，广告该不该继续压？",
-      "source": "白鲸出海",
-      "category": "产品、设计与商业",
-      "link": "https://www.baijing.cn/question/638639",
-      "zh_title": "亚马逊美国站 ACOS 从 22% 涨到 41%，备货和退货两头挤压，广告该不该继续压？"
-    },
-    {
-      "orig_title": "沙特投放CPA涨到18美元，AI订阅工具独立站还怎么跑正？",
-      "source": "白鲸出海",
-      "category": "产品、设计与商业",
-      "link": "https://www.baijing.cn/question/638638",
-      "zh_title": "沙特投放 CPA 涨到 18 美元，AI 订阅工具独立站还怎么跑正？"
-    },
-    {
-      "orig_title": "Yonkers Rises",
-      "source": "simonwillison.net",
-      "category": "AI 前沿",
-      "link": "https://simonwillison.net/2026/Nov/10/yonkers-rises/",
-      "zh_title": "扬克斯崛起"
-    },
-    {
-      "orig_title": "东南亚多语言客服靠 3 个人轮班，要不要先上 AI 翻译顶一段？",
-      "source": "白鲸出海",
-      "category": "产品、设计与商业",
-      "link": "https://www.baijing.cn/question/638637",
-      "zh_title": "东南亚多语言客服靠 3 个人轮班，要不要先上 AI 翻译顶一段？"
-    },
-    {
-      "orig_title": "沙特手游买量：阿语素材本地化后CPA仍要11美元，钱花在哪了？",
-      "source": "白鲸出海",
-      "category": "产品、设计与商业",
-      "link": "https://www.baijing.cn/question/638636",
-      "zh_title": "沙特手游买量：阿语素材本地化后 CPA 仍要 11 美元，钱花在哪了？"
-    },
-    {
-      "orig_title": "印尼短剧付费点在新规后掉了一半，是支付通道问题还是内容合规踩线？",
-      "source": "白鲸出海",
-      "category": "产品、设计与商业",
-      "link": "https://www.baijing.cn/question/638635",
-      "zh_title": "印尼短剧付费点在新规后掉了一半，是支付通道问题还是内容合规踩线？"
-    },
-    {
-      "orig_title": "南非独立站物流时效拖到12天，投放CPA涨了四成还要不要继续？",
-      "source": "白鲸出海",
-      "category": "产品、设计与商业",
-      "link": "https://www.baijing.cn/question/638634",
-      "zh_title": "南非独立站物流时效拖到 12 天，投放 CPA 涨了四成还要不要继续？"
-    },
-    {
-      "orig_title": "北美 AI 应用订阅定价改版后付费转化跌了 18%，小团队该先动价格锚点还是先补引导流程？",
-      "source": "白鲸出海",
-      "category": "产品、设计与商业",
-      "link": "https://www.baijing.cn/question/638633",
-      "zh_title": "北美 AI 应用订阅定价改版后付费转化跌了 18%，小团队该先动价格锚点还是先补引导流程？"
-    },
-    {
-      "orig_title": "巴基斯坦手游内购回款要45天，买量账期扛得住吗？",
-      "source": "白鲸出海",
-      "category": "产品、设计与商业",
-      "link": "https://www.baijing.cn/question/638632",
-      "zh_title": "巴基斯坦手游内购回款要 45 天，买量账期扛得住吗？"
-    },
-    {
-      "orig_title": "100轮图像编辑这道「毙刷题」，新出的Seedream 5.5稳上来了！",
-      "source": "量子位",
-      "category": "AI 前沿",
-      "link": "https://www.qbitai.com/2026/11/508828.html",
-      "zh_title": "100 轮图像编辑这道「毙刷题」，新出的 Seedream 5.5 稳上来了！"
-    },
-    {
-      "orig_title": "Combinatorial designs",
-      "source": "johndcook.com",
-      "category": "观点与杂谈",
-      "link": "https://www.johndcook.com/blog/2026/11/09/combinatorial-designs/",
-      "zh_title": "组合设计"
-    },
-    {
-      "orig_title": "千问办公2.0卷向Team Agent，我们用它跑了一遍编辑部日常",
-      "source": "量子位",
-      "category": "AI 前沿",
-      "link": "https://www.qbitai.com/2026/11/508798.html",
-      "zh_title": "千问办公 2.0 卷向 Team Agent，我们用它跑了一遍编辑部日常"
-    },
-    {
-      "orig_title": "What Makes You Yourself: Earth’s Largest Living Organism and the Paradox of Personhood",
-      "source": "Brain Pickings",
-      "category": "观点与杂谈",
-      "link": "https://www.themarginalian.org/2026/11/09/pando/",
-      "zh_title": "是什么让你成为你自己：地球上最大的生物体与人格悖论"
-    },
-    {
-      "orig_title": "Weekly Update 529: Kids Social Media Bans (and Everything Else)",
-      "source": "troyhunt.com",
-      "category": "安全",
-      "link": "https://www.troyhunt.com/weekly-update-529/",
-      "zh_title": "每周更新 529：儿童社交媒体禁令（以及其他一切）"
-    },
-    {
-      "orig_title": "2026-11-10 可转债 调仓",
-      "source": "集思录",
-      "category": "产品、设计与商业",
-      "link": "https://www.jisilu.cn/question/526675",
-      "zh_title": "2026-11-10 可转债 调仓"
-    },
-    {
-      "orig_title": "ChatGPT 占全球 AI 聊天流量超 81%；iOS 27.3 曝光 Siri「个人记忆系统」；传玛莎拉蒂+尊界合作新车曝光｜极客早知道",
-      "source": "极客公园",
-      "category": "产品、设计与商业",
-      "link": "http://www.geekpark.net/news/373736",
-      "zh_title": "ChatGPT 占全球 AI 聊天流量超 81%；iOS 27.3 曝光 Siri「个人记忆系统」；传玛莎拉蒂+尊界合作新车曝光｜极客早知道"
-    },
-    {
-      "orig_title": "llm-anthropic 0.31",
-      "source": "simonwillison.net",
-      "category": "AI 前沿",
-      "link": "https://simonwillison.net/2026/Nov/9/llm-anthropic/",
-      "zh_title": "llm-anthropic 0.31"
-    },
-    {
-      "orig_title": "Locating the source of a mysterious beep with Claude",
-      "source": "simonwillison.net",
-      "category": "AI 前沿",
-      "link": "https://simonwillison.net/2026/Nov/9/mysterious-beeps/",
-      "zh_title": "用 Claude 定位神秘哔声的来源"
-    },
-    {
-      "orig_title": "Bloomberg Was Onto Megaspeed’s Game a Year Ago",
-      "source": "daringfireball.net",
-      "category": "产品、设计与商业",
-      "link": "https://www.bloomberg.com/news/features/2025-12-22/nvidia-partner-megaspeed-draws-china-chip-smuggling-concerns-in-us",
-      "zh_title": "彭博社一年前就看穿了 Megaspeed 的把戏"
-    },
-    {
-      "orig_title": "Claude Code token cost explorer",
-      "source": "entropicthoughts.com",
-      "category": "观点与杂谈",
-      "link": "https://entropicthoughts.com/claude-code-token-cost-explorer",
-      "zh_title": "Claude Code 令牌成本浏览器"
-    },
-    {
-      "orig_title": "Securitize pushes into $6 trillion asset-backed finance market with River One acquisition",
-      "source": "CoinDesk",
-      "category": "产品、设计与商业",
-      "link": "https://www.coindesk.com/business/2026/11/09/securitize-pushes-into-usd6-trillion-asset-backed-finance-market-with-river-one-acquisition",
-      "zh_title": "Securitize 通过收购 River One 进军 6 万亿美元资产支持金融市场"
-    },
-    {
-      "orig_title": "Anthropic's Claude Fable 5.2 and Mythos 5.0 Are Impressive, But Be Prepared to Sell a Kidney to Afford Them",
-      "source": "Decrypt",
-      "category": "产品、设计与商业",
-      "link": "https://decrypt.co/382897/anthropic-claude-fable-5-2-and-mythos-5-2-impressive-and-expensive",
-      "zh_title": "Anthropic 的 Claude Fable 5.2 和 Mythos 5.0 令人印象深刻，但要做好卖肾才买得起的准备"
-    },
-    {
-      "orig_title": "中大本科生反AI逆向项目火了！让黑客Token账单原地暴涨300倍",
-      "source": "量子位",
-      "category": "AI 前沿",
-      "link": "https://www.qbitai.com/2026/11/508787.html",
-      "zh_title": "中大本科生反AI逆向项目火了！让黑客Token账单原地暴涨300倍"
-    },
-    {
-      "orig_title": "🏴 Hyperliquid Gets Its First L2",
-      "source": "Bankless",
-      "category": "产品、设计与商业",
-      "link": "https://www.bankless.com/read/hyperliquid-gets-its-first-l2",
-      "zh_title": "🏴 Hyperliquid 迎来首个 L2"
-    },
-    {
-      "orig_title": "Which Fintech 100 winners are likely to raise next?",
-      "source": "CB Insights",
-      "category": "产品、设计与商业",
-      "link": "https://www.cbinsights.com/research/fintech-100-winners-raise-next/",
-      "zh_title": "哪些金融科技100强获奖者可能接下来融资？"
-    },
-    {
-      "orig_title": "DCU shake-up: James Gunn and Peter Safran out post-merger",
-      "source": "Ars Technica - All content",
+      "orig_title": "This Week in Source Control: 11 November 2026",
+      "source": "nesbitt.io",
       "category": "工程与编程",
-      "link": "https://arstechnica.com/culture/2026/11/dcu-shake-up-james-gunn-and-peter-safran-out-post-merger/",
-      "zh_title": "DCU 大改组：合并后 James Gunn 和 Peter Safran 离职"
+      "link": "https://nesbitt.io/2026/11/11/this-week-in-source-control.html",
+      "zh_title": "本周源代码管理动态：2026 年 11 月 11 日"
     },
     {
-      "orig_title": "Hyperliquid's First L2 Arrives",
-      "source": "Bankless",
-      "category": "产品、设计与商业",
-      "link": "https://www.bankless.com/read/hyperliquids-first-l2-arrives-today",
-      "zh_title": "Hyperliquid 首个 L2 到来"
-    },
-    {
-      "orig_title": "AI Data Centers Are Buying Used Jet Engines as New Power Turbines Take Six Years",
-      "source": "Decrypt",
-      "category": "产品、设计与商业",
-      "link": "https://decrypt.co/382890/ai-data-centers-used-jet-engines-power-turbines",
-      "zh_title": "AI 数据中心正购买二手喷气发动机，因为新动力涡轮机需要六年才能交付"
-    },
-    {
-      "orig_title": "Man who lost $308,000 on sports bets sues Kalshi for offering illegal gambling",
-      "source": "Ars Technica - All content",
-      "category": "工程与编程",
-      "link": "https://arstechnica.com/tech-policy/2026/11/man-who-lost-308000-on-sports-bets-sues-kalshi-for-offering-illegal-gambling/",
-      "zh_title": "在体育博彩中损失 30.8 万美元的男子起诉 Kalshi 提供非法赌博"
-    },
-    {
-      "orig_title": "Short-Seller Culper Research Published Information on Jensen Huang’s Affair Back in May",
-      "source": "daringfireball.net",
-      "category": "产品、设计与商业",
-      "link": "https://culperresearch.com/wp-content/uploads/2026/05/Culper_NVDA_5-13-2026.pdf",
-      "zh_title": "做空机构 Culper Research 早在五月就发布了关于黄仁勋婚外情的信息"
-    },
-    {
-      "orig_title": "Venice Sets a New VVV Burn Record",
-      "source": "Bankless",
-      "category": "产品、设计与商业",
-      "link": "https://www.bankless.com/read/news/venice-sets-a-new-vvv-burn-record",
-      "zh_title": "Venice 创下新的 VVV 销毁纪录"
-    },
-    {
-      "orig_title": "Claude Fable 5.2 review: fast, creative, and finally not annoying",
-      "source": "Lenny's Newsletter",
-      "category": "产品、设计与商业",
-      "link": "https://www.lennysnewsletter.com/p/claude-fable-52-review-fast-creative",
-      "zh_title": "Claude Fable 5.2 评测：快速、有创意，终于不再烦人"
-    },
-    {
-      "orig_title": "Tesla Brain Drain",
-      "source": "daringfireball.net",
-      "category": "产品、设计与商业",
-      "link": "https://electrek.co/2026/11/09/tesla-deep-bench-gone-musk-admits-talent-shortage/",
-      "zh_title": "特斯拉人才流失"
-    },
-    {
-      "orig_title": "Google Takes Aim at Nvidia With New AI Chips Built for Privacy and Massive Memory",
-      "source": "Decrypt",
-      "category": "产品、设计与商业",
-      "link": "https://decrypt.co/382874/google-nvidia-new-ai-chips-privacy-massive-memory-ai",
-      "zh_title": "谷歌推出为隐私和海量内存打造的新 AI 芯片，瞄准英伟达"
-    },
-    {
-      "orig_title": "Can Jensen Keep His Job?",
-      "source": "EE Times",
+      "orig_title": "Lucid CEO says the company didn't know where its own cars were",
+      "source": "Engadget",
       "category": "硬件",
-      "link": "https://www.eetimes.com/can-jensen-keep-his-job/",
-      "zh_title": "黄仁勋能保住他的工作吗？"
+      "link": "https://www.engadget.com/2313113/lucid-q3-2026-losing-cars/",
+      "zh_title": "Lucid CEO 称公司不知道自己的车在哪里"
     },
     {
-      "orig_title": "The backlash about data centers might really just be about electricity",
-      "source": "MIT Tech Review",
-      "category": "AI 前沿",
-      "link": "https://www.technologyreview.com/2026/11/09/1148194/the-backlash-about-data-centers-might-really-just-be-about-electricity/",
-      "zh_title": "对数据中心的反弹可能真的只是关于电力"
-    },
-    {
-      "orig_title": "Is the Nvidia Affair Securities Fraud?",
-      "source": "Matt Levine",
-      "category": "产品、设计与商业",
-      "link": "https://www.bloomberg.com/opinion/newsletters/2026-11-09/is-the-nvidia-affair-securities-fraud",
-      "zh_title": "英伟达事件是证券欺诈吗？"
-    },
-    {
-      "orig_title": "Monday links: search traffic",
-      "source": "Abnormal Returns",
-      "category": "产品、设计与商业",
-      "link": "https://abnormalreturns.com/2026/11/09/monday-links-search-traffic/",
-      "zh_title": "周一链接：搜索流量"
-    },
-    {
-      "orig_title": "Nvidia's $350 Billion Scare: What Happens If Jensen Huang Leaves?",
-      "source": "Decrypt",
-      "category": "产品、设计与商业",
-      "link": "https://decrypt.co/382838/nvidias-350-billion-scare-what-happens-if-jensen-huang-leaves",
-      "zh_title": "英伟达 3500 亿美元恐慌：如果黄仁勋离开会发生什么？"
-    },
-    {
-      "orig_title": "Where is all the AI safety research uplift?",
+      "orig_title": "How I'm thinking about different types of automated alignment",
       "source": "AI Alignment Forum",
       "category": "AI 前沿",
-      "link": "https://www.alignmentforum.org/posts/wPrpnfaNL5JP9i6KT/where-is-all-the-ai-safety-research-uplift",
-      "zh_title": "所有的人工智能安全研究提升在哪里？"
+      "link": "https://www.alignmentforum.org/posts/NFkj9J2BBLSjNuH5G/how-i-m-thinking-about-different-types-of-automated",
+      "zh_title": "我如何看待不同类型的自动化对齐"
     },
     {
-      "orig_title": "Carl Sagan on How to Live with the Unknown",
-      "source": "Brain Pickings",
-      "category": "观点与杂谈",
-      "link": "https://www.themarginalian.org/2026/11/09/carl-sagan-jonathan-cott-rolling-stone-interview/",
-      "zh_title": "卡尔·萨根谈如何与未知共处"
-    },
-    {
-      "orig_title": "Rubio Warned Officials About Jensen Huang’s Affair With a Chinese Spy",
-      "source": "daringfireball.net",
+      "orig_title": "有大佬听说国债要收利息税的事情吗？",
+      "source": "集思录",
       "category": "产品、设计与商业",
-      "link": "https://www.nytimes.com/2026/11/08/us/politics/rubio-nvidia-ceo-chinese-spy.html?unlocked_article_code=1.PFE.dLW7.D8C1YUYhNooj",
-      "zh_title": "鲁比奥就黄仁勋与中国间谍的婚外情向官员发出警告"
+      "link": "https://www.jisilu.cn/question/526718",
+      "zh_title": "有大佬听说国债要收利息税的事情吗？"
     },
     {
-      "orig_title": "Solana Set for Another Tokenized Stock Venue as Formation Notifies the SEC",
-      "source": "Decrypt",
-      "category": "产品、设计与商业",
-      "link": "https://decrypt.co/382859/solana-tokenized-stock-venue-formation-sec",
-      "zh_title": "随着Formation通知美国证券交易委员会，Solana将迎来又一个代币化股票交易场所"
-    },
-    {
-      "orig_title": "Monday assorted links",
-      "source": "Marginal REVOLUTION",
-      "category": "观点与杂谈",
-      "link": "https://marginalrevolution.com/marginalrevolution/2026/11/monday-assorted-links-585.html?utm_source=rss&utm_medium=rss&utm_campaign=monday-assorted-links-585",
-      "zh_title": "周一杂项链接"
-    },
-    {
-      "orig_title": "What Frontier Labs Buy: A Data Deep Dive with Handshake AI — Garrett Lord & Team",
+      "orig_title": "[AINews] Mercor $750m Series D at $20B valuation, $3B run rate",
       "source": "Latent.Space",
       "category": "AI 前沿",
-      "link": "https://latent.space/p/handshake/",
-      "zh_title": "前沿实验室买什么：与Handshake AI的数据深度探索——加勒特·洛德及团队"
+      "link": "https://latent.space/p/ainews-mercor-750m-series-d-at-20b-valuation-3b-run-rate/",
+      "zh_title": "[AINews] Mercor 完成 7.5 亿美元 D 轮融资，估值 200 亿美元，年化收入达 30 亿美元"
     },
     {
-      "orig_title": "Vitalik Buterin Moves On From ‘Ultrasound Money,’ Says ETH’s Value Is Stability",
+      "orig_title": "11 款超轻量自托管工具，最低只占 5MB 内存｜OpenStick 新玩法",
+      "source": "小众软件",
+      "category": "产品、设计与商业",
+      "link": "https://www.appinn.com/11-lightweight-self-hosted-apps-512mb-ram/",
+      "zh_title": "11 款超轻量自托管工具，最低仅占 5MB 内存｜OpenStick 新玩法"
+    },
+    {
+      "orig_title": "苹果新应用 Harbor 曝光：插线连接多台 Mac，一起运行本地大模型",
+      "source": "小众软件",
+      "category": "产品、设计与商业",
+      "link": "https://www.appinn.com/apple-harbor-mac-ai-cluster/",
+      "zh_title": "苹果新应用 Harbor 曝光：插线连接多台 Mac，一起运行本地大模型"
+    },
+    {
+      "orig_title": "UK fact of the day",
+      "source": "Marginal REVOLUTION",
+      "category": "观点与杂谈",
+      "link": "https://marginalrevolution.com/marginalrevolution/2026/11/uk-fact-of-the-day-9.html?utm_source=rss&utm_medium=rss&utm_campaign=uk-fact-of-the-day-9",
+      "zh_title": "今日英国趣闻"
+    },
+    {
+      "orig_title": "Nvidia’s crisis has corporate governance experts reaching for the popcorn",
+      "source": "TechCrunch",
+      "category": "AI 前沿",
+      "link": "https://techcrunch.com/2026/11/10/nvidias-crisis-has-corporate-governance-experts-reaching-for-the-popcorn/",
+      "zh_title": "英伟达危机令公司治理专家搬好小板凳看戏"
+    },
+    {
+      "orig_title": "TVPort – 苹果 Apple TV 4K 原生运行《超级马力欧：奥德赛》",
+      "source": "小众软件",
+      "category": "产品、设计与商业",
+      "link": "https://www.appinn.com/tvport-apple-tv/",
+      "zh_title": "TVPort – 苹果 Apple TV 4K 原生运行《超级马力欧：奥德赛》"
+    },
+    {
+      "orig_title": "Samsung Gallery now syncs with Google to back up your photos",
+      "source": "Engadget",
+      "category": "硬件",
+      "link": "https://www.engadget.com/2313059/samsung-gallery-syncs-with-google/",
+      "zh_title": "三星相册现与谷歌同步以备份照片"
+    },
+    {
+      "orig_title": "双11直播间爆改AI秀场，罗永浩上手TRAE，秒变AI Coding的大众嘴替",
+      "source": "量子位",
+      "category": "AI 前沿",
+      "link": "https://www.qbitai.com/2026/11/509146.html",
+      "zh_title": "双11直播间爆改AI秀场，罗永浩上手TRAE，秒变AI Coding的大众嘴替"
+    },
+    {
+      "orig_title": "微软为 Mac 推出 Process Explorer：比活动监视器更强大的进程管理工具",
+      "source": "小众软件",
+      "category": "产品、设计与商业",
+      "link": "https://www.appinn.com/process-explorer-for-macos/",
+      "zh_title": "微软为 Mac 推出 Process Explorer：比活动监视器更强大的进程管理工具"
+    },
+    {
+      "orig_title": "从“卖Token”到“卖结果” | 科技有「联想」沙龙激辩Token经济三大议题",
+      "source": "量子位",
+      "category": "AI 前沿",
+      "link": "https://www.qbitai.com/2026/11/509088.html",
+      "zh_title": "从“卖Token”到“卖结果” | 科技有「联想」沙龙激辩Token经济三大议题"
+    },
+    {
+      "orig_title": "卷起来了！11月11日，大模型厂商在天猫打5折",
+      "source": "量子位",
+      "category": "AI 前沿",
+      "link": "https://www.qbitai.com/2026/11/509085.html",
+      "zh_title": "卷起来了！11月11日，大模型厂商在天猫打5折"
+    },
+    {
+      "orig_title": "Spying makes a comeback",
+      "source": "Marginal REVOLUTION",
+      "category": "观点与杂谈",
+      "link": "https://marginalrevolution.com/marginalrevolution/2026/11/spying-makes-a-comeback.html?utm_source=rss&utm_medium=rss&utm_campaign=spying-makes-a-comeback",
+      "zh_title": "间谍活动卷土重来"
+    },
+    {
+      "orig_title": "当美国无法建设数据中心，会对 AI 产生怎样的冲击",
+      "source": "极客公园",
+      "category": "产品、设计与商业",
+      "link": "http://www.geekpark.net/news/373816",
+      "zh_title": "当美国无法建设数据中心，会对 AI 产生怎样的冲击"
+    },
+    {
+      "orig_title": "AI Engineer Code Summit: OpenAI on New Ways of Working With Codex",
+      "source": "Latent.Space",
+      "category": "AI 前沿",
+      "link": "https://latent.space/p/codex-work/",
+      "zh_title": "AI Engineer Code Summit：OpenAI 谈与 Codex 协作的新方式"
+    },
+    {
+      "orig_title": "无人拖拉机真正下地了！新疆大田深翻30+厘米，丘沃智能开物™系统首次完整曝光",
+      "source": "量子位",
+      "category": "AI 前沿",
+      "link": "https://www.qbitai.com/2026/11/509052.html",
+      "zh_title": "无人拖拉机真正下地了！新疆大田深翻30+厘米，丘沃智能开物™系统首次完整曝光"
+    },
+    {
+      "orig_title": "除了银河证券还有什么软件可以回测网格交易么",
+      "source": "集思录",
+      "category": "产品、设计与商业",
+      "link": "https://www.jisilu.cn/question/526704",
+      "zh_title": "除了银河证券还有什么软件可以回测网格交易么"
+    },
+    {
+      "orig_title": "X launches its own clipping feature to spur influencer engagement",
+      "source": "TechCrunch",
+      "category": "AI 前沿",
+      "link": "https://techcrunch.com/2026/11/10/x-launches-its-own-clipping-feature-to-spur-influencer-engagement/",
+      "zh_title": "X 推出自有剪辑功能，以激发网红互动"
+    },
+    {
+      "orig_title": "What is the average lifespan of recordable Blu-ray discs?",
+      "source": "Engadget",
+      "category": "硬件",
+      "link": "https://www.engadget.com/2307784/average-lifespan-recordable-blu-ray-discs/",
+      "zh_title": "可记录蓝光光盘的平均寿命是多少？"
+    },
+    {
+      "orig_title": "Following: Jensen Huang’s affair with an alleged Chinese spy and GPU smuggler",
+      "source": "Platformer",
+      "category": "AI 前沿",
+      "link": "https://www.platformer.news/following-jensen-huangs-affair-with-an-alleged-chinese-spy-and-gpu-smuggler/",
+      "zh_title": "追踪：黄仁勋与一名疑似中国间谍及GPU走私者的绯闻"
+    },
+    {
+      "orig_title": "CEO Interview: TripzSearch",
+      "source": "CB Insights",
+      "category": "产品、设计与商业",
+      "link": "https://www.cbinsights.com/research/ceo-interview-tripzsearch/",
+      "zh_title": "CEO 访谈：TripzSearch"
+    },
+    {
+      "orig_title": "CEO Interview: HeirLight",
+      "source": "CB Insights",
+      "category": "产品、设计与商业",
+      "link": "https://www.cbinsights.com/research/ceo-interview-heirlight/",
+      "zh_title": "CEO 访谈：HeirLight"
+    },
+    {
+      "orig_title": "CEO Interview: Architourge",
+      "source": "CB Insights",
+      "category": "产品、设计与商业",
+      "link": "https://www.cbinsights.com/research/ceo-interview-architourge/",
+      "zh_title": "CEO 访谈：Architourge"
+    },
+    {
+      "orig_title": "Anthropic 启动 IPO 路演，创始人将套现 17.5 亿美元；谷歌最强 AI 模型正式开放；任天堂招新：经典游戏保存员",
+      "source": "极客公园",
+      "category": "产品、设计与商业",
+      "link": "http://www.geekpark.net/news/373796",
+      "zh_title": "Anthropic 启动 IPO 路演，创始人将套现 17.5 亿美元；谷歌最强 AI 模型正式开放；任天堂招新：经典游戏保存员"
+    },
+    {
+      "orig_title": "Why your Roku might be plugged into the wrong HDMI port",
+      "source": "Engadget",
+      "category": "硬件",
+      "link": "https://www.engadget.com/2307791/why-roku-plugged-into-wrong-hdmi-port/",
+      "zh_title": "为什么你的 Roku 可能插错了 HDMI 端口"
+    },
+    {
+      "orig_title": "Delaying Internal Deployments Until After X Days of Safety Testing",
+      "source": "AI Alignment Forum",
+      "category": "AI 前沿",
+      "link": "https://www.alignmentforum.org/posts/XNLhpWgzhF8GYZ4Er/delaying-internal-deployments-until-after-x-days-of-safety",
+      "zh_title": "将内部部署推迟到安全测试满 X 天之后"
+    },
+    {
+      "orig_title": "iFixit teardown shows how Apple's glowing PROLED MacBook logo works",
+      "source": "Engadget",
+      "category": "硬件",
+      "link": "https://www.engadget.com/2312969/ifixit-teardown-shows-how-apples-glowing-proled-macbook-logo-works/",
+      "zh_title": "iFixit 拆解展示苹果发光 PROLED MacBook 标志如何工作"
+    },
+    {
+      "orig_title": "Glue work is still harmful in the age of AI",
+      "source": "seangoedecke.com",
+      "category": "工程与编程",
+      "link": "https://seangoedecke.com/glue-work-is-still-harmful-in-the-age-of-ai/",
+      "zh_title": "在 AI 时代，胶水工作仍然有害"
+    },
+    {
+      "orig_title": "Partnering with Edelbyte: Data Infrastructure That Keeps Up With AI's Curiosity",
+      "source": "Sequoia Capital",
+      "category": "产品、设计与商业",
+      "link": "https://www.sequoiacap.com/article/partnering-with-edelbyte-data-infrastructure-that-keeps-up-with-ai-s-curiosity",
+      "zh_title": "与 Edelbyte 合作：跟上 AI 好奇心的数据基础设施"
+    },
+    {
+      "orig_title": "How to get this Siri camera upgrade for your iPad before its public release",
+      "source": "Engadget",
+      "category": "硬件",
+      "link": "https://www.engadget.com/2312808/how-to-get-ipad-siri-camera-upgrade-early/",
+      "zh_title": "如何在公开发布前为你的 iPad 获得这个 Siri 摄像头升级"
+    },
+    {
+      "orig_title": "#504 – Russia-Ukraine War: Putin, Zelenskyy, Drones and the Future of Warfare",
+      "source": "Lex Fridman",
+      "category": "AI 前沿",
+      "link": "https://lexfridman.com/ukraine-war-preston-stewart-michael-kofman/?utm_source=rss&utm_medium=rss&utm_campaign=ukraine-war-preston-stewart-michael-kofman",
+      "zh_title": "#504 – 俄乌战争：普京、泽连斯基、无人机与战争的未来"
+    },
+    {
+      "orig_title": "Transcript for Russia-Ukraine War: Putin, Zelenskyy, Drones and the Future of Warfare | Lex Fridman Podcast #504",
+      "source": "Lex Fridman",
+      "category": "AI 前沿",
+      "link": "https://lexfridman.com/preston-stewart-michael-kofman-transcript/?utm_source=rss&utm_medium=rss&utm_campaign=preston-stewart-michael-kofman-transcript",
+      "zh_title": "俄乌战争：普京、泽连斯基、无人机与战争的未来 | Lex Fridman 播客 #504 文字记录"
+    },
+    {
+      "orig_title": "NVIDIA shareholders are suing the company and CEO Jensen Huang",
+      "source": "Engadget",
+      "category": "硬件",
+      "link": "https://www.engadget.com/2312947/nvidia-shareholders-are-suing-the-company-and-ceo-jensen-huang/",
+      "zh_title": "英伟达股东起诉该公司及 CEO 黄仁勋"
+    },
+    {
+      "orig_title": "Seagate's new hybrid drive raises some old questions",
+      "source": "Ars Technica - All content",
+      "category": "工程与编程",
+      "link": "https://arstechnica.com/gadgets/2026/11/seagate-resurrects-the-ssd-hdd-hybrid-drive/",
+      "zh_title": "希捷新款混合硬盘引发了一些老问题"
+    },
+    {
+      "orig_title": "How Not to Waste Your Life",
+      "source": "Brain Pickings",
+      "category": "观点与杂谈",
+      "link": "https://www.themarginalian.org/2026/11/10/hawthorne-life/",
+      "zh_title": "如何不浪费你的人生"
+    },
+    {
+      "orig_title": "Fable 5.2: The Self-Improvement Loop Keeps Loopin’ … (plus Gemini Carbon)",
+      "source": "AI Explained",
+      "category": "AI 前沿",
+      "link": "https://www.youtube.com/watch?v=583ThJIqQ7k",
+      "zh_title": "Fable 5.2：自我改进循环还在循环……（外加 Gemini Carbon）"
+    },
+    {
+      "orig_title": "Freedom vs. Safety: Axon CEO Rick Smith on the Future of Policing",
+      "source": "All-In Podcast",
+      "category": "产品、设计与商业",
+      "link": "https://allinchamathjason.libsyn.com/freedom-vs-safety-axon-ceo-rick-smith-on-the-future-of-policing",
+      "zh_title": "自由 vs. 安全：Axon CEO Rick Smith 谈警务的未来"
+    },
+    {
+      "orig_title": "The US military seems to be getting nervous about the launch supply crunch",
+      "source": "Ars Technica - All content",
+      "category": "工程与编程",
+      "link": "https://arstechnica.com/space/2026/11/the-us-military-seems-to-be-getting-nervous-about-the-launch-supply-crunch/",
+      "zh_title": "美国军方似乎对发射供应紧张感到不安"
+    },
+    {
+      "orig_title": "Ring cameras go mobile as Amazon debuts AI-powered security drone and robot",
+      "source": "Ars Technica - All content",
+      "category": "工程与编程",
+      "link": "https://arstechnica.com/ai/2026/11/ring-cameras-go-mobile-as-amazon-debuts-ai-powered-security-drone-and-robot/",
+      "zh_title": "Ring 摄像头走向移动化，亚马逊推出 AI 驱动的安全无人机和机器人"
+    },
+    {
+      "orig_title": "Gary Marcus: ‘Just Say No to Anthropic’s IPO’",
+      "source": "daringfireball.net",
+      "category": "产品、设计与商业",
+      "link": "https://garymarcus.substack.com/p/just-say-no-to-anthropics-ipo?r=3k69a0",
+      "zh_title": "Gary Marcus：‘对 Anthropic 的 IPO 直接说不’"
+    },
+    {
+      "orig_title": "Microsoft Fixes Nearly 1,100 Security Vulnerabilities",
+      "source": "krebsonsecurity.com",
+      "category": "安全",
+      "link": "https://krebsonsecurity.com/2026/11/microsoft-fixes-nearly-1100-security-vulnerabilities/",
+      "zh_title": "微软修复近 1,100 个安全漏洞"
+    },
+    {
+      "orig_title": "Democrats oppose plan to stack FCC with Republicans, plan probes of Chairman Carr",
+      "source": "Ars Technica - All content",
+      "category": "工程与编程",
+      "link": "https://arstechnica.com/tech-policy/2026/11/democrats-oppose-plan-to-stack-fcc-with-republicans-plan-probes-of-chairman-carr/",
+      "zh_title": "民主党人反对让共和党人充斥 FCC 的计划，计划调查主席 Carr"
+    },
+    {
+      "orig_title": "14 robotics founders who’ve already built a $1B company",
+      "source": "CB Insights",
+      "category": "产品、设计与商业",
+      "link": "https://www.cbinsights.com/research/14-robotics-founders-unicorns/",
+      "zh_title": "14 位已打造出 10 亿美元公司的机器人创始人"
+    },
+    {
+      "orig_title": "Grok Build coding agent leaks oodles of confidential info, some belonging to SpaceXSI",
+      "source": "Ars Technica - All content",
+      "category": "工程与编程",
+      "link": "https://arstechnica.com/security/2026/11/grok-build-coding-agent-leaks-oodles-of-confidential-info-some-belonging-to-spacexsi/",
+      "zh_title": "Grok Build 编程代理泄露大量机密信息，部分属于 SpaceXSI"
+    },
+    {
+      "orig_title": "OpenAI acquires Odessia, travel startup created by Sonder founder",
+      "source": "TechCrunch",
+      "category": "AI 前沿",
+      "link": "https://techcrunch.com/2026/11/10/openai-acquires-odessia-travel-startup-created-by-sonder-founder/",
+      "zh_title": "OpenAI 收购由 Sonder 创始人创办的旅游初创公司 Odessia"
+    },
+    {
+      "orig_title": "Altar II Keyboard on Kickstarter",
+      "source": "daringfireball.net",
+      "category": "产品、设计与商业",
+      "link": "https://www.kickstarter.com/projects/electronicamaterials/altar-ii/",
+      "zh_title": "Altar II 键盘登陆 Kickstarter"
+    },
+    {
+      "orig_title": "OpenAI, Anthropic face new oversight as New York’s AI safety law takes effect",
+      "source": "TechCrunch",
+      "category": "AI 前沿",
+      "link": "https://techcrunch.com/2026/11/10/openai-anthropic-face-new-oversight-as-new-yorks-ai-safety-law-takes-effect/",
+      "zh_title": "纽约州 AI 安全法生效，OpenAI、Anthropic 面临新监管"
+    },
+    {
+      "orig_title": "Proximal Ventures raises debut fund to back startups bringing AI to drug development",
+      "source": "TechCrunch",
+      "category": "AI 前沿",
+      "link": "https://techcrunch.com/2026/11/10/proximal-ventures-raises-debut-fund-to-back-startups-bringing-ai-to-drug-development/",
+      "zh_title": "Proximal Ventures 募集首期基金，支持将 AI 引入药物研发的初创企业"
+    },
+    {
+      "orig_title": "Nvidia Erases 2026 Gains as Republicans Threaten Jensen Huang With Subpoena",
       "source": "Decrypt",
       "category": "产品、设计与商业",
-      "link": "https://decrypt.co/382837/vitalik-buterin-moves-on-from-ultrasound-money-says-eths-value-is-stability",
-      "zh_title": "维塔利克·布特林告别‘超声波货币’理念，称ETH的价值在于稳定性"
+      "link": "https://decrypt.co/382974/nvidia-erases-2026-gains-republicans-threaten-ceo-subpoena",
+      "zh_title": "英伟达回吐 2026 年涨幅，共和党人威胁传唤黄仁勋"
     },
     {
-      "orig_title": "Nancy Pelosi’s replacement is ready to regulate AI",
-      "source": "MIT Tech Review",
-      "category": "AI 前沿",
-      "link": "https://www.technologyreview.com/2026/11/09/1148182/nancy-pelosis-replacement-is-ready-to-regulate-ai/",
-      "zh_title": "南希·佩洛西的继任者准备监管人工智能"
-    },
-    {
-      "orig_title": "Steiner Systems",
-      "source": "johndcook.com",
-      "category": "观点与杂谈",
-      "link": "https://www.johndcook.com/blog/2026/11/09/steiner-systems/",
-      "zh_title": "施泰纳系统"
-    },
-    {
-      "orig_title": "What MaintainX’s $3.6 billion acquisition tells us about industrial AI and the value of solving boring problems.",
-      "source": "Artificial Intelligence Made Simple",
-      "category": "AI 前沿",
-      "link": "https://www.artificialintelligencemadesimple.com/p/what-maintainxs-36-billion-acquisition",
-      "zh_title": "MaintainX的36亿美元收购告诉我们关于工业人工智能以及解决无聊问题的价值。"
-    },
-    {
-      "orig_title": "🎙️ How I AI: How this founder built a better Duolingo with Codex",
-      "source": "Lenny's Newsletter",
+      "orig_title": "Warren: What is White House doing to prevent a repeat of teleprompter's Trump bets?",
+      "source": "CoinDesk",
       "category": "产品、设计与商业",
-      "link": "https://www.lennysnewsletter.com/p/how-i-ai-how-this-founder-built-a",
-      "zh_title": "🎙️ 我如何用AI：这位创始人如何用Codex打造更好的多邻国"
+      "link": "https://www.coindesk.com/policy/2026/11/10/warren-what-is-white-house-doing-to-prevent-a-repeat-of-teleprompter-s-trump-bets",
+      "zh_title": "沃伦：白宫在做什么来防止提词器公司特朗普押注事件重演？"
+    },
+    {
+      "orig_title": "What happens to mathematics when AI becomes an oracle?",
+      "source": "Ars Technica - All content",
+      "category": "工程与编程",
+      "link": "https://arstechnica.com/science/2026/11/what-happens-to-mathematics-when-ai-becames-an-oracle/",
+      "zh_title": "当 AI 成为神谕，数学会怎样？"
+    },
+    {
+      "orig_title": "Finally, Payment by Bank Transfer Comes to Have I Been Pwned",
+      "source": "troyhunt.com",
+      "category": "安全",
+      "link": "https://www.troyhunt.com/finally-payment-by-bank-transfer-comes-to-have-i-been-pwned/",
+      "zh_title": "终于，Have I Been Pwned 支持银行转账支付"
+    },
+    {
+      "orig_title": "Near AI Breach Exposes User Details and Data From 18 AI Agents",
+      "source": "Decrypt",
+      "category": "产品、设计与商业",
+      "link": "https://decrypt.co/382965/near-ai-breach-exposes-user-details-data-ai-agents",
+      "zh_title": "Near AI 泄露事件暴露用户详情及 18 个 AI 代理的数据"
+    },
+    {
+      "orig_title": "Former NYSE president says stock issuers hold the key to tokenization as Bullish builds its platform",
+      "source": "CoinDesk",
+      "category": "产品、设计与商业",
+      "link": "https://www.coindesk.com/business/2026/11/10/former-nyse-president-says-stock-issuers-hold-the-key-to-tokenization-as-bullish-builds-its-platform",
+      "zh_title": "纽交所前总裁称股票发行人是代币化的关键，Bullish 正构建其平台"
+    },
+    {
+      "orig_title": "llm-gemini 0.36",
+      "source": "simonwillison.net",
+      "category": "AI 前沿",
+      "link": "https://simonwillison.net/2026/Nov/10/llm-gemini/",
+      "zh_title": "llm-gemini 0.36"
+    },
+    {
+      "orig_title": "Designing for Agents — Zeno Rocha, Resend",
+      "source": "Latent.Space",
+      "category": "AI 前沿",
+      "link": "https://latent.space/p/resend/",
+      "zh_title": "为代理而设计——Zeno Rocha，Resend"
+    },
+    {
+      "orig_title": "Are RCTs underpowered?",
+      "source": "Marginal REVOLUTION",
+      "category": "观点与杂谈",
+      "link": "https://marginalrevolution.com/marginalrevolution/2026/11/are-rcts-underpowered.html?utm_source=rss&utm_medium=rss&utm_campaign=are-rcts-underpowered",
+      "zh_title": "随机对照试验是否统计功效不足？"
+    },
+    {
+      "orig_title": "Elon Musk Calls Claude Opus 5.5 a 'Masterpiece', Admits Grok 4.8 Won't Match It",
+      "source": "Decrypt",
+      "category": "产品、设计与商业",
+      "link": "https://decrypt.co/382956/elon-musk-calls-claude-opus-5-5-masterpiece-grok-wont-match",
+      "zh_title": "埃隆·马斯克称 Claude Opus 5.5 为“杰作”，承认 Grok 4.8 无法匹敌"
+    },
+    {
+      "orig_title": "Google Fi adds support for a second 5G network, won't say which one",
+      "source": "Ars Technica - All content",
+      "category": "工程与编程",
+      "link": "https://arstechnica.com/google/2026/11/google-fi-adds-support-for-a-second-5g-network-wont-say-which-one/",
+      "zh_title": "Google Fi 新增对第二张 5G 网络的支持，但拒绝透露是哪家"
+    },
+    {
+      "orig_title": "Anthropic Has Some Anchor Investors",
+      "source": "Matt Levine",
+      "category": "产品、设计与商业",
+      "link": "https://www.bloomberg.com/opinion/newsletters/2026-11-10/anthropic-has-some-anchor-investors",
+      "zh_title": "Anthropic 拥有一些锚定投资者"
+    },
+    {
+      "orig_title": "Grayscale Bets $1 Million on Zcash as Privacy Coin Tumbles",
+      "source": "Decrypt",
+      "category": "产品、设计与商业",
+      "link": "https://decrypt.co/382962/grayscale-bets-1-million-on-zcash-as-privacy-coin-tumbles",
+      "zh_title": "Grayscale 在隐私币暴跌之际押注 100 万美元于 Zcash"
+    },
+    {
+      "orig_title": "Revisiting Leander v Sweden and Big Brother Watch",
+      "source": "berthub.eu",
+      "category": "工程与编程",
+      "link": "https://berthub.eu/articles/posts/revisiting-leander-and-big-brother/",
+      "zh_title": "重访 Leander 诉瑞典案与 Big Brother Watch 案"
+    },
+    {
+      "orig_title": "Now Yourself: The Elusive Science of What the Present Moment Is Made of and How It Makes You Who You Are",
+      "source": "Brain Pickings",
+      "category": "观点与杂谈",
+      "link": "https://www.themarginalian.org/2026/11/10/jo-marchant-now/",
+      "zh_title": "此刻的自己：当下由什么构成以及它如何塑造你，这门难以捉摸的科学"
+    },
+    {
+      "orig_title": "Making a Website in 2026",
+      "source": "blog.jim-nielsen.com",
+      "category": "产品、设计与商业",
+      "link": "https://blog.jim-nielsen.com/2026/making-websites-in-2026/",
+      "zh_title": "在2026年制作一个网站"
+    },
+    {
+      "orig_title": "Pixel phones getting new icon styles, Create My Widget, and more in November Pixel Drop",
+      "source": "Ars Technica - All content",
+      "category": "工程与编程",
+      "link": "https://arstechnica.com/gadgets/2026/11/november-pixel-drop-brings-gemini-intelligence-to-pixel-10-family/",
+      "zh_title": "Pixel手机在11月Pixel Drop中获得新图标样式、Create My Widget等更多功能"
+    },
+    {
+      "orig_title": "NaiveAI Promises 2,100 Tokens per Second. How Well Does It Code?",
+      "source": "Latent.Space",
+      "category": "AI 前沿",
+      "link": "https://latent.space/p/naiveai/",
+      "zh_title": "NaiveAI承诺每秒2100个Token。它的编码能力如何？"
+    },
+    {
+      "orig_title": "Free video-streaming service Tubi lets users share curated watchlists now",
+      "source": "Ars Technica - All content",
+      "category": "工程与编程",
+      "link": "https://arstechnica.com/gadgets/2026/11/free-video-streaming-service-tubi-lets-users-share-curated-watchlists-now/",
+      "zh_title": "免费视频流媒体服务Tubi现允许用户分享精选观看列表"
+    },
+    {
+      "orig_title": "Tuesday links: one big bet",
+      "source": "Abnormal Returns",
+      "category": "产品、设计与商业",
+      "link": "https://abnormalreturns.com/2026/11/10/tuesday-links-one-big-bet/",
+      "zh_title": "周二链接：一场大赌注"
+    },
+    {
+      "orig_title": "MegaETH Bets $30M on an AI Inference Market",
+      "source": "Bankless",
+      "category": "产品、设计与商业",
+      "link": "https://www.bankless.com/read/news/megaeth-bets-30m-on-an-ai-inference-market",
+      "zh_title": "MegaETH押注3000万美元于AI推理市场"
+    },
+    {
+      "orig_title": "Jensen's Bizarre Adventure",
+      "source": "wheresyoured.at",
+      "category": "产品、设计与商业",
+      "link": "https://www.wheresyoured.at/jensens-bizarre-adventure/",
+      "zh_title": "Jensen的奇妙冒险"
+    },
+    {
+      "orig_title": "Pluralistic: The EU should go big and hard over border IT failure (10 Nov 2026)",
+      "source": "pluralistic.net",
+      "category": "观点与杂谈",
+      "link": "https://pluralistic.net/2026/11/10/worst-of-all-worlds/",
+      "zh_title": "多元主义：欧盟应在边境IT故障上采取强硬大规模行动（2026年11月10日）"
+    },
+    {
+      "orig_title": "We need more goat sacrifices",
+      "source": "experimental-history.com",
+      "category": "观点与杂谈",
+      "link": "https://www.experimental-history.com/p/we-need-more-goat-sacrifices",
+      "zh_title": "我们需要更多山羊献祭"
+    },
+    {
+      "orig_title": "Bloomberg: ‘Nvidia Intervened in U.S. Probe of Megaspeed Chip Smuggling’",
+      "source": "daringfireball.net",
+      "category": "产品、设计与商业",
+      "link": "https://www.bloomberg.com/news/articles/2026-11-09/nvidia-intervened-in-us-probe-of-megaspeed-chip-smuggling",
+      "zh_title": "彭博社：“英伟达干预美国对Megaspeed芯片走私的调查”"
+    },
+    {
+      "orig_title": "Building networks for agents",
+      "source": "a16z crypto",
+      "category": "产品、设计与商业",
+      "link": "https://a16zfrontier.com/posts/article/building-networks-for-agents/",
+      "zh_title": "为智能体构建网络"
+    },
+    {
+      "orig_title": "Regarding Graveyards and Indispensable Men",
+      "source": "daringfireball.net",
+      "category": "产品、设计与商业",
+      "link": "https://www.youtube.com/watch?v=vydmUCGQnyI",
+      "zh_title": "关于墓地和不可或缺的人"
+    },
+    {
+      "orig_title": "Pablo Neruda on How to Hold Time",
+      "source": "Brain Pickings",
+      "category": "观点与杂谈",
+      "link": "https://www.themarginalian.org/2026/11/10/neruda-time/",
+      "zh_title": "巴勃罗·聂鲁达论如何把握时间"
+    },
+    {
+      "orig_title": "Tuesday assorted links",
+      "source": "Marginal REVOLUTION",
+      "category": "观点与杂谈",
+      "link": "https://marginalrevolution.com/marginalrevolution/2026/11/tuesday-assorted-links-594.html?utm_source=rss&utm_medium=rss&utm_campaign=tuesday-assorted-links-594",
+      "zh_title": "周二杂项链接"
+    },
+    {
+      "orig_title": "Steven Levy on John Ternus",
+      "source": "daringfireball.net",
+      "category": "产品、设计与商业",
+      "link": "https://www.wired.com/story/i-spent-30-minutes-with-apples-ceo-now-i-know-why-john-ternus-got-the-job/",
+      "zh_title": "史蒂文·利维谈约翰·特努斯"
+    },
+    {
+      "orig_title": "Q3.5 Timelines Update: Looks Like the Intelligence Explosion Will Happen in 2027 After All",
+      "source": "AI Alignment Forum",
+      "category": "AI 前沿",
+      "link": "https://www.alignmentforum.org/posts/f9PajMLmBYzmWzyDv/q3-5-timelines-update-looks-like-the-intelligence-explosion",
+      "zh_title": "第三季度半时间线更新：看来智能爆炸终究会在2027年发生"
     }
   ],
   "filtered": [
     {
-      "orig_title": "Ross Unveils Tacit Chain, a Private Payments Rollup on Ethereum",
+      "orig_title": "🏴 Crypto Privacy Expands to the Network Layer",
       "source": "Bankless",
       "reason": "纯币圈，已按编辑规则滤掉"
     },
     {
-      "orig_title": "Coinbase Secures Final OCC Approval for Its National Trust Bank",
+      "orig_title": "Crypto Privacy Expands to the Network Layer",
       "source": "Bankless",
       "reason": "纯币圈，已按编辑规则滤掉"
     },
     {
-      "orig_title": "Will stablecoins survive once the banks catch up?",
+      "orig_title": "Phylax and Titan Bring Circuit Breakers to Ethereum",
+      "source": "Bankless",
+      "reason": "纯币圈，已按编辑规则滤掉"
+    },
+    {
+      "orig_title": "Warren Puts Prediction Markets, Trump Crypto on Banking Agenda",
+      "source": "Bankless",
+      "reason": "纯币圈，已按编辑规则滤掉"
+    },
+    {
+      "orig_title": "OKXICE to debut tokenized stock trading with Strategy, Coinbase, Circle this month",
       "source": "CoinDesk",
       "reason": "纯币圈，已按编辑规则滤掉"
     },
     {
-      "orig_title": "Bitcoin breaks with stocks, declines as ETF outflows mount, MARA reduces holdings",
+      "orig_title": "Live news: Bitcoin remains under pressure as CoreWeave, Nvidia lead AI rebound",
       "source": "CoinDesk",
       "reason": "纯币圈，已按编辑规则滤掉"
     },
     {
-      "orig_title": "Bitcoin lags stock rebound in advance of U.S. inflation report",
+      "orig_title": "Bitcoin barely flinches at hot CPI as ETF selling slows",
       "source": "CoinDesk",
       "reason": "纯币圈，已按编辑规则滤掉"
     },
     {
-      "orig_title": "Bitcoin slips before U.S. inflation report as traders price in Fed rate increase",
+      "orig_title": "Bitcoin sits out stock rebound as ETF outflows extend to fourth day",
       "source": "CoinDesk",
       "reason": "纯币圈，已按编辑规则滤掉"
     },
     {
-      "orig_title": "Live news: Bitcoin falls to nearly three-month low after disappointing inflation data",
+      "orig_title": "Bitcoin stuck under $74,000 as CoreWeave earnings revive AI outlook, Anthropic said to raise IPO valuation",
       "source": "CoinDesk",
       "reason": "纯币圈，已按编辑规则滤掉"
     },
     {
-      "orig_title": "The crypto wallet that grew up inside Telegram is striking out on its own",
+      "orig_title": "Goldman Sachs, Citi among banks said to commit $270 million to stablecoin venture",
       "source": "CoinDesk",
       "reason": "纯币圈，已按编辑规则滤掉"
     },
     {
-      "orig_title": "Coinbase, Kalshi, Kraken parent back CFTC in legal fight over stock perpetual futures",
+      "orig_title": "Crypto is now teamed up with U.S. government in two legal battles over perps",
       "source": "CoinDesk",
       "reason": "纯币圈，已按编辑规则滤掉"
     },
     {
-      "orig_title": "An 11-year-old Ethereum wallet moved $4.6 million and dodged a scam set up in minutes",
-      "source": "CoinDesk",
-      "reason": "纯币圈，已按编辑规则滤掉"
-    },
-    {
-      "orig_title": "Bitcoin miner MARA sold 13,597 BTC for $1.1 billion in six weeks, plans to sell more",
-      "source": "CoinDesk",
-      "reason": "纯币圈，已按编辑规则滤掉"
-    },
-    {
-      "orig_title": "Bitcoin faces U.S. CPI test as analysts warn inflation relief may not be enough",
-      "source": "CoinDesk",
-      "reason": "纯币圈，已按编辑规则滤掉"
-    },
-    {
-      "orig_title": "Robinhood backs tokenization of its stock on OKX–ICE platform even as most companies opt out",
-      "source": "CoinDesk",
-      "reason": "纯币圈，已按编辑规则滤掉"
-    },
-    {
-      "orig_title": "A Bitcoin block just neared a 2015 transaction record, but paid only $180 in fees",
-      "source": "CoinDesk",
-      "reason": "纯币圈，已按编辑规则滤掉"
-    },
-    {
-      "orig_title": "Binance Warns of Apple iOS Flaw That Could Expose iPhone Users' Private Keys",
+      "orig_title": "Morning Minute: What Anthropic’s $1.4 Trillion IPO Means for Crypto",
       "source": "Decrypt",
       "reason": "纯币圈，已按编辑规则滤掉"
     },
     {
-      "orig_title": "Binance Halts MEXC Transfers as FinCEN Cuts Exchange Off From US Financial System",
+      "orig_title": "Prisoner Jailed for 8 Years Over $2.7M Crypto Theft Plot Run From His Cell",
       "source": "Decrypt",
       "reason": "纯币圈，已按编辑规则滤掉"
     },
     {
-      "orig_title": "'Tough Questions' Ahead: Warren Targets Prediction Markets, Trump Crypto as Banking Chair",
+      "orig_title": "Bitcoin Miner HIVE Eyes $45 Million in Annual Revenue From AI Deal",
       "source": "Decrypt",
       "reason": "纯币圈，已按编辑规则滤掉"
     },
     {
-      "orig_title": "Binance Hack Launderers Mint Elon Musk and Animal Meme Coins to Move Stolen Crypto",
+      "orig_title": "Trump Media Posts $410 Million Profit. Bitcoin Gains Did the Heavy Lifting",
       "source": "Decrypt",
       "reason": "纯币圈，已按编辑规则滤掉"
     },
     {
-      "orig_title": "Bitcoin in Limbo as Stocks Rebound Ahead of US Inflation Report",
+      "orig_title": "Goldman, Citi and Global Banks Commit $270 Million to Challenge Crypto’s Stablecoin Giants",
       "source": "Decrypt",
       "reason": "纯币圈，已按编辑规则滤掉"
     },
     {
-      "orig_title": "Tom Lee’s Bitmine Adds $20M in Ethereum, Seizing on Vitalik’s 'ETH Is Money' Declaration",
+      "orig_title": "Bitcoin Falls as Hot US Inflation Fuels Fears of Bigger Fed Rate Hike",
       "source": "Decrypt",
       "reason": "纯币圈，已按编辑规则滤掉"
     }
