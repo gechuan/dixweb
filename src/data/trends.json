@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026年11月13日 15:16",
+  "updatedAt": "2026年11月14日 14:54",
   "sources": [
     {
       "id": "huggingface",
@@ -24,11 +24,27 @@
           "date": "11月12日"
         },
         {
+          "id": "6555437bf43bb529ac0e03f70695e955",
+          "title": "TTB：面向仅解码器视角合成模型高效渲染的测试时烘焙",
+          "summary": "这篇论文解决的是一个很实际的问题：只解码器（decoder-only）的新视角合成模型效果已经很好，但渲染速度慢，而现有的加速方案 TTT 又掉质量。作者提出 Test-Time Baking，想把两边的优点都拿到。 对做 3D 重建、实时渲染或者多模态模型推理优化的人来说，这篇值得扫一眼。 它没有去改模型架构，而是在测试阶段做一次“烘焙”：把跨视角注意力…",
+          "href": "https://arxiv.org/abs/2611.17331",
+          "meta": "arXiv 2611.17331",
+          "date": "11月12日"
+        },
+        {
           "id": "6e4a332a42ae657c920336dd00046ab8",
           "title": "Ropedia Xperience 2：扩展物理 AI 环境与行为基准的黄金标准",
           "summary": "最近几周物理 AI 方向最值得看的一份数据工作，可能就是这篇 Ropedia Xperience 2。它没有提出新模型，也不刷榜，它想回答一个更基础的问题： 物理 AI 的能力，到底怎么随环境和行为的规模增长？ 这个问题现在卡在一个很实际的瓶颈上。GPT-6 Astra、Claude Fable 5.1 这类大模型已经能直接从视觉观测控制机器人，但在长时序…",
           "href": "https://arxiv.org/abs/2611.17060",
           "meta": "arXiv 2611.17060",
+          "date": "11月11日"
+        },
+        {
+          "id": "85e9d9f73a2c553561f8888c96cb859b",
+          "title": "拆解多模态视觉编码",
+          "summary": "多模态语言模型到底该怎么“看”图，这件事一直没有定论。大多数模型沿用预训练好的视觉编码器，也有一批新做法干脆从零和语言模型一起训，甚至把编码器整个拿掉。 问题在于，已发布的模型在数据、架构、算力上都不同，直接比谁强谁弱，根本分不清是哪个设计选择在起作用。这篇论文做的事很朴素：把视觉编码器拆成三个可以单独控制的选择，在统一数据、统一总算力下从零训练所有模型，…",
+          "href": "https://arxiv.org/abs/2611.17334",
+          "meta": "arXiv 2611.17334",
           "date": "11月11日"
         },
         {
@@ -40,6 +56,14 @@
           "date": "11月11日"
         },
         {
+          "id": "9538e1e0be68a1d20b9846645fbd89b9",
+          "title": "DeepStress：对深度搜索 Agent 进行压力测试",
+          "summary": "搜索类 Agent 现在跑分很好看，但有个问题一直没被认真测过： 当检索回来的证据质量变差时，它还能不能保持清醒？ 现实里的搜索环境很脏。过期页面、看起来权威其实不可信的站点、跟问题沾边但事实错误的文档，这些在标准 benchmark 里几乎见不到。所以 Agent 在多步问答里翻车，往往没法稳定复现，也就没法系统性地改进。 这篇 DeepStress 就…",
+          "href": "https://arxiv.org/abs/2607.13920",
+          "meta": "arXiv 2607.13920",
+          "date": "11月11日"
+        },
+        {
           "id": "b2bd76884b79607fd1282cac53fa9e14",
           "title": "WorldDraft：若代码构建世界，视频模型能否只负责渲染？",
           "summary": "视频模型到底该不该自己“想象”世界？这篇论文给了一个很工程化的回答：让代码负责搭世界，视频模型只负责渲染。 WorldDraft 讨论的是 4D 世界构建与视觉生成的分工。多模态编码 Agent 先把 4D 运动学、相机路径、物体属性用代码写清楚，视频模型再把这些“草稿”渲染成画面。分工听起来合理，但一旦视频模型只是渲染器，它就得守住两条底线： 结构不能跑…",
@@ -48,44 +72,20 @@
           "date": "11月11日"
         },
         {
-          "id": "c5975690ec8a52469ffd3154255f2a16",
-          "title": "PhysLoop：利用大模型物理感知实现视频生成模型自我改进",
-          "summary": "视频生成模型现在能做出很漂亮的画面，但一到物理规律就容易露馅：球落地反弹不自然、物体碰撞后运动轨迹诡异、因果关系对不上。这篇 PhysLoop 想做的事挺有意思，它不训练新的视频模型，而是搭一套流程，让 LLM 的物理常识去指导视频生成、筛选和修正，把物理监督信号蒸馏进视频数据里。 换句话说， 它在尝试让视频生成模型自己发现错误、自己修，往递归自我改进（R…",
-          "href": "https://arxiv.org/abs/2611.16748",
-          "meta": "arXiv 2611.16748",
+          "id": "b42ac56503061aca62b8f38407ff6f18",
+          "title": "基于参考帧的无人机视频稳定中的共识捕获：动态城市场景基准测试",
+          "summary": "无人机悬停拍路口，画面里车流滚滚。你想把每一帧都对到同一张参考图上，好比较车辆位置。问题是，现有的配准流程都是在“只有相机在动”的数据集上挑出来的。真到了繁忙路口，一群车朝同一方向开，它们给出的对应点彼此高度一致，反而可能把单应矩阵估计拽向车流的运动。 这篇论文给这个现象起了个名字： consensus capture ，共识捕获。它值得看的地方在于，这不…",
+          "href": "https://arxiv.org/abs/2611.17190",
+          "meta": "arXiv 2611.17190",
           "date": "11月11日"
         },
         {
-          "id": "dfeb109225d75ee3a6c65319eb9f6634",
-          "title": "UniSpark：探索混合注意力实现多模态理解与生成",
-          "summary": "多模态统一模型这两年一直有个尴尬：理解任务喜欢全注意力，生成任务嫌它太贵；线性注意力便宜，又怕它记不住细节。UniSpark 这篇论文正对着这个矛盾来，试的是 把两种注意力混在一个模型里 ，让理解和生成共用一个骨干。 论文来自 arXiv，标题 UniSpark，模型叫 UniSpark-9B。摘要里给的判断很明确：混合注意力可以作为统一多模态理解与生成的…",
-          "href": "https://arxiv.org/abs/2611.16517",
-          "meta": "arXiv 2611.16517",
+          "id": "b87a7389fa8ff06d9ba5f9d823cdf82a",
+          "title": "面向递归自我改进的经验交接强化学习",
+          "summary": "这篇论文想碰一个很实际的问题：智能体跑任务时踩的坑、报的错、留下的日志，现在大多被浪费了。 主流做法是用标量奖励做 RL，只告诉模型“这次做得好不好”，但环境里那些细粒度信息，比如错误日志、失败原因，全丢掉了。另一条路是给智能体套一层 harness，让它反思、压缩、把经验写成 playbook 传给下一次 rollout。问题是，这个“写经验”的动作本身…",
+          "href": "https://arxiv.org/abs/2611.16409",
+          "meta": "arXiv 2611.16409",
           "date": "11月11日"
-        },
-        {
-          "id": "4e1fa9050cde8f06de1273ae0be3ef89",
-          "title": "SO-Arena：评测 System One 模型的能力谱系与可靠性",
-          "summary": "这篇论文值得看的地方，不在它又刷了什么榜，而在它把“快思考模型”拉到一个更接近真实使用场景的台面上： 不只看答对多少，还看答得稳不稳、知不知道自己没答案 。 System One 模型指的是不靠长链推理、直接给决策的那类模型。它们快、通用，但摘要里点出一个尴尬现实：现有评测大多只看总分，看不出能力覆盖面有多宽，也看不出决策可不可靠。SO-Arena 就是冲…",
-          "href": "https://arxiv.org/abs/2611.15777",
-          "meta": "arXiv 2611.15777",
-          "date": "11月11日"
-        },
-        {
-          "id": "9997292c8a1955047e9e37bd60bf70a4",
-          "title": "Duo：面向全双工交互的互惠世界模型",
-          "summary": "这篇论文提出一个叫 Reciprocal World Model（RWM）的世界模型框架，还放出了第一个版本 Duo v1。它想做的事，是让模型一边持续看和听，一边实时回应你，也就是真正的全双工交互。 值得看的地方在于它的野心 ：作者认为现有世界模型基本只在模拟“物理现实”，推理和决策被放在模型外面当控制器用。RWM 的主张是，智能和物理现实一样，都是“世…",
-          "href": "https://arxiv.org/abs/2611.15131",
-          "meta": "arXiv 2611.15131",
-          "date": "11月10日"
-        },
-        {
-          "id": "9a1af963defbd48f095d5f9779901087",
-          "title": "BirdDreams：联合视角与 BEV 视频生成，构建可信可响应的驾驶世界模型",
-          "summary": "这篇论文想解决一个很实际的问题：驾驶世界模型怎么把“周围车怎么动”和“我按这条轨迹开会变成什么样”同时模拟出来。多数做法只能顾一头，要么依赖预先给定的车辆布局，要么只生成视角视频，车辆运动与外观纠缠在一起，遮挡一多就学不明白。 BirdDreams 的思路是让模型同时生成两路视频：一路是常规的视角视频，一路是俯视的 BEV 示意图。 BEV 不是辅助可视化…",
-          "href": "https://arxiv.org/abs/2611.14815",
-          "meta": "arXiv 2611.14815",
-          "date": "11月10日"
         }
       ]
     },
@@ -96,84 +96,84 @@
       "note": "新产品发布，观察用户正在为什么工作流付费。",
       "items": [
         {
-          "id": "3444957625ad026d3f4ae038f284777b",
-          "title": "Didit MCP：用于身份验证与欺诈检测的 MCP 服务器",
-          "summary": "身份验证这件事，过去是给人用的。填表、拍照、活体检测，每一步都假设屏幕前坐着一个真人。Didit 这次把它交给了 AI Agent。 Didit MCP 做的事情可以用一句话说清：把 Didit 的身份验证平台接到任何支持 Model Context Protocol 的客户端上，让 Agent 用自然语言直接跑 KYC、KYB、AML 筛查和交易监控。…",
-          "href": "https://www.producthunt.com/products/didit-3",
-          "meta": "Maker · Alberto Rosas",
-          "date": "11月12日"
+          "id": "dd4d33d39996d0c5305f7cfd0e65ea7a",
+          "title": "de:volt：浏览器中具备真实物理效果的电路板模拟器",
+          "summary": "浏览器里能跑电路仿真，还带面包板和 Arduino 代码支持。这句话放在几年前，听起来像某个硬件工程师的周末玩具。现在它成了一个可以直接打开就用的产品：de:volt。 它到底在做什么 一句话概括： 把电路实验从桌面上搬到浏览器标签页里。 传统流程是先装一套仿真软件，画原理图，再对着真实面包板插线，中间来回对照。de:volt 把原理图和面包板并排放进同一…",
+          "href": "https://www.producthunt.com/products/de-volt",
+          "meta": "Maker · Dev Kapadia",
+          "date": "11月13日"
         },
         {
-          "id": "2e425ef957380ea91ea72d2e6a17b0e7",
-          "title": "Hoy for Mac：对讲机、AirDrop 与 Messages 的结合体",
-          "summary": "Walkie-talkie meets AirDrop meets Messages",
-          "href": "https://www.producthunt.com/products/hoy-for-mac",
-          "meta": "Maker · Dominik Kandravý",
-          "date": "11月12日"
+          "id": "ea47065aef30f0c8e2702b652327634d",
+          "title": "StockRip：限量抢购与存款奖励平台",
+          "summary": "Product Hunt 上出现了一个叫 StockRip 的产品，官网标题写得很直白： Rip a tokenized stock position ，把一个代币化股票仓位“撕”下来。但它没有走常见的 DEX 聚合器或链上券商路线，而是把这件事做成了一个带博弈色彩的池子游戏。 先把边界说清楚：官网抓取到的内容只有两段机制说明，没有价格、团队、融资、用户量…",
+          "href": "https://www.producthunt.com/products/stockrip",
+          "meta": "Maker · Gami",
+          "date": "11月13日"
         },
         {
-          "id": "4adc7cc366993ee1c224c20f32c28fb0",
-          "title": "Crossfade：让编码 Agent 在你打开的 Figma 文件中做设计",
-          "summary": "Figma 的 MCP 服务器有个隐性成本：Agent 干活是循环的，读一次、改一次、截个图自查、再改。每一步都算调用次数，而 Figma 那边是按次数计费的。 Crossfade 的思路很直接：把这个桥接搬到本地，让调用次数这件事消失。 它到底做了什么 Crossfade 是一个跑在 Figma 桌面端里的插件。装上之后，Claude Code、Code…",
-          "href": "https://www.producthunt.com/products/crossfade",
-          "meta": "Maker · Sabarish Sanjay",
-          "date": "11月12日"
+          "id": "c69526a27e741501d2110b0b03bfd7c8",
+          "title": "Claude Meetings：把 Claude 加入通话，边聊边开工",
+          "summary": "Claude 出了一个会主动找你的版本。 过去用 Claude，路径固定：打开对话框，写提示词，等回复。这次方向反了。新东西叫 Claude Duet，官方给的定位是“主动型智能体”，它自己判断什么需要你注意，然后来找你。 先说清楚边界： 这是研究预览，美国区 Pro 和 Max 订阅用户排队开通，Team 和 Enterprise 还不在范围内 。想试的…",
+          "href": "https://www.producthunt.com/products/claude",
+          "meta": "Maker · KP",
+          "date": "11月13日"
         },
         {
-          "id": "e418a1b3d6ecf2b14b0a512a00fef7aa",
-          "title": "Offstage Cloud：为 AI Agent 提供按需 macOS 沙箱",
-          "summary": "AI Agent 想跑通 iOS 和 Mac 开发流程，一直卡在一个很现实的问题上：它需要一台真正的 macOS 机器。Linux 容器再便宜，也装不了 Xcode，开不了 iOS 模拟器。Offstage Cloud 想解决的正是这个缺口。 它到底提供什么 按 Offstage Cloud 在 Product Hunt 上的描述，这是一个按需启动的 ma…",
-          "href": "https://www.producthunt.com/products/offstage-cloud",
-          "meta": "Maker · Viraat Das",
-          "date": "11月12日"
+          "id": "7c480c93ab093e14d583143a3d98885d",
+          "title": "Replicate：免费将 Webflow/Framer 应用转为 Claude/Codex 项目",
+          "summary": "Turn Webflow/Framer app into a Claude/Codex project for free",
+          "href": "https://www.producthunt.com/products/replicate-10",
+          "meta": "Maker · Garry Tan",
+          "date": "11月13日"
         },
         {
-          "id": "b82298e0f2fce3381e75a21c647b09f9",
-          "title": "Oxagen：Agent 共享与维护上下文的控制中心",
-          "summary": "一个团队同时跑十几个 AI Agent，月底账单出来，没人说得清哪笔钱是谁花的、花在哪个任务上。这不是假设，是多数团队上 Agent 之后的真实状态。 Oxagen 想解决的正是这件事。它给自己的定位叫 Agent 控制平面 ，说白了就是给自主 Agent 做“人事管理”：每个 Agent 有身份、有权限、有预算、有工具清单，干过的活全部留档可查。 它管的…",
-          "href": "https://www.producthunt.com/products/oxagen",
-          "meta": "Maker · Mac Anderson",
-          "date": "11月12日"
+          "id": "109831a7a7c8a04c62fb45f7f6a8fd13",
+          "title": "Pocket Studio for Supabase：Android 版 Supabase 仪表盘与 SQL 编辑器",
+          "summary": "Supabase dashboard & SQL editor for Android",
+          "href": "https://www.producthunt.com/products/pocket-studio-for-supabase",
+          "meta": "Maker · Tanay",
+          "date": "11月13日"
         },
         {
-          "id": "ac110af5495c2d7e07a5d32e5c21ecec",
-          "title": "Blendra：录制一次流程，生成属于你的 Playwright 测试项目",
-          "summary": "端到端测试最烦人的地方，往往不是写第一版，而是三个月后它挂了，没人知道为什么。Blendra 想解决的正是这个问题：在 Chrome 里录一遍操作，直接生成属于你自己的 Playwright 代码，跑在云端，失败时用大白话告诉你原因。 产品本身是一个 Chrome 扩展，叫 Blendra Recorder，官网在 blendra.app。目前版本 0.6…",
-          "href": "https://www.producthunt.com/products/blendra",
-          "meta": "Maker · Blend Emini",
-          "date": "11月12日"
+          "id": "1a6f8bb13ec42047c366f1ad48f2b426",
+          "title": "WHOOP Humans：围绕真实健康数据构建的 WHOOP 社交网络",
+          "summary": "一个做手环的公司，突然宣布要做社交网络，而且入网门槛是：你得先有心跳。 这就是 WHOOP 刚推的新功能 WHOOP Humans。它把会员的健康数据做成了一条应用内信息流，让用户把睡眠、恢复、 strain 这些指标分享给朋友和家人。 听起来像又一个健身打卡社区？不太一样。 这个网络里没有机器人账号，因为每个活跃账户都必须由一块 WHOOP 设备记录的连…",
+          "href": "https://www.producthunt.com/products/whoop",
+          "meta": "Maker · Justin Jincaid",
+          "date": "11月13日"
         },
         {
-          "id": "3dd57004f3341fabcfa3ea684d06d049",
-          "title": "Nameshot：自动为截图命名",
-          "summary": "Mac 桌面上躺着一堆名字像乱码的文件：“Screenshot 2026-10-12 at 9.41.07 AM”。你知道里面有张重要的收据，但打开之前，它和另外三十张截图长得一模一样。 Nameshot 想解决的就是这件小事。它把这些机器命名的截图，改成“Passive-Aggressive Roommate Note”“FaceTime Call wi…",
-          "href": "https://www.producthunt.com/products/nameshot-2",
-          "meta": "Maker · Chris Messina",
-          "date": "11月12日"
+          "id": "7840fa6e85e46eae1a0162f9cfba6bc7",
+          "title": "Paxper：可视化创建云基础设施并审查每项变更",
+          "summary": "云上出事，很少是因为有人故意搞破坏。更多时候，是周五下午某人在控制台点了几下，没写进任何文档；或者一份 400 行的 plan 输出，评审的人直接滚到底点了通过。 Paxper 想解决的正是这类“没人看见就出事”的问题。它的思路不复杂： 把架构图画成唯一的事实来源，每次改动先给你看一份短计划，人点头了才落到你自己的云账号里。 它到底是个什么东西 一句话概括…",
+          "href": "https://www.producthunt.com/products/paxper",
+          "meta": "Maker · Kerem D",
+          "date": "11月13日"
         },
         {
-          "id": "bd50e9b9d666d25b6e04178109ed9a10",
-          "title": "Jot 2.0：选中文本连按两次 Shift，即刻生成 Markdown 文件",
-          "summary": "Select text, tap Shift twice, it's a markdown file",
-          "href": "https://www.producthunt.com/products/jot-2-0",
-          "meta": "Maker · Mohak Bajaj",
-          "date": "11月12日"
+          "id": "d41b2822d2e1a4064789afabe9889b21",
+          "title": "Hoverine：可直接嵌入应用的 Rive 动画模板",
+          "summary": "做前端的人大概都有过这种经历：在 Dribbble 或 X 上刷到一个丝滑的交互动画，鼠标悬停、图标变形、按钮带物理回弹，心里想“这个我也能做”，然后打开 Rive 或者 After Effects，折腾两小时，做出来一个僵硬得像 PPT 切换效果的东西。 Hoverine 就是冲着这个落差来的。它是一个 Rive 模板市场，提供免费和付费的交互式动画模板…",
+          "href": "https://www.producthunt.com/products/hoverine",
+          "meta": "Maker · Manuel Diaz",
+          "date": "11月13日"
         },
         {
-          "id": "6c5ecefa8da39105b9c27c568c8fcc3e",
-          "title": "WizardNote：手机自动转录语音笔记并保存为 Markdown",
-          "summary": "语音笔记这类工具，最尴尬的地方在于：它一边承诺帮你记住一切，一边把录音传到某个看不见的服务器上。WizardNote 切的就是这个痛点， 录音和转写全程跑在手机上，不联网也能用 。 官网首页挂着一句用户评价：“First one I came across, that doesn't send data outside my phone.” 这句话基本就是…",
-          "href": "https://www.producthunt.com/products/wizardnote",
-          "meta": "Maker · Jan Langhans",
-          "date": "11月12日"
+          "id": "aa5d8960c0b151d30f1ea1936f02e15b",
+          "title": "GAtrends：在 Telegram、Claude、ChatGPT 中为关键词提供激增提醒",
+          "summary": "Google Trends 给你一张曲线图，但不会告诉你“这条线今天不正常”。Google Alerts 每有一条提及就发一封邮件，节日和平常一个样。这两个工具之间的空隙，就是 GAtrends 想填的位置。 它的定位一句话能说清： 给任意关键词装一个趋势雷达，只在异常的时候响。 它到底在监测什么 GAtrends 同时盯 7 个来源：Google New…",
+          "href": "https://www.producthunt.com/products/gatrends",
+          "meta": "Maker · Bohdan Bondarchuk",
+          "date": "11月13日"
         },
         {
-          "id": "66748128b167a444996b0f0148634700",
-          "title": "Skysoon：精美天气时间线与倒计时",
-          "summary": "天气 App 的老问题是：它告诉你现在几度，却不告诉你接下来会怎样。 你打开天气 App，看到“59 度，多云”，然后呢？要不要带伞？几点开始变冷？太阳还有多久下山？这些真正影响决策的信息，往往要自己在一堆图表里拼。 Skysoon 想解决的就是这个。它把温度、云量、降雨和日照放在一条时间轴上，再给你几个倒计时，直接回答“还有多久”。 一条时间轴，把一天摊…",
-          "href": "https://www.producthunt.com/products/skysoon",
-          "meta": "Maker · David Abbet",
-          "date": "11月12日"
+          "id": "44cc463927eab21ac1b80fcb99e31748",
+          "title": "Gemini 4 Hydrogen：面向开发者的快速智能体开发",
+          "summary": "Google 这次发的 Gemini 4 Hydrogen，定位挺特别：它不是拿来跑最难推理题的前沿大模型，而是专门干活的快手。 官方 model card 写得很直白：Gemini 4 Carbon 和 Gemini 4 Argon 负责长时间、深链条的硬推理，Hydrogen 负责在各种智能体工作流里快速执行。换句话说， 它是 Gemini 4 家族里…",
+          "href": "https://www.producthunt.com/products/gemini-6",
+          "meta": "Maker · Ankit Sharma",
+          "date": "11月13日"
         }
       ]
     },
