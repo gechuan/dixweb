@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026年11月14日 14:54",
+  "updatedAt": "2026年11月15日 14:59",
   "sources": [
     {
       "id": "huggingface",
@@ -96,6 +96,46 @@
       "note": "新产品发布，观察用户正在为什么工作流付费。",
       "items": [
         {
+          "id": "9a8f8e21e07979e5d2d91098911af59b",
+          "title": "Thunder：极速、持久化的键值 AI 工作负载数据库",
+          "summary": "一个键值数据库，只支持 TLS 1.3，每个值落盘前都加密，磁盘和网络 I/O 全走 io uring，还是闭源商业软件但可以免费用。这套组合放在 2024 年的数据库赛道里，挺不寻常。 这是 Thunder 在 Product Hunt 上发布的东西，实际交付形态是一个 Docker 镜像：sbansal793/thunderstrike。作者是 sba…",
+          "href": "https://www.producthunt.com/products/thunder-3",
+          "meta": "Maker · Sarthak Bansal",
+          "date": "11月14日"
+        },
+        {
+          "id": "d85327546a07b1088144bc313e267675",
+          "title": "Tacie：Mac 上的会议记录，无需机器人入会",
+          "summary": "Meeting notes on your Mac, with no bot in the call",
+          "href": "https://www.producthunt.com/products/tacie",
+          "meta": "Maker · bearjb",
+          "date": "11月13日"
+        },
+        {
+          "id": "da8e5f6c8d495403216c7fcf3980be75",
+          "title": "Tabletop by Google Labs：用 AI 打造互动式群组体验",
+          "summary": "Build interactive group experiences with AI.",
+          "href": "https://www.producthunt.com/products/google-labs",
+          "meta": "Maker · Shivam Kushwaha",
+          "date": "11月13日"
+        },
+        {
+          "id": "92aea274ef74e9168747c71eeb3ba979",
+          "title": "CodeMesh：将 AI 编程成本降低 90%",
+          "summary": "一个公开代码库，同一套模型，同样 98 个真实工程问题，账单却能差出 93.1%。这个数字来自 CodeMesh 官网，它想卖的东西很直接：把代码库变成一张图，让 AI 少读废话。 先说边界。官网抓取到的内容相当有限，大量信息停留在营销页的标题和片段层面，产品实际体验、定价细节、团队背景都拿不到完整资料。下面这些判断，只能基于能确认的部分。 它到底在做什么…",
+          "href": "https://www.producthunt.com/products/codemesh-2",
+          "meta": "Maker · Vamsi Krishna",
+          "date": "11月13日"
+        },
+        {
+          "id": "6b7650e1edcdf2b579e91de75603fd4a",
+          "title": "Businesses in ChatGPT：让客户通过 ChatGPT 发现你的商家",
+          "summary": "Help customers discover your business through ChatGPT",
+          "href": "https://www.producthunt.com/products/openai",
+          "meta": "Maker · Shivam Kushwaha",
+          "date": "11月13日"
+        },
+        {
           "id": "dd4d33d39996d0c5305f7cfd0e65ea7a",
           "title": "de:volt：浏览器中具备真实物理效果的电路板模拟器",
           "summary": "浏览器里能跑电路仿真，还带面包板和 Arduino 代码支持。这句话放在几年前，听起来像某个硬件工程师的周末玩具。现在它成了一个可以直接打开就用的产品：de:volt。 它到底在做什么 一句话概括： 把电路实验从桌面上搬到浏览器标签页里。 传统流程是先装一套仿真软件，画原理图，再对着真实面包板插线，中间来回对照。de:volt 把原理图和面包板并排放进同一…",
@@ -112,6 +152,14 @@
           "date": "11月13日"
         },
         {
+          "id": "50355d433aa565f2cf475aaacd27e463",
+          "title": "Blender 5.3：原生支持 3D Gaussian splats",
+          "summary": "Blender 5.3 要原生支持 3D Gaussian Splatting 了。这条消息对做场景重建的人来说，分量不轻：过去想在 Blender 里看 3DGS 效果，得先装一圈第三方插件，现在官方直接把这个环节接进了主程序。 消息来自 80 Level 的报道，作者是 Amber Rutherford。这是 Blender 下一个大版本，目前还在开发…",
+          "href": "https://www.producthunt.com/products/blender",
+          "meta": "Maker · Zac Zuo",
+          "date": "11月13日"
+        },
+        {
           "id": "c69526a27e741501d2110b0b03bfd7c8",
           "title": "Claude Meetings：把 Claude 加入通话，边聊边开工",
           "summary": "Claude 出了一个会主动找你的版本。 过去用 Claude，路径固定：打开对话框，写提示词，等回复。这次方向反了。新东西叫 Claude Duet，官方给的定位是“主动型智能体”，它自己判断什么需要你注意，然后来找你。 先说清楚边界： 这是研究预览，美国区 Pro 和 Max 订阅用户排队开通，Team 和 Enterprise 还不在范围内 。想试的…",
@@ -125,54 +173,6 @@
           "summary": "Turn Webflow/Framer app into a Claude/Codex project for free",
           "href": "https://www.producthunt.com/products/replicate-10",
           "meta": "Maker · Garry Tan",
-          "date": "11月13日"
-        },
-        {
-          "id": "109831a7a7c8a04c62fb45f7f6a8fd13",
-          "title": "Pocket Studio for Supabase：Android 版 Supabase 仪表盘与 SQL 编辑器",
-          "summary": "Supabase dashboard & SQL editor for Android",
-          "href": "https://www.producthunt.com/products/pocket-studio-for-supabase",
-          "meta": "Maker · Tanay",
-          "date": "11月13日"
-        },
-        {
-          "id": "1a6f8bb13ec42047c366f1ad48f2b426",
-          "title": "WHOOP Humans：围绕真实健康数据构建的 WHOOP 社交网络",
-          "summary": "一个做手环的公司，突然宣布要做社交网络，而且入网门槛是：你得先有心跳。 这就是 WHOOP 刚推的新功能 WHOOP Humans。它把会员的健康数据做成了一条应用内信息流，让用户把睡眠、恢复、 strain 这些指标分享给朋友和家人。 听起来像又一个健身打卡社区？不太一样。 这个网络里没有机器人账号，因为每个活跃账户都必须由一块 WHOOP 设备记录的连…",
-          "href": "https://www.producthunt.com/products/whoop",
-          "meta": "Maker · Justin Jincaid",
-          "date": "11月13日"
-        },
-        {
-          "id": "7840fa6e85e46eae1a0162f9cfba6bc7",
-          "title": "Paxper：可视化创建云基础设施并审查每项变更",
-          "summary": "云上出事，很少是因为有人故意搞破坏。更多时候，是周五下午某人在控制台点了几下，没写进任何文档；或者一份 400 行的 plan 输出，评审的人直接滚到底点了通过。 Paxper 想解决的正是这类“没人看见就出事”的问题。它的思路不复杂： 把架构图画成唯一的事实来源，每次改动先给你看一份短计划，人点头了才落到你自己的云账号里。 它到底是个什么东西 一句话概括…",
-          "href": "https://www.producthunt.com/products/paxper",
-          "meta": "Maker · Kerem D",
-          "date": "11月13日"
-        },
-        {
-          "id": "d41b2822d2e1a4064789afabe9889b21",
-          "title": "Hoverine：可直接嵌入应用的 Rive 动画模板",
-          "summary": "做前端的人大概都有过这种经历：在 Dribbble 或 X 上刷到一个丝滑的交互动画，鼠标悬停、图标变形、按钮带物理回弹，心里想“这个我也能做”，然后打开 Rive 或者 After Effects，折腾两小时，做出来一个僵硬得像 PPT 切换效果的东西。 Hoverine 就是冲着这个落差来的。它是一个 Rive 模板市场，提供免费和付费的交互式动画模板…",
-          "href": "https://www.producthunt.com/products/hoverine",
-          "meta": "Maker · Manuel Diaz",
-          "date": "11月13日"
-        },
-        {
-          "id": "aa5d8960c0b151d30f1ea1936f02e15b",
-          "title": "GAtrends：在 Telegram、Claude、ChatGPT 中为关键词提供激增提醒",
-          "summary": "Google Trends 给你一张曲线图，但不会告诉你“这条线今天不正常”。Google Alerts 每有一条提及就发一封邮件，节日和平常一个样。这两个工具之间的空隙，就是 GAtrends 想填的位置。 它的定位一句话能说清： 给任意关键词装一个趋势雷达，只在异常的时候响。 它到底在监测什么 GAtrends 同时盯 7 个来源：Google New…",
-          "href": "https://www.producthunt.com/products/gatrends",
-          "meta": "Maker · Bohdan Bondarchuk",
-          "date": "11月13日"
-        },
-        {
-          "id": "44cc463927eab21ac1b80fcb99e31748",
-          "title": "Gemini 4 Hydrogen：面向开发者的快速智能体开发",
-          "summary": "Google 这次发的 Gemini 4 Hydrogen，定位挺特别：它不是拿来跑最难推理题的前沿大模型，而是专门干活的快手。 官方 model card 写得很直白：Gemini 4 Carbon 和 Gemini 4 Argon 负责长时间、深链条的硬推理，Hydrogen 负责在各种智能体工作流里快速执行。换句话说， 它是 Gemini 4 家族里…",
-          "href": "https://www.producthunt.com/products/gemini-6",
-          "meta": "Maker · Ankit Sharma",
           "date": "11月13日"
         }
       ]
