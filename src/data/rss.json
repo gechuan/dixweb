@@ -1,1295 +1,679 @@
 {
-  "date": "2026-11-14",
-  "weekday": "周六",
+  "date": "2026-11-15",
+  "weekday": "周日",
   "stats": {
     "sources_total": 128,
-    "sources_returned": 67,
-    "items_in_window": 150,
-    "items_kept": 138,
-    "items_filtered": 12,
-    "topics": 6
+    "sources_returned": 57,
+    "items_in_window": 87,
+    "items_kept": 82,
+    "items_filtered": 5,
+    "topics": 2
   },
-  "headline": "FAA因空中交通管制系统中断实施全国性停飞，导致全美近9500架次航班暂停、大量旅客滞留，随后解除停飞令，但航班取消和延误仍在持续。OpenAI董事会成员公开表示仍不能信任AI首席执行官，并预测AI可能接管社会、甚至导致人类死于AI事故。哈萨克斯坦计划在第一季度发行代币化政府债券，此前已售出2200万美元票据。",
+  "headline": "多家媒体报道英伟达CEO黄仁勋离职，涉及间谍丑闻、安保团队去向及亚洲各国政府回应，科技高管签署请愿书呼吁恢复其职务，播客则讨论其离职后的AI基建与中美竞争格局。围绕“没有黄仁勋，英伟达还能撑住吗”这一话题，相关讨论同步展开。iPhone Duo方面，MacSparky发布使用评测，TechCrunch整理9项让设备更易用的设置，从评测与实用技巧两个角度覆盖同一设备。",
   "topics": [
     {
       "id": "T1",
-      "title": "FAA全国停飞事件",
-      "summary": "美国联邦航空管理局因空中交通管制系统中断实施全国性停飞，导致全美近9500架次航班暂停、大量旅客滞留。FAA随后解除停飞令，但航班取消和延误仍在持续。",
+      "title": "英伟达CEO黄仁勋离职风波",
+      "summary": "多家媒体报道英伟达CEO黄仁勋离职，涉及间谍丑闻、安保团队去向及亚洲各国政府回应。科技高管签署请愿书呼吁恢复其职务，播客讨论其离职后的AI基建与中美竞争格局。",
       "items": [
         {
-          "orig_title": "Bloomberg This Weekend: FAA Ground Stop Over (Podcast)",
-          "source": "Bloomberg Business",
+          "orig_title": "188: 黄仁勋闪电离职之后：英伟达、AI 基建、中美竞争和算力江湖",
+          "source": "晚点聊 LateTalk",
           "category": "产品、设计与商业",
-          "link": "https://www.bloomberg.com/news/audio/2026-11-14/bloomberg-this-weekend-faa-ground-stop-over-podcast",
-          "zh_title": "彭博周末：FAA停飞结束（播客）"
+          "link": "https://podcast.latepost.com/188",
+          "zh_title": "188：黄仁勋闪电离职之后：英伟达、AI 基建、中美竞争和算力江湖"
         },
         {
-          "orig_title": "The FAA’s IT troubles are far bigger then AI",
-          "source": "Fast Company",
-          "category": "产品、设计与商业",
-          "link": "https://www.fastcompany.com/91642664/the-faas-it-troubles-are-far-bigger-then-ai",
-          "zh_title": "FAA的IT问题远比AI严重得多"
+          "orig_title": "Where was Nvidia’s security team?",
+          "source": "TechCrunch",
+          "category": "AI 前沿",
+          "link": "https://techcrunch.com/2026/11/14/where-was-nvidias-security-team/",
+          "zh_title": "英伟达的安保团队在哪里？"
         },
         {
-          "orig_title": "I was flying when the FAA grounded all flights. Everything was chaos, and I got stuck on the tarmac for hours.",
-          "source": "All Content from Business Insider",
-          "category": "产品、设计与商业",
-          "link": "https://www.businessinsider.com/flying-when-faa-grounded-flights-what-happened-travel-chaos-2026-11",
-          "zh_title": "FAA停飞所有航班时我正在飞行。一切都很混乱，我被困在停机坪上好几个小时。"
+          "orig_title": "Elon Musk, other tech execs sign petition calling on Nvidia to reinstate Jensen Huang",
+          "source": "TechCrunch",
+          "category": "AI 前沿",
+          "link": "https://techcrunch.com/2026/11/14/elon-musk-other-tech-execs-sign-petition-calling-on-nvidia-to-reinstate-jensen-huang/",
+          "zh_title": "埃隆·马斯克等科技高管签署请愿书，呼吁英伟达恢复黄仁勋职务"
         },
         {
-          "orig_title": "Flight Chaos Persists, Thousands of Cancellations, Delays, More",
-          "source": "Bloomberg Business",
+          "orig_title": "The Week Jensen Huang Fell: How a Spy Scandal Toppled Nvidia’s CEO",
+          "source": "Decrypt",
           "category": "产品、设计与商业",
-          "link": "https://www.bloomberg.com/news/audio/2026-11-14/flight-chaos-persists-thousands-of-cancellations-delays-more",
-          "zh_title": "航班混乱持续，数千次取消、延误等"
+          "link": "https://decrypt.co/383280/the-week-jensen-huang-fell-how-spy-scandal-toppled-nvidia-ceo",
+          "zh_title": "黄仁勋倒台的一周：间谍丑闻如何推翻英伟达CEO"
         },
         {
-          "orig_title": "Post-Ground Stop Chaos, SpaceX Launch, Ukraine Peace Offer, More",
-          "source": "Bloomberg Business",
-          "category": "产品、设计与商业",
-          "link": "https://www.bloomberg.com/news/audio/2026-11-14/post-ground-stop-chaos-spacex-launch-ukraine-peace-offer-more",
-          "zh_title": "地面停飞混乱之后、SpaceX发射、乌克兰和平提议等更多新闻"
-        },
-        {
-          "orig_title": "FAA Lifts Nationwide Groundstop, Flight Disruptions Continue",
-          "source": "Bloomberg Business",
-          "category": "产品、设计与商业",
-          "link": "https://www.bloomberg.com/news/audio/2026-11-14/faa-lifts-nationwide-groundstop-flight-disruptions-continue",
-          "zh_title": "FAA解除全国停飞令，航班中断仍在持续"
+          "orig_title": "Asian governments react to Nvidia CEO Jensen Huang’s exit",
+          "source": "TechCrunch",
+          "category": "AI 前沿",
+          "link": "https://techcrunch.com/2026/11/14/asian-governments-react-to-nvidia-ceo-jensen-huangs-exit/",
+          "zh_title": "亚洲各国政府回应英伟达CEO黄仁勋离职"
         }
       ]
     },
     {
       "id": "T2",
-      "title": "黄仁勋卸任英伟达CEO引发的连锁反应",
-      "summary": "黄仁勋被免去英伟达CEO职务，引发员工请愿要求其回归，并牵涉间谍丑闻、出口限制等争议。风投和创始人担忧其离职给AI初创企业融资留下缺口，Arm的雷内·哈斯成为继任候选人之一。",
+      "title": "iPhone Duo使用体验与设置",
+      "summary": "MacSparky发布iPhone Duo评测，TechCrunch则整理9项让iPhone Duo更易用的设置，两篇从评测与实用技巧角度覆盖同一设备。",
       "items": [
         {
-          "orig_title": "Jensen Huang and the decline of the visionary showman founder CEO",
-          "source": "The Verge",
-          "category": "AI 前沿",
-          "link": "https://www.theverge.com/tech/1033781/nvidia-jensen-huang-last-visionary-showman-founder-ceo",
-          "zh_title": "黄仁勋与远见卓识型表演家创始人CEO的衰落"
-        },
-        {
-          "orig_title": "库克接班，可能真是英伟达的最优解",
-          "source": "钛媒体",
+          "orig_title": "My iPhone Duo review",
+          "source": "MacSparky",
           "category": "产品、设计与商业",
-          "link": "https://www.tmtpost.com/8205427.html",
-          "zh_title": "库克接班，可能真是英伟达的最优解"
+          "link": "https://www.macsparky.com/blog/2026/11/my-iphone-duo-review/",
+          "zh_title": "我的iPhone Duo评测"
         },
         {
-          "orig_title": "英伟达上演“奥特曼2.0”，员工集体请愿：让老黄回家！",
-          "source": "量子位",
-          "category": "AI 前沿",
-          "link": "https://www.qbitai.com/2026/11/510297.html",
-          "zh_title": "英伟达上演“奥特曼2.0”，员工集体请愿：让老黄回家！"
-        },
-        {
-          "orig_title": "突发！6万人请愿黄仁勋重回CEO，马斯克也出手了",
-          "source": "人人都是产品经理",
-          "category": "产品、设计与商业",
-          "link": "https://www.woshipm.com/it/6494012.html",
-          "zh_title": "突发！6万人请愿黄仁勋重回CEO，马斯克也出手了"
-        },
-        {
-          "orig_title": "Jensen Ousted as Nvidia CEO: \"Spy\" Scandal, Export Restrictions, Market Impact",
-          "source": "All-In Podcast",
-          "category": "产品、设计与商业",
-          "link": "https://allinchamathjason.libsyn.com/jensen-ousted-as-nvidia-ceo-spy-scandal-export-restrictions-market-impact",
-          "zh_title": "Jensen被免去英伟达CEO职务：“间谍”丑闻、出口限制与市场影响"
-        },
-        {
-          "orig_title": "Jensen Huang’s departure blasts big hole in AI startup funding, VCs and founders say",
+          "orig_title": "Got an iPhone Duo? These 9 settings make it easier to use",
           "source": "TechCrunch",
           "category": "AI 前沿",
-          "link": "https://techcrunch.com/2026/11/13/jensen-huangs-departure-blasts-big-hole-in-ai-startup-funding-vcs-and-founders-say/",
-          "zh_title": "风投和创始人称，黄仁勋的离职给AI初创企业融资留下巨大缺口"
-        }
-      ]
-    },
-    {
-      "id": "T3",
-      "title": "AI安全与治理担忧",
-      "summary": "OpenAI董事会成员公开表示仍不能信任AI首席执行官，并预测AI可能接管社会、甚至导致人类死于AI事故。相关讨论还涉及AI垃圾内容治理和药品广告对AI推荐的影响。",
-      "items": [
-        {
-          "orig_title": "The OpenAI board member who fired Sam Altman says we still can&#8217;t trust AI CEOs",
-          "source": "The Verge",
-          "category": "AI 前沿",
-          "link": "https://www.theverge.com/podcast/1032907/helen-toner-openai-cset-ai-safety-policy-interview",
-          "zh_title": "解雇萨姆·奥特曼的OpenAI董事会成员表示，我们仍然不能信任AI首席执行官们"
-        },
-        {
-          "orig_title": "[AINews] The No AI Slop Manifesto",
-          "source": "Latent.Space",
-          "category": "AI 前沿",
-          "link": "https://latent.space/p/ainews-the-no-ai-slop-manifesto/",
-          "zh_title": "[AINews] 拒绝AI垃圾内容宣言"
-        },
-        {
-          "orig_title": "OpenAI board member makes a terrifying prediction: You will probably die from an AI accident",
-          "source": "Fast Company",
-          "category": "产品、设计与商业",
-          "link": "https://www.fastcompany.com/91642227/openai-board-member-terrifying-prediction-you-will-die-from-ai-accident-chatgpt",
-          "zh_title": "OpenAI董事会成员做出可怕预测：你可能会死于AI事故"
-        },
-        {
-          "orig_title": "Pharmaceutical ads may influence which drug AI recommends, new research finds",
-          "source": "Fast Company",
-          "category": "产品、设计与商业",
-          "link": "https://www.fastcompany.com/91641278/ai-drug-recommendations-influenced-big-pharma-ads-study",
-          "zh_title": "新研究发现，药品广告可能影响AI推荐哪种药物"
-        },
-        {
-          "orig_title": "OpenAI board member worries an AI \"takeover\" of society could be months away",
-          "source": "Ars Technica - All content",
-          "category": "工程与编程",
-          "link": "https://arstechnica.com/ai/2026/11/ai-is-the-most-likely-reason-youll-die-openai-board-member-warns/",
-          "zh_title": "OpenAI董事会成员担忧AI“接管”社会可能仅剩数月"
-        }
-      ]
-    },
-    {
-      "id": "T4",
-      "title": "中国AI模型与算力生态",
-      "summary": "DeepSeek开放全家桶API，中国320亿美元AI计划仍依赖受华盛顿限制的英伟达芯片。联想提出“绿电进Token出”的词元工厂概念，MiniMax新图像模型也展示了多项能力。",
-      "items": [
-        {
-          "orig_title": "绿电进Token出！联想重新定义词元工厂",
-          "source": "量子位",
-          "category": "AI 前沿",
-          "link": "https://www.qbitai.com/2026/11/510094.html",
-          "zh_title": "绿电进Token出！联想重新定义词元工厂"
-        },
-        {
-          "orig_title": "开源/10秒出4K/超长文本/… 我实测出了MiniMax H3-Image擅长的四类新玩法",
-          "source": "人人都是产品经理",
-          "category": "产品、设计与商业",
-          "link": "https://www.woshipm.com/ai/6493967.html",
-          "zh_title": "开源/10秒出4K/超长文本/… 我实测出了MiniMax H3-Image擅长的四类新玩法"
-        },
-        {
-          "orig_title": "突发！DeepSeek开放全家桶API",
-          "source": "量子位",
-          "category": "AI 前沿",
-          "link": "https://www.qbitai.com/2026/11/510003.html",
-          "zh_title": "突发！DeepSeek开放全家桶API"
-        },
-        {
-          "orig_title": "China’s $3.2 Billion AI Pipeline Still Calls for Nvidia Chips Washington Restricts",
-          "source": "Decrypt",
-          "category": "产品、设计与商业",
-          "link": "https://decrypt.co/383266/china-ai-pipeline-nvidia-chips-washington-restricts",
-          "zh_title": "中国320亿美元AI计划仍依赖华盛顿限制的英伟达芯片"
-        },
-        {
-          "orig_title": "Export-banned Nvidia chips are behind China’s most powerful AI models — uh-oh, Jensen!",
-          "source": "TechCrunch",
-          "category": "AI 前沿",
-          "link": "https://techcrunch.com/2026/11/13/export-banned-nvidia-chips-are-behind-chinas-most-powerful-ai-models-uh-oh-jensen/",
-          "zh_title": "被出口禁令限制的英伟达芯片支撑着中国最强大的AI模型——哎呀，黄仁勋！"
-        }
-      ]
-    },
-    {
-      "id": "T5",
-      "title": "AI智能体产品与创业动态",
-      "summary": "LangChain估值达30亿美元，ChatGPT推出新钱包让AI代理替用户购物结账。Anthropic的24小时agent被开发者快速复现，2C与2B Agent的发展脉络也引发复盘讨论。",
-      "items": [
-        {
-          "orig_title": "复盘 2C 和 2B Agent 发展脉络｜对谈 Afk.surf 创始人嘉琛",
-          "source": "42章经",
-          "category": "产品、设计与商业",
-          "link": "https://www.xiaoyuzhoufm.com/episode/6af6678d14d01a26f8a916f6?utm_source=rss",
-          "zh_title": "复盘2C和2B Agent发展脉络｜对谈Afk.surf创始人嘉琛"
-        },
-        {
-          "orig_title": "Anthropic刚教的24小时agent，我当天做出来了",
-          "source": "人人都是产品经理",
-          "category": "产品、设计与商业",
-          "link": "https://www.woshipm.com/ai/6493965.html",
-          "zh_title": "Anthropic刚教的24小时agent，我当天做出来了"
-        },
-        {
-          "orig_title": "AI agent startup LangChain hits $3B valuation",
-          "source": "TechCrunch",
-          "category": "AI 前沿",
-          "link": "https://techcrunch.com/2026/11/13/ai-agent-startup-langchain-hits-3b-valuation/",
-          "zh_title": "AI智能体初创公司LangChain估值达30亿美元"
-        },
-        {
-          "orig_title": "ChatGPT’s new Wallet lets AI agents shop and check out for you",
-          "source": "TechCrunch",
-          "category": "AI 前沿",
-          "link": "https://techcrunch.com/2026/11/13/chatgpts-new-wallet-lets-ai-agents-shop-and-check-out-for-you/",
-          "zh_title": "ChatGPT新钱包让AI代理替你购物和结账"
-        }
-      ]
-    },
-    {
-      "id": "T6",
-      "title": "加密监管与代币化进展",
-      "summary": "哈萨克斯坦计划在第一季度发行代币化政府债券。美国参议院银行委员会加紧安排新SEC提名人听证会，特朗普提名的两党SEC与CFTC人选可能重塑加密监管格局。",
-      "items": [
-        {
-          "orig_title": "Kazakhstan plans tokenized government bonds in first quarter after $22 million note sale",
-          "source": "CoinDesk",
-          "category": "产品、设计与商业",
-          "link": "https://www.coindesk.com/business/2026/11/14/kazakhstan-plans-tokenized-government-bonds-in-first-quarter-after-usd22-million-note-sale",
-          "zh_title": "哈萨克斯坦计划在第一季度发行代币化政府债券，此前已售出2200万美元票据"
-        },
-        {
-          "orig_title": "Trump Nominates Bipartisan Slate for SEC and CFTC",
-          "source": "Bankless",
-          "category": "产品、设计与商业",
-          "link": "https://www.bankless.com/read/news/trump-nominates-bipartisan-slate-for-sec-and-cftc",
-          "zh_title": "特朗普提名两党人选出任SEC和CFTC委员"
-        },
-        {
-          "orig_title": "Trump’s First Democratic Picks for SEC and CFTC Could Reshape Crypto’s Regulators",
-          "source": "Decrypt",
-          "category": "产品、设计与商业",
-          "link": "https://decrypt.co/383260/trump-first-democratic-picks-sec-cftc-could-reshape-crypto",
-          "zh_title": "特朗普首批民主党SEC与CFTC人选可能重塑加密监管格局"
-        },
-        {
-          "orig_title": "U.S. Senate Banking Committee races toward hearing on new SEC nominations",
-          "source": "CoinDesk",
-          "category": "产品、设计与商业",
-          "link": "https://www.coindesk.com/policy/2026/11/13/u-s-senate-banking-committee-races-toward-hearing-on-new-sec-nominations",
-          "zh_title": "美国参议院银行委员会加紧安排新SEC提名人听证会"
+          "link": "https://techcrunch.com/2026/11/14/got-an-iphone-duo-these-9-settings-make-it-easier-to-use/",
+          "zh_title": "有iPhone Duo？这9项设置让它更易用"
         }
       ]
     }
   ],
   "stream": [
     {
-      "orig_title": "The longest polynomial level set",
-      "source": "johndcook.com",
-      "category": "观点与杂谈",
-      "link": "https://www.johndcook.com/blog/2026/11/14/erdos-lemniscate/",
-      "zh_title": "最长的多项式水平集"
-    },
-    {
-      "orig_title": "Bloomberg This Weekend: FAA Ground Stop Over (Podcast)",
-      "source": "Bloomberg Business",
+      "orig_title": "WorkOS: Let Agents Use Your Tools Without Giving Them Free Rein",
+      "source": "daringfireball.net",
       "category": "产品、设计与商业",
-      "link": "https://www.bloomberg.com/news/audio/2026-11-14/bloomberg-this-weekend-faa-ground-stop-over-podcast",
-      "zh_title": "彭博周末：FAA停飞结束（播客）"
+      "link": "https://www.workos.com/airlock?utm_source=daringfireball&utm_medium=newsletter&utm_campaign=q42026",
+      "zh_title": "WorkOS：让智能体使用你的工具，但不会放任其自由行动"
     },
     {
-      "orig_title": "Kazakhstan plans tokenized government bonds in first quarter after $22 million note sale",
-      "source": "CoinDesk",
-      "category": "产品、设计与商业",
-      "link": "https://www.coindesk.com/business/2026/11/14/kazakhstan-plans-tokenized-government-bonds-in-first-quarter-after-usd22-million-note-sale",
-      "zh_title": "哈萨克斯坦计划在第一季度发行代币化政府债券，此前已售出2200万美元票据"
-    },
-    {
-      "orig_title": "The FAA’s IT troubles are far bigger then AI",
-      "source": "Fast Company",
-      "category": "产品、设计与商业",
-      "link": "https://www.fastcompany.com/91642664/the-faas-it-troubles-are-far-bigger-then-ai",
-      "zh_title": "FAA的IT问题远比AI严重得多"
-    },
-    {
-      "orig_title": "📊 PRO: This Week in Visuals",
-      "source": "How They Make Money",
-      "category": "产品、设计与商业",
-      "link": "https://www.appeconomyinsights.com/p/pro-this-week-in-visuals-d1b",
-      "zh_title": "📊 PRO：本周视觉精选"
-    },
-    {
-      "orig_title": "Here are our favorite deals from REI’s giant Holiday Sale",
-      "source": "The Verge",
-      "category": "AI 前沿",
-      "link": "https://www.theverge.com/gadgets/1032500/best-deals-rei-holiday-sale-2026",
-      "zh_title": "以下是REI大型假日促销中我们最喜欢的优惠"
-    },
-    {
-      "orig_title": "The OpenAI board member who fired Sam Altman says we still can&#8217;t trust AI CEOs",
-      "source": "The Verge",
-      "category": "AI 前沿",
-      "link": "https://www.theverge.com/podcast/1032907/helen-toner-openai-cset-ai-safety-policy-interview",
-      "zh_title": "解雇萨姆·奥特曼的OpenAI董事会成员表示，我们仍然不能信任AI首席执行官们"
-    },
-    {
-      "orig_title": "I was flying when the FAA grounded all flights. Everything was chaos, and I got stuck on the tarmac for hours.",
-      "source": "All Content from Business Insider",
-      "category": "产品、设计与商业",
-      "link": "https://www.businessinsider.com/flying-when-faa-grounded-flights-what-happened-travel-chaos-2026-11",
-      "zh_title": "FAA停飞所有航班时我正在飞行。一切都很混乱，我被困在停机坪上好几个小时。"
-    },
-    {
-      "orig_title": "Flight Chaos Persists, Thousands of Cancellations, Delays, More",
-      "source": "Bloomberg Business",
-      "category": "产品、设计与商业",
-      "link": "https://www.bloomberg.com/news/audio/2026-11-14/flight-chaos-persists-thousands-of-cancellations-delays-more",
-      "zh_title": "航班混乱持续，数千次取消、延误等"
-    },
-    {
-      "orig_title": "Embrace Your Obsessions: Susan Orlean on the Antidote to the Meaninglessness of Life",
+      "orig_title": "Love Anyway",
       "source": "Brain Pickings",
       "category": "观点与杂谈",
-      "link": "https://www.themarginalian.org/2026/11/14/susan-orlean-orchid-thief/",
-      "zh_title": "拥抱你的痴迷：苏珊·奥尔琳谈人生无意义的解药"
+      "link": "https://www.themarginalian.org/2026/11/15/love-anyway/",
+      "zh_title": "无论如何，去爱"
     },
     {
-      "orig_title": "After ruling out Malta as a place to retire, I tested out living on its smaller sister island, Gozo",
+      "orig_title": "How to Have Enough: Wendell Berry on Creativity and Love",
+      "source": "Brain Pickings",
+      "category": "观点与杂谈",
+      "link": "https://www.themarginalian.org/2026/11/15/wendell-berry-sabbath/",
+      "zh_title": "如何拥有足够：温德尔·贝里论创造力与爱"
+    },
+    {
+      "orig_title": "Meta's 'Rapture' could send wealthy employees into early retirement",
       "source": "All Content from Business Insider",
       "category": "产品、设计与商业",
-      "link": "https://www.businessinsider.com/reasons-dont-want-to-live-maltese-island-gozo-trip-2026-11",
-      "zh_title": "在排除马耳他作为退休地点后，我尝试在其较小的姐妹岛戈佐岛生活"
+      "link": "https://www.businessinsider.com/meta-rapture-stock-awards-employee-pay-retirement-2026-11",
+      "zh_title": "Meta的“Rapture”计划可能让富裕员工提前退休"
     },
     {
-      "orig_title": "My parents raised 5 kids without losing their minds. They had a system for everything, from dinner to Christmas presents.",
+      "orig_title": "The typical homebuyer in 2026 is older, richer, and loves the suburbs",
       "source": "All Content from Business Insider",
       "category": "产品、设计与商业",
-      "link": "https://www.businessinsider.com/parents-five-kids-unusual-household-rules-schedules-2026-11",
-      "zh_title": "我父母养育了5个孩子而没有发疯。他们有一套应对一切的系统，从晚餐到圣诞礼物。"
+      "link": "https://www.businessinsider.com/average-homebuyer-2026-nar-report-richer-suburbs",
+      "zh_title": "2026年的典型购房者更年长、更富有，而且热爱郊区"
     },
     {
-      "orig_title": "Tesla is inviting some people to buy a Cybercab ‘for personal use’ — but read the fine print",
+      "orig_title": "I was juggling a $99K job, a baby, and caring for my mom with Alzheimer's. Getting laid off was a relief.",
+      "source": "All Content from Business Insider",
+      "category": "产品、设计与商业",
+      "link": "https://www.businessinsider.com/sandwich-generation-mom-baby-alzheimers-caregiver-2026-11",
+      "zh_title": "我曾同时应付一份9.9万美元的工作、一个婴儿，以及照顾患阿尔茨海默病的母亲。被裁员反而是一种解脱。"
+    },
+    {
+      "orig_title": "I moved back in with my parents 3 years ago to pursue my dream career. I wish I'd considered the drawbacks first.",
+      "source": "All Content from Business Insider",
+      "category": "产品、设计与商业",
+      "link": "https://www.businessinsider.com/moved-back-in-with-parents-pursue-dream-career-pros-cons-2026-11",
+      "zh_title": "3年前我搬回父母家追逐梦想职业。我真希望当初先考虑过弊端。"
+    },
+    {
+      "orig_title": "The race to build autonomous war robots faces a problem that self-driving cars don't. There are no rules of the road.",
+      "source": "All Content from Business Insider",
+      "category": "产品、设计与商业",
+      "link": "https://www.businessinsider.com/making-autonomous-war-robots-challenges-self-driving-cars-dont-ukraine-2026-11",
+      "zh_title": "自主作战机器人的研发竞赛面临一个自动驾驶汽车没有的问题：没有道路规则。"
+    },
+    {
+      "orig_title": "LG’s budget-friendly B6E OLED TV is up to 50 percent off this weekend",
       "source": "The Verge",
       "category": "AI 前沿",
-      "link": "https://www.theverge.com/transportation/1033844/tesla-personal-cybercab-orders-299-subscription-fine-print",
-      "zh_title": "特斯拉邀请部分人购买Cybercab“供个人使用”——但请阅读细则"
+      "link": "https://www.theverge.com/gadgets/1033432/lg-b6e-oled-tv-best-buy-doorbuster-black-friday-2026-deal-sale",
+      "zh_title": "LG经济实惠的B6E OLED电视本周末最高降价50%"
     },
     {
-      "orig_title": "A woman on the cruise ship struck by a tanker said the riverboat started filling with water like the 'Titanic'",
-      "source": "All Content from Business Insider",
-      "category": "产品、设计与商业",
-      "link": "https://www.businessinsider.com/new-orleans-cruise-ship-riverboat-tanker-collision-passengers-2026-11",
-      "zh_title": "被油轮撞击的游轮上的一名女子说，河船开始像“泰坦尼克号”一样进水"
-    },
-    {
-      "orig_title": "熊市中蹉跎岁月！",
-      "source": "集思录",
-      "category": "产品、设计与商业",
-      "link": "https://www.jisilu.cn/question/526804",
-      "zh_title": "熊市中蹉跎岁月！"
-    },
-    {
-      "orig_title": "Italy Pitches Germany Observer Status in Fighter Jet Program",
-      "source": "Bloomberg Business",
-      "category": "产品、设计与商业",
-      "link": "https://www.bloomberg.com/news/articles/2026-11-14/italy-pitches-germany-observer-status-in-fighter-jet-program",
-      "zh_title": "意大利提议德国在战斗机项目中获得观察员地位"
-    },
-    {
-      "orig_title": "This tiny gamepad with dual analog thumbsticks pushes the limits of portable controllers",
-      "source": "The Verge",
-      "category": "AI 前沿",
-      "link": "https://www.theverge.com/tech/1013985/crkd-atom-plus-tmr-analog-thumbstick-controller-gamepad-switch-ios-android-hands-on",
-      "zh_title": "这款带有双模拟摇杆的微型游戏手柄突破了便携控制器的极限"
-    },
-    {
-      "orig_title": "I watched Jensen Huang speak 9 days before his resignation. Two things stand out now.",
-      "source": "All Content from Business Insider",
-      "category": "产品、设计与商业",
-      "link": "https://www.businessinsider.com/jensen-huang-nvidia-management-succession-conference-talk-2026-11",
-      "zh_title": "我在黄仁勋辞职前9天听他演讲。现在有两件事很突出。"
-    },
-    {
-      "orig_title": "Spend Your Boon",
+      "orig_title": "My iPhone Duo review",
       "source": "MacSparky",
       "category": "产品、设计与商业",
-      "link": "https://www.macsparky.com/blog/2026/11/spend-your-boon/",
-      "zh_title": "花掉你的恩惠"
+      "link": "https://www.macsparky.com/blog/2026/11/my-iphone-duo-review/",
+      "zh_title": "我的iPhone Duo评测"
     },
     {
-      "orig_title": "We sold our house and nearly everything we owned to move our kids to Malta. Parenting is different here.",
-      "source": "All Content from Business Insider",
-      "category": "产品、设计与商业",
-      "link": "https://www.businessinsider.com/moved-family-delaware-malta-parenting-differences-2026-11",
-      "zh_title": "我们卖掉了房子和几乎所有财产，把孩子们搬到马耳他。这里的育儿方式不同。"
-    },
-    {
-      "orig_title": "A cyberattack forces you to pull the plug. Can your business keep running?",
-      "source": "Fast Company",
-      "category": "产品、设计与商业",
-      "link": "https://www.fastcompany.com/91640272/a-cyberattack-forces-you-to-pull-the-plug-can-your-business-keep-running-technology-cyberattacks",
-      "zh_title": "网络攻击迫使你拔掉插头，你的企业还能继续运转吗？"
-    },
-    {
-      "orig_title": "未来增长最确定性的行业——医药",
-      "source": "集思录",
-      "category": "产品、设计与商业",
-      "link": "https://www.jisilu.cn/question/526802",
-      "zh_title": "未来增长最确定性的行业——医药"
-    },
-    {
-      "orig_title": "The Pentagon is testing war robots that can hunt in packs without GPS and find battlefield targets on their own. Humans still call the shots.",
-      "source": "All Content from Business Insider",
-      "category": "产品、设计与商业",
-      "link": "https://www.businessinsider.com/darpa-tested-autonomous-ground-robots-finding-enemy-targets-no-gps-2026-11",
-      "zh_title": "五角大楼正在测试能在无GPS环境下成群猎杀、自主寻找战场目标的战争机器人。人类仍掌握最终决策权。"
-    },
-    {
-      "orig_title": "5 ways to turn your cold outreach into a job offer",
-      "source": "Fast Company",
-      "category": "产品、设计与商业",
-      "link": "https://www.fastcompany.com/91631346/5-ways-to-turn-your-cold-outreach-into-a-job-offer-job-hunting",
-      "zh_title": "将冷启动外联转化为工作邀约的5种方法"
-    },
-    {
-      "orig_title": "Peeking inside the bash rabbit hole",
-      "source": "johndcook.com",
-      "category": "观点与杂谈",
-      "link": "https://www.johndcook.com/blog/2026/11/14/bash-rabbit-hole/",
-      "zh_title": "窥探bash兔子洞"
-    },
-    {
-      "orig_title": "My city is often named one of the best places to live in the US. It's also a surprisingly great place to visit.",
-      "source": "All Content from Business Insider",
-      "category": "产品、设计与商业",
-      "link": "https://www.businessinsider.com/best-places-to-live-us-fort-collins-colorado-recommendations-2026-11",
-      "zh_title": "我所在的城市常被评为美国最宜居的地方之一，它也是一个出人意料的好旅游地。"
-    },
-    {
-      "orig_title": "Post-Ground Stop Chaos, SpaceX Launch, Ukraine Peace Offer, More",
-      "source": "Bloomberg Business",
-      "category": "产品、设计与商业",
-      "link": "https://www.bloomberg.com/news/audio/2026-11-14/post-ground-stop-chaos-spacex-launch-ukraine-peace-offer-more",
-      "zh_title": "地面停飞混乱之后、SpaceX发射、乌克兰和平提议等更多新闻"
-    },
-    {
-      "orig_title": "A gadget to make your dumb house smarter",
+      "orig_title": "The Sony Aibo was a robot revolution dressed like a dog",
       "source": "The Verge",
       "category": "AI 前沿",
-      "link": "https://www.theverge.com/tech/1033761/home-assistant-tk-tripod-tabletop-installer",
-      "zh_title": "让你的笨房子变聪明的小装置"
+      "link": "https://www.theverge.com/podcast/1033948/sony-aibo-robot-dog-version-history",
+      "zh_title": "索尼Aibo是一场披着狗皮的机器人革命"
     },
     {
-      "orig_title": "复盘 2C 和 2B Agent 发展脉络｜对谈 Afk.surf 创始人嘉琛",
-      "source": "42章经",
+      "orig_title": "Meta’s Muse: How we launched the most successful consumer product this year | Mona Sarantakos",
+      "source": "Lenny's Newsletter",
       "category": "产品、设计与商业",
-      "link": "https://www.xiaoyuzhoufm.com/episode/6af6678d14d01a26f8a916f6?utm_source=rss",
-      "zh_title": "复盘2C和2B Agent发展脉络｜对谈Afk.surf创始人嘉琛"
+      "link": "https://www.lennysnewsletter.com/p/metas-muse-how-we-launched-the-most",
+      "zh_title": "Meta的Muse：我们如何推出今年最成功的消费产品 | 莫娜·萨兰塔科斯"
     },
     {
-      "orig_title": "Ukraine's naval drones made their name attacking Russian warships. Now they're taking the fight onto land.",
+      "orig_title": "Thinking of quitting your job? Don’t until you consider this factor",
+      "source": "Fast Company",
+      "category": "产品、设计与商业",
+      "link": "https://www.fastcompany.com/91633889/thinking-of-quitting-your-job-dont-do-it-until-you-consider-this-under-recognized-factor-workplace-quitting-job",
+      "zh_title": "想辞职？先考虑这个因素再决定"
+    },
+    {
+      "orig_title": "10 challenges facing the real estate industry in 2026, according to young leaders",
       "source": "All Content from Business Insider",
       "category": "产品、设计与商业",
-      "link": "https://www.businessinsider.com/ukraine-naval-drones-hit-russian-ships-taking-the-fight-land-2026-11",
-      "zh_title": "乌克兰的海军无人机因攻击俄罗斯军舰而声名鹊起。如今它们正把战火引向陆地。"
+      "link": "https://www.businessinsider.com/biggest-challenges-real-estate-predictions-2026",
+      "zh_title": "年轻领袖眼中2026年房地产行业面临的10大挑战"
     },
     {
-      "orig_title": "Catherine Zeta-Jones says an unexpected career move got her discovered by Steven Spielberg",
-      "source": "All Content from Business Insider",
-      "category": "产品、设计与商业",
-      "link": "https://www.businessinsider.com/catherine-zeta-jones-zorro-hollywood-steven-spielberg-2026-11",
-      "zh_title": "凯瑟琳·泽塔-琼斯称一次意外的职业变动让她被史蒂文·斯皮尔伯格发现"
-    },
-    {
-      "orig_title": "Theatre Review: FrankenTacit ★★☆☆☆",
-      "source": "shkspr.mobi",
-      "category": "观点与杂谈",
-      "link": "https://shkspr.mobi/blog/2026/11/theatre-review-frankentacit/",
-      "zh_title": "剧评：FrankenTacit ★★☆☆☆"
-    },
-    {
-      "orig_title": "Privatize Air Traffic Control, Redux",
-      "source": "Marginal REVOLUTION",
-      "category": "观点与杂谈",
-      "link": "https://marginalrevolution.com/marginalrevolution/2026/11/privatize-air-traffic-control-redux.html?utm_source=rss&utm_medium=rss&utm_campaign=privatize-air-traffic-control-redux",
-      "zh_title": "再论空中交通管制私有化"
-    },
-    {
-      "orig_title": "James Webb telescope finds ice older than the star it orbits",
-      "source": "Ars Technica - All content",
-      "category": "工程与编程",
-      "link": "https://arstechnica.com/science/2026/11/james-webb-telescope-finds-ice-older-than-the-star-it-orbits/",
-      "zh_title": "詹姆斯·韦布望远镜发现比其环绕恒星更古老的冰"
-    },
-    {
-      "orig_title": "Winemakers are learning that conservation can be good for business",
-      "source": "Ars Technica - All content",
-      "category": "工程与编程",
-      "link": "https://arstechnica.com/science/2026/11/winemakers-are-learning-that-conservation-can-be-good-for-business/",
-      "zh_title": "酿酒师们逐渐认识到，保护自然对环境有利，对生意也有利"
-    },
-    {
-      "orig_title": "Vintage computer power centers",
-      "source": "dfarq.homeip.net",
-      "category": "硬件",
-      "link": "https://dfarq.homeip.net/vintage-computer-power-centers/?utm_source=rss&utm_medium=rss&utm_campaign=vintage-computer-power-centers",
-      "zh_title": "老式计算机动力中心"
-    },
-    {
-      "orig_title": "Jensen Huang and the decline of the visionary showman founder CEO",
-      "source": "The Verge",
-      "category": "AI 前沿",
-      "link": "https://www.theverge.com/tech/1033781/nvidia-jensen-huang-last-visionary-showman-founder-ceo",
-      "zh_title": "黄仁勋与远见卓识型表演家创始人CEO的衰落"
-    },
-    {
-      "orig_title": "Taxing billionaires failed in California, but other states are taking steps to collect from the rich",
-      "source": "Fast Company",
-      "category": "产品、设计与商业",
-      "link": "https://www.fastcompany.com/91641216/taxing-billionaires-failed-california-other-states-taking-steps-collect-rich",
-      "zh_title": "对亿万富翁征税在加州失败了，但其他州正采取措施向富人征税"
-    },
-    {
-      "orig_title": "'Strangers' author Belle Burden says her divorce left her feeling financially powerless. Here are the habits she's changed after being a 'cautionary tale.'",
-      "source": "All Content from Business Insider",
-      "category": "产品、设计与商业",
-      "link": "https://www.businessinsider.com/bi-today-saturday-newsletter-belle-burden-financial-habits-changes-2026-11",
-      "zh_title": "《陌生人》作者贝尔·伯登说离婚让她感到经济上无能为力。以下是她成为“前车之鉴”后改变的习惯。"
-    },
-    {
-      "orig_title": "FAA Lifts Nationwide Groundstop, Flight Disruptions Continue",
-      "source": "Bloomberg Business",
-      "category": "产品、设计与商业",
-      "link": "https://www.bloomberg.com/news/audio/2026-11-14/faa-lifts-nationwide-groundstop-flight-disruptions-continue",
-      "zh_title": "FAA解除全国停飞令，航班中断仍在持续"
-    },
-    {
-      "orig_title": "Nearly 9,500 flights were halted across the US after an FAA ground stop. What to do if your trip was affected.",
-      "source": "All Content from Business Insider",
-      "category": "产品、设计与商业",
-      "link": "https://www.businessinsider.com/what-do-if-flight-delayed-or-canceled-airlines-atc-2026-11",
-      "zh_title": "美国联邦航空管理局地面停飞令后全美近9500架次航班暂停，如果你的行程受影响该怎么办"
-    },
-    {
-      "orig_title": "From the Telephone to Modern Computing | James Gleick",
-      "source": "a16z podcast",
-      "category": "AI 前沿",
-      "link": "https://a16z.simplecast.com/episodes/from-the-telephone-to-modern-computing-james-gleick-oBlUL96w",
-      "zh_title": "从电话到现代计算 | 詹姆斯·格雷克"
-    },
-    {
-      "orig_title": "US Air Force Responds to Drone Activity At UK Base, PA Says",
-      "source": "Bloomberg Business",
-      "category": "产品、设计与商业",
-      "link": "https://www.bloomberg.com/news/articles/2026-11-14/us-air-force-responds-to-drone-activity-at-uk-base-pa-says",
-      "zh_title": "美国空军回应英国基地无人机活动，宾夕法尼亚州方面称"
-    },
-    {
-      "orig_title": "Here’s how to fix the looming Social Security shortfall",
-      "source": "Fast Company",
-      "category": "产品、设计与商业",
-      "link": "https://www.fastcompany.com/91642066/heres-how-to-fix-the-looming-social-security-shortfall",
-      "zh_title": "如何解决迫在眉睫的社会保障资金缺口"
-    },
-    {
-      "orig_title": "库克接班，可能真是英伟达的最优解",
-      "source": "钛媒体",
-      "category": "产品、设计与商业",
-      "link": "https://www.tmtpost.com/8205427.html",
-      "zh_title": "库克接班，可能真是英伟达的最优解"
-    },
-    {
-      "orig_title": "ADC载荷迭代迈入加速期",
-      "source": "钛媒体",
-      "category": "产品、设计与商业",
-      "link": "https://www.tmtpost.com/8205391.html",
-      "zh_title": "ADC载荷迭代迈入加速期"
-    },
-    {
-      "orig_title": "英伟达上演“奥特曼2.0”，员工集体请愿：让老黄回家！",
-      "source": "量子位",
-      "category": "AI 前沿",
-      "link": "https://www.qbitai.com/2026/11/510297.html",
-      "zh_title": "英伟达上演“奥特曼2.0”，员工集体请愿：让老黄回家！"
-    },
-    {
-      "orig_title": "This Week in Package Management: 14 November 2026",
-      "source": "nesbitt.io",
-      "category": "工程与编程",
-      "link": "https://nesbitt.io/2026/11/14/this-week-in-package-management.html",
-      "zh_title": "本周包管理动态：2026年11月14日"
-    },
-    {
-      "orig_title": "Don’t buy the new Apple TV 4K until Apple does these 3 things",
-      "source": "Fast Company",
-      "category": "产品、设计与商业",
-      "link": "https://www.fastcompany.com/91636474/dont-buy-the-new-apple-tv-4k-until-apple-does-these-3-things",
-      "zh_title": "在苹果做到这三件事之前，别买新款Apple TV 4K"
-    },
-    {
-      "orig_title": "「史上最严」湿实验预测基准发布！推理拉满、算力翻5倍也白搭",
-      "source": "量子位",
-      "category": "AI 前沿",
-      "link": "https://www.qbitai.com/2026/11/510232.html",
-      "zh_title": "「史上最严」湿实验预测基准发布！推理拉满、算力翻5倍也白搭"
-    },
-    {
-      "orig_title": "程序员集体沉迷折纸飞机！最长滞空31.2秒",
-      "source": "量子位",
-      "category": "AI 前沿",
-      "link": "https://www.qbitai.com/2026/11/510150.html",
-      "zh_title": "程序员集体沉迷折纸飞机！最长滞空31.2秒"
-    },
-    {
-      "orig_title": "绿电进Token出！联想重新定义词元工厂",
-      "source": "量子位",
-      "category": "AI 前沿",
-      "link": "https://www.qbitai.com/2026/11/510094.html",
-      "zh_title": "绿电进Token出！联想重新定义词元工厂"
-    },
-    {
-      "orig_title": "突发！6万人请愿黄仁勋重回CEO，马斯克也出手了",
-      "source": "人人都是产品经理",
-      "category": "产品、设计与商业",
-      "link": "https://www.woshipm.com/it/6494012.html",
-      "zh_title": "突发！6万人请愿黄仁勋重回CEO，马斯克也出手了"
-    },
-    {
-      "orig_title": "mkw-recomp – 在 Windows / Linux 上原生运行 Switch 2《马力欧赛车世界》，不需要模拟器",
-      "source": "小众软件",
-      "category": "产品、设计与商业",
-      "link": "https://www.appinn.com/mkw-recomp/",
-      "zh_title": "mkw-recomp – 在 Windows / Linux 上原生运行 Switch 2《马力欧赛车世界》，不需要模拟器"
-    },
-    {
-      "orig_title": "A New York Times writer spent an hour trying to reach Walmart. Then she deleted her account and told the world",
-      "source": "Fast Company",
-      "category": "产品、设计与商业",
-      "link": "https://www.fastcompany.com/91635147/new-york-times-writer-spent-an-hour-trying-to-reach-walmart",
-      "zh_title": "《纽约时报》一位作者花了一小时试图联系沃尔玛。随后她注销了账户并告知全世界"
-    },
-    {
-      "orig_title": "[AINews] The No AI Slop Manifesto",
-      "source": "Latent.Space",
-      "category": "AI 前沿",
-      "link": "https://latent.space/p/ainews-the-no-ai-slop-manifesto/",
-      "zh_title": "[AINews] 拒绝AI垃圾内容宣言"
-    },
-    {
-      "orig_title": "让 Windows 11 在 iPhone Duo 上运行，使用 Gemini 开发，已开源｜WindowsiOS",
-      "source": "小众软件",
-      "category": "产品、设计与商业",
-      "link": "https://www.appinn.com/windowsios-windows-11-iphone-duo-gemini-open-source/",
-      "zh_title": "让 Windows 11 在 iPhone Duo 上运行，使用 Gemini 开发，已开源｜WindowsiOS"
-    },
-    {
-      "orig_title": "Anthropic刚教的24小时agent，我当天做出来了",
-      "source": "人人都是产品经理",
-      "category": "产品、设计与商业",
-      "link": "https://www.woshipm.com/ai/6493965.html",
-      "zh_title": "Anthropic刚教的24小时agent，我当天做出来了"
-    },
-    {
-      "orig_title": "开源/10秒出4K/超长文本/… 我实测出了MiniMax H3-Image擅长的四类新玩法",
-      "source": "人人都是产品经理",
-      "category": "产品、设计与商业",
-      "link": "https://www.woshipm.com/ai/6493967.html",
-      "zh_title": "开源/10秒出4K/超长文本/… 我实测出了MiniMax H3-Image擅长的四类新玩法"
-    },
-    {
-      "orig_title": "分享 8 个有趣的小 App：打怪要做深蹲？出门靠掷骰子？",
-      "source": "人人都是产品经理",
-      "category": "产品、设计与商业",
-      "link": "https://www.woshipm.com/evaluating/6493070.html",
-      "zh_title": "分享 8 个有趣的小 App：打怪要做深蹲？出门靠掷骰子？"
-    },
-    {
-      "orig_title": "20VC: Taking on NVIDIA: Fractile CEO on the Future of Chips | What Everyone Gets Wrong About Capex Spending | The Winners and Losers in Neo Clouds with Walter Goodwin",
-      "source": "20VC",
-      "category": "产品、设计与商业",
-      "link": "https://thetwentyminutevc.libsyn.com/20vc-taking-on-nvidia-fractile-ceo-on-the-future-of-chips-what-everyone-gets-wrong-about-capex-spending-the-winners-and-losers-in-neo-clouds-with-walter-goodwin",
-      "zh_title": "20VC：挑战英伟达：Fractile CEO谈芯片的未来 | 关于资本支出，所有人都搞错了什么 | 新云计算的赢家与输家，对话Walter Goodwin"
-    },
-    {
-      "orig_title": "People like their jobs, even British people",
-      "source": "Marginal REVOLUTION",
-      "category": "观点与杂谈",
-      "link": "https://marginalrevolution.com/marginalrevolution/2026/11/people-like-their-jobs-even-british-people.html?utm_source=rss&utm_medium=rss&utm_campaign=people-like-their-jobs-even-british-people",
-      "zh_title": "人们喜欢自己的工作，即便是英国人也不例外"
-    },
-    {
-      "orig_title": "Temu 美国全托管备货 3000 件，退货率 18% 的品还要继续补吗？",
-      "source": "白鲸出海",
-      "category": "产品、设计与商业",
-      "link": "https://www.baijing.cn/question/638732",
-      "zh_title": "Temu美国全托管备货3000件，退货率18%的品还要继续补吗？"
-    },
-    {
-      "orig_title": "小红书爆款卖货观察 Vol.01：想出爆款，那就……",
-      "source": "人人都是产品经理",
-      "category": "产品、设计与商业",
-      "link": "https://www.woshipm.com/share/6493903.html",
-      "zh_title": "小红书爆款卖货观察 Vol.01：想出爆款，那就……"
-    },
-    {
-      "orig_title": "TikTok 美区短视频挂车转化不到 0.8%，是选品供应链拖累还是内容问题？",
-      "source": "白鲸出海",
-      "category": "产品、设计与商业",
-      "link": "https://www.baijing.cn/question/638731",
-      "zh_title": "TikTok美区短视频挂车转化不到0.8%，是选品供应链拖累还是内容问题？"
-    },
-    {
-      "orig_title": "AI 新手从 0 到 1 搭建一款微信小程序实战经验分享",
-      "source": "人人都是产品经理",
-      "category": "产品、设计与商业",
-      "link": "https://www.woshipm.com/ai/6421497.html",
-      "zh_title": "AI新手从0到1搭建一款微信小程序实战经验分享"
-    },
-    {
-      "orig_title": "铁打的ROI，流水的CMO?",
-      "source": "人人都是产品经理",
-      "category": "产品、设计与商业",
-      "link": "https://www.woshipm.com/share/6492982.html",
-      "zh_title": "铁打的ROI，流水的CMO？"
-    },
-    {
-      "orig_title": "GPSR 标签不合规被下架，欧洲站广告 CPA 从 12 欧涨到 31 欧怎么办？",
-      "source": "白鲸出海",
-      "category": "产品、设计与商业",
-      "link": "https://www.baijing.cn/question/638730",
-      "zh_title": "GPSR标签不合规被下架，欧洲站广告CPA从12欧涨到31欧怎么办？"
-    },
-    {
-      "orig_title": "The Power and Roots of Aspirations",
-      "source": "Marginal REVOLUTION",
-      "category": "观点与杂谈",
-      "link": "https://marginalrevolution.com/marginalrevolution/2026/11/the-power-and-roots-of-aspirations.html?utm_source=rss&utm_medium=rss&utm_campaign=the-power-and-roots-of-aspirations",
-      "zh_title": "抱负的力量与根源"
-    },
-    {
-      "orig_title": "This simple QR code creator is all about your privacy",
-      "source": "Fast Company",
-      "category": "产品、设计与商业",
-      "link": "https://www.fastcompany.com/91633263/best-qr-code-maker",
-      "zh_title": "这款简洁的二维码生成器专注保护你的隐私"
-    },
-    {
-      "orig_title": "和爆雷的侨银股份沟通了一下",
-      "source": "集思录",
-      "category": "产品、设计与商业",
-      "link": "https://www.jisilu.cn/question/526797",
-      "zh_title": "和爆雷的侨银股份沟通了一下"
-    },
-    {
-      "orig_title": "Satoshi-era wallet served in a $260 billion lawsuit moves 75 BTC it held since 2011",
-      "source": "CoinDesk",
-      "category": "产品、设计与商业",
-      "link": "https://www.coindesk.com/markets/2026/11/13/satoshi-era-wallet-served-in-a-usd260-billion-lawsuit-moves-75-btc-it-held-since-2011",
-      "zh_title": "中本聪时代钱包在一桩2600亿美元诉讼中被送达，转移了自2011年以来持有的75枚BTC"
-    },
-    {
-      "orig_title": "难怪昨天看灵康转债盘面不对劲",
-      "source": "集思录",
-      "category": "产品、设计与商业",
-      "link": "https://www.jisilu.cn/question/526791",
-      "zh_title": "难怪昨天看灵康转债盘面不对劲"
-    },
-    {
-      "orig_title": "「豆包工作」开窍， Logo终于换成了豆包姐",
-      "source": "人人都是产品经理",
-      "category": "产品、设计与商业",
-      "link": "https://www.woshipm.com/ai/6493883.html",
-      "zh_title": "「豆包工作」开窍了，Logo终于换成了豆包姐"
-    },
-    {
-      "orig_title": "FAA Flight Ground Stop Leaves Passengers in Airport Limbo Across US",
-      "source": "Bloomberg Business",
-      "category": "产品、设计与商业",
-      "link": "https://www.bloomberg.com/news/articles/2026-11-14/faa-flight-ground-stop-leaves-passengers-in-airport-limbo-across-us",
-      "zh_title": "FAA航班地面停飞令全美机场旅客滞留"
-    },
-    {
-      "orig_title": "中专生拍出《哈利·波特》爆款！欧美明星、好莱坞制片人集体点赞",
-      "source": "量子位",
-      "category": "AI 前沿",
-      "link": "https://www.qbitai.com/2026/11/510013.html",
-      "zh_title": "中专生拍出《哈利·波特》爆款！欧美明星、好莱坞制片人集体点赞"
-    },
-    {
-      "orig_title": "突发！DeepSeek开放全家桶API",
-      "source": "量子位",
-      "category": "AI 前沿",
-      "link": "https://www.qbitai.com/2026/11/510003.html",
-      "zh_title": "突发！DeepSeek开放全家桶API"
-    },
-    {
-      "orig_title": "Jensen Ousted as Nvidia CEO: \"Spy\" Scandal, Export Restrictions, Market Impact",
-      "source": "All-In Podcast",
-      "category": "产品、设计与商业",
-      "link": "https://allinchamathjason.libsyn.com/jensen-ousted-as-nvidia-ceo-spy-scandal-export-restrictions-market-impact",
-      "zh_title": "Jensen被免去英伟达CEO职务：“间谍”丑闻、出口限制与市场影响"
-    },
-    {
-      "orig_title": "FAA lifts nationwide ground stop that blocked takeoffs for hours",
-      "source": "The Verge",
-      "category": "AI 前沿",
-      "link": "https://www.theverge.com/news/1033489/faa-ground-stop",
-      "zh_title": "FAA解除全国地面停飞令，此前数小时禁止起飞"
-    },
-    {
-      "orig_title": "这可能是本次人工智能泡沫中的标志性事件",
-      "source": "集思录",
-      "category": "产品、设计与商业",
-      "link": "https://www.jisilu.cn/question/526783",
-      "zh_title": "这可能是本次人工智能泡沫中的标志性事件"
-    },
-    {
-      "orig_title": "侨银，侨银！ 开始了！",
-      "source": "集思录",
-      "category": "产品、设计与商业",
-      "link": "https://www.jisilu.cn/question/526782",
-      "zh_title": "侨银，侨银！开始了！"
-    },
-    {
-      "orig_title": "Starship flight 15 powers to orbit—setting up a possible catch on Saturday",
-      "source": "Ars Technica - All content",
-      "category": "工程与编程",
-      "link": "https://arstechnica.com/space/2026/11/starship-flight-15-powers-to-orbit-setting-up-a-possible-catch-on-saturday/",
-      "zh_title": "星舰第15次飞行成功入轨——为周六可能进行的捕获铺平道路"
-    },
-    {
-      "orig_title": "How to find meaning in large tech companies",
-      "source": "seangoedecke.com",
-      "category": "工程与编程",
-      "link": "https://seangoedecke.com/how-to-find-meaning-in-large-tech-companies/",
-      "zh_title": "如何在大型科技公司中寻找意义"
-    },
-    {
-      "orig_title": "FAA has lifted its third-ever nationwide ground stop",
-      "source": "Ars Technica - All content",
-      "category": "工程与编程",
-      "link": "https://arstechnica.com/tech-policy/2026/11/faa-orders-third-nationwide-ground-stop-in-its-history/",
-      "zh_title": "美国联邦航空管理局已实施史上第三次全国性停飞"
-    },
-    {
-      "orig_title": "datasette-cluster-map 0.19",
-      "source": "simonwillison.net",
-      "category": "AI 前沿",
-      "link": "https://simonwillison.net/2026/Nov/13/datasette-cluster-map/",
-      "zh_title": "datasette-cluster-map 0.19"
-    },
-    {
-      "orig_title": "Amazon’s new Kindle Colorsoft is a premium e-reader with a premium price",
-      "source": "TechCrunch",
-      "category": "AI 前沿",
-      "link": "https://techcrunch.com/2026/11/13/amazons-new-kindle-colorsoft-is-a-premium-e-reader-with-a-premium-price/",
-      "zh_title": "亚马逊新款Kindle Colorsoft是一款高价优质电子阅读器"
-    },
-    {
-      "orig_title": "Apple TV has a new ASL feature, offering a richer language experience beyond captions",
-      "source": "Fast Company",
-      "category": "产品、设计与商业",
-      "link": "https://www.fastcompany.com/91642317/apple-tv-has-a-new-asl-feature-offering-a-richer-language-experience-beyond-captions",
-      "zh_title": "Apple TV推出新ASL功能，提供超越字幕的丰富语言体验"
-    },
-    {
-      "orig_title": "Jensen Huang’s departure blasts big hole in AI startup funding, VCs and founders say",
-      "source": "TechCrunch",
-      "category": "AI 前沿",
-      "link": "https://techcrunch.com/2026/11/13/jensen-huangs-departure-blasts-big-hole-in-ai-startup-funding-vcs-and-founders-say/",
-      "zh_title": "风投和创始人称，黄仁勋的离职给AI初创企业融资留下巨大缺口"
-    },
-    {
-      "orig_title": "datasette-leaflet 0.3",
-      "source": "simonwillison.net",
-      "category": "AI 前沿",
-      "link": "https://simonwillison.net/2026/Nov/13/datasette-leaflet/",
-      "zh_title": "datasette-leaflet 0.3"
-    },
-    {
-      "orig_title": "🏴 FREE: AntSeed’s Open Inference Network Faces Its First Test",
-      "source": "Bankless",
-      "category": "产品、设计与商业",
-      "link": "https://www.bankless.com/read/free-antseeds-open-inference-network-faces-its-first-test",
-      "zh_title": "🏴 免费：AntSeed的开放推理网络迎来首次考验"
-    },
-    {
-      "orig_title": "🏴 PAID: AntSeed’s Open Inference Network Faces Its First Test",
-      "source": "Bankless",
-      "category": "产品、设计与商业",
-      "link": "https://www.bankless.com/read/paid-antseeds-open-inference-network-faces-its-first-test",
-      "zh_title": "🏴 付费：AntSeed的开放推理网络迎来首次考验"
-    },
-    {
-      "orig_title": "Could a Former Nvidia Executive Replace Jensen Huang? Arm’s Rene Haas Emerges as Candidate",
-      "source": "Decrypt",
-      "category": "产品、设计与商业",
-      "link": "https://decrypt.co/383276/nvidia-arm-ceo-rene-haas-replace-jensen-huang",
-      "zh_title": "前英伟达高管能否接替黄仁勋？Arm的雷内·哈斯成为候选人"
-    },
-    {
-      "orig_title": "FAA grounds all flights in the U.S. until further notice: Reports cite air traffic control outage",
-      "source": "Fast Company",
-      "category": "产品、设计与商业",
-      "link": "https://www.fastcompany.com/91642564/faa-grounds-all-flights-in-us-until-further-notice-reports-cite-air-traffic-control-atc-outage",
-      "zh_title": "美国联邦航空管理局停飞全美所有航班直至另行通知：报道称空中交通管制系统中断"
-    },
-    {
-      "orig_title": "AntSeed’s Open Inference Network Faces Its First Test",
-      "source": "Bankless",
-      "category": "产品、设计与商业",
-      "link": "https://www.bankless.com/read/antseed-s-open-inference-network-faces-its-first-test",
-      "zh_title": "AntSeed的开放推理网络迎来首次考验"
-    },
-    {
-      "orig_title": "Millions of Americans are not taking their GLP-1 drugs as prescribed",
-      "source": "Ars Technica - All content",
-      "category": "工程与编程",
-      "link": "https://arstechnica.com/health/2026/11/millions-in-us-use-unapproved-glp-1s-and-use-them-in-unapproved-ways/",
-      "zh_title": "数百万美国人未按处方服用GLP-1药物"
-    },
-    {
-      "orig_title": "US government grounds all flights across the United States ‘due to extraordinary circumstances’",
-      "source": "TechCrunch",
-      "category": "AI 前沿",
-      "link": "https://techcrunch.com/2026/11/13/u-s-government-grounds-all-flights-across-the-united-states-due-to-extraordinary-cirumstances/",
-      "zh_title": "美国政府“因特殊情况”停飞全美所有航班"
-    },
-    {
-      "orig_title": "Should Government Officials Be Banned From Prediction Markets? House Oversight Says Maybe",
-      "source": "Decrypt",
-      "category": "产品、设计与商业",
-      "link": "https://decrypt.co/383271/government-officials-banned-prediction-markets-house-oversight",
-      "zh_title": "政府官员应被禁止参与预测市场吗？众议院监督委员会表示或许应该"
-    },
-    {
-      "orig_title": "FAA expands AI advice to manage air traffic congestion across entire US airspace",
-      "source": "Ars Technica - All content",
-      "category": "工程与编程",
-      "link": "https://arstechnica.com/features/2026/11/faa-expands-ai-advice-to-manage-air-traffic-congestion-across-entire-us-airspace/",
-      "zh_title": "美国联邦航空管理局扩大AI建议范围以管理全美空域空中交通拥堵"
-    },
-    {
-      "orig_title": "A remote employee refused 160 webcam photos a day. Her employer fired her",
-      "source": "Fast Company",
-      "category": "产品、设计与商业",
-      "link": "https://www.fastcompany.com/91635146/a-remote-employee-refused-160-webcam-photos-a-day-her-employer-fired-her",
-      "zh_title": "一名远程员工拒绝每天160次网络摄像头拍照，遭雇主解雇"
-    },
-    {
-      "orig_title": "China’s $3.2 Billion AI Pipeline Still Calls for Nvidia Chips Washington Restricts",
-      "source": "Decrypt",
-      "category": "产品、设计与商业",
-      "link": "https://decrypt.co/383266/china-ai-pipeline-nvidia-chips-washington-restricts",
-      "zh_title": "中国320亿美元AI计划仍依赖华盛顿限制的英伟达芯片"
-    },
-    {
-      "orig_title": "OpenAI board member makes a terrifying prediction: You will probably die from an AI accident",
-      "source": "Fast Company",
-      "category": "产品、设计与商业",
-      "link": "https://www.fastcompany.com/91642227/openai-board-member-terrifying-prediction-you-will-die-from-ai-accident-chatgpt",
-      "zh_title": "OpenAI董事会成员做出可怕预测：你可能会死于AI事故"
-    },
-    {
-      "orig_title": "This young startup wants to power floating data centers with the ocean’s heat, and investors are already on board",
-      "source": "TechCrunch",
-      "category": "AI 前沿",
-      "link": "https://techcrunch.com/2026/11/13/this-young-startup-wants-to-power-floating-data-centers-with-the-oceans-heat-and-investors-are-already-on-board/",
-      "zh_title": "这家年轻初创公司想用海洋热能驱动浮动数据中心，投资者已经入局"
-    },
-    {
-      "orig_title": "In elephants, the resilience of communities has its limits",
-      "source": "Ars Technica - All content",
-      "category": "工程与编程",
-      "link": "https://arstechnica.com/science/2026/11/in-elephants-the-resilience-of-communities-has-its-limits/",
-      "zh_title": "在大象中，群体的韧性有其极限"
-    },
-    {
-      "orig_title": "Andrew Sharp: ‘Jensen Huang Was Always Going to Lose’",
-      "source": "daringfireball.net",
-      "category": "产品、设计与商业",
-      "link": "https://sharptext.net/2026/jensen-huang-was-always-going-to-lose/",
-      "zh_title": "安德鲁·夏普：“黄仁勋注定会输”"
-    },
-    {
-      "orig_title": "Akash Opens One-Way AKT Migration to Solana",
-      "source": "Bankless",
-      "category": "产品、设计与商业",
-      "link": "https://www.bankless.com/read/news/akash-opens-one-way-akt-migration-to-solana",
-      "zh_title": "Akash向Solana开放单向AKT迁移"
-    },
-    {
-      "orig_title": "The untapped potential of a smarter SPIFF strategy",
-      "source": "Fast Company",
-      "category": "产品、设计与商业",
-      "link": "https://www.fastcompany.com/91640502/the-untapped-potential-of-a-smarter-spiff-strategy",
-      "zh_title": "更智能的SPIFF策略的未开发潜力"
-    },
-    {
-      "orig_title": "Trump Nominates Bipartisan Slate for SEC and CFTC",
-      "source": "Bankless",
-      "category": "产品、设计与商业",
-      "link": "https://www.bankless.com/read/news/trump-nominates-bipartisan-slate-for-sec-and-cftc",
-      "zh_title": "特朗普提名两党人选出任SEC和CFTC委员"
-    },
-    {
-      "orig_title": "Kalshi ditches Trump Jr. as advisor; CEO admitted \"optics\" weren't good",
-      "source": "Ars Technica - All content",
-      "category": "工程与编程",
-      "link": "https://arstechnica.com/tech-policy/2026/11/trump-jr-out-as-kalshi-advisor-after-his-firms-big-investment-in-polymarket/",
-      "zh_title": "Kalshi放弃小特朗普作为顾问；CEO承认“观感”不佳"
-    },
-    {
-      "orig_title": "Yes to Life, in Spite of Everything: Viktor Frankl’s Lost Lectures on Moving Beyond Optimism and Pessimism to Find the Deepest Source of Meaning",
-      "source": "Brain Pickings",
-      "category": "观点与杂谈",
-      "link": "https://www.themarginalian.org/2026/11/13/yes-to-life-in-spite-of-everything-viktor-frankl/",
-      "zh_title": "对生命说“是”，不顾一切：维克多·弗兰克尔关于超越乐观与悲观、寻找意义最深源泉的失落讲座"
-    },
-    {
-      "orig_title": "Pharmaceutical ads may influence which drug AI recommends, new research finds",
-      "source": "Fast Company",
-      "category": "产品、设计与商业",
-      "link": "https://www.fastcompany.com/91641278/ai-drug-recommendations-influenced-big-pharma-ads-study",
-      "zh_title": "新研究发现，药品广告可能影响AI推荐哪种药物"
-    },
-    {
-      "orig_title": "Pluralistic: I told you so (13 Nov 2026)",
-      "source": "pluralistic.net",
-      "category": "观点与杂谈",
-      "link": "https://pluralistic.net/2026/11/13/outlookpocalypse/",
-      "zh_title": "多元主义：我早就告诉过你（2026年11月13日）"
-    },
-    {
-      "orig_title": "AI agent startup LangChain hits $3B valuation",
-      "source": "TechCrunch",
-      "category": "AI 前沿",
-      "link": "https://techcrunch.com/2026/11/13/ai-agent-startup-langchain-hits-3b-valuation/",
-      "zh_title": "AI智能体初创公司LangChain估值达30亿美元"
-    },
-    {
-      "orig_title": "Whipped cream sold at Costco is being recalled because it could have cleaning chemicals inside",
-      "source": "Fast Company",
-      "category": "产品、设计与商业",
-      "link": "https://www.fastcompany.com/91642139/costco-whipped-cream-recall-kirkland-signature-chemical-warning",
-      "zh_title": "Costco销售的奶油因可能含有清洁化学品而被召回"
-    },
-    {
-      "orig_title": "Inside Jensen Huang’s Final Hours as the CEO of Nvidia",
-      "source": "daringfireball.net",
-      "category": "产品、设计与商业",
-      "link": "https://www.bloomberg.com/news/articles/2026-11-13/inside-jensen-huang-s-final-hours-as-the-ceo-of-nvidia?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc5NDU0NzgxNSwiZXhwIjoxNzk1MTUyNjE1LCJhcnRpY2xlSWQiOiJUT0YxQVBOM04wOUIwMCIsImJjb25uZWN0SWQiOiI1RkQyNjU1NTA2QTI0NjM2QjM1NzBEQkQ5MTY1RkI1NCJ9.8RulazBTaUuCgwysfQ4dlu-dhQIe3yvK-2UHLcm3hWc&leadSource=article-gifting",
-      "zh_title": "黄仁勋作为英伟达CEO的最后时刻"
-    },
-    {
-      "orig_title": "Jensen Huang’s resignation from Nvidia won’t end his problems with Congress",
-      "source": "Fast Company",
-      "category": "产品、设计与商业",
-      "link": "https://www.fastcompany.com/91642370/jensen-huangs-resignation-from-nvidia-wont-end-his-problems-with-congress",
-      "zh_title": "黄仁勋从英伟达辞职并不能了结他与国会的麻烦"
-    },
-    {
-      "orig_title": "Microsoft’s massive outage puts its AI-driven layoffs under scrutiny",
-      "source": "Fast Company",
-      "category": "产品、设计与商业",
-      "link": "https://www.fastcompany.com/91642223/microsofts-massive-outage-puts-its-ai-driven-layoffs-under-scrutiny",
-      "zh_title": "微软大规模宕机使其AI驱动的裁员受到审视"
-    },
-    {
-      "orig_title": "Friday links: lying about lying",
+      "orig_title": "Top clicks this week on Abnormal Returns",
       "source": "Abnormal Returns",
       "category": "产品、设计与商业",
-      "link": "https://abnormalreturns.com/2026/11/13/friday-links-lying-about-lying/",
-      "zh_title": "周五链接：关于撒谎的撒谎"
+      "link": "https://abnormalreturns.com/2026/11/15/top-clicks-this-week-on-abnormal-returns-878/",
+      "zh_title": "本周Abnormal Returns点击量最高的文章"
     },
     {
-      "orig_title": "Export-banned Nvidia chips are behind China’s most powerful AI models — uh-oh, Jensen!",
-      "source": "TechCrunch",
-      "category": "AI 前沿",
-      "link": "https://techcrunch.com/2026/11/13/export-banned-nvidia-chips-are-behind-chinas-most-powerful-ai-models-uh-oh-jensen/",
-      "zh_title": "被出口禁令限制的英伟达芯片支撑着中国最强大的AI模型——哎呀，黄仁勋！"
+      "orig_title": "BundleHunt 2026 黑五软件特卖：8 款值得购买",
+      "source": "小众软件",
+      "category": "产品、设计与商业",
+      "link": "https://www.appinn.com/bundlehunt-26-black-friday/",
+      "zh_title": "BundleHunt 2026 黑五软件特卖：8 款值得购买"
     },
     {
-      "orig_title": "Are we witnessing an intelligence explosion?",
+      "orig_title": "Variable Electricity Pricing - the Highs and the Lows",
+      "source": "shkspr.mobi",
+      "category": "观点与杂谈",
+      "link": "https://shkspr.mobi/blog/2026/11/variable-electricity-pricing-the-highs-and-the-lows/",
+      "zh_title": "浮动电价——高峰与低谷"
+    },
+    {
+      "orig_title": "My husband was an NFL head coach, but we raised our 3 kids with strict rules about money. Christmas meant just 4 gifts.",
+      "source": "All Content from Business Insider",
+      "category": "产品、设计与商业",
+      "link": "https://www.businessinsider.com/mike-tomlin-wife-kids-four-gift-christmas-rule-2026-11",
+      "zh_title": "我丈夫曾是NFL主教练，但我们用严格的金钱规则养育了3个孩子。圣诞节只送4份礼物。"
+    },
+    {
+      "orig_title": "I loved living in NYC and thought I'd stay forever. As my life changed, however, so did where I wanted to be.",
+      "source": "All Content from Business Insider",
+      "category": "产品、设计与商业",
+      "link": "https://www.businessinsider.com/love-living-in-new-york-moved-away-anyway-2026-11",
+      "zh_title": "我曾热爱住在纽约，以为自己会永远留下。然而随着生活变化，我想去的地方也变了。"
+    },
+    {
+      "orig_title": "An elite matchmaker says executives' biggest strength at work can make dating harder for them",
+      "source": "All Content from Business Insider",
+      "category": "产品、设计与商业",
+      "link": "https://www.businessinsider.com/why-successful-executives-struggle-dating-matchmaker-2026-11",
+      "zh_title": "一位精英红娘表示，高管在工作中最大的优势可能让他们更难约会"
+    },
+    {
+      "orig_title": "Tyler Cowen’s strongest musical recommendations, 2003–2026",
       "source": "Marginal REVOLUTION",
       "category": "观点与杂谈",
-      "link": "https://marginalrevolution.com/marginalrevolution/2026/11/are-we-witnessing-an-intelligence-explosion.html?utm_source=rss&utm_medium=rss&utm_campaign=are-we-witnessing-an-intelligence-explosion",
-      "zh_title": "我们是否正在目睹一场智能爆炸？"
+      "link": "https://marginalrevolution.com/marginalrevolution/2026/11/tyler-cowens-strongest-musical-recommendations-2003-2026.html?utm_source=rss&utm_medium=rss&utm_campaign=tyler-cowens-strongest-musical-recommendations-2003-2026",
+      "zh_title": "泰勒·考恩2003至2026年最力荐的音乐作品"
     },
     {
-      "orig_title": "The avalanche that hit math is coming for AI development",
-      "source": "dwarkesh.com",
-      "category": "AI 前沿",
-      "link": "https://www.dwarkesh.com/p/rsi",
-      "zh_title": "冲击数学的雪崩正扑向AI开发"
-    },
-    {
-      "orig_title": "The avalanche that hit math is coming for AI development",
-      "source": "Dwarkesh Podcast",
-      "category": "AI 前沿",
-      "link": "https://www.dwarkesh.com/p/rsi",
-      "zh_title": "冲击数学的雪崩正降临到AI开发上"
-    },
-    {
-      "orig_title": "Premium: The Hater’s Guide To Megaspeed",
-      "source": "wheresyoured.at",
+      "orig_title": "Ukraine's war robots are starting to down Russia's drones. It could eventually change the fight in the kill zone.",
+      "source": "All Content from Business Insider",
       "category": "产品、设计与商业",
-      "link": "https://www.wheresyoured.at/hg-megaspeed/",
-      "zh_title": "付费专享：超级速度黑子指南"
+      "link": "https://www.businessinsider.com/ukraine-war-robots-starting-down-drones-could-alter-kill-zone-2026-11",
+      "zh_title": "乌克兰的作战机器人开始击落俄罗斯无人机，这最终可能改变杀伤区内的战局"
     },
     {
-      "orig_title": "A Banker’s Guide to Anthropic",
-      "source": "Net Interest",
-      "category": "产品、设计与商业",
-      "link": "https://www.netinterest.co/p/a-bankers-guide-to-anthropic",
-      "zh_title": "银行家指南：Anthropic"
-    },
-    {
-      "orig_title": "2026.46: The End of Jensen",
-      "source": "Stratechery",
-      "category": "产品、设计与商业",
-      "link": "https://stratechery.com/2026/the-end-of-jensen/",
-      "zh_title": "2026.46：黄仁勋时代的终结"
-    },
-    {
-      "orig_title": "Nova Scotia Bets on Microelectronics Integration, Not Chip Fabs",
-      "source": "EE Times",
-      "category": "硬件",
-      "link": "https://www.eetimes.com/nova-scotia-bets-on-microelectronics-integration-not-chip-fabs/",
-      "zh_title": "新斯科舍省押注微电子集成，而非芯片晶圆厂"
-    },
-    {
-      "orig_title": "Trump’s First Democratic Picks for SEC and CFTC Could Reshape Crypto’s Regulators",
-      "source": "Decrypt",
-      "category": "产品、设计与商业",
-      "link": "https://decrypt.co/383260/trump-first-democratic-picks-sec-cftc-could-reshape-crypto",
-      "zh_title": "特朗普首批民主党SEC与CFTC人选可能重塑加密监管格局"
-    },
-    {
-      "orig_title": "Microsoft, and Its Customers, Are Suffering a Global Cloud Outage",
-      "source": "daringfireball.net",
-      "category": "产品、设计与商业",
-      "link": "https://arstechnica.com/tech-policy/2026/11/microsoft-blames-failed-server-health-checks-not-hackers-for-global-outage/",
-      "zh_title": "微软及其客户正遭遇全球云服务中断"
-    },
-    {
-      "orig_title": "OpenAI board member worries an AI \"takeover\" of society could be months away",
+      "orig_title": "How the world’s fires changed while humanity hit pause",
       "source": "Ars Technica - All content",
       "category": "工程与编程",
-      "link": "https://arstechnica.com/ai/2026/11/ai-is-the-most-likely-reason-youll-die-openai-board-member-warns/",
-      "zh_title": "OpenAI董事会成员担忧AI“接管”社会可能仅剩数月"
+      "link": "https://arstechnica.com/science/2026/11/how-the-worlds-fires-changed-while-humanity-hit-pause/",
+      "zh_title": "人类按下暂停键期间，全球火灾发生了怎样的变化"
     },
     {
-      "orig_title": "5 things Jensen Huang mastered that Nvidia’s next CEO will have to learn",
-      "source": "Fast Company",
+      "orig_title": "Date codes on cardboard boxes",
+      "source": "dfarq.homeip.net",
+      "category": "硬件",
+      "link": "https://dfarq.homeip.net/date-codes-on-cardboard-boxes/?utm_source=rss&utm_medium=rss&utm_campaign=date-codes-on-cardboard-boxes",
+      "zh_title": "纸板箱上的日期代码"
+    },
+    {
+      "orig_title": "Inside Sysco: How America's restaurants get ingredients",
+      "source": "All Content from Business Insider",
       "category": "产品、设计与商业",
-      "link": "https://www.fastcompany.com/91642252/5-things-jensen-huang-mastered-that-nvidias-next-ceo-will-have-to-learn",
-      "zh_title": "黄仁勋精通的5件事，英伟达下一任CEO将不得不学"
+      "link": "https://www.businessinsider.com/how-sysco-feeds-america-2026-11",
+      "zh_title": "走进西斯科：美国餐厅如何获取食材"
     },
     {
-      "orig_title": "David Sacks Is Fucked Too",
-      "source": "daringfireball.net",
+      "orig_title": "古代电脑画面差距有多大？同一款游戏，13 种模样",
+      "source": "小众软件",
       "category": "产品、设计与商业",
-      "link": "https://x.com/DavidSacks/status/2121070881258504395",
-      "zh_title": "大卫·萨克斯也完蛋了"
+      "link": "https://www.appinn.com/retro-computer-graphics-comparison/",
+      "zh_title": "古代电脑画面差距有多大？同一款游戏，13 种模样"
     },
     {
-      "orig_title": "Ukraine designed its own national typeface so it doesn’t have to use Russian fonts",
-      "source": "Fast Company",
+      "orig_title": "Is Nvidia cooked without Jensen Huang?",
+      "source": "All Content from Business Insider",
       "category": "产品、设计与商业",
-      "link": "https://www.fastcompany.com/91638747/ukraine-designed-its-own-national-typeface-so-it-doesnt-have-to-use-russian-fonts",
-      "zh_title": "乌克兰设计了自己的国家字体，以免使用俄语字体"
+      "link": "https://www.businessinsider.com/bi-today-sunday-newsletter-nvidia-without-jensen-huang-2026-11",
+      "zh_title": "没有黄仁勋，英伟达还能撑住吗？"
     },
     {
-      "orig_title": "This Week on The Analog Antiquarian",
-      "source": "filfre.net",
+      "orig_title": "What Breaks When You Scale 10x? | Zipline’s Keller Cliffton",
+      "source": "a16z podcast",
+      "category": "AI 前沿",
+      "link": "https://a16z.simplecast.com/episodes/what-breaks-when-you-scale-10x-ziplines-keller-cliffton-xr3f9vCW",
+      "zh_title": "规模扩大十倍时什么会崩？| Zipline 的 Keller Cliffton"
+    },
+    {
+      "orig_title": "AI and complements",
+      "source": "Marginal REVOLUTION",
       "category": "观点与杂谈",
-      "link": "https://www.filfre.net/2026/11/this-week-on-the-analog-antiquarian/",
-      "zh_title": "本周《模拟古物研究者》"
+      "link": "https://marginalrevolution.com/marginalrevolution/2026/11/ai-and-complements.html?utm_source=rss&utm_medium=rss&utm_campaign=ai-and-complements",
+      "zh_title": "AI 与互补品"
     },
     {
-      "orig_title": "U.S. Senate Banking Committee races toward hearing on new SEC nominations",
-      "source": "CoinDesk",
+      "orig_title": "AI is making software easier to build. Keeping it running is another story",
+      "source": "Fast Company",
       "category": "产品、设计与商业",
-      "link": "https://www.coindesk.com/policy/2026/11/13/u-s-senate-banking-committee-races-toward-hearing-on-new-sec-nominations",
-      "zh_title": "美国参议院银行委员会加紧安排新SEC提名人听证会"
+      "link": "https://www.fastcompany.com/91642024/ai-is-making-software-easier-to-build-keeping-it-running-is-another-story",
+      "zh_title": "AI 让软件开发更容易，让它持续运行却是另一回事"
     },
     {
-      "orig_title": "Loving vs. Being in Love: Jane Welsh Carlyle on Navigating the Heart’s Contradictions",
+      "orig_title": "The chip war never ended",
+      "source": "Fast Company",
+      "category": "产品、设计与商业",
+      "link": "https://www.fastcompany.com/91642012/the-chip-war-never-ended",
+      "zh_title": "芯片战争从未结束"
+    },
+    {
+      "orig_title": "Why New York City’s grocery store plan is not just about food",
+      "source": "Fast Company",
+      "category": "产品、设计与商业",
+      "link": "https://www.fastcompany.com/91642226/new-york-city-run-groceries-debate",
+      "zh_title": "为什么纽约市的杂货店计划不只是关乎食物"
+    },
+    {
+      "orig_title": "Stela – 在普通 PC 电脑上安装 macOS 27",
+      "source": "小众软件",
+      "category": "产品、设计与商业",
+      "link": "https://www.appinn.com/stela/",
+      "zh_title": "Stela——在普通 PC 电脑上安装 macOS 27"
+    },
+    {
+      "orig_title": "巴西葡语短剧投放 ROI 只有 0.6，三人小团队该先砍素材还是先换投放时段？",
+      "source": "白鲸出海",
+      "category": "产品、设计与商业",
+      "link": "https://www.baijing.cn/question/638752",
+      "zh_title": "巴西葡语短剧投放 ROI 只有 0.6，三人小团队该先砍素材还是先换投放时段？"
+    },
+    {
+      "orig_title": "巴西独立站接 Pix 后，4 人小团队怎么排期才不拖慢墨西哥站上线？",
+      "source": "白鲸出海",
+      "category": "产品、设计与商业",
+      "link": "https://www.baijing.cn/question/638751",
+      "zh_title": "巴西独立站接入 Pix 后，4 人小团队怎么排期才不拖慢墨西哥站上线？"
+    },
+    {
+      "orig_title": "Lazada 泰国跨境店履约时效从 4.2 天掉到 6.8 天，该先补人还是先改发货排期？",
+      "source": "白鲸出海",
+      "category": "产品、设计与商业",
+      "link": "https://www.baijing.cn/question/638750",
+      "zh_title": "Lazada 泰国跨境店履约时效从 4.2 天掉到 6.8 天，该先补人还是先改发货排期？"
+    },
+    {
+      "orig_title": "Best films of 2026",
+      "source": "Marginal REVOLUTION",
+      "category": "观点与杂谈",
+      "link": "https://marginalrevolution.com/marginalrevolution/2026/11/best-films-of-2026.html?utm_source=rss&utm_medium=rss&utm_campaign=best-films-of-2026",
+      "zh_title": "2026 年最佳影片"
+    },
+    {
+      "orig_title": "TikTok Shop马来站达人寄样，样品物流签收要4-6天、回款T+7，这个周转还能撑住吗？",
+      "source": "白鲸出海",
+      "category": "产品、设计与商业",
+      "link": "https://www.baijing.cn/question/638747",
+      "zh_title": "TikTok Shop 马来站达人寄样，样品物流签收要 4-6 天、回款 T+7，这个周转还能撑住吗？"
+    },
+    {
+      "orig_title": "短剧App在德国投放，德语配音素材完播率比英语字幕低一半，是内容问题还是素材问题？",
+      "source": "白鲸出海",
+      "category": "产品、设计与商业",
+      "link": "https://www.baijing.cn/question/638746",
+      "zh_title": "短剧 App 在德国投放，德语配音素材完播率比英语字幕低一半，是内容问题还是素材问题？"
+    },
+    {
+      "orig_title": "AI mobile testing works best as a guarded CI/CD layer",
+      "source": "FuturePulse",
+      "category": "AI 前沿",
+      "link": "https://futurpulse.com/ai-mobile-testing-works-best-as-a-guarded-ci-cd-layer/",
+      "zh_title": "AI 移动测试作为受控的 CI/CD 层效果最佳"
+    },
+    {
+      "orig_title": "短剧在尼日利亚和肯尼亚的素材接受度差这么多，本地化该从哪一层改？",
+      "source": "白鲸出海",
+      "category": "产品、设计与商业",
+      "link": "https://www.baijing.cn/question/638744",
+      "zh_title": "短剧在尼日利亚和肯尼亚的素材接受度差这么多，本地化该从哪一层改？"
+    },
+    {
+      "orig_title": "欧洲 SaaS 投放 CPA 涨到 180 欧，GDPR 同意弹窗是元凶吗？",
+      "source": "白鲸出海",
+      "category": "产品、设计与商业",
+      "link": "https://www.baijing.cn/question/638743",
+      "zh_title": "欧洲 SaaS 投放 CPA 涨到 180 欧，GDPR 同意弹窗是元凶吗？"
+    },
+    {
+      "orig_title": "欧洲短剧订阅转化低，是本地化素材没打中德国和法国用户吗？",
+      "source": "白鲸出海",
+      "category": "产品、设计与商业",
+      "link": "https://www.baijing.cn/question/638742",
+      "zh_title": "欧洲短剧订阅转化低，是本地化素材没打中德国和法国用户吗？"
+    },
+    {
+      "orig_title": "尼日利亚站 COD 退货率 18%，备货和支付方式该怎么调？",
+      "source": "白鲸出海",
+      "category": "产品、设计与商业",
+      "link": "https://www.baijing.cn/question/638741",
+      "zh_title": "尼日利亚站 COD 退货率 18%，备货和支付方式该怎么调？"
+    },
+    {
+      "orig_title": "188: 黄仁勋闪电离职之后：英伟达、AI 基建、中美竞争和算力江湖",
+      "source": "晚点聊 LateTalk",
+      "category": "产品、设计与商业",
+      "link": "https://podcast.latepost.com/188",
+      "zh_title": "188：黄仁勋闪电离职之后：英伟达、AI 基建、中美竞争和算力江湖"
+    },
+    {
+      "orig_title": "尼日利亚站投放 CPA 涨到 4.2 美元，本地支付转化却只有 11%，该先修哪头？",
+      "source": "白鲸出海",
+      "category": "产品、设计与商业",
+      "link": "https://www.baijing.cn/question/638740",
+      "zh_title": "尼日利亚站投放 CPA 涨到 4.2 美元，本地支付转化却只有 11%，该先修哪头？"
+    },
+    {
+      "orig_title": "The Four Buddhist Mantras for Turning Fear into Love",
       "source": "Brain Pickings",
       "category": "观点与杂谈",
-      "link": "https://www.themarginalian.org/2026/11/13/jane-welsh-carlyle-love/",
-      "zh_title": "爱着与坠入爱河：简·威尔士·卡莱尔论驾驭内心的矛盾"
+      "link": "https://www.themarginalian.org/2026/11/14/thich-nhat-hanh-fear-love/",
+      "zh_title": "将恐惧转化为爱的四大佛教箴言"
     },
     {
-      "orig_title": "Friday assorted links",
-      "source": "Marginal REVOLUTION",
-      "category": "观点与杂谈",
-      "link": "https://marginalrevolution.com/marginalrevolution/2026/11/friday-assorted-links-599.html?utm_source=rss&utm_medium=rss&utm_campaign=friday-assorted-links-599",
-      "zh_title": "周五杂项链接"
+      "orig_title": "datasette-apps 0.4a0",
+      "source": "simonwillison.net",
+      "category": "AI 前沿",
+      "link": "https://simonwillison.net/2026/Nov/15/datasette-apps/",
+      "zh_title": "datasette-apps 0.4a0"
     },
     {
-      "orig_title": "Windows 0-day dropped by disgruntled researcher hands hackers System rights",
+      "orig_title": "沙特手游买量 CPI 涨到 4.2 美元，支付回款周期拖到 T+30 还能撑吗？",
+      "source": "白鲸出海",
+      "category": "产品、设计与商业",
+      "link": "https://www.baijing.cn/question/638739",
+      "zh_title": "沙特手游买量 CPI 涨到 4.2 美元，支付回款周期拖到 T+30 还能撑吗？"
+    },
+    {
+      "orig_title": "datasette-agent 0.6a0",
+      "source": "simonwillison.net",
+      "category": "AI 前沿",
+      "link": "https://simonwillison.net/2026/Nov/15/datasette-agent/",
+      "zh_title": "datasette-agent 0.6a0"
+    },
+    {
+      "orig_title": "斋月期间中东站支付成功率跌了18%，物流时效拉长到12天，营销节奏该怎么排？",
+      "source": "白鲸出海",
+      "category": "产品、设计与商业",
+      "link": "https://www.baijing.cn/question/638738",
+      "zh_title": "斋月期间中东站支付成功率跌了18%，物流时效拉长到12天，营销节奏该怎么排？"
+    },
+    {
+      "orig_title": "越南手游版号还没下来，首批本地化礼包码和周边备货压在仓里，该怎么处理？",
+      "source": "白鲸出海",
+      "category": "产品、设计与商业",
+      "link": "https://www.baijing.cn/question/638737",
+      "zh_title": "越南手游版号还没下来，首批本地化礼包码和周边备货压在仓里，该怎么处理？"
+    },
+    {
+      "orig_title": "美国站广告素材本地化后 ACOS 反而涨了 40%，是素材问题还是投放结构问题？",
+      "source": "白鲸出海",
+      "category": "产品、设计与商业",
+      "link": "https://www.baijing.cn/question/638736",
+      "zh_title": "美国站广告素材本地化后 ACOS 反而涨了 40%，是素材问题还是投放结构问题？"
+    },
+    {
+      "orig_title": "Pix 接入后巴西独立站订单涨了，但退款和拒付规则变了怎么应对？",
+      "source": "白鲸出海",
+      "category": "产品、设计与商业",
+      "link": "https://www.baijing.cn/question/638735",
+      "zh_title": "Pix 接入后巴西独立站订单涨了，但退款和拒付规则变了怎么应对？"
+    },
+    {
+      "orig_title": "尼日利亚肯尼亚南非三地客服外包，COD回款周期对不上，多语言排班该怎么定？",
+      "source": "白鲸出海",
+      "category": "产品、设计与商业",
+      "link": "https://www.baijing.cn/question/638734",
+      "zh_title": "尼日利亚肯尼亚南非三地客服外包，COD回款周期对不上，多语言排班该怎么定？"
+    },
+    {
+      "orig_title": "南非清关动辄拖到二十多天，备货和退货两头压，这个节奏还能不能做？",
+      "source": "白鲸出海",
+      "category": "产品、设计与商业",
+      "link": "https://www.baijing.cn/question/638733",
+      "zh_title": "南非清关动辄拖到二十多天，备货和退货两头压，这个节奏还能不能做？"
+    },
+    {
+      "orig_title": "SpaceX returned its Starship rocket on Saturday—but there's a catch",
       "source": "Ars Technica - All content",
       "category": "工程与编程",
-      "link": "https://arstechnica.com/security/2026/11/windows-0-day-dropped-by-disgruntled-researcher-hands-hackers-system-rights/",
-      "zh_title": "心怀不满的研究员放出Windows零日漏洞，让黑客获得系统权限"
+      "link": "https://arstechnica.com/space/2026/11/with-starship-catch-spacex-still-shows-it-can-dazzle-the-world/",
+      "zh_title": "SpaceX 周六回收了星舰火箭——但有个问题"
     },
     {
-      "orig_title": "ChatGPT’s new Wallet lets AI agents shop and check out for you",
+      "orig_title": "Where was Nvidia’s security team?",
       "source": "TechCrunch",
       "category": "AI 前沿",
-      "link": "https://techcrunch.com/2026/11/13/chatgpts-new-wallet-lets-ai-agents-shop-and-check-out-for-you/",
-      "zh_title": "ChatGPT新钱包让AI代理替你购物和结账"
+      "link": "https://techcrunch.com/2026/11/14/where-was-nvidias-security-team/",
+      "zh_title": "英伟达的安保团队在哪里？"
     },
     {
-      "orig_title": "This Week in the Labs — November 13, 2026",
-      "source": "MacSparky",
+      "orig_title": "传小米联手 AMG 之父，打造极致性能车；SpaceX 首次实现筷子夹飞船；「苹果最暗产品」诞生",
+      "source": "极客公园",
       "category": "产品、设计与商业",
-      "link": "https://www.macsparky.com/blog/2026/11/this-week-in-the-labs-november-13-2026/",
-      "zh_title": "本周实验室动态——2026年11月13日"
+      "link": "http://www.geekpark.net/news/373993",
+      "zh_title": "传小米联手 AMG 之父，打造极致性能车；SpaceX 首次实现筷子夹飞船；「苹果最暗产品」诞生"
+    },
+    {
+      "orig_title": "datasette-llm 0.1a11",
+      "source": "simonwillison.net",
+      "category": "AI 前沿",
+      "link": "https://simonwillison.net/2026/Nov/14/datasette-llm/",
+      "zh_title": "datasette-llm 0.1a11"
+    },
+    {
+      "orig_title": "Elon Musk, other tech execs sign petition calling on Nvidia to reinstate Jensen Huang",
+      "source": "TechCrunch",
+      "category": "AI 前沿",
+      "link": "https://techcrunch.com/2026/11/14/elon-musk-other-tech-execs-sign-petition-calling-on-nvidia-to-reinstate-jensen-huang/",
+      "zh_title": "埃隆·马斯克等科技高管签署请愿书，呼吁英伟达恢复黄仁勋职务"
+    },
+    {
+      "orig_title": "🧠 Community Wisdom: When you become the bottleneck for your AI agents, the PULL framework for PMs, product growth vs. growth marketing, boosting feedback response rates, and more",
+      "source": "Lenny's Newsletter",
+      "category": "产品、设计与商业",
+      "link": "https://www.lennysnewsletter.com/p/community-wisdom-when-you-become",
+      "zh_title": "🧠 社区智慧：当你成为AI代理的瓶颈时、面向产品经理的PULL框架、产品增长与增长营销、提升反馈回复率等"
+    },
+    {
+      "orig_title": "Tesla opens Cybercab pre-orders ‘for personal use,’ with geo restrictions and a $299 monthly fee",
+      "source": "TechCrunch",
+      "category": "AI 前沿",
+      "link": "https://techcrunch.com/2026/11/14/tesla-opens-cybercab-pre-orders-for-personal-use-with-geo-restrictions-and-a-299-monthly-fee/",
+      "zh_title": "特斯拉开放Cybercab个人用途预订，附带地理限制和每月299美元费用"
+    },
+    {
+      "orig_title": "The Week Jensen Huang Fell: How a Spy Scandal Toppled Nvidia’s CEO",
+      "source": "Decrypt",
+      "category": "产品、设计与商业",
+      "link": "https://decrypt.co/383280/the-week-jensen-huang-fell-how-spy-scandal-toppled-nvidia-ceo",
+      "zh_title": "黄仁勋倒台的一周：间谍丑闻如何推翻英伟达CEO"
+    },
+    {
+      "orig_title": "Got an iPhone Duo? These 9 settings make it easier to use",
+      "source": "TechCrunch",
+      "category": "AI 前沿",
+      "link": "https://techcrunch.com/2026/11/14/got-an-iphone-duo-these-9-settings-make-it-easier-to-use/",
+      "zh_title": "有iPhone Duo？这9项设置让它更易用"
+    },
+    {
+      "orig_title": "Joanna Stern Reviews the HomeView",
+      "source": "daringfireball.net",
+      "category": "产品、设计与商业",
+      "link": "https://www.youtube.com/watch?v=yVTcVtLn2o4",
+      "zh_title": "乔安娜·斯特恩评测HomeView"
+    },
+    {
+      "orig_title": "Jason Snell’s HomeView Review",
+      "source": "daringfireball.net",
+      "category": "产品、设计与商业",
+      "link": "https://sixcolors.com/post/2026/11/homeview-review-a-late-arrival-with-promise-but-still-showing-some-seams/",
+      "zh_title": "杰森·斯内尔评HomeView"
+    },
+    {
+      "orig_title": "Transportation secretary blames ‘routine’ equipment upgrade for grounding flights nationwide",
+      "source": "TechCrunch",
+      "category": "AI 前沿",
+      "link": "https://techcrunch.com/2026/11/14/transportation-secretary-blames-routine-equipment-upgrade-for-grounding-flights-nationwide/",
+      "zh_title": "交通部长将全国航班停飞归咎于‘例行’设备升级"
+    },
+    {
+      "orig_title": "Patrick McGee on Johny Srouji and Nvidia",
+      "source": "daringfireball.net",
+      "category": "产品、设计与商业",
+      "link": "https://x.com/patrickmcgee_/status/2120799867140550999",
+      "zh_title": "帕特里克·麦吉谈约翰尼·斯鲁吉与英伟达"
+    },
+    {
+      "orig_title": "The AI graveyard: a running list of projects and startups that didn’t make it",
+      "source": "TechCrunch",
+      "category": "AI 前沿",
+      "link": "https://techcrunch.com/2026/11/14/the-ai-graveyard-a-running-list-of-projects-and-startups-that-didnt-make-it/",
+      "zh_title": "AI坟场：未能存续的项目与初创公司持续清单"
+    },
+    {
+      "orig_title": "datasette-vega 0.7",
+      "source": "simonwillison.net",
+      "category": "AI 前沿",
+      "link": "https://simonwillison.net/2026/Nov/14/datasette-vega/",
+      "zh_title": "datasette-vega 0.7"
+    },
+    {
+      "orig_title": "Saturday assorted links",
+      "source": "Marginal REVOLUTION",
+      "category": "观点与杂谈",
+      "link": "https://marginalrevolution.com/marginalrevolution/2026/11/saturday-assorted-links-586.html?utm_source=rss&utm_medium=rss&utm_campaign=saturday-assorted-links-586",
+      "zh_title": "周六杂项链接"
+    },
+    {
+      "orig_title": "Symbolic maths needs engines, not just chatbots",
+      "source": "FuturePulse",
+      "category": "AI 前沿",
+      "link": "https://futurpulse.com/symbolic-maths-needs-engines-not-just-chatbots/",
+      "zh_title": "符号数学需要引擎，而不仅是聊天机器人"
+    },
+    {
+      "orig_title": "OpenAI, Anthropic, Google and Other AI Giants Face Lawsuit Demanding Development Freeze",
+      "source": "Decrypt",
+      "category": "产品、设计与商业",
+      "link": "https://decrypt.co/383270/openai-anthropic-google-ai-giants-lawsuit-development-freeze",
+      "zh_title": "OpenAI、Anthropic、谷歌等AI巨头面临要求冻结开发的诉讼"
+    },
+    {
+      "orig_title": "Loyalty Blocks Accountability",
+      "source": "Overcoming Bias",
+      "category": "观点与杂谈",
+      "link": "https://www.overcomingbias.com/p/loyalty-blocks-accountability",
+      "zh_title": "忠诚削弱问责"
+    },
+    {
+      "orig_title": "Asian governments react to Nvidia CEO Jensen Huang’s exit",
+      "source": "TechCrunch",
+      "category": "AI 前沿",
+      "link": "https://techcrunch.com/2026/11/14/asian-governments-react-to-nvidia-ceo-jensen-huangs-exit/",
+      "zh_title": "亚洲各国政府回应英伟达CEO黄仁勋离职"
+    },
+    {
+      "orig_title": "Ops needs friction",
+      "source": "jeffgeerling.com",
+      "category": "硬件",
+      "link": "https://www.jeffgeerling.com/blog/2026/ops-needs-friction/",
+      "zh_title": "运维需要摩擦"
+    },
+    {
+      "orig_title": "The most important shopper of the future isn’t human",
+      "source": "Fast Company",
+      "category": "产品、设计与商业",
+      "link": "https://www.fastcompany.com/91635595/the-most-important-shopper-of-the-future-isnt-human-ai-agents-shopping",
+      "zh_title": "未来最重要的购物者不是人类"
+    },
+    {
+      "orig_title": "Saturday links: the death of privacy",
+      "source": "Abnormal Returns",
+      "category": "产品、设计与商业",
+      "link": "https://abnormalreturns.com/2026/11/14/saturday-links-the-death-of-privacy/",
+      "zh_title": "周六链接：隐私之死"
+    },
+    {
+      "orig_title": "Reading List 11/14/2026",
+      "source": "construction-physics.com",
+      "category": "观点与杂谈",
+      "link": "https://www.construction-physics.com/p/reading-list-11142026",
+      "zh_title": "阅读清单 2026年11月14日"
+    },
+    {
+      "orig_title": "What Is Canton Network? The Privacy Blockchain Built for Wall Street",
+      "source": "Decrypt",
+      "category": "产品、设计与商业",
+      "link": "https://decrypt.co/resources/what-is-canton-network-the-privacy-blockchain-built-for-wall-street",
+      "zh_title": "什么是Canton Network？专为华尔街打造的隐私区块链"
+    },
+    {
+      "orig_title": "Microsoft Says Cloud Outage Was ‘Not Related to Cyber or AI / Agents’",
+      "source": "daringfireball.net",
+      "category": "产品、设计与商业",
+      "link": "https://x.com/microsoft/status/2121282013600907325",
+      "zh_title": "微软称云服务中断“与网络攻击或AI/智能体无关”"
     }
   ],
   "filtered": [
     {
-      "orig_title": "Ethlabs Drops Quick Slots Push to Chase a Post-Quantum Ethereum by 2027",
-      "source": "Bankless",
-      "reason": "纯币圈，已按编辑规则滤掉"
-    },
-    {
-      "orig_title": "UK, Singapore, and Thailand central banks test cross-border FX settlement as stablecoins gain ground",
+      "orig_title": "Crypto insiders aren't counting on silver linings in Congress' 'lame duck' session",
       "source": "CoinDesk",
       "reason": "纯币圈，已按编辑规则滤掉"
     },
     {
-      "orig_title": "Britain could turn wasted Scottish wind power into bitcoin to cut its $1.3 billion grid bill",
+      "orig_title": "XRP crashes to its lowest since November 2024 as money leaves crypto",
       "source": "CoinDesk",
       "reason": "纯币圈，已按编辑规则滤掉"
     },
     {
-      "orig_title": "A behind the scenes force may amplify bitcoin and ether price volatility",
+      "orig_title": "Bitcoin crashes to 3-month low below $63,000 as analyst flags fourth capitulation wave",
       "source": "CoinDesk",
       "reason": "纯币圈，已按编辑规则滤掉"
     },
     {
-      "orig_title": "Bitcoin miners pay Paraguay $350 million a year, but AI is pushing them out",
+      "orig_title": "Ethereum scaling project MegaETH slashes staff by 20% as it pursues AI business",
       "source": "CoinDesk",
       "reason": "纯币圈，已按编辑规则滤掉"
     },
     {
-      "orig_title": "Bitcoin plunges to $68,000 as Anthropic IPO frenzy adds to market jitters",
-      "source": "CoinDesk",
-      "reason": "纯币圈，已按编辑规则滤掉"
-    },
-    {
-      "orig_title": "Bitcoin heads for sixth weekly loss as Anthropic’s blockbuster IPO looms",
-      "source": "CoinDesk",
-      "reason": "纯币圈，已按编辑规则滤掉"
-    },
-    {
-      "orig_title": "OpenAI Launches ChatGPT Wallet to Let AI Agents Shop—Without Crypto",
-      "source": "Decrypt",
-      "reason": "纯币圈，已按编辑规则滤掉"
-    },
-    {
-      "orig_title": "JPMorgan’s Bitcoin and Crypto-Linked Holdings Approach $1 Billion",
-      "source": "Decrypt",
-      "reason": "纯币圈，已按编辑规则滤掉"
-    },
-    {
-      "orig_title": "Dormant Bitcoin Wallets Wake Up After 16 Years, Moving $6.9 Million",
-      "source": "Decrypt",
-      "reason": "纯币圈，已按编辑规则滤掉"
-    },
-    {
-      "orig_title": "Fed Chair Warsh Wants Answers on AI Inflation—and Bitcoin May Feel the Impact",
-      "source": "Decrypt",
-      "reason": "纯币圈，已按编辑规则滤掉"
-    },
-    {
-      "orig_title": "Bitcoin Hits 12-Week Low as Fed Rate Fears Undo Most of Summer Rally",
+      "orig_title": "Bitcoin ETFs Lose $2.1 Billion in November as Outflow Streak Hits Seven Days",
       "source": "Decrypt",
       "reason": "纯币圈，已按编辑规则滤掉"
     }
