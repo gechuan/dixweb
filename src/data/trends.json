@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026年11月17日 16:20",
+  "updatedAt": "2026年11月18日 15:52",
   "sources": [
     {
       "id": "huggingface",
@@ -8,84 +8,84 @@
       "note": "热门研究，看到模型与智能体方法的下一批方向。",
       "items": [
         {
-          "id": "18af4aabfea234c3aef3dcff6a43bec1",
-          "title": "DominoBench：从静态图像评估多步物理推理",
-          "summary": "看这篇论文之前，先想一个场景：给你一张图，图里是斜坡、跷跷板、摆锤和一串多米诺骨牌，一个小球正要被推下去。你能看出接下来会发生什么吗？ 人类多半也说不准，但至少知道自己算不明白。多模态模型不一样，它们能把场景描述得头头是道，还能解物理课本上的题，这会让人误以为它们也能预测这类连锁反应。 DominoBench 就是来拆这个误会的。作者测了 10 个模型家族…",
-          "href": "https://arxiv.org/abs/2611.20385",
-          "meta": "arXiv 2611.20385",
+          "id": "184dc2ceba28612c164498c19ae5d401",
+          "title": "π^4：面向 4D 场景几何与运动的基础模型",
+          "summary": "从任意一组没标定过的图片里，一次前向就还原出场景几何、相机位姿、尺度、点轨迹和运动物体，这是 π^4 想做的事。 它值得看的地方在于“统一”和“小”。几何和运动原本常被拆成两条流水线，各自训练、各自推理，π^4 用一个共享骨干把两者接起来， 全系统约 0.5B 参数，摘要说不到多数基线的一半 。对做 3D 重建、视频理解、机器人感知的读者来说，这个体量意味…",
+          "href": "https://arxiv.org/abs/2611.23144",
+          "meta": "arXiv 2611.23144",
+          "date": "11月17日"
+        },
+        {
+          "id": "46a1d99939ec25a537c033345e1f2ea9",
+          "title": "FastFrames：交互级延迟的视频生成",
+          "summary": "视频生成要真正做到“可交互”，瓶颈往往不在那个最显眼的扩散主干上。这篇论文把推理管线拆开看，发现 VAE 解码和 KV cache 更新这类被当成固定实现细节的操作，占掉了端到端延迟的一半以上 。这个观察本身比模型更值得看。 FastFrames 是 这篇论文 提出的自回归视频扩散模型系列，目标是做到交互级延迟，同时不牺牲画质。摘要里给了两个规格：1.3B…",
+          "href": "https://arxiv.org/abs/2611.23226",
+          "meta": "arXiv 2611.23226",
+          "date": "11月17日"
+        },
+        {
+          "id": "4c707061dd4d18c3ae370de00d8b3109",
+          "title": "FMT：固定并行步数下的无损图像压缩",
+          "summary": "这篇论文值得看，原因很直接： 无损图像压缩这个方向，学到的编解码器一直赢在压缩率、输在速度 。我们存档和训练用的图片，绝大多数还是走经典编解码器，不是不想用神经方法，是解码一张图要等几秒，实在受不了。 作者把矛头指向一个容易被忽略的地方：这些时间大部分不是花在算力上，是花在 等 上。网络要等它依赖的值算出来，算术解码器要一个接一个读符号。FMT 的思路是把…",
+          "href": "https://arxiv.org/abs/2611.23108",
+          "meta": "arXiv 2611.23108",
           "date": "11月16日"
         },
         {
-          "id": "35fbc573191de0008797ce258fe1ffe0",
-          "title": "K2-Horizon：开源语言模型前沿舰队",
-          "summary": "这是 K2 团队一次规模很大的开源发布：六个模型，从 0.9B 稠密模型到 375B-A23B 的 MoE，覆盖数学、科学、软件工程、深度研究、办公自动化等通用推理和智能体任务。值得看的地方在于，它同时开源了模型、数据管线、中间检查点和训练代码，还给出了一个 22T token 的共享预训练配方，让“规模与稀疏性”的对比变成可复现的实验条件。 如果你只关心…",
-          "href": "https://arxiv.org/abs/2611.21003",
-          "meta": "arXiv 2611.21003",
+          "id": "6ed2bea47d978b06ad63678a0b3b0d0e",
+          "title": "Heave-Ho：去中心化长时程多台人形机器人协作",
+          "summary": "多个人形机器人一起搬东西、长时间协作，这件事听起来像 demo 视频里的炫技，实际做起来难点在“去中心化”四个字。每台机器人只能靠自己的局部观测做决策，还要保持动作同步、任务连贯，不能靠中央调度，也不能靠机器人之间实时通信。这篇论文想啃的就是这块硬骨头。 论文叫 Heave-Ho，做的是长时序、多台人形机器人的移动操作协作。作者给了一套分层方案：底层让机器…",
+          "href": "https://arxiv.org/abs/2611.22275",
+          "meta": "arXiv 2611.22275",
           "date": "11月16日"
         },
         {
-          "id": "7a48ac432002ac4984f9024770cbf9ab",
-          "title": "MovieRoll：长视频滚动生成的系统化框架",
-          "summary": "长视频生成有个尴尬的现状：模型训练时看的是十几秒片段，真正上线却要连续吐几十秒甚至更久。一旦超出训练时长，画面开始漂、动作变僵、显存被历史帧吃掉，质量是断崖式下滑的。 MovieRoll 想处理的就是这段“训练地平线之外”的空白。它把流式微调、长 rollout 蒸馏、长时推理三件事串成一个从 base 到 distilled 的框架， 核心主张是：长视频…",
-          "href": "https://arxiv.org/abs/2611.21339",
-          "meta": "arXiv 2611.21339",
-          "date": "11月15日"
+          "id": "75b01cb7402feea88e18652b74a756e0",
+          "title": "TCP4D：面向机器人操作的统一工具中心点跟踪与生成模型",
+          "summary": "机器人操作视频里藏着大量动作经验，可要把 RGB 画面还原成机器人动作和夹爪状态，一直是个难题。这篇论文把动作空间统一到 TCP 位姿上，让一个共享的 4D 场景表示同时负责两件事：跟踪已经发生的 TCP 运动，生成接下来该走的 TCP 轨迹。对做机器人数据和策略的读者，这个“一个表示、两个任务”的思路值得看一眼。 这篇论文想解决什么 机器人学习长期卡在数…",
+          "href": "https://arxiv.org/abs/2611.23143",
+          "meta": "arXiv 2611.23143",
+          "date": "11月16日"
         },
         {
-          "id": "9ca34f70afe0395a294fb2098de6d60d",
-          "title": "Calpha：在通用语言模型中实现原生生物分子智能",
-          "summary": "这篇论文想做的事，比它现在做出来的事大得多。 Calpha 的目标是造一个通用模型：既能折叠蛋白质和复合物，又能理解蛋白质序列和结构，还让语言推理反过来影响它预测出的结构。蛋白质基础模型和通用 LLM 现在是两套东西，前者不会推理，后者不懂结构。Calpha 想打通。 这篇报告只交付了第一步：让一个 LLM 直接输出单链蛋白质结构。这一步本身有看头，但离标…",
-          "href": "https://arxiv.org/abs/2611.20986",
-          "meta": "arXiv 2611.20986",
-          "date": "11月15日"
+          "id": "8599cd1286c14f097da9fc9c891dbab4",
+          "title": "权重空间编程无需 Transformer",
+          "summary": "这篇论文提出的问题很直接：Transformer 之所以成为默认选择，是因为它用梯度下降训练效果好、在 GPU 上运行快。可如果权重由 LLM 直接手写、完全不走梯度训练，这两个理由还成立吗？ 作者的答案是：不一定。在让 LLM 自由设计架构的情况下，三个前沿模型都不约而同地放弃了 Transformer，转而设计出一种稀疏表加固定查询流程的结构。这个结构…",
+          "href": "https://arxiv.org/abs/2611.22055",
+          "meta": "arXiv 2611.22055",
+          "date": "11月16日"
         },
         {
-          "id": "a6b787080436ab9e2be92b9846e1849c",
-          "title": "ScaleVLA：将视觉-语言-动作模型扩展至 5520 亿参数",
-          "summary": "这篇论文值得看的地方，是它把一个很少有人在机器人策略里认真试过的变量拉到了极端： 把 VLA 的视觉语言主干从常见的 2B 级别，直接推到 552B 。 过去一两年，VLA 的主流做法是拿一个中小型 VLM 当底座，再在上面接动作头。大家默认大模型太重、太慢，不适合闭环控制。ScaleVLA 想验证的假设很直接：如果前沿规模的表征真的对物理动作有用，那这份…",
-          "href": "https://arxiv.org/abs/2611.21607",
-          "meta": "arXiv 2611.21607",
-          "date": "11月15日"
+          "id": "8db2024cd4b7a3c51fe8abf79146d81f",
+          "title": "从代码仓库到训练环境：用环境演化循环扩展长程编程智能体",
+          "summary": "这篇论文盯的是一个很具体的瓶颈： 训练长程编程 Agent 时，环境不够用。 真实仓库很多，但“能跑起来”不等于“能拿来训练”。摘要里说得很直接，现有流水线基本是线性的，最后一步做验证，验证通过就结束了。这条路径只保证环境可用，不告诉你它对训练有没有价值。 RepoFactory 想做的，是把真实仓库自动转成可验证的训练环境，再用一个叫 Environme…",
+          "href": "https://arxiv.org/abs/2611.21152",
+          "meta": "arXiv 2611.21152",
+          "date": "11月16日"
         },
         {
-          "id": "cce9cfd11964b161c2af5bbd4e30b2f8",
-          "title": "Accelerate Bench：评估应用级程序优化中的 Agent",
-          "summary": "这篇论文值得做 Agent 落地的人看一眼，因为它把评测从“写对代码”推到了“让整个程序跑得更快”。 这两件事的难度差得远。写对是局部问题，优化是全局问题：改哪、怎么改、改完会不会拖慢别处，都要 Agent 自己判断。Accelerate Bench 就是冲这个来的。 32 个任务，全部来自科学计算应用和超算竞赛 ，每个给一份能跑的代码，外加负载、正确性要…",
-          "href": "https://arxiv.org/abs/2611.20882",
-          "meta": "arXiv 2611.20882",
-          "date": "11月15日"
+          "id": "c0660389e5cc88b8cabd5f4b2a069c06",
+          "title": "LLM Agent 还需要被教如何自我改进吗？",
+          "summary": "这篇论文问了一个挺有意思的问题：当模型越来越强，我们还需要手把手告诉它“该怎么自我改进”吗？ 作者把优化过程本身交给模型，只给基础工具、算力和一个笼统目标，看它能不能自己搭出一套学习算法。测试场景是游戏，用的模型权重冻结，只允许它写文档、改文档。 如果这个方向成立，未来训练和调优的一部分工作，可能从人设计流程变成人设定目标。 这篇论文想解决什么 现在的自我…",
+          "href": "https://arxiv.org/abs/2611.23219",
+          "meta": "arXiv 2611.23219",
+          "date": "11月16日"
         },
         {
-          "id": "fede4883e4f038e37b931e7dde0c7aba",
-          "title": "潜在反馈是算力与数据的放大器",
-          "summary": "当高质量数据快用完时，大家通常会拿同一批数据多训几轮。问题是每多训一轮，收益就衰减一次。这篇论文问了一个很实际的问题：同样一笔算力，是拿去多训几轮，还是换一种架构设计？ Latent feedback 是这里的主角。做法是把每个 token 顶层输出的状态，喂回下一个 token 的输入。听起来像个小改动，但作者把它放到了和“多训几轮”正面对比的位置上，而…",
-          "href": "https://arxiv.org/abs/2611.20404",
-          "meta": "arXiv 2611.20404",
-          "date": "11月15日"
+          "id": "f2b519567d88a0f3db3574759b038049",
+          "title": "从 TeleChat 到 Xing4：在国产芯片与框架上推进前沿智能体模型",
+          "summary": "这篇论文值得看的地方，不在模型本身有多强，而在它把“国产芯片上训大模型”这件事拆成了可讨论的工程问题。 285B 参数、8192 张昇腾 910C、MindSpore 框架，这组数字摆在一起，说明它是一份 全栈国产化的训练报告 ，不是单点模型发布。对关心算力自主、Agent 训练基础设施的读者，这类材料比单纯的 benchmark 榜单更有信息量。 不过要…",
+          "href": "https://arxiv.org/abs/2611.22115",
+          "meta": "arXiv 2611.22115",
+          "date": "11月16日"
         },
         {
-          "id": "17a49e28c9f4e315ba483eed0504e4b4",
-          "title": "反思锚点：长链多模态推理中传播感知的视觉保持",
-          "summary": "长链多模态推理里有个容易被忽略的问题： 视觉信息会随着生成过程一点点“褪色” 。模型开头还盯着图看，推理到后面基本靠语言先验在跑，图已经名存实亡。 这篇论文想解决的就是这个。它没有停在“视觉信息会衰减”这个观察上，而是往下追了一步：如果要在推理链里干预，插在哪里最划算？局部插一下视觉，影响又能传多远？论文从信息论角度给出了一个下界分析，再据此设计了训练方法…",
-          "href": "https://arxiv.org/abs/2605.09614",
-          "meta": "arXiv 2605.09614",
-          "date": "11月15日"
-        },
-        {
-          "id": "22124c2e47fda5f641bd3ec2db0c7cc3",
-          "title": "GlyphAtlas：为场景文本合成解耦笔画细节与布局",
-          "summary": "场景文字合成这个方向，长期被一个很具体的工程问题卡住：字要写得准，位置也要放得对，两件事经常互相打架。GlyphAtlas 值得看的地方，是它没有绕开这个矛盾，而是把“位置”和“笔画细节”拆成两套表示来处理。 论文来自 Luozheng Qin、Changhai Zhou、Yiyi Zhou，2026 年 11 月挂上 arXiv。有 PDF、Huggin…",
-          "href": "https://arxiv.org/abs/2611.20192",
-          "meta": "arXiv 2611.20192",
-          "date": "11月14日"
-        },
-        {
-          "id": "4be4cf42b88f057f99f87ff73ccca795",
-          "title": "居中消融：为何末层方向消融会欠触发或崩塌，以及闭式修复方案",
-          "summary": "这篇论文盯上的是语言模型可解释性里一个很常用的操作： 方向消融 。想关掉模型的某种行为，比如拒答，常见做法是在隐藏状态里把某个“行为方向”减掉。问题是这个操作一直不太稳，有的模型上几乎没反应，有的模型上文本直接崩成复读机。 作者说他们搞清楚了为什么会这样，还给了个闭式解。 如果你在做安全对齐、行为编辑，或者用过激活干预这类手段，这篇值得先扫一眼。 这篇论文…",
-          "href": "https://arxiv.org/abs/2611.20148",
-          "meta": "arXiv 2611.20148",
-          "date": "11月14日"
+          "id": "28bd16aedd82bf519ebd18eb03105020",
+          "title": "正则化分数居中",
+          "summary": "异步强化学习能提高训练吞吐，但训练和推理之间的数值不一致、以及数据来自过期策略，这两件事都可能让训练崩掉。这篇论文讨论的是怎么在离策略学习里稳住更新。 Regularized Score Centering 关注一个具体环节：score centering（SC）通过去掉奖励基线对期望更新的影响来稳定训练。作者做了梯度诊断，发现 SC 的梯度比重要性采样（…",
+          "href": "https://arxiv.org/abs/2611.21791",
+          "meta": "arXiv 2611.21791",
+          "date": "11月16日"
         }
       ]
     },
@@ -96,84 +96,84 @@
       "note": "新产品发布，观察用户正在为什么工作流付费。",
       "items": [
         {
-          "id": "9fb465f4fbc41e6497908ad853c75eec",
-          "title": "LingoMic：会议中你说自己的语言，对方听到他们的语言",
-          "summary": "线上会议里最尴尬的场景之一，是你说得滔滔不绝，对面却只能靠表情猜你在讲什么。LingoMic 想解决的就是这件事： 你说自己的语言，对方听到的是他的语言。 它是一款 Chrome 扩展，在 Chrome 应用商店可以装，支持 Google Meet、网页版 Zoom 和网页版 Teams。产品在 Product Hunt 上刚露面，商店页面显示目前只有 2…",
-          "href": "https://www.producthunt.com/products/lingomic",
-          "meta": "Maker · Noway",
-          "date": "11月16日"
+          "id": "032cdd0f6c86735a063cbd9f42d56ebc",
+          "title": "Retriever：私密搜索手机中的照片、文档和视频",
+          "summary": "手机里躺着几千张照片、上百份 PDF，想找某张电费单，只能靠回忆拍摄时间一页页翻。Retriever 想解决的就是这件事： 用一句描述，直接跳到你要的那一页、那一帧。 它来自 Product Hunt，官网在 Launly。官方给出的定位很直接：搜索手机里的照片、截图、文档（PDF、Word、Excel、PowerPoint、电子书）和视频，全程在设备本地…",
+          "href": "https://www.producthunt.com/products/retriever-4",
+          "meta": "Maker · Dhruv Gupta",
+          "date": "11月17日"
         },
         {
-          "id": "60d2f41a64bd7789946220a036b7b518",
-          "title": "ByteVoice：与编码 Agent 对话并听取回复",
-          "summary": "Product Hunt 上出现了一个叫 ByteVoice 的条目，标题说得很直接：跟你的 Agent 说话，然后听它们回话。 但点进去，情况有点尴尬。 这个条目的正文，基本是一串域名列表。 ilms.academy、ninjatune.net、followtheintuition.com、gabriele-haeusgen.de、kyodogashi.…",
-          "href": "https://www.producthunt.com/products/bytevoice",
-          "meta": "Maker · Zac Zuo",
-          "date": "11月16日"
+          "id": "6ffe59737739d6c37210ee6c52d2b477",
+          "title": "GatherHQ Agent Research：让 Agent 替你填写问卷",
+          "summary": "市场调研这门生意，正在把问卷对象从人换成 Agent。 GatherHQ Agent Research 在 Product Hunt 上提出的想法很直接：把一份邀请链接丢进你自己的 AI 智能体，配对之后，让它代替你回答那些与你相关的问卷。你授权哪些偏好，它就按哪些偏好作答。 这个产品的定位是“创始研究小组”（founding agent research…",
+          "href": "https://www.producthunt.com/products/gatherhq-agent-research",
+          "meta": "Maker · Mayank Mehta",
+          "date": "11月17日"
         },
         {
-          "id": "b4ac7069cc19d6322b8b525639cb8a34",
-          "title": "Notebook to Notes：将 OneNote 笔记本迁移到 Apple Notes，全程离线",
-          "summary": "Move your OneNote notebooks to Apple Notes, 100% offline",
-          "href": "https://www.producthunt.com/products/notebook-to-notes",
-          "meta": "Maker · Luiz Camargo",
-          "date": "11月16日"
+          "id": "0fa67be74ec9659a6c9e92dc58c3eadc",
+          "title": "Recall.ai 的 Agents API：派你的 Agent 去开会",
+          "summary": "一个 AI 智能体要真正“参加会议”，难点从来不在模型本身。 会听、会说、能开摄像头、能共享屏幕、能在聊天框里发言，这些动作分散在 Zoom、Google Meet、Microsoft Teams、Webex 四套互不兼容的系统里。每接一家，都是一轮 OAuth 授权、媒体流处理和事件回调的重复劳动。 Recall.ai 的 Agents API 想做的就…",
+          "href": "https://www.producthunt.com/products/recall-ai",
+          "meta": "Maker · YK Kim",
+          "date": "11月17日"
         },
         {
-          "id": "de9be80865aba28184d9adfbdc9729ec",
-          "title": "LexiCAD：用自然语言描述零件即可生成 CAD 设计",
-          "summary": "一句“帮我做个夹子，卡在百叶窗两片叶片上，把它们撑开 15 厘米，好让猫能看窗外”，出来的就是一个能直接打印的零件。 这是 LexiCAD 在官网首页放的第一个示例。它想做的事很清楚： 用自然语言描述零件，拿到可制造的 CAD 文件 ，格式覆盖 STEP、STL、3MF、DXF。 它到底在解决什么问题 ChatGPT 和 Claude 其实都能写 CAD…",
-          "href": "https://www.producthunt.com/products/lexicad",
-          "meta": "Maker · Lincoln Clarke",
-          "date": "11月16日"
+          "id": "e4c2d7e204fcf203edce99c377140165",
+          "title": "pushr：从任意脚本、服务器或 AI Agent 向 iPhone 推送提醒",
+          "summary": "一条 curl 命令，就能把消息推到 iPhone 上。听起来像玩具，但 pushr 想解决的问题其实挺硬：让脚本、CI、监控系统和 AI Agent 都能用最简单的方式，把消息送到人手里。 它本质上是给所有“会发 HTTP 请求的东西”配了一个 iPhone 通知收件箱。 一条 curl 就够了 pushr 的核心接口只有一个： POST /notify…",
+          "href": "https://www.producthunt.com/products/pushr",
+          "meta": "Maker · Christian Preston",
+          "date": "11月17日"
         },
         {
-          "id": "7ea8da429efe87a5c1e49c188cfba57a",
-          "title": "StateWeave：在所用应用的工作克隆上测试 AI Agent",
-          "summary": "Test your AI agent on working clones of the apps it uses",
-          "href": "https://www.producthunt.com/products/stateweave",
-          "meta": "Maker · Aleksandar Blazhev",
-          "date": "11月16日"
+          "id": "47d1c6699d66a82c36d21b3bcd72e58c",
+          "title": "Bezzle：免费的全能设计工作室，支持 Mac 和 PC",
+          "summary": "Product Hunt 上挂着一条叫 Bezzle 的条目，点进去会发现它根本不是产品，而是一段 2015 年上传到 Internet Archive 的视频。 这件事本身就值得说一句： PH 的条目抓取会把一个 Archive.org 页面当成产品，标题、摘要、官网链接全是从网页上扒下来的。 所以这条“产品”的官网指向的是 bezzle-cash 的…",
+          "href": "https://www.producthunt.com/products/bezzle",
+          "meta": "Maker · Erik Vetsch",
+          "date": "11月17日"
         },
         {
-          "id": "127d47aed9af3b5d015bcc758347a614",
-          "title": "Puffin：为 AI Agent 提供身份与收件箱",
-          "summary": "一个 AI Agent 想替公司回客户邮件，卡住它的往往不是模型不够聪明，而是它没有身份。没有邮箱、没有 Discord 账号、没有日历，发出去的话也没人敢让它直接发。 Puffin 就是冲这个空档来的。它给每个 Agent 配一套“对外身份”：独立邮箱、Discord 和 Telegram 席位、Google 日历，再套一层人工审批。Product Hu…",
-          "href": "https://www.producthunt.com/products/puffin-2",
-          "meta": "Maker · Divyanshu Rajput",
-          "date": "11月16日"
-        },
-        {
-          "id": "e465f4a081fe23223683cc16ce518ecd",
-          "title": "Freebuff：100% 免费的编程 Agent",
-          "summary": "广告位卖到了编程助手的对话框里。 Freebuff Ads 干的就是这件事：开发者写代码时，AI 助手的界面里会插进广告。官方给出的触达规模是 50 万开发者。 这听起来有点刺耳。程序员对广告的容忍度一向很低，弹窗、横幅、信息流，几乎都被骂过。Freebuff 的逻辑不太一样，它把广告塞进的是开发者本来就盯着看的那块屏幕，也就是 coding agent…",
-          "href": "https://www.producthunt.com/products/freebuff-2",
-          "meta": "Maker · kar en",
-          "date": "11月16日"
-        },
-        {
-          "id": "c640d0e9f3bc6677238ae5dc7a43a312",
-          "title": "Cal.com v7：新增活动、发现、助手等功能",
-          "summary": "一个叫 Cal.com v7 的条目，点进去，落地页是 Calendly。名字和产品对不上，这本身就值得说一句。 先把事实摆清楚：Product Hunt 上这个条目的标题写的是 Cal.com v7，链接指向 Product Hunt 讨论页，但抓取到的官网内容全部来自 Calendly。Cal.com 和 Calendly 是两家不同的公司，前者是开源…",
-          "href": "https://www.producthunt.com/products/cal",
-          "meta": "Maker · Peer Richelsen",
-          "date": "11月15日"
-        },
-        {
-          "id": "214abfcdf6353ef951c94ba28c1ced9a",
-          "title": "Glifa：可随问随答的 Mac Markdown 编辑器",
-          "summary": "Product Hunt 上出现了一个叫 Glifa 的条目，点进去看官网，指向的是一个 GitHub 用户主页：github.com/Glifa。 这就是全部了。 这个 GitHub 账号没有公开仓库，0 个关注者，关注了 2 个人。 页面上剩下的内容全是 GitHub 的通用模板：举报滥用、联系客服、热门仓库加载中。没有任何产品介绍、截图、定价、功能说…",
-          "href": "https://www.producthunt.com/products/glifa",
-          "meta": "Maker · Łukasz Majda",
-          "date": "11月15日"
-        },
-        {
-          "id": "6f64cade88f449ca1b14b219fc4b18e9",
-          "title": "Vercel 的 UI SDK：为 AI Agent 提供构建 UI 的组件",
-          "summary": "Vercel Labs 放出了一个叫 UI SDK 的开源库，定位很特别： 它不给你现成的组件，给的是组件背后的行为。 键盘导航、焦点管理、选中逻辑、弹窗定位、拖拽排序、ARIA 属性，这些东西被打包成 50 多个可组合的“行为”，交给编码 Agent 去拼装。 听起来有点绕。用官网的例子就清楚了：以前你让 Agent 写一个 Select，它得去找一个现…",
-          "href": "https://www.producthunt.com/products/ui-sdk",
+          "id": "6c01e5dc301a52bc2e27b123b63e5c55",
+          "title": "AWS Emulator：无需部署即可在本地构建和测试 AWS 应用",
+          "summary": "AWS 把本地模拟器做成了官方产品。这件事对写代码的人意味着什么，先看一个细节： 用同一套 SDK 和 CLI，请求打到本地，几毫秒返回，不需要部署，也不需要 AWS 账号。 这就是 2026 年 11 月 11 日开放的 AWS Emulator。官方公告写在这里。 它到底模拟了什么 做法不复杂：创建一个 DynamoDB 表，用平时那套 AWS SDK…",
+          "href": "https://www.producthunt.com/products/aws",
           "meta": "Maker · Shivam Kushwaha",
-          "date": "11月15日"
+          "date": "11月17日"
+        },
+        {
+          "id": "baea37baefda96494628362d74710b8e",
+          "title": "Ballet：面向运维团队的确定性 AI 工作流自动化",
+          "summary": "运营团队想用 AI 干活，卡点往往不在模型够不够聪明，而在排队等工程资源。提需求、排期、开发、联调，一套流程走完，业务节奏早就变了。 Ballet 想切的就是这个位置。它的主张很直接： 运营人员用大白话描述想要的结果，Ballet 负责把工作流搭起来、跑起来，并且持续维护。 它到底在做什么 按官网的说法，Ballet 面向的是运营团队，作用范围是“收入栈”…",
+          "href": "https://www.producthunt.com/products/ballet",
+          "meta": "Maker · Daniel Kimber",
+          "date": "11月17日"
+        },
+        {
+          "id": "fd6fcc53dc84fc41216ffc1c9cbf38e3",
+          "title": "Clamor：将社交信号转化为可执行洞察",
+          "summary": "社交数据工具的老毛病是：报表堆了一屏，看完还是不知道该干什么。点赞涨了、评论多了，然后呢？ Clamor 想解决的正是这个断层。它把自己定位成“社交智能平台”，核心承诺只有一句话：把社交平台上的信息噪音，翻译成品牌下一步该做的动作。这个产品正在 Product Hunt 上被讨论。 它到底在做什么 传统社交监测工具的产出是“发生了什么”：曝光量、互动率、情…",
+          "href": "https://www.producthunt.com/products/clamor-2",
+          "meta": "Maker · Kelly Atencio",
+          "date": "11月17日"
+        },
+        {
+          "id": "e4b010fe067a4790df8a92864f40b1f6",
+          "title": "Lampa Camera：自然处理与胶片质感的 iPhone 相机",
+          "summary": "iPhone 原相机这几年越来越像一台“计算摄影机器”。按下快门，HDR 强行拉平明暗，锐化把皮肤纹理抠得发亮，夜景模式把黑夜拍成黄昏。照片单看挺清楚，看多了却有一种塑料感。 Lampa Camera 就是冲着这个来的。 它是一个 iPhone 第三方相机 App，核心卖点是自定义 RAW 处理和调好的胶片、数码相机风格色彩配置。 官方描述里明确写了不做三…",
+          "href": "https://www.producthunt.com/products/lampa-camera",
+          "meta": "Maker · Alexey Teplonogov",
+          "date": "11月17日"
+        },
+        {
+          "id": "0f94b94c3682d28a75094583a7ed6d05",
+          "title": "ExtraDock 5：让 Mac Dock 出现在每块屏幕上",
+          "summary": "macOS 的原生 Dock 有个老毛病：一台 Mac 只能有一个。多显示器用户大概都经历过那种别扭，主屏的 Dock 跑到副屏去了，还得想办法拽回来。 ExtraDock 5 就是冲这个来的。它由 AppitStudio 开发，核心功能一句话说清： 在 macOS 上创建任意多个 Dock，每个都能单独配置 。 它到底解决什么问题 原生 Dock 是全局…",
+          "href": "https://www.producthunt.com/products/extradock",
+          "meta": "Maker · Asaf Mazuz",
+          "date": "11月17日"
         }
       ]
     },
