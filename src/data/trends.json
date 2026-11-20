@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026年11月19日 15:47",
+  "updatedAt": "2026年11月20日 15:41",
   "sources": [
     {
       "id": "huggingface",
@@ -8,84 +8,84 @@
       "note": "热门研究，看到模型与智能体方法的下一批方向。",
       "items": [
         {
-          "id": "0459d861009289b05474eb7767934cd2",
-          "title": "用于测量和预测人类行为的基础模型",
-          "summary": "大模型越来越常被用来“猜人”：推断心理特质、预测个体行为、模拟人群反应。问题是，它们给出的回答往往看着合理，落到具体人身上却不准，人群层面的统计分布也会被扭曲。 这篇论文提出 Chiron ，一个专门用来测量和预测人类行为的基础模型。它想做的事很明确：把“像人一样说话”和“准确刻画人”区分开。前者是语言能力，后者需要心理测量学意义上的有效性。 原文链接｜P…",
-          "href": "https://arxiv.org/abs/2611.24830",
-          "meta": "arXiv 2611.24830",
+          "id": "0d5bfc7d712113effc524f1d574c70b4",
+          "title": "后验匹配蒸馏",
+          "summary": "扩散模型蒸馏这个方向，最近一年几乎被「几步出图」的竞赛推着走。问题在于，速度上去了，多样性常常悄悄掉了。 这篇 Post​erior Matching Distillation 值得看的地方，是它直接盯住了这个隐性代价。作者指出，主流的分布蒸馏方法多用 reverse-KL 目标，而 reverse-KL 有 mode-seeking 倾向，会偏向教师模型…",
+          "href": "https://arxiv.org/abs/2611.26629",
+          "meta": "arXiv 2611.26629",
+          "date": "11月19日"
+        },
+        {
+          "id": "170e89d867c00416f2f26eff03517e78",
+          "title": "EgoCaptioner：迈向全面细粒度的第一人称视频描述",
+          "summary": "第一人称视角的视频描述，听起来只是给视频配文字，实际难度比想象中高。戴摄像头的人手一晃，一个开抽屉的动作可能只占半秒；镜头一转，前后步骤的顺序就乱了。现有 MLLM 在这类视频上经常漏掉短动作、把顺序搞混，或者把佩戴者自己的移动误读成别的东西。 EgoCaptioner 想解决的就是这个。它不只是生成一段描述，还要输出一种结构化的说明：先给视频整体概览，交…",
+          "href": "https://arxiv.org/abs/2611.26380",
+          "meta": "arXiv 2611.26380",
+          "date": "11月19日"
+        },
+        {
+          "id": "412d0b1a857ab28f8b1d04b5f0cbfb90",
+          "title": "Mind2Act World：机器人操作中具身心智、物理动作与心智-动作组合的诊断基准",
+          "summary": "这篇论文戳的是具身智能评测里一个长期被含糊处理的问题：机器人做砸了，到底是脑子不够、手不够稳，还是脑子和手接不上？ 现有 benchmark 大多把推理和执行放在同一批任务里评，或者分开评但不看两者的组合。结果是分数出来了，诊断价值几乎没有。Mind2Act World 想做的是把这个归因拆开。 它的做法是把任务切成三个视图。 Mind 视图考的是基于历史…",
+          "href": "https://arxiv.org/abs/2611.26444",
+          "meta": "arXiv 2611.26444",
           "date": "11月18日"
         },
         {
-          "id": "0f0c05e9c61b27758d67f57c90844af9",
-          "title": "DrawScore：依据工程图纸评估生成的 CAD 模型",
-          "summary": "CAD 生成模型的评测一直有点“虚”。体积 IoU 高、Chamfer 距离低，看起来分数很漂亮，但零件上少一个孔、槽开错面，这些在车间里要命的问题，在指标上几乎不掉分。 DrawScore 就是冲着这个漏洞来的。它把“局部错误该不该被重罚”这件事做成了可分析的数学问题，然后给出一个更贴近工程图纸的评分方式。 如果你在做 CAD 生成、3D 生成评测，或者…",
-          "href": "https://arxiv.org/abs/2611.24681",
-          "meta": "arXiv 2611.24681",
+          "id": "66e22ba2ddfd071590cc1f303d5892ca",
+          "title": "Coda-DaVinci：以 Code2Video 重塑视频生成",
+          "summary": "这篇论文值得看，原因不在它又做了一个视频生成模型，而在它追问了一个更基础的问题： 用代码和 3D 代理来约束视频生成，这套范式到底该怎么用才有效。 Code2Video 的思路是让智能体先写 3D 代理，再用代理去引导视频生成，从而显式控制结构和动态。听起来合理，但摘要直接点出空白：代理该做多细、要不要跑物理模拟、提示词该怎么写，这些直接影响下游质量的问题…",
+          "href": "https://arxiv.org/abs/2611.26595",
+          "meta": "arXiv 2611.26595",
           "date": "11月18日"
         },
         {
-          "id": "1e2cee9f8073c18ddc29b3a91c7f150d",
-          "title": "UltraTex：对齐物理知识的高保真 PBR 纹理生成",
-          "summary": "单张参考图生成 PBR 材质贴图，这件事一直有个说不清的模糊地带：你看到的外观里，材质本身、表面反射、打光三者是混在一起的。现有生成方法能做出好看的反照率贴图，但一到金属度和粗糙度就开始含糊，重新打光就露馅。 UltraTex 想解决的就是这个“看起来像”和“物理上对”之间的差距。它没有停在像素层面模仿外观，而是把物理知识塞进多视角扩散流程里，让模型在生成…",
-          "href": "https://arxiv.org/abs/2611.24941",
-          "meta": "arXiv 2611.24941",
+          "id": "84a3c8aab1d00fd975c17f787885686a",
+          "title": "WeMM-Video：推动开源全模态视频理解前沿",
+          "summary": "多模态视频理解里，声音这条线一直是个硬骨头。大多数开源模型要么只做画面，要么把音频当附属输入，真正把“边看边听边推理”做扎实的很少。 WeMM-Video 值得看的地方在于，它把中英双语、全模态（文本、图像、音频、视频）、思考与非思考双模式，还有从 2B 到 35B-A3B 的完整尺寸梯队放在一个开源家族里。这不是单点模型发布，更像一套可复现的工程方案。…",
+          "href": "https://arxiv.org/abs/2611.26409",
+          "meta": "arXiv 2611.26409",
           "date": "11月18日"
         },
         {
-          "id": "21703867be7af1c8400d96b1c94bad05",
-          "title": "循环语言模型中的迟到入场",
-          "summary": "循环语言模型有个很朴素的吸引力：参数不增加，靠把同一组层反复跑 T 次来换推理深度。代价也很直接，每多跑一遍，解码就多等一轮。 这篇论文盯上了这个代价里的一个不对称点。已有的 early exit 是“早退”：前几遍跑完就出结果，但缓存里的 KV 只到浅层，后面没法再加深。作者反过来做“晚进”（late entry）：新 token 跳过前几遍，直接进最后…",
-          "href": "https://arxiv.org/abs/2611.24576",
-          "meta": "arXiv 2611.24576",
-          "date": "11月17日"
+          "id": "89bafa04fa2235226158f40bded09be4",
+          "title": "DailySafe：评测日常多轮多模态交互中的动态安全意识",
+          "summary": "多模态大模型正在进入日常生活，但我们对它在“普通任务进行到一半时会不会出事”这件事，几乎还没有系统评估。 DailySafe 这篇论文就盯住这个缺口：用户本来在完成一个正当目标，对话一轮轮推进，图片一张张补充，风险线索是慢慢浮现的。模型要能跟住任务状态，识别出隐含的上下文风险，同时继续把忙帮好。作者给这种能力起了个名字，叫 Dynamic Safety A…",
+          "href": "https://arxiv.org/abs/2611.26298",
+          "meta": "arXiv 2611.26298",
+          "date": "11月18日"
         },
         {
-          "id": "3e9581a933cd227161ff46689c751752",
-          "title": "PIPETTE：面向鲁棒 LLM Agent 的提示注入紫队测试",
-          "summary": "这篇论文值得看，原因不在它又提了一个攻击方法，而在它戳破了一个大家默认成立的假设：红队测试里攻击成功率（ASR）越高，拿来对抗训练后智能体就越稳。 作者发现并非如此。两个当前很强的 RL 红队方法 RL-Hammer 和 PISmith 都出现了模式坍缩，反复找到相似的攻击策略。这些策略在评测上很好看，但把它们喂给对抗训练，防守方几乎学不到新东西。 高 A…",
-          "href": "https://arxiv.org/abs/2611.24362",
-          "meta": "arXiv 2611.24362",
-          "date": "11月17日"
+          "id": "9456be560f2d112d99bc0280c146e1d0",
+          "title": "学习哪些动作会带来变化：面向动力学忠实世界模型的动作效果匹配",
+          "summary": "世界模型现在生成的视频越来越像真的，但“像”和“能用”之间还差一层： 动作稍微变一点，未来会怎么变，它经常说不准 。这篇论文要补的就是这一层。 对做机器人策略评估、基于模型做规划的人来说，这是很实际的问题。两个动作在数值上几乎一样，执行出来的结果可能完全不同。世界模型如果对这种差异不敏感，那它在视频上再逼真，也没法拿来替代真实环境做判断。 论文提出的方法叫…",
+          "href": "https://arxiv.org/abs/2611.25980",
+          "meta": "arXiv 2611.25980",
+          "date": "11月18日"
         },
         {
-          "id": "46cef6ee6d48c75dec9c2b38b24a12fc",
-          "title": "WorldRuler：可配置规则下的交互式世界建模",
-          "summary": "这篇论文碰的是一个很具体、也很少被正面处理的问题： 生成式世界模型能不能按用户自定义的规则来运转，而不是只会模仿真实世界的物理和行为 。 同一个场景、同一套动作空间，换一套规则，游戏体验就完全不同。想让生成模型支持这种可配置的玩法，光会生成逼真画面不够，它得记住规则、执行规则，还要把规则带来的变化准确地画出来。 WorldRuler 想做的就是这件事。它把…",
-          "href": "https://arxiv.org/abs/2611.24869",
-          "meta": "arXiv 2611.24869",
-          "date": "11月17日"
+          "id": "a395e291e107cbc98909676c340e671a",
+          "title": "AutoMaster：让同一模型成为更好的教师，实现自主后训练",
+          "summary": "这篇论文想解决一个被 SFT 流程长期忽略的问题： 任务成功了，不代表这条轨迹值得学 。 摘要里说得很直白，即使老师模型跑出了成功轨迹，里面也可能混着没根据的假设、无效的重复、走形式的验证。传统做法只看结果对不对，把这些“坏习惯”一起喂给了学生模型。 AutoMaster 的思路是给老师加一层“行为干预”，让它变成更好的老师。 这篇论文想解决什么 后训练的…",
+          "href": "https://arxiv.org/abs/2611.26510",
+          "meta": "arXiv 2611.26510",
+          "date": "11月18日"
         },
         {
-          "id": "6e6743527fdbf150c8abfabc2f3e852e",
-          "title": "Movie2Game-Bench：超越可玩性的电影改编游戏整体评估",
-          "summary": "把电影改成游戏，难点从来不是“能不能玩”，而是 玩起来还是不是那部电影 。这篇论文把这件事做成了一个可评测的基准。 Movie2Game-Bench 想回答的问题很具体：模型把一部电影转成游戏时，哪些原作内容被保留了，哪些被翻译成了玩家动作、规则和反馈，哪些只是挂了个名字。原文链接 里给的评测协议，把源内容、玩法步骤和实现证据串在一起，同时看内容保真和交互…",
-          "href": "https://arxiv.org/abs/2611.24669",
-          "meta": "arXiv 2611.24669",
-          "date": "11月17日"
+          "id": "ad0fc4a07c661e215c85340fcce73476",
+          "title": "ZeroVLN：无需对 VLM 大脑进行监督微调即可学习导航",
+          "summary": "视觉语言导航（VLN）这条线，过去几年有个默认做法：拿一个视觉语言模型当“大脑”，再接一个可学习的动作头，然后在导航数据上做监督微调，让大脑学会预测几何目标点。 ZeroVLN 想质疑的正是这一步。它问的是： 我们真的需要为了让 VLM 会导航，去改它的权重吗？ 这篇值得看的地方在于，它给出的答案不只是“不用微调也能跑”，而是换了一套接口设计。如果结论站得…",
+          "href": "https://arxiv.org/abs/2611.26414",
+          "meta": "arXiv 2611.26414",
+          "date": "11月18日"
         },
         {
-          "id": "7207281981c374c9ebde840747e381a7",
-          "title": "PReMind：当个人记忆遇上视觉危险",
-          "summary": "个人视觉助手正在进入一个很微妙的阶段：它不只要看懂画面，还要知道画面里这个人是谁、有什么身体状况。当场景里出现物理危险时，过敏、基础病、行动不便这些个人记忆会直接改变“该给什么建议”。 这篇论文把这两件事放在一起考： 能不能既看见危险，又调出对的那个人相关信息，然后给出合适的回应 。摘要里的数据显示，现有模型经常只能满足其中一半。 原文链接 | PDF |…",
-          "href": "https://arxiv.org/abs/2611.23808",
-          "meta": "arXiv 2611.23808",
-          "date": "11月17日"
-        },
-        {
-          "id": "7d239131dfa6ae072d1f88f86f3620c9",
-          "title": "RoughCut-Bench：基于大型视觉语言模型的自动视频粗剪基准",
-          "summary": "视频粗剪这件事，每天都有大量剪辑师在做，但 AI 社区几乎没人把它当成一个正经的评测问题。这篇论文的价值在于，它先把“粗剪”拆成可测量的任务，再拿现有 LVLM 去跑，看它们到底差在哪。 如果你做视频生成、多模态理解，或者在考虑用视觉语言模型落地内容生产工具，这篇值得翻一翻。它给的不是一个 SOTA 模型，而是一把尺子，以及一组“当前模型不行”的证据。 这…",
-          "href": "https://arxiv.org/abs/2611.24098",
-          "meta": "arXiv 2611.24098",
-          "date": "11月17日"
-        },
-        {
-          "id": "c06f557d9c258bfb1ffcdeb62577d4a1",
-          "title": "面向样本高效 NPU 设计空间探索的机制化评价器",
-          "summary": "NPU 设计空间搜索有个老问题：仿真器跑一次很贵，返回的却只有延迟、功耗这类标量分数。它能告诉你哪个配置更好，却说不清为什么慢、下一步该调哪个参数。LLM 推理里 prefill 和 decode 受限于不同资源，一个是算力，一个是 HBM 带宽，这个盲区就更要命。 CriticNPU 想做的，是给这套搜索过程加一个“会讲道理”的评审。它不替代仿真器，而是…",
-          "href": "https://arxiv.org/abs/2611.24733",
-          "meta": "arXiv 2611.24733",
-          "date": "11月17日"
+          "id": "d3aa74cdbf900fe3adb4f95a5da8499f",
+          "title": "PlayCraft：从 Agent 游玩体验出发设计引人入胜的游戏",
+          "summary": "AI 现在能生成“能玩”的游戏，但能玩和好玩之间差着十万八千里。这篇论文盯的正是这个差距。 它提出的 PlayCraft，让一个看图玩游戏的智能体反复试玩，再拿它的游玩记录去改游戏，目标很明确：让游戏有“精通感”，也就是玩家能靠更好的判断和操作越玩越好。 如果你关心 AI 做内容生成、Agent 自我改进，或者游戏 AI，这篇值得扫一眼。目前只有摘要，细节…",
+          "href": "https://arxiv.org/abs/2611.26624",
+          "meta": "arXiv 2611.26624",
+          "date": "11月18日"
         }
       ]
     },
@@ -96,84 +96,84 @@
       "note": "新产品发布，观察用户正在为什么工作流付费。",
       "items": [
         {
-          "id": "3e9fa9cfe6e2f272988cf33e0b4d778f",
-          "title": "AssemblyAI-STT-3.7：面向实时通话、语音 Agent 与录音的语音转文字",
-          "summary": "语音转文字这件事，卡住大多数人的从来不是识别准不准，而是你根本不想打开任何一个 App。 Blurt 想解决的就是这个摩擦。它是 AssemblyAI 推出的一款桌面工具，名字直译过来是“脱口而出”，产品逻辑也确实是这个意思： 不管你在哪个窗口，按下快捷键就能说话，说完文字直接出现在光标位置 。 官网的标题写得很直白：Voice to text, wher…",
-          "href": "https://www.producthunt.com/products/assemblyai",
-          "meta": "Maker · Harnoor Singh",
-          "date": "11月18日"
+          "id": "d6b03b3faa6b36020ac92dd274b927ff",
+          "title": "Nuko：浏览器里的动态设计",
+          "summary": "Product Hunt 上出现了一个叫 Nuko 的条目，点进去之前还以为是又一个 AI 工具。结果是一家做北欧复古家具修复的生意，专门处理 60 年代末到 70 年代初的老物件。 这个反差本身就值得说一句： 不是所有新产品都得是软件 。 它到底做什么 根据 NUKO Design 官网 的介绍，这家机构做的事情是让上世纪 60、70 年代的复古家具和物…",
+          "href": "https://www.producthunt.com/products/nuko",
+          "meta": "Maker · Tapdig Soltanov",
+          "date": "11月19日"
         },
         {
-          "id": "7b5e6bf7a345cf45e9286da53bb5b28d",
-          "title": "worldinmotion：跨厂商 AI Agent 间的加密消息",
-          "summary": "两个 AI Agent 在同一个问题上协作，一个在笔记本上写代码，另一个在构建机上做审查，中间的沟通靠什么？很多人现在的答案是：人肉复制粘贴。 worldinmotion 就是冲着这个场景来的。它给每个 Agent 会话分配一个地址，形如 reviewer@laptop ，让不同机器、不同账号下的 Agent 会话之间能实时收发消息。这个项目由 Distr…",
-          "href": "https://www.producthunt.com/products/worldinmotion",
-          "meta": "Maker · Sean Dean",
-          "date": "11月18日"
+          "id": "e0d850b35766c83f2394e14a97b3e3b9",
+          "title": "ToolJet：通过安全审查的 Vibe 编码业务应用",
+          "summary": "一个做内部工具的低代码平台，最容易被忽略的风险不在功能，而在配置。ToolJet 这类工具让团队几天内就能搭出带数据库和 API 的管理后台，可 搭得快，往往也漏得快 。 这次出现在 Product Hunt 上的条目，指向的其实不是 ToolJet 本身的新功能，而是一个叫 vas 的安全扫描服务针对 ToolJet 应用做的专项检查页：ToolJet…",
+          "href": "https://www.producthunt.com/products/tooljet",
+          "meta": "Maker · Navaneeth Padanna Kalathil",
+          "date": "11月19日"
         },
         {
-          "id": "02fc5b7533b6ed7f0d4223acc8911fae",
-          "title": "SoreQen Code：会自查工作的编码 Agent",
-          "summary": "The coding agent that checks its own work",
-          "href": "https://www.producthunt.com/products/soreqen-code",
-          "meta": "Maker · Ved Saini",
-          "date": "11月18日"
+          "id": "718a4a535e6274d2fc137f492dcea137",
+          "title": "Tecla：以 TODO 列表为界面的主动式 AI Agent",
+          "summary": "大多数 AI 助手都在等你开口。你输入提示词，它才动；你不问，它就安静待着。 Tecla 想反过来做： 它主动盯着你连接的各种应用，替你找出那些“该做但还没做”的事，然后把方案摆到你面前，等你点确认。 这个定位在 Automation & Agents 这个品类里不算常见。多数产品卖的是“你让它做什么”，Tecla 卖的是“它替你发现要做什么”。 它到底在…",
+          "href": "https://www.producthunt.com/products/tecla-3",
+          "meta": "Maker · Miguel Angel Cabrera Miñagorri",
+          "date": "11月19日"
         },
         {
-          "id": "bdf8170942439ba14151d132dc248c72",
-          "title": "Confidential Cloud：看不到你数据的私有 AI 云",
-          "summary": "AI 越有用，就越需要知道更多关于你的事。这个矛盾，才是 AI Agent 时代真正棘手的安全问题。 一个能帮你处理收件箱、审合同、写代码、调 API、甚至操作数据库的 Agent，得先拿到你的邮件、文件、源码、客户数据、财务记录和登录凭证。它知道得越多，你能省的事越多，可一旦这些数据暴露，代价也越大。 Confidential Cloud 就是冲着这个矛…",
-          "href": "https://www.producthunt.com/products/confidential-cloud",
-          "meta": "Maker · Patrick Woodhead",
-          "date": "11月18日"
+          "id": "44cc463927eab21ac1b80fcb99e31748",
+          "title": "Gemini 4 Neon：前沿推理，任务完成更快",
+          "summary": "Google 这次发的 Gemini 4 Hydrogen，定位挺特别：它不是拿来跑最难推理题的前沿大模型，而是专门干活的快手。 官方 model card 写得很直白：Gemini 4 Carbon 和 Gemini 4 Argon 负责长时间、深链条的硬推理，Hydrogen 负责在各种智能体工作流里快速执行。换句话说， 它是 Gemini 4 家族里…",
+          "href": "https://www.producthunt.com/products/gemini-6",
+          "meta": "Maker · Zac Zuo",
+          "date": "11月19日"
         },
         {
-          "id": "e0a536439ced267d45808b23bb5f21ea",
-          "title": "Diagramly 2.0：输入文字生成图表，自动评审并演示成稿",
-          "summary": "画架构图这件事，卡人的从来不是审美，是那半小时的拖拽对齐。 Diagramly 想砍掉的就是这半小时。打开 diagramly.xyz，免费、不用注册、全程跑在浏览器里，敲一行 Client - API - DB ，图就出来了。 它到底是个什么东西 一句话概括： 一个会自己画图的在线白板，画风是手绘的 。 三种输入方式，对应三种人的习惯： - 按 / 调出…",
-          "href": "https://www.producthunt.com/products/diagramly-2",
-          "meta": "Maker · Robin Singh",
-          "date": "11月18日"
+          "id": "0a820958daf9ca64302955c9fa1ba9a4",
+          "title": "Adside：由专业 AI Agent 团队代管付费广告",
+          "summary": "投广告这件事，最贵的成本往往不是广告费，而是人。一个投放团队要盯竞品、想素材、搭计划、看数据、换创意，一圈下来，4.5 小时就没了。Adside 想做的事很直接： 把这套流程交给一组 AI 智能体，让投广告变成一件可以“雇”来的服务。 它刚在 Product Hunt 上发布，官网是 adside.ai。创始人 Robin Choy 和 Guillaume…",
+          "href": "https://www.producthunt.com/products/adside",
+          "meta": "Maker · Garry Tan",
+          "date": "11月19日"
         },
         {
-          "id": "328d5cffba9346e27fb1792b8e369d3f",
-          "title": "UI Verify：面向编码 Agent 的视觉测试",
-          "summary": "AI 写代码越来越快，但有个环节一直没跟上： 它看不见自己写出来的界面长什么样。 单元测试能证明逻辑没坏，却看不出一个按钮丢了颜色、一个卡片在手机上挤出了屏幕。这类问题以前靠人眼在 PR 里翻截图，现在代码量翻了几倍，人眼成了瓶颈。 UI Verify 就是冲着这个缺口来的。它做的是视觉回归测试，但重点不在“测试”两个字，而在让写代码的 Agent 自己看…",
-          "href": "https://www.producthunt.com/products/ui-verify",
-          "meta": "Maker · Igor Luchenkov",
-          "date": "11月18日"
+          "id": "4e58485edf4e3483325f867e5108c49a",
+          "title": "mio click：既是解压玩具，也是朋友",
+          "summary": "一个只有一颗按键、一块屏幕的小玩具，能让孩子放下 iPad 吗？mio click 给出的答案有点反常识：不靠内容，不靠动画库，靠的是“一直按”。 它到底是什么 mio click 是一个掌上小设备，一颗按键、一块屏幕，五种颜色可选，在德州手工组装。官网把它定位成礼物、打发手的东西、长途出行的替代方案。核心玩法只有三步： 1. 孵化 ：开箱后先“孵”出自己…",
+          "href": "https://www.producthunt.com/products/mio-click",
+          "meta": "Maker · Jordan Lyall",
+          "date": "11月19日"
         },
         {
-          "id": "07e14916a2c09b51c4f13de28675bb17",
-          "title": "Incredible Agents：全天候在你的电脑上直接干活的主动型 AI",
-          "summary": "Fast Voice AI that sees your screen and runs your agents",
-          "href": "https://www.producthunt.com/products/incredible",
-          "meta": "Maker · Yesith Thomas",
-          "date": "11月18日"
+          "id": "4e7f5cfcf7c024bc2855575e7799bfcb",
+          "title": "Play That Back：为 iPhone Duo 打造的专业相机",
+          "summary": "iPhone 自带的相机够用，但想拍出有“电影感”的画面，通常得拍完再导进剪辑软件调色，中间隔着一道工序。Play That Back 想把这步提前： 选好一个色调，取景时就能直接看到成片效果，按下快门就带着这个色调拍下来。 这款 App 在 Product Hunt 上架，官网是 App Store 页面。开发者是 Storytailor Inc.，免费…",
+          "href": "https://www.producthunt.com/products/play-that-back",
+          "meta": "Maker · JQ Sirls",
+          "date": "11月19日"
         },
         {
-          "id": "1e73a3bfd097c704a495e237ccb4e0f9",
-          "title": "Introzy：追踪从引荐到佣金的全程",
-          "summary": "推荐带来的生意，最难的不是拿到推荐，是记住这单是谁介绍的。 很多团队的推荐线索散落在微信、邮件和口头承诺里：合伙人把客户推过来，成交之后没人说得清该给谁记这笔功劳，佣金结算靠一张越滚越乱的表。等到合伙人开口问进度，才发现记录早就断了。 Introzy 想解决的就是这段混乱。它的定位很直白： 追踪推荐、归属成交、结算佣金，全程不用表格 。产品名第一次出现在…",
-          "href": "https://www.producthunt.com/products/introzy",
-          "meta": "Maker · Zac Sheffer",
-          "date": "11月18日"
+          "id": "94863c525bfef5e7064bb10335e14db8",
+          "title": "Rezora IO：AI 语音 Agent 的 Shopify，10 分钟上线",
+          "summary": "一家做屋顶维修的公司，老板正趴在房顶上干活，电话响了。办公室的人在接另一条线。等老板下来回拨，客户早就打给了 Google 上搜到的下一家。 这不是个例。Rezora IO 的两位创始人 Aidan 和 Yevgeniy 算过一笔账：一家周一到周五早八点到晚六点营业的店，一周 168 小时里有 118 小时是关着的。而水管爆了、空调坏了这类事，偏偏最爱发生…",
+          "href": "https://www.producthunt.com/products/rezora-io-ai-calling-assistant",
+          "meta": "Maker · Garry Tan",
+          "date": "11月19日"
         },
         {
-          "id": "6829d40c8a2ec5f35584e8545a4c4d5a",
-          "title": "Microsoft IQ：让 AI Agent 共享对业务的理解",
-          "summary": "企业里做 AI 项目的人大概都遇到过同一个尴尬：模型能力越来越强，POC 一个接一个，但真要从试点走向生产环境，卡住的地方往往不是模型，而是智能体根本搞不清这家公司到底是怎么运转的。 Microsoft IQ 就是冲着这个问题来的。微软给它的定位是 企业上下文管理平台 ，注意，它不是一个新模型，也不是又一个聊天入口。 微软官方在 FAQ 里把边界划得很清楚…",
-          "href": "https://www.producthunt.com/products/microsoft-365",
-          "meta": "Maker · Shivam Kushwaha",
-          "date": "11月18日"
+          "id": "31128640e8912609aa2b65135a177d91",
+          "title": "Alfred 6：自 2010 年起为 macOS 提速",
+          "summary": "一个装机包只有 6MB 的 macOS 启动器，刚刚发布了第 6 个大版本。在 Electron 应用动辄几百兆的今天，这个体积本身就说明了它的路线：100% 原生，不掺水。 Alfred 6 这次更新的核心，是给 Workflow 开发者补上了一套 完全原生的 macOS UI 工具箱 ，官方叫 Alfred UI Toolkit。过去在 Alfred…",
+          "href": "https://www.producthunt.com/products/alfred",
+          "meta": "Maker · Chris Messina",
+          "date": "11月19日"
         },
         {
-          "id": "69413d2dd90ee1bb960b4ffdb4b95d3b",
-          "title": "MAI Cyber 2 Flash：微软低成本安全 AI，支持 100 万 token 上下文",
-          "summary": "微软放出了一个专门做安全的方向的模型，跑分比 GPT-6 Astra 还高，成本却只要对方的 2%。听起来像是安全团队的福音，但它有个前提条件，直接决定了绝大多数人用不上。 这个模型叫 MAI Cyber 2 Flash，是微软 AI 旗下的安全专用模型。它的活很明确：找漏洞、给修复建议、做威胁调查。 先说最硬的两个数字。 上下文窗口 100 万 toke…",
-          "href": "https://www.producthunt.com/products/mai-image-2-3",
-          "meta": "Maker · Kumar Abhishek",
-          "date": "11月18日"
+          "id": "dc4003d44af5b5c755e1aff1aea8823c",
+          "title": "Upsolve MCP Connections：把 Notion、Linear 等接入你的数据 Agent",
+          "summary": "AI 数据分析最危险的地方，不是算错，而是算出一个看起来完全正确的错数。 十个人对「收入」有十种定义，散落在文档、Slack 和某位老员工的脑子里。AI agent 随手挑一个，SQL 跑通，图表漂亮，数字也像模像样。没人发现有问题，直到董事会那天。 Upsolve 这次发布的 Data Models，想解决的就是这件事。 问题出在 schema 不会说话…",
+          "href": "https://www.producthunt.com/products/upsolve-ai",
+          "meta": "Maker · Ka Ling Wu",
+          "date": "11月19日"
         }
       ]
     },
