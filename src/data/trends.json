@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026年11月20日 15:41",
+  "updatedAt": "2026年11月21日 15:36",
   "sources": [
     {
       "id": "huggingface",
@@ -7,6 +7,14 @@
       "href": "https://huggingface.co/papers",
       "note": "热门研究，看到模型与智能体方法的下一批方向。",
       "items": [
+        {
+          "id": "0963681cfcfae4f3cacc35ddae891250",
+          "title": "HiUni：在共享视觉空间中统一理解与生成",
+          "summary": "多模态统一模型这两年有个心照不宣的妥协：理解归理解，生成归生成，两套视觉表征、两套骨干计算，只是装进同一个仓库里。HiUni 想把这个妥协拆掉。 它问的问题很直接：一个预训练好的视觉语言模型，能不能几乎原封不动地拿来做图像生成？论文给出的答案是能，代价被挪到了输出端。 如果你关心统一多模态模型的架构取舍，这篇值得扫一眼。如果你只想要一个能画图的模型，它未必…",
+          "href": "https://arxiv.org/abs/2611.26107",
+          "meta": "arXiv 2611.26107",
+          "date": "11月19日"
+        },
         {
           "id": "0d5bfc7d712113effc524f1d574c70b4",
           "title": "后验匹配蒸馏",
@@ -22,6 +30,22 @@
           "href": "https://arxiv.org/abs/2611.26380",
           "meta": "arXiv 2611.26380",
           "date": "11月19日"
+        },
+        {
+          "id": "3fc3f847af48eedf533debd7a39a198a",
+          "title": "TwinLab-Bench：在真实实验室的智能体孪生中评估 AI 科学家",
+          "summary": "AI 科学家这个说法已经不新鲜，但怎么衡量一个 Agent 真的能“做实验”，一直是个模糊地带。大多数评测只考它会不会跑现成流程，或者从给定选项里挑下一步，这跟真正设计实验差得远。 TwinLab-Bench 想补的正是这块：让被测 Agent 自己设计实验，再由一个“双胞胎实验室”Agent 去执行，最后拿真实实验室记录来打分。这个思路值得看，因为它把“…",
+          "href": "https://arxiv.org/abs/2611.26248",
+          "meta": "arXiv 2611.26248",
+          "date": "11月18日"
+        },
+        {
+          "id": "1bfc8e2096b059ba4341976c5c827395",
+          "title": "为 LLM 驱动的权重空间编程训练视觉模型",
+          "summary": "这篇论文问了一个很实在的问题：既然大模型能直接改神经网络权重，那我们能不能 在训练阶段就为这种改法做好准备 ？ 过去关于 weight-space programming 的讨论，多半停留在“某个模型碰巧能改对”。这篇把视角翻过来，先承认大模型改权重这件事不稳定，然后去问网络本身该怎么训练，才更容易被改对。 作者来自乌尔姆大学视觉计算方向，做了个视觉模型的…",
+          "href": "https://arxiv.org/abs/2611.26408",
+          "meta": "arXiv 2611.26408",
+          "date": "11月18日"
         },
         {
           "id": "412d0b1a857ab28f8b1d04b5f0cbfb90",
@@ -40,14 +64,6 @@
           "date": "11月18日"
         },
         {
-          "id": "84a3c8aab1d00fd975c17f787885686a",
-          "title": "WeMM-Video：推动开源全模态视频理解前沿",
-          "summary": "多模态视频理解里，声音这条线一直是个硬骨头。大多数开源模型要么只做画面，要么把音频当附属输入，真正把“边看边听边推理”做扎实的很少。 WeMM-Video 值得看的地方在于，它把中英双语、全模态（文本、图像、音频、视频）、思考与非思考双模式，还有从 2B 到 35B-A3B 的完整尺寸梯队放在一个开源家族里。这不是单点模型发布，更像一套可复现的工程方案。…",
-          "href": "https://arxiv.org/abs/2611.26409",
-          "meta": "arXiv 2611.26409",
-          "date": "11月18日"
-        },
-        {
           "id": "89bafa04fa2235226158f40bded09be4",
           "title": "DailySafe：评测日常多轮多模态交互中的动态安全意识",
           "summary": "多模态大模型正在进入日常生活，但我们对它在“普通任务进行到一半时会不会出事”这件事，几乎还没有系统评估。 DailySafe 这篇论文就盯住这个缺口：用户本来在完成一个正当目标，对话一轮轮推进，图片一张张补充，风险线索是慢慢浮现的。模型要能跟住任务状态，识别出隐含的上下文风险，同时继续把忙帮好。作者给这种能力起了个名字，叫 Dynamic Safety A…",
@@ -56,35 +72,19 @@
           "date": "11月18日"
         },
         {
-          "id": "9456be560f2d112d99bc0280c146e1d0",
-          "title": "学习哪些动作会带来变化：面向动力学忠实世界模型的动作效果匹配",
-          "summary": "世界模型现在生成的视频越来越像真的，但“像”和“能用”之间还差一层： 动作稍微变一点，未来会怎么变，它经常说不准 。这篇论文要补的就是这一层。 对做机器人策略评估、基于模型做规划的人来说，这是很实际的问题。两个动作在数值上几乎一样，执行出来的结果可能完全不同。世界模型如果对这种差异不敏感，那它在视频上再逼真，也没法拿来替代真实环境做判断。 论文提出的方法叫…",
-          "href": "https://arxiv.org/abs/2611.25980",
-          "meta": "arXiv 2611.25980",
+          "id": "84a3c8aab1d00fd975c17f787885686a",
+          "title": "WeMM-Video：推动开源全模态视频理解前沿",
+          "summary": "多模态视频理解里，声音这条线一直是个硬骨头。大多数开源模型要么只做画面，要么把音频当附属输入，真正把“边看边听边推理”做扎实的很少。 WeMM-Video 值得看的地方在于，它把中英双语、全模态（文本、图像、音频、视频）、思考与非思考双模式，还有从 2B 到 35B-A3B 的完整尺寸梯队放在一个开源家族里。这不是单点模型发布，更像一套可复现的工程方案。…",
+          "href": "https://arxiv.org/abs/2611.26409",
+          "meta": "arXiv 2611.26409",
           "date": "11月18日"
         },
         {
-          "id": "a395e291e107cbc98909676c340e671a",
-          "title": "AutoMaster：让同一模型成为更好的教师，实现自主后训练",
-          "summary": "这篇论文想解决一个被 SFT 流程长期忽略的问题： 任务成功了，不代表这条轨迹值得学 。 摘要里说得很直白，即使老师模型跑出了成功轨迹，里面也可能混着没根据的假设、无效的重复、走形式的验证。传统做法只看结果对不对，把这些“坏习惯”一起喂给了学生模型。 AutoMaster 的思路是给老师加一层“行为干预”，让它变成更好的老师。 这篇论文想解决什么 后训练的…",
-          "href": "https://arxiv.org/abs/2611.26510",
-          "meta": "arXiv 2611.26510",
-          "date": "11月18日"
-        },
-        {
-          "id": "ad0fc4a07c661e215c85340fcce73476",
-          "title": "ZeroVLN：无需对 VLM 大脑进行监督微调即可学习导航",
-          "summary": "视觉语言导航（VLN）这条线，过去几年有个默认做法：拿一个视觉语言模型当“大脑”，再接一个可学习的动作头，然后在导航数据上做监督微调，让大脑学会预测几何目标点。 ZeroVLN 想质疑的正是这一步。它问的是： 我们真的需要为了让 VLM 会导航，去改它的权重吗？ 这篇值得看的地方在于，它给出的答案不只是“不用微调也能跑”，而是换了一套接口设计。如果结论站得…",
-          "href": "https://arxiv.org/abs/2611.26414",
-          "meta": "arXiv 2611.26414",
-          "date": "11月18日"
-        },
-        {
-          "id": "d3aa74cdbf900fe3adb4f95a5da8499f",
-          "title": "PlayCraft：从 Agent 游玩体验出发设计引人入胜的游戏",
-          "summary": "AI 现在能生成“能玩”的游戏，但能玩和好玩之间差着十万八千里。这篇论文盯的正是这个差距。 它提出的 PlayCraft，让一个看图玩游戏的智能体反复试玩，再拿它的游玩记录去改游戏，目标很明确：让游戏有“精通感”，也就是玩家能靠更好的判断和操作越玩越好。 如果你关心 AI 做内容生成、Agent 自我改进，或者游戏 AI，这篇值得扫一眼。目前只有摘要，细节…",
-          "href": "https://arxiv.org/abs/2611.26624",
-          "meta": "arXiv 2611.26624",
+          "id": "8992dc0800b4f06e651e60eb06e3eb19",
+          "title": "扩散 Transformer 的强化学习后训练本质是激活引导",
+          "summary": "看到这个标题我停了一下。RL 后训练在扩散 Transformer 上确实有效，图像质量、文字渲染、组合准确性都能涨，这已经是共识。但大家默认的因果链是：RL 让模型学会了某种依赖输入的新变换。 这篇论文直接打这个假设： 大部分收益可能只是一个与输入无关的固定偏移 。 如果结论站得住，那对做扩散模型后训练的人是有点颠覆的。你辛苦跑 policy gradi…",
+          "href": "https://arxiv.org/abs/2611.26627",
+          "meta": "arXiv 2611.26627",
           "date": "11月18日"
         }
       ]
@@ -96,84 +96,84 @@
       "note": "新产品发布，观察用户正在为什么工作流付费。",
       "items": [
         {
-          "id": "d6b03b3faa6b36020ac92dd274b927ff",
-          "title": "Nuko：浏览器里的动态设计",
-          "summary": "Product Hunt 上出现了一个叫 Nuko 的条目，点进去之前还以为是又一个 AI 工具。结果是一家做北欧复古家具修复的生意，专门处理 60 年代末到 70 年代初的老物件。 这个反差本身就值得说一句： 不是所有新产品都得是软件 。 它到底做什么 根据 NUKO Design 官网 的介绍，这家机构做的事情是让上世纪 60、70 年代的复古家具和物…",
-          "href": "https://www.producthunt.com/products/nuko",
-          "meta": "Maker · Tapdig Soltanov",
-          "date": "11月19日"
+          "id": "6d2915ed190dfe254863c7d96d9b0562",
+          "title": "greatai 评测：面向开源项目与非营利组织的免费 AI + 人工代码审查",
+          "summary": "Free AI + human code review for open source & nonprofits",
+          "href": "https://www.producthunt.com/products/greatai-review",
+          "meta": "Maker · Alexander Primak",
+          "date": "11月20日"
         },
         {
-          "id": "e0d850b35766c83f2394e14a97b3e3b9",
-          "title": "ToolJet：通过安全审查的 Vibe 编码业务应用",
-          "summary": "一个做内部工具的低代码平台，最容易被忽略的风险不在功能，而在配置。ToolJet 这类工具让团队几天内就能搭出带数据库和 API 的管理后台，可 搭得快，往往也漏得快 。 这次出现在 Product Hunt 上的条目，指向的其实不是 ToolJet 本身的新功能，而是一个叫 vas 的安全扫描服务针对 ToolJet 应用做的专项检查页：ToolJet…",
-          "href": "https://www.producthunt.com/products/tooljet",
-          "meta": "Maker · Navaneeth Padanna Kalathil",
-          "date": "11月19日"
+          "id": "f43fe3acec5b59023c5b13628489d142",
+          "title": "Lumyna 社区挑战：百万虚拟米，为抗饥饿许下小承诺",
+          "summary": "一个浏览器小游戏，玩家不花一分钱，开发者却要按玩家跑出的成绩往外掏钱捐给世界粮食计划署。这事听着像营销噱头，但规则写得挺实在：每完成 1 万米，捐 1 加元，下限 1 加元，上限 100 加元。 这就是 Lumyna Community Challenge 的全部设定。它是独立开发者做的一个公益向小项目，在 Product Hunt 上只拿到 2 票，冷清…",
+          "href": "https://www.producthunt.com/products/lumyna-community-challenge",
+          "meta": "Maker · Yuva Raja",
+          "date": "11月20日"
         },
         {
-          "id": "718a4a535e6274d2fc137f492dcea137",
-          "title": "Tecla：以 TODO 列表为界面的主动式 AI Agent",
-          "summary": "大多数 AI 助手都在等你开口。你输入提示词，它才动；你不问，它就安静待着。 Tecla 想反过来做： 它主动盯着你连接的各种应用，替你找出那些“该做但还没做”的事，然后把方案摆到你面前，等你点确认。 这个定位在 Automation & Agents 这个品类里不算常见。多数产品卖的是“你让它做什么”，Tecla 卖的是“它替你发现要做什么”。 它到底在…",
-          "href": "https://www.producthunt.com/products/tecla-3",
-          "meta": "Maker · Miguel Angel Cabrera Miñagorri",
-          "date": "11月19日"
+          "id": "485935d6890d52f9d03a3049fa7c2b25",
+          "title": "Samiksa：读懂研究、亲自验证并发布自己的成果",
+          "summary": "Product Hunt 上挂了一个叫 Samiksa 的条目，点进去看官网，指向的是一个 GitHub 账号页面。 这个账号叫 samiksa-ai，页面上除了用户名 samiksha、一个 Follow 按钮和 GitHub 自带的举报入口，没有别的东西。 公开仓库数量是零。 页面原话是 “samiksa-ai doesn't have any pub…",
+          "href": "https://www.producthunt.com/products/samiksa",
+          "meta": "Maker · Mihir D",
+          "date": "11月20日"
         },
         {
-          "id": "44cc463927eab21ac1b80fcb99e31748",
-          "title": "Gemini 4 Neon：前沿推理，任务完成更快",
-          "summary": "Google 这次发的 Gemini 4 Hydrogen，定位挺特别：它不是拿来跑最难推理题的前沿大模型，而是专门干活的快手。 官方 model card 写得很直白：Gemini 4 Carbon 和 Gemini 4 Argon 负责长时间、深链条的硬推理，Hydrogen 负责在各种智能体工作流里快速执行。换句话说， 它是 Gemini 4 家族里…",
-          "href": "https://www.producthunt.com/products/gemini-6",
-          "meta": "Maker · Zac Zuo",
-          "date": "11月19日"
+          "id": "5ecf176147de2d07b5302923e2726e10",
+          "title": "Mailpipe：用本地 AI Agent CLI 起草 Apple Mail 回复",
+          "summary": "一个域名一个月 14 美元，地址数量不限，还带网页版和 iPhone 应用。这个定价放在邮箱服务里，第一反应是算错账了。 Mailpipe 想做的事很直接： 把一个人或一个团队名下的所有域名，收进同一个收件箱。 做过副业项目的人都懂那种麻烦。每个新项目都要配邮箱，support@、billing@、hello@ 各来一个，域名注册商、邮件服务商、DNS 记…",
+          "href": "https://www.producthunt.com/products/mailpipe-2",
+          "meta": "Maker · 阿怪",
+          "date": "11月20日"
         },
         {
-          "id": "0a820958daf9ca64302955c9fa1ba9a4",
-          "title": "Adside：由专业 AI Agent 团队代管付费广告",
-          "summary": "投广告这件事，最贵的成本往往不是广告费，而是人。一个投放团队要盯竞品、想素材、搭计划、看数据、换创意，一圈下来，4.5 小时就没了。Adside 想做的事很直接： 把这套流程交给一组 AI 智能体，让投广告变成一件可以“雇”来的服务。 它刚在 Product Hunt 上发布，官网是 adside.ai。创始人 Robin Choy 和 Guillaume…",
-          "href": "https://www.producthunt.com/products/adside",
-          "meta": "Maker · Garry Tan",
-          "date": "11月19日"
+          "id": "bf89b86ac66072bf68c979a03ec211d8",
+          "title": "Interview Coach：开口练习求职面试",
+          "summary": "面试前对着镜子练三遍，进了考场还是卡壳。问题往往不在准备不够，而在从来没真正开口说过。 Mokaru 推出的 Interview Coach 想解决的正是这件事： 把面试练习从“心里默念”变成“真的说出来” 。它已经在 Product Hunt 上线，讨论页在这里。 它到底在做什么 一句话概括：一个会追问的 AI 面试官，你对着它说话，它根据你的简历和岗位…",
+          "href": "https://www.producthunt.com/products/interview-coach-3",
+          "meta": "Maker · Vincent Chu",
+          "date": "11月20日"
         },
         {
-          "id": "4e58485edf4e3483325f867e5108c49a",
-          "title": "mio click：既是解压玩具，也是朋友",
-          "summary": "一个只有一颗按键、一块屏幕的小玩具，能让孩子放下 iPad 吗？mio click 给出的答案有点反常识：不靠内容，不靠动画库，靠的是“一直按”。 它到底是什么 mio click 是一个掌上小设备，一颗按键、一块屏幕，五种颜色可选，在德州手工组装。官网把它定位成礼物、打发手的东西、长途出行的替代方案。核心玩法只有三步： 1. 孵化 ：开箱后先“孵”出自己…",
-          "href": "https://www.producthunt.com/products/mio-click",
-          "meta": "Maker · Jordan Lyall",
-          "date": "11月19日"
+          "id": "895fc911d0e992aed1ce5531f8721997",
+          "title": "Fack’d：在 YouTube 播放时实时事实核查并附来源",
+          "summary": "有人在 Product Hunt 上提交了一个词条，不是 App，不是 SaaS，也不是什么 AI 工具。它指向的是 Urban Dictionary 里一条 2023 年 2 月 10 日由用户 CammasGV 提交的定义。 这大概是 Product Hunt 上最没有产品形态的“产品”之一。但正因为离谱，值得看一眼它到底是什么。 这条定义到底在说什么…",
+          "href": "https://www.producthunt.com/products/fack-d",
+          "meta": "Maker · Philip Loyd",
+          "date": "11月20日"
         },
         {
-          "id": "4e7f5cfcf7c024bc2855575e7799bfcb",
-          "title": "Play That Back：为 iPhone Duo 打造的专业相机",
-          "summary": "iPhone 自带的相机够用，但想拍出有“电影感”的画面，通常得拍完再导进剪辑软件调色，中间隔着一道工序。Play That Back 想把这步提前： 选好一个色调，取景时就能直接看到成片效果，按下快门就带着这个色调拍下来。 这款 App 在 Product Hunt 上架，官网是 App Store 页面。开发者是 Storytailor Inc.，免费…",
-          "href": "https://www.producthunt.com/products/play-that-back",
-          "meta": "Maker · JQ Sirls",
-          "date": "11月19日"
+          "id": "04ee9b801bdd09d316d6b18eea1b7d08",
+          "title": "ThreadLore：把织物照片转成可编辑的织机图稿",
+          "summary": "一块老布料摆在面前，织法失传了，只剩一张照片。手织工想复原它，过去只能靠眼睛一格一格数经纬交叉，数错一根，整块布的花样就歪了。 ThreadLore 想解决的正是这个场景。它把手织工手里的织物照片变成可执行的织造方案：先看照片，再给出一个建议织法，让用户对着经纬交叉点逐处核对，确认无误后导出成可打印的织机卡或 WIF 文件。 它到底在做什么 手织（hand…",
+          "href": "https://www.producthunt.com/products/threadlore",
+          "meta": "Maker · Ken Nunes",
+          "date": "11月20日"
         },
         {
-          "id": "94863c525bfef5e7064bb10335e14db8",
-          "title": "Rezora IO：AI 语音 Agent 的 Shopify，10 分钟上线",
-          "summary": "一家做屋顶维修的公司，老板正趴在房顶上干活，电话响了。办公室的人在接另一条线。等老板下来回拨，客户早就打给了 Google 上搜到的下一家。 这不是个例。Rezora IO 的两位创始人 Aidan 和 Yevgeniy 算过一笔账：一家周一到周五早八点到晚六点营业的店，一周 168 小时里有 118 小时是关着的。而水管爆了、空调坏了这类事，偏偏最爱发生…",
-          "href": "https://www.producthunt.com/products/rezora-io-ai-calling-assistant",
-          "meta": "Maker · Garry Tan",
-          "date": "11月19日"
-        },
-        {
-          "id": "31128640e8912609aa2b65135a177d91",
-          "title": "Alfred 6：自 2010 年起为 macOS 提速",
-          "summary": "一个装机包只有 6MB 的 macOS 启动器，刚刚发布了第 6 个大版本。在 Electron 应用动辄几百兆的今天，这个体积本身就说明了它的路线：100% 原生，不掺水。 Alfred 6 这次更新的核心，是给 Workflow 开发者补上了一套 完全原生的 macOS UI 工具箱 ，官方叫 Alfred UI Toolkit。过去在 Alfred…",
-          "href": "https://www.producthunt.com/products/alfred",
+          "id": "56c2024bce4ab18c488c5d01943bffdf",
+          "title": "Docker：为智能体时代打造，以信任为基石运行",
+          "summary": "Docker 现在卖的已经不是容器了，而是“你敢让 AI 自己动手”这件事。 这话听着像营销，但翻完官网会发现它挺认真。首页第一句就是“Trust Docker for the agents you don't”，意思是：那些你不想亲自盯着的自主 Agent，交给 Docker 关起来跑。 它到底在解决什么问题 写代码的 Agent 有个尴尬处境：能力越强…",
+          "href": "https://www.producthunt.com/products/docker",
           "meta": "Maker · Chris Messina",
-          "date": "11月19日"
+          "date": "11月20日"
         },
         {
-          "id": "dc4003d44af5b5c755e1aff1aea8823c",
-          "title": "Upsolve MCP Connections：把 Notion、Linear 等接入你的数据 Agent",
-          "summary": "AI 数据分析最危险的地方，不是算错，而是算出一个看起来完全正确的错数。 十个人对「收入」有十种定义，散落在文档、Slack 和某位老员工的脑子里。AI agent 随手挑一个，SQL 跑通，图表漂亮，数字也像模像样。没人发现有问题，直到董事会那天。 Upsolve 这次发布的 Data Models，想解决的就是这件事。 问题出在 schema 不会说话…",
-          "href": "https://www.producthunt.com/products/upsolve-ai",
-          "meta": "Maker · Ka Ling Wu",
-          "date": "11月19日"
+          "id": "a3059b252d65e087143a379dba09fb93",
+          "title": "Veryfi Thinking Mode：AI 智能体审核并纠正收据与发票数据",
+          "summary": "一张发票识别错了，损失的不只是那条数据，而是后面一整条流程。 报销打错款、应付账款录错 ERP、审计时被翻出来对不上账。Veryfi 这次推出的 Thinking Mode，针对的就是这最后一点准确率。 一个参数，换来一次 AI 复核 Veryfi 原本的卖点是快：自研几十个模型，用数百万份真实单据训练，三秒内给出 99% 以上准确率的结构化数据。 问题出…",
+          "href": "https://www.producthunt.com/products/veryfi",
+          "meta": "Maker · Marianna Babayan",
+          "date": "11月20日"
+        },
+        {
+          "id": "4e5bd0f84fd0fa0fb0bac1ec8c6c2cd8",
+          "title": "Dozy：把睡眠数据变成今日一条行动建议",
+          "summary": "睡眠追踪应用最讽刺的地方在于：你戴着手表睡了一整晚，早上打开 App，看到一堆曲线、评分、阶段图，然后呢？然后你还是不知道该干嘛。 Dozy 想解决的就是这个“然后”。它不给你仪表盘，只给你一句话：今天该干嘛。 它到底在算什么 Dozy 的核心指标叫 睡眠负债 （Sleep Debt）。逻辑很直白：把过去两周每个晚上的睡眠时长和你的需求做对比，短睡的夜晚累…",
+          "href": "https://www.producthunt.com/products/dozy",
+          "meta": "Maker · Charvi Bansal",
+          "date": "11月20日"
         }
       ]
     },
