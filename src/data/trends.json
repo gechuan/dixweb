@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026年11月21日 15:36",
+  "updatedAt": "2026年11月22日 15:18",
   "sources": [
     {
       "id": "huggingface",
@@ -96,6 +96,38 @@
       "note": "新产品发布，观察用户正在为什么工作流付费。",
       "items": [
         {
+          "id": "010d8e8e9e3ffd91ef45d4bb8ecd80f0",
+          "title": "WaitFeed：在 Agent 等待时间中浏览科技资讯",
+          "summary": "等 AI 写代码的那几分钟，终端就那么干等着，什么也不干。 WaitFeed 想填的就是这段空白。它是个开源小工具，会在 AI 编程智能体跑任务的时候，在终端里显示一条窄窄的新闻滚动条。智能体一停，滚动条立刻消失，正好是你开始打字的那一刻。 它到底插在哪 三个宿主，三种位置： - OpenCode ：卡片显示在输入提示符上方， /feed 打开全屏阅读器，…",
+          "href": "https://www.producthunt.com/products/waitfeed-2",
+          "meta": "Maker · Faiz Jamadar",
+          "date": "11月21日"
+        },
+        {
+          "id": "dfe53c484dcdc058113c17b3ef1db39c",
+          "title": "Stitch Loop：Google 的 AI Agent，自动交付修复并监控指标",
+          "summary": "一个结账页的完成率从 87% 掉到 75%。是页面坏了，是投放带来了不同人群，还是埋点改了？这三种解释对应的动作完全不同，但仪表盘上只有一个数字。 Google Labs 在 11 月 18 日发布的 Stitch Loop，想接的正是这个问题：给它一个长期目标，接上 GitHub 和证据来源，它自己去找原因、提方案、写代码、开 PR。听起来像又一个“AI…",
+          "href": "https://www.producthunt.com/products/stitch-loop",
+          "meta": "Maker · Kumar Abhishek",
+          "date": "11月21日"
+        },
+        {
+          "id": "607b9da942e7cbfea813e0263f5678eb",
+          "title": "Smorza：让每个 Mac 应用拥有独立音量和输出",
+          "summary": "Product Hunt 上出现了一个叫 Smorza 的条目，点进去会发现它指向的不是什么 App 或 SaaS，而是意大利语词典里一个词条：smorzacandela。 这事本身比产品更有意思。 这个\"产品\"是什么 smorzacandela 是意大利语里的一个名词，词源是动词加宾语的组合：smorza 来自 smorza，意思是\"熄灭\"，加上 can…",
+          "href": "https://www.producthunt.com/products/smorza",
+          "meta": "Maker · Roko",
+          "date": "11月21日"
+        },
+        {
+          "id": "a7b201adbed12e1ffa5ef34943119ec2",
+          "title": "gitroots：为开发者和 AI Agent 提供路径级 GitHub 访问",
+          "summary": "Path-level GitHub access for developers and AI agents",
+          "href": "https://www.producthunt.com/products/gitroots",
+          "meta": "Maker · Shawki Aladdin",
+          "date": "11月20日"
+        },
+        {
           "id": "6d2915ed190dfe254863c7d96d9b0562",
           "title": "greatai 评测：面向开源项目与非营利组织的免费 AI + 人工代码审查",
           "summary": "Free AI + human code review for open source & nonprofits",
@@ -141,38 +173,6 @@
           "summary": "有人在 Product Hunt 上提交了一个词条，不是 App，不是 SaaS，也不是什么 AI 工具。它指向的是 Urban Dictionary 里一条 2023 年 2 月 10 日由用户 CammasGV 提交的定义。 这大概是 Product Hunt 上最没有产品形态的“产品”之一。但正因为离谱，值得看一眼它到底是什么。 这条定义到底在说什么…",
           "href": "https://www.producthunt.com/products/fack-d",
           "meta": "Maker · Philip Loyd",
-          "date": "11月20日"
-        },
-        {
-          "id": "04ee9b801bdd09d316d6b18eea1b7d08",
-          "title": "ThreadLore：把织物照片转成可编辑的织机图稿",
-          "summary": "一块老布料摆在面前，织法失传了，只剩一张照片。手织工想复原它，过去只能靠眼睛一格一格数经纬交叉，数错一根，整块布的花样就歪了。 ThreadLore 想解决的正是这个场景。它把手织工手里的织物照片变成可执行的织造方案：先看照片，再给出一个建议织法，让用户对着经纬交叉点逐处核对，确认无误后导出成可打印的织机卡或 WIF 文件。 它到底在做什么 手织（hand…",
-          "href": "https://www.producthunt.com/products/threadlore",
-          "meta": "Maker · Ken Nunes",
-          "date": "11月20日"
-        },
-        {
-          "id": "56c2024bce4ab18c488c5d01943bffdf",
-          "title": "Docker：为智能体时代打造，以信任为基石运行",
-          "summary": "Docker 现在卖的已经不是容器了，而是“你敢让 AI 自己动手”这件事。 这话听着像营销，但翻完官网会发现它挺认真。首页第一句就是“Trust Docker for the agents you don't”，意思是：那些你不想亲自盯着的自主 Agent，交给 Docker 关起来跑。 它到底在解决什么问题 写代码的 Agent 有个尴尬处境：能力越强…",
-          "href": "https://www.producthunt.com/products/docker",
-          "meta": "Maker · Chris Messina",
-          "date": "11月20日"
-        },
-        {
-          "id": "a3059b252d65e087143a379dba09fb93",
-          "title": "Veryfi Thinking Mode：AI 智能体审核并纠正收据与发票数据",
-          "summary": "一张发票识别错了，损失的不只是那条数据，而是后面一整条流程。 报销打错款、应付账款录错 ERP、审计时被翻出来对不上账。Veryfi 这次推出的 Thinking Mode，针对的就是这最后一点准确率。 一个参数，换来一次 AI 复核 Veryfi 原本的卖点是快：自研几十个模型，用数百万份真实单据训练，三秒内给出 99% 以上准确率的结构化数据。 问题出…",
-          "href": "https://www.producthunt.com/products/veryfi",
-          "meta": "Maker · Marianna Babayan",
-          "date": "11月20日"
-        },
-        {
-          "id": "4e5bd0f84fd0fa0fb0bac1ec8c6c2cd8",
-          "title": "Dozy：把睡眠数据变成今日一条行动建议",
-          "summary": "睡眠追踪应用最讽刺的地方在于：你戴着手表睡了一整晚，早上打开 App，看到一堆曲线、评分、阶段图，然后呢？然后你还是不知道该干嘛。 Dozy 想解决的就是这个“然后”。它不给你仪表盘，只给你一句话：今天该干嘛。 它到底在算什么 Dozy 的核心指标叫 睡眠负债 （Sleep Debt）。逻辑很直白：把过去两周每个晚上的睡眠时长和你的需求做对比，短睡的夜晚累…",
-          "href": "https://www.producthunt.com/products/dozy",
-          "meta": "Maker · Charvi Bansal",
           "date": "11月20日"
         }
       ]
