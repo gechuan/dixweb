@@ -3,130 +3,95 @@
   "weekday": "周日",
   "stats": {
     "sources_total": 128,
-    "sources_returned": 58,
-    "items_in_window": 73,
-    "items_kept": 70,
+    "sources_returned": 55,
+    "items_in_window": 56,
+    "items_kept": 53,
     "items_filtered": 3,
-    "topics": 5
+    "topics": 4
   },
-  "headline": "Signal将操作系统级AI视为“生存威胁”并推出限制手机截图功能；有报道称黎曼猜想已被解决并出现基于Lean的证明验证讨论，同时提到一份940页纯人类手稿；任天堂Switch 2主机黑五降价50美元；《GTA 6》已出现早期PC开源移植项目Leonida，另有报道提及该作首发收入达37.9亿美元；钛媒体从黄仁勋看AI时代领导力与指数级增长，另有文章以第一性原理探讨AI时代优秀产品经理所需能力。",
+  "headline": "Signal 将操作系统级 AI 视为“生存威胁”，并采取限制手机截图的措施。《GTA 6》已出现早期 PC 开源移植项目 Leonida，同时有报道称其首发收入超《复联 4》总票房。2026 年黑色星期五相关内容包括实地指南以及 RackNerd 廉价 VPS 促销。AI 与数学证明可验证性话题下，既有黎曼假设的 Lean 证明讨论，也有 AI 新闻提及黎曼猜想被解决。",
   "topics": [
     {
       "id": "T1",
-      "title": "Signal对抗AI监控：屏蔽截图与“生存威胁”警告",
-      "summary": "Signal将操作系统级AI视为“生存威胁”，并推出限制手机截图的功能以应对AI监控风险。相关报道从不同角度聚焦同一隐私防护举措。",
+      "title": "Signal 应对 AI 监控威胁并限制截图",
+      "summary": "Signal 将操作系统级 AI 视为“生存威胁”，并采取限制手机截图的措施。相关报道从不同角度关注这一隐私保护举措及其背景。",
       "items": [
         {
           "orig_title": "Signal restricts mobile screenshots as it confronts ‘existential threat’ of AI surveillance",
           "source": "TechCrunch",
           "category": "AI 前沿",
           "link": "https://techcrunch.com/2026/11/21/signal-restricts-mobile-screenshots-as-it-confronts-existential-threat-of-ai-surveillance/",
-          "zh_title": "Signal限制手机截图，以应对AI监控的“生存威胁”"
+          "zh_title": "Signal 限制手机截图，以应对 AI 监控的“生存威胁”"
         },
         {
           "orig_title": "Signal Calls OS-Level AI an 'Existential Threat' and Blocks Screenshots to Fight It",
           "source": "Decrypt",
           "category": "产品、设计与商业",
           "link": "https://decrypt.co/383750/signal-os-level-ai-existential-threat-blocks-screenshots",
-          "zh_title": "Signal 称操作系统级 AI 为“生存威胁”，并屏蔽截图以对抗"
+          "zh_title": "Signal 称操作系统级 AI 是“生存威胁”，并屏蔽截图以对抗"
         }
       ]
     },
     {
       "id": "T2",
-      "title": "AI数学突破：黎曼猜想的证明与验证争议",
-      "summary": "有报道称黎曼猜想已被解决，并出现基于Lean的证明验证讨论，同时提到一份长达940页的纯人类手稿。这些标题共同指向AI参与数学难题证明及其可验证性的趋势。",
-      "items": [
-        {
-          "orig_title": "A社数学家用Claude又证明另一千禧难题，逼出一份写了12年的940页纯人类手稿",
-          "source": "量子位",
-          "category": "AI 前沿",
-          "link": "https://www.qbitai.com/2026/11/511870.html",
-          "zh_title": "A社数学家用Claude又证明另一千禧难题，逼出一份写了12年的940页纯人类手稿"
-        },
-        {
-          "orig_title": "Riemann Hypothesis Lean proof: what developers can verify",
-          "source": "FuturePulse",
-          "category": "AI 前沿",
-          "link": "https://futurpulse.com/riemann-hypothesis-lean-proof-what-developers-can-verify/",
-          "zh_title": "黎曼假设的Lean证明：开发者能验证什么"
-        },
-        {
-          "orig_title": "Riemann solved, unforced Navier-Stokes, realtime waifus, new GPT, Gemini Neon: AI NEWS",
-          "source": "AI Search",
-          "category": "AI 前沿",
-          "link": "https://www.youtube.com/watch?v=bj3JTd-ezYg",
-          "zh_title": "黎曼猜想已解决、无外力纳维-斯托克斯、实时waifu、新GPT、Gemini Neon：AI新闻"
-        }
-      ]
-    },
-    {
-      "id": "T3",
-      "title": "黑五促销与硬件优惠",
-      "summary": "任天堂Switch 2主机在黑五降价50美元，同时出现2026年黑五选购指南和廉价VPS特价信息。多个来源围绕黑五促销季的硬件与订阅优惠展开。",
-      "items": [
-        {
-          "orig_title": "Nintendo’s Switch 2 console is $50 off for Black Friday",
-          "source": "The Verge",
-          "category": "AI 前沿",
-          "link": "https://www.theverge.com/gadgets/1038181/nintendo-switch-2-black-friday-deal-mario-kart-world-bundle-2026-sale",
-          "zh_title": "任天堂Switch 2主机黑五降价50美元"
-        },
-        {
-          "orig_title": "The 2026 Black Friday Field Guide Sale",
-          "source": "MacSparky",
-          "category": "产品、设计与商业",
-          "link": "https://www.macsparky.com/blog/2026/11/the-2026-black-friday-field-guide-sale/",
-          "zh_title": "2026年黑五选购指南特卖"
-        },
-        {
-          "orig_title": "RackNerd 2026 黑五特价 15.98 刀/年，高性价比（廉价）VPS 提供商，支持支付宝、银联卡[2026.11.22]",
-          "source": "小众软件",
-          "category": "产品、设计与商业",
-          "link": "https://www.appinn.com/racknerd-cheap-vps-latest-deals/",
-          "zh_title": "RackNerd 2026黑五特价 15.98美元/年，高性价比（廉价）VPS提供商，支持支付宝、银联卡[2026.11.22]"
-        }
-      ]
-    },
-    {
-      "id": "T4",
-      "title": "《GTA 6》相关动态：PC移植项目与首发收入",
-      "summary": "《GTA 6》已出现早期PC开源移植项目Leonida，另有报道提及该作首发收入达37.9亿美元。两条标题分别从开发社区和商业成绩角度关注同一游戏。",
+      "title": "《GTA 6》相关动态与开源移植项目",
+      "summary": "围绕《GTA 6》出现多条消息：既有早期 PC 开源移植项目 Leonida，也有关于其首发收入超《复联 4》总票房的报道。这些内容共同反映该游戏在开发与商业层面的高关注度。",
       "items": [
         {
           "orig_title": "《GTA 6》已出现早期 PC 开源移植项目：Leonida",
           "source": "小众软件",
           "category": "产品、设计与商业",
           "link": "https://www.appinn.com/gta-6-pc-port-leonida/",
-          "zh_title": "《GTA 6》已出现早期PC开源移植项目：Leonida"
+          "zh_title": "《GTA 6》已出现早期 PC 开源移植项目：Leonida"
         },
         {
           "orig_title": "黄仁勋遭董事会罢免主要原因曝光；《GTA6》首发收入 37.9 亿美元，超《复联 4》总票房；马斯克收到上海工厂员工特制边角料手办",
           "source": "极客公园",
           "category": "产品、设计与商业",
           "link": "http://www.geekpark.net/news/374300",
-          "zh_title": "黄仁勋遭董事会罢免主要原因曝光；《GTA6》首发收入37.9亿美元，超《复联4》总票房；马斯克收到上海工厂员工特制边角料手办"
+          "zh_title": "黄仁勋遭董事会罢免主要原因曝光；《GTA6》首发收入 37.9 亿美元，超《复联 4》总票房；马斯克收到上海工厂员工特制边角料手办"
         }
       ]
     },
     {
-      "id": "T5",
-      "title": "AI时代的产品与领导力方法论",
-      "summary": "有文章从黄仁勋看AI时代的领导力与指数级增长，另有第一性原理探讨AI时代优秀产品经理所需能力。两者共同聚焦AI背景下管理与产品方法论。",
+      "id": "T3",
+      "title": "黑五特价与 VPS 促销信息",
+      "summary": "多条内容涉及 2026 年黑色星期五的购物与特价信息，包括实地指南以及 RackNerd 的廉价 VPS 促销。它们同属黑五促销这一具体消费节点。",
       "items": [
         {
-          "orig_title": "从黄仁勋看AI时代的领导力：为什么有些企业能够实现指数级增长？",
-          "source": "钛媒体",
+          "orig_title": "The 2026 Black Friday Field Guide Sale",
+          "source": "MacSparky",
           "category": "产品、设计与商业",
-          "link": "https://www.tmtpost.com/8214129.html",
-          "zh_title": "从黄仁勋看AI时代的领导力：为什么有些企业能够实现指数级增长？"
+          "link": "https://www.macsparky.com/blog/2026/11/the-2026-black-friday-field-guide-sale/",
+          "zh_title": "2026 年黑色星期五实地指南特卖"
         },
         {
-          "orig_title": "First principles: What it takes to be a great product manager in the AI era | Sherif Mansour",
-          "source": "Lenny's Newsletter",
+          "orig_title": "RackNerd 2026 黑五特价 15.98 刀/年，高性价比（廉价）VPS 提供商，支持支付宝、银联卡[2026.11.22]",
+          "source": "小众软件",
           "category": "产品、设计与商业",
-          "link": "https://www.lennysnewsletter.com/p/first-principles-what-it-takes-to",
-          "zh_title": "第一性原理：AI时代成为优秀产品经理需要什么｜谢里夫·曼苏尔"
+          "link": "https://www.appinn.com/racknerd-cheap-vps-latest-deals/",
+          "zh_title": "RackNerd 2026 黑五特价 15.98 刀/年，高性价比（廉价）VPS 提供商，支持支付宝、银联卡[2026.11.22]"
+        }
+      ]
+    },
+    {
+      "id": "T4",
+      "title": "AI 数学证明与可验证性讨论",
+      "summary": "有内容讨论黎曼假设的 Lean 证明及开发者能验证什么，另有 AI 新闻提及黎曼猜想被解决。两者都聚焦 AI 与数学证明的可验证性话题。",
+      "items": [
+        {
+          "orig_title": "Riemann Hypothesis Lean proof: what developers can verify",
+          "source": "FuturePulse",
+          "category": "AI 前沿",
+          "link": "https://futurpulse.com/riemann-hypothesis-lean-proof-what-developers-can-verify/",
+          "zh_title": "黎曼假设的 Lean 证明：开发者能验证什么"
+        },
+        {
+          "orig_title": "Riemann solved, unforced Navier-Stokes, realtime waifus, new GPT, Gemini Neon: AI NEWS",
+          "source": "AI Search",
+          "category": "AI 前沿",
+          "link": "https://www.youtube.com/watch?v=bj3JTd-ezYg",
+          "zh_title": "黎曼猜想被解决、无外力纳维-斯托克斯、实时老婆、新 GPT、Gemini Neon：AI 新闻"
         }
       ]
     }
@@ -140,74 +105,18 @@
       "zh_title": "周日链接：一款有趣的消费品"
     },
     {
-      "orig_title": "I bought my first rental property at 23. Now I own 12 homes and make enough money to quit my day job.",
-      "source": "All Content from Business Insider",
-      "category": "产品、设计与商业",
-      "link": "https://www.businessinsider.com/bought-12-rental-properties-make-money-to-quit-day-job-2026-11",
-      "zh_title": "我23岁时买下第一套出租房产，如今拥有12套住房，收入足以辞去正职"
-    },
-    {
       "orig_title": "Protesters storm Meta offices in India",
       "source": "The Verge",
       "category": "AI 前沿",
       "link": "https://www.theverge.com/tech/1039732/protesters-storm-meta-offices-in-india",
-      "zh_title": "抗议者冲击Meta印度办公室"
-    },
-    {
-      "orig_title": "I make this 6-ingredient slow-cooker Buffalo chicken dip every Thanksgiving. It's always a crowd-pleaser.",
-      "source": "All Content from Business Insider",
-      "category": "产品、设计与商业",
-      "link": "https://www.businessinsider.com/easy-recipe-slow-cooker-buffalo-chicken-dip-game-day",
-      "zh_title": "每年感恩节我都做这道6种食材的慢炖水牛城鸡肉蘸酱，它总能赢得满堂彩"
+      "zh_title": "抗议者冲击 Meta 印度办公室"
     },
     {
       "orig_title": "Can a TV be too large? An investigation",
       "source": "TechCrunch",
       "category": "AI 前沿",
       "link": "https://techcrunch.com/2026/11/22/can-a-tv-be-too-large-an-investigation/",
-      "zh_title": "电视机会不会太大？一项调查"
-    },
-    {
-      "orig_title": "开户热、缴费冷：个人养老金产品缺一套靠谱的独立第三方标尺",
-      "source": "钛媒体",
-      "category": "产品、设计与商业",
-      "link": "https://www.tmtpost.com/8214170.html",
-      "zh_title": "开户热、缴费冷：个人养老金产品缺一套靠谱的独立第三方标尺"
-    },
-    {
-      "orig_title": "银行理财五星管理人评级报告 （2026年10月）",
-      "source": "钛媒体",
-      "category": "产品、设计与商业",
-      "link": "https://www.tmtpost.com/8214167.html",
-      "zh_title": "银行理财五星管理人评级报告（2026年10月）"
-    },
-    {
-      "orig_title": "价值判断：跌停板的投资机会和风险提示（11月20日）｜上市公司观察",
-      "source": "钛媒体",
-      "category": "产品、设计与商业",
-      "link": "https://www.tmtpost.com/8214152.html",
-      "zh_title": "价值判断：跌停板的投资机会和风险提示（11月20日）｜上市公司观察"
-    },
-    {
-      "orig_title": "价值判断：涨停板的投资机会和风险提示（11月20日）｜上市公司观察",
-      "source": "钛媒体",
-      "category": "产品、设计与商业",
-      "link": "https://www.tmtpost.com/8214137.html",
-      "zh_title": "价值判断：涨停板的投资机会和风险提示（11月20日）｜上市公司观察"
-    },
-    {
-      "orig_title": "从黄仁勋看AI时代的领导力：为什么有些企业能够实现指数级增长？",
-      "source": "钛媒体",
-      "category": "产品、设计与商业",
-      "link": "https://www.tmtpost.com/8214129.html",
-      "zh_title": "从黄仁勋看AI时代的领导力：为什么有些企业能够实现指数级增长？"
-    },
-    {
-      "orig_title": "I moved from the US to the South of France at 56. I'm so relaxed here, my resting heart rate dropped almost overnight.",
-      "source": "All Content from Business Insider",
-      "category": "产品、设计与商业",
-      "link": "https://www.businessinsider.com/moved-from-us-to-south-of-france-retire-heart-rate-2026-11",
-      "zh_title": "56岁时我从美国搬到法国南部。我在这里太放松了，静息心率几乎一夜之间就降了下来"
+      "zh_title": "电视能大到什么程度？一项调查"
     },
     {
       "orig_title": "Google's Quantum Chip Beats Classical Limits in 'Impossible' Game",
@@ -217,74 +126,39 @@
       "zh_title": "谷歌量子芯片在“不可能”游戏中击败经典极限"
     },
     {
-      "orig_title": "Nintendo’s Switch 2 console is $50 off for Black Friday",
-      "source": "The Verge",
-      "category": "AI 前沿",
-      "link": "https://www.theverge.com/gadgets/1038181/nintendo-switch-2-black-friday-deal-mario-kart-world-bundle-2026-sale",
-      "zh_title": "任天堂Switch 2主机黑五降价50美元"
-    },
-    {
-      "orig_title": "‘The show is starting soon. Please turn on your headphones.’",
-      "source": "The Verge",
-      "category": "AI 前沿",
-      "link": "https://www.theverge.com/tech/1038879/off-broadway-love-me-auracast",
-      "zh_title": "“演出即将开始，请打开您的耳机。”"
-    },
-    {
       "orig_title": "The 2026 Black Friday Field Guide Sale",
       "source": "MacSparky",
       "category": "产品、设计与商业",
       "link": "https://www.macsparky.com/blog/2026/11/the-2026-black-friday-field-guide-sale/",
-      "zh_title": "2026年黑五选购指南特卖"
+      "zh_title": "2026 年黑色星期五实地指南特卖"
+    },
+    {
+      "orig_title": "灵康控股上周质押5000万股股权",
+      "source": "集思录",
+      "category": "产品、设计与商业",
+      "link": "https://www.jisilu.cn/question/527092",
+      "zh_title": "灵康控股上周质押5000万股股权"
     },
     {
       "orig_title": "First principles: What it takes to be a great product manager in the AI era | Sherif Mansour",
       "source": "Lenny's Newsletter",
       "category": "产品、设计与商业",
       "link": "https://www.lennysnewsletter.com/p/first-principles-what-it-takes-to",
-      "zh_title": "第一性原理：AI时代成为优秀产品经理需要什么｜谢里夫·曼苏尔"
-    },
-    {
-      "orig_title": "A US Army officer went inside Ukraine’s ‘Killhouse.’ Here’s what he brought home to his drone course.",
-      "source": "All Content from Business Insider",
-      "category": "产品、设计与商业",
-      "link": "https://www.businessinsider.com/us-army-officer-went-to-ukraine-killhouse-brought-lessons-home-2026-11",
-      "zh_title": "一名美国陆军军官走进乌克兰的“杀戮屋”，这是他带回无人机课程的经验"
+      "zh_title": "第一性原理：AI 时代成为优秀产品经理需要什么 | Sherif Mansour"
     },
     {
       "orig_title": "《GTA 6》已出现早期 PC 开源移植项目：Leonida",
       "source": "小众软件",
       "category": "产品、设计与商业",
       "link": "https://www.appinn.com/gta-6-pc-port-leonida/",
-      "zh_title": "《GTA 6》已出现早期PC开源移植项目：Leonida"
-    },
-    {
-      "orig_title": "How Tamagotchis got us hooked on digital pets",
-      "source": "The Verge",
-      "category": "AI 前沿",
-      "link": "https://www.theverge.com/podcast/1039716/tamagotchi-history-digital-pets-anniversary",
-      "zh_title": "电子宠物如何让我们迷上数字宠物"
+      "zh_title": "《GTA 6》已出现早期 PC 开源移植项目：Leonida"
     },
     {
       "orig_title": "Top clicks this week on Abnormal Returns",
       "source": "Abnormal Returns",
       "category": "产品、设计与商业",
       "link": "https://abnormalreturns.com/2026/11/22/top-clicks-this-week-on-abnormal-returns-879/",
-      "zh_title": "本周Abnormal Returns热门点击"
-    },
-    {
-      "orig_title": "I spent 5 years renovating what I thought would be my forever home. I sold it as soon as we were done.",
-      "source": "All Content from Business Insider",
-      "category": "产品、设计与商业",
-      "link": "https://www.businessinsider.com/spent-years-renovating-forever-home-sold-it-2026-11",
-      "zh_title": "我花了5年翻新我以为会永远住下去的家。刚完工我就把它卖了。"
-    },
-    {
-      "orig_title": "方向盘收起的 10 秒，比亚迪在给下一个十年立标杆",
-      "source": "钛媒体",
-      "category": "产品、设计与商业",
-      "link": "https://www.tmtpost.com/8214070.html",
-      "zh_title": "方向盘收起的10秒，比亚迪在给下一个十年立标杆"
+      "zh_title": "本周 Abnormal Returns 热门点击"
     },
     {
       "orig_title": "I don't enjoy being pampered",
@@ -294,39 +168,18 @@
       "zh_title": "我不喜欢被娇惯"
     },
     {
-      "orig_title": "Villa Vie was their second chance at a life at sea. Then that failed too.",
-      "source": "All Content from Business Insider",
-      "category": "产品、设计与商业",
-      "link": "https://www.businessinsider.com/villa-vie-odyssey-residential-cruise-second-chance-life-sea-failed-2026-11",
-      "zh_title": "Villa Vie是他们海上生活的第二次机会，但这次也失败了。"
-    },
-    {
-      "orig_title": "An elite matchmaker reveals what executives want in a romantic partner",
-      "source": "All Content from Business Insider",
-      "category": "产品、设计与商业",
-      "link": "https://www.businessinsider.com/what-successful-executives-want-romantic-partner-matchmaker-2026-11",
-      "zh_title": "一位精英红娘揭示高管们对浪漫伴侣的期待"
-    },
-    {
-      "orig_title": "Anthropic's founders are really wealthy. How far behind Elon Musk are they?",
-      "source": "All Content from Business Insider",
-      "category": "产品、设计与商业",
-      "link": "https://www.businessinsider.com/anthropic-ipo-founders-wealth-dario-amodei-elon-musk-2026-11",
-      "zh_title": "Anthropic的创始人非常富有。他们比埃隆·马斯克落后多少？"
-    },
-    {
       "orig_title": "GLP-1 drugs could have a surprisingly large environmental payoff",
       "source": "Ars Technica - All content",
       "category": "工程与编程",
       "link": "https://arstechnica.com/health/2026/11/glp-1-drugs-could-have-a-surprisingly-large-environmental-payoff/",
-      "zh_title": "GLP-1药物可能带来出奇巨大的环境效益"
+      "zh_title": "GLP-1 药物可能带来惊人的巨大环境效益"
     },
     {
       "orig_title": "Mouse for Tandy 1000",
       "source": "dfarq.homeip.net",
       "category": "硬件",
       "link": "https://dfarq.homeip.net/mouse-for-tandy-1000/?utm_source=rss&utm_medium=rss&utm_campaign=mouse-for-tandy-1000",
-      "zh_title": "Tandy 1000用鼠标"
+      "zh_title": "Tandy 1000 用鼠标"
     },
     {
       "orig_title": "Stullensimulator – 一个认真到离谱的三明治模拟器",
@@ -336,39 +189,39 @@
       "zh_title": "Stullensimulator——一个认真到离谱的三明治模拟器"
     },
     {
-      "orig_title": "今天又出救市利好，很好奇明天会如何？",
-      "source": "集思录",
-      "category": "产品、设计与商业",
-      "link": "https://www.jisilu.cn/question/527086",
-      "zh_title": "今天又出救市利好，很好奇明天会如何？"
-    },
-    {
       "orig_title": "Replay: How the Internet Happened | Chris Dixon & Brian McCullough (2018)",
       "source": "a16z podcast",
       "category": "AI 前沿",
       "link": "https://a16z.simplecast.com/episodes/replay-how-the-internet-happened-chris-dixon-brian-mccullough-2018-k0AHBjvt",
-      "zh_title": "回放：互联网是如何发生的 | Chris Dixon与Brian McCullough（2018）"
+      "zh_title": "重播：互联网是如何发生的 | Chris Dixon 与 Brian McCullough（2018）"
     },
     {
       "orig_title": "Why the NFL is making players disguise their Caddix cleats",
       "source": "Fast Company",
       "category": "产品、设计与商业",
       "link": "https://www.fastcompany.com/91646518/why-the-nfl-is-making-players-disguise-their-caddix-cleats",
-      "zh_title": "为什么NFL要让球员伪装他们的Caddix球鞋"
+      "zh_title": "为什么 NFL 要让球员伪装他们的 Caddix 球鞋"
     },
     {
       "orig_title": "CrowdStrike CEO: Companies are choosing between getting hacked and shutting down",
       "source": "Fast Company",
       "category": "产品、设计与商业",
       "link": "https://www.fastcompany.com/91646863/crowdstrike-ceo-companies-are-choosing-between-getting-hacked-and-shutting-down",
-      "zh_title": "CrowdStrike CEO：公司正面临被黑客攻击还是关停之间的选择"
+      "zh_title": "CrowdStrike CEO：公司正面临被黑与关停之间的选择"
+    },
+    {
+      "orig_title": "History shows why corporate boards should act fast on misbehaving CEOs",
+      "source": "Fast Company",
+      "category": "产品、设计与商业",
+      "link": "https://www.fastcompany.com/91645793/history-corporate-boards-misbehaving-ceos",
+      "zh_title": "历史表明公司董事会为何应迅速处理行为不当的 CEO"
     },
     {
       "orig_title": "RackNerd 2026 黑五特价 15.98 刀/年，高性价比（廉价）VPS 提供商，支持支付宝、银联卡[2026.11.22]",
       "source": "小众软件",
       "category": "产品、设计与商业",
       "link": "https://www.appinn.com/racknerd-cheap-vps-latest-deals/",
-      "zh_title": "RackNerd 2026黑五特价 15.98美元/年，高性价比（廉价）VPS提供商，支持支付宝、银联卡[2026.11.22]"
+      "zh_title": "RackNerd 2026 黑五特价 15.98 刀/年，高性价比（廉价）VPS 提供商，支持支付宝、银联卡[2026.11.22]"
     },
     {
       "orig_title": "Danish daughters",
@@ -382,14 +235,14 @@
       "source": "小众软件",
       "category": "产品、设计与商业",
       "link": "https://www.appinn.com/totk-recomp-0-5-0/",
-      "zh_title": "《塞尔达传说：王国之泪》PC原生版TotK Recomp 0.5.0更新：支持插帧、自由视角、快速存档"
+      "zh_title": "《塞尔达传说：王国之泪》PC 原生版 TotK Recomp 0.5.0 更新：支持插帧、自由视角、快速存档"
     },
     {
       "orig_title": "Strata 0.2.18 新增 220B 开源大模型 Hy4-Flash，门槛上涨至 64GB 内存",
       "source": "小众软件",
       "category": "产品、设计与商业",
       "link": "https://www.appinn.com/strata-0-2-18/",
-      "zh_title": "Strata 0.2.18新增220B开源大模型Hy4-Flash，门槛上涨至64GB内存"
+      "zh_title": "Strata 0.2.18 新增 220B 开源大模型 Hy4-Flash，门槛上涨至 64GB 内存"
     },
     {
       "orig_title": "Nature：糖尿病大鼠成功恢复正常血糖！用电刺激迷走神经控糖",
@@ -403,35 +256,28 @@
       "source": "Marginal REVOLUTION",
       "category": "观点与杂谈",
       "link": "https://marginalrevolution.com/marginalrevolution/2026/11/will-ai-growth-reach-the-developing-world.html?utm_source=rss&utm_medium=rss&utm_campaign=will-ai-growth-reach-the-developing-world",
-      "zh_title": "AI增长会惠及发展中国家吗？"
-    },
-    {
-      "orig_title": "A社数学家用Claude又证明另一千禧难题，逼出一份写了12年的940页纯人类手稿",
-      "source": "量子位",
-      "category": "AI 前沿",
-      "link": "https://www.qbitai.com/2026/11/511870.html",
-      "zh_title": "A社数学家用Claude又证明另一千禧难题，逼出一份写了12年的940页纯人类手稿"
+      "zh_title": "AI 增长能否惠及发展中国家？"
     },
     {
       "orig_title": "4 ways I gave my employees more time off without sacrificing results",
       "source": "Fast Company",
       "category": "产品、设计与商业",
       "link": "https://www.fastcompany.com/91642881/4-ways-i-gave-my-employees-more-time-off-without-sacrificing-results",
-      "zh_title": "我让员工获得更多休假的4种方法，且不牺牲成果"
+      "zh_title": "我在不牺牲成果的前提下为员工增加假期的 4 种方法"
     },
     {
       "orig_title": "The Most Powerful Attitude You Can Take Toward Your Life and the Life of the World",
       "source": "Brain Pickings",
       "category": "观点与杂谈",
       "link": "https://www.themarginalian.org/2026/11/22/richard-powers-advice/",
-      "zh_title": "你对生活和世界能采取的最强大态度"
+      "zh_title": "你对人生和世界能采取的最强大态度"
     },
     {
       "orig_title": "Weekly Update 531: Optimizely. Script Dependencies & Third Parties",
       "source": "troyhunt.com",
       "category": "安全",
       "link": "https://www.troyhunt.com/weekly-update-531/",
-      "zh_title": "每周更新531：Optimizely、脚本依赖与第三方"
+      "zh_title": "每周更新 531：Optimizely、脚本依赖与第三方"
     },
     {
       "orig_title": "Skill Distill Skill: Reuse a Proven Coding Session",
@@ -445,7 +291,7 @@
       "source": "FuturePulse",
       "category": "AI 前沿",
       "link": "https://futurpulse.com/riemann-hypothesis-lean-proof-what-developers-can-verify/",
-      "zh_title": "黎曼假设的Lean证明：开发者能验证什么"
+      "zh_title": "黎曼假设的 Lean 证明：开发者能验证什么"
     },
     {
       "orig_title": "The Seven Selves",
@@ -459,7 +305,7 @@
       "source": "AI Search",
       "category": "AI 前沿",
       "link": "https://www.youtube.com/watch?v=bj3JTd-ezYg",
-      "zh_title": "黎曼猜想已解决、无外力纳维-斯托克斯、实时waifu、新GPT、Gemini Neon：AI新闻"
+      "zh_title": "黎曼猜想被解决、无外力纳维-斯托克斯、实时老婆、新 GPT、Gemini Neon：AI 新闻"
     },
     {
       "orig_title": "The Only Three Distinctions Between People",
@@ -473,28 +319,28 @@
       "source": "极客公园",
       "category": "产品、设计与商业",
       "link": "http://www.geekpark.net/news/374303",
-      "zh_title": "重控制、轻渲染，达瓦科技的AI视频工业路线"
+      "zh_title": "重控制、轻渲染，达瓦科技的 AI 视频工业路线"
     },
     {
       "orig_title": "资本开支猛增 226%，AI 吞噬百亿利润：腾讯的 AI 故事，进入更重的阶段",
       "source": "极客公园",
       "category": "产品、设计与商业",
       "link": "http://www.geekpark.net/news/374302",
-      "zh_title": "资本开支猛增226%，AI吞噬百亿利润：腾讯的AI故事进入更重阶段"
+      "zh_title": "资本开支猛增 226%，AI 吞噬百亿利润：腾讯的 AI 故事，进入更重的阶段"
     },
     {
       "orig_title": "关于混元 4 模型、算力、刷榜与 RSI，姚顺雨回应一切",
       "source": "极客公园",
       "category": "产品、设计与商业",
       "link": "http://www.geekpark.net/news/374301",
-      "zh_title": "关于混元4模型、算力、刷榜与RSI，姚顺雨回应一切"
+      "zh_title": "关于混元 4 模型、算力、刷榜与 RSI，姚顺雨回应一切"
     },
     {
       "orig_title": "黄仁勋遭董事会罢免主要原因曝光；《GTA6》首发收入 37.9 亿美元，超《复联 4》总票房；马斯克收到上海工厂员工特制边角料手办",
       "source": "极客公园",
       "category": "产品、设计与商业",
       "link": "http://www.geekpark.net/news/374300",
-      "zh_title": "黄仁勋遭董事会罢免主要原因曝光；《GTA6》首发收入37.9亿美元，超《复联4》总票房；马斯克收到上海工厂员工特制边角料手办"
+      "zh_title": "黄仁勋遭董事会罢免主要原因曝光；《GTA6》首发收入 37.9 亿美元，超《复联 4》总票房；马斯克收到上海工厂员工特制边角料手办"
     },
     {
       "orig_title": "To code well, avoid blunders",
@@ -522,7 +368,7 @@
       "source": "TechCrunch",
       "category": "AI 前沿",
       "link": "https://techcrunch.com/2026/11/21/signal-restricts-mobile-screenshots-as-it-confronts-existential-threat-of-ai-surveillance/",
-      "zh_title": "Signal限制手机截图，以应对AI监控的“生存威胁”"
+      "zh_title": "Signal 限制手机截图，以应对 AI 监控的“生存威胁”"
     },
     {
       "orig_title": "A tale of two Nvidias",
@@ -536,28 +382,28 @@
       "source": "daringfireball.net",
       "category": "产品、设计与商业",
       "link": "https://daringfireball.net/2026/11/a_week_with_the_new_privacy_controls_in_macos_273",
-      "zh_title": "★ 在MacOS 27.3 Beta 2中体验新隐私控制的一周"
+      "zh_title": "★ 与 MacOS 27.3 Beta 2 新隐私控制共度一周"
     },
     {
       "orig_title": "Trump says reported FBI database hack is ‘not good’",
       "source": "TechCrunch",
       "category": "AI 前沿",
       "link": "https://techcrunch.com/2026/11/21/trump-says-reported-fbi-database-hack-is-not-good/",
-      "zh_title": "特朗普称报道中的FBI数据库遭黑客攻击“不妙”"
+      "zh_title": "特朗普称报道中的 FBI 数据库遭黑客入侵“不妙”"
     },
     {
       "orig_title": "The U.S. — Utterly Predictably — Has Lost Measles Elimination Status Under Trump and RFK Jr.",
       "source": "daringfireball.net",
       "category": "产品、设计与商业",
       "link": "https://www.wsj.com/health/measles-is-back-it-will-take-years-to-eliminate-it-again-9971736e?st=GKiu3E",
-      "zh_title": "美国——完全可以预料地——在特朗普和小罗伯特·肯尼迪治下失去麻疹消除地位"
+      "zh_title": "美国——完全可以预料——在特朗普和小罗伯特·肯尼迪治下失去麻疹消除地位"
     },
     {
       "orig_title": "Apple Documents Extra Apple Intelligence Usage Limits Per iCloud+ Paid Tier",
       "source": "daringfireball.net",
       "category": "产品、设计与商业",
       "link": "https://support.apple.com/en-us/127901",
-      "zh_title": "苹果文件显示各 iCloud+ 付费层级有额外的 Apple Intelligence 使用限制"
+      "zh_title": "苹果文件记录各 iCloud+ 付费层级额外的 Apple Intelligence 使用限制"
     },
     {
       "orig_title": "Open video models that keep product footage inside your control",
@@ -578,21 +424,21 @@
       "source": "TechCrunch",
       "category": "AI 前沿",
       "link": "https://techcrunch.com/2026/11/21/all-the-ai-agents-that-can-live-in-your-text-messages/",
-      "zh_title": "以下是可以驻留在你短信中的顶级 AI 智能体"
+      "zh_title": "这些是能驻留在你短信里的顶尖 AI 智能体"
     },
     {
       "orig_title": "Why do math when AI can?",
       "source": "a16z crypto",
       "category": "产品、设计与商业",
       "link": "https://a16zfrontier.com/posts/article/ai-math-human-why/",
-      "zh_title": "既然 AI 能做，为什么还要学数学？"
+      "zh_title": "AI 都能做了，为什么还要做数学？"
     },
     {
       "orig_title": "🧠 Community Wisdom: Handling context switching with multiple agents, giving feedback on AI-generated designs, getting AI to write less like AI, why PMs don’t share what they’re really working on",
       "source": "Lenny's Newsletter",
       "category": "产品、设计与商业",
       "link": "https://www.lennysnewsletter.com/p/community-wisdom-handling-context",
-      "zh_title": "🧠 社区智慧：用多个智能体处理上下文切换、为 AI 生成的设计提供反馈、让 AI 写得更不像 AI、产品经理为何不分享他们真正在做的事"
+      "zh_title": "🧠 社区智慧：用多个智能体处理上下文切换、为 AI 生成的设计提供反馈、让 AI 写得不那么像 AI、产品经理为何不分享他们真正在做的事"
     },
     {
       "orig_title": "Cross-chain protocol Chainflip's FLIP tanks 30% after suspected $4.86 million vault drain",
@@ -613,14 +459,14 @@
       "source": "Decrypt",
       "category": "产品、设计与商业",
       "link": "https://decrypt.co/383750/signal-os-level-ai-existential-threat-blocks-screenshots",
-      "zh_title": "Signal 称操作系统级 AI 为“生存威胁”，并屏蔽截图以对抗"
+      "zh_title": "Signal 称操作系统级 AI 是“生存威胁”，并屏蔽截图以对抗"
     },
     {
       "orig_title": "Is selling an AI version of your face to this microdrama startup the future of Hollywood?",
       "source": "TechCrunch",
       "category": "AI 前沿",
       "link": "https://techcrunch.com/2026/11/21/is-selling-an-ai-version-of-your-face-to-this-microdrama-startup-the-future-of-hollywood/",
-      "zh_title": "把你的脸卖给这家微短剧初创公司做 AI 版本，会是好莱坞的未来吗？"
+      "zh_title": "把你的脸的 AI 版本卖给这家微短剧初创公司，会是好莱坞的未来吗？"
     }
   ],
   "filtered": [

@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026年11月23日 16:03",
+  "updatedAt": "2026年11月23日 21:27",
   "sources": [
     {
       "id": "huggingface",
@@ -13,6 +13,14 @@
           "summary": "视觉语言模型在语义理解上已经很强，但一碰到“这个东西离我几米”这类带单位的三维空间问题，就容易露出短板。原因不复杂：多数模型靠单张图或几张没标定的图去猜三维结构，缺少跨视角的几何约束，尺度信息本身就不确定。模型给出的“3 米”到底来自视觉证据，还是来自语义先验，很难分清。 这篇论文想换一条路：用已标定的双目图像（stereo）给模型提供显式的跨视角几何，让…",
           "href": "https://arxiv.org/abs/2611.27915",
           "meta": "arXiv 2611.27915",
+          "date": "11月20日"
+        },
+        {
+          "id": "6c7e90e121da479ee360a2423e213bf1",
+          "title": "拆解与重组：追踪经历物理变换的物体",
+          "summary": "视频目标跟踪有一个默认假设：一个物体从第一帧到最后一帧，身份不变，外观可以变。现实里这个假设经常不成立。一个玩具被拆成零件，一堆积木被拼成整体，原来的“物体”消失了，新的实体出现了。 这篇论文把这种物理层面的拆解与组装纳入跟踪任务，提出了 Transformation Tracking and Understanding（TTU） 。它要回答的不只是“这个…",
+          "href": "https://arxiv.org/abs/2611.27398",
+          "meta": "arXiv 2611.27398",
           "date": "11月20日"
         },
         {
@@ -78,14 +86,6 @@
           "href": "https://arxiv.org/abs/2611.26629",
           "meta": "arXiv 2611.26629",
           "date": "11月19日"
-        },
-        {
-          "id": "170e89d867c00416f2f26eff03517e78",
-          "title": "EgoCaptioner：迈向全面细粒度的第一人称视频描述",
-          "summary": "第一人称视角的视频描述，听起来只是给视频配文字，实际难度比想象中高。戴摄像头的人手一晃，一个开抽屉的动作可能只占半秒；镜头一转，前后步骤的顺序就乱了。现有 MLLM 在这类视频上经常漏掉短动作、把顺序搞混，或者把佩戴者自己的移动误读成别的东西。 EgoCaptioner 想解决的就是这个。它不只是生成一段描述，还要输出一种结构化的说明：先给视频整体概览，交…",
-          "href": "https://arxiv.org/abs/2611.26380",
-          "meta": "arXiv 2611.26380",
-          "date": "11月19日"
         }
       ]
     },
@@ -96,84 +96,84 @@
       "note": "新产品发布，观察用户正在为什么工作流付费。",
       "items": [
         {
-          "id": "92c51548c48eed9df62d20ea18e08791",
-          "title": "oovi：桌面上的专属 AI 团队",
-          "summary": "一个多智能体产品，不卖订阅，让用户自己填 API Key。这个定价策略本身就值得先聊两句。 oovi 是刚在 Product Hunt 上出现的一个 Windows 应用，目前通过 Microsoft Store 分发。它做的事情可以一句话概括： 给每个 AI 机器人一张脸和一个岗位，把它们编进小组，让它们互相交接工作，最后交回一个统一答案。 这个描述听起…",
-          "href": "https://www.producthunt.com/products/oovi",
-          "meta": "Maker · Brahimi Oussama",
+          "id": "06576e54ad8729e84f8957c0c3b03816",
+          "title": "Inkling 2 Mini：可在笔记本上编程的 26B 循环模型",
+          "summary": "Thinking Machines Lab 放出了一个叫 Inkling 2 Small 的模型。名字里带 Small，参数却是 594B 总参数、17B 激活。这个命名方式本身就在提醒一件事：现在模型的大小，得看激活量，不能只看总盘子。 它的发布页在 Inkling 2 Small Model Card，Product Hunt 上的讨论入口在这里。 它…",
+          "href": "https://www.producthunt.com/products/tinker-2",
+          "meta": "Maker · Zac Zuo",
+          "date": "11月23日"
+        },
+        {
+          "id": "0e2ed715aa59b12f22df07bb6eaacb94",
+          "title": "FigmaMCP：让 Claude Code 或 Codex 编辑你打开的 Figma 文件",
+          "summary": "设计稿改到第三版，文案里那个旧产品名还散落在十几个文本层里，手动一个个点开改，改完还得核对有没有漏。这种活以前只能硬着头皮干，现在有个新工具想让 Claude Code 或 Codex 替你干。 FigmaMCP 是一个免费的本地工具，让 AI 编程 Agent 直接读写 Figma 桌面应用里那个已经打开的文件。注意这句话里的几个限定词：本地、桌面应用、…",
+          "href": "https://www.producthunt.com/products/figmamcp",
+          "meta": "Maker · Peng Xiao",
+          "date": "11月23日"
+        },
+        {
+          "id": "52646e8f43dd7fe7d6e24fc30e0cedf8",
+          "title": "Strict：在任意闲置 Mac 或 Linux 机器上运行 GitHub Actions",
+          "summary": "Product Hunt 上出现了一个叫 Strict 的条目，点进去看官网，落到的却是 strict-lang/strict-lang.org 这个仓库的 Actions 页面。页面内容是一整套 GitHub Actions 的介绍：CI/CD、托管运行器、矩阵构建、多语言支持、实时日志、密钥存储、多容器测试。 这就有意思了。一个叫 Strict 的产品…",
+          "href": "https://www.producthunt.com/products/strict",
+          "meta": "Maker · Jeremy Cai",
+          "date": "11月23日"
+        },
+        {
+          "id": "92800a6b2f34db5a105ab7ea277fcd35",
+          "title": "Open Source Solana Wallet：你的密钥，你的专属网络",
+          "summary": "Your own keys, your very own network",
+          "href": "https://www.producthunt.com/products/open-source-solana-wallet",
+          "meta": "Maker · Raul Riera",
+          "date": "11月23日"
+        },
+        {
+          "id": "a3cee886773fb3da33646357d5d4032b",
+          "title": "Branchery：Mac 上的 Git 客户端",
+          "summary": "Product Hunt 上出现了一个叫 Branchery 的条目，点进去看官网，指向的是亚马逊上的一个品牌店铺页面。但页面抓下来的内容只有一串亚马逊页脚链接：Customer Service、About Amazon、Conditions of Use、Privacy Notice、Consumer Health Data Privacy Disclo…",
+          "href": "https://www.producthunt.com/products/branchery",
+          "meta": "Maker · Viljami Vastamäki",
+          "date": "11月23日"
+        },
+        {
+          "id": "2125b5193bf441ebcfc67b4cd4a82301",
+          "title": "Ashwa：永不忘记你说过什么的 AI 伙伴",
+          "summary": "Product Hunt 上出现了一个叫 Ashwa 的条目，但点进去会发现，它的“官网”指向的是 There's An AI For That 的搜索结果页。这件事本身就值得先说清楚。 目前能确认的信息非常有限。 抓取到的页面是 TAAFT 的站内搜索页，标题写着“Ashwa and chh”，页面主体是导航栏、推荐位和一堆其他产品的卡片，比如 Mono…",
+          "href": "https://www.producthunt.com/products/ashwa",
+          "meta": "Maker · Suvroneel Nathak",
+          "date": "11月23日"
+        },
+        {
+          "id": "85a87dceaa450a690ce80eb67b401355",
+          "title": "Replit Missions：设定预算，协调多智能体团队",
+          "summary": "Replit 在 Product Hunt 上发布了一个叫 Missions 的新东西。它想解决的问题很具体： 让一组 AI Agent 替你把一件跨多步骤的事从头做到尾，而预算和关键决策权留在你手里。 这和“让 AI 写一段代码”是两码事。Missions 瞄准的是那种你一直想做、但没时间或没人力推进的目标，比如重写一个组件、优化注册转化漏斗、给客服助手…",
+          "href": "https://www.producthunt.com/products/replit",
+          "meta": "Maker · Shivam Kushwaha",
+          "date": "11月23日"
+        },
+        {
+          "id": "8d38ae40ec0c2830831d471a320f1b6b",
+          "title": "Plango：用 AI 抵御 AI",
+          "summary": "你的 Mac 上现在可能同时跑着 Claude Code、Cursor 和 Codex，它们能读你的文件、连你的数据库、调用你的密钥。你给它们开了多少权限，自己清楚吗？ Plango 就是冲着这个问题来的。它把自己定位成“本地网络安全智能模型”，一句话概括： 给 Mac 上的 AI 编程工具装一套监控和刹车系统 。 它到底在防什么 官方演示里有个很直白的场…",
+          "href": "https://www.producthunt.com/products/plango",
+          "meta": "Maker · Rich Stureborg, PhD",
+          "date": "11月23日"
+        },
+        {
+          "id": "d7c5df4011e91141b81ef1ce0c106174",
+          "title": "Mobile Agent Testers：免费开源的 AI 智能体，在手机上为你的应用做 Beta 测试",
+          "summary": "Free open-source AI agents that beta-test your app on phones",
+          "href": "https://www.producthunt.com/products/mobile-agent-testers",
+          "meta": "Maker · Pierre Raffalli",
+          "date": "11月23日"
+        },
+        {
+          "id": "12b54f19068598e4c8f3f469b07afa22",
+          "title": "Kopyo：记住一切的 Mac 剪贴板管理器",
+          "summary": "macOS 26 Tahoe 自己带了剪贴板历史，最多存 7 天。苹果把这个功能做进系统，等于宣判了一批第三方剪贴板工具的死刑。 但 Kopyo 偏偏在这个时候上线 Product Hunt，还敢标价。它赌的是：系统自带的功能，只解决了“有没有”，没解决“好不好用”。 它到底比系统多做了什么 先看官网自己列的那张对比表，信息量很足。 历史保留时间 ：Spo…",
+          "href": "https://www.producthunt.com/products/kopyo",
+          "meta": "Maker · Oğuzhan YILMAZ",
           "date": "11月22日"
-        },
-        {
-          "id": "64fdc1d4d4afc68b9522f4898405c858",
-          "title": "Resurf：个人上下文应用",
-          "summary": "Mac 用户大概都有过这种体验：收藏夹里躺着几百个链接，备忘录里塞满零碎想法，下载文件夹里堆着没看完的 PDF。等到真正需要某条信息时，翻遍所有地方也找不到。 Resurf 想解决的就是这个问题。 它到底做什么 简单说，Resurf 是一个本地优先的个人上下文库。笔记、链接、图片、PDF、随手冒出来的想法，都可以往里丢。需要的时候能搜到，或者直接通过 MC…",
-          "href": "https://www.producthunt.com/products/resurf-2",
-          "meta": "Maker · fmerian",
-          "date": "11月22日"
-        },
-        {
-          "id": "f5f2f7e2273a3fe4215b77fb62dcc1ac",
-          "title": "Verge: Corner Controls：滑动屏幕角落调节亮度、音量等",
-          "summary": "Swipe a screen corner to set brightness, volume and more",
-          "href": "https://www.producthunt.com/products/verge-corner-controls",
-          "meta": "Maker · Prateek Sharma",
-          "date": "11月21日"
-        },
-        {
-          "id": "c3d51c3b2a3fae0d7667e58033caa35a",
-          "title": "Omi CLI：终端里的 AI 编程 Agent，支持 13 种模型",
-          "summary": "终端里的 AI 编程工具已经不少了，Omi CLI 还是挤了进来。它给出的理由很直接： 改代码这件事，不该由 AI 一次性甩给你一大段结果，而应该像同事提交 PR 一样，每一步都让你看得见、点得了头。 这是 Omi CLI 的核心卖点。作者 Om Prakash 把它定位成一个住在终端里的 AI coding agent，目前挂在 Product Hunt…",
-          "href": "https://www.producthunt.com/products/omi-cli",
-          "meta": "Maker · Om Prakash Sahoo",
-          "date": "11月21日"
-        },
-        {
-          "id": "1102661bdae0ba61da20dfa3bfd99482",
-          "title": "Creavit Studio 4.0：Mac 上的屏幕录制、iPhone 摄像头与电影级演示",
-          "summary": "录一段 Mac 屏幕视频，讲清一个功能，往往要折腾半小时：录完发现鼠标乱飞、重点区域太小、剪辑软件又得重新学。Creavit Studio 想砍掉的就是这一整段返工。 它是一款 Mac 录屏工具，主打三件事：自动缩放、平滑光标、AI 剪辑。录完之后，画面会自己推近到操作发生的位置，鼠标轨迹被抹平，不需要手动打关键帧。产品演示和教程是它明确瞄准的场景。 4.…",
-          "href": "https://www.producthunt.com/products/creavit-studio",
-          "meta": "Maker · Onur Aslan",
-          "date": "11月21日"
-        },
-        {
-          "id": "010d8e8e9e3ffd91ef45d4bb8ecd80f0",
-          "title": "WaitFeed：在 Agent 等待时间中浏览科技资讯",
-          "summary": "等 AI 写代码的那几分钟，终端就那么干等着，什么也不干。 WaitFeed 想填的就是这段空白。它是个开源小工具，会在 AI 编程智能体跑任务的时候，在终端里显示一条窄窄的新闻滚动条。智能体一停，滚动条立刻消失，正好是你开始打字的那一刻。 它到底插在哪 三个宿主，三种位置： - OpenCode ：卡片显示在输入提示符上方， /feed 打开全屏阅读器，…",
-          "href": "https://www.producthunt.com/products/waitfeed-2",
-          "meta": "Maker · Faiz Jamadar",
-          "date": "11月21日"
-        },
-        {
-          "id": "dfe53c484dcdc058113c17b3ef1db39c",
-          "title": "Stitch Loop：Google 的 AI Agent，自动交付修复并监控指标",
-          "summary": "一个结账页的完成率从 87% 掉到 75%。是页面坏了，是投放带来了不同人群，还是埋点改了？这三种解释对应的动作完全不同，但仪表盘上只有一个数字。 Google Labs 在 11 月 18 日发布的 Stitch Loop，想接的正是这个问题：给它一个长期目标，接上 GitHub 和证据来源，它自己去找原因、提方案、写代码、开 PR。听起来像又一个“AI…",
-          "href": "https://www.producthunt.com/products/stitch-loop",
-          "meta": "Maker · Kumar Abhishek",
-          "date": "11月21日"
-        },
-        {
-          "id": "607b9da942e7cbfea813e0263f5678eb",
-          "title": "Smorza：让每个 Mac 应用拥有独立音量和输出",
-          "summary": "Product Hunt 上出现了一个叫 Smorza 的条目，点进去会发现它指向的不是什么 App 或 SaaS，而是意大利语词典里一个词条：smorzacandela。 这事本身比产品更有意思。 这个\"产品\"是什么 smorzacandela 是意大利语里的一个名词，词源是动词加宾语的组合：smorza 来自 smorza，意思是\"熄灭\"，加上 can…",
-          "href": "https://www.producthunt.com/products/smorza",
-          "meta": "Maker · Roko",
-          "date": "11月21日"
-        },
-        {
-          "id": "a7b201adbed12e1ffa5ef34943119ec2",
-          "title": "gitroots：为开发者和 AI Agent 提供路径级 GitHub 访问",
-          "summary": "Path-level GitHub access for developers and AI agents",
-          "href": "https://www.producthunt.com/products/gitroots",
-          "meta": "Maker · Shawki Aladdin",
-          "date": "11月20日"
-        },
-        {
-          "id": "7d1b6bc38815c87c5a0439ec3587ed3f",
-          "title": "30yr-uptime：Claude Code 身体养护模组",
-          "summary": "一个 Claude Code 插件，功能是提醒你站起来喝水。名字叫 30yr-uptime，三十年在线率，说的不是服务器，是人的身体。 它到底做什么 30yr-uptime 是开发者 mamrez 发布在 Claude Code 插件市场里的一个 mod。核心逻辑很直接：Claude 在后台跑任务的时候，插件通过 hook 挂到 Prompt 环节，在终端…",
-          "href": "https://www.producthunt.com/products/30yr-uptime",
-          "meta": "Maker · MamRez Manesh",
-          "date": "11月20日"
         }
       ]
     },
