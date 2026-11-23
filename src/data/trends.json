@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026年11月22日 15:18",
+  "updatedAt": "2026年11月23日 16:03",
   "sources": [
     {
       "id": "huggingface",
@@ -7,6 +7,62 @@
       "href": "https://huggingface.co/papers",
       "note": "热门研究，看到模型与智能体方法的下一批方向。",
       "items": [
+        {
+          "id": "e3e9ed9d6e6efdf381894acd20296314",
+          "title": "StereoVLM：面向度量级 3D 空间推理的双目视觉语言模型",
+          "summary": "视觉语言模型在语义理解上已经很强，但一碰到“这个东西离我几米”这类带单位的三维空间问题，就容易露出短板。原因不复杂：多数模型靠单张图或几张没标定的图去猜三维结构，缺少跨视角的几何约束，尺度信息本身就不确定。模型给出的“3 米”到底来自视觉证据，还是来自语义先验，很难分清。 这篇论文想换一条路：用已标定的双目图像（stereo）给模型提供显式的跨视角几何，让…",
+          "href": "https://arxiv.org/abs/2611.27915",
+          "meta": "arXiv 2611.27915",
+          "date": "11月20日"
+        },
+        {
+          "id": "20bda1aa89deeab5c39c5f1f79e493dc",
+          "title": "MemOnce：面向大语言模型的可扩展记忆架构",
+          "summary": "长上下文模型的老问题又被人正面碰了一次。MemOnce 想做的不是给 Transformer 打补丁，而是换一套记忆的组织方式：只存最后一层的一小部分隐藏状态，需要时再解码回 KV 缓存。 这篇值得看的地方在于，它同时盯着两个指标：显存占用和复杂度。标准 Transformer 的 KV 缓存随上下文线性膨胀，注意力计算又是平方级；线性时间架构把历史压成固…",
+          "href": "https://arxiv.org/abs/2611.27973",
+          "meta": "arXiv 2611.27973",
+          "date": "11月20日"
+        },
+        {
+          "id": "6a76233e699df93fa6d54515564b0715",
+          "title": "面向个性化长文本生成的显式风格提取",
+          "summary": "这篇论文处理的是个性化长文写作里一个常被糊弄过去的环节：让模型模仿某个用户的文风，到底该由谁来决定“风格是什么”。 现在的常规做法是检索增强：把用户几篇旧文塞进 prompt，剩下交给模型自己悟。这篇的切入点是， 把风格提取从隐式判断变成一个显式步骤 ，先写出一份可检查的风格档案，再拿它指导写作和改稿。 对做 AI 写作产品的人来说，这个思路直接对应一个工…",
+          "href": "https://arxiv.org/abs/2611.27211",
+          "meta": "arXiv 2611.27211",
+          "date": "11月19日"
+        },
+        {
+          "id": "a23a0303ddd81be760e06b8f75491928",
+          "title": "非穿透式世界模型",
+          "summary": "交互式视频世界模型有个很尴尬的问题：你让它往前走，它可能直接穿墙而过。这篇论文就盯着这个失败模式做文章，而且给出的解法轻得有点出人意料。 值得看的原因有两个。一是它把“物体穿透”单独拎出来当成一个可测量的问题，还配了基准 NoPeBench。二是它发现模型其实早就“知道”会不会撞上，只是没被引导着用出来。这意味着改造成本可能远低于重新训练一个世界模型。 论…",
+          "href": "https://arxiv.org/abs/2611.27963",
+          "meta": "arXiv 2611.27963",
+          "date": "11月19日"
+        },
+        {
+          "id": "a64e5ce137c24312776c6db2d24b051e",
+          "title": "剪枝以扩展：用更少模仿样本训练提示增强器",
+          "summary": "这篇论文讨论的是文生图链路里一个容易被忽略的环节： 提示词增强（Prompt Enhancement，PE） 。它的任务是把用户那句简短的话，扩写成更详细的描述，让生成的图在构图和美感上更好，同时不偏离用户本意。 有意思的地方在于它挑战了当前主流做法的一个隐含假设。大家训练这类模型时，习惯从密集描述（dense caption）里反向造出“像用户会说的话”…",
+          "href": "https://arxiv.org/abs/2611.27229",
+          "meta": "arXiv 2611.27229",
+          "date": "11月19日"
+        },
+        {
+          "id": "c2f1133fd9f65c9946579e8f17cfde5a",
+          "title": "cmHC：通过几何收缩平衡超连接中的流混合",
+          "summary": "这篇论文讨论的是大模型里一个容易被忽略的零件：残差连接怎么在多条流之间混合。 mHC 之前把残差从单条流扩成多条流，再用 Birkhoff 多面体（双随机矩阵集合）约束混合矩阵，让残差传播更稳。cmHC 接着问了一个更细的问题： 在多面体内部，混合到什么程度才算合适 。 摘要给出的答案是存在一个两头都不好的区间。混合不足，矩阵贴着多面体的顶点，多条流几乎各…",
+          "href": "https://arxiv.org/abs/2611.27193",
+          "meta": "arXiv 2611.27193",
+          "date": "11月19日"
+        },
+        {
+          "id": "9919e2d59be983328961f816e172eb5e",
+          "title": "Duopra：从全双工对话到全双工智能体能力",
+          "summary": "语音对话模型这两年最大的进步是\"像人一样插话、接话、嗯嗯啊啊\"。但真要让它帮你订票、改日程，问题就露出来了： 话说得挺自然，活儿干不利索。 Duopra 这篇论文盯的就是这个落差。作者把它拆成两种能力：对话层面的 agency，和任务层面的 agency。前者已经做得不错，后者才是瓶颈。 论文在 FDB v3 上跑流式管线时发现，Realtime-Venu…",
+          "href": "https://arxiv.org/abs/2611.25773",
+          "meta": "arXiv 2611.25773",
+          "date": "11月19日"
+        },
         {
           "id": "0963681cfcfae4f3cacc35ddae891250",
           "title": "HiUni：在共享视觉空间中统一理解与生成",
@@ -30,62 +86,6 @@
           "href": "https://arxiv.org/abs/2611.26380",
           "meta": "arXiv 2611.26380",
           "date": "11月19日"
-        },
-        {
-          "id": "3fc3f847af48eedf533debd7a39a198a",
-          "title": "TwinLab-Bench：在真实实验室的智能体孪生中评估 AI 科学家",
-          "summary": "AI 科学家这个说法已经不新鲜，但怎么衡量一个 Agent 真的能“做实验”，一直是个模糊地带。大多数评测只考它会不会跑现成流程，或者从给定选项里挑下一步，这跟真正设计实验差得远。 TwinLab-Bench 想补的正是这块：让被测 Agent 自己设计实验，再由一个“双胞胎实验室”Agent 去执行，最后拿真实实验室记录来打分。这个思路值得看，因为它把“…",
-          "href": "https://arxiv.org/abs/2611.26248",
-          "meta": "arXiv 2611.26248",
-          "date": "11月18日"
-        },
-        {
-          "id": "1bfc8e2096b059ba4341976c5c827395",
-          "title": "为 LLM 驱动的权重空间编程训练视觉模型",
-          "summary": "这篇论文问了一个很实在的问题：既然大模型能直接改神经网络权重，那我们能不能 在训练阶段就为这种改法做好准备 ？ 过去关于 weight-space programming 的讨论，多半停留在“某个模型碰巧能改对”。这篇把视角翻过来，先承认大模型改权重这件事不稳定，然后去问网络本身该怎么训练，才更容易被改对。 作者来自乌尔姆大学视觉计算方向，做了个视觉模型的…",
-          "href": "https://arxiv.org/abs/2611.26408",
-          "meta": "arXiv 2611.26408",
-          "date": "11月18日"
-        },
-        {
-          "id": "412d0b1a857ab28f8b1d04b5f0cbfb90",
-          "title": "Mind2Act World：机器人操作中具身心智、物理动作与心智-动作组合的诊断基准",
-          "summary": "这篇论文戳的是具身智能评测里一个长期被含糊处理的问题：机器人做砸了，到底是脑子不够、手不够稳，还是脑子和手接不上？ 现有 benchmark 大多把推理和执行放在同一批任务里评，或者分开评但不看两者的组合。结果是分数出来了，诊断价值几乎没有。Mind2Act World 想做的是把这个归因拆开。 它的做法是把任务切成三个视图。 Mind 视图考的是基于历史…",
-          "href": "https://arxiv.org/abs/2611.26444",
-          "meta": "arXiv 2611.26444",
-          "date": "11月18日"
-        },
-        {
-          "id": "66e22ba2ddfd071590cc1f303d5892ca",
-          "title": "Coda-DaVinci：以 Code2Video 重塑视频生成",
-          "summary": "这篇论文值得看，原因不在它又做了一个视频生成模型，而在它追问了一个更基础的问题： 用代码和 3D 代理来约束视频生成，这套范式到底该怎么用才有效。 Code2Video 的思路是让智能体先写 3D 代理，再用代理去引导视频生成，从而显式控制结构和动态。听起来合理，但摘要直接点出空白：代理该做多细、要不要跑物理模拟、提示词该怎么写，这些直接影响下游质量的问题…",
-          "href": "https://arxiv.org/abs/2611.26595",
-          "meta": "arXiv 2611.26595",
-          "date": "11月18日"
-        },
-        {
-          "id": "89bafa04fa2235226158f40bded09be4",
-          "title": "DailySafe：评测日常多轮多模态交互中的动态安全意识",
-          "summary": "多模态大模型正在进入日常生活，但我们对它在“普通任务进行到一半时会不会出事”这件事，几乎还没有系统评估。 DailySafe 这篇论文就盯住这个缺口：用户本来在完成一个正当目标，对话一轮轮推进，图片一张张补充，风险线索是慢慢浮现的。模型要能跟住任务状态，识别出隐含的上下文风险，同时继续把忙帮好。作者给这种能力起了个名字，叫 Dynamic Safety A…",
-          "href": "https://arxiv.org/abs/2611.26298",
-          "meta": "arXiv 2611.26298",
-          "date": "11月18日"
-        },
-        {
-          "id": "84a3c8aab1d00fd975c17f787885686a",
-          "title": "WeMM-Video：推动开源全模态视频理解前沿",
-          "summary": "多模态视频理解里，声音这条线一直是个硬骨头。大多数开源模型要么只做画面，要么把音频当附属输入，真正把“边看边听边推理”做扎实的很少。 WeMM-Video 值得看的地方在于，它把中英双语、全模态（文本、图像、音频、视频）、思考与非思考双模式，还有从 2B 到 35B-A3B 的完整尺寸梯队放在一个开源家族里。这不是单点模型发布，更像一套可复现的工程方案。…",
-          "href": "https://arxiv.org/abs/2611.26409",
-          "meta": "arXiv 2611.26409",
-          "date": "11月18日"
-        },
-        {
-          "id": "8992dc0800b4f06e651e60eb06e3eb19",
-          "title": "扩散 Transformer 的强化学习后训练本质是激活引导",
-          "summary": "看到这个标题我停了一下。RL 后训练在扩散 Transformer 上确实有效，图像质量、文字渲染、组合准确性都能涨，这已经是共识。但大家默认的因果链是：RL 让模型学会了某种依赖输入的新变换。 这篇论文直接打这个假设： 大部分收益可能只是一个与输入无关的固定偏移 。 如果结论站得住，那对做扩散模型后训练的人是有点颠覆的。你辛苦跑 policy gradi…",
-          "href": "https://arxiv.org/abs/2611.26627",
-          "meta": "arXiv 2611.26627",
-          "date": "11月18日"
         }
       ]
     },
@@ -95,6 +95,46 @@
       "href": "https://www.producthunt.com",
       "note": "新产品发布，观察用户正在为什么工作流付费。",
       "items": [
+        {
+          "id": "92c51548c48eed9df62d20ea18e08791",
+          "title": "oovi：桌面上的专属 AI 团队",
+          "summary": "一个多智能体产品，不卖订阅，让用户自己填 API Key。这个定价策略本身就值得先聊两句。 oovi 是刚在 Product Hunt 上出现的一个 Windows 应用，目前通过 Microsoft Store 分发。它做的事情可以一句话概括： 给每个 AI 机器人一张脸和一个岗位，把它们编进小组，让它们互相交接工作，最后交回一个统一答案。 这个描述听起…",
+          "href": "https://www.producthunt.com/products/oovi",
+          "meta": "Maker · Brahimi Oussama",
+          "date": "11月22日"
+        },
+        {
+          "id": "64fdc1d4d4afc68b9522f4898405c858",
+          "title": "Resurf：个人上下文应用",
+          "summary": "Mac 用户大概都有过这种体验：收藏夹里躺着几百个链接，备忘录里塞满零碎想法，下载文件夹里堆着没看完的 PDF。等到真正需要某条信息时，翻遍所有地方也找不到。 Resurf 想解决的就是这个问题。 它到底做什么 简单说，Resurf 是一个本地优先的个人上下文库。笔记、链接、图片、PDF、随手冒出来的想法，都可以往里丢。需要的时候能搜到，或者直接通过 MC…",
+          "href": "https://www.producthunt.com/products/resurf-2",
+          "meta": "Maker · fmerian",
+          "date": "11月22日"
+        },
+        {
+          "id": "f5f2f7e2273a3fe4215b77fb62dcc1ac",
+          "title": "Verge: Corner Controls：滑动屏幕角落调节亮度、音量等",
+          "summary": "Swipe a screen corner to set brightness, volume and more",
+          "href": "https://www.producthunt.com/products/verge-corner-controls",
+          "meta": "Maker · Prateek Sharma",
+          "date": "11月21日"
+        },
+        {
+          "id": "c3d51c3b2a3fae0d7667e58033caa35a",
+          "title": "Omi CLI：终端里的 AI 编程 Agent，支持 13 种模型",
+          "summary": "终端里的 AI 编程工具已经不少了，Omi CLI 还是挤了进来。它给出的理由很直接： 改代码这件事，不该由 AI 一次性甩给你一大段结果，而应该像同事提交 PR 一样，每一步都让你看得见、点得了头。 这是 Omi CLI 的核心卖点。作者 Om Prakash 把它定位成一个住在终端里的 AI coding agent，目前挂在 Product Hunt…",
+          "href": "https://www.producthunt.com/products/omi-cli",
+          "meta": "Maker · Om Prakash Sahoo",
+          "date": "11月21日"
+        },
+        {
+          "id": "1102661bdae0ba61da20dfa3bfd99482",
+          "title": "Creavit Studio 4.0：Mac 上的屏幕录制、iPhone 摄像头与电影级演示",
+          "summary": "录一段 Mac 屏幕视频，讲清一个功能，往往要折腾半小时：录完发现鼠标乱飞、重点区域太小、剪辑软件又得重新学。Creavit Studio 想砍掉的就是这一整段返工。 它是一款 Mac 录屏工具，主打三件事：自动缩放、平滑光标、AI 剪辑。录完之后，画面会自己推近到操作发生的位置，鼠标轨迹被抹平，不需要手动打关键帧。产品演示和教程是它明确瞄准的场景。 4.…",
+          "href": "https://www.producthunt.com/products/creavit-studio",
+          "meta": "Maker · Onur Aslan",
+          "date": "11月21日"
+        },
         {
           "id": "010d8e8e9e3ffd91ef45d4bb8ecd80f0",
           "title": "WaitFeed：在 Agent 等待时间中浏览科技资讯",
@@ -128,51 +168,11 @@
           "date": "11月20日"
         },
         {
-          "id": "6d2915ed190dfe254863c7d96d9b0562",
-          "title": "greatai 评测：面向开源项目与非营利组织的免费 AI + 人工代码审查",
-          "summary": "Free AI + human code review for open source & nonprofits",
-          "href": "https://www.producthunt.com/products/greatai-review",
-          "meta": "Maker · Alexander Primak",
-          "date": "11月20日"
-        },
-        {
-          "id": "f43fe3acec5b59023c5b13628489d142",
-          "title": "Lumyna 社区挑战：百万虚拟米，为抗饥饿许下小承诺",
-          "summary": "一个浏览器小游戏，玩家不花一分钱，开发者却要按玩家跑出的成绩往外掏钱捐给世界粮食计划署。这事听着像营销噱头，但规则写得挺实在：每完成 1 万米，捐 1 加元，下限 1 加元，上限 100 加元。 这就是 Lumyna Community Challenge 的全部设定。它是独立开发者做的一个公益向小项目，在 Product Hunt 上只拿到 2 票，冷清…",
-          "href": "https://www.producthunt.com/products/lumyna-community-challenge",
-          "meta": "Maker · Yuva Raja",
-          "date": "11月20日"
-        },
-        {
-          "id": "485935d6890d52f9d03a3049fa7c2b25",
-          "title": "Samiksa：读懂研究、亲自验证并发布自己的成果",
-          "summary": "Product Hunt 上挂了一个叫 Samiksa 的条目，点进去看官网，指向的是一个 GitHub 账号页面。 这个账号叫 samiksa-ai，页面上除了用户名 samiksha、一个 Follow 按钮和 GitHub 自带的举报入口，没有别的东西。 公开仓库数量是零。 页面原话是 “samiksa-ai doesn't have any pub…",
-          "href": "https://www.producthunt.com/products/samiksa",
-          "meta": "Maker · Mihir D",
-          "date": "11月20日"
-        },
-        {
-          "id": "5ecf176147de2d07b5302923e2726e10",
-          "title": "Mailpipe：用本地 AI Agent CLI 起草 Apple Mail 回复",
-          "summary": "一个域名一个月 14 美元，地址数量不限，还带网页版和 iPhone 应用。这个定价放在邮箱服务里，第一反应是算错账了。 Mailpipe 想做的事很直接： 把一个人或一个团队名下的所有域名，收进同一个收件箱。 做过副业项目的人都懂那种麻烦。每个新项目都要配邮箱，support@、billing@、hello@ 各来一个，域名注册商、邮件服务商、DNS 记…",
-          "href": "https://www.producthunt.com/products/mailpipe-2",
-          "meta": "Maker · 阿怪",
-          "date": "11月20日"
-        },
-        {
-          "id": "bf89b86ac66072bf68c979a03ec211d8",
-          "title": "Interview Coach：开口练习求职面试",
-          "summary": "面试前对着镜子练三遍，进了考场还是卡壳。问题往往不在准备不够，而在从来没真正开口说过。 Mokaru 推出的 Interview Coach 想解决的正是这件事： 把面试练习从“心里默念”变成“真的说出来” 。它已经在 Product Hunt 上线，讨论页在这里。 它到底在做什么 一句话概括：一个会追问的 AI 面试官，你对着它说话，它根据你的简历和岗位…",
-          "href": "https://www.producthunt.com/products/interview-coach-3",
-          "meta": "Maker · Vincent Chu",
-          "date": "11月20日"
-        },
-        {
-          "id": "895fc911d0e992aed1ce5531f8721997",
-          "title": "Fack’d：在 YouTube 播放时实时事实核查并附来源",
-          "summary": "有人在 Product Hunt 上提交了一个词条，不是 App，不是 SaaS，也不是什么 AI 工具。它指向的是 Urban Dictionary 里一条 2023 年 2 月 10 日由用户 CammasGV 提交的定义。 这大概是 Product Hunt 上最没有产品形态的“产品”之一。但正因为离谱，值得看一眼它到底是什么。 这条定义到底在说什么…",
-          "href": "https://www.producthunt.com/products/fack-d",
-          "meta": "Maker · Philip Loyd",
+          "id": "7d1b6bc38815c87c5a0439ec3587ed3f",
+          "title": "30yr-uptime：Claude Code 身体养护模组",
+          "summary": "一个 Claude Code 插件，功能是提醒你站起来喝水。名字叫 30yr-uptime，三十年在线率，说的不是服务器，是人的身体。 它到底做什么 30yr-uptime 是开发者 mamrez 发布在 Claude Code 插件市场里的一个 mod。核心逻辑很直接：Claude 在后台跑任务的时候，插件通过 hook 挂到 Prompt 环节，在终端…",
+          "href": "https://www.producthunt.com/products/30yr-uptime",
+          "meta": "Maker · MamRez Manesh",
           "date": "11月20日"
         }
       ]
