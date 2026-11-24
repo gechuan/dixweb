@@ -5,3 +5,5 @@ dist/
 .DS_Store
 rss-pipeline/news_*.json
 rss-pipeline/__pycache__/
+
+.cache/

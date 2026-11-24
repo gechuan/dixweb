@@ -1,8 +1,7 @@
-
-const $ = <T extends Element = Element>(sel: string, root: ParentNode = document) =>
-  root.querySelector(sel) as T | null;
-const $$ = <T extends Element = Element>(sel: string, root: ParentNode = document) =>
-  [...root.querySelectorAll(sel)] as T[];
+const $ = <T extends Element = Element>(selector: string, root: ParentNode = document) =>
+  root.querySelector(selector) as T | null;
+const $$ = <T extends Element = Element>(selector: string, root: ParentNode = document) =>
+  [...root.querySelectorAll(selector)] as T[];
 
 function track(event: string, data?: Record<string, unknown>) {
   (window as any).umami?.track?.(event, data);
@@ -15,13 +14,11 @@ function currentTheme(): 'light' | 'dark' {
 }
 
 function initTheme() {
-  $$<HTMLButtonElement>('[data-theme-toggle]').forEach((btn) => {
-    btn.addEventListener('click', () => {
+  $$<HTMLButtonElement>('[data-theme-toggle]').forEach((button) => {
+    button.addEventListener('click', () => {
       const next = currentTheme() === 'dark' ? 'light' : 'dark';
       document.documentElement.dataset.theme = next;
-      try {
-        localStorage.setItem('theme', next);
-      } catch {}
+      try { localStorage.setItem('theme', next); } catch {}
       track('theme-toggle', { theme: next });
     });
   });
@@ -30,44 +27,44 @@ function initTheme() {
 function initNavbar() {
   const mast = $('#mast');
   const navbar = $('#navbar');
-  if (!mast || !navbar) return;
-  new IntersectionObserver(([entry]) => {
-    navbar.classList.toggle('scrolled', !entry.isIntersecting);
-  }).observe(mast);
+  if (mast && navbar) {
+    new IntersectionObserver(([entry]) => {
+      navbar.classList.toggle('scrolled', !entry.isIntersecting);
+    }).observe(mast);
+  }
+
+  const nav = $('[data-nav-scroll]');
+  if (!nav) return;
+  const update = () => {
+    const canScroll = nav.scrollWidth > nav.clientWidth;
+    const atEnd = nav.scrollLeft + nav.clientWidth >= nav.scrollWidth - 4;
+    nav.classList.toggle('can-scroll', canScroll);
+    nav.classList.toggle('at-end', atEnd);
+  };
+  nav.addEventListener('scroll', update, { passive: true });
+  window.addEventListener('resize', update);
+  update();
 }
 
 function updateCurrentDates() {
   const timeZone = 'Asia/Shanghai';
   const now = new Date();
-  const dateParts = new Intl.DateTimeFormat('zh-CN', {
-    timeZone,
-    year: 'numeric',
-    month: 'numeric',
-    day: 'numeric',
-    weekday: 'long',
+  const parts = new Intl.DateTimeFormat('zh-CN', {
+    timeZone, year: 'numeric', month: 'numeric', day: 'numeric', weekday: 'long',
   }).formatToParts(now);
-  const getPart = (type: Intl.DateTimeFormatPartTypes) =>
-    dateParts.find((part) => part.type === type)?.value ?? '';
-  const dateLabel = `${getPart('year')}年${getPart('month')}月${getPart('day')}日${getPart('weekday')}`;
-
+  const get = (type: Intl.DateTimeFormatPartTypes) => parts.find((part) => part.type === type)?.value ?? '';
+  const dateLabel = `${get('year')}年${get('month')}月${get('day')}日${get('weekday')}`;
   const [year, month, day] = new Intl.DateTimeFormat('en-CA', {
-    timeZone,
-    year: 'numeric',
-    month: '2-digit',
-    day: '2-digit',
+    timeZone, year: 'numeric', month: '2-digit', day: '2-digit',
   }).format(now).split('-').map(Number);
-  const isoDate = new Date(Date.UTC(year, month - 1, day));
-  const dayNum = isoDate.getUTCDay() || 7;
-  isoDate.setUTCDate(isoDate.getUTCDate() + 4 - dayNum);
-  const yearStart = new Date(Date.UTC(isoDate.getUTCFullYear(), 0, 1));
-  const week = Math.ceil(((isoDate.getTime() - yearStart.getTime()) / 86400000 + 1) / 7);
+  const current = new Date(Date.UTC(year, month - 1, day));
+  const weekday = current.getUTCDay() || 7;
+  current.setUTCDate(current.getUTCDate() + 4 - weekday);
+  const start = new Date(Date.UTC(current.getUTCFullYear(), 0, 1));
+  const week = Math.ceil(((current.getTime() - start.getTime()) / 86400000 + 1) / 7);
 
-  $$('[data-current-date]').forEach((element) => {
-    element.textContent = dateLabel;
-  });
-  $$('[data-current-week]').forEach((element) => {
-    element.textContent = `Week ${week}`;
-  });
+  $$('[data-current-date]').forEach((element) => { element.textContent = dateLabel; });
+  $$('[data-current-week]').forEach((element) => { element.textContent = `Week ${week}`; });
 }
 
 type ModalKind = 'reward' | 'follow';
@@ -77,7 +74,7 @@ function modalContent(kind: ModalKind, qr: { follow: string; reward: string }, s
     return `
       <div class="modal-content">
         <h2 id="modal-title">打赏支持</h2>
-        <p>如果这些工具、文章或推荐对你有帮助，可以请Chuan 喝杯咖啡。</p>
+        <p>如果这里的内容对你有帮助，可以请 Chuan 喝杯咖啡。</p>
         <img class="qr-image" src="${qr.reward}" width="220" height="220" alt="打赏二维码" />
       </div>`;
   }
@@ -105,31 +102,31 @@ function initModal(qr: { follow: string; reward: string }, social: { github: str
     content.innerHTML = modalContent(kind, qr, social);
     layer.hidden = false;
     document.body.style.overflow = 'hidden';
-    requestAnimationFrame(() => (card as HTMLElement).focus());
+    requestAnimationFrame(() => card.focus());
   };
   const close = () => {
     layer.hidden = true;
     content.innerHTML = '';
     document.body.style.overflow = '';
-    opener?.focus?.();
+    opener?.focus();
   };
 
-  $$<HTMLButtonElement>('[data-modal-open]').forEach((btn) =>
-    btn.addEventListener('click', () => open(btn.dataset.modalOpen as ModalKind, btn)),
-  );
-  $$<HTMLButtonElement>('[data-modal-close]', layer).forEach((btn) => btn.addEventListener('click', close));
-  document.addEventListener('keydown', (e) => {
+  $$<HTMLButtonElement>('[data-modal-open]').forEach((button) => {
+    button.addEventListener('click', () => open(button.dataset.modalOpen as ModalKind, button));
+  });
+  $$<HTMLButtonElement>('[data-modal-close]', layer).forEach((button) => button.addEventListener('click', close));
+  document.addEventListener('keydown', (event) => {
     if (layer.hidden) return;
-    if (e.key === 'Escape') close();
-    if (e.key !== 'Tab') return;
-    const focusables = $$<HTMLElement>('button, a', layer);
+    if (event.key === 'Escape') close();
+    if (event.key !== 'Tab') return;
+    const focusables = $$<HTMLElement>('button, a[href]', layer);
     const first = focusables[0];
     const last = focusables[focusables.length - 1];
-    if (e.shiftKey && document.activeElement === first) {
-      e.preventDefault();
+    if (event.shiftKey && document.activeElement === first) {
+      event.preventDefault();
       last.focus();
-    } else if (!e.shiftKey && document.activeElement === last) {
-      e.preventDefault();
+    } else if (!event.shiftKey && document.activeElement === last) {
+      event.preventDefault();
       first.focus();
     }
   });
@@ -140,12 +137,14 @@ function initFilters() {
   if (!bar) return;
   const items = $$<HTMLElement>('[data-project-grid] [data-category]');
   const groups = $$<HTMLElement>('[data-project-group]');
-  const countEl = $('[data-project-count]');
+  const countElement = $('[data-project-count]');
 
   const apply = (key: string) => {
-    $$<HTMLButtonElement>('[data-filter]', bar).forEach((btn) =>
-      btn.setAttribute('aria-pressed', String(btn.dataset.filter === key)),
-    );
+    $$<HTMLButtonElement>('[data-filter]', bar).forEach((button) => {
+      const active = button.dataset.filter === key;
+      button.setAttribute('aria-pressed', String(active));
+      button.classList.toggle('active', active);
+    });
     let visible = 0;
     items.forEach((item) => {
       const show = key === 'all' || item.dataset.category === key;
@@ -155,16 +154,16 @@ function initFilters() {
     groups.forEach((group) => {
       group.hidden = !$$<HTMLElement>('[data-category]', group).some((item) => !item.hidden);
     });
-    if (countEl) countEl.textContent = String(visible);
+    if (countElement) countElement.textContent = String(visible);
   };
 
-  bar.addEventListener('click', (e) => {
-    const btn = (e.target as HTMLElement).closest<HTMLElement>('[data-filter]');
-    if (!btn) return;
-    apply(btn.dataset.filter!);
+  bar.addEventListener('click', (event) => {
+    const button = (event.target as HTMLElement).closest<HTMLElement>('[data-filter]');
+    if (!button) return;
+    apply(button.dataset.filter!);
     const url = new URL(location.href);
-    if (btn.dataset.filter === 'all') url.searchParams.delete('c');
-    else url.searchParams.set('c', btn.dataset.filter!);
+    if (button.dataset.filter === 'all') url.searchParams.delete('c');
+    else url.searchParams.set('c', button.dataset.filter!);
     history.replaceState(null, '', url);
   });
 
@@ -174,17 +173,12 @@ function initFilters() {
 
 export function initSite() {
   const body = document.body;
-  const qr = {
-    follow: body.dataset.qrFollow || '',
-    reward: body.dataset.qrReward || '',
-  };
-  const social = {
-    github: body.dataset.github || '',
-    x: body.dataset.x || '',
-  };
   initTheme();
   initNavbar();
   updateCurrentDates();
-  initModal(qr, social);
+  initModal(
+    { follow: body.dataset.qrFollow || '', reward: body.dataset.qrReward || '' },
+    { github: body.dataset.github || '', x: body.dataset.x || '' },
+  );
   initFilters();
 }

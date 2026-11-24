@@ -1,24 +1,19 @@
 {
   "siteUrl": "https://www.deepintox.com",
-  "title": "Chuan· 先上手试试，再看看能走到哪",
-  "description": "记录 AI 工具、提示词工程、工作流拆解、必读文章与个人项目，写给愿意把 AI 真正用起来的人。",
+  "title": "Chuan · 先上手试试，再看看能走到哪",
+  "description": "Chuan 的个人网站：播客《翻书吧》、每日 AI 资讯与探索。",
   "author": "Chuan",
   "brand": "Deep Into X",
-  "avatar": "/assets/ai-image-6aebd6ebc9493ef70d931cf0-1.jpg",
-  "tagline": "先上手试试， 再看看能走到哪",
+  "avatar": "/assets/avatar-192.webp",
+  "tagline": "先上手试试，再看看能走到哪",
   "nav": [
     {
       "label": "首页",
-      "href": "/",
-      "match": "home"
+      "href": "/"
     },
     {
       "label": "博客",
-      "href": "/#notes"
-    },
-    {
-      "label": "随想",
-      "href": "/notes"
+      "href": "https://blog.deepintox.com"
     },
     {
       "label": "探索",
@@ -41,30 +36,26 @@
     "x": "https://x.com/gechuan",
     "xLabel": "X @gechuan",
     "github": "https://github.com/gechuan",
-    "blog": "https://nsdr.deepintox.com",
+    "blog": "https://blog.deepintox.com",
     "blogLabel": "博客",
-    "airss": "https://airss.qiaomu.ai/",
-    "airssLabel": "AI 资讯",
-    "rss": "/notes/rss.xml",
-    "nexttoken": "https://www.xiaoyuzhoufm.com/podcast/6792ea5035161b3baca7a59d",
-    "nexttokenLabel": "翻书吧"
+    "blogRss": "",
+    "podcast": "https://www.xiaoyuzhoufm.com/podcast/6792ea5035161b3baca7a59d",
+    "podcastLabel": "翻书吧",
+    "wechat": "Deep Into X"
   },
-  "stats": {
-    "projects": "100",
-    "podcastEpisodes": "008",
-    "githubStars": "10,671"
-  },
-  "dateline": {
-    "episodeLabel": "本周播客 翻书吧",
-    "episodeUrl": "https://www.xiaoyuzhoufm.com/episode/6afb98bcfe62f8f52c4c41b9"
+  "features": {
+    "projects": true,
+    "now": false,
+    "reward": true
   },
   "umami": {
-    "note": "填入自托管 Umami 的 script.js 地址和网站 ID，留空则不加载统计脚本"
+    "src": "",
+    "websiteId": ""
   },
   "footer": {
-    "colo": "把手弄脏，看看不一样的世界",
+    "colo": "表达自我，连接彼此 · Web 2.0 Next",
     "coloUrl": "https://web20next.com/zh/manifesto",
-    "copyright": "© 2026 Chuan · Deep Into X",
-    "repos": "https://github.com/gechuan?tab=repositories"
-  }
+    "copyright": "© 2026 Chuan · Deep Into X"
+  },
+  "logo": "/assets/weblogo-192.webp"
 }

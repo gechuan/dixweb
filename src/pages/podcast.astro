@@ -2,117 +2,52 @@
 import Layout from '../layouts/Layout.astro';
 import site from '../data/site.json';
 import podcast from '../data/podcast.json';
+import { shortDate } from '../lib/dates';
 
-const ext = { target: '_blank', rel: 'noopener noreferrer' };
-const nt = podcast.nextToken;
-const fsx = podcast.futureSilicon;
+const external = { target: '_blank', rel: 'noopener noreferrer' };
+const episodes = [...podcast.episodes].sort((a, b) => b.date.localeCompare(a.date));
+const showUrl = podcast.show.platforms[0]?.url ?? site.social.podcast;
 ---
 
-<Layout title={`播客 · ${site.brand}`} description="每周一张圆桌，聊真正值得关注的 AI。">
+<Layout title={`播客 · ${site.brand}`} description={podcast.show.description} image={podcast.show.cover}>
   <header class="page-head">
     <div class="wrap">
       <div class="sec-eyebrow"><span class="dot"></span>PODCAST · 播客</div>
-      <h1>每周一张圆桌，聊真正值得关注的 AI</h1>
-      <div class="prose page-intro">
-        <p>我和杨攀、歸藏、橘子一起主理 <strong>Next Token</strong>，每周把过去一周真正值得关注的 AI 新闻摊开聊；也在 WaytoAGI 和朋友们做「未来硅世界」。另外，我把常听的英文 AI 播客做成了中文精读站。</p>
-      </div>
+      <h1>{podcast.show.name}</h1>
+      <p class="page-updated">{podcast.show.eyebrow} · 主理人 {podcast.show.hosts.join('、')}</p>
+      <div class="prose page-intro"><p>{podcast.show.description}</p></div>
     </div>
   </header>
 
-  <section class="sec page-sec" id="next-token">
+  <section class="page-section podcast-show">
     <div class="wrap">
-      <div class="show-head">
+      <div class="show-summary">
+        <picture>
+          <source type="image/webp" srcset="/assets/fanshuba-cover-480.webp 480w, /assets/fanshuba-cover-960.webp 960w" sizes="(max-width: 860px) 96vw, 280px" />
+          <img src={podcast.show.cover} width="960" height="960" alt="《翻书吧》节目封面" />
+        </picture>
         <div>
-          <div class="sec-eyebrow"><span class="dot"></span>{nt.eyebrow}</div>
-          <h2>{nt.name}</h2>
-          <p>{nt.description}</p>
-        </div>
-        <div class="listen">
-          {nt.platforms.map((p) => (
-            <a href={p.url} {...ext}>{p.label}</a>
-          ))}
+          <div class="platform-links">
+            {podcast.show.platforms.map((platform) => (
+              <a class="btn primary" href={platform.url} {...external}>在{platform.label}收听</a>
+            ))}
+          </div>
+          <p>单集更新会在这里保留完整标题、日期和节目摘要。</p>
         </div>
       </div>
+
       <div class="reading-list">
-        {podcast.episodes.filter((e) => e.show === 'next-token').map((ep) => (
-          <a class="reader-item" href={ep.url} {...ext}>
-            <time class="reader-date">{ep.date}</time>
-            <div>
-              <div class="reader-meta"><span>{ep.meta}</span></div>
-              <h3>{ep.title}</h3>
-              <p>{ep.summary}</p>
-            </div>
+        {episodes.map((episode) => (
+          <a class="reader-item" href={episode.url || showUrl} {...external}>
+            <time class="reader-date" datetime={episode.date}>{shortDate(episode.date)}</time>
+            <span class="reader-body">
+              <strong>{episode.title}</strong>
+              <span>{episode.summary}</span>
+            </span>
             <span class="reader-arrow" aria-hidden="true">→</span>
           </a>
         ))}
       </div>
-      <div class="posts-more">
-        {nt.moreLinks.map((l) => (
-          <a href={l.url} {...ext} class="more">{l.label}</a>
-        ))}
-      </div>
-    </div>
-  </section>
-
-  <section class="sec page-sec" id="future-silicon">
-    <div class="wrap">
-      <div class="show-head">
-        <div>
-          <div class="sec-eyebrow"><span class="dot"></span>{fsx.eyebrow}</div>
-          <h2>{fsx.name}</h2>
-          <p>{fsx.description}</p>
-        </div>
-        <div class="listen">
-          {fsx.platforms.map((p) => (
-            <a href={p.url} {...ext}>{p.label}</a>
-          ))}
-        </div>
-      </div>
-      <div class="reading-list">
-        <a class="reader-item" href={fsx.episode.url} {...ext}>
-          <time class="reader-date">{fsx.episode.date}</time>
-          <div>
-            <div class="reader-meta">
-              {fsx.episode.meta.map((m) => <span>{m}</span>)}
-            </div>
-            <h3>{fsx.episode.title}</h3>
-            <p>{fsx.episode.summary}</p>
-          </div>
-          <span class="reader-arrow" aria-hidden="true">→</span>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <section class="sec page-sec" id="digests">
-    <div class="wrap">
-      <div class="sh">
-        <div class="t">
-          <span class="k">{podcast.digests.kicker}</span>
-          <h2>{podcast.digests.title}</h2>
-        </div>
-      </div>
-      {podcast.digests.groups.map((group) => (
-        <section class="pgroup" aria-label={group.label}>
-          <header class="pgroup-h">
-            <h2>{group.label}</h2>
-            <span class="latin">{group.items.length}</span>
-          </header>
-          <div class="proj">
-            {group.items.map((item) => (
-              <a class="pr" href={item.url} {...ext}>
-                <div class="pt">
-                  <h3>{item.name}</h3>
-                  <span class="tag">{item.badge}</span>
-                </div>
-                <p>{item.description}</p>
-                <span class="d">{item.domain}</span>
-                <span class="a" aria-hidden="true">↗</span>
-              </a>
-            ))}
-          </div>
-        </section>
-      ))}
     </div>
   </section>
 </Layout>

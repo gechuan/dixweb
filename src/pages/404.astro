@@ -3,16 +3,17 @@ import Layout from '../layouts/Layout.astro';
 import site from '../data/site.json';
 ---
 
-<Layout title={`页面不存在 · ${site.brand}`}>
-  <section class="notfound">
+<Layout title={`页面不存在 · ${site.brand}`} description="这个页面不存在，可以从首页重新开始。">
+  <header class="page-head">
     <div class="wrap">
-      <div class="code latin">404</div>
-      <h1>这一页还没写</h1>
-      <p>地址可能变了，或者它从来就不存在。回首页看看最新在做的吧。</p>
-      <div class="page-actions">
-        <a class="btn-primary" href="/">回首页</a>
-        <a class="btn-ghost" href="/projects">看看项目</a>
+      <div class="sec-eyebrow"><span class="dot"></span>404 · PAGE NOT FOUND</div>
+      <h1>这一页暂时缺席</h1>
+      <p class="page-updated">地址可能已经调整，或者页面从未存在。</p>
+      <div class="cta">
+        <a class="btn primary" href="/">回首页</a>
+        <a class="btn ghost" href="/rss">看今天的资讯</a>
+        <a class="btn ghost" href="/podcast">听播客</a>
       </div>
     </div>
-  </section>
+  </header>
 </Layout>

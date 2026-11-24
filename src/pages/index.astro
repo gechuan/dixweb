@@ -2,37 +2,117 @@
 import Layout from '../layouts/Layout.astro';
 import site from '../data/site.json';
 import home from '../data/home.json';
+import podcast from '../data/podcast.json';
 import projects from '../data/projects.json';
+import rss from '../data/rss.json';
+import trends from '../data/trends.json';
+import { isoWeek, parseFlexibleDate, shortDate } from '../lib/dates';
 
-const ext = { target: '_blank', rel: 'noopener noreferrer' };
-const dateLabel = `${new Date().getFullYear()}年${new Date().getMonth() + 1}月${new Date().getDate()}日`;
+interface LinkEntry { date: string; tag: string; title: string; url: string; }
+
+const external = { target: '_blank', rel: 'noopener noreferrer' };
+const episodes = [...podcast.episodes].sort((a, b) => b.date.localeCompare(a.date));
+const latestEpisode = episodes[0];
+const recentEpisodes = episodes.slice(1, 1 + home.podcast.recentCount);
+const blogEntries = home.blog.entries as LinkEntry[];
+const updatedAtDates = [
+  parseFlexibleDate(rss.date),
+  parseFlexibleDate(trends.updatedAt),
+  ...episodes.map((episode) => parseFlexibleDate(episode.date)),
+].filter(Boolean) as Date[];
+const latestUpdated = new Date(Math.max(...updatedAtDates.map((date) => date.getTime())));
+const latestUpdatedLabel = `${String(latestUpdated.getMonth() + 1).padStart(2, '0')}.${String(latestUpdated.getDate()).padStart(2, '0')}`;
+const now = Date.now();
+const displayFlexibleDate = (value: string) => {
+  const parsed = parseFlexibleDate(value);
+  if (!parsed) return value;
+  return `${String(parsed.getMonth() + 1).padStart(2, '0')}.${String(parsed.getDate()).padStart(2, '0')}`;
+};
+
+const rssEntries = rss.topics.slice(0, home.contents.perColumn).map((topic) => ({
+  date: shortDate(rss.date),
+  tag: topic.items[0]?.category ?? '资讯',
+  title: topic.title,
+  url: `/rss#${topic.id}`,
+  isNew: parseFlexibleDate(rss.date) ? now - parseFlexibleDate(rss.date)!.getTime() < 86400000 : false,
+}));
+
+const trendEntries = trends.sources.slice(0, home.contents.perColumn).map((source) => {
+  const item = source.items[0];
+  return {
+    date: item?.date ? displayFlexibleDate(item.date) : displayFlexibleDate(trends.updatedAt),
+    tag: source.title,
+    title: item?.title ?? source.title,
+    url: item?.href ?? source.href,
+    isNew: now - (parseFlexibleDate(item?.date || trends.updatedAt)?.getTime() ?? 0) < 86400000,
+  };
+});
+
+const thirdColumnTitle = blogEntries.length ? '博客' : '播客';
+const thirdEntries = blogEntries.length
+  ? blogEntries.slice(0, home.contents.perColumn)
+  : episodes.slice(0, home.contents.perColumn).map((episode, index) => ({
+      date: shortDate(episode.date),
+      tag: `第 ${episodes.length - index} 期`,
+      title: episode.title,
+      url: episode.url,
+      isNew: now - parseFlexibleDate(episode.date)!.getTime() < 86400000,
+    }));
+
+const columns = [
+  { title: '资讯', more: { label: '全部', href: '/rss' }, entries: rssEntries },
+  { title: '探索', more: { label: '全部', href: '/trends' }, entries: trendEntries },
+  { title: thirdColumnTitle, more: { label: '全部', href: blogEntries.length ? site.social.blog : '/podcast' }, entries: thirdEntries },
+];
+
+const podcastProof = episodes.length >= 10 ? String(episodes.length) : '每周 2 期';
+const proof = [
+  { value: podcastProof, label: episodes.length >= 10 ? home.hero.proofLabels.podcast : '《翻书吧》', href: '/podcast' },
+  { value: String(rss.stats.sources_total), label: home.hero.proofLabels.rss, href: '/rss' },
+  { value: String(trends.sources.length), label: home.hero.proofLabels.trends, href: '/trends' },
+];
+
+const nowDate = parseFlexibleDate(home.now.date);
+const nowAgeDays = nowDate ? Math.floor((now - nowDate.getTime()) / 86400000) : 0;
+const nowDateLabel = !nowDate ? '' : nowAgeDays > 30 ? '有一阵没更新了' : nowAgeDays < 1 ? '今天' : nowAgeDays < 7 ? `${nowAgeDays} 天前` : `${Math.floor(nowAgeDays / 7)} 周前`;
+
+const structuredData = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Person',
+    name: site.author,
+    url: site.siteUrl,
+    sameAs: [site.social.x, site.social.github, podcast.show.platforms[0].url],
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    name: site.brand,
+    url: site.siteUrl,
+    description: site.description,
+    inLanguage: 'zh-CN',
+  },
+];
 ---
 
-<Layout>
+<Layout structuredData={structuredData}>
   <section class="hero">
     <div class="wrap">
-      <h1 id="hero-title">
-        {home.hero.titleLines.map((line) => (
-          <span class="ln"><span set:html={line} /></span>
-        ))}
-      </h1>
+      <h1 class="hero-title" set:html={home.hero.titleLines.join('<br>')} />
       <div class="hero-foot">
         <div>
-          <p class="lede" set:html={home.hero.lede.replace(/<em>/g, '<b>').replace(/<\/em>/g, '</b>')} />
-          <div class="acts">
-            <a class="btn" href={home.hero.primaryCta.href}>
-              {home.hero.primaryCta.label}
-              <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
-            </a>
-            <a class="more" href={home.hero.secondaryCta.href}>{home.hero.secondaryCta.label}</a>
+          <p class="hero-lede" set:html={home.hero.lede.replace(/<em>/g, '<span class="em">').replace(/<\/em>/g, '</span>')} />
+          <div class="cta">
+            <a class="btn primary" href={home.hero.primaryCta.href}>{home.hero.primaryCta.label}</a>
+            <a class="btn ghost" href={home.hero.secondaryCta.href}>{home.hero.secondaryCta.label}</a>
           </div>
         </div>
-        <ul class="proof" aria-label="做过的事">
-          {home.hero.proof.map((p) => (
+        <ul class="proof">
+          {proof.map((item) => (
             <li>
-              <a href={p.href} {...(p.href.startsWith('http') ? ext : {})}>
-                <b>{p.value}</b>
-                <span>{p.label}</span>
+              <a href={item.href} {...(item.href.startsWith('http') ? external : {})}>
+                <b class="latin">{item.value}</b>
+                <span>{item.label}</span>
               </a>
             </li>
           ))}
@@ -41,136 +121,126 @@ const dateLabel = `${new Date().getFullYear()}年${new Date().getMonth() + 1}月
     </div>
   </section>
 
-  <section class="contents" id="notes" aria-label="本期目录">
+  <section class="section contents" aria-labelledby="contents-title">
     <div class="wrap">
-      <div class="contents-h">
-        <b>本期目录</b>
-        <span class="latin" data-current-date>{dateLabel}</span>
-      </div>
-      <div class="cols">
-        {home.cols.map((col) => (
-          <div class="col">
-            <div class="col-h">
-              <b>{col.title}</b>
-              <a class="more" href={col.more.href} {...(col.more.href.startsWith('http') ? ext : {})}>{col.more.label}</a>
-            </div>
-            {col.entries.map((entry) => (
-              <a class="entry" href={entry.url} {...ext}>
-                <div class="m"><span class="latin">{entry.date}</span>{entry.tag}</div>
-                <h3>{entry.title}</h3>
+      <header class="section-head">
+        <h2 id="contents-title">{home.contents.title}</h2>
+      </header>
+      <div class="columns">
+        {columns.map((column) => (
+          <article class="column">
+            <header>
+              <h3>{column.title}</h3>
+              <a class="more" href={column.more.href} {...(column.more.href.startsWith('http') ? external : {})}>全部</a>
+            </header>
+            {column.entries.map((entry) => (
+              <a class="entry" href={entry.url} {...(entry.url.startsWith('http') ? external : {})}>
+                <span class="meta">
+                  {entry.isNew && <b class="new">NEW</b>}
+                  <span class="latin">{entry.date}</span>{entry.tag}
+                </span>
+                <h4>{entry.title}</h4>
               </a>
             ))}
-          </div>
+          </article>
         ))}
       </div>
     </div>
   </section>
 
-  <section class="sec" id="podcast" aria-labelledby="podcast-title">
+  <section class="section" id="podcast" aria-labelledby="podcast-title">
     <div class="wrap">
-      <div class="sh">
-        <div class="t">
-          <span class="k">{home.podcast.kicker}</span>
+      <header class="section-head">
+        <div>
+          <span class="kicker">{home.podcast.kicker}</span>
           <h2 id="podcast-title">{home.podcast.titleLines[0]}<br />{home.podcast.titleLines[1]}</h2>
         </div>
-        <a class="more" href={home.podcast.more.href}>{home.podcast.more.label}</a>
-      </div>
-      <div class="pod">
-        <article class="pod-main">
-          <div class="show">
-            <b class="latin">{home.podcast.latest.no}</b>
-            <span>{home.podcast.latest.show}</span>
-            <span class="latin">{home.podcast.latest.date}</span>
+        <a class="more" href="/podcast">全部播客</a>
+      </header>
+      <div class="podcast-feature">
+        <picture>
+          <source type="image/webp" srcset="/assets/fanshuba-cover-480.webp 480w, /assets/fanshuba-cover-960.webp 960w" sizes="(max-width: 860px) 96vw, 360px" />
+          <img src="/assets/fanshuba-cover-960.webp" width="960" height="960" alt="《翻书吧》节目封面" />
+        </picture>
+        <article>
+          <div class="episode-meta">
+            <span>最新一期</span>
+            <time class="latin" datetime={latestEpisode.date}>{shortDate(latestEpisode.date)}</time>
+            <span>{podcast.show.name}</span>
           </div>
-          <h3><a href={home.podcast.latest.listen[0].href} {...ext}>{home.podcast.latest.title}</a></h3>
-          <p>{home.podcast.latest.summary}</p>
-          <div class="hosts">
-            <span class="av">
-              {home.podcast.latest.hosts.map((h) => (
-                <img src={site.avatar} width="32" height="32" alt={h} title={h} loading="lazy" />
-              ))}
-            </span>
-            <span>{home.podcast.latest.hosts.join('、')}</span>
-          </div>
-          <div class="listen">
-            {home.podcast.latest.listen.map((l, i) => (
-              i === 0
-                ? <a class="btn" href={l.href} {...ext}>{l.label}<svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a>
-                : <a href={l.href} {...ext}>{l.label}</a>
-            ))}
+          <h3><a href={latestEpisode.url} {...external}>{latestEpisode.title}</a></h3>
+          <p>{latestEpisode.summary}</p>
+          <div class="host-row">
+            {podcast.show.hosts.length > 0 && <span>主理人 · {podcast.show.hosts.join('、')}</span>}
+            <a class="btn primary" href={latestEpisode.url} {...external}>去小宇宙收听</a>
           </div>
         </article>
-        <div class="eps">
-          {home.podcast.eps.map((ep) => (
-            <a class="ep" href={ep.href} {...ext}>
-              <span class="n latin">{ep.no}</span>
-              <div>
-                <h4>{ep.title}</h4>
-                <small>{ep.meta}</small>
-              </div>
-            </a>
-          ))}
-        </div>
       </div>
-    </div>
-  </section>
-
-  <section class="sec" id="projects" aria-labelledby="projects-title">
-    <div class="wrap">
-      <div class="sh">
-        <div class="t">
-          <span class="k">{home.projects.kicker}</span>
-          <h2 id="projects-title">{home.projects.titleLines[0]}<br />{home.projects.titleLines[1]}</h2>
-        </div>
-        <a class="more" href={home.projects.more.href}>{home.projects.more.label}</a>
-      </div>
-      <div class="proj">
-        {projects.featured.map((p) => (
-          <a class="pr" href={p.url} {...ext}>
-            <div class="pt">
-              <h3>{p.name}</h3>
-              {p.tag && <span class="tag">{p.tag}</span>}
-            </div>
-            <p>{p.description}</p>
-            <span class="d">{p.stat}</span>
-            <span class="a" aria-hidden="true">↗</span>
+      <div class="episode-list">
+        {recentEpisodes.map((episode, index) => (
+          <a href={episode.url} {...external}>
+            <span class="latin">{String(episodes.length - index - 1).padStart(2, '0')}</span>
+            <span>
+              <b>{episode.title}</b>
+              <time class="latin" datetime={episode.date}>{shortDate(episode.date)}</time>
+            </span>
           </a>
         ))}
       </div>
     </div>
   </section>
 
-  <section class="sec" id="about" aria-labelledby="about-title" style="padding-top:40px">
-    <div class="wrap">
-      <div class="sh">
-        <div class="t">
-          <span class="k">{home.about.kicker}</span>
-          <h2 id="about-title">{home.about.titleLines[0]}<br />{home.about.titleLines[1]}</h2>
+  {site.features.projects && (
+    <section class="section" id="projects" aria-labelledby="projects-title">
+      <div class="wrap">
+        <header class="section-head">
+          <div>
+            <span class="kicker">{home.projects.kicker}</span>
+            <h2 id="projects-title">{home.projects.titleLines[0]}<br />{home.projects.titleLines[1]}</h2>
+          </div>
+        </header>
+        <div class="project-grid">
+          {projects.items.map((project) => (
+            <a class="project-card" href={project.url} {...external}>
+              <div>
+                <h3>{project.name}</h3>
+                {project.badge && <span class="badge">{project.badge}</span>}
+              </div>
+              {project.image && <img src={project.image} alt={`${project.name}截图`} loading="lazy" />}
+              <p>{project.description}</p>
+              <span class="project-link">访问项目 <span aria-hidden="true">↗</span></span>
+            </a>
+          ))}
         </div>
       </div>
-      <div class="about">
+    </section>
+  )}
+
+  <section class="section" id="about" aria-labelledby="about-title">
+    <div class="wrap">
+      <header class="section-head">
         <div>
-          <div class="prose">
-            {home.about.paragraphs.map((p, i) => (
-              <p class={i === 0 ? 'first' : undefined} set:html={p.replace(/<em>/g, '<span class="em">').replace(/<\/em>/g, '</span>')} />
-            ))}
-          </div>
-          <div class="facts">
-            {home.about.facts.map((f) => (
-              <div><b>{f.value}</b><small>{f.label}</small></div>
-            ))}
-          </div>
+          <span class="kicker">{home.about.kicker}</span>
+          <h2 id="about-title">{home.about.titleLines[0]}</h2>
         </div>
-        <aside class="now" id="now">
-          <div class="h">
-            <b>{home.now.title}</b>
-            <small>{home.now.date}</small>
-          </div>
-          <p>{home.now.body}</p>
-          <a class="more" href={home.now.more.href}>{home.now.more.label}</a>
-        </aside>
+      </header>
+      <div class={site.features.now ? 'about two-column' : 'about'}>
+        <div class="prose">
+          {home.about.paragraphs.map((paragraph) => <p>{paragraph}</p>)}
+        </div>
+        <div class="contact-links">
+          <button type="button" data-modal-open="follow">公众号</button>
+          <a href={site.social.x} {...external}>X</a>
+          <a href={site.social.github} {...external}>GitHub</a>
+        </div>
+        {site.features.now && (
+          <aside class="now-card">
+            <header><b>{home.now.title}</b>{nowDateLabel && <time>{nowDateLabel}</time>}</header>
+            <p>{home.now.body}</p>
+            {home.now.more.label && <a class="more" href={home.now.more.href}>{home.now.more.label}</a>}
+          </aside>
+        )}
       </div>
     </div>
   </section>
-
 </Layout>

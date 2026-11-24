@@ -1,11 +1,11 @@
 {
-  "name": "qmwebsite",
+  "name": "deepintox-web",
   "type": "module",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "astro dev",
-    "prebuild": "node scripts/fetch-trends.mjs",
+    "prebuild": "node scripts/fetch-trends.mjs && node scripts/check-content.mjs && node scripts/build-font-subset.mjs",
     "build": "astro build",
     "preview": "astro preview",
     "deploy": "npm run build && node -e \"require('node:fs').rmSync('dist/.DS_Store', { force: true })\" && npm exec -- wrangler deploy"
@@ -15,6 +15,7 @@
     "astro": "^7.3.8"
   },
   "devDependencies": {
+    "subset-font": "^2.9.0",
     "wrangler": "^4.160.0"
   }
 }

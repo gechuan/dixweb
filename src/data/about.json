@@ -1,53 +1,47 @@
 {
   "eyebrow": "ABOUT · 关于",
-  "title": "做更多事，让更多人知道",
-  "updated": "2026年10月28日",
-  "lede": "我是<em>Chuan</em>。把每天用 AI 的方式留下来。",
+  "title": "[待站长填写：一句话标题]",
+  "lede": "我是<em>Chuan</em>，Deep Into X 的作者。",
   "paragraphs": [
-    "我写的东西只有一个标准：<em>先跑通，再动笔</em>。工具我先用，提示词我先验证，方法论我先确认能复用，再写给别人看。",
-    "相信 AI 不是答案，而是<em>提问的新方式</em>。把复杂的东西拆到每天能用的一块，是我做事的方法。"
+    "我在小宇宙做播客《翻书吧》，每周两期，每期拆一本经典好书，讲清楚书里的几个核心概念，再落到每天的生活里。",
+    "这个网站每天自动更新两样东西：「资讯」从上百个来源里筛出当天值得看的 AI 和科技新闻，「探索」跟踪 Hugging Face Papers、Product Hunt 和 GitHub Trending 上的新东西。",
+    "[待站长补充：职业背景 / 做事方式]"
   ],
   "doing": [
     {
-      "label": "写作",
-      "text": "在<em>DIX博客</em>和公众号「Deep Into X」写 AI 工具评测、提示词工程、工作流拆解和播客解读。"
-    },
-    {
-      "label": "写书",
-      "text": "和姚金刚老师一起，把 AI 实践中的方法写成书，已合著《AI 领导力》和《AI 营销：从 SEO 到 GEO》。"
-    },
-    {
-      "label": "开源",
-      "text": "把自己的工作流做成 Agent Skills 和 Obsidian 插件，放在 GitHub。"
-    },
-    {
       "label": "播客",
-      "text": "和杨攀、歸藏、橘子一起主理 Next Token｜词元之外，每周圆桌聊值得关注的 AI。"
+      "text": "主理《翻书吧》，每周两期。"
+    },
+    {
+      "label": "做东西",
+      "text": "做自己用得上的小工具，比如<a href=\"https://nsdr.deepintox.com\">深度休息 NSDR</a>和<a href=\"https://solar-violet-4xkk.here.now/\">Markdown Editor</a>。"
+    },
+    {
+      "label": "资讯",
+      "text": "每天整理 AI 与科技资讯，见<a href=\"/rss\">资讯</a>。"
+    },
+    {
+      "label": "探索",
+      "text": "每天跟踪新论文、新产品和新开源项目，见<a href=\"/trends\">探索</a>。"
+    },
+    {
+      "label": "写作",
+      "text": "博客 blog.deepintox.com 筹备中，公众号「Deep Into X」。"
     }
   ],
-  "tags": [
-    "AI 产品",
-    "提示词工程",
-    "工作流拆解",
-    "自媒体运营",
-    "GEO / AI 营销"
-  ],
-  "facts": [
+  "tags": [],
+  "links": [
     {
-      "value": "100",
-      "label": "上线项目"
+      "label": "公众号 Deep Into X",
+      "action": "follow"
     },
     {
-      "value": "10,671",
-      "label": "GitHub Star"
+      "label": "X @gechuan",
+      "href": "https://x.com/gechuan"
     },
     {
-      "value": "2,340",
-      "label": "GitHub 关注"
-    },
-    {
-      "value": "8",
-      "label": "期 Next Token"
+      "label": "GitHub",
+      "href": "https://github.com/gechuan"
     }
   ]
 }
