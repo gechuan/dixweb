@@ -16,7 +16,6 @@ content:
       - { name: description, label: 站点描述, type: text }
       - { name: author, label: 作者, type: string }
       - { name: brand, label: 站点名称, type: string }
-      - { name: avatar, label: 头像, type: image }
       - { name: logo, label: 站点 Logo, type: image }
       - { name: tagline, label: 标语, type: string }
       - name: nav
