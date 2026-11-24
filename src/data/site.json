@@ -4,6 +4,7 @@
   "description": "Chuan 的个人网站：播客《翻书吧》、每日 AI 资讯与探索。",
   "author": "Chuan",
   "brand": "Deep Into X",
+  "logo": "/assets/weblogo-192.webp",
   "tagline": "先上手试试，再看看能走到哪",
   "nav": [
     {
@@ -37,8 +38,7 @@
     "github": "https://github.com/gechuan",
     "blog": "https://blog.deepintox.com",
     "blogLabel": "博客",
-    "blogRss": "",
-    "podcast": "https://www.xiaoyuzhoufm.com/podcast/6792ea5035161b3baca7a59d",
+    "podcast": "https://www.xiaoyuzhoufm.com/episode/6b057cc244e24a385c0304f2",
     "podcastLabel": "翻书吧",
     "wechat": "Deep Into X"
   },
@@ -47,14 +47,9 @@
     "now": false,
     "reward": true
   },
-  "umami": {
-    "src": "",
-    "websiteId": ""
-  },
   "footer": {
     "colo": "表达自我，连接彼此 · Web 2.0 Next",
     "coloUrl": "https://web20next.com/zh/manifesto",
     "copyright": "© 2026 Chuan · Deep Into X"
-  },
-  "logo": "/assets/weblogo-192.webp"
+  }
 }
