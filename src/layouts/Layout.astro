@@ -65,7 +65,7 @@ const isCurrent = (href: string) => {
       try { const theme = localStorage.getItem('theme'); if (theme === 'dark' || theme === 'light') document.documentElement.dataset.theme = theme; } catch {}
       document.documentElement.classList.add('js');
     </script>
-    {site.umami.src && site.umami.websiteId && (
+    {site.umami?.src && site.umami?.websiteId && (
       <script is:inline defer src={site.umami.src} data-website-id={site.umami.websiteId}></script>
     )}
     {structuredData.map((item) => <script type="application/ld+json" set:html={JSON.stringify(item)} />)}

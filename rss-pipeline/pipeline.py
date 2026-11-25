@@ -174,13 +174,24 @@ class DeepSeekProvider:
             raw_topics = parsed["topics"]
         except (KeyError, TypeError, json.JSONDecodeError) as exc:
             raise RuntimeError("DeepSeek returned invalid topic clustering JSON") from exc
+        if not isinstance(raw_topics, list):
+            raise RuntimeError("DeepSeek topic clustering response must contain a topics list")
 
         result: list[dict[str, Any]] = []
         used_indices: set[int] = set()
         for raw_topic in raw_topics:
+            if not isinstance(raw_topic, dict):
+                continue
+            raw_indices = raw_topic.get("items", [])
+            if not isinstance(raw_indices, list):
+                continue
+
             indices: list[int] = []
-            for value in raw_topic.get("items", []):
-                index = int(value) - 1
+            for value in raw_indices:
+                try:
+                    index = int(value) - 1
+                except (TypeError, ValueError):
+                    continue
                 if 0 <= index < len(items) and index not in used_indices:
                     used_indices.add(index)
                     indices.append(index)
@@ -193,10 +204,21 @@ class DeepSeekProvider:
                 for index in indices:
                     used_indices.remove(index)
                 continue
+
+            title = raw_topic.get("title")
+            summary = raw_topic.get("summary")
+            if not isinstance(title, str) or not title.strip():
+                for index in indices:
+                    used_indices.remove(index)
+                continue
+            if not isinstance(summary, str) or not summary.strip():
+                for index in indices:
+                    used_indices.remove(index)
+                continue
             result.append(
                 {
-                    "title": str(raw_topic["title"]),
-                    "summary": str(raw_topic["summary"]),
+                    "title": title,
+                    "summary": summary,
                     "items": group,
                 }
             )
