@@ -24,6 +24,10 @@
       "href": "/podcast"
     },
     {
+      "label": "项目",
+      "href": "/projects"
+    },
+    {
       "label": "资讯",
       "href": "/rss"
     },
