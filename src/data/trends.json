@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026年11月24日 20:18",
+  "updatedAt": "2026年11月25日 19:56",
   "sources": [
     {
       "id": "huggingface",
@@ -8,84 +8,84 @@
       "note": "热门研究，看到模型与智能体方法的下一批方向。",
       "items": [
         {
-          "id": "0af1a8d150d4b255156091fb90212095",
-          "title": "3AGameFactory-Motion：面向多样 3D 资产的智能体式绑定与可靠复杂动作生成",
-          "summary": "这篇论文碰的是 3D 内容生产里最费人力的一环：给一个随便来的 3D 资产做骨骼绑定（rigging），再按文字指令让它动起来。 难的地方在于“随便来的资产”。 人形、四足这些常规骨架，学术界和工业界都有成熟套路。但游戏和动画里真正多的是奇形怪状的模型，比如六条腿的机械体、带翅膀的植物、没有明显关节的软体生物。这类资产的骨架结构本身就得先“猜”出来，再谈动…",
-          "href": "https://arxiv.org/abs/2611.30013",
-          "meta": "arXiv 2611.30013",
+          "id": "00fba1df0e34867c4f2e899d76c52dda",
+          "title": "Clinical3D-Bench：评估并提升多模态 LLM 在医院环境中的空间智能",
+          "summary": "医院里的空间推理，是个被现有评测忽略的角落。走廊里两台长得几乎一样的设备，护士站在你左手边还是右手边，推床能不能过这道门，这些判断对人来说是日常，对多模态模型来说却很难。 这篇论文做了个专门考这个的基准：Clinical3D-Bench。373 个按医院设计规范搭的病房布局，第一人称视角走一遍，3,368 道题分 8 种类型。答案是直接从 3D 场景里算出…",
+          "href": "https://arxiv.org/abs/2611.32094",
+          "meta": "arXiv 2611.32094",
+          "date": "11月24日"
+        },
+        {
+          "id": "032edd1d8c8d68ae41d368d0c2fd3078",
+          "title": "具身 AI 未通过镜像测试：一面简单的镜子如何击溃机器人策略",
+          "summary": "如果给机器人面前立一面镜子，它还能把桌上的东西拿对吗？ 这篇论文给出的答案相当不乐观： 五种不同的机器人操作策略，在所有镜面条件下成功率都下降，平均掉 10.8 到 56.7 个百分点，镜面桌面上最狠掉 62.5 个点。 这个结果值得看，因为它测试的并非新任务、新模型或新数据集。它往一个本来能跑通的任务里加了一面镜子，然后看策略崩不崩。崩了。 论文把这件事…",
+          "href": "https://arxiv.org/abs/2611.33010",
+          "meta": "arXiv 2611.33010",
+          "date": "11月24日"
+        },
+        {
+          "id": "1c7b0da13c4daa4cee3b658a0dd16602",
+          "title": "MAGPIE：通过可执行场景构建实现智能体式多参考图像生成",
+          "summary": "多参考图生成这件事，最近一年进步很快，但真正难的地方一直没解决：模型能把几张参考图里的主体“长得像”保留下来，却很难按你的指令把它们摆成你想要的场景。 MAGPIE 的思路是把“怎么摆”从生成模型的黑箱里拿出来，先做成一个能看、能改的东西。这篇值得看，因为它给多参考图生成加了一个 可检查的中间层 ，不只是换个更强的生成器。 论文链接在这里，也可以直接看PD…",
+          "href": "https://arxiv.org/abs/2611.32462",
+          "meta": "arXiv 2611.32462",
+          "date": "11月24日"
+        },
+        {
+          "id": "14638b05ec9f79046a45423d1d5b3862",
+          "title": "GRAPE-Bench：视觉退化时，视频推理还稳得住吗？",
+          "summary": "视频推理模型在标准测试上分数很高，可一旦画面变差，它们还靠谱吗？这篇论文专门测这个。 它叫 GRAPE-Bench，关注的是视觉退化下的视频推理。对做自动驾驶、监控、机器人这类场景的团队来说，这个问题很实际：真实世界的摄像头画面从来不会像数据集那么干净。 论文的切入点有两层：一是 视觉退化 （雨雪雾、夜间、各种图像损坏），二是 问题难度 （从基础判断到高强…",
+          "href": "https://arxiv.org/abs/2611.33020",
+          "meta": "arXiv 2611.33020",
+          "date": "11月24日"
+        },
+        {
+          "id": "22f191a52e208dfa2b58cd99d90e1649",
+          "title": "Qwen-Image-HD：自回归扩散实现高清图像生成",
+          "summary": "Qwen 团队把图像生成往 4K 推了一步，方法挺有意思：不整张大图硬训，而是切块、按块自回归生成。 这篇论文值得看的地方在于，它正面处理了高清生成里一个很实际的矛盾。 整张高分辨率画布做微调，序列太长、算力太贵，资源有限时局部还会冒出重复条纹 。Qwen-Image-HD 的思路是绕开这个矛盾，不跟它硬碰。 这篇论文想解决什么 高清图像生成的主流做法是直…",
+          "href": "https://arxiv.org/abs/2611.32736",
+          "meta": "arXiv 2611.32736",
           "date": "11月23日"
         },
         {
-          "id": "11854ba0991e244c1ba7b0fa5157aaba",
-          "title": "什么才是训练编程 Agent 的优质数据？基于 SWE-Gym 的系统性研究",
-          "summary": "编码 Agent 的强化学习有个隐蔽前提：任务里的隐藏测试决定奖励，可这些测试本身很少被认真检查。这篇论文把这件事摊开看了。 作者用两个 LLM 家族审计 SWE-Gym，结论很直接： 模型解不出的任务里，很多不是任务难，而是测试错了 。一个原本 9B 基座模型从未解出的任务，74% 存在会拒绝正确修复的假阴性测试；而偶尔能解出的任务里，这个比例是 20%…",
-          "href": "https://arxiv.org/abs/2611.30207",
-          "meta": "arXiv 2611.30207",
+          "id": "3083b5f78b91a831d11ddcb2cb306f87",
+          "title": "Coding4Games：现代编程 Agent 能玩转现代电子游戏吗？",
+          "summary": "玩游戏这件事，正在被重新定义成一道编程题。 我们习惯的评测是让模型当“玩家”：每一步都调用一次大模型，看画面、出操作。这条路在实时游戏里很别扭，环境一直在变，模型还在推理，而且每一步都在烧推理成本。 这篇论文换了个问法： 能不能让编码智能体先玩、先试，然后写出一段不需要大模型参与就能自己跑的程序，把游戏玩下去？ 这个转向挺有意思。它测的不再是“模型会不会玩…",
+          "href": "https://arxiv.org/abs/2611.31974",
+          "meta": "arXiv 2611.31974",
           "date": "11月23日"
         },
         {
-          "id": "215be7d07b1edb93373a4dd66534e113",
-          "title": "Embodied-Harness：迈向机器人操作的递归自我改进",
-          "summary": "这篇论文值得看的地方，在于它换了个思路：机器人操作能力不够强，未必非得去微调模型参数。Embodied-Harness 想做的是 让模型在不动权重的前提下，靠执行经验反复打磨一套“操作指引” ，把失败复盘变成可复用的经验。 如果这个方向成立，对工程侧的意义很直接。你不需要为每个新环境重训大模型，只要让系统在试错中把经验沉淀下来。摘要里给的数字也不难看，三个…",
-          "href": "https://arxiv.org/abs/2611.27689",
-          "meta": "arXiv 2611.27689",
+          "id": "3340e6224110e8e20d6b3091e36cfae8",
+          "title": "ICLWorld：从数字世界到物理世界的 Agent 上下文学习基准",
+          "summary": "这篇论文值得看，因为它戳中了一个被含糊带过的假设：前沿模型在电脑上会从上下文里学规则，那到了机器人身上也该会。 ICLWorld 给出的答案不太乐观。同一批最强模型，电脑操作任务成功率能到八成上下，机器人操作只剩两成多。 更有意思的是另一处落差：模型能答对 98% 的机器人规则问题，却只完成 20% 的任务。 知道规则和按规则行动，是两件事。 这篇论文想解…",
+          "href": "https://arxiv.org/abs/2611.32649",
+          "meta": "arXiv 2611.32649",
           "date": "11月23日"
         },
         {
-          "id": "27bfce41be6db7bb79da8056d88cd3e8",
-          "title": "RUIBench：什么造就了优秀的机器人使用接口？",
-          "summary": "机器人执行这件事，卡点可能不在模型够不够聪明。 这篇论文提出一个容易被忽略的变量： robot-use interface（RUI） ，也就是智能体把“想做的物理动作”表达成什么形式、再交给底层控制去执行的那层接口。作者的观点很直接：基座模型已经能推理复杂物理任务，但从推理到可靠执行之间，接口设计本身就在决定成败。 他们的证据是模拟环境里的数字：只改 RU…",
-          "href": "https://arxiv.org/abs/2611.31115",
-          "meta": "arXiv 2611.31115",
-          "date": "11月22日"
+          "id": "5b06a495fd2b52e8d8e36ae881caedef",
+          "title": "EEGJev：面向多任务 EEG 问答的系统一决策模型与基准",
+          "summary": "这篇论文想给 EEG 解码换一种问法：不再固定“这段脑电对应哪个标签”，改成“我问什么，你就答什么”。同一个 EEG 记录、同一组选项，只把问题从“表情是什么”换成“受试者被要求用哪只手”，模型得跟着问题走。 这个设定挺关键。过去 EEG foundation model 的评测基本是固定标签任务，模型答对一次，你其实不知道它是真在按问题解码，还是记住了数…",
+          "href": "https://arxiv.org/abs/2611.32100",
+          "meta": "arXiv 2611.32100",
+          "date": "11月23日"
         },
         {
-          "id": "29f44c183f0498cac580c23f441b31f7",
-          "title": "GameDojo：视频游戏中实时交互智能体的基准测试",
-          "summary": "游戏一直是检验智能体实时决策能力的硬场景，但过去很难找到既可控又足够难的评测集。GameDojo 试图补上这块：20 款游戏、120 场 Boss 战，把“边看边打、打完承担后果”这件事变成可重复的基准。 对做 Agent 的团队来说，这篇值得扫一眼。它不只是又一个榜单，还顺带产出了 600 小时 gameplay 轨迹和一个能打到前沿水平的 4B 模型。…",
-          "href": "https://arxiv.org/abs/2611.30771",
-          "meta": "arXiv 2611.30771",
-          "date": "11月22日"
+          "id": "44aec8200482803f5280762d0a8ffbfc",
+          "title": "SpecEngineeringBench：评估编码 Agent 作为自主规格工程师的能力",
+          "summary": "这篇论文值得看，因为它戳中了 Coding Agent 评测里一个被绕过去的环节： 谁来决定测什么、去哪里找 bug 。 现有基准大多把问题描述、测试入口、待查文件一起喂给 Agent，Agent 只要照着写测试就行。SpecEngineeringBench 把这些线索拿掉，让 Agent 自己从功能需求走到可执行测试，再从执行结果里定位缺陷。这个设定更接…",
+          "href": "https://arxiv.org/abs/2611.32973",
+          "meta": "arXiv 2611.32973",
+          "date": "11月23日"
         },
         {
-          "id": "498adb7f22db47edf7811335345ea193",
-          "title": "UUBench：理解言外之意，迈向全双工多模态交互",
-          "summary": "这篇论文值得看，原因很直接：现在多模态交互系统的评测，大多在问“它听懂了字面意思吗”，却很少问“它有没有接住用户没说出口的需求”。 UUBench 想补的就是这个缺口。它把“理解弦外之音”拆成可观测的视听线索来打分，而不是靠一个笼统的总分。对做实时全双工多模态交互的团队来说，这套评测思路比单个榜单分数更有参考价值。 这篇论文想解决什么 实时全双工多模态交互…",
-          "href": "https://arxiv.org/abs/2611.30157",
-          "meta": "arXiv 2611.30157",
-          "date": "11月22日"
-        },
-        {
-          "id": "67ca5b74487d046bad272fc87d17786b",
-          "title": "Motion Mamba 2.0：面向长时程人形机器人控制的自回归扩散 Mamba",
-          "summary": "这篇论文值得看的地方，在于它同时碰了两个通常互相拉扯的目标： 长时程可控 和 实时推理 。人形机器人和交互式动画都需要智能体一边动一边接新指令、改目标点，序列一长，历史信息就存不住，去噪次数一多，延迟就爆掉。 Motion Mamba 2.0 给的答案是 Mamba 主干加一层精心设计的内容记忆，再配一套把推理流程压扁的执行方案。摘要里最抓人的数字是 RT…",
-          "href": "https://arxiv.org/abs/2611.29897",
-          "meta": "arXiv 2611.29897",
-          "date": "11月22日"
-        },
-        {
-          "id": "6b90ec7ca9c1300e2bb51ceb2630c272",
-          "title": "ViDiHand2：统一视频扩散先验与手部几何，实现野外 3D 手部运动重建",
-          "summary": "从第一人称视频里学机器人操作，前提是能把人的手在三维空间里的位置和动作还原准。这件事在实验室里好办，到了真实场景就麻烦：手会被物体挡住、会被画面裁掉、拍摄的相机也千奇百怪。 ViDiHand2 想解决的就是这个\"in the wild\"的问题。它的思路值得看一眼，因为它没有继续在\"让模型回归得更准\"这条路上加码，而是把深度估计改写成了一道几何约束求解题。…",
-          "href": "https://arxiv.org/abs/2611.30597",
-          "meta": "arXiv 2611.30597",
-          "date": "11月22日"
-        },
-        {
-          "id": "7a4451fe376fae5673a0e302b1561f75",
-          "title": "WeMM-Ecom：推进微信电商多模态内容理解",
-          "summary": "腾讯把微信电商的多模态模型开源了，这件事本身比论文里的数字更值得看。 WeMM-Ecom 是一个模型家族，从 0.8B 的稠密模型到 35B 的 MoE（激活 3B），五个尺寸。它想证明一件事： 垂直领域的多模态模型可以在自己的场景里打赢更大的通用旗舰，同时不牺牲通用能力 。摘要里说，35B-A3B 在电商评测上超过了 Qwen3.8-Flash-Next…",
-          "href": "https://arxiv.org/abs/2611.30662",
-          "meta": "arXiv 2611.30662",
-          "date": "11月22日"
-        },
-        {
-          "id": "85dda379aced33763ad672c1c5a16ea0",
-          "title": "SWEEP-Bench：具身策略会按所见速度行动吗？",
-          "summary": "机器人抓取有一个被忽视的维度： 物体在动，而且动得快慢不一样 。 传送带上的物体速度从 0.10 到 0.40 m/s 变化，同一个策略能不能跟上？现有 benchmark 很少系统测这件事。SWEEP-Bench 就是冲这个缺口来的，80 个传送带操作任务、16 类技能、每个任务 13 档速度，同一随机场景在所有速度下复用。 这篇论文值得看的地方在于，它…",
-          "href": "https://arxiv.org/abs/2611.30637",
-          "meta": "arXiv 2611.30637",
-          "date": "11月22日"
+          "id": "4b3f442d1a5f8a2dd10a1ad33092ed7e",
+          "title": "懒惰的 Agent 会违背自身信念作答：可验证信念强化学习教会它们按信念行动",
+          "summary": "这篇论文抓住了一个很实际的问题：Agent 做长任务时，明明还没掌握足够证据，就急着给答案。 更微妙的是，它嘴上说的判断和实际动作对不上。摘要里提到，模型经常在“自己写下的信念里还列着好几个候选答案”的时候，就把答案交出去了。这种行为和它的判断不一致，属于典型的“懒”。 这篇值得看的地方在于，它给“什么时候该继续看、什么时候该下结论”设计了一种可验证的训练…",
+          "href": "https://arxiv.org/abs/2611.32884",
+          "meta": "arXiv 2611.32884",
+          "date": "11月23日"
         }
       ]
     },
@@ -96,84 +96,84 @@
       "note": "新产品发布，观察用户正在为什么工作流付费。",
       "items": [
         {
-          "id": "7248ca61483be8be05a0c22f688dc77f",
-          "title": "Willow iOS 2.0：语音输入时无需切换应用",
-          "summary": "语音转写这件事，大多数人其实一直将就着用。 开会记笔记、写邮件、回消息，用语音输入省时间，但识别错了还得回头改。改着改着，还不如自己打字。 Willow 最近在 Product Hunt 上发布的 Frontier Pro 模型，直接给自己贴了个标签： 全球最快、最准的听写模型 。 这个说法很重。毕竟语音识别这个赛道，大厂们已经卷了很多年，从 Whispe…",
-          "href": "https://www.producthunt.com/products/willow-voice",
-          "meta": "Maker · Sharath Kuruganty",
-          "date": "11月24日"
+          "id": "bfa98400866a739a7ea9fe2ce4c2781a",
+          "title": "Homa IR Test：健康才是头等大事",
+          "summary": "heath is main things",
+          "href": "https://www.producthunt.com/products/homa-ir-test",
+          "meta": "Maker · Redcliffe Labs",
+          "date": "11月25日"
         },
         {
-          "id": "4927002369de52de37697e2763339c00",
-          "title": "Agenda Hero Magic Labs：任意日程、任意布局、任意风格的智能排程工具",
-          "summary": "Any schedule. Any layout. Any style.",
-          "href": "https://www.producthunt.com/products/agenda-hero-magic",
-          "meta": "Maker · Caren Cioffi",
-          "date": "11月24日"
+          "id": "438c0014208e143c74e94de319c02979",
+          "title": "MAGI-2：Sand AI 的 480B 电影级视频生成模型",
+          "summary": "30 秒、1080p、带声音，一次生成就能跑完一整条镜头。Sand.ai 在 2026 年 11 月 24 日放出的 MAGI-2，把这些数字摆在了台面上。 对做视频的人来说，这几个参数拼在一起意味着什么：过去要分段生成、再拼接、再对嘴型的活，现在有机会一口气做完。但值不值得换工具，得看细节。 先搞清楚它到底是什么 MAGI-2 是 Sand.ai 的旗舰…",
+          "href": "https://www.producthunt.com/products/magi-1",
+          "meta": "Maker · Justin Jincaid",
+          "date": "11月25日"
         },
         {
-          "id": "fb9faa6a892389fb20b2a25c8b2c62c7",
-          "title": "Hourly Journal：按小时记录，读懂你的一天",
-          "summary": "大多数人写日记失败，不是因为懒，是因为颗粒度错了。晚上回想一整天，脑子里只剩一团模糊，写两句就卡住，第三天就放弃。 Hourly Journal 换了个切法：不记一天，记一小时。刚刚过去的那 60 分钟里发生了什么，趁记忆还热乎，几句话、一个标签、一个心情，再标一下这件事耗了多少精力。 这款应用在 iOS、Android 和网页端都能用，Google Pl…",
-          "href": "https://www.producthunt.com/products/hourly-journal",
-          "meta": "Maker · Knev",
-          "date": "11月24日"
+          "id": "cb003f8f16bb2567b033b4194dcc039c",
+          "title": "GibHub：检索并对比 Git 版本",
+          "summary": "一个叫 GibHub 的项目出现在 Product Hunt 上，名字只比 GitHub 少一个字母。打开它的官网 gibhub，首页两句话反复出现：还没有索引任何仓库，用 gib 推一个上来，它就会出现在这里；最近推送也是空的。 这就是全部可见信息。 官网目前是个空壳。 没有产品介绍，没有功能列表，没有截图，没有价格，没有团队信息。抓取到的内容只有两个空…",
+          "href": "https://www.producthunt.com/products/gibhub-git-file-history",
+          "meta": "Maker · Señor Tomato",
+          "date": "11月25日"
         },
         {
-          "id": "ab7630ea1c36aed6cfc78ff6f6330266",
-          "title": "Finer Screenshot：添加在任何背景上都自动保持可读的文字",
-          "summary": "截图工具这个品类，早就卷到没什么可卷了。系统自带够用，Shottr 免费，CleanShot X 功能多到能当小型工作室。在这种局面下，一个新工具还敢卖 19.99 美元，而且是一次性买断，这本身就是一个值得看看的信号。 Finer Screenshot 是 Finer Things Software 做的 macOS 原生截图工具，在 Product H…",
-          "href": "https://www.producthunt.com/products/finer-screenshot",
-          "meta": "Maker · Max Vilkki",
-          "date": "11月24日"
+          "id": "48933319000c428dddac09154eb97363",
+          "title": "Omi X 2.0：点击应用任意位置，告诉 Omi 要改什么",
+          "summary": "AI 编程工具最大的问题，往往不是写不出代码，而是写出来的东西跑不起来。Omi X 2.0 想解决的正是这件事：它把“生成”和“部署到能用的环境”绑在了一起。 它到底是什么 Omi X 2.0 是一个 Mac 和 Windows 桌面应用，由 UIComet 推出，在 Product Hunt 和 UIComet 的发布页上都能看到它的介绍。 它的定位是让…",
+          "href": "https://www.producthunt.com/products/omi-x",
+          "meta": "Maker · Om Prakash Sahoo",
+          "date": "11月25日"
         },
         {
-          "id": "de242b73c8f0b8febb9d71d2e4e0758f",
-          "title": "Kodak SlideTag：1935 年胶片幻灯片风格的电子墨水相框，可像 AirTag 一样追踪",
-          "summary": "一块钥匙扣大小的电子相框，能装 12 张照片，还能当防丢器用。柯达把 1935 年的幻灯片做成了随身挂件。 这款产品叫 Kodak SlideTag，最近出现在 Product Hunt 上。外形复刻的是柯达 1935 年推出的 Kodachrome 彩色反转片纸框，那个方形纸卡加中间一格胶片的经典造型，被缩小成了能挂在钥匙或背包上的尺寸。 尺寸 39.3…",
-          "href": "https://www.producthunt.com/products/kodak-slidetag",
-          "meta": "Maker · Zac Zuo",
-          "date": "11月24日"
+          "id": "6abe9af02001f3d9950c2773a01fd01d",
+          "title": "Statefold：你离开时仍在持续工作的编码 Agent",
+          "summary": "现在用编码 Agent 的人多半有个共同习惯：敲完提示词，盯着终端等它跑。Codex 或 Claude Code 一出活，人就被拴在电脑前，离开十分钟回来还得看它卡在哪一步。 Statefold 想解决的问题就是这个。它给现成的编码 Agent 套一层云端沙盒，每个任务跑在独立容器里，人可以从终端交接、合上笔记本、过几个小时在手机上收通知，然后合并 PR。…",
+          "href": "https://www.producthunt.com/products/statefold-2",
+          "meta": "Maker · Mohammed Farmaan",
+          "date": "11月25日"
         },
         {
-          "id": "d852150070024692bac14de1369e1a72",
-          "title": "Juncts：私信界的 Superhuman，AI 自动分诊并起草回复",
-          "summary": "五个平台私信收进一个网页收件箱，还能让 Claude 和 ChatGPT 直接在里面回消息。这是 Juncts 想做的事。 它面向的是那种一个人或几个人小团队，同时盯着 Instagram、Facebook Messenger、LinkedIn、Twitter、WhatsApp 私信的人。消息一多，切 App 切标签页本身就是一份全职工作。 它到底把什么收…",
-          "href": "https://www.producthunt.com/products/juncts",
-          "meta": "Maker · Joel Faure",
-          "date": "11月24日"
+          "id": "a759667fc4b857c423e0ca9e42f6ddce",
+          "title": "Sen Việt (VieLotus-IM)：适用于 macOS、Windows 和 Linux 的智能双语输入法",
+          "summary": "越南语有 6 个声调、大量变音符号，还夹着英文外来词。一个输入法要同时处理这些，难度比中文拼音高不少。市面上主流方案大多靠“监听全局键盘事件 + 模拟按键”来实现，代价是要拿到系统里权限很高的那类授权。 Sen Việt（VieLotus-IM） 想换一条路走： 不监听全局键盘，不模拟按键，按操作系统原生的输入法框架来接 。作者 stevedat 在 ti…",
+          "href": "https://www.producthunt.com/products/sen-vi-t-vielotus-im",
+          "meta": "Maker · Dat Tran",
+          "date": "11月25日"
         },
         {
-          "id": "0cadbb290dc7b13b3ec036d342a44999",
-          "title": "Mystonie：记录电影、剧集、书籍和游戏，把完成记录变成艺术",
-          "summary": "看完一部电影、追完一季剧、啃完一本漫画，然后呢？大多数人会打开豆瓣打个分，或者发条朋友圈，接着就忘了。Mystonie 想做的事很直接： 把“看完”这个动作变成一件可以收藏、可以炫耀、可以和朋友互动的事 。 它到底在记录什么 Mystonie 覆盖五类内容：电影、剧集、书籍、漫画、游戏。核心动作只有一个，记录你“完成”了什么。 剧集可以一集一集打勾，书能记…",
-          "href": "https://www.producthunt.com/products/mystonie",
-          "meta": "Maker · Nathan Balthazar",
-          "date": "11月24日"
+          "id": "6d355ac62026381d57481f8884fb0016",
+          "title": "PeerBand：随时随地触达你运行的每个编码 Agent",
+          "summary": "写代码的 Agent 越来越能干，但人反而被拴得更紧了：任务跑在几台机器上，想知道进展得挨个切窗口看，人一离开工位就彻底失联。PeerBand 想解决的正是这个断裂：把本机上的编码 Agent 接出来，让 ChatGPT、Claude、Telegram 都能直接跟它们对话。 它到底接的是什么 先划清边界。PeerBand 不自己跑 Agent，它接的是 H…",
+          "href": "https://www.producthunt.com/products/peerband",
+          "meta": "Maker · Kirill Shvidler",
+          "date": "11月25日"
         },
         {
-          "id": "c36e84feaa4544c96327068c8ccf1ea8",
-          "title": "Pinned：和朋友一起问城市今晚去哪儿",
-          "summary": "社交产品最难的一关从来不是“发现活动”，而是让人真的出门。 报名点了、日历加了、然后当天晚上躺在沙发上刷手机。Pinned 这个产品就是冲着这个断点来的，它在 Product Hunt 上的口号很直接： Plans that actually happen ，从浏览到到场，一条路走完。 它到底解决哪一段 按 Pinned 官网的说法，产品把一次线下社交拆成…",
-          "href": "https://www.producthunt.com/products/pinned",
-          "meta": "Maker · Filipe Alvarenga",
-          "date": "11月24日"
+          "id": "732be28b687b2e1dca6e7a3de5dd5743",
+          "title": "Blink：描述任意交易，看 Blink 自动构建",
+          "summary": "一句话就能建一个交易策略，还能 7×24 小时自动跑。这是 Blink 在 Product Hunt 上打出的卖点，听起来像是把自然语言直接接进了交易引擎。 先把边界说清楚：官网抓取到的信息非常有限，基本就是首页那几句宣传语。产品具体怎么下单、接哪些交易所、收不收费、策略跑起来之后资金怎么托管，这些资料里都没有。所以下面只基于能确认的内容来判断，剩下的部分…",
+          "href": "https://www.producthunt.com/products/blink-35",
+          "meta": "Maker · Stephen E",
+          "date": "11月25日"
         },
         {
-          "id": "29d8d1037d79e5ac257a6af841ac8d20",
-          "title": "Sotto：按住按键说话，干净文本直达 Linux 光标处",
-          "summary": "Mac 上想快速输入一段话，是打字快还是说话快？ 对不少人来说，说话明显更省事。问题在于，系统自带的听写不够顺手，第三方工具又常常要把音频传到云端。Sotto 想解决的就是这个夹缝里的需求。 按住右 Command 说话，松开就出字 Sotto 是一个 macOS 菜单栏小工具，交互设计得极简： 按住右侧 Command 键开始录音，松开后自动转写成文字…",
-          "href": "https://www.producthunt.com/products/sotto-11",
-          "meta": "Maker · Aawej Pathan",
-          "date": "11月24日"
+          "id": "f69bc688710cffcade527682c58e4411",
+          "title": "Notely：Notion 级能力与 BYOK AI，本地存储于 SQLite",
+          "summary": "笔记软件这个赛道，早就被云厂商做成了按月收租的生意。Notion 和 Evernote 一年能从你口袋里拿走 96 到 180 美元，而你的笔记内容，其实大部分时间只是躺在本地硬盘上没动过。Notely 想干的事很直接： 把这份租约撕了，把笔记还回你的 Windows 电脑里。 这是一个 Windows 10 和 11 的原生桌面笔记应用，当前版本 1.3…",
+          "href": "https://www.producthunt.com/products/notely-8",
+          "meta": "Maker · Sarowar Zamil Shawon",
+          "date": "11月25日"
         },
         {
-          "id": "ba372cd74bd2f0651d30ef4092bab646",
-          "title": "Drift：映照你周围世界的壁纸",
-          "summary": "Product Hunt 上挂了一个叫 Drift 的条目，点进去却不是什么新工具，而是一堆汽车漂移动态壁纸的合集页。 这事本身就挺有意思。它说明 Product Hunt 的“产品”边界比很多人想的要松，也说明动态壁纸这个老需求一直有人在做。 先把边界说清楚： Drift 不是一个独立应用，也不是一家公司做的软件产品。 它对应的是 DesktoHut 上…",
-          "href": "https://www.producthunt.com/products/drift-aef4d3de-e971-402b-b62f-613b9c79b4cd",
-          "meta": "Maker · Owen Williams",
-          "date": "11月24日"
+          "id": "18698d50a739028e5ff9e2e40ac0d9da",
+          "title": "Falcon by Vybe：免费分析竞争对手，随后自动开始执行",
+          "summary": "Falcon analyzes your competitors for free, then gets to work",
+          "href": "https://www.producthunt.com/products/vybe-4",
+          "meta": "Maker · Jean-Baptiste Coger",
+          "date": "11月25日"
         }
       ]
     },

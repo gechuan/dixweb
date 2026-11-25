@@ -1,714 +1,903 @@
 {
-  "date": "2026-11-23",
-  "weekday": "周一",
+  "date": "2026-11-24",
+  "weekday": "周二",
   "stats": {
     "sources_total": 128,
-    "sources_returned": 60,
-    "items_in_window": 90,
-    "items_kept": 71,
+    "sources_returned": 70,
+    "items_in_window": 115,
+    "items_kept": 96,
     "items_filtered": 19,
-    "topics": 3
+    "topics": 4
   },
-  "headline": "英伟达董事会重新任命黄仁勋为首席执行官兼董事会主席，此前董事会曾排除其回归，特朗普对此表示支持并称美国未发现不当行为证据，英伟达股价随之飙升。Sierra估值六个月内翻倍至300亿美元，反映AI在客户体验领域需求激增。微软WinGet开始支持MCP，用户可通过AI安装Windows软件。",
+  "headline": "特朗普与硅谷推动英伟达重新接纳黄仁勋，特朗普称已“达成协议”让其复职并引发两党反弹，黄仁勋则向董事会承认不止两段婚外情。与此同时，亚马逊称黑客的AI代理在极少人工输入下发现并利用了0day漏洞，CrowdStrike则围绕440亿美元豪赌讨论AI网络攻击浪潮与补丁难题。",
   "topics": [
     {
       "id": "T1",
-      "title": "英伟达重新任命黄仁勋为CEO",
-      "summary": "多家媒体报道英伟达董事会重新任命黄仁勋为首席执行官兼董事会主席，此前董事会曾排除其回归。特朗普对此表示支持，称美国未发现不当行为证据，英伟达股价随之飙升。",
+      "title": "黄仁勋重返英伟达CEO职位",
+      "summary": "黄仁勋在特朗普推动下重返英伟达CEO职位，引发广泛关注。报道称特朗普曾致电董事会为其回归力争，黄仁勋本人也承认婚外情。英伟达股价大涨，做空者损失惨重。",
       "items": [
         {
-          "orig_title": "Jensen Huang reinstated as Nvidia CEO, board chair",
+          "orig_title": "How Trump and Silicon Valley forced Nvidia to take Jensen Huang back",
           "source": "Ars Technica - All content",
           "category": "工程与编程",
-          "link": "https://arstechnica.com/ai/2026/11/jensen-huang-reinstated-as-nvidia-ceo-board-chair/",
-          "zh_title": "黄仁勋被重新任命为英伟达首席执行官兼董事会主席"
+          "link": "https://arstechnica.com/tech-policy/2026/11/how-trump-and-silicon-valley-forced-nvidia-to-take-jensen-huang-back/",
+          "zh_title": "特朗普与硅谷如何迫使英伟达重新接纳黄仁勋"
         },
         {
-          "orig_title": "Trump endorses Jensen Huang’s return to Nvidia, says US has no evidence of wrongdoing",
+          "orig_title": "Huang reportedly admitted to more than two affairs to Nvidia’s board",
           "source": "TechCrunch",
           "category": "AI 前沿",
-          "link": "https://techcrunch.com/2026/11/23/trump-endorses-jensen-huangs-return-to-nvidia-says-us-has-no-evidence-of-wrongdoing/",
-          "zh_title": "特朗普支持黄仁勋重返英伟达，称美国未发现不当行为证据"
+          "link": "https://techcrunch.com/2026/11/24/huang-reportedly-admitted-to-more-than-two-affairs-to-nvidias-board/",
+          "zh_title": "据报道黄仁勋向英伟达董事会承认不止两段婚外情"
         },
         {
-          "orig_title": "Why Nvidia brought Jensen Huang back as CEO despite his scandals",
-          "source": "Fast Company",
+          "orig_title": "Trump Says He 'Made the Deal' to Reinstate Jensen Huang, Sparking Bipartisan Backlash",
+          "source": "Decrypt",
           "category": "产品、设计与商业",
-          "link": "https://www.fastcompany.com/91647524/why-nvidia-brought-jensen-huang-back-as-ceo-despite-his-scandals",
-          "zh_title": "尽管丑闻缠身，英伟达为何仍请回黄仁勋担任首席执行官"
+          "link": "https://decrypt.co/383853/trump-says-he-made-the-deal-to-reinstate-jensen-huang-sparking-bipartisan-backlash",
+          "zh_title": "特朗普称他“达成了协议”让黄仁勋复职，引发两党反弹"
         },
         {
-          "orig_title": "Nvidia Board Reinstates Jensen Huang",
-          "source": "daringfireball.net",
+          "orig_title": "黄仁勋，离开英伟达的 11 天",
+          "source": "极客公园",
           "category": "产品、设计与商业",
-          "link": "https://nvidianews.nvidia.com/news/nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director",
-          "zh_title": "英伟达董事会重新任命黄仁勋"
+          "link": "http://www.geekpark.net/news/374431",
+          "zh_title": "黄仁勋，离开英伟达的11天"
         },
         {
-          "orig_title": "Nvidia reverses course and brings Jensen Huang back as CEO",
-          "source": "TechCrunch",
+          "orig_title": "[AINews] Jensen Is Back! and OpenAI Shows Its Pretraining Curve, joined by Microsoft",
+          "source": "Latent.Space",
           "category": "AI 前沿",
-          "link": "https://techcrunch.com/2026/11/23/nvidia-reverses-course-and-brings-jensen-huang-back-as-ceo/",
-          "zh_title": "英伟达态度逆转，请回黄仁勋担任首席执行官"
+          "link": "https://latent.space/p/ainews-jensen-is-back-and-openai-shows-its-pretraining-curve-joined-by-microsoft/",
+          "zh_title": "[AINews] 黄仁勋回归！OpenAI 展示预训练曲线，微软同台参与"
         },
         {
-          "orig_title": "Nvidia soars as Jensen Huang returns to lead company",
-          "source": "CoinDesk",
-          "category": "产品、设计与商业",
-          "link": "https://www.coindesk.com/markets/2026/11/23/jensen-huang-returns-as-nvidia-ceo-as-shares-jump-27",
-          "zh_title": "黄仁勋回归执掌公司，英伟达股价飙升"
+          "orig_title": "Jensen is back",
+          "source": "Platformer",
+          "category": "AI 前沿",
+          "link": "https://www.platformer.news/jensen-huang-returns-nvidia/",
+          "zh_title": "黄仁勋回归"
         }
       ]
     },
     {
       "id": "T2",
-      "title": "AI在客户体验与生命科学领域的应用",
-      "summary": "Sierra估值六个月内翻倍至300亿美元，反映AI在客户体验领域需求激增。同时有播客讨论单人生物技术公司与OpenAI在生命科学的应用，以及Isomorphic Labs将药物发现视为AI问题。",
+      "title": "智谱发布GLM-5.4模型",
+      "summary": "智谱AI发布全新架构的GLM-5.4模型，采用循环Transformer，网友称超过预期。该模型能以四倍于自身规模的模型方式思考。",
       "items": [
         {
-          "orig_title": "Sierra doubles valuation to $30B within six months as demand for AI in CX takes off",
-          "source": "TechCrunch",
+          "orig_title": "智谱刚刚发了GLM-5.4，全新架构的那种！网友直呼：超过预期",
+          "source": "量子位",
           "category": "AI 前沿",
-          "link": "https://techcrunch.com/2026/11/23/sierra-doubles-valuation-to-30b-within-six-months-as-demand-for-ai-in-cx-takes-off/",
-          "zh_title": "Sierra估值六个月内翻倍至300亿美元，AI在客户体验领域需求激增"
+          "link": "https://www.qbitai.com/2026/11/512423.html",
+          "zh_title": "智谱刚刚发布了GLM-5.4，全新架构的那种！网友直呼：超过预期"
         },
         {
-          "orig_title": "The One-Person Biotech | OpenAI Life Sciences",
-          "source": "a16z podcast",
+          "orig_title": "GLM-5.4: Toward Generalized Coding with Our First Loop Transformer",
+          "source": "simonwillison.net",
           "category": "AI 前沿",
-          "link": "https://a16z.simplecast.com/episodes/the-one-person-biotech-openai-life-sciences-TrZddFUB",
-          "zh_title": "单人生物技术公司 | OpenAI生命科学"
+          "link": "https://simonwillison.net/2026/Nov/23/glm-54/",
+          "zh_title": "GLM-5.4：借助我们的首个循环Transformer迈向广义编码"
         },
         {
-          "orig_title": "Partnering with Isomorphic Labs: Drug Discovery Is an AI Problem",
-          "source": "Sequoia Capital",
+          "orig_title": "China's Z.ai Says Its New AI Model Can Think Like One Four Times Its Size",
+          "source": "Decrypt",
           "category": "产品、设计与商业",
-          "link": "https://www.sequoiacap.com/article/partnering-with-isomorphic-labs-drug-discovery-is-an-ai-problem",
-          "zh_title": "与 Isomorphic Labs 合作：药物发现是一个 AI 问题"
+          "link": "https://decrypt.co/383851/chinas-zai-new-ai-model-glm-think-like-four-times-size",
+          "zh_title": "中国的智谱AI称其新AI模型能以四倍于自身规模的模型方式思考"
         }
       ]
     },
     {
       "id": "T3",
-      "title": "AI智能体与自动化工具进展",
-      "summary": "微软WinGet开始支持MCP，用户可通过AI安装Windows软件；有文章探讨面向高管的OpenClaw自动化每个1%的烦恼；还有对话蚂蚁灵光蔡伟讨论大厂首个个人Agent的验证。",
+      "title": "AI代理发现并利用0day漏洞",
+      "summary": "亚马逊称黑客的AI代理在极少人工输入下发现并利用了0day漏洞。同时，高危漏洞Upload2Shell被公开，上传图片即可入侵服务器。",
       "items": [
         {
-          "orig_title": "OpenClaw for executives: Automate every 1% annoyance | Ankit Maheshwari (Innovaccer)",
-          "source": "Lenny's Newsletter",
-          "category": "产品、设计与商业",
-          "link": "https://www.lennysnewsletter.com/p/openclaw-for-executives-automate",
-          "zh_title": "面向高管的OpenClaw：自动化每一个1%的烦恼 | Ankit Maheshwari（Innovaccer）"
+          "orig_title": "Amazon says hackers' AI agents found and exploited 0-day with little human input",
+          "source": "Ars Technica - All content",
+          "category": "工程与编程",
+          "link": "https://arstechnica.com/security/2026/11/amazon-says-hackers-ai-agents-found-and-exploited-0-day-with-little-human-input/",
+          "zh_title": "亚马逊称黑客的AI代理在极少人工输入下发现并利用了0day漏洞"
         },
         {
-          "orig_title": "微软 WinGet 开始支持 MCP：以后安装 Windows 软件，直接告诉 AI 就行了",
+          "orig_title": "高危漏洞 Upload2Shell 公开：上传图片即可入侵服务器｜CVE-2026-125396，8.5 分",
           "source": "小众软件",
           "category": "产品、设计与商业",
-          "link": "https://www.appinn.com/winget-mcp-server/",
-          "zh_title": "微软 WinGet 开始支持 MCP：以后安装 Windows 软件，直接告诉 AI 就行了"
+          "link": "https://www.appinn.com/upload2shell-cve-2026-125396/",
+          "zh_title": "高危漏洞 Upload2Shell 公开：上传图片即可入侵服务器｜CVE-2026-125396，8.5 分"
+        }
+      ]
+    },
+    {
+      "id": "T4",
+      "title": "CrowdStrike的网络安全豪赌",
+      "summary": "CrowdStrike进行440亿美元豪赌，CEO讨论AI网络攻击浪潮、超高速黑客攻击与补丁难题。",
+      "items": [
+        {
+          "orig_title": "🔐 CrowdStrike's $44 Billion Bet",
+          "source": "How They Make Money",
+          "category": "产品、设计与商业",
+          "link": "https://www.appeconomyinsights.com/p/crowdstrikes-44-billion-bet",
+          "zh_title": "🔐 CrowdStrike的440亿美元豪赌"
         },
         {
-          "orig_title": "190: 对话蚂蚁灵光蔡伟：大厂首个「个人 Agent」，验证了什么",
-          "source": "晚点聊 LateTalk",
+          "orig_title": "CrowdStrike CEO: AI Cyberattack Wave, Hyperspeed Hacks, & The Patching Problem",
+          "source": "All-In Podcast",
           "category": "产品、设计与商业",
-          "link": "https://podcast.latepost.com/190",
-          "zh_title": "190：对话蚂蚁灵光蔡伟：大厂首个「个人 Agent」，验证了什么"
+          "link": "https://allinchamathjason.libsyn.com/crowdstrike-ceo-ai-cyberattack-wave-hyperspeed-hacks-the-patching-problem",
+          "zh_title": "CrowdStrike CEO：AI 网络攻击浪潮、超高速黑客攻击与补丁难题"
         }
       ]
     }
   ],
   "stream": [
     {
-      "orig_title": "Marvel crams every superhero ever into Avengers: Doomsday final trailer",
-      "source": "Ars Technica - All content",
-      "category": "工程与编程",
-      "link": "https://arstechnica.com/culture/2026/11/marvel-crams-every-superhero-ever-into-avengers-doomsday-final-trailer/",
-      "zh_title": "漫威把所有超级英雄都塞进《复仇者联盟：末日》最终预告片"
+      "orig_title": "Amazon’s Decart acquisition is a bet on using software to narrow the silicon gap with Nvidia",
+      "source": "TechCrunch",
+      "category": "AI 前沿",
+      "link": "https://techcrunch.com/2026/11/24/amazons-decart-acquisition-is-a-bet-on-using-software-to-narrow-the-gap-with-nvidia-in-the-ai-chip-race/",
+      "zh_title": "亚马逊收购Decart，押注用软件缩小与英伟达的芯片差距"
     },
     {
-      "orig_title": "字节，该造手机了",
-      "source": "极客公园",
-      "category": "产品、设计与商业",
-      "link": "http://www.geekpark.net/news/374374",
-      "zh_title": "字节，该造手机了"
-    },
-    {
-      "orig_title": "Jensen Huang reinstated as Nvidia CEO, board chair",
-      "source": "Ars Technica - All content",
-      "category": "工程与编程",
-      "link": "https://arstechnica.com/ai/2026/11/jensen-huang-reinstated-as-nvidia-ceo-board-chair/",
-      "zh_title": "黄仁勋被重新任命为英伟达首席执行官兼董事会主席"
-    },
-    {
-      "orig_title": "Supply and Demand",
-      "source": "Net Interest",
-      "category": "产品、设计与商业",
-      "link": "https://www.netinterest.co/p/supply-and-demand",
-      "zh_title": "供需关系"
-    },
-    {
-      "orig_title": "A 1992 Batmobile is going to auction, but don’t expect to see it out on the road",
-      "source": "Fast Company",
-      "category": "产品、设计与商业",
-      "link": "https://www.fastcompany.com/91647447/1992-batmobile-going-auction-dont-expect-see-out-road",
-      "zh_title": "一辆1992年款蝙蝠车即将拍卖，但别指望能开上路"
-    },
-    {
-      "orig_title": "Adviser links: confidence and clarity",
-      "source": "Abnormal Returns",
-      "category": "产品、设计与商业",
-      "link": "https://abnormalreturns.com/2026/11/23/adviser-links-confidence-and-clarity/",
-      "zh_title": "顾问链接：信心与清晰度"
-    },
-    {
-      "orig_title": "Government Regulation and Demand",
+      "orig_title": "Jason Zengerle Profiles Treasury Secretary Scott Bessent for The New Yorker",
       "source": "daringfireball.net",
       "category": "产品、设计与商业",
-      "link": "https://stratechery.com/2026/obituaries/",
-      "zh_title": "政府监管与需求"
+      "link": "https://www.newyorker.com/magazine/2026/11/30/scott-bessent-profile",
+      "zh_title": "杰森·曾格尔为《纽约客》撰写财政部长斯科特·贝森特人物特写"
     },
     {
-      "orig_title": "英国自住房产交易小记",
-      "source": "集思录",
-      "category": "产品、设计与商业",
-      "link": "https://www.jisilu.cn/question/527140",
-      "zh_title": "英国自住房产交易小记"
-    },
-    {
-      "orig_title": "Dutch privacy authority urges consumers not to buy ‘pervert glasses’",
-      "source": "TechCrunch",
-      "category": "AI 前沿",
-      "link": "https://techcrunch.com/2026/11/23/dutch-privacy-authority-urges-consumers-not-to-buy-pervert-glasses/",
-      "zh_title": "荷兰隐私监管机构呼吁消费者不要购买“偷窥眼镜”"
-    },
-    {
-      "orig_title": "COP31 ends in failure as countries split over fossil fuels, climate finance",
-      "source": "Ars Technica - All content",
-      "category": "工程与编程",
-      "link": "https://arstechnica.com/science/2026/11/cop31-ends-in-failure-as-countries-split-over-fossil-fuels-climate-finance/",
-      "zh_title": "COP31以失败告终，各国在化石燃料与气候融资问题上分歧严重"
-    },
-    {
-      "orig_title": "Elon Musk Claims to Be Unfamiliar With MAGA",
-      "source": "daringfireball.net",
-      "category": "产品、设计与商业",
-      "link": "https://www.usatoday.com/story/opinion/columnist/2026/11/19/musk-maga-trump-republicans-billionaires/92855121007/",
-      "zh_title": "埃隆·马斯克声称对MAGA并不熟悉"
-    },
-    {
-      "orig_title": "Trump endorses Jensen Huang’s return to Nvidia, says US has no evidence of wrongdoing",
-      "source": "TechCrunch",
-      "category": "AI 前沿",
-      "link": "https://techcrunch.com/2026/11/23/trump-endorses-jensen-huangs-return-to-nvidia-says-us-has-no-evidence-of-wrongdoing/",
-      "zh_title": "特朗普支持黄仁勋重返英伟达，称美国未发现不当行为证据"
-    },
-    {
-      "orig_title": "Secure Flash: A Practical Path to Cyber Resilience Act Compliance",
-      "source": "EE Times",
-      "category": "硬件",
-      "link": "https://www.eetimes.com/secure-flash-a-practical-path-to-cyber-resilience-act-compliance/",
-      "zh_title": "安全闪存：通往《网络韧性法案》合规的务实之路"
-    },
-    {
-      "orig_title": "Why Nvidia brought Jensen Huang back as CEO despite his scandals",
-      "source": "Fast Company",
-      "category": "产品、设计与商业",
-      "link": "https://www.fastcompany.com/91647524/why-nvidia-brought-jensen-huang-back-as-ceo-despite-his-scandals",
-      "zh_title": "尽管丑闻缠身，英伟达为何仍请回黄仁勋担任首席执行官"
-    },
-    {
-      "orig_title": "Nvidia Board Reinstates Jensen Huang",
-      "source": "daringfireball.net",
-      "category": "产品、设计与商业",
-      "link": "https://nvidianews.nvidia.com/news/nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director",
-      "zh_title": "英伟达董事会重新任命黄仁勋"
-    },
-    {
-      "orig_title": "Sierra doubles valuation to $30B within six months as demand for AI in CX takes off",
-      "source": "TechCrunch",
-      "category": "AI 前沿",
-      "link": "https://techcrunch.com/2026/11/23/sierra-doubles-valuation-to-30b-within-six-months-as-demand-for-ai-in-cx-takes-off/",
-      "zh_title": "Sierra估值六个月内翻倍至300亿美元，AI在客户体验领域需求激增"
-    },
-    {
-      "orig_title": "Nvidia reverses course and brings Jensen Huang back as CEO",
-      "source": "TechCrunch",
-      "category": "AI 前沿",
-      "link": "https://techcrunch.com/2026/11/23/nvidia-reverses-course-and-brings-jensen-huang-back-as-ceo/",
-      "zh_title": "英伟达态度逆转，请回黄仁勋担任首席执行官"
-    },
-    {
-      "orig_title": "Nvidia soars as Jensen Huang returns to lead company",
-      "source": "CoinDesk",
-      "category": "产品、设计与商业",
-      "link": "https://www.coindesk.com/markets/2026/11/23/jensen-huang-returns-as-nvidia-ceo-as-shares-jump-27",
-      "zh_title": "黄仁勋回归执掌公司，英伟达股价飙升"
-    },
-    {
-      "orig_title": "Nvidia Reinstates Jensen Huang as CEO Days After Board Ruled Out His Return",
-      "source": "Decrypt",
-      "category": "产品、设计与商业",
-      "link": "https://decrypt.co/383797/nvidia-reinstates-jensen-huang-as-ceo-days-after-board-ruled-out-his-return",
-      "zh_title": "董事会排除黄仁勋回归数日后，英伟达重新任命其为首席执行官"
-    },
-    {
-      "orig_title": "Uber now lets you book rides that record the drive by default",
-      "source": "TechCrunch",
-      "category": "AI 前沿",
-      "link": "https://techcrunch.com/2026/11/23/uber-now-lets-you-book-rides-that-record-the-drive-by-default/",
-      "zh_title": "优步现允许用户预订默认记录行程的乘车服务"
-    },
-    {
-      "orig_title": "The Meta Software Factory: Advanced Agentic Engineering",
-      "source": "IndyDevDan",
-      "category": "工程与编程",
-      "link": "https://www.youtube.com/watch?v=PuHDu3Kn8sQ",
-      "zh_title": "Meta软件工厂：高级智能体工程"
-    },
-    {
-      "orig_title": "F1 in Las Vegas: You've never seen an F1 race like this before",
-      "source": "Ars Technica - All content",
-      "category": "工程与编程",
-      "link": "https://arstechnica.com/cars/2026/11/f1-in-las-vegas-youve-never-seen-an-f1-race-like-this-before/",
-      "zh_title": "F1拉斯维加斯站：你从未见过的F1赛事"
-    },
-    {
-      "orig_title": "Pluralistic: The Debt Trap (23 Nov 2026)",
-      "source": "pluralistic.net",
-      "category": "观点与杂谈",
-      "link": "https://pluralistic.net/2026/11/23/grasshoppers-v-ants/",
-      "zh_title": "多元主义：债务陷阱（2026年11月23日）"
-    },
-    {
-      "orig_title": "以后人类只剩些体力活可以干了吧",
-      "source": "集思录",
-      "category": "产品、设计与商业",
-      "link": "https://www.jisilu.cn/question/527133",
-      "zh_title": "以后人类只剩些体力活可以干了吧"
-    },
-    {
-      "orig_title": "The Download: AI’s judgment problem and carbon removal’s crop threat",
-      "source": "MIT Tech Review",
-      "category": "AI 前沿",
-      "link": "https://www.technologyreview.com/2026/11/23/1149548/the-download-ai-judgment-problem-carbon-removal-crop-threat/",
-      "zh_title": "下载：AI的判断难题与碳移除的作物威胁"
-    },
-    {
-      "orig_title": "OpenClaw for executives: Automate every 1% annoyance | Ankit Maheshwari (Innovaccer)",
-      "source": "Lenny's Newsletter",
-      "category": "产品、设计与商业",
-      "link": "https://www.lennysnewsletter.com/p/openclaw-for-executives-automate",
-      "zh_title": "面向高管的OpenClaw：自动化每一个1%的烦恼 | Ankit Maheshwari（Innovaccer）"
-    },
-    {
-      "orig_title": "Solana Meme Coin for Fiona the Hippo Raises $100K for Cincinnati Zoo Charity",
-      "source": "Decrypt",
-      "category": "产品、设计与商业",
-      "link": "https://decrypt.co/383762/solana-meme-coin-for-fiona-the-hippo-sends-100k-to-cincinnati-zoo-charity",
-      "zh_title": "河马菲奥娜的Solana迷因币为辛辛那提动物园慈善募得10万美元"
-    },
-    {
-      "orig_title": "Gadget Review: Cheap Zigbee Environmental Sensors ★★★☆☆",
-      "source": "shkspr.mobi",
-      "category": "观点与杂谈",
-      "link": "https://shkspr.mobi/blog/2026/11/gadget-review-cheap-zigbee-environmental-sensors/",
-      "zh_title": "数码评测：廉价Zigbee环境传感器 ★★★☆☆"
-    },
-    {
-      "orig_title": "Still Unproven: Can Britain Build a Tunnel?",
-      "source": "Marginal REVOLUTION",
-      "category": "观点与杂谈",
-      "link": "https://marginalrevolution.com/marginalrevolution/2026/11/still-unproven-can-britain-build-a-tunnel.html?utm_source=rss&utm_medium=rss&utm_campaign=still-unproven-can-britain-build-a-tunnel",
-      "zh_title": "仍未证实：英国能建成一条隧道吗？"
-    },
-    {
-      "orig_title": "The Tyranny of the Alphabet 2",
-      "source": "Marginal REVOLUTION",
-      "category": "观点与杂谈",
-      "link": "https://marginalrevolution.com/marginalrevolution/2026/11/94257.html?utm_source=rss&utm_medium=rss&utm_campaign=94257",
-      "zh_title": "字母表的暴政2"
-    },
-    {
-      "orig_title": "Tri-screen portable monitors aren’t for the faint of heart",
-      "source": "Ars Technica - All content",
-      "category": "工程与编程",
-      "link": "https://arstechnica.com/gadgets/2026/11/a-triple-screen-portable-monitor-means-more-pixels-and-more-bulk/",
-      "zh_title": "三屏便携显示器并非胆小者能驾驭"
-    },
-    {
-      "orig_title": "Why the Atari Jaguar is so expensive",
-      "source": "dfarq.homeip.net",
-      "category": "硬件",
-      "link": "https://dfarq.homeip.net/why-the-atari-jaguar-is-so-expensive/?utm_source=rss&utm_medium=rss&utm_campaign=why-the-atari-jaguar-is-so-expensive",
-      "zh_title": "为什么Atari Jaguar如此昂贵"
-    },
-    {
-      "orig_title": "Review: The Asus ProArt P16 offers a glimpse of a future powered by local AI",
-      "source": "Ars Technica - All content",
-      "category": "工程与编程",
-      "link": "https://arstechnica.com/reviews/2026/11/review-the-asus-proart-p16-offers-a-glimpse-of-a-future-powered-by-local-ai/",
-      "zh_title": "评测：华硕ProArt P16让人一窥本地AI驱动的未来"
-    },
-    {
-      "orig_title": "Why using rocks for carbon removal could eventually reduce crop growth",
-      "source": "MIT Tech Review",
-      "category": "AI 前沿",
-      "link": "https://www.technologyreview.com/2026/11/23/1149392/why-using-rocks-for-carbon-removal-could-eventually-reduce-crop-growth/",
-      "zh_title": "为什么用岩石进行碳移除最终可能降低作物生长"
-    },
-    {
-      "orig_title": "The One-Person Biotech | OpenAI Life Sciences",
-      "source": "a16z podcast",
-      "category": "AI 前沿",
-      "link": "https://a16z.simplecast.com/episodes/the-one-person-biotech-openai-life-sciences-TrZddFUB",
-      "zh_title": "单人生物技术公司 | OpenAI生命科学"
-    },
-    {
-      "orig_title": "Amazon Earnings, The Chip Question, About Agents",
-      "source": "Stratechery",
-      "category": "产品、设计与商业",
-      "link": "https://stratechery.com/2026/amazon-earnings-the-chip-question-about-agents/",
-      "zh_title": "亚马逊财报、芯片问题、关于智能体"
-    },
-    {
-      "orig_title": "Gravity on an oblate planet",
+      "orig_title": "Taking a password joke seriously",
       "source": "johndcook.com",
       "category": "观点与杂谈",
-      "link": "https://www.johndcook.com/blog/2026/11/23/oblate-spheroid-gravity/",
-      "zh_title": "扁球行星上的重力"
+      "link": "https://www.johndcook.com/blog/2026/11/24/password-joke/",
+      "zh_title": "认真对待一个密码笑话"
     },
     {
-      "orig_title": "微软 To Do 要关闭了，奇妙清单创始人早就做了替代品：Superlist",
-      "source": "小众软件",
-      "category": "产品、设计与商业",
-      "link": "https://www.appinn.com/superlist-start/",
-      "zh_title": "微软To Do要关闭了，奇妙清单创始人早就做了替代品：Superlist"
-    },
-    {
-      "orig_title": "CEO Interview: Blueberry Pediatrics",
-      "source": "CB Insights",
-      "category": "产品、设计与商业",
-      "link": "https://www.cbinsights.com/research/ceo-interview-blueberry-pediatrics/",
-      "zh_title": "CEO访谈：Blueberry Pediatrics"
-    },
-    {
-      "orig_title": "The Enigma of SoftBank’s $1 Trillion SK Hynix Buyout Attempt",
-      "source": "EE Times",
-      "category": "硬件",
-      "link": "https://www.eetimes.com/the-enigma-of-softbanks-1-trillion-sk-hynix-buyout-attempt/",
-      "zh_title": "软银1万亿美元收购SK海力士尝试之谜"
-    },
-    {
-      "orig_title": "Here's Why Data Breach Disclosure is so Hard: Lessons from Hundreds of Emails with Hacked Companies",
-      "source": "troyhunt.com",
-      "category": "安全",
-      "link": "https://www.troyhunt.com/heres-why-data-breach-disclosure-is-so-hard-lessons-from-hundreds-of-emails-with-hacked-companies/",
-      "zh_title": "数据泄露披露为何如此困难：来自与遭黑客攻击公司数百封邮件的教训"
-    },
-    {
-      "orig_title": "二级回收，将成为争夺下一代太空经济入场券的「新风向标」",
-      "source": "极客公园",
-      "category": "产品、设计与商业",
-      "link": "http://www.geekpark.net/news/374355",
-      "zh_title": "二级回收，将成为争夺下一代太空经济入场券的「新风向标」"
-    },
-    {
-      "orig_title": "This Swedish bitcoin treasury firm lost 30 BTC trading part of its own stack",
+      "orig_title": "Anchorage Digital to unveil new asset-management subsidiary",
       "source": "CoinDesk",
       "category": "产品、设计与商业",
-      "link": "https://www.coindesk.com/markets/2026/11/23/this-swedish-bitcoin-treasury-firm-lost-30-btc-trading-part-of-its-own-stack",
-      "zh_title": "这家瑞典比特币财资公司因交易自有持仓的一部分而损失了 30 枚 BTC"
+      "link": "https://www.coindesk.com/business/2026/11/24/anchorage-digital-to-unveil-new-asset-management-subsidiary",
+      "zh_title": "Anchorage Digital将推出新的资产管理子公司"
     },
     {
-      "orig_title": "利润增速降至 0.7%， 拼多多「申诉优赔」还要给商家补贴几十亿",
-      "source": "极客公园",
+      "orig_title": "Research links: the efficient-markets revolution",
+      "source": "Abnormal Returns",
       "category": "产品、设计与商业",
-      "link": "http://www.geekpark.net/news/374348",
-      "zh_title": "利润增速降至 0.7%，拼多多「申诉优赔」还要给商家补贴几十亿"
+      "link": "https://abnormalreturns.com/2026/11/24/research-links-the-efficient-markets-revolution/",
+      "zh_title": "研究链接：有效市场革命"
     },
     {
-      "orig_title": "微软 WinGet 开始支持 MCP：以后安装 Windows 软件，直接告诉 AI 就行了",
-      "source": "小众软件",
-      "category": "产品、设计与商业",
-      "link": "https://www.appinn.com/winget-mcp-server/",
-      "zh_title": "微软 WinGet 开始支持 MCP：以后安装 Windows 软件，直接告诉 AI 就行了"
-    },
-    {
-      "orig_title": "20VC: Nvidia Without Jensen: Is Anthropic the Real Winner? | \"Fire the Bankers\": Why Most VCs Won't Survive AI | Why the Inference Layer is Uninvestable and Tranched Rounds Should Be Banned with Anjney Midha",
-      "source": "20VC",
-      "category": "产品、设计与商业",
-      "link": "https://thetwentyminutevc.libsyn.com/20vc-nvidia-without-jensen-is-anthropic-the-real-winner-fire-the-bankers-why-most-vcs-wont-survive-ai-why-the-inference-layer-is-uninvestable-and-tranched-rounds-should-be-banned-with-anjney-midha",
-      "zh_title": "20VC：没有黄仁勋的英伟达：Anthropic 才是真正赢家？|「解雇银行家」：为何多数风投撑不过 AI 浪潮 | 为何推理层不可投资、分批融资轮应被禁止——对话 Anjney Midha"
-    },
-    {
-      "orig_title": "Cardano holders are turning down a $4 million request for running its flagship event",
-      "source": "CoinDesk",
-      "category": "产品、设计与商业",
-      "link": "https://www.coindesk.com/markets/2026/11/23/cardano-holders-are-turning-down-a-usd4-million-request-for-running-its-flagship-event",
-      "zh_title": "Cardano 持有者拒绝为其旗舰活动运营出资 400 万美元的请求"
-    },
-    {
-      "orig_title": "Best non-fiction books of 2026",
-      "source": "Marginal REVOLUTION",
+      "orig_title": "What happens to entries in the CoreApplication Properties when the source apartment shuts down?",
+      "source": "devblogs.microsoft.com/oldnewthing",
       "category": "观点与杂谈",
-      "link": "https://marginalrevolution.com/marginalrevolution/2026/11/best-non-fiction-books-of-2026.html?utm_source=rss&utm_medium=rss&utm_campaign=best-non-fiction-books-of-2026",
-      "zh_title": "2026 年最佳非虚构图书"
+      "link": "https://devblogs.microsoft.com/oldnewthing/20261124-00/?p=112889/",
+      "zh_title": "当源公寓关闭时，CoreApplication Properties中的条目会怎样？"
     },
     {
-      "orig_title": "Financial Crash Expert: Biggest Money Mistake You'll Make, Everyone Gets This Wrong! | Steve Eisman",
-      "source": "The Diary Of A CEO",
+      "orig_title": "300+ books to read: A gift guide for curious readers",
+      "source": "a16z crypto",
       "category": "产品、设计与商业",
-      "link": "https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/1390/claritaspod.com/measure/p.podderapp.com/2544644999/mgln.ai/e/1651/episode.flightcast.com/01M6ZMGD93HSQPW18CPDQCPKWB.mp3?fcv=d9wscx8br79ly8z8gaezgb0a",
-      "zh_title": "金融危机专家：你将犯下的最大金钱错误，所有人都搞错了！| Steve Eisman"
+      "link": "https://a16zfrontier.com/posts/article/300-books-to-read-gift-guide/",
+      "zh_title": "300多本必读书：献给好奇读者的礼物指南"
     },
     {
-      "orig_title": "Google Gemini 黑五五折！AI Pro/Plus 年费 100/24 美元",
-      "source": "小众软件",
+      "orig_title": "How Trump and Silicon Valley forced Nvidia to take Jensen Huang back",
+      "source": "Ars Technica - All content",
+      "category": "工程与编程",
+      "link": "https://arstechnica.com/tech-policy/2026/11/how-trump-and-silicon-valley-forced-nvidia-to-take-jensen-huang-back/",
+      "zh_title": "特朗普与硅谷如何迫使英伟达重新接纳黄仁勋"
+    },
+    {
+      "orig_title": "How to install an app on your Commodore 64",
+      "source": "anildash.com",
       "category": "产品、设计与商业",
-      "link": "https://www.appinn.com/google-ai-pro-black-friday-2026/",
-      "zh_title": "Google Gemini 黑五五折！AI Pro/Plus 年费 100/24 美元"
+      "link": "https://anildash.com/2026/10/08/install-an-app-commodore-64/",
+      "zh_title": "如何在Commodore 64上安装应用"
     },
     {
-      "orig_title": "Inkling 2 Mini GGUF: The Download That Fits Your Memory",
-      "source": "FuturePulse",
-      "category": "AI 前沿",
-      "link": "https://futurpulse.com/inkling-2-mini-gguf-the-download-that-fits-your-memory/",
-      "zh_title": "Inkling 2 Mini GGUF：适配你内存的下载版本"
+      "orig_title": "NYC’s venture capitalists need to love themselves",
+      "source": "anildash.com",
+      "category": "产品、设计与商业",
+      "link": "https://anildash.com/2026/11/03/nyc-venture-capitalists-love-themselves/",
+      "zh_title": "纽约市的风险投资家需要爱自己"
     },
     {
-      "orig_title": "How to Bear Your Desolations",
-      "source": "Brain Pickings",
+      "orig_title": "Memorable 12-digit primes",
+      "source": "johndcook.com",
       "category": "观点与杂谈",
-      "link": "https://www.themarginalian.org/2026/11/22/any-common-desolation-ellen-bass/",
-      "zh_title": "如何承受你的荒凉"
+      "link": "https://www.johndcook.com/blog/2026/11/24/memorable-12-digit-primes/",
+      "zh_title": "令人难忘的12位素数"
     },
     {
-      "orig_title": "Cultural Scope",
-      "source": "Overcoming Bias",
-      "category": "观点与杂谈",
-      "link": "https://www.overcomingbias.com/p/cultural-scope",
-      "zh_title": "文化视野"
-    },
-    {
-      "orig_title": "Parallels Desktop 27 最新优惠，黑五史低 249元/年，：在 Mac 上运行多个操作系统",
-      "source": "小众软件",
-      "category": "产品、设计与商业",
-      "link": "https://www.appinn.com/parallels-desktop-27/",
-      "zh_title": "Parallels Desktop 27 最新优惠，黑五史低 249元/年：在 Mac 上运行多个操作系统"
-    },
-    {
-      "orig_title": "FastFrames-L Model: What Apple’s 45 ms Video Generator Really Needs",
-      "source": "FuturePulse",
-      "category": "AI 前沿",
-      "link": "https://futurpulse.com/fastframes-l-model/",
-      "zh_title": "FastFrames-L 模型：苹果的 45 毫秒视频生成器真正需要什么"
-    },
-    {
-      "orig_title": "How Notable Capital, GIC, and Baillie Gifford bet big on Anthropic before its IPO",
+      "orig_title": "Huang reportedly admitted to more than two affairs to Nvidia’s board",
       "source": "TechCrunch",
       "category": "AI 前沿",
-      "link": "https://techcrunch.com/2026/11/22/how-notable-capital-gic-and-baillie-gifford-bet-big-on-anthropic-before-its-ipo/",
-      "zh_title": "Notable Capital、GIC 和 Baillie Gifford 如何在 Anthropic IPO 前大举押注"
+      "link": "https://techcrunch.com/2026/11/24/huang-reportedly-admitted-to-more-than-two-affairs-to-nvidias-board/",
+      "zh_title": "据报道黄仁勋向英伟达董事会承认不止两段婚外情"
     },
     {
-      "orig_title": "OpenAI 首席科学家：AI 最早明年加速进化；B 站开始清理「大肥鱼」泛滥；瘫痪患者用脑机打 GTA6｜极客早知道",
+      "orig_title": "The Download: AI’s gas power boom and a consciousness reality check",
+      "source": "MIT Tech Review",
+      "category": "AI 前沿",
+      "link": "https://www.technologyreview.com/2026/11/24/1149669/the-download-data-centers-gas-ai-consciousness/",
+      "zh_title": "下载：AI的天然气电力热潮与意识现实检验"
+    },
+    {
+      "orig_title": "🔐 CrowdStrike's $44 Billion Bet",
+      "source": "How They Make Money",
+      "category": "产品、设计与商业",
+      "link": "https://www.appeconomyinsights.com/p/crowdstrikes-44-billion-bet",
+      "zh_title": "🔐 CrowdStrike的440亿美元豪赌"
+    },
+    {
+      "orig_title": "GTA 6 PC Ports ‘Nuked’ Just Days Before Devs Expected It to Be Playable",
+      "source": "Decrypt",
+      "category": "产品、设计与商业",
+      "link": "https://decrypt.co/383860/gta-6-pc-ports-nuked-just-days-before-devs-expected-it-to-be-playable",
+      "zh_title": "《GTA 6》PC移植版在开发者预期可玩前几天被“摧毁”"
+    },
+    {
+      "orig_title": "Introducing StrategyBench",
+      "source": "Dan Hock's Essays",
+      "category": "产品、设计与商业",
+      "link": "https://www.danhock.co/p/strategy-bench",
+      "zh_title": "推出StrategyBench"
+    },
+    {
+      "orig_title": "Virgin Media Hub 5 API",
+      "source": "shkspr.mobi",
+      "category": "观点与杂谈",
+      "link": "https://shkspr.mobi/blog/2026/11/virgin-media-hub-5-api/",
+      "zh_title": "Virgin Media Hub 5 API"
+    },
+    {
+      "orig_title": "Amazon says hackers' AI agents found and exploited 0-day with little human input",
+      "source": "Ars Technica - All content",
+      "category": "工程与编程",
+      "link": "https://arstechnica.com/security/2026/11/amazon-says-hackers-ai-agents-found-and-exploited-0-day-with-little-human-input/",
+      "zh_title": "亚马逊称黑客的AI代理在极少人工输入下发现并利用了0day漏洞"
+    },
+    {
+      "orig_title": "Pluralistic: Free lunches (24 Nov 2026)",
+      "source": "pluralistic.net",
+      "category": "观点与杂谈",
+      "link": "https://pluralistic.net/2026/11/24/move-fast-break-kings/",
+      "zh_title": "多元主义：免费午餐（2026年11月24日）"
+    },
+    {
+      "orig_title": "One terminal command gave my forgotten Android device a desk job",
+      "source": "Ars Technica - All content",
+      "category": "工程与编程",
+      "link": "https://arstechnica.com/gadgets/2026/11/one-terminal-command-gave-my-forgotten-android-device-a-desk-job/",
+      "zh_title": "一条终端命令让我被遗忘的安卓设备有了桌面工作"
+    },
+    {
+      "orig_title": "JPMorgan, HSBC and StoneX complete first digital gold trades in London",
+      "source": "CoinDesk",
+      "category": "产品、设计与商业",
+      "link": "https://www.coindesk.com/business/2026/11/24/jpmorgan-hsbc-and-stonex-complete-first-digital-gold-trades-in-london",
+      "zh_title": "摩根大通、汇丰和StoneX在伦敦完成首批数字黄金交易"
+    },
+    {
+      "orig_title": "Why AOL bought Netscape",
+      "source": "dfarq.homeip.net",
+      "category": "硬件",
+      "link": "https://dfarq.homeip.net/why-aol-bought-netscape/?utm_source=rss&utm_medium=rss&utm_campaign=why-aol-bought-netscape",
+      "zh_title": "AOL为何收购网景"
+    },
+    {
+      "orig_title": "Ukraine sinks Russian warship, strikes cargo ships from Mediterranean to Baltic",
+      "source": "Ars Technica - All content",
+      "category": "工程与编程",
+      "link": "https://arstechnica.com/gadgets/2026/11/ukraines-sea-drones-blow-up-russian-warship-in-benghazi-operation/",
+      "zh_title": "乌克兰击沉俄罗斯军舰，打击从地中海到波罗的海的货船"
+    },
+    {
+      "orig_title": "Vehicle-to-Grid: Great Idea or Unrealistic Dream? (Part 2)",
+      "source": "EE Times",
+      "category": "硬件",
+      "link": "https://www.eetimes.com/vehicle-to-grid-great-idea-or-unrealistic-dream-part-2/",
+      "zh_title": "车辆到电网：绝佳构想还是不切实际的梦想？（第二部分）"
+    },
+    {
+      "orig_title": "Trump Says He 'Made the Deal' to Reinstate Jensen Huang, Sparking Bipartisan Backlash",
+      "source": "Decrypt",
+      "category": "产品、设计与商业",
+      "link": "https://decrypt.co/383853/trump-says-he-made-the-deal-to-reinstate-jensen-huang-sparking-bipartisan-backlash",
+      "zh_title": "特朗普称他“达成了协议”让黄仁勋复职，引发两党反弹"
+    },
+    {
+      "orig_title": "Data centers are getting their own natural gas power plants",
+      "source": "MIT Tech Review",
+      "category": "AI 前沿",
+      "link": "https://www.technologyreview.com/2026/11/24/1149622/data-centers-natural-gas/",
+      "zh_title": "数据中心正在拥有自己的天然气发电厂"
+    },
+    {
+      "orig_title": "The Complete Guide to Embedding Models for Machine Learning",
+      "source": "Machine Learning Mastery",
+      "category": "AI 前沿",
+      "link": "https://machinelearningmastery.com/the-complete-guide-to-embedding-models-for-machine-learning/",
+      "zh_title": "机器学习嵌入模型完全指南"
+    },
+    {
+      "orig_title": "REPLAY: The Story of Apple Pay | Jennifer Bailey (2024)",
+      "source": "a16z podcast",
+      "category": "AI 前沿",
+      "link": "https://a16z.simplecast.com/episodes/replay-the-story-of-apple-pay-jennifer-bailey-2024-0WemB8oE",
+      "zh_title": "回放：Apple Pay的故事 | Jennifer Bailey（2024）"
+    },
+    {
+      "orig_title": "The Individual Exception",
+      "source": "Stratechery",
+      "category": "产品、设计与商业",
+      "link": "https://stratechery.com/2026/the-individual-exception/",
+      "zh_title": "个体例外"
+    },
+    {
+      "orig_title": "高德发布世界模型ABot-World 0.5，支持构建音画同步、可实时重塑的AI物理世界",
+      "source": "量子位",
+      "category": "AI 前沿",
+      "link": "https://www.qbitai.com/2026/11/512454.html",
+      "zh_title": "高德发布世界模型ABot-World 0.5，支持构建音画同步、可实时重塑的AI物理世界"
+    },
+    {
+      "orig_title": "South Korea regulator backs bank-controlled stablecoins after months of dispute",
+      "source": "CoinDesk",
+      "category": "产品、设计与商业",
+      "link": "https://www.coindesk.com/policy/2026/11/24/south-korea-regulator-backs-bank-controlled-stablecoins-after-months-of-dispute",
+      "zh_title": "韩国监管机构在数月争议后支持银行控制的稳定币"
+    },
+    {
+      "orig_title": "蚂蚁开源医疗健康预测模型，根据睡眠数据可预测未来六年150种疾病风险",
+      "source": "量子位",
+      "category": "AI 前沿",
+      "link": "https://www.qbitai.com/2026/11/512451.html",
+      "zh_title": "蚂蚁开源医疗健康预测模型，根据睡眠数据可预测未来六年150种疾病风险"
+    },
+    {
+      "orig_title": "黄仁勋，离开英伟达的 11 天",
       "source": "极客公园",
       "category": "产品、设计与商业",
-      "link": "http://www.geekpark.net/news/374304",
-      "zh_title": "OpenAI 首席科学家：AI 最早明年加速进化；B 站开始清理「大肥鱼」泛滥；瘫痪患者用脑机打 GTA6｜极客早知道"
+      "link": "http://www.geekpark.net/news/374431",
+      "zh_title": "黄仁勋，离开英伟达的11天"
     },
     {
-      "orig_title": "发现频道：10款大家发现的好评软件[2026年第47期]",
+      "orig_title": "智谱刚刚发了GLM-5.4，全新架构的那种！网友直呼：超过预期",
+      "source": "量子位",
+      "category": "AI 前沿",
+      "link": "https://www.qbitai.com/2026/11/512423.html",
+      "zh_title": "智谱刚刚发布了GLM-5.4，全新架构的那种！网友直呼：超过预期"
+    },
+    {
+      "orig_title": "If I Had to Start a Business Tomorrow, I'd Do This | Ep 1017",
+      "source": "Alex Hormozi",
+      "category": "产品、设计与商业",
+      "link": "https://pscrb.fm/rss/p/episode.flightcast.com/01M85EHQFTXM51RY7461QZTCPX.mp3",
+      "zh_title": "如果我明天要创业，我会这样做 | 第1017期"
+    },
+    {
+      "orig_title": "最新议程与嘉宾阵容公布！2027中国AIoT产业年会，11月27日深圳见",
+      "source": "量子位",
+      "category": "AI 前沿",
+      "link": "https://www.qbitai.com/2026/11/512411.html",
+      "zh_title": "最新议程与嘉宾阵容公布！2027中国AIoT产业年会，11月27日深圳见"
+    },
+    {
+      "orig_title": "Vehicle-to-Grid: Great Idea or Unrealistic Dream?",
+      "source": "EE Times",
+      "category": "硬件",
+      "link": "https://www.eetimes.com/vehicle-to-grid-great-idea-or-unrealistic-dream/",
+      "zh_title": "车辆到电网：绝佳构想还是不切实际的梦想？"
+    },
+    {
+      "orig_title": "叙事时代丨第20届中国投资年会·有限合伙人峰会在沪成功举办",
+      "source": "量子位",
+      "category": "AI 前沿",
+      "link": "https://www.qbitai.com/2026/11/512387.html",
+      "zh_title": "叙事时代丨第20届中国投资年会·有限合伙人峰会在沪成功举办"
+    },
+    {
+      "orig_title": "华为星芒O1 Pro，如何把手机 AI 再往前努一小步",
+      "source": "极客公园",
+      "category": "产品、设计与商业",
+      "link": "http://www.geekpark.net/news/374417",
+      "zh_title": "华为星芒O1 Pro，如何把手机AI再往前推一小步"
+    },
+    {
+      "orig_title": "NSING Featured CRA, AI Robotics, Motor Control and Digital Energy at electronica 2026",
+      "source": "EE Times",
+      "category": "硬件",
+      "link": "https://www.eetimes.com/nsing-featured-cra-ai-robotics-motor-control-and-digital-energy-at-electronica-2026/",
+      "zh_title": "NSING在electronica 2026上展示CRA、AI机器人、电机控制和数字能源"
+    },
+    {
+      "orig_title": "Best fiction 2026",
+      "source": "Marginal REVOLUTION",
+      "category": "观点与杂谈",
+      "link": "https://marginalrevolution.com/marginalrevolution/2026/11/best-fiction-2026.html?utm_source=rss&utm_medium=rss&utm_campaign=best-fiction-2026",
+      "zh_title": "2026年最佳虚构作品"
+    },
+    {
+      "orig_title": "Comments and emails",
+      "source": "Herman's Blog",
+      "category": "工程与编程",
+      "link": "https://herman.bearblog.dev/comments-and-emails/",
+      "zh_title": "评论与邮件"
+    },
+    {
+      "orig_title": "Executive Interview: Wetag",
+      "source": "CB Insights",
+      "category": "产品、设计与商业",
+      "link": "https://www.cbinsights.com/research/executive-interview-wetag/",
+      "zh_title": "高管访谈：Wetag"
+    },
+    {
+      "orig_title": "The Health Effects of Eating Red Meat",
+      "source": "Marginal REVOLUTION",
+      "category": "观点与杂谈",
+      "link": "https://marginalrevolution.com/marginalrevolution/2026/11/the-health-effects-of-eating-red-meat.html?utm_source=rss&utm_medium=rss&utm_campaign=the-health-effects-of-eating-red-meat",
+      "zh_title": "吃红肉对健康的影响"
+    },
+    {
+      "orig_title": "Executive Interview: Real Time Taxes",
+      "source": "CB Insights",
+      "category": "产品、设计与商业",
+      "link": "https://www.cbinsights.com/research/executive-interview-real-time-taxes/",
+      "zh_title": "高管访谈：实时税务"
+    },
+    {
+      "orig_title": "CEO Interview: Aelos",
+      "source": "CB Insights",
+      "category": "产品、设计与商业",
+      "link": "https://www.cbinsights.com/research/ceo-interview-aelos/",
+      "zh_title": "CEO访谈：Aelos"
+    },
+    {
+      "orig_title": "全新 Windows 11 系统搜索：速度快、不卡顿、内存占用低，用了都说好",
       "source": "小众软件",
       "category": "产品、设计与商业",
-      "link": "https://www.appinn.com/faxian-top10-2647/",
-      "zh_title": "发现频道：10款大家发现的好评软件[2026年第47期]"
+      "link": "https://www.appinn.com/windows-11-new-native-search/",
+      "zh_title": "全新 Windows 11 系统搜索：速度快、不卡顿、内存占用低，用了都说好"
     },
     {
-      "orig_title": "190: 对话蚂蚁灵光蔡伟：大厂首个「个人 Agent」，验证了什么",
-      "source": "晚点聊 LateTalk",
-      "category": "产品、设计与商业",
-      "link": "https://podcast.latepost.com/190",
-      "zh_title": "190：对话蚂蚁灵光蔡伟：大厂首个「个人 Agent」，验证了什么"
-    },
-    {
-      "orig_title": "datasette-charts 0.1a0",
-      "source": "simonwillison.net",
-      "category": "AI 前沿",
-      "link": "https://simonwillison.net/2026/Nov/23/datasette-charts/",
-      "zh_title": "datasette-charts 0.1a0"
-    },
-    {
-      "orig_title": "Two graphs",
-      "source": "martinalderson.com",
-      "category": "工程与编程",
-      "link": "https://martinalderson.com/posts/two-graphs/?utm_source=rss&utm_medium=rss&utm_campaign=feed",
-      "zh_title": "两张图"
-    },
-    {
-      "orig_title": "When in doubt, flail about",
-      "source": "seangoedecke.com",
-      "category": "工程与编程",
-      "link": "https://seangoedecke.com/when-in-doubt-flail-about/",
-      "zh_title": "存疑时就胡乱挥舞"
-    },
-    {
-      "orig_title": "Notes on OpenAI's perplexity reveal",
-      "source": "seangoedecke.com",
-      "category": "工程与编程",
-      "link": "https://seangoedecke.com/notes-on-openais-perplexity-reveal/",
-      "zh_title": "关于 OpenAI 困惑度披露的笔记"
-    },
-    {
-      "orig_title": "Partnering with Isomorphic Labs: Drug Discovery Is an AI Problem",
-      "source": "Sequoia Capital",
-      "category": "产品、设计与商业",
-      "link": "https://www.sequoiacap.com/article/partnering-with-isomorphic-labs-drug-discovery-is-an-ai-problem",
-      "zh_title": "与 Isomorphic Labs 合作：药物发现是一个 AI 问题"
-    },
-    {
-      "orig_title": "Ivy",
-      "source": "daringfireball.net",
-      "category": "产品、设计与商业",
-      "link": "https://semantical.com/?utm_campaign=df-2026-12",
-      "zh_title": "常春藤"
-    },
-    {
-      "orig_title": "Select Styling Specimens",
-      "source": "simonwillison.net",
-      "category": "AI 前沿",
-      "link": "https://simonwillison.net/2026/Nov/22/select-styling/",
-      "zh_title": "精选风格样本"
-    },
-    {
-      "orig_title": "Increasing pay for lower wage workers",
-      "source": "Marginal REVOLUTION",
-      "category": "观点与杂谈",
-      "link": "https://marginalrevolution.com/marginalrevolution/2026/11/increasing-pay-for-lower-wage-workers.html?utm_source=rss&utm_medium=rss&utm_campaign=increasing-pay-for-lower-wage-workers",
-      "zh_title": "提高低薪工人的薪酬"
-    },
-    {
-      "orig_title": "Sunday assorted links",
-      "source": "Marginal REVOLUTION",
-      "category": "观点与杂谈",
-      "link": "https://marginalrevolution.com/marginalrevolution/2026/11/sunday-assorted-links-591.html?utm_source=rss&utm_medium=rss&utm_campaign=sunday-assorted-links-591",
-      "zh_title": "周日杂项链接"
-    },
-    {
-      "orig_title": "Frostbite CPU architecture: AI-designed tiles cut CPU overhead",
+      "orig_title": "Impeccable skill: design reviews with 62 local rules",
       "source": "FuturePulse",
       "category": "AI 前沿",
-      "link": "https://futurpulse.com/frostbite-cpu-architecture-ai-designed-tiles-cut-cpu-overhead/",
-      "zh_title": "Frostbite CPU 架构：AI 设计的瓦片降低 CPU 开销"
+      "link": "https://futurpulse.com/impeccable-skill-design-reviews-with-62-local-rules/",
+      "zh_title": "精湛技艺：依据62条本地规则开展设计评审"
     },
     {
-      "orig_title": "slopcore",
-      "source": "geohot.github.io",
+      "orig_title": "Safe Anything scanner: catches common repository risks",
+      "source": "FuturePulse",
       "category": "AI 前沿",
-      "link": "https://geohot.github.io//blog/jekyll/update/2026/11/23/slopcore.html",
-      "zh_title": "废料核"
+      "link": "https://futurpulse.com/safe-anything-scanner-catches-common-repository-risks/",
+      "zh_title": "Safe Anything 扫描器：捕捉常见仓库风险"
     },
     {
-      "orig_title": "Mac Power Users 876: The iPhone Duo duo, HomeView, and PROLED MacBook Pro",
-      "source": "MacSparky",
+      "orig_title": "极客公园创新大会 2027 全议程公布！",
+      "source": "极客公园",
       "category": "产品、设计与商业",
-      "link": "https://www.macsparky.com/blog/2026/11/mac-power-users-876-the-iphone-duo-duo-homeview-and-proled-macbook-pro/",
-      "zh_title": "Mac Power Users 876：iPhone Duo 双人组、HomeView 与 PROLED MacBook Pro"
+      "link": "http://www.geekpark.net/news/374395",
+      "zh_title": "极客公园创新大会 2027 全议程公布！"
+    },
+    {
+      "orig_title": "datasette-charts 0.2a0",
+      "source": "simonwillison.net",
+      "category": "AI 前沿",
+      "link": "https://simonwillison.net/2026/Nov/24/datasette-charts/",
+      "zh_title": "datasette-charts 0.2a0"
+    },
+    {
+      "orig_title": "[AINews] Jensen Is Back! and OpenAI Shows Its Pretraining Curve, joined by Microsoft",
+      "source": "Latent.Space",
+      "category": "AI 前沿",
+      "link": "https://latent.space/p/ainews-jensen-is-back-and-openai-shows-its-pretraining-curve-joined-by-microsoft/",
+      "zh_title": "[AINews] 黄仁勋回归！OpenAI 展示预训练曲线，微软同台参与"
+    },
+    {
+      "orig_title": "datasette-agent 0.7a1",
+      "source": "simonwillison.net",
+      "category": "AI 前沿",
+      "link": "https://simonwillison.net/2026/Nov/24/datasette-agent/",
+      "zh_title": "datasette-agent 0.7a1"
+    },
+    {
+      "orig_title": "Koofr 云存储：免费 10GB 空间，支持 WebDAV、Rclone｜终身订阅 1TB 特价129.9美元【再次】",
+      "source": "小众软件",
+      "category": "产品、设计与商业",
+      "link": "https://www.appinn.com/koofr-1tb/",
+      "zh_title": "Koofr 云存储：免费 10GB 空间，支持 WebDAV、Rclone｜终身订阅 1TB 特价129.9美元【再次】"
+    },
+    {
+      "orig_title": "高危漏洞 Upload2Shell 公开：上传图片即可入侵服务器｜CVE-2026-125396，8.5 分",
+      "source": "小众软件",
+      "category": "产品、设计与商业",
+      "link": "https://www.appinn.com/upload2shell-cve-2026-125396/",
+      "zh_title": "高危漏洞 Upload2Shell 公开：上传图片即可入侵服务器｜CVE-2026-125396，8.5 分"
+    },
+    {
+      "orig_title": "CrowdStrike CEO: AI Cyberattack Wave, Hyperspeed Hacks, & The Patching Problem",
+      "source": "All-In Podcast",
+      "category": "产品、设计与商业",
+      "link": "https://allinchamathjason.libsyn.com/crowdstrike-ceo-ai-cyberattack-wave-hyperspeed-hacks-the-patching-problem",
+      "zh_title": "CrowdStrike CEO：AI 网络攻击浪潮、超高速黑客攻击与补丁难题"
+    },
+    {
+      "orig_title": "Comparing AI R&D compute caps and deployment lags",
+      "source": "AI Alignment Forum",
+      "category": "AI 前沿",
+      "link": "https://www.alignmentforum.org/posts/e758PJCpwAwyodvEj/comparing-ai-r-and-d-compute-caps-and-deployment-lags",
+      "zh_title": "比较 AI 研发算力上限与部署滞后"
+    },
+    {
+      "orig_title": "Jensen is back",
+      "source": "Platformer",
+      "category": "AI 前沿",
+      "link": "https://www.platformer.news/jensen-huang-returns-nvidia/",
+      "zh_title": "黄仁勋回归"
+    },
+    {
+      "orig_title": "Trump's Mission to Get Jensen Huang Back at Nvidia",
+      "source": "Hard Fork",
+      "category": "AI 前沿",
+      "link": "https://www.nytimes.com/column/hard-fork",
+      "zh_title": "特朗普推动黄仁勋重返英伟达"
+    },
+    {
+      "orig_title": "黄仁勋重返英伟达，市值涨31.48%；马斯克：AI 研发落后对手，出租算力比自研更赚钱；新一代 AI 模型更爱「爆粗口」",
+      "source": "极客公园",
+      "category": "产品、设计与商业",
+      "link": "http://www.geekpark.net/news/374375",
+      "zh_title": "黄仁勋重返英伟达，市值涨31.48%；马斯克：AI 研发落后对手，出租算力比自研更赚钱；新一代 AI 模型更爱「爆粗口」"
+    },
+    {
+      "orig_title": "[Sponsor] Finalist Daily Planner Meets iPhone Duo",
+      "source": "daringfireball.net",
+      "category": "产品、设计与商业",
+      "link": "https://www.finalist.works/iphone-duo-planner/?utm_source=df-nov-2026",
+      "zh_title": "[赞助] 入围者每日计划本遇上iPhone Duo"
+    },
+    {
+      "orig_title": "Jensen Huang Returns to Work",
+      "source": "daringfireball.net",
+      "category": "产品、设计与商业",
+      "link": "https://www.businessinsider.com/jensen-huang-returns-to-nvidia-hq-im-terribly-sorry-2026-11",
+      "zh_title": "黄仁勋重返工作岗位"
+    },
+    {
+      "orig_title": "Finite Projective Spaces",
+      "source": "johndcook.com",
+      "category": "观点与杂谈",
+      "link": "https://www.johndcook.com/blog/2026/11/23/finite-projective-spaces/",
+      "zh_title": "有限射影空间"
+    },
+    {
+      "orig_title": "GLM-5.4: Toward Generalized Coding with Our First Loop Transformer",
+      "source": "simonwillison.net",
+      "category": "AI 前沿",
+      "link": "https://simonwillison.net/2026/Nov/23/glm-54/",
+      "zh_title": "GLM-5.4：借助我们的首个循环Transformer迈向广义编码"
+    },
+    {
+      "orig_title": "Figma employee sues, alleging company forced her to confront harassers",
+      "source": "TechCrunch",
+      "category": "AI 前沿",
+      "link": "https://techcrunch.com/2026/11/23/figma-employee-sues-alleging-company-forced-her-to-confront-harassers/",
+      "zh_title": "Figma员工提起诉讼，指控公司强迫她直面骚扰者"
+    },
+    {
+      "orig_title": "China's Z.ai Says Its New AI Model Can Think Like One Four Times Its Size",
+      "source": "Decrypt",
+      "category": "产品、设计与商业",
+      "link": "https://decrypt.co/383851/chinas-zai-new-ai-model-glm-think-like-four-times-size",
+      "zh_title": "中国的智谱AI称其新AI模型能以四倍于自身规模的模型方式思考"
+    },
+    {
+      "orig_title": "Do-it-yourself meta-analysis",
+      "source": "entropicthoughts.com",
+      "category": "观点与杂谈",
+      "link": "https://entropicthoughts.com/diy-meta-analysis",
+      "zh_title": "自己动手做元分析"
+    },
+    {
+      "orig_title": "Heart, the Heretic: The Forgotten Visionary Jane Ellen Harrison on Critical Thinking, Emotional Imagination, and How to Fix the World",
+      "source": "Brain Pickings",
+      "category": "观点与杂谈",
+      "link": "https://www.themarginalian.org/2026/11/23/jane-ellen-harrison-heresy-and-humanity/",
+      "zh_title": "异端之心：被遗忘的先知简·艾伦·哈里森论批判性思维、情感想象力以及如何修复世界"
+    },
+    {
+      "orig_title": "Trump halts Iowa detonation, says new governor to blame if it blows accidentally",
+      "source": "Ars Technica - All content",
+      "category": "工程与编程",
+      "link": "https://arstechnica.com/health/2026/11/trump-halts-iowa-detonation-says-new-governor-to-blame-if-it-blows-accidentally/",
+      "zh_title": "特朗普叫停爱荷华州引爆行动，称若意外爆炸应归咎于新州长"
+    },
+    {
+      "orig_title": "Ladybird's first alpha release",
+      "source": "simonwillison.net",
+      "category": "AI 前沿",
+      "link": "https://simonwillison.net/2026/Nov/23/ladybird/",
+      "zh_title": "Ladybird首个alpha版本发布"
+    },
+    {
+      "orig_title": "OpenAI Will Pay You Up to $8K to Preach the AI Gospel to Small Businesses",
+      "source": "Decrypt",
+      "category": "产品、设计与商业",
+      "link": "https://decrypt.co/383848/openai-will-pay-8k-preach-ai-gospel-small-businesses",
+      "zh_title": "OpenAI将最高支付8000美元，让你向小企业宣讲AI福音"
+    },
+    {
+      "orig_title": "States sue SpaceX to stop Grok from generating child sex images, revenge porn",
+      "source": "Ars Technica - All content",
+      "category": "工程与编程",
+      "link": "https://arstechnica.com/tech-policy/2026/11/states-sue-spacex-to-stop-grok-from-generating-child-sex-images-revenge-porn/",
+      "zh_title": "多州起诉SpaceX，要求阻止Grok生成儿童性图像和报复性色情内容"
+    },
+    {
+      "orig_title": "Why One Math Proof Has AI Experts Warning Humans Might Soon Lose Control",
+      "source": "Decrypt",
+      "category": "产品、设计与商业",
+      "link": "https://decrypt.co/383846/why-one-math-proof-ai-experts-warning-humans-lose-control",
+      "zh_title": "为何一个数学证明让AI专家警告人类可能很快失去控制"
+    },
+    {
+      "orig_title": "Derive Lists Options on Anthropic, Oil, and the S&P 500",
+      "source": "Bankless",
+      "category": "产品、设计与商业",
+      "link": "https://www.bankless.com/read/news/derive-lists-options-on-anthropic-oil-and-the-sp-500",
+      "zh_title": "Derive列出针对Anthropic、石油和标普500的期权"
+    },
+    {
+      "orig_title": "Sky Co-Founder Apologizes for Big Loan Behind stUSDS Freeze",
+      "source": "Bankless",
+      "category": "产品、设计与商业",
+      "link": "https://www.bankless.com/read/news/sky-co-founder-apologizes-for-77m-loan-behind-stusds-freeze",
+      "zh_title": "Sky联合创始人为导致stUSDS冻结的大额贷款道歉"
+    },
+    {
+      "orig_title": "DOJ Moves to Forfeit Over $1.1B in USDC From the Binance Hack",
+      "source": "Bankless",
+      "category": "产品、设计与商业",
+      "link": "https://www.bankless.com/read/news/doj-moves-to-forfeit-over-1-1b-in-usdc-from-the-binance-hack",
+      "zh_title": "美国司法部拟没收币安黑客事件中逾11亿美元USDC"
+    },
+    {
+      "orig_title": "Russia will launch a routine ISS supply mission tomorrow—apparently, it's a big secret",
+      "source": "Ars Technica - All content",
+      "category": "工程与编程",
+      "link": "https://arstechnica.com/space/2026/11/russia-will-launch-a-routine-iss-supply-mission-tomorrow-apparently-its-a-big-secret/",
+      "zh_title": "俄罗斯将于明天发射例行国际空间站补给任务——显然，这是个重大秘密"
+    },
+    {
+      "orig_title": "Why Nvidia Needed Jensen Huang Back—And What His Return Really Changes",
+      "source": "Decrypt",
+      "category": "产品、设计与商业",
+      "link": "https://decrypt.co/383841/why-nvidia-needed-jensen-huang-back-what-return-changes",
+      "zh_title": "英伟达为何需要黄仁勋回归——以及他的回归真正改变了什么"
+    },
+    {
+      "orig_title": "Am I A Design Engineer?",
+      "source": "blog.jim-nielsen.com",
+      "category": "产品、设计与商业",
+      "link": "https://blog.jim-nielsen.com/2026/am-i-a-design-engineer/",
+      "zh_title": "我是一名设计工程师吗？"
+    },
+    {
+      "orig_title": "Slop Style",
+      "source": "The Technium",
+      "category": "观点与杂谈",
+      "link": "https://kk.org/thetechnium/slop-style/",
+      "zh_title": "Slop风格"
+    },
+    {
+      "orig_title": "GPU Jesus Has Risen: Jensen Huang’s Nvidia Comeback Gets a Meme Parade",
+      "source": "Decrypt",
+      "category": "产品、设计与商业",
+      "link": "https://decrypt.co/383820/jensen-huang-returns-nvidia-memes-gpu-jesus",
+      "zh_title": "GPU 耶稣复活：黄仁勋携英伟达回归，表情包狂欢"
+    },
+    {
+      "orig_title": "The AI gains that gdp misses",
+      "source": "Marginal REVOLUTION",
+      "category": "观点与杂谈",
+      "link": "https://marginalrevolution.com/marginalrevolution/2026/11/the-ai-gains-that-gdp-misses.html?utm_source=rss&utm_medium=rss&utm_campaign=the-ai-gains-that-gdp-misses",
+      "zh_title": "GDP 未能捕捉的 AI 收益"
+    },
+    {
+      "orig_title": "Monday links: a drawn-out process",
+      "source": "Abnormal Returns",
+      "category": "产品、设计与商业",
+      "link": "https://abnormalreturns.com/2026/11/23/monday-links-a-drawn-out-process/",
+      "zh_title": "周一链接：一个漫长的过程"
+    },
+    {
+      "orig_title": "New York judge declines to block Kalshi from operating in the state for now",
+      "source": "CoinDesk",
+      "category": "产品、设计与商业",
+      "link": "https://www.coindesk.com/policy/2026/11/23/new-york-judge-declines-to-block-kalshi-from-operating-in-the-state-for-now",
+      "zh_title": "纽约法官暂时拒绝阻止 Kalshi 在该州运营"
+    },
+    {
+      "orig_title": "Nvidia Board Reinstates Jensen Huang as CEO",
+      "source": "EE Times",
+      "category": "硬件",
+      "link": "https://www.eetimes.com/nvidia-board-reinstates-jensen-huang-as-ceo/",
+      "zh_title": "英伟达董事会恢复黄仁勋 CEO 职务"
+    },
+    {
+      "orig_title": "Perps and Swaps: How to Trade the News on Decrypt",
+      "source": "Decrypt",
+      "category": "产品、设计与商业",
+      "link": "https://decrypt.co/resources/perps-and-swaps-how-to-trade-the-news-on-decrypt",
+      "zh_title": "永续合约与掉期：如何在 Decrypt 上交易新闻"
+    },
+    {
+      "orig_title": "Nvidia's Jensen Huang faces Senate scrutiny despite Trump-backed return as CEO",
+      "source": "CoinDesk",
+      "category": "产品、设计与商业",
+      "link": "https://www.coindesk.com/business/2026/11/23/nvidia-s-jensen-huang-faces-senate-scrutiny-despite-trump-backed-return-as-ceo",
+      "zh_title": "英伟达黄仁勋重返 CEO 之位获特朗普支持，仍面临参议院审查"
+    },
+    {
+      "orig_title": "Jensen’s Candor Is Satisfactory Now",
+      "source": "Matt Levine",
+      "category": "产品、设计与商业",
+      "link": "https://www.bloomberg.com/opinion/newsletters/2026-11-23/jensen-s-candor-is-satisfactory-now",
+      "zh_title": "黄仁勋的坦率如今令人满意"
+    },
+    {
+      "orig_title": "A legendary philosopher isn’t buying Anthropic’s consciousness argument",
+      "source": "MIT Tech Review",
+      "category": "AI 前沿",
+      "link": "https://www.technologyreview.com/2026/11/23/1149569/a-legendary-philosopher-isnt-buying-anthropics-consciousness-argument/",
+      "zh_title": "一位传奇哲学家并不买账 Anthropic 的意识论证"
+    },
+    {
+      "orig_title": "Two generators suffice",
+      "source": "johndcook.com",
+      "category": "观点与杂谈",
+      "link": "https://www.johndcook.com/blog/2026/11/23/two-generators-suffice/",
+      "zh_title": "两台发电机足矣"
+    },
+    {
+      "orig_title": "Jensen Huang’s Wealth Rises $36 Billion as Nvidia Surge Burns Short Sellers for $12 Billion",
+      "source": "Decrypt",
+      "category": "产品、设计与商业",
+      "link": "https://decrypt.co/383815/jensen-huang-fortune-37-billion-nvidia-soars-short-sellers-rekt",
+      "zh_title": "英伟达股价飙升令做空者损失 120 亿美元，黄仁勋财富增加 360 亿美元"
+    },
+    {
+      "orig_title": "Donald Trump on Jensen Huang’s Reinstatement at Nvidia",
+      "source": "daringfireball.net",
+      "category": "产品、设计与商业",
+      "link": "https://truthsocial.com/@realDonaldTrump/posts/117666713950631493",
+      "zh_title": "唐纳德·特朗普谈黄仁勋在英伟达复职"
+    },
+    {
+      "orig_title": "Monday assorted links",
+      "source": "Marginal REVOLUTION",
+      "category": "观点与杂谈",
+      "link": "https://marginalrevolution.com/marginalrevolution/2026/11/monday-assorted-links-587.html?utm_source=rss&utm_medium=rss&utm_campaign=monday-assorted-links-587",
+      "zh_title": "周一杂项链接"
+    },
+    {
+      "orig_title": "The Sovereign AI Paradox: Who Controls the Compute?",
+      "source": "EE Times",
+      "category": "硬件",
+      "link": "https://www.eetimes.com/the-sovereign-ai-paradox-who-controls-the-compute/",
+      "zh_title": "主权 AI 悖论：谁控制算力？"
+    },
+    {
+      "orig_title": "🎙️ How I AI: OpenClaw for executives: Automate every 1% annoyance",
+      "source": "Lenny's Newsletter",
+      "category": "产品、设计与商业",
+      "link": "https://www.lennysnewsletter.com/p/how-i-ai-openclaw-for-executives",
+      "zh_title": "🎙️ 我如何用 AI：面向高管的 OpenClaw：自动化每一个 1% 的烦扰"
+    },
+    {
+      "orig_title": "Semafor: ‘Hours Before Huang’s Reinstatement, Trump Called Nvidia’s Board to Argue for His Return’",
+      "source": "daringfireball.net",
+      "category": "产品、设计与商业",
+      "link": "https://www.semafor.com/article/11/23/2026/jensen-huang-reinstated-as-nvidia-ceo",
+      "zh_title": "Semafor：‘黄仁勋复职前数小时，特朗普致电英伟达董事会为其回归力争’"
     }
   ],
   "filtered": [
     {
-      "orig_title": "Binance hackers push $247 million through transactions designed to cloud the source",
+      "orig_title": "What Held Up While Bitcoin Fell",
+      "source": "Bankless",
+      "reason": "纯币圈，已按编辑规则滤掉"
+    },
+    {
+      "orig_title": "South Korea proposes ending 2017 ICO ban to boost jobs and onshore crypto investment",
       "source": "CoinDesk",
       "reason": "纯币圈，已按编辑规则滤掉"
     },
     {
-      "orig_title": "Eric Trump-backed American Bitcoin secures $150 million loan against its bitcoin",
+      "orig_title": "Crypto trader Ansem says his wallet was hacked as $2 million in memecoins were sold",
       "source": "CoinDesk",
       "reason": "纯币圈，已按编辑规则滤掉"
     },
     {
-      "orig_title": "Bitcoin's 5-year return is nearly zero, great narratives are fading and what's left is the Fed",
+      "orig_title": "Live updates: Bitcoin pulls back below $60,000, stock rally fades, as tariffs re-enter the picture",
       "source": "CoinDesk",
       "reason": "纯币圈，已按编辑规则滤掉"
     },
     {
-      "orig_title": "Fidelity Investments, Strive, Etoro join OKX-ICE tokenized securities venue",
+      "orig_title": "Bitcoin drops as November spot ETF outflows increase to record $4.71 billion",
       "source": "CoinDesk",
       "reason": "纯币圈，已按编辑规则滤掉"
     },
     {
-      "orig_title": "Live updates: Bitcoin climbs only modestly as Nasdaq soars 6% on Huang return",
+      "orig_title": "Bitcoin hands back Monday's Nvidia-driven gains, liquidations triple",
       "source": "CoinDesk",
       "reason": "纯币圈，已按编辑规则滤掉"
     },
     {
-      "orig_title": "Bitcoin's losing streak is second-longest ever, and some observers see more downside",
+      "orig_title": "Bitcoin’s drop to $55,000 left a record 11.6 million BTC underwater",
       "source": "CoinDesk",
       "reason": "纯币圈，已按编辑规则滤掉"
     },
     {
-      "orig_title": "Ethereum wallets holding $72 billion ETH are under threat of a future quantum attack",
+      "orig_title": "U.S. seeks $1.1 billion seized in Binance hack as North Korean funds keep moving",
       "source": "CoinDesk",
       "reason": "纯币圈，已按编辑规则滤掉"
     },
     {
-      "orig_title": "Bitcoin rebounds from 2-year low as Wall Street futures recover",
+      "orig_title": "BTCS sells more than half its ether to repay $43.8 million in Aave debt",
       "source": "CoinDesk",
       "reason": "纯币圈，已按编辑规则滤掉"
     },
     {
-      "orig_title": "Japan to ramp up crypto tax audits after uncovering $24.5 million in hidden income",
+      "orig_title": "Bitcoin falls below $60,000 as rally on Jensen Huang’s Nvidia return fades",
       "source": "CoinDesk",
       "reason": "纯币圈，已按编辑规则滤掉"
     },
     {
-      "orig_title": "Live updates: Bitcoin climbs back above $61,000 as stocks rebound from AI rout",
+      "orig_title": "U.S. CFTC sets policies on event contract data, using crypto to check financial boxes",
       "source": "CoinDesk",
       "reason": "纯币圈，已按编辑规则滤掉"
     },
     {
-      "orig_title": "South Korea to expand cryptocurrency account freezes and curb illicit transfers abroad",
-      "source": "CoinDesk",
-      "reason": "纯币圈，已按编辑规则滤掉"
-    },
-    {
-      "orig_title": "Bitcoin breaks a record streak of 'lower highs.' Here's what it means",
-      "source": "CoinDesk",
-      "reason": "纯币圈，已按编辑规则滤掉"
-    },
-    {
-      "orig_title": "U.S. inflation, Thanksgiving trading: Crypto Week Ahead",
-      "source": "CoinDesk",
-      "reason": "纯币圈，已按编辑规则滤掉"
-    },
-    {
-      "orig_title": "Crypto thieves are using online ads to infect iPhones with a single tap, research finds",
-      "source": "CoinDesk",
-      "reason": "纯币圈，已按编辑规则滤掉"
-    },
-    {
-      "orig_title": "Bitcoin sold for $17,000 on Kraken's Canadian dollar market, and the trades stand",
-      "source": "CoinDesk",
-      "reason": "纯币圈，已按编辑规则滤掉"
-    },
-    {
-      "orig_title": "Morning Minute: Crypto Rebounds after NVDA Drives Friday Selloff",
+      "orig_title": "Justice Department Moves to Forfeit $1.1B in USDC From North Korea's Binance Hack",
       "source": "Decrypt",
       "reason": "纯币圈，已按编辑规则滤掉"
     },
     {
-      "orig_title": "Strategy Buys $30M in Bitcoin, Moves $1B From USD Reserve to Cash Pot",
+      "orig_title": "CertiK Trains Interpol Investigators to Trace and Freeze Stolen Crypto",
       "source": "Decrypt",
       "reason": "纯币圈，已按编辑规则滤掉"
     },
     {
-      "orig_title": "Czech Authorities Charge 15 Over $12M Unlicensed Crypto Casino",
+      "orig_title": "Morning Minute: Jensen Returns, Markets Soar (Except Crypto)",
       "source": "Decrypt",
       "reason": "纯币圈，已按编辑规则滤掉"
     },
     {
-      "orig_title": "Bitcoin Rebounds to $61K After Weekend Plunge to Two-Year Low",
+      "orig_title": "$14.7B in ‘Lost’ Bitcoin Has Moved Since 2018: Report",
+      "source": "Decrypt",
+      "reason": "纯币圈，已按编辑规则滤掉"
+    },
+    {
+      "orig_title": "North Korea Moves $247 Million of Binance Hack Loot Through Bitcoin Mixers",
+      "source": "Decrypt",
+      "reason": "纯币圈，已按编辑规则滤掉"
+    },
+    {
+      "orig_title": "Solo Bitcoin Miner Scores Again, Hitting $191,000 Jackpot Against the Odds",
+      "source": "Decrypt",
+      "reason": "纯币圈，已按编辑规则滤掉"
+    },
+    {
+      "orig_title": "Tom Lee Says Ethereum Is as Scarce as Bitcoin—And Bitmine Just Bought More",
+      "source": "Decrypt",
+      "reason": "纯币圈，已按编辑规则滤掉"
+    },
+    {
+      "orig_title": "Bitcoin Rallies, Anthropic Sinks as Nvidia Surges 35% on Jensen Huang’s Return",
       "source": "Decrypt",
       "reason": "纯币圈，已按编辑规则滤掉"
     }
