@@ -22,6 +22,7 @@ const {
 const dateLabel = longDate();
 const currentWeek = isoWeek();
 const latestEpisode = [...podcast.episodes].sort((a, b) => b.date.localeCompare(a.date))[0];
+const mastheadPodcastUrl = site.social?.podcast || latestEpisode?.url;
 const serifFontUrl = `/fonts/${fontManifest.serifSc}`;
 const fontFaceCss = `@font-face{font-family:'Noto Serif SC';font-style:normal;font-weight:600;font-display:swap;src:url('${serifFontUrl}') format('woff2');size-adjust:96%;ascent-override:92%;descent-override:28%}@font-face{font-family:'Newsreader';font-style:normal;font-weight:400 700;font-display:swap;src:url('/fonts/newsreader-latin.woff2') format('woff2')}`;
 const canonical = new URL(Astro.url.pathname.replace(/\/$/, '') || '/', Astro.site);
@@ -78,7 +79,7 @@ const isCurrent = (href: string) => {
         <div class="mast-date">
           <span data-current-date>{dateLabel}</span>
           <span class="latin muted" data-current-week>Week {currentWeek}</span>
-          <a class="date-episode" href={latestEpisode.url} target="_blank" rel="noopener noreferrer">本周播客 翻书吧</a>
+          <a class="date-episode" href={mastheadPodcastUrl} target="_blank" rel="noopener noreferrer">本周播客 翻书吧</a>
         </div>
         <a class="brand" href="/" aria-label={`${site.brand} · 回到首页`}>
           <img class="avatar" src={site.logo} width="48" height="48" alt="" />
