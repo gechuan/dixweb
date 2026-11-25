@@ -7,21 +7,21 @@
     "items_in_window": 112,
     "items_kept": 93,
     "items_filtered": 19,
-    "topics": 5
+    "topics": 3
   },
-  "headline": "英伟达董事会恢复黄仁勋CEO职务，特朗普被指在复职前致电董事会为其辩护并公开称“达成了协议”，复职消息引发两党反弹，同时带动英伟达股价与市值大幅上涨。黄仁勋复职后英伟达市值上涨31.48%，其个人财富增加360亿美元，做空者损失120亿美元。智谱发布GLM-5.4，采用全新架构与首个循环Transformer，主打广义编码能力，官方称其能以四倍规模模型的水平思考。亚马逊称黑客的AI代理在极少人工输入下发现并利用了0-day漏洞；MIT Tech Review报道数据中心正在拥有自己的天然气发电厂。",
+  "headline": "英伟达董事会恢复黄仁勋CEO职务，特朗普称在复职前致电董事会为其辩护，引发两党反弹；复职消息推动英伟达市值大涨，黄仁勋个人财富增加约360亿美元，做空者损失惨重。智谱发布采用全新架构的GLM-5.4模型，称其具备循环Transformer等特性，能以更小规模达到接近四倍规模模型的思考能力。亚马逊称黑客的AI代理在极少人工输入下发现并利用了0-day漏洞，同时高危漏洞Upload2Shell被公开，上传图片即可入侵服务器。",
   "topics": [
     {
       "id": "T1",
-      "title": "黄仁勋重返英伟达：特朗普施压与董事会复职",
-      "summary": "多家媒体报道英伟达董事会恢复黄仁勋CEO职务，特朗普被指在复职前致电董事会为其辩护，并公开称“达成了协议”。复职消息引发两党反弹，同时带动英伟达股价与市值大幅上涨。",
+      "title": "黄仁勋重返英伟达：特朗普施压与董事会复职风波",
+      "summary": "多家媒体报道英伟达董事会恢复黄仁勋CEO职务，特朗普称在复职前致电董事会为其辩护，引发两党反弹。复职消息推动英伟达市值大涨，黄仁勋个人财富增加约360亿美元，做空者损失惨重，相关表情包在网络流传。",
       "items": [
         {
           "orig_title": "How Trump and Silicon Valley forced Nvidia to take Jensen Huang back",
           "source": "Ars Technica - All content",
           "category": "工程与编程",
           "link": "https://arstechnica.com/tech-policy/2026/11/how-trump-and-silicon-valley-forced-nvidia-to-take-jensen-huang-back/",
-          "zh_title": "特朗普和硅谷如何迫使英伟达重新接纳黄仁勋"
+          "zh_title": "特朗普与硅谷如何迫使英伟达重新接纳黄仁勋"
         },
         {
           "orig_title": "Huang reportedly admitted to more than two affairs to Nvidia’s board",
@@ -62,50 +62,15 @@
     },
     {
       "id": "T2",
-      "title": "黄仁勋回归的市场与舆论反响",
-      "summary": "黄仁勋复职后英伟达市值上涨31.48%，其个人财富增加360亿美元，做空者损失120亿美元。相关报道与表情包在社交平台形成狂欢式传播，Matt Levine也评论其坦诚“令人满意”。",
-      "items": [
-        {
-          "orig_title": "黄仁勋重返英伟达，市值涨31.48%；马斯克：AI 研发落后对手，出租算力比自研更赚钱；新一代 AI 模型更爱「爆粗口」",
-          "source": "极客公园",
-          "category": "产品、设计与商业",
-          "link": "http://www.geekpark.net/news/374375",
-          "zh_title": "黄仁勋重返英伟达，市值涨31.48%；马斯克：AI 研发落后对手，出租算力比自研更赚钱；新一代 AI 模型更爱「爆粗口」"
-        },
-        {
-          "orig_title": "GPU Jesus Has Risen: Jensen Huang’s Nvidia Comeback Gets a Meme Parade",
-          "source": "Decrypt",
-          "category": "产品、设计与商业",
-          "link": "https://decrypt.co/383820/jensen-huang-returns-nvidia-memes-gpu-jesus",
-          "zh_title": "GPU 耶稣已复活：黄仁勋的英伟达回归引发表情包狂欢"
-        },
-        {
-          "orig_title": "Jensen’s Candor Is Satisfactory Now",
-          "source": "Matt Levine",
-          "category": "产品、设计与商业",
-          "link": "https://www.bloomberg.com/opinion/newsletters/2026-11-23/jensen-s-candor-is-satisfactory-now",
-          "zh_title": "黄仁勋的坦诚如今令人满意"
-        },
-        {
-          "orig_title": "Jensen Huang’s Wealth Rises $36 Billion as Nvidia Surge Burns Short Sellers for $12 Billion",
-          "source": "Decrypt",
-          "category": "产品、设计与商业",
-          "link": "https://decrypt.co/383815/jensen-huang-fortune-37-billion-nvidia-soars-short-sellers-rekt",
-          "zh_title": "黄仁勋财富增加360亿美元，英伟达股价飙升令做空者损失120亿美元"
-        }
-      ]
-    },
-    {
-      "id": "T3",
       "title": "智谱发布GLM-5.4新模型",
-      "summary": "智谱发布GLM-5.4，采用全新架构与首个循环Transformer，主打广义编码能力。官方称其能以四倍规模模型的水平思考，网友反馈超过预期。",
+      "summary": "智谱发布采用全新架构的GLM-5.4模型，称其具备循环Transformer等特性，能以更小规模达到接近四倍规模模型的思考能力。网友反馈超过预期，相关技术细节在开发者社区引发讨论。",
       "items": [
         {
           "orig_title": "智谱刚刚发了GLM-5.4，全新架构的那种！网友直呼：超过预期",
           "source": "量子位",
           "category": "AI 前沿",
           "link": "https://www.qbitai.com/2026/11/512423.html",
-          "zh_title": "智谱刚刚发布GLM-5.4，全新架构的那种！网友直呼：超过预期"
+          "zh_title": "智谱刚刚发布了GLM-5.4，全新架构的那种！网友直呼：超过预期"
         },
         {
           "orig_title": "GLM-5.4: Toward Generalized Coding with Our First Loop Transformer",
@@ -124,9 +89,9 @@
       ]
     },
     {
-      "id": "T4",
-      "title": "AI代理发现并利用0-day漏洞",
-      "summary": "亚马逊称黑客的AI代理在极少人工输入下发现并利用了0-day漏洞。同期有高危漏洞Upload2Shell公开，上传图片即可入侵服务器，CrowdStrike CEO也警告AI网络攻击浪潮。",
+      "id": "T3",
+      "title": "AI代理自主发现并利用0-day漏洞",
+      "summary": "亚马逊称黑客的AI代理在极少人工输入下发现并利用了0-day漏洞，同时有高危漏洞Upload2Shell被公开，上传图片即可入侵服务器。CrowdStrike CEO亦在访谈中谈及AI网络攻击浪潮与超高速黑客攻击带来的补丁难题。",
       "items": [
         {
           "orig_title": "Amazon says hackers' AI agents found and exploited 0-day with little human input",
@@ -148,34 +113,6 @@
           "category": "产品、设计与商业",
           "link": "https://allinchamathjason.libsyn.com/crowdstrike-ceo-ai-cyberattack-wave-hyperspeed-hacks-the-patching-problem",
           "zh_title": "CrowdStrike CEO：AI 网络攻击浪潮、超高速黑客攻击与补丁难题"
-        }
-      ]
-    },
-    {
-      "id": "T5",
-      "title": "数据中心自建天然气发电与AI电力需求",
-      "summary": "MIT Tech Review报道数据中心正在拥有自己的天然气发电厂，并关注AI带来的天然气电力热潮。相关讨论还涉及主权AI悖论与算力控制权问题。",
-      "items": [
-        {
-          "orig_title": "The Download: AI’s gas power boom and a consciousness reality check",
-          "source": "MIT Tech Review",
-          "category": "AI 前沿",
-          "link": "https://www.technologyreview.com/2026/11/24/1149669/the-download-data-centers-gas-ai-consciousness/",
-          "zh_title": "下载：AI的天然气电力热潮与意识现实检验"
-        },
-        {
-          "orig_title": "Data centers are getting their own natural gas power plants",
-          "source": "MIT Tech Review",
-          "category": "AI 前沿",
-          "link": "https://www.technologyreview.com/2026/11/24/1149622/data-centers-natural-gas/",
-          "zh_title": "数据中心正在拥有自己的天然气发电厂"
-        },
-        {
-          "orig_title": "The Sovereign AI Paradox: Who Controls the Compute?",
-          "source": "EE Times",
-          "category": "硬件",
-          "link": "https://www.eetimes.com/the-sovereign-ai-paradox-who-controls-the-compute/",
-          "zh_title": "主权AI悖论：谁控制算力？"
         }
       ]
     }
@@ -221,21 +158,21 @@
       "source": "devblogs.microsoft.com/oldnewthing",
       "category": "观点与杂谈",
       "link": "https://devblogs.microsoft.com/oldnewthing/20261124-00/?p=112889/",
-      "zh_title": "当源公寓关闭时，CoreApplication属性中的条目会怎样？"
+      "zh_title": "当源公寓关闭时，CoreApplication Properties中的条目会怎样？"
     },
     {
       "orig_title": "300+ books to read: A gift guide for curious readers",
       "source": "a16z crypto",
       "category": "产品、设计与商业",
       "link": "https://a16zfrontier.com/posts/article/300-books-to-read-gift-guide/",
-      "zh_title": "300多本值得一读的书：给好奇读者的礼物指南"
+      "zh_title": "300多本必读书：献给好奇读者的礼物指南"
     },
     {
       "orig_title": "How Trump and Silicon Valley forced Nvidia to take Jensen Huang back",
       "source": "Ars Technica - All content",
       "category": "工程与编程",
       "link": "https://arstechnica.com/tech-policy/2026/11/how-trump-and-silicon-valley-forced-nvidia-to-take-jensen-huang-back/",
-      "zh_title": "特朗普和硅谷如何迫使英伟达重新接纳黄仁勋"
+      "zh_title": "特朗普与硅谷如何迫使英伟达重新接纳黄仁勋"
     },
     {
       "orig_title": "How to install an app on your Commodore 64",
@@ -249,14 +186,14 @@
       "source": "anildash.com",
       "category": "产品、设计与商业",
       "link": "https://anildash.com/2026/11/03/nyc-venture-capitalists-love-themselves/",
-      "zh_title": "纽约市的风险投资家需要爱自己"
+      "zh_title": "纽约市的风险投资家们需要爱自己"
     },
     {
       "orig_title": "Memorable 12-digit primes",
       "source": "johndcook.com",
       "category": "观点与杂谈",
       "link": "https://www.johndcook.com/blog/2026/11/24/memorable-12-digit-primes/",
-      "zh_title": "令人难忘的12位质数"
+      "zh_title": "令人难忘的12位素数"
     },
     {
       "orig_title": "Huang reportedly admitted to more than two affairs to Nvidia’s board",
@@ -270,21 +207,21 @@
       "source": "MIT Tech Review",
       "category": "AI 前沿",
       "link": "https://www.technologyreview.com/2026/11/24/1149669/the-download-data-centers-gas-ai-consciousness/",
-      "zh_title": "下载：AI的天然气电力热潮与意识现实检验"
+      "zh_title": "下载：AI的天然气发电热潮与意识现实检验"
     },
     {
       "orig_title": "🔐 CrowdStrike's $44 Billion Bet",
       "source": "How They Make Money",
       "category": "产品、设计与商业",
       "link": "https://www.appeconomyinsights.com/p/crowdstrikes-44-billion-bet",
-      "zh_title": "🔐 CrowdStrike的440亿美元赌注"
+      "zh_title": "🔐 CrowdStrike的440亿美元豪赌"
     },
     {
       "orig_title": "GTA 6 PC Ports ‘Nuked’ Just Days Before Devs Expected It to Be Playable",
       "source": "Decrypt",
       "category": "产品、设计与商业",
       "link": "https://decrypt.co/383860/gta-6-pc-ports-nuked-just-days-before-devs-expected-it-to-be-playable",
-      "zh_title": "《GTA 6》PC移植版在开发者预计可玩前几天被“摧毁”"
+      "zh_title": "《GTA 6》PC移植版在开发者预期可玩前几天被“摧毁”"
     },
     {
       "orig_title": "Introducing StrategyBench",
@@ -347,7 +284,7 @@
       "source": "EE Times",
       "category": "硬件",
       "link": "https://www.eetimes.com/vehicle-to-grid-great-idea-or-unrealistic-dream-part-2/",
-      "zh_title": "车辆到电网：绝佳构想还是不切实际的梦想？（第二部分）"
+      "zh_title": "车网互动：绝佳构想还是不切实际的梦想？（第二部分）"
     },
     {
       "orig_title": "Trump Says He 'Made the Deal' to Reinstate Jensen Huang, Sparking Bipartisan Backlash",
@@ -417,7 +354,7 @@
       "source": "量子位",
       "category": "AI 前沿",
       "link": "https://www.qbitai.com/2026/11/512423.html",
-      "zh_title": "智谱刚刚发布GLM-5.4，全新架构的那种！网友直呼：超过预期"
+      "zh_title": "智谱刚刚发布了GLM-5.4，全新架构的那种！网友直呼：超过预期"
     },
     {
       "orig_title": "If I Had to Start a Business Tomorrow, I'd Do This | Ep 1017",
@@ -438,7 +375,7 @@
       "source": "EE Times",
       "category": "硬件",
       "link": "https://www.eetimes.com/vehicle-to-grid-great-idea-or-unrealistic-dream/",
-      "zh_title": "车辆到电网：绝佳构想还是不切实际的梦想？"
+      "zh_title": "车网互动：绝佳构想还是不切实际的梦想？"
     },
     {
       "orig_title": "叙事时代丨第20届中国投资年会·有限合伙人峰会在沪成功举办",
@@ -466,7 +403,7 @@
       "source": "Marginal REVOLUTION",
       "category": "观点与杂谈",
       "link": "https://marginalrevolution.com/marginalrevolution/2026/11/best-fiction-2026.html?utm_source=rss&utm_medium=rss&utm_campaign=best-fiction-2026",
-      "zh_title": "2026年最佳虚构作品"
+      "zh_title": "2026年最佳小说"
     },
     {
       "orig_title": "Comments and emails",
@@ -515,7 +452,7 @@
       "source": "FuturePulse",
       "category": "AI 前沿",
       "link": "https://futurpulse.com/impeccable-skill-design-reviews-with-62-local-rules/",
-      "zh_title": "精湛技艺：基于62条本地规则的设计评审"
+      "zh_title": "无懈可击的技能：基于62条本地规则的设计评审"
     },
     {
       "orig_title": "Safe Anything scanner: catches common repository risks",
@@ -655,7 +592,7 @@
       "source": "Brain Pickings",
       "category": "观点与杂谈",
       "link": "https://www.themarginalian.org/2026/11/23/jane-ellen-harrison-heresy-and-humanity/",
-      "zh_title": "异端之心：被遗忘的先知简·艾伦·哈里森论批判性思维、情感想象与如何修复世界"
+      "zh_title": "异端之心：被遗忘的先见者简·艾伦·哈里森论批判性思维、情感想象与如何修复世界"
     },
     {
       "orig_title": "Trump halts Iowa detonation, says new governor to blame if it blows accidentally",
@@ -732,7 +669,7 @@
       "source": "The Technium",
       "category": "观点与杂谈",
       "link": "https://kk.org/thetechnium/slop-style/",
-      "zh_title": "垃圾风格"
+      "zh_title": "泔水风格"
     },
     {
       "orig_title": "GPU Jesus Has Risen: Jensen Huang’s Nvidia Comeback Gets a Meme Parade",
@@ -746,7 +683,7 @@
       "source": "Marginal REVOLUTION",
       "category": "观点与杂谈",
       "link": "https://marginalrevolution.com/marginalrevolution/2026/11/the-ai-gains-that-gdp-misses.html?utm_source=rss&utm_medium=rss&utm_campaign=the-ai-gains-that-gdp-misses",
-      "zh_title": "人工智能的收益被GDP遗漏"
+      "zh_title": "人工智能带来的收益未被GDP体现"
     },
     {
       "orig_title": "Monday links: a drawn-out process",
@@ -767,7 +704,7 @@
       "source": "Decrypt",
       "category": "产品、设计与商业",
       "link": "https://decrypt.co/resources/perps-and-swaps-how-to-trade-the-news-on-decrypt",
-      "zh_title": "永续合约与掉期：如何在Decrypt上交易新闻"
+      "zh_title": "永续合约与互换：如何在Decrypt上交易新闻"
     },
     {
       "orig_title": "Jensen’s Candor Is Satisfactory Now",
@@ -802,14 +739,14 @@
       "source": "daringfireball.net",
       "category": "产品、设计与商业",
       "link": "https://truthsocial.com/@realDonaldTrump/posts/117666713950631493",
-      "zh_title": "唐纳德·特朗普谈黄仁勋在英伟达的复职"
+      "zh_title": "唐纳德·特朗普谈黄仁勋在英伟达复职"
     },
     {
       "orig_title": "Monday assorted links",
       "source": "Marginal REVOLUTION",
       "category": "观点与杂谈",
       "link": "https://marginalrevolution.com/marginalrevolution/2026/11/monday-assorted-links-587.html?utm_source=rss&utm_medium=rss&utm_campaign=monday-assorted-links-587",
-      "zh_title": "周一杂项链接"
+      "zh_title": "周一综合链接"
     },
     {
       "orig_title": "The Sovereign AI Paradox: Who Controls the Compute?",
@@ -823,7 +760,7 @@
       "source": "Lenny's Newsletter",
       "category": "产品、设计与商业",
       "link": "https://www.lennysnewsletter.com/p/how-i-ai-openclaw-for-executives",
-      "zh_title": "🎙️ 我如何用AI：面向高管的OpenClaw：自动化每一个1%的烦恼"
+      "zh_title": "🎙️ 我如何用AI：面向高管的OpenClaw：自动化每一个1%的烦扰"
     },
     {
       "orig_title": "Semafor: ‘Hours Before Huang’s Reinstatement, Trump Called Nvidia’s Board to Argue for His Return’",
