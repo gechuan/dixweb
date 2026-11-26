@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026年11月25日 20:18",
+  "updatedAt": "2026年11月26日 19:48",
   "sources": [
     {
       "id": "huggingface",
@@ -8,84 +8,84 @@
       "note": "热门研究，看到模型与智能体方法的下一批方向。",
       "items": [
         {
-          "id": "00fba1df0e34867c4f2e899d76c52dda",
-          "title": "Clinical3D-Bench：评估并提升多模态 LLM 在医院环境中的空间智能",
-          "summary": "医院里的空间推理，是个被现有评测忽略的角落。走廊里两台长得几乎一样的设备，护士站在你左手边还是右手边，推床能不能过这道门，这些判断对人来说是日常，对多模态模型来说却很难。 这篇论文做了个专门考这个的基准：Clinical3D-Bench。373 个按医院设计规范搭的病房布局，第一人称视角走一遍，3,368 道题分 8 种类型。答案是直接从 3D 场景里算出…",
-          "href": "https://arxiv.org/abs/2611.32094",
-          "meta": "arXiv 2611.32094",
+          "id": "1f6436ce68de20ffa08373291a367c6c",
+          "title": "Sage-Med：扩展医疗多模态智能",
+          "summary": "这篇论文最值得看的不是“又出了一个医疗多模态大模型”，而是它先给现有医疗 MLLM 泼了一盆冷水： 医疗专用模型在一批医疗任务上打不过通用前沿模型；把模型做大，主要涨的是文本能力，视觉感知没跟上；打开推理模式，也补不上这个视觉缺口。 这个判断挺扎心。医疗多模态一直被默认“通用模型不懂医学，专用模型才有戏”，Sage-Med 的系统性评测把这个假设撬开了一道…",
+          "href": "https://arxiv.org/abs/2611.34575",
+          "meta": "arXiv 2611.34575",
+          "date": "11月25日"
+        },
+        {
+          "id": "08549afb3eee4a30a492420e9db9adbb",
+          "title": "SIA：选择性图像类比",
+          "summary": "这篇论文解决的是图像类比里一个很实际的问题：一对 before/after 图里往往混了好几种变化，用户可能只想要其中一部分。 现有方法默认把 A 到 A' 的所有变化整套搬给 B。想只保留其中一种，就得重新做一对演示图。SIA 把这个动作变成推理时的选择。 如果你在做图像编辑产品，或者关心可控生成，这篇值得翻一遍。 它的核心不是“类比更强”，而是“类比可…",
+          "href": "https://arxiv.org/abs/2611.33894",
+          "meta": "arXiv 2611.33894",
+          "date": "11月25日"
+        },
+        {
+          "id": "3c978982e1a0fc396ce9f0272c3c6784",
+          "title": "循环混合 Transformer",
+          "summary": "循环 Transformer 一直有个尴尬：靠重复使用共享层提升表达能力，代价是效率。这篇论文想把这条“表达力与效率”的曲线往前推一步，问了一个很朴素的问题：相邻两轮循环之间，到底该传什么？ MoLT 的答案是：把 KV 当记忆，选择性地跨深度、跨循环复用。这个思路值得看，因为它没有停在“多循环几次”的层面，而是重新设计了循环之间的接口。作者还给了 400…",
+          "href": "https://arxiv.org/abs/2611.34923",
+          "meta": "arXiv 2611.34923",
+          "date": "11月25日"
+        },
+        {
+          "id": "3d181a6d3b3fa1daf4ab897507009ebd",
+          "title": "HOG-WAM：通过未来梯度预测提升视觉鲁棒性",
+          "summary": "机器人策略在干净画面里跑得挺好，摄像头一脏、一抖、一有噪声就开始掉点。这篇论文想补的正是这块短板。 HOG-WAM 的做法有点意思： 训练时加一路“预测未来 HOG 特征”的辅助任务，推理时把它整个摘掉 。不增加部署成本，却能把更结构化的视觉表征压进主干网络里。 如果你在做具身智能、机器人操作策略，或者关心视觉鲁棒性怎么低成本提升，这篇值得花十分钟看摘要和…",
+          "href": "https://arxiv.org/abs/2611.34811",
+          "meta": "arXiv 2611.34811",
+          "date": "11月25日"
+        },
+        {
+          "id": "5302b7cefbb09e1ba9e7370c40761d3a",
+          "title": "Puzzling-Bench：用 23,777 道人工谜题与社区验证答案评测语言模型",
+          "summary": "一个能难住所有前沿模型、还能把“猜谜”这件事拆成可复现评测的基准，值得花几分钟看看。 Puzzling-Bench 收了 23,777 道人类写的谜题，来源是 Puzzling Stack Exchange 从 2014 到 2026 年的存档。题目类型包括谜语、密码、逻辑网格、横向思维题、文字游戏和趣味数学，其中三分之一带图。答案用的是原作者的采纳答案，…",
+          "href": "https://arxiv.org/abs/2611.34331",
+          "meta": "arXiv 2611.34331",
           "date": "11月24日"
         },
         {
-          "id": "032edd1d8c8d68ae41d368d0c2fd3078",
-          "title": "具身 AI 未通过镜像测试：一面简单的镜子如何击溃机器人策略",
-          "summary": "如果给机器人面前立一面镜子，它还能把桌上的东西拿对吗？ 这篇论文给出的答案相当不乐观： 五种不同的机器人操作策略，在所有镜面条件下成功率都下降，平均掉 10.8 到 56.7 个百分点，镜面桌面上最狠掉 62.5 个点。 这个结果值得看，因为它测试的并非新任务、新模型或新数据集。它往一个本来能跑通的任务里加了一面镜子，然后看策略崩不崩。崩了。 论文把这件事…",
-          "href": "https://arxiv.org/abs/2611.33010",
-          "meta": "arXiv 2611.33010",
+          "id": "42391980ee8391f96fa01daf52f88c63",
+          "title": "VibeVideoAgent：打通代码驱动视频生成的感知闭环",
+          "summary": "代码驱动的视频生成，思路挺有意思：让 coding agent 直接写渲染程序，排版、数据可视化、音画同步、多镜头都能精确控制，最后还留下一个可编辑的工程。 问题是， 程序跑通不等于视频能看 。标签重叠、镜头对着空气、物体穿模、旁白对不上口型，这些都不会报错。运行时不抛异常，画面照样是废的。 这篇论文想补的，就是这个“感知回路”。 这篇论文想解决什么 代码…",
+          "href": "https://arxiv.org/abs/2611.34237",
+          "meta": "arXiv 2611.34237",
           "date": "11月24日"
         },
         {
-          "id": "1c7b0da13c4daa4cee3b658a0dd16602",
-          "title": "MAGPIE：通过可执行场景构建实现智能体式多参考图像生成",
-          "summary": "多参考图生成这件事，最近一年进步很快，但真正难的地方一直没解决：模型能把几张参考图里的主体“长得像”保留下来，却很难按你的指令把它们摆成你想要的场景。 MAGPIE 的思路是把“怎么摆”从生成模型的黑箱里拿出来，先做成一个能看、能改的东西。这篇值得看，因为它给多参考图生成加了一个 可检查的中间层 ，不只是换个更强的生成器。 论文链接在这里，也可以直接看PD…",
-          "href": "https://arxiv.org/abs/2611.32462",
-          "meta": "arXiv 2611.32462",
+          "id": "4e08feac7684ce727d57604a24af51be",
+          "title": "Real2SimLab：从真实到仿真的统一平台",
+          "summary": "这篇论文值得看的地方，不在于它提出了什么新算法，而在于它想把一个很碎的评测生态收拢起来。 Real2Sim 这个方向最近被 coding agent 带火了：给一段真实视频，让模型写出仿真程序，再跑起来看像不像。问题是每个 benchmark 都自己定义输入格式、交付物和打分脚本。你有 N 个方法和 M 个 benchmark，就得做 N×M 次对接，工程…",
+          "href": "https://arxiv.org/abs/2611.34849",
+          "meta": "arXiv 2611.34849",
           "date": "11月24日"
         },
         {
-          "id": "14638b05ec9f79046a45423d1d5b3862",
-          "title": "GRAPE-Bench：视觉退化时，视频推理还稳得住吗？",
-          "summary": "视频推理模型在标准测试上分数很高，可一旦画面变差，它们还靠谱吗？这篇论文专门测这个。 它叫 GRAPE-Bench，关注的是视觉退化下的视频推理。对做自动驾驶、监控、机器人这类场景的团队来说，这个问题很实际：真实世界的摄像头画面从来不会像数据集那么干净。 论文的切入点有两层：一是 视觉退化 （雨雪雾、夜间、各种图像损坏），二是 问题难度 （从基础判断到高强…",
-          "href": "https://arxiv.org/abs/2611.33020",
-          "meta": "arXiv 2611.33020",
+          "id": "5e63ca8b8732c3ee4621e72e4e4327ba",
+          "title": "CONCOR：超越最终输出性能的视觉幻觉缓解对比解码基准",
+          "summary": "这篇论文值得看，原因不在它提出了什么新模型，而在它换了一个评测角度。 现在对比解码（Contrastive Decoding，CD）已经成了缓解多模态大模型物体幻觉的常规手段。但大家评估它好不好，基本只看最终输出对不对。问题在于，最终分数会被候选过滤、生成轨迹变化、回答偏好这些因素搅在一起，你没法判断涨的那几个点到底是不是对比解码本身的功劳。 CONCOR…",
+          "href": "https://arxiv.org/abs/2611.30460",
+          "meta": "arXiv 2611.30460",
           "date": "11月24日"
         },
         {
-          "id": "22f191a52e208dfa2b58cd99d90e1649",
-          "title": "Qwen-Image-HD：自回归扩散实现高清图像生成",
-          "summary": "Qwen 团队把图像生成往 4K 推了一步，方法挺有意思：不整张大图硬训，而是切块、按块自回归生成。 这篇论文值得看的地方在于，它正面处理了高清生成里一个很实际的矛盾。 整张高分辨率画布做微调，序列太长、算力太贵，资源有限时局部还会冒出重复条纹 。Qwen-Image-HD 的思路是绕开这个矛盾，不跟它硬碰。 这篇论文想解决什么 高清图像生成的主流做法是直…",
-          "href": "https://arxiv.org/abs/2611.32736",
-          "meta": "arXiv 2611.32736",
-          "date": "11月23日"
+          "id": "5e25487dad2a7369446a4f6146006094",
+          "title": "基于像素空间扩散 Transformer 的高保真图像抠图",
+          "summary": "图像抠图这件事，过去两年基本被扩散模型接管了。但大多数做法走的是潜空间扩散：先把图压进 VAE 的隐空间，再在隐空间里去噪。问题在于，抠图要的恰恰是高频细节，头发丝、半透明边缘、玻璃反光，这些信息在压缩再重建的过程中最先被磨掉。 PixelMatte 换了个思路，直接回到像素空间做扩散。它基于预训练的像素空间扩散 Transformer，把抠图当成一个像素…",
+          "href": "https://arxiv.org/abs/2611.34929",
+          "meta": "arXiv 2611.34929",
+          "date": "11月24日"
         },
         {
-          "id": "3083b5f78b91a831d11ddcb2cb306f87",
-          "title": "Coding4Games：现代编程 Agent 能玩转现代电子游戏吗？",
-          "summary": "玩游戏这件事，正在被重新定义成一道编程题。 我们习惯的评测是让模型当“玩家”：每一步都调用一次大模型，看画面、出操作。这条路在实时游戏里很别扭，环境一直在变，模型还在推理，而且每一步都在烧推理成本。 这篇论文换了个问法： 能不能让编码智能体先玩、先试，然后写出一段不需要大模型参与就能自己跑的程序，把游戏玩下去？ 这个转向挺有意思。它测的不再是“模型会不会玩…",
-          "href": "https://arxiv.org/abs/2611.31974",
-          "meta": "arXiv 2611.31974",
-          "date": "11月23日"
-        },
-        {
-          "id": "3340e6224110e8e20d6b3091e36cfae8",
-          "title": "ICLWorld：从数字世界到物理世界的 Agent 上下文学习基准",
-          "summary": "这篇论文值得看，因为它戳中了一个被含糊带过的假设：前沿模型在电脑上会从上下文里学规则，那到了机器人身上也该会。 ICLWorld 给出的答案不太乐观。同一批最强模型，电脑操作任务成功率能到八成上下，机器人操作只剩两成多。 更有意思的是另一处落差：模型能答对 98% 的机器人规则问题，却只完成 20% 的任务。 知道规则和按规则行动，是两件事。 这篇论文想解…",
-          "href": "https://arxiv.org/abs/2611.32649",
-          "meta": "arXiv 2611.32649",
-          "date": "11月23日"
-        },
-        {
-          "id": "5b06a495fd2b52e8d8e36ae881caedef",
-          "title": "EEGJev：面向多任务 EEG 问答的系统一决策模型与基准",
-          "summary": "这篇论文想给 EEG 解码换一种问法：不再固定“这段脑电对应哪个标签”，改成“我问什么，你就答什么”。同一个 EEG 记录、同一组选项，只把问题从“表情是什么”换成“受试者被要求用哪只手”，模型得跟着问题走。 这个设定挺关键。过去 EEG foundation model 的评测基本是固定标签任务，模型答对一次，你其实不知道它是真在按问题解码，还是记住了数…",
-          "href": "https://arxiv.org/abs/2611.32100",
-          "meta": "arXiv 2611.32100",
-          "date": "11月23日"
-        },
-        {
-          "id": "44aec8200482803f5280762d0a8ffbfc",
-          "title": "SpecEngineeringBench：评估编码 Agent 作为自主规格工程师的能力",
-          "summary": "这篇论文值得看，因为它戳中了 Coding Agent 评测里一个被绕过去的环节： 谁来决定测什么、去哪里找 bug 。 现有基准大多把问题描述、测试入口、待查文件一起喂给 Agent，Agent 只要照着写测试就行。SpecEngineeringBench 把这些线索拿掉，让 Agent 自己从功能需求走到可执行测试，再从执行结果里定位缺陷。这个设定更接…",
-          "href": "https://arxiv.org/abs/2611.32973",
-          "meta": "arXiv 2611.32973",
-          "date": "11月23日"
-        },
-        {
-          "id": "4b3f442d1a5f8a2dd10a1ad33092ed7e",
-          "title": "懒惰的 Agent 会违背自身信念作答：可验证信念强化学习教会它们按信念行动",
-          "summary": "这篇论文抓住了一个很实际的问题：Agent 做长任务时，明明还没掌握足够证据，就急着给答案。 更微妙的是，它嘴上说的判断和实际动作对不上。摘要里提到，模型经常在“自己写下的信念里还列着好几个候选答案”的时候，就把答案交出去了。这种行为和它的判断不一致，属于典型的“懒”。 这篇值得看的地方在于，它给“什么时候该继续看、什么时候该下结论”设计了一种可验证的训练…",
-          "href": "https://arxiv.org/abs/2611.32884",
-          "meta": "arXiv 2611.32884",
-          "date": "11月23日"
+          "id": "6781bc05fba8d9c41ac85b154cbfd8c4",
+          "title": "超越代码与像素：协同生成可编辑且视觉丰富的演示文稿",
+          "summary": "做 PPT 这件事，AI 一直卡在一个二选一里：要么生成能编辑的 PPTX 文件，但版式死板、视觉平庸；要么生成好看的图片式幻灯片，但内容变成像素，改一个字都得重做。 这篇论文想把这个二选一拆掉。它提出 SlidesWeaver，用多智能体协作的方式，同时拿到可编辑性和视觉丰富度。 如果做 AI 办公、文档生成、多模态 Agent 的产品，这篇值得看。 它…",
+          "href": "https://arxiv.org/abs/2611.28010",
+          "meta": "arXiv 2611.28010",
+          "date": "11月24日"
         }
       ]
     },
@@ -96,84 +96,84 @@
       "note": "新产品发布，观察用户正在为什么工作流付费。",
       "items": [
         {
-          "id": "bfa98400866a739a7ea9fe2ce4c2781a",
-          "title": "Homa IR Test：健康才是头等大事",
-          "summary": "heath is main things",
-          "href": "https://www.producthunt.com/products/homa-ir-test",
-          "meta": "Maker · Redcliffe Labs",
-          "date": "11月25日"
+          "id": "52d8a75584ab9bf241f5dbfb82ff5a1e",
+          "title": "Claude-Mem Cloud Sync：跨设备保留 AI Agent 记忆",
+          "summary": "换台电脑，智能体就把你上周定下的方案忘得一干二净。这个场景，做开发的人应该都不陌生。 Claude-Mem Cloud Sync 想解决的就是这件事。它给智能体加了一层可以跨设备同步的记忆：笔记本上做的决定，下一个智能体会话里能直接调用；手机上也能看到同步过来的工作记录。 它到底在同步什么 官网的说法很具体： 捕捉的是智能体活动里的决策、发现和修复 ，不是…",
+          "href": "https://www.producthunt.com/products/claude-mem",
+          "meta": "Maker · Alex Newman",
+          "date": "11月26日"
         },
         {
-          "id": "438c0014208e143c74e94de319c02979",
-          "title": "MAGI-2：Sand AI 的 480B 电影级视频生成模型",
-          "summary": "30 秒、1080p、带声音，一次生成就能跑完一整条镜头。Sand.ai 在 2026 年 11 月 24 日放出的 MAGI-2，把这些数字摆在了台面上。 对做视频的人来说，这几个参数拼在一起意味着什么：过去要分段生成、再拼接、再对嘴型的活，现在有机会一口气做完。但值不值得换工具，得看细节。 先搞清楚它到底是什么 MAGI-2 是 Sand.ai 的旗舰…",
-          "href": "https://www.producthunt.com/products/magi-1",
-          "meta": "Maker · Justin Jincaid",
-          "date": "11月25日"
+          "id": "f76ad5c6a2dfc03845eaec02e0aa8571",
+          "title": "Fairwind：让老师或教练确认你的活动清单",
+          "summary": "Product Hunt 上出现了一个叫 Fairwind 的条目。点进去看官网，会发现它指向的不是一个 SaaS 工具，而是洛杉矶 Marina del Rey 的一家帆船俱乐部：Fairwind Yacht Club。 这件事本身就挺有意思。一个线下帆船俱乐部被放进了科技产品榜单，说明 Product Hunt 的条目边界比很多人以为的宽，也说明抓取到…",
+          "href": "https://www.producthunt.com/products/fairwind",
+          "meta": "Maker · Kevin Choi",
+          "date": "11月26日"
         },
         {
-          "id": "cb003f8f16bb2567b033b4194dcc039c",
-          "title": "GibHub：检索并对比 Git 版本",
-          "summary": "一个叫 GibHub 的项目出现在 Product Hunt 上，名字只比 GitHub 少一个字母。打开它的官网 gibhub，首页两句话反复出现：还没有索引任何仓库，用 gib 推一个上来，它就会出现在这里；最近推送也是空的。 这就是全部可见信息。 官网目前是个空壳。 没有产品介绍，没有功能列表，没有截图，没有价格，没有团队信息。抓取到的内容只有两个空…",
-          "href": "https://www.producthunt.com/products/gibhub-git-file-history",
-          "meta": "Maker · Señor Tomato",
-          "date": "11月25日"
+          "id": "f5580ffd3a97e5f68a1f238791178c49",
+          "title": "Superframes：向 AI 导演下达指令即可剪辑整段视频",
+          "summary": "视频剪辑软件有个默认前提：素材得先上传到云端。Superframes 把这个前提掀了。 它的官网上写得很直白： 视频文件不离开你的设备，剪辑在你自己的电脑上跑 。浏览器里能用，桌面版更完整。这个定位在 Product Hunt 上不算常见，因为大多数 AI 剪辑工具的逻辑是“你把片子传给我，我在服务器上算完再还给你”。 Superframes 走的是另一条…",
+          "href": "https://www.producthunt.com/products/superframes-ai-video-editor",
+          "meta": "Maker · Harsh Manwani",
+          "date": "11月26日"
         },
         {
-          "id": "48933319000c428dddac09154eb97363",
-          "title": "Omi X 2.0：点击应用任意位置，告诉 Omi 要改什么",
-          "summary": "AI 编程工具最大的问题，往往不是写不出代码，而是写出来的东西跑不起来。Omi X 2.0 想解决的正是这件事：它把“生成”和“部署到能用的环境”绑在了一起。 它到底是什么 Omi X 2.0 是一个 Mac 和 Windows 桌面应用，由 UIComet 推出，在 Product Hunt 和 UIComet 的发布页上都能看到它的介绍。 它的定位是让…",
-          "href": "https://www.producthunt.com/products/omi-x",
-          "meta": "Maker · Om Prakash Sahoo",
-          "date": "11月25日"
+          "id": "50bc40549974d351409f402f9914c1fd",
+          "title": "Pax by Pydantic：连编程都是插件的编程 Agent",
+          "summary": "终端里的 AI 编码工具已经卷成一片红海，Cursor、Claude Code、Codex CLI 各占一块地盘。这时候 Pydantic 团队推出了 Pax，一个官方出品的终端编码 Agent。它最特别的地方不在功能列表，而在架构选择： 每一个部件都是插件，模型随便换，还能用 --agent 把自己写的 Pydantic AI Agent 直接塞进去跑。…",
+          "href": "https://www.producthunt.com/products/pydantic",
+          "meta": "Maker · Zac Zuo",
+          "date": "11月26日"
         },
         {
-          "id": "6abe9af02001f3d9950c2773a01fd01d",
-          "title": "Statefold：你离开时仍在持续工作的编码 Agent",
-          "summary": "现在用编码 Agent 的人多半有个共同习惯：敲完提示词，盯着终端等它跑。Codex 或 Claude Code 一出活，人就被拴在电脑前，离开十分钟回来还得看它卡在哪一步。 Statefold 想解决的问题就是这个。它给现成的编码 Agent 套一层云端沙盒，每个任务跑在独立容器里，人可以从终端交接、合上笔记本、过几个小时在手机上收通知，然后合并 PR。…",
-          "href": "https://www.producthunt.com/products/statefold-2",
-          "meta": "Maker · Mohammed Farmaan",
-          "date": "11月25日"
+          "id": "5c9e86cb06c8c26ac436b9995bd40633",
+          "title": "AgentDE：把所有编程 Agent 放进一个原生 Mac 窗口",
+          "summary": "同时开三个 Claude Code 窗口，再加两个 Codex 会话，macOS 的 Dock 就开始不够用了。哪个跑完了、哪个卡在权限确认、哪个已经悄悄挂掉，全靠一个个点开终端去看。AgentDE 想解决的正是这个场面。 它是什么：给终端 Agent 做一个原生 macOS 外壳 AgentDE 的自我描述很克制：一个为终端 Agent（Claude C…",
+          "href": "https://www.producthunt.com/products/agentde",
+          "meta": "Maker · Andrey Kurenkov",
+          "date": "11月26日"
         },
         {
-          "id": "a759667fc4b857c423e0ca9e42f6ddce",
-          "title": "Sen Việt (VieLotus-IM)：适用于 macOS、Windows 和 Linux 的智能双语输入法",
-          "summary": "越南语有 6 个声调、大量变音符号，还夹着英文外来词。一个输入法要同时处理这些，难度比中文拼音高不少。市面上主流方案大多靠“监听全局键盘事件 + 模拟按键”来实现，代价是要拿到系统里权限很高的那类授权。 Sen Việt（VieLotus-IM） 想换一条路走： 不监听全局键盘，不模拟按键，按操作系统原生的输入法框架来接 。作者 stevedat 在 ti…",
-          "href": "https://www.producthunt.com/products/sen-vi-t-vielotus-im",
-          "meta": "Maker · Dat Tran",
-          "date": "11月25日"
+          "id": "0f8fad9202bcb8b1ddd27a7d5842ceaf",
+          "title": "SuperLoupe：搜索 Mac 上任何内容内部",
+          "summary": "Product Hunt 上出现了一个叫 SuperLoupe 的条目，点进去之前以为是个新工具，点进去之后发现是 SketchUp 3D Warehouse 上的一个模型页面。 先把事实摆清楚。 这个条目的“官网”指向 superloupe 的 3D Warehouse 页面，作者是 S I L V.，归类在 Industrial 下。页面显示的数据很直…",
+          "href": "https://www.producthunt.com/products/superloupe",
+          "meta": "Maker · Alhoussein",
+          "date": "11月26日"
         },
         {
-          "id": "6d355ac62026381d57481f8884fb0016",
-          "title": "PeerBand：随时随地触达你运行的每个编码 Agent",
-          "summary": "写代码的 Agent 越来越能干，但人反而被拴得更紧了：任务跑在几台机器上，想知道进展得挨个切窗口看，人一离开工位就彻底失联。PeerBand 想解决的正是这个断裂：把本机上的编码 Agent 接出来，让 ChatGPT、Claude、Telegram 都能直接跟它们对话。 它到底接的是什么 先划清边界。PeerBand 不自己跑 Agent，它接的是 H…",
-          "href": "https://www.producthunt.com/products/peerband",
-          "meta": "Maker · Kirill Shvidler",
-          "date": "11月25日"
+          "id": "634b5228d315af9b52e9a12400e8f901",
+          "title": "Doodle：任务栏上回答问题的火柴人",
+          "summary": "一个反常识的数字：Doodle 官方说这个 Outlook 插件能帮人每周省下 10 小时以上。10 小时，相当于每周多出一整个工作日。先别急着信，这个数字的前提是，使用者本来就在用 Outlook 管邮件和日历，而且约会议这件事已经成了日常负担。 Doodle 这个名字不陌生。它做了很多年的在线约时间工具，核心场景一直没变：一群人时间对不上，靠邮件来回拉…",
+          "href": "https://www.producthunt.com/products/doodle-5",
+          "meta": "Maker · Josh ",
+          "date": "11月26日"
         },
         {
-          "id": "732be28b687b2e1dca6e7a3de5dd5743",
-          "title": "Blink：描述任意交易，看 Blink 自动构建",
-          "summary": "一句话就能建一个交易策略，还能 7×24 小时自动跑。这是 Blink 在 Product Hunt 上打出的卖点，听起来像是把自然语言直接接进了交易引擎。 先把边界说清楚：官网抓取到的信息非常有限，基本就是首页那几句宣传语。产品具体怎么下单、接哪些交易所、收不收费、策略跑起来之后资金怎么托管，这些资料里都没有。所以下面只基于能确认的内容来判断，剩下的部分…",
-          "href": "https://www.producthunt.com/products/blink-35",
-          "meta": "Maker · Stephen E",
-          "date": "11月25日"
+          "id": "dc4003d44af5b5c755e1aff1aea8823c",
+          "title": "Upsolve Harness 2.0：速度翻倍、能学习每位用户的数据 Agent",
+          "summary": "AI 数据分析最危险的地方，不是算错，而是算出一个看起来完全正确的错数。 十个人对「收入」有十种定义，散落在文档、Slack 和某位老员工的脑子里。AI agent 随手挑一个，SQL 跑通，图表漂亮，数字也像模像样。没人发现有问题，直到董事会那天。 Upsolve 这次发布的 Data Models，想解决的就是这件事。 问题出在 schema 不会说话…",
+          "href": "https://www.producthunt.com/products/upsolve-ai",
+          "meta": "Maker · Ka Ling Wu",
+          "date": "11月26日"
         },
         {
-          "id": "f69bc688710cffcade527682c58e4411",
-          "title": "Notely：Notion 级能力与 BYOK AI，本地存储于 SQLite",
-          "summary": "笔记软件这个赛道，早就被云厂商做成了按月收租的生意。Notion 和 Evernote 一年能从你口袋里拿走 96 到 180 美元，而你的笔记内容，其实大部分时间只是躺在本地硬盘上没动过。Notely 想干的事很直接： 把这份租约撕了，把笔记还回你的 Windows 电脑里。 这是一个 Windows 10 和 11 的原生桌面笔记应用，当前版本 1.3…",
-          "href": "https://www.producthunt.com/products/notely-8",
-          "meta": "Maker · Sarowar Zamil Shawon",
-          "date": "11月25日"
+          "id": "7621c5132c0278bc73246fcbbb1a10bf",
+          "title": "WhipDesk：用手机控制 AI 编程 Agent",
+          "summary": "AI 写代码这件事，现在最尴尬的场景往往发生在离开电脑之后。Claude Code 或 Codex 跑到一半卡住，等人回来一看，它已经空转了二十分钟。或者刚出门，突然想起有个 prompt 没发，只能干等到晚上回家。 WhipDesk 想解决的正是这段空档。它把整台开发机搬到手机浏览器里，让用户在通勤路上也能看一眼 Agent 在干什么，顺手把它抽回正轨。…",
+          "href": "https://www.producthunt.com/products/whipdesk",
+          "meta": "Maker · Binary",
+          "date": "11月26日"
         },
         {
-          "id": "18698d50a739028e5ff9e2e40ac0d9da",
-          "title": "Falcon by Vybe：免费分析竞争对手，随后自动开始执行",
-          "summary": "Falcon analyzes your competitors for free, then gets to work",
-          "href": "https://www.producthunt.com/products/vybe-4",
-          "meta": "Maker · Jean-Baptiste Coger",
-          "date": "11月25日"
+          "id": "48756d1d6726021e3f7d9d9a2096700a",
+          "title": "MeetFolks：线下会议的 AI 笔记助手",
+          "summary": "线下的会，是 AI 会议记录工具最难啃的一块骨头。 线上会议有现成的音频流，Zoom、腾讯会议、飞书都能直接吐出录音文件，转写和总结只是后处理。线下会议不一样：几个人围着一张桌子，声音从四面八方来，离手机最远的那个人说话总是听不清，事后写纪要时你甚至记不起那句话是谁说的。 MeetFolks 想解决的就是这个场景。它的定位很明确： 面向线下会议的 AI 记…",
+          "href": "https://www.producthunt.com/products/meetfolks",
+          "meta": "Maker · Ravi Kumar Prasad",
+          "date": "11月26日"
         }
       ]
     },
