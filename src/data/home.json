@@ -23,9 +23,6 @@
     "title": "本期目录",
     "perColumn": 3
   },
-  "blog": {
-    "entries": []
-  },
   "podcast": {
     "kicker": "Podcast · 每周两期",
     "titleLines": [
@@ -37,8 +34,7 @@
   "projects": {
     "kicker": "Projects · 我做的东西",
     "titleLines": [
-      "自己用得上，",
-      "顺手做出来的。"
+      "自己用得上，顺手做出来的。"
     ]
   },
   "about": {
@@ -52,12 +48,6 @@
     ]
   },
   "now": {
-    "title": "最近在做",
-    "date": "",
-    "body": "",
-    "more": {
-      "label": "",
-      "href": ""
-    }
+    "title": "最近在做"
   }
 }
