@@ -14,7 +14,7 @@ const external = { target: '_blank', rel: 'noopener noreferrer' };
 const episodes = [...podcast.episodes].sort((a, b) => b.date.localeCompare(a.date));
 const latestEpisode = episodes[0];
 const recentEpisodes = episodes.slice(1, 1 + home.podcast.recentCount);
-const blogEntries = home.blog.entries as LinkEntry[];
+const blogEntries = (home.blog?.entries ?? []) as LinkEntry[];
 const updatedAtDates = [
   parseFlexibleDate(rss.date),
   parseFlexibleDate(trends.updatedAt),
@@ -72,7 +72,13 @@ const proof = [
   { value: String(trends.sources.length), label: home.hero.proofLabels.trends, href: '/trends' },
 ];
 
-const nowDate = parseFlexibleDate(home.now.date);
+const nowData = {
+  title: home.now?.title ?? '最近在做',
+  date: home.now?.date ?? '',
+  body: home.now?.body ?? '',
+  more: home.now?.more ?? { label: '', href: '' },
+};
+const nowDate = parseFlexibleDate(nowData.date);
 const nowAgeDays = nowDate ? Math.floor((now - nowDate.getTime()) / 86400000) : 0;
 const nowDateLabel = !nowDate ? '' : nowAgeDays > 30 ? '有一阵没更新了' : nowAgeDays < 1 ? '今天' : nowAgeDays < 7 ? `${nowAgeDays} 天前` : `${Math.floor(nowAgeDays / 7)} 周前`;
 
@@ -235,9 +241,9 @@ const structuredData = [
         </div>
         {site.features.now && (
           <aside class="now-card">
-            <header><b>{home.now.title}</b>{nowDateLabel && <time>{nowDateLabel}</time>}</header>
-            <p>{home.now.body}</p>
-            {home.now.more.label && <a class="more" href={home.now.more.href}>{home.now.more.label}</a>}
+            <header><b>{nowData.title}</b>{nowDateLabel && <time>{nowDateLabel}</time>}</header>
+            <p>{nowData.body}</p>
+            {nowData.more.label && <a class="more" href={nowData.more.href}>{nowData.more.label}</a>}
           </aside>
         )}
       </div>
