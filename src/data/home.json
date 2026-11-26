@@ -34,7 +34,8 @@
   "projects": {
     "kicker": "Projects · 我做的东西",
     "titleLines": [
-      "自己用得上，顺手做出来的。"
+      "自己用得上，",
+      "顺手做出来的。"
     ]
   },
   "about": {
