@@ -38,6 +38,10 @@ npm run preview
 - 首页目录与首屏数据在构建时从 `rss.json`、`trends.json`、`podcast.json` 自动生成。
 - 黑名单维护在 `scripts/blocklist.txt`，命中会阻断构建。
 
+## 运维排查
+
+- [GitHub Actions 失败排查与注意点](docs/github-actions-failures.md)
+
 ## 路由
 
 | 路由 | 说明 |
