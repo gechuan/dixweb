@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026年11月26日 19:48",
+  "updatedAt": "2026年11月27日 16:58",
   "sources": [
     {
       "id": "huggingface",
@@ -24,11 +24,27 @@
           "date": "11月25日"
         },
         {
+          "id": "04f536740da2109ad9143edc8fe62da9",
+          "title": "生成即逆向编码",
+          "summary": "预训练视觉表征让生成模型少走很多弯路，但它也把最难受的一段路留给了解码器：语义有了，像素还得从零补回来。这篇论文想改的正是这条“表征到像素”的单向通道。 RevFlow 的思路是 把生成看成编码的逆过程 。既然编码器已经学会了从像素到语义，那生成就不必另起一套，直接沿着编码器的中间层往回走。 这个想法值得看，因为它把“解码器越来越大”这个默认前提摆到了台面…",
+          "href": "https://arxiv.org/abs/2611.34782",
+          "meta": "arXiv 2611.34782",
+          "date": "11月25日"
+        },
+        {
           "id": "3c978982e1a0fc396ce9f0272c3c6784",
           "title": "循环混合 Transformer",
           "summary": "循环 Transformer 一直有个尴尬：靠重复使用共享层提升表达能力，代价是效率。这篇论文想把这条“表达力与效率”的曲线往前推一步，问了一个很朴素的问题：相邻两轮循环之间，到底该传什么？ MoLT 的答案是：把 KV 当记忆，选择性地跨深度、跨循环复用。这个思路值得看，因为它没有停在“多循环几次”的层面，而是重新设计了循环之间的接口。作者还给了 400…",
           "href": "https://arxiv.org/abs/2611.34923",
           "meta": "arXiv 2611.34923",
+          "date": "11月25日"
+        },
+        {
+          "id": "27b02388392cc05989233b51b964e768",
+          "title": "读取而非适配：释放冻结视觉知识用于 AI 生成图像检测",
+          "summary": "AI 生成图像检测这件事，最近有个反直觉的结论：把视觉基础模型拿来微调，反而不如让它保持冻结。这篇论文顺着这个思路往前走了一步，问的是：既然知识已经在模型里，我们该怎么把它“读”出来？ 传统做法是线性探测（linear probing），只读最后一层的 RGB 特征。另一类多线索检测器会同时看频域、小波等信息，但要么得改主干网络，要么得拼多个编码器，融合还…",
+          "href": "https://arxiv.org/abs/2611.34719",
+          "meta": "arXiv 2611.34719",
           "date": "11月25日"
         },
         {
@@ -56,35 +72,19 @@
           "date": "11月24日"
         },
         {
+          "id": "53c725cef3cebfc9d04845c222867318",
+          "title": "ProxyGenBench：代理引导视频生成基准测试",
+          "summary": "视频生成现在能出很漂亮的画面，但“让场景按我想的方式动”依然很难。用 3D 动画块面（animated 3D blockouts）这类结构化代理去指定布局、运动、镜头和事件顺序，是目前很自然的一条控制路径。 问题是这些代理本身很粗糙：细节没填满，还可能带着不该被复现的瑕疵。所以模型要做到三件事同时成立： 守住该守的结构、补齐该补的内容、把文本图像音频条件绑…",
+          "href": "https://arxiv.org/abs/2611.34457",
+          "meta": "arXiv 2611.34457",
+          "date": "11月24日"
+        },
+        {
           "id": "4e08feac7684ce727d57604a24af51be",
           "title": "Real2SimLab：从真实到仿真的统一平台",
           "summary": "这篇论文值得看的地方，不在于它提出了什么新算法，而在于它想把一个很碎的评测生态收拢起来。 Real2Sim 这个方向最近被 coding agent 带火了：给一段真实视频，让模型写出仿真程序，再跑起来看像不像。问题是每个 benchmark 都自己定义输入格式、交付物和打分脚本。你有 N 个方法和 M 个 benchmark，就得做 N×M 次对接，工程…",
           "href": "https://arxiv.org/abs/2611.34849",
           "meta": "arXiv 2611.34849",
-          "date": "11月24日"
-        },
-        {
-          "id": "5e63ca8b8732c3ee4621e72e4e4327ba",
-          "title": "CONCOR：超越最终输出性能的视觉幻觉缓解对比解码基准",
-          "summary": "这篇论文值得看，原因不在它提出了什么新模型，而在它换了一个评测角度。 现在对比解码（Contrastive Decoding，CD）已经成了缓解多模态大模型物体幻觉的常规手段。但大家评估它好不好，基本只看最终输出对不对。问题在于，最终分数会被候选过滤、生成轨迹变化、回答偏好这些因素搅在一起，你没法判断涨的那几个点到底是不是对比解码本身的功劳。 CONCOR…",
-          "href": "https://arxiv.org/abs/2611.30460",
-          "meta": "arXiv 2611.30460",
-          "date": "11月24日"
-        },
-        {
-          "id": "5e25487dad2a7369446a4f6146006094",
-          "title": "基于像素空间扩散 Transformer 的高保真图像抠图",
-          "summary": "图像抠图这件事，过去两年基本被扩散模型接管了。但大多数做法走的是潜空间扩散：先把图压进 VAE 的隐空间，再在隐空间里去噪。问题在于，抠图要的恰恰是高频细节，头发丝、半透明边缘、玻璃反光，这些信息在压缩再重建的过程中最先被磨掉。 PixelMatte 换了个思路，直接回到像素空间做扩散。它基于预训练的像素空间扩散 Transformer，把抠图当成一个像素…",
-          "href": "https://arxiv.org/abs/2611.34929",
-          "meta": "arXiv 2611.34929",
-          "date": "11月24日"
-        },
-        {
-          "id": "6781bc05fba8d9c41ac85b154cbfd8c4",
-          "title": "超越代码与像素：协同生成可编辑且视觉丰富的演示文稿",
-          "summary": "做 PPT 这件事，AI 一直卡在一个二选一里：要么生成能编辑的 PPTX 文件，但版式死板、视觉平庸；要么生成好看的图片式幻灯片，但内容变成像素，改一个字都得重做。 这篇论文想把这个二选一拆掉。它提出 SlidesWeaver，用多智能体协作的方式，同时拿到可编辑性和视觉丰富度。 如果做 AI 办公、文档生成、多模态 Agent 的产品，这篇值得看。 它…",
-          "href": "https://arxiv.org/abs/2611.28010",
-          "meta": "arXiv 2611.28010",
           "date": "11月24日"
         }
       ]
@@ -96,6 +96,62 @@
       "note": "新产品发布，观察用户正在为什么工作流付费。",
       "items": [
         {
+          "id": "ed0222eb48383f452217d8804c899d37",
+          "title": "Woomool：让思考变得可触的 AI 画布",
+          "summary": "白板和 AI 聊天窗口，大多数人是在两个地方来回切换的：想法画在 Miro 或 FigJam 里，问 AI 又得开另一个标签页，然后把答案复制回来。Woomool 想做的事很直接， 把“想”和“问”放进同一块画布 。 它来自 Product Hunt，官网是 woomool.ai，讨论页在这里。 一块可以摊开想法的画布 Woomool 的定位是给“思考者”…",
+          "href": "https://www.producthunt.com/products/woomool",
+          "meta": "Maker · Minki Jung",
+          "date": "11月27日"
+        },
+        {
+          "id": "909fb5b271084f5895df5146a62c5916",
+          "title": "Depost AI：懂你品牌的 LinkedIn AI Agent",
+          "summary": "LinkedIn 上有个挺反直觉的现象：很多人写了两年，也说不清哪条内容真正带来了客户。Depost AI 抓的就是这个痛点，它把“猜”换成了“算”。 官网给的说法是， 它会拿你发过的每一条帖子，去和你自己的平均表现比 ，找出哪些内容跑赢了，再结合你所在领域当下正在爆的内容，排出一个月的选题，然后用你的语气写稿、配图。整个过程可以在它自己的应用里完成，也可…",
+          "href": "https://www.producthunt.com/products/depost-ai",
+          "meta": "Maker · Aleksandar Blazhev",
+          "date": "11月27日"
+        },
+        {
+          "id": "e4a01ec25636880736a5710e5b672742",
+          "title": "RightFont 2026：即刻找到合适的字体",
+          "summary": "字体管理是设计师最容易被忽视、也最容易出事的环节。一个品牌项目做到一半，客户发来的文件里用了三款没装过的字体，打开就是满屏报错。RightFont 想解决的正是这类琐碎但致命的麻烦。 它到底是个什么东西 RightFont 是 macOS 上的字体管理工具，当前版本 v9.8.x，2025 年底到 2026 年初陆续更新。定位很明确：给设计师、代理商和品牌…",
+          "href": "https://www.producthunt.com/products/rightfont",
+          "meta": "Maker · Chris Messina",
+          "date": "11月27日"
+        },
+        {
+          "id": "2a6b6c10b9d5302b5efa7a85d76a71f4",
+          "title": "Ploid：跨 20 亿+ 档案搜索 AI Agent 的人才搜索工具",
+          "summary": "做销售和招聘工具的人都有个共同痛点：人这个对象的数据太难搞。要么过期，要么散在几十个网站里，要么贵得离谱。更麻烦的是，现在越来越多产品里跑的不是人，是 Agent，它们也需要查人，却几乎没有专门为它们准备的数据接口。 Ploid 就是冲着这个缺口来的。两位创始人 Emmanuel Hernandez 和 Kamran Karic 在 Product Hun…",
+          "href": "https://www.producthunt.com/products/ploid",
+          "meta": "Maker · Nico Lumma",
+          "date": "11月27日"
+        },
+        {
+          "id": "cf65642a1dd20ee27e743574a5c69ced",
+          "title": "Form Action Store：用强大数字工具发现、创建与成长",
+          "summary": "Product Hunt 上出现了一个叫 Form Action Store 的条目。点进去之前，光看名字会以为是某种表单工具或者电商插件。打开官网才发现，这是一家卖法语在线课程的小店，主营“如何在网上赚钱”的营销培训。 先把边界说清楚：这不是一个 SaaS 产品，没有免费试用，没有功能列表，也没有团队介绍和融资信息。它是一个用 Beacons 搭起来的个…",
+          "href": "https://www.producthunt.com/products/form-action-store",
+          "meta": "Maker · Adam Lamarre",
+          "date": "11月27日"
+        },
+        {
+          "id": "fb46ddc9f72245f0f6a10b830ef16308",
+          "title": "Onset：为 YouTube 创作者提供 AI 评论、标题和缩略图",
+          "summary": "一个 YouTube 创作者最熟悉的场景：视频发出去，真正的活儿才开始。想标题、改封面、复盘为什么这条数据差、下一条拍什么。这些事吃掉的时间，本来该用来拍片。 Onset 想接手的正是这一段。它的口号很直接：你只管按下录制，剩下的交给它。 它到底做什么 Onset 是一个面向 YouTube 创作者的网页应用。用 Google 账号登录，授权只读权限，最近…",
+          "href": "https://www.producthunt.com/products/onset",
+          "meta": "Maker · Nirav Suthar",
+          "date": "11月27日"
+        },
+        {
+          "id": "448e098976eb4efaaed7248a1a80b856",
+          "title": "Contral：会自查工作并教你编程的 AI 编程 Agent",
+          "summary": "AI 帮你写完代码，你敢不敢在面试里逐行解释它？ 这个问题听着刺耳，但很多用 Cursor、Copilot、Claude Code 写代码的人心里都清楚答案。代码能跑，功能能上线，可一旦有人问“这行为什么这么写”，就只能支支吾吾。 Contral 就是冲着这个尴尬来的。它的定位一句话说清： 给任何 AI 编程 Agent 加一层“教学层” ，让 AI 写代…",
+          "href": "https://www.producthunt.com/products/contral",
+          "meta": "Maker · Devansh Ranjan",
+          "date": "11月26日"
+        },
+        {
           "id": "52d8a75584ab9bf241f5dbfb82ff5a1e",
           "title": "Claude-Mem Cloud Sync：跨设备保留 AI Agent 记忆",
           "summary": "换台电脑，智能体就把你上周定下的方案忘得一干二净。这个场景，做开发的人应该都不陌生。 Claude-Mem Cloud Sync 想解决的就是这件事。它给智能体加了一层可以跨设备同步的记忆：笔记本上做的决定，下一个智能体会话里能直接调用；手机上也能看到同步过来的工作记录。 它到底在同步什么 官网的说法很具体： 捕捉的是智能体活动里的决策、发现和修复 ，不是…",
@@ -104,75 +160,19 @@
           "date": "11月26日"
         },
         {
+          "id": "5a53970d588ea532df75b1c02b40e0c6",
+          "title": "slay：iPhone AI 构图指导相机应用",
+          "summary": "拍照这件事，大多数人卡住的环节其实不在按下快门那一刻。是举起手机之前：主体该放哪、地平线该压在哪、这张图发出去会不会显得很业余。 slay 想解决的正是这个环节。它是一款 iPhone 相机应用，把专业构图辅助线直接叠在取景框上，用设备端 AI 追踪主体，等画面和辅助线对上的瞬间给出锁定提示，再让用户按快门。 先把构图规则画在取景框里 slay 内置 14…",
+          "href": "https://www.producthunt.com/products/slay-3",
+          "meta": "Maker · ibrokhim abdivokhidov",
+          "date": "11月26日"
+        },
+        {
           "id": "f76ad5c6a2dfc03845eaec02e0aa8571",
           "title": "Fairwind：让老师或教练确认你的活动清单",
           "summary": "Product Hunt 上出现了一个叫 Fairwind 的条目。点进去看官网，会发现它指向的不是一个 SaaS 工具，而是洛杉矶 Marina del Rey 的一家帆船俱乐部：Fairwind Yacht Club。 这件事本身就挺有意思。一个线下帆船俱乐部被放进了科技产品榜单，说明 Product Hunt 的条目边界比很多人以为的宽，也说明抓取到…",
           "href": "https://www.producthunt.com/products/fairwind",
           "meta": "Maker · Kevin Choi",
-          "date": "11月26日"
-        },
-        {
-          "id": "f5580ffd3a97e5f68a1f238791178c49",
-          "title": "Superframes：向 AI 导演下达指令即可剪辑整段视频",
-          "summary": "视频剪辑软件有个默认前提：素材得先上传到云端。Superframes 把这个前提掀了。 它的官网上写得很直白： 视频文件不离开你的设备，剪辑在你自己的电脑上跑 。浏览器里能用，桌面版更完整。这个定位在 Product Hunt 上不算常见，因为大多数 AI 剪辑工具的逻辑是“你把片子传给我，我在服务器上算完再还给你”。 Superframes 走的是另一条…",
-          "href": "https://www.producthunt.com/products/superframes-ai-video-editor",
-          "meta": "Maker · Harsh Manwani",
-          "date": "11月26日"
-        },
-        {
-          "id": "50bc40549974d351409f402f9914c1fd",
-          "title": "Pax by Pydantic：连编程都是插件的编程 Agent",
-          "summary": "终端里的 AI 编码工具已经卷成一片红海，Cursor、Claude Code、Codex CLI 各占一块地盘。这时候 Pydantic 团队推出了 Pax，一个官方出品的终端编码 Agent。它最特别的地方不在功能列表，而在架构选择： 每一个部件都是插件，模型随便换，还能用 --agent 把自己写的 Pydantic AI Agent 直接塞进去跑。…",
-          "href": "https://www.producthunt.com/products/pydantic",
-          "meta": "Maker · Zac Zuo",
-          "date": "11月26日"
-        },
-        {
-          "id": "5c9e86cb06c8c26ac436b9995bd40633",
-          "title": "AgentDE：把所有编程 Agent 放进一个原生 Mac 窗口",
-          "summary": "同时开三个 Claude Code 窗口，再加两个 Codex 会话，macOS 的 Dock 就开始不够用了。哪个跑完了、哪个卡在权限确认、哪个已经悄悄挂掉，全靠一个个点开终端去看。AgentDE 想解决的正是这个场面。 它是什么：给终端 Agent 做一个原生 macOS 外壳 AgentDE 的自我描述很克制：一个为终端 Agent（Claude C…",
-          "href": "https://www.producthunt.com/products/agentde",
-          "meta": "Maker · Andrey Kurenkov",
-          "date": "11月26日"
-        },
-        {
-          "id": "0f8fad9202bcb8b1ddd27a7d5842ceaf",
-          "title": "SuperLoupe：搜索 Mac 上任何内容内部",
-          "summary": "Product Hunt 上出现了一个叫 SuperLoupe 的条目，点进去之前以为是个新工具，点进去之后发现是 SketchUp 3D Warehouse 上的一个模型页面。 先把事实摆清楚。 这个条目的“官网”指向 superloupe 的 3D Warehouse 页面，作者是 S I L V.，归类在 Industrial 下。页面显示的数据很直…",
-          "href": "https://www.producthunt.com/products/superloupe",
-          "meta": "Maker · Alhoussein",
-          "date": "11月26日"
-        },
-        {
-          "id": "634b5228d315af9b52e9a12400e8f901",
-          "title": "Doodle：任务栏上回答问题的火柴人",
-          "summary": "一个反常识的数字：Doodle 官方说这个 Outlook 插件能帮人每周省下 10 小时以上。10 小时，相当于每周多出一整个工作日。先别急着信，这个数字的前提是，使用者本来就在用 Outlook 管邮件和日历，而且约会议这件事已经成了日常负担。 Doodle 这个名字不陌生。它做了很多年的在线约时间工具，核心场景一直没变：一群人时间对不上，靠邮件来回拉…",
-          "href": "https://www.producthunt.com/products/doodle-5",
-          "meta": "Maker · Josh ",
-          "date": "11月26日"
-        },
-        {
-          "id": "dc4003d44af5b5c755e1aff1aea8823c",
-          "title": "Upsolve Harness 2.0：速度翻倍、能学习每位用户的数据 Agent",
-          "summary": "AI 数据分析最危险的地方，不是算错，而是算出一个看起来完全正确的错数。 十个人对「收入」有十种定义，散落在文档、Slack 和某位老员工的脑子里。AI agent 随手挑一个，SQL 跑通，图表漂亮，数字也像模像样。没人发现有问题，直到董事会那天。 Upsolve 这次发布的 Data Models，想解决的就是这件事。 问题出在 schema 不会说话…",
-          "href": "https://www.producthunt.com/products/upsolve-ai",
-          "meta": "Maker · Ka Ling Wu",
-          "date": "11月26日"
-        },
-        {
-          "id": "7621c5132c0278bc73246fcbbb1a10bf",
-          "title": "WhipDesk：用手机控制 AI 编程 Agent",
-          "summary": "AI 写代码这件事，现在最尴尬的场景往往发生在离开电脑之后。Claude Code 或 Codex 跑到一半卡住，等人回来一看，它已经空转了二十分钟。或者刚出门，突然想起有个 prompt 没发，只能干等到晚上回家。 WhipDesk 想解决的正是这段空档。它把整台开发机搬到手机浏览器里，让用户在通勤路上也能看一眼 Agent 在干什么，顺手把它抽回正轨。…",
-          "href": "https://www.producthunt.com/products/whipdesk",
-          "meta": "Maker · Binary",
-          "date": "11月26日"
-        },
-        {
-          "id": "48756d1d6726021e3f7d9d9a2096700a",
-          "title": "MeetFolks：线下会议的 AI 笔记助手",
-          "summary": "线下的会，是 AI 会议记录工具最难啃的一块骨头。 线上会议有现成的音频流，Zoom、腾讯会议、飞书都能直接吐出录音文件，转写和总结只是后处理。线下会议不一样：几个人围着一张桌子，声音从四面八方来，离手机最远的那个人说话总是听不清，事后写纪要时你甚至记不起那句话是谁说的。 MeetFolks 想解决的就是这个场景。它的定位很明确： 面向线下会议的 AI 记…",
-          "href": "https://www.producthunt.com/products/meetfolks",
-          "meta": "Maker · Ravi Kumar Prasad",
           "date": "11月26日"
         }
       ]
