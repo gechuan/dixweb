@@ -5,10 +5,10 @@
   "private": true,
   "scripts": {
     "dev": "astro dev",
-    "prebuild": "node scripts/fetch-trends.mjs && node scripts/check-content.mjs && node scripts/build-font-subset.mjs",
-    "build": "astro build",
+    "build": "node scripts/check-content.mjs && astro build",
     "preview": "astro preview",
-    "deploy": "npm run build && node -e \"require('node:fs').rmSync('dist/.DS_Store', { force: true })\" && npm exec -- wrangler deploy"
+    "deploy": "npm run build:fresh && node -e \"require('node:fs').rmSync('dist/.DS_Store', { force: true })\" && npm exec -- wrangler deploy",
+    "build:fresh": "node scripts/fetch-trends.mjs && node scripts/check-content.mjs && node scripts/build-font-subset.mjs && astro build"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.0.0",

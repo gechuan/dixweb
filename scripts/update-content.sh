@@ -15,5 +15,5 @@ python3 rss-pipeline/process_news.py \
   src/data/rss.json \
   --provider deepseek \
   --stage full
-npm run build
+npm run build:fresh
 /usr/bin/find dist -name .DS_Store -delete

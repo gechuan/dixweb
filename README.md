@@ -23,19 +23,23 @@ npm run build
 npm run preview
 ```
 
-`prebuild` 会依次执行：
+`npm run build:fresh` 用于刷新数据后的正式构建，会依次执行：
 
-1. 抓取每日探索数据；
+1. 从 Hugging Face、Product Hunt 和 GitHub Trending 源头抓取每日探索数据，并用 DeepSeek 改写中文标题与摘要；
 2. 执行 `scripts/check-content.mjs`，拦截旧站链接和关键词；
-3. 生成站点实际使用的中文字体子集和 Newsreader 字体文件。
+3. 生成站点实际使用的中文字体子集和 Newsreader 字体文件；
+4. 执行 Astro 构建。
 
-`src/data/rss.json` 与 `src/data/trends.json` 是第三方新闻与趋势数据。内容检查脚本只检查这两个文件里的链接字段，避免第三方标题或摘要中的普通词误伤构建。
+`npm run build` 只检查已有数据快照并构建页面，适合本地网页预览，不需要 DeepSeek API Key。
+
+`src/data/rss.json` 与 `src/data/trends.json` 是抓取生成的资讯与趋势数据快照。内容检查脚本只检查这两个文件里的链接字段，避免第三方标题或摘要中的普通词误伤构建。
 
 ## 内容维护
 
 - 站点、首页、播客、项目、关于页内容在 `.pages.yml` 中配置，可通过 Pages CMS 编辑。
 - 播客只保留《翻书吧》和小宇宙链接。
 - 首页目录与首屏数据在构建时从 `rss.json`、`trends.json`、`podcast.json` 自动生成。
+- 需要重新抓取探索数据时运行 `DEEPSEEK_API_KEY='你的-api-key' npm run build:fresh`。
 - 黑名单维护在 `scripts/blocklist.txt`，命中会阻断构建。
 
 ## 运维排查

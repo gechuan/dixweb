@@ -6,8 +6,8 @@
 | --- | --- | --- |
 | 代码仓库 | GitHub `gechuan/dixweb` | 唯一代码与内容数据来源 |
 | 资讯抓取与处理 | GitHub Actions | 抓取昨日 128 个 RSS 源，用 DeepSeek 生成中文标题、话题和导读 |
-| 探索趋势抓取 | GitHub Actions 构建前执行 | 从 `rss.qiaomu.ai` 获取 Hugging Face、Product Hunt、GitHub Trending |
-| 网站构建 | GitHub Actions | `npm run build`，产物输出到 `dist/` |
+| 探索趋势抓取 | GitHub Actions 构建前执行 | 直接获取 Hugging Face Papers API、Product Hunt Atom Feed 与 GitHub Trending 页面，并用 DeepSeek 改写中文标题与摘要 |
+| 网站构建 | GitHub Actions | `npm run build:fresh`，产物输出到 `dist/` |
 | 托管 | Cloudflare Workers Static Assets | Worker 名称 `dixweb` |
 | 线上入口 | Cloudflare | `https://www.deepintox.com`，Worker 地址 `https://dixweb.gechuan.workers.dev` |
 
@@ -20,7 +20,7 @@
 
 | Secret | 用途 |
 | --- | --- |
-| `DEEPSEEK_API_KEY` | 生成资讯中文标题、话题聚类和编辑导读 |
+| `DEEPSEEK_API_KEY` | 生成资讯中文标题、话题聚类、编辑导读，以及探索趋势的中文标题与摘要 |
 | `CLOUDFLARE_API_TOKEN` | 通过 Wrangler 部署 `dixweb` Worker |
 
 ### DeepSeek token
@@ -49,7 +49,7 @@ Workflow 文件：`.github/workflows/daily-update.yml`
 
 - Cron：`30 0 * * *`，即北京时间每天 **08:30**
 - 抓取窗口：北京时间昨天 00:00–24:00
-- 流程：抓取资讯 → DeepSeek 处理 → 刷新趋势 → Astro 构建 → 提交数据快照 → 部署 Cloudflare
+- 流程：抓取资讯 → DeepSeek 处理 → 刷新趋势并用 DeepSeek 改写 → Astro 构建 → 提交数据快照 → 部署 Cloudflare
 - 输出快照：`src/data/rss.json`、`src/data/trends.json`
 - 中间文件：`rss-pipeline/news_*.json` 只留在 runner，本地已忽略
 
@@ -106,13 +106,19 @@ npm run build
 npm run preview
 ```
 
-只刷新资讯与趋势数据，不部署：
+只刷新资讯与趋势数据并完成正式构建，不部署：
 
 ```bash
 DEEPSEEK_API_KEY='你的-api-key' ./scripts/update-content.sh
 ```
 
-`npm run build` 会自动执行 `scripts/fetch-trends.mjs`。趋势接口抓取失败时命令会失败，不会静默部署旧快照；脚本内置短重试，偶发网络抖动可重跑。
+单独刷新探索趋势并构建：
+
+```bash
+DEEPSEEK_API_KEY='你的-api-key' npm run build:fresh
+```
+
+`npm run build` 只检查已有数据快照并构建页面，适合本地预览。`npm run build:fresh` 会执行 `scripts/fetch-trends.mjs`，抓取源头数据并调用 DeepSeek 改写标题与摘要。缺少 `DEEPSEEK_API_KEY`、趋势源抓取失败或改写结果校验失败时命令都会失败，不会静默部署旧快照；脚本内置短重试，偶发网络抖动可重跑。
 
 ## 上线验证
 
@@ -157,10 +163,10 @@ gh workflow run 'Daily content update' --repo gechuan/dixweb --ref main
 | `No access to the specified service` | Token 没有选中正确 Cloudflare account，或缺少 `Workers Scripts : Edit` |
 | DeepSeek 报 `Invalid leading whitespace` | 代码已自动去除 API key 首尾空白；若仍出现，检查是否误填了其他字段 |
 | `git push` 在 Actions 内被拒绝 | 运行期间有新提交进入 `main`，重新手动触发 workflow |
-| 趋势抓取失败 | 脚本会拒绝发布旧快照；查看上游 API 后重跑 workflow |
+| 趋势抓取或改写失败 | 脚本会拒绝发布旧快照；先确认 `DEEPSEEK_API_KEY` 有效，再查看 Hugging Face、Product Hunt、GitHub Trending 或 DeepSeek 的上游状态后重跑 workflow |
 
 ## 资源与成本
 
 - Cloudflare：每天一次静态资源部署，访问请求模式不变，额外成本基本为 0。
 - GitHub Actions：每次约 1–2 分钟，每月约 30–60 分钟，通常在免费额度内。
-- DeepSeek：按 API 用量计费，是唯一需要关注的可变成本。
+- DeepSeek：按 API 用量计费，覆盖资讯处理与探索页 30 条改写，是唯一需要关注的可变成本。
