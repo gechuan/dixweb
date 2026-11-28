@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026年11月28日 12:11",
+  "updatedAt": "2026年11月28日 12:19",
   "sources": [
     {
       "id": "huggingface",
@@ -9,8 +9,8 @@
       "items": [
         {
           "id": "huggingface:2611.34051",
-          "title": "Stable Gated DeltaNet-2：理解并缓解循环状态不稳定性",
-          "summary": "线性注意力以线性复杂度和固定大小循环状态高效处理长序列。GDN-2 通过通道级独立控制擦除与写入增强状态更新表达力，但长上下文训练易失败。作者将问题归因于擦除时读写方向不对称导致状态指数增长，并提出对称擦除与衰减调节残差写入，在保留分块并行计算的同时给出状态增长的 O(T) 上界。",
+          "title": "Stable Gated DeltaNet-2：理解并缓解循环状态不稳定",
+          "summary": "线性注意力以线性复杂度和固定大小循环状态高效处理长序列。GDN-2 通过通道级独立控制擦除与写入增强状态更新表达力，但长上下文训练易失败。作者将问题归因于擦除时读取与修改方向不对称，导致非正规擦除算子方向增益累积、状态指数增长，并提出对称擦除与衰减调节残差写入，理论上给出 O(T) 状态增长上界且保留分块并行计算。",
           "href": "https://huggingface.co/papers/2611.34051",
           "meta": "arXiv 2611.34051 · 128 upvotes",
           "date": "11月27日"
@@ -18,15 +18,15 @@
         {
           "id": "huggingface:2611.34232",
           "title": "OS-Omni：跨平台长程工作流通用计算机使用智能体基准",
-          "summary": "现有计算机使用智能体基准通常只覆盖网页、移动端或桌面单一环境，难以判断单一通用智能体能否完成跨操作系统、带持久应用状态的长程任务。OS-Omni 提供覆盖 Windows、Ubuntu、macOS、iOS、Android 和 Web 的实时跨平台基准与执行环境，按版本分批发布任务，首版每平台 48 个任务并含 12 个桌面与安卓手机配对的跨平台工作流，支持…",
+          "summary": "现有计算机使用智能体基准多隔离网页、移动或桌面环境，难以判断单一通用智能体能否执行跨操作系统、跨持久应用状态的长程工作流。OS-Omni 是覆盖 Windows、Ubuntu、macOS、iOS、Android 和 Web 的实时跨平台基准与执行环境，按版本分批发布，每批 300 个任务；首版 v1 每平台 48 个任务，并含 12 个桌面与 Androi…",
           "href": "https://huggingface.co/papers/2611.34232",
           "meta": "arXiv 2611.34232 · 104 upvotes",
           "date": "11月27日"
         },
         {
           "id": "huggingface:2611.34813",
-          "title": "用代码解决视觉问题：编码智能体比视频模型更擅长视觉推理",
-          "summary": "视频生成模型常被当作视觉推理器评估：给定首帧和提示词，看能否生成完成任务过程的视频。该路线被认为推理直接发生在画面中，但尚未在相同条件下与符号化方案对比。作者在相同输入、输出规范和评估器下，让编码智能体编写程序渲染答案视频，并在 VBVR-Pro-Bench 上与视频模型比较，结果显示编码智能体是更强的视觉推理者。",
+          "title": "用代码解决视觉：编码智能体比视频模型更擅长视觉推理",
+          "summary": "视频生成模型正被当作视觉推理器评估：给定首帧和自然语言提示，能否生成完成任务过程的视频。该范式被认为推理直接发生在视觉媒介中，但尚未在相同条件下与符号替代方案对比。作者在相同输入、输出规范和评估器下，让编码智能体编写程序渲染答案视频，再由未修改的规则评估器打分，并在 VBVR-Pro-Bench 的 500 个实例上比较两类媒介。",
           "href": "https://huggingface.co/papers/2611.34813",
           "meta": "arXiv 2611.34813 · 60 upvotes",
           "date": "11月27日"
@@ -34,7 +34,7 @@
         {
           "id": "huggingface:2611.31619",
           "title": "预测排行榜能证明什么：零样本时间序列模型的分辨率报告",
-          "summary": "时间序列基础模型靠留出数据集上的分数证明能力，但公开排行榜很少说明其数据集能区分多小的差异。作者将这一量称为排行榜分辨率，并推出 Vernier 工具，从排行榜已发布文件计算分辨率、无法与榜首区分的条目以及提交顺序是否变化。GIFT-Eval 等榜单显示，相邻名次差距远小于可分辨步长，前十名实际可分辨的层级很少。",
+          "summary": "时间序列基础模型预训练后直接预测未见序列，证据主要来自留出数据集上的分数，但公开排行榜很少说明其数据集能检测多小的差异。作者将这一量称为排行榜分辨率，并推出 Vernier，从排行榜已发布文件计算分辨率，同时报告哪些条目无法与榜首区分、无关方提交后排序是否变化。GIFT-Eval 可分辨 6.8 个名次，其展示的相邻条目仅差 0.91，前十名不足两个可分辨…",
           "href": "https://huggingface.co/papers/2611.31619",
           "meta": "arXiv 2611.31619 · 57 upvotes",
           "date": "11月27日"
@@ -42,15 +42,15 @@
         {
           "id": "huggingface:2611.34457",
           "title": "ProxyGenBench：代理引导视频生成基准",
-          "summary": "当前视频生成器画质逼真，但控制场景如何展开仍很难。动画 3D 块状代理可指定布局、运动、相机和事件顺序，却细节缺失且可能带伪影。成功的代理引导生成需保留结构、补全内容并纠正伪影，还要把文本、图像和音频条件绑定到正确实体与事件。ProxyGenBench 含 60 个场景的 312 个评估案例，控制代理保真度、文本细节和多模态输入变化，并用逐案例清单评估五个…",
+          "summary": "近期视频生成器能产出逼真视频，但控制场景如何展开仍困难。动画 3D 块状代理可指定场景布局、运动、相机行为和事件顺序，然而这类粗粒度输入细节不足，还可能带有不应被复现的伪影。成功的代理引导生成需保留预期结构、补全缺失内容并纠正代理伪影，同时把文本、图像和音频条件绑定到正确实体与事件。ProxyGenBench 含 60 个场景的 312 个评估案例，覆盖三…",
           "href": "https://huggingface.co/papers/2611.34457",
           "meta": "arXiv 2611.34457 · 36 upvotes",
           "date": "11月27日"
         },
         {
           "id": "huggingface:2611.28732",
-          "title": "Entangle：跨未见任务与上下文的人类视频上下文世界动作模型扩展",
-          "summary": "上下文学习让基础模型无需更新参数即可从上下文完成新任务，机器人操作中人类视频可指定任务执行方式。但在世界动作模型上扩展人类视频上下文学习面临两个问题：任务级人机配对与机器人动作时间不对齐，标准动作损失又让策略依赖初始场景或任务身份捷径。Entangle 将单个人类视频和当前机器人观测映射为未来视觉状态与可执行动作，并通过视频到视频生成扩充时间对齐训练数据。",
+          "title": "Entangle：跨未见任务与上下文的人类视频上下文世界-动作模型扩展",
+          "summary": "上下文学习让基础模型无需更新参数即可从上下文执行未见任务。在机器人操作中，人类视频提供任务如何执行的上下文，但在世界-动作模型上扩展人类视频上下文学习面临两个挑战：任务级人-机器人配对与机器人动作时间不对齐，标准动作损失又让策略依赖初始场景或任务身份捷径而非跟踪上下文。Entangle 将单个人类视频和当前机器人观测映射为未来视觉状态与可执行动作，并通过视…",
           "href": "https://huggingface.co/papers/2611.28732",
           "meta": "arXiv 2611.28732 · 34 upvotes",
           "date": "11月26日"
@@ -58,7 +58,7 @@
         {
           "id": "huggingface:2611.34290",
           "title": "StateWeaver：面向长程视频生成的故事状态转移多智能体协调",
-          "summary": "现代视频基础模型能生成高质量短片，但长视频一致性和事件驱动的状态变化仍难保持。现有智能体流程因持续规划与修复累积上下文，参考更新也受限。StateWeaver 结合活动状态与分层协作，把评审发现的状态差异转成具体视觉资产需求，指导参考构建、验证和重生成，并将确认结果关联到资产状态、故事时间和参考版本，供后续镜头继承与复用。",
+          "summary": "现代视频基础模型能生成高质量短片，但保持长视频一致性、正确呈现事件驱动的状态变化仍困难。现有智能体工作流因持续规划与修复累积上下文，参考更新也受限。StateWeaver 结合主动状态与分层协作，把评审驱动的视觉参考更新与跨镜头状态继承连接起来。主动状态将评审发现的状态差异转化为具体视觉资产需求，指导参考构建、验证和再生成，在保留身份与已正确内容的同时修复…",
           "href": "https://huggingface.co/papers/2611.34290",
           "meta": "arXiv 2611.34290 · 27 upvotes",
           "date": "11月27日"
@@ -66,7 +66,7 @@
         {
           "id": "huggingface:2611.31237",
           "title": "让视觉语言模型通过自身表征生成图像",
-          "summary": "统一多模态模型希望在同一模型中结合视觉理解与生成，但两类能力使用的视觉表征异构，使预训练视觉语言模型的知识难以直接用于生成。Integral 通过构建共享视觉表征空间把预训练视觉语言模型转为统一多模态模型：抽象融合聚合冻结视觉编码器的分层表征形成共享视觉 token，另一组件则让生成侧接入该空间，从而复用已有理解知识。",
+          "summary": "近期统一多模态模型试图在单一模型中结合视觉理解与生成，但有效整合两种能力仍具挑战。利用预训练视觉语言模型可继承已有多模态知识，然而让这些知识有效服务于视觉生成并不简单。作者发现核心挑战在于理解与生成使用异构视觉表征，并提出 Integral，通过构建跨两种能力的共享视觉表征空间，将预训练视觉语言模型转为统一多模态模型。其抽象融合组件聚合冻结视觉编码器的分层…",
           "href": "https://huggingface.co/papers/2611.31237",
           "meta": "arXiv 2611.31237 · 27 upvotes",
           "date": "11月26日"
@@ -74,15 +74,15 @@
         {
           "id": "huggingface:2611.34852",
           "title": "DRBench Pro：面向专业深度研究智能体的知识中心基准",
-          "summary": "深度研究智能体从多源信息合成复杂开放问题的报告，现有基准多评估报告质量，却缺少对覆盖哪些研究方向及深度的专门知识中心评估。DRBench Pro 以结构化知识覆盖为主要目标，自动从维基百科构建本地知识树，用采样子图生成研究查询和基于证据的评分规则，每条规则对应树中关系。智能体只收到查询，基准据此衡量主要研究方向的广度和知识链深度。",
+          "summary": "深度研究智能体从多来源收集信息，并就复杂开放问题综合报告。现有基准从多个维度评估报告质量，但缺少专门以知识为中心、考察报告覆盖哪些研究方向及深入程度的评估。DRBench Pro 以结构化知识覆盖为主要评估目标，自动流水线从维基百科构建本地知识树，用采样子图生成研究查询和基于证据的评分细则，每条细则对应树中一个关系并保留知识结构。智能体仅收到研究查询，基准…",
           "href": "https://huggingface.co/papers/2611.34852",
           "meta": "arXiv 2611.34852 · 24 upvotes",
           "date": "11月27日"
         },
         {
           "id": "huggingface:2611.33457",
-          "title": "以可玩性为反馈的智能体游戏开发",
-          "summary": "编码智能体已能根据自然语言描述生成可运行游戏，但可运行不等于好玩。作者认为好玩的游戏应具备可靠核心功能、吸引人的视觉设计与素材，以及支持探索和推进的丰富玩法。Play2Evolve 提出初始化、精炼和演化三阶段递归游戏开发框架，让智能体以可玩性为反馈试玩并诊断功能、视觉和玩法问题，反馈既指导修 bug 和改素材，也帮助提出新玩法与美学目标，并结合视频生成模…",
+          "title": "以趣味性作为智能体游戏开发的反馈",
+          "summary": "编码智能体可根据自然语言描述生成可运行游戏，但可运行并不保证良好游玩体验。作者认为有趣的游戏应具备可靠核心功能、吸引人的视觉设计与资产，以及支持探索和推进的丰富玩法，而智能体如何改进这些方面仍待探索。Play2Evolve 是递归游戏开发框架，含初始化、精炼和演化三阶段，以趣味性为反馈让智能体试玩并诊断功能、视觉呈现和玩法问题，反馈指导缺陷修复与资产改进，…",
           "href": "https://huggingface.co/papers/2611.33457",
           "meta": "arXiv 2611.33457 · 22 upvotes",
           "date": "11月26日"
@@ -98,15 +98,15 @@
         {
           "id": "producthunt:1332846",
           "title": "Woomool：让思考变得可见的 AI 画布",
-          "summary": "Woomool 是一款 AI 画布工具，主打把思考过程变成可感知、可操作的内容。适合需要梳理思路、做创意推演或团队讨论的用户，值得关注的是它把 AI 能力嵌入画布式交互，而非单纯对话。",
+          "summary": "Woomool 是一款 AI 画布工具，主打把思考过程转化为可感知、可操作的内容。适合需要梳理思路、做创意推演或团队讨论的用户，值得关注的是它把 AI 能力嵌入画布式交互，让抽象想法更直观。",
           "href": "https://www.producthunt.com/products/woomool",
           "meta": "Maker · Minki Jung",
           "date": "11月27日"
         },
         {
           "id": "producthunt:1332760",
-          "title": "Depost AI：懂你品牌的 LinkedIn AI 代理",
-          "summary": "Depost AI 是面向 LinkedIn 的 AI 代理，会学习什么样的内容对你的品牌有效。适合做社媒运营和品牌内容分发的团队，亮点在于根据品牌反馈持续调整发布策略，而不是套用通用模板。",
+          "title": "Depost AI：学习品牌风格的 LinkedIn AI 代理",
+          "summary": "Depost AI 是面向 LinkedIn 的 AI 代理，能学习什么内容对你的品牌有效。适合做社媒运营和品牌内容分发的团队，值得看的是它强调按品牌调性持续优化发布策略，而非通用模板化输出。",
           "href": "https://www.producthunt.com/products/depost-ai",
           "meta": "Maker · Aleksandar Blazhev",
           "date": "11月27日"
@@ -114,15 +114,15 @@
         {
           "id": "producthunt:1332620",
           "title": "RightFont 2026：随时找到合适的字体",
-          "summary": "RightFont 2026 是一款字体管理工具，主打快速找到当下需要的字体。适合设计师和排版工作者，值得看的是它围绕“选字体”这一高频动作做效率优化，减少在字体库中反复翻找的时间。",
+          "summary": "RightFont 2026 是一款字体管理工具，主打快速找到当下需要的字体。适合设计师和需要频繁处理字体素材的用户，值得关注的是它在字体检索与选用流程上的效率提升。",
           "href": "https://www.producthunt.com/products/rightfont",
           "meta": "Maker · Chris Messina",
           "date": "11月27日"
         },
         {
           "id": "producthunt:1332536",
-          "title": "Ploid：跨 20 亿+ 档案搜索 AI 代理",
-          "summary": "Ploid 提供面向 AI 代理的人物搜索能力，覆盖超过 20 亿份个人档案。适合需要做背景调研、线索挖掘或人脉定位的场景，亮点是把搜索对象从网页和文档扩展到 AI 代理可调用的人物数据层。",
+          "title": "Ploid：跨 20 亿档案搜索 AI 代理",
+          "summary": "Ploid 提供面向 AI 代理的人物搜索能力，覆盖超过 20 亿份档案。适合需要找人、做背景调研或线索挖掘的场景，值得看的是它把大规模人物数据与 AI 代理搜索结合起来。",
           "href": "https://www.producthunt.com/products/ploid",
           "meta": "Maker · Nico Lumma",
           "date": "11月27日"
@@ -130,15 +130,15 @@
         {
           "id": "producthunt:1332478",
           "title": "Form Action Store：发现和扩展数字工具",
-          "summary": "Form Action Store 是一个数字工具集合，主打发现、创建和扩展实用工具。适合想用现成工具快速搭建工作流的用户，值得关注的是它把工具发现与创建放在同一入口，降低尝试新工具的门槛。",
+          "summary": "Form Action Store 是一个数字工具平台，主打发现、创建并扩展实用工具。适合想快速找到现成工具或搭建自有工具流的用户，值得关注的是它把工具发现与创建放在同一入口。",
           "href": "https://www.producthunt.com/products/form-action-store",
           "meta": "Maker · Adam Lamarre",
           "date": "11月27日"
         },
         {
           "id": "producthunt:1332445",
-          "title": "Onset：为 YouTube 创作者提供 AI 评审、标题和缩略图",
-          "summary": "Onset 面向 YouTube 创作者，用 AI 生成视频评审意见、标题和缩略图。适合需要提升视频点击率和内容质量的创作者，亮点是把发布前的多个关键环节集中到一套 AI 辅助流程里。",
+          "title": "Onset：面向 YouTube 创作者的 AI 评审与素材工具",
+          "summary": "Onset 为 YouTube 创作者提供 AI 评审、标题和缩略图支持。适合需要提升视频包装与发布效率的创作者，值得看的是它把标题、缩略图和内容评审整合到同一流程中。",
           "href": "https://www.producthunt.com/products/onset",
           "meta": "Maker · Nirav Suthar",
           "date": "11月27日"
@@ -146,15 +146,15 @@
         {
           "id": "producthunt:1331740",
           "title": "Contral：会自查并教你写代码的 AI 编程代理",
-          "summary": "Contral 是一款 AI 编程代理，特点是会检查自己的工作成果，并向使用者解释和教学。适合希望借助 AI 写代码同时理解实现过程的开发者，值得看的是它把“自查”和“教学”作为核心能力。",
+          "summary": "Contral 是一款 AI 编程代理，强调会检查自己的工作并在此过程中教会用户。适合希望借助 AI 写代码同时理解实现逻辑的开发者，值得关注的是自查机制与教学导向的结合。",
           "href": "https://www.producthunt.com/products/contral",
           "meta": "Maker · Devansh Ranjan",
           "date": "11月26日"
         },
         {
           "id": "producthunt:1331659",
-          "title": "Claude-Mem Cloud Sync：换设备也能保留 AI 代理记忆",
-          "summary": "Claude-Mem Cloud Sync 解决 AI 代理记忆跨设备同步的问题，切换设备后仍能保留此前的记忆内容。适合多设备使用 AI 代理的用户，亮点在于把代理的上下文记忆变成可携带、可延续的资产。",
+          "title": "Claude-Mem Cloud Sync：跨设备保留 AI 代理记忆",
+          "summary": "Claude-Mem Cloud Sync 主打切换设备后仍保留 AI 代理的记忆。适合多设备使用 AI 代理的用户，值得看的是它解决代理记忆随设备切换而丢失的问题，让上下文延续更自然。",
           "href": "https://www.producthunt.com/products/claude-mem",
           "meta": "Maker · Alex Newman",
           "date": "11月26日"
@@ -162,7 +162,7 @@
         {
           "id": "producthunt:1331614",
           "title": "slay：iPhone 上的 AI 构图指导相机",
-          "summary": "slay 是一款 iPhone 相机应用，用 AI 提供构图指导。适合想拍出更好照片但缺乏构图经验的普通用户，值得看的是它把拍摄建议实时嵌入取景过程，而不是拍完再修。",
+          "summary": "slay 是一款 iPhone 相机应用，用 AI 提供构图指导。适合想提升日常拍摄构图水平的普通用户，值得关注的是它把构图建议直接嵌入拍摄过程，降低学习门槛。",
           "href": "https://www.producthunt.com/products/slay-3",
           "meta": "Maker · ibrokhim abdivokhidov",
           "date": "11月26日"
@@ -170,7 +170,7 @@
         {
           "id": "producthunt:1331479",
           "title": "Periscope：把任何工作变成 API",
-          "summary": "Periscope 主打把任意工作流程转成 API 接口。适合需要将重复性操作自动化、接入其他系统的开发者和团队，亮点在于降低把人工流程封装成可调用服务的门槛。",
+          "summary": "Periscope 主打把任意工作流程转化为 API。适合需要把重复性工作接入自动化或系统集成的用户，值得看的是它降低了将人工流程封装为可调用接口的门槛。",
           "href": "https://www.producthunt.com/products/periscope-4",
           "meta": "Maker · Rayan Saleh",
           "date": "11月26日"
@@ -186,63 +186,63 @@
         {
           "id": "github:elementalsouls/Claude-BugHunter",
           "title": "elementalsouls/Claude-BugHunter",
-          "summary": "面向漏洞挖掘与外部红队工作的 Claude Code 技能包，包含 85 个技能、16 个斜杠命令，以及覆盖 24 类核心漏洞的 681 条已披露报告模式，另附企业身份与基础设施攻击矩阵。适合安全研究人员参考其技能组织方式。",
+          "summary": "面向漏洞挖掘与外部红队工作的 Claude Code 技能包，包含 85 个技能、16 个斜杠命令，以及覆盖 24 类核心漏洞的 681 条已披露报告模式，并附带企业身份与基础设施攻击矩阵。",
           "href": "https://github.com/elementalsouls/Claude-BugHunter",
-          "meta": "26,270 stars · Python",
+          "meta": "26,273 stars · Python",
           "date": "Trending"
         },
         {
           "id": "github:obra/superpowers",
           "title": "obra/superpowers",
-          "summary": "一套面向智能体的技能框架与软件开发方法论。项目强调可实际落地的工作流组织方式，适合正在搭建 agent 技能体系或探索 AI 辅助开发流程的开发者参考。",
+          "summary": "一套面向智能体的技能框架与软件开发方法论，强调可实际落地的工作流组织方式，适合关注 agent 技能编排和开发流程改造的读者参考。",
           "href": "https://github.com/obra/superpowers",
-          "meta": "328,414 stars · Shell",
+          "meta": "328,417 stars · Shell",
           "date": "Trending"
         },
         {
           "id": "github:HKUDS/CLI-Anything",
           "title": "HKUDS/CLI-Anything",
-          "summary": "主打让所有软件都具备 agent 原生能力的项目，并提供 CLI-Hub 入口。关注命令行工具如何被智能体直接调用与编排的开发者可以看看其思路和实现方式。",
+          "summary": "项目主张让所有软件都具备 agent 原生能力，围绕 CLI-Hub 构建统一入口，探索以命令行方式把各类软件接入智能体工作流。",
           "href": "https://github.com/HKUDS/CLI-Anything",
-          "meta": "67,076 stars · Python",
+          "meta": "67,077 stars · Python",
           "date": "Trending"
         },
         {
           "id": "github:jingyaogong/minimind",
           "title": "jingyaogong/minimind",
-          "summary": "一个从零训练 64M 小参数大模型的项目，宣称两小时即可完成训练。适合想低成本理解大模型训练全流程、动手跑通预训练与微调链路的开发者作为入门实践。",
+          "summary": "一个从零训练 64M 小参数大模型的项目，主打两小时内完成训练，适合想低成本理解并动手实践 LLM 训练全流程的开发者。",
           "href": "https://github.com/jingyaogong/minimind",
-          "meta": "72,270 stars · Python",
+          "meta": "72,271 stars · Python",
           "date": "Trending"
         },
         {
           "id": "github:cursor/plugins",
           "title": "cursor/plugins",
-          "summary": "Cursor 的插件规范与官方插件集合。想为 Cursor 开发扩展、或了解其插件接口与官方实现方式的开发者，可以从这里获取规范定义和示例参考。",
+          "summary": "Cursor 的插件规范与官方插件集合，为希望扩展 Cursor 能力或开发自有插件的开发者提供接口定义和参考实现。",
           "href": "https://github.com/cursor/plugins",
-          "meta": "20,039 stars · TypeScript",
+          "meta": "20,041 stars · TypeScript",
           "date": "Trending"
         },
         {
           "id": "github:firecrawl/firecrawl",
           "title": "firecrawl/firecrawl",
-          "summary": "面向智能体的知识基础设施，提供搜索、抓取能力，并通过统一 API 接入 550 多个数据提供方。适合需要为 agent 补充外部网页与结构化数据来源的开发者评估使用。",
+          "summary": "面向智能体的知识基础设施，通过一个 API 提供搜索、抓取，并接入 550 多个数据提供方，适合需要为 agent 补充外部数据能力的场景。",
           "href": "https://github.com/firecrawl/firecrawl",
-          "meta": "211,766 stars · TypeScript",
+          "meta": "211,770 stars · TypeScript",
           "date": "Trending"
         },
         {
           "id": "github:nginx/nginx",
           "title": "nginx/nginx",
-          "summary": "NGINX 开源版的官方代码仓库。作为广泛使用的高性能 Web 服务器与反向代理，其源码仓库适合需要跟踪版本变化、查阅实现细节或参与贡献的开发者关注。",
+          "summary": "NGINX 开源版的官方代码仓库，汇集核心源码与开发相关资源，适合需要跟踪 NGINX 实现或参与贡献的开发者关注。",
           "href": "https://github.com/nginx/nginx",
-          "meta": "33,685 stars · C",
+          "meta": "33,686 stars · C",
           "date": "Trending"
         },
         {
           "id": "github:openvinotoolkit/openvino",
           "title": "openvinotoolkit/openvino",
-          "summary": "OpenVINO 是用于优化和部署 AI 推理的开源工具包。适合需要在多种硬件上做模型转换、推理加速与生产部署的开发者了解其优化能力和支持范围。",
+          "summary": "OpenVINO 是用于优化和部署 AI 推理的开源工具包，面向在多种硬件上落地推理任务的开发者，关注模型优化与部署链路。",
           "href": "https://github.com/openvinotoolkit/openvino",
           "meta": "12,968 stars · C++",
           "date": "Trending"
@@ -250,17 +250,17 @@
         {
           "id": "github:cathrynlavery/diagram-design",
           "title": "cathrynlavery/diagram-design",
-          "summary": "面向 Claude Code、Codex、GitHub Copilot、Cursor 等编程助手的编辑级图表设计资源，涵盖 52 种图表类型，输出自包含 HTML 与 SVG，强调不依赖阴影效果，也不使用 Mermaid 式粗糙图形。",
+          "summary": "面向 Claude Code、Codex、GitHub Copilot、Cursor 等编程助手的编辑级图表设计资源，覆盖 52 种图表类型，输出自包含 HTML 与 SVG，强调摆脱 Mermaid 式粗糙效果。",
           "href": "https://github.com/cathrynlavery/diagram-design",
-          "meta": "74,518 stars · HTML",
+          "meta": "74,520 stars · HTML",
           "date": "Trending"
         },
         {
           "id": "github:mvanhorn/last30days-skill",
           "title": "mvanhorn/last30days-skill",
-          "summary": "一个 AI agent 技能，可跨 Reddit、X、YouTube、HN、Polymarket 及网页检索任意话题，再综合成有依据的摘要。适合需要快速做多源信息聚合与话题调研的场景参考。",
+          "summary": "一个 AI agent 技能，可跨 Reddit、X、YouTube、HN、Polymarket 和网页检索任意话题，再综合成有依据的摘要，适合做近期信息调研。",
           "href": "https://github.com/mvanhorn/last30days-skill",
-          "meta": "76,429 stars · Python",
+          "meta": "76,431 stars · Python",
           "date": "Trending"
         }
       ]
