@@ -9,7 +9,7 @@
     {
       "name": "字在",
       "description": "本地优先、所见即所得的 Markdown 编辑器：文件夹就是知识库，选中文字按 ⌘J 调用 AI，自带 Key，兼容 OpenAI、DeepSeek、GLM、Kimi、Ollama。无需账号，纯 .md 文件。",
-      "url": "https://md.deepintox.now/",
+      "url": "https://md.deepintox.com/",
       "badge": "本地优先 · 开源"
     }
   ]
