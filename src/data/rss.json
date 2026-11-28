@@ -3,18 +3,18 @@
   "weekday": "周五",
   "stats": {
     "sources_total": 128,
-    "sources_returned": 61,
-    "items_in_window": 128,
-    "items_kept": 110,
+    "sources_returned": 62,
+    "items_in_window": 117,
+    "items_kept": 99,
     "items_filtered": 18,
     "topics": 5
   },
-  "headline": "英伟达暂停向东南亚出货AI芯片，TechCrunch和Engadget均报道此举可能影响区域AI算力供应。Kalshi以“微型保险”吸引小企业，但法律纠纷威胁其体育预测业务，各州打击行动加剧。Decrypt报道研究显示AI股票已显现互联网泡沫级别的泡沫信号，Fast Company探讨如果AI泡沫破裂如何保护退休储蓄。",
+  "headline": "英伟达暂停向东南亚地区发货AI芯片，涉及区域供应链与出口管制影响；Kalshi以微型保险产品吸引小企业，同时体育预测业务受到法律纠纷与各州打击行动威胁。有研究指出AI股票在抛售前已显现互联网泡沫级别的信号，并出现关于AI泡沫破裂时如何保护退休储蓄的建议。2026年黑色星期五相关报道涵盖推高美国消费者支出的意外商品、商场与机构开放情况，以及亚马逊员工计划罢工抗议；Vibecoded的GTA 6 PC移植版无视Take-Two打击并渲染出游戏画面，Rockstar Games员工投票反对承认工会。",
   "topics": [
     {
       "id": "T1",
-      "title": "英伟达暂停向东南亚出货AI芯片",
-      "summary": "TechCrunch和Engadget均报道英伟达暂停向东南亚发货AI芯片，可能影响区域AI算力供应。",
+      "title": "英伟达暂停向东南亚发货AI芯片",
+      "summary": "多家媒体报道英伟达暂停向东南亚地区发货AI芯片，涉及区域供应链与出口管制影响。",
       "items": [
         {
           "orig_title": "Nvidia hits pause on chip shipments to Southeast Asia",
@@ -28,14 +28,14 @@
           "source": "Engadget",
           "category": "硬件",
           "link": "https://www.engadget.com/2329200/nvidia-reportedly-halts-chip-shipments-to-southeast-asia/",
-          "zh_title": "据报道英伟达暂停向东南亚出货AI芯片"
+          "zh_title": "据报道英伟达暂停向东南亚发货AI芯片"
         }
       ]
     },
     {
       "id": "T2",
       "title": "Kalshi转向小企业并面临法律纠纷",
-      "summary": "CoinDesk和Decrypt报道Kalshi以“微型保险”吸引小企业，同时法律纠纷威胁其体育预测业务，各州打击行动加剧。",
+      "summary": "Kalshi以微型保险产品吸引小企业，同时体育预测业务受到法律纠纷与各州打击行动威胁。",
       "items": [
         {
           "orig_title": "Kalshi turns to small businesses as legal battles threaten forecasts on sports",
@@ -55,8 +55,29 @@
     },
     {
       "id": "T3",
+      "title": "AI泡沫风险与投资警示",
+      "summary": "有研究指出AI股票在抛售前已显现互联网泡沫级别的信号，同时出现关于AI泡沫破裂时如何保护退休储蓄的建议。",
+      "items": [
+        {
+          "orig_title": "How to protect your retirement savings if the AI bubble bursts",
+          "source": "Fast Company",
+          "category": "产品、设计与商业",
+          "link": "https://www.fastcompany.com/91647646/retirement-savings-ai-bubble-bursts",
+          "zh_title": "如果AI泡沫破裂，如何保护你的退休储蓄"
+        },
+        {
+          "orig_title": "Before the Sell-Off, AI Stocks Showed Dot-Com-Level Bubble Signals: Study",
+          "source": "Decrypt",
+          "category": "产品、设计与商业",
+          "link": "https://decrypt.co/384066/before-the-sell-off-ai-stocks-showed-dot-com-level-bubble-signals-study",
+          "zh_title": "研究：抛售之前，AI股票已显现互联网泡沫级别的泡沫信号"
+        }
+      ]
+    },
+    {
+      "id": "T4",
       "title": "黑色星期五消费与零售动态",
-      "summary": "Fast Company报道2026年黑色星期五意想不到的商品推高消费，以及哪些场所开放或关闭；Engadget报道亚马逊员工计划在黑色星期五罢工。",
+      "summary": "2026年黑色星期五相关报道涵盖推高美国消费者支出的意外商品、商场与机构开放情况，以及亚马逊员工计划罢工抗议。",
       "items": [
         {
           "orig_title": "Black Friday 2026: These unexpected items are driving up U.S. consumer spending",
@@ -82,51 +103,30 @@
       ]
     },
     {
-      "id": "T4",
-      "title": "AI股票泡沫信号引发担忧",
-      "summary": "Decrypt报道研究显示AI股票已显现互联网泡沫级别的泡沫信号；Fast Company探讨如果AI泡沫破裂如何保护退休储蓄。",
+      "id": "T5",
+      "title": "GTA 6相关争议与开发动态",
+      "summary": "Vibecoded的GTA 6 PC移植版无视Take-Two打击并渲染出游戏画面；Rockstar Games员工投票反对承认工会，另有文章以GTA 6讨论效率并非美德。",
       "items": [
         {
-          "orig_title": "How to protect your retirement savings if the AI bubble bursts",
-          "source": "Fast Company",
-          "category": "产品、设计与商业",
-          "link": "https://www.fastcompany.com/91647646/retirement-savings-ai-bubble-bursts",
-          "zh_title": "如果AI泡沫破裂，如何保护你的退休储蓄"
-        },
-        {
-          "orig_title": "Before the Sell-Off, AI Stocks Showed Dot-Com-Level Bubble Signals: Study",
+          "orig_title": "Vibecoded GTA 6 PC Ports Are Now Rendering In-Game Graphics Despite Take-Two Crackdown",
           "source": "Decrypt",
           "category": "产品、设计与商业",
-          "link": "https://decrypt.co/384066/before-the-sell-off-ai-stocks-showed-dot-com-level-bubble-signals-study",
-          "zh_title": "抛售之前，AI股票已显现互联网泡沫级别的泡沫信号：研究"
-        }
-      ]
-    },
-    {
-      "id": "T5",
-      "title": "AI数学与科研突破",
-      "summary": "量子位报道韦东奕攻克近140年数学难题获大奖；Hard Fork讨论人工智能如何改变数学；AI Search称谷歌破解递归自我改进。",
-      "items": [
-        {
-          "orig_title": "How A.I. Is Transforming Mathematics",
-          "source": "Hard Fork",
-          "category": "AI 前沿",
-          "link": "https://www.nytimes.com/column/hard-fork",
-          "zh_title": "人工智能如何改变数学"
+          "link": "https://decrypt.co/384061/vibecoded-gta-6-pc-ports-are-now-rendering-in-game-graphics-despite-take-two-crackdown",
+          "zh_title": "Vibecoded的《GTA 6》PC移植版无视Take-Two打击，现已渲染出游戏内画面"
         },
         {
-          "orig_title": "韦东奕再获大奖！攻克近140年数学难题，获两位院士共同提名",
-          "source": "量子位",
-          "category": "AI 前沿",
-          "link": "https://www.qbitai.com/2026/11/513320.html",
-          "zh_title": "韦东奕再获大奖！攻克近140年数学难题，获两位院士共同提名"
+          "orig_title": "Workers at GTA 6 studio Rockstar Games vote overwhelmingly against union recognition",
+          "source": "Engadget",
+          "category": "硬件",
+          "link": "https://www.engadget.com/2329177/workers-gta-6-studio-rockstar-games-vote-against-union-recognition/",
+          "zh_title": "《GTA 6》工作室Rockstar Games的员工以压倒性多数投票反对承认工会"
         },
         {
-          "orig_title": "Google cracks recursive self improvement",
-          "source": "AI Search",
+          "orig_title": "Grand Theft Auto VI proves why efficiency isn’t a virtue",
+          "source": "TechCrunch",
           "category": "AI 前沿",
-          "link": "https://www.youtube.com/watch?v=YOsQULgqgNA",
-          "zh_title": "谷歌破解递归自我改进"
+          "link": "https://techcrunch.com/2026/11/26/as-anthropic-ipos-grand-theft-auto-vi-proves-why-efficiency-isnt-a-virtue/",
+          "zh_title": "《侠盗猎车手VI》证明了为什么效率并非美德"
         }
       ]
     }
@@ -144,14 +144,14 @@
       "source": "All Content from Business Insider",
       "category": "产品、设计与商业",
       "link": "https://www.businessinsider.com/meghan-markle-best-worst-looks-2026-11",
-      "zh_title": "梅根·马克尔2026年最佳着装9套与最差着装3套"
+      "zh_title": "梅根·马克尔2026年最佳9套与最差3套着装"
     },
     {
       "orig_title": "Elon Musk upped the ante on his SpaceX share Trump Account giveaway",
       "source": "All Content from Business Insider",
       "category": "产品、设计与商业",
       "link": "https://www.businessinsider.com/elon-musk-doubles-down-on-spacex-trump-account-giveaway-2026-11",
-      "zh_title": "埃隆·马斯克加码其SpaceX股份的Trump Account赠送活动"
+      "zh_title": "埃隆·马斯克加码其SpaceX股份特朗普账户抽奖活动"
     },
     {
       "orig_title": "‘It was the talk of the playground’: Google’s AI features blocked by L.A. school officials",
@@ -179,21 +179,14 @@
       "source": "devblogs.microsoft.com/oldnewthing",
       "category": "观点与杂谈",
       "link": "https://devblogs.microsoft.com/oldnewthing/20261127-00/?p=112901/",
-      "zh_title": "我们能否用CoreApplication Properties来管理一个拒绝被封送（marshaled）的对象的生命周期？"
+      "zh_title": "我们能否使用CoreApplication属性来管理一个拒绝被封送对象的生命周期？"
     },
     {
       "orig_title": "I ranked every custard shake at Shake Shack from worst to best, including its 3 holiday flavors",
       "source": "All Content from Business Insider",
       "category": "产品、设计与商业",
       "link": "https://www.businessinsider.com/every-shake-at-shake-shack-ranked",
-      "zh_title": "我把Shake Shack的每一款蛋奶昔从最差到最好排了个遍，包括3款节日限定口味"
-    },
-    {
-      "orig_title": "市场先生会给多大的面子？",
-      "source": "集思录",
-      "category": "产品、设计与商业",
-      "link": "https://www.jisilu.cn/question/527348",
-      "zh_title": "市场先生会给多大的面子？"
+      "zh_title": "我把Shake Shack的每一款卡仕达奶昔从最差到最好排了个遍，包括3款节日限定口味"
     },
     {
       "orig_title": "Beyond Lithography: The Battle for Semiconductor Manufacturing Yield",
@@ -235,21 +228,21 @@
       "source": "All Content from Business Insider",
       "category": "产品、设计与商业",
       "link": "https://www.businessinsider.com/norse-atlantic-grounds-all-flights-in-its-fight-to-avoid-bankruptcy-2026-11",
-      "zh_title": "Norse Atlantic曾推出99美元飞往欧洲的机票。如今它正努力避免成为2026年第二家大型航空公司牺牲品。"
+      "zh_title": "Norse Atlantic曾推出99美元飞往欧洲的航班。如今它正努力避免成为2026年第二家大型航空公司牺牲品。"
     },
     {
       "orig_title": "We couldn't agree on a vacation for 13 people. Then the 8-year-old twins suggested something unexpected.",
       "source": "All Content from Business Insider",
       "category": "产品、设计与商业",
       "link": "https://www.businessinsider.com/multigenerational-family-vacation-idaho-dude-ranch-2026-11",
-      "zh_title": "我们无法就13人的度假方案达成一致。后来8岁的双胞胎提出了一个意想不到的建议。"
+      "zh_title": "我们无法就13人的度假方案达成一致。后来8岁的双胞胎提出了意想不到的建议。"
     },
     {
       "orig_title": "Pluralistic: Taylorism and AI's shared sales-pitch (27 Nov 2026)",
       "source": "pluralistic.net",
       "category": "观点与杂谈",
       "link": "https://pluralistic.net/2026/11/27/taylor-made/",
-      "zh_title": "多元视角：泰勒制与AI的共同推销话术（2026年11月27日）"
+      "zh_title": "多元主义：泰勒制与AI的共同推销话术（2026年11月27日）"
     },
     {
       "orig_title": "Weekly Dose of Optimism #221",
@@ -263,7 +256,7 @@
       "source": "All Content from Business Insider",
       "category": "产品、设计与商业",
       "link": "https://www.businessinsider.com/why-best-place-to-visit-asia-taiwan-travel-tips-2026-11",
-      "zh_title": "我走遍了日本和泰国等亚洲国家。它们都很好，但我最爱的地方让我意外。"
+      "zh_title": "我游历了日本和泰国等亚洲国家。它们都不错，但我最爱的地方让我意外。"
     },
     {
       "orig_title": "Kalshi turns to small businesses as legal battles threaten forecasts on sports",
@@ -277,7 +270,7 @@
       "source": "johndcook.com",
       "category": "观点与杂谈",
       "link": "https://www.johndcook.com/blog/2026/11/27/counterexample-to-proof-by-example/",
-      "zh_title": "以例证进行证明的反例"
+      "zh_title": "反例法驳斥举例证明"
     },
     {
       "orig_title": "🔎 3 Market Trends to Watch in 2027",
@@ -291,14 +284,14 @@
       "source": "MIT Tech Review",
       "category": "AI 前沿",
       "link": "https://www.technologyreview.com/2026/11/27/1149960/the-download-the-download-innovators-under-35-nominations-bionic-hand/",
-      "zh_title": "The Download：35岁以下创新者提名现已开放，以及一扇窥探心智的仿生之窗"
+      "zh_title": "The Download：35岁以下创新者提名已开放，以及一扇窥探心智的仿生之窗"
     },
     {
       "orig_title": "The simplest well-being strategy leaders overlook",
       "source": "Fast Company",
       "category": "产品、设计与商业",
       "link": "https://www.fastcompany.com/91647966/the-simplest-well-being-strategy-leaders-overlook",
-      "zh_title": "领导者忽视的最简单的幸福策略"
+      "zh_title": "领导者忽视的最简单幸福策略"
     },
     {
       "orig_title": "I don’t expect superposition in transformer MLP neurons",
@@ -315,18 +308,25 @@
       "zh_title": "爱莉安娜·格兰德的公众形象已成问题，3位公关专家解析她该如何修复"
     },
     {
+      "orig_title": "Gadget Review: WiFi Carbon Monoxide Alarm (JKD-625W) ★★★★⯪",
+      "source": "shkspr.mobi",
+      "category": "观点与杂谈",
+      "link": "https://shkspr.mobi/blog/2026/11/gadget-review-wifi-carbon-monoxide-alarm-jkd-625w/",
+      "zh_title": "小工具评测：WiFi一氧化碳报警器（JKD-625W）★★★★⯪"
+    },
+    {
       "orig_title": "India is on the Move",
       "source": "Marginal REVOLUTION",
       "category": "观点与杂谈",
       "link": "https://marginalrevolution.com/marginalrevolution/2026/11/india-is-on-the-move.html?utm_source=rss&utm_medium=rss&utm_campaign=india-is-on-the-move",
-      "zh_title": "印度正在前行"
+      "zh_title": "印度正在崛起"
     },
     {
       "orig_title": "The most iconic burger joint in every state",
       "source": "All Content from Business Insider",
       "category": "产品、设计与商业",
       "link": "https://www.businessinsider.com/most-iconic-famous-burger-joint-in-every-state",
-      "zh_title": "每个州最具标志性的汉堡店"
+      "zh_title": "各州最具标志性的汉堡店"
     },
     {
       "orig_title": "Intel faced a choice: Give Trump 10% or face the consequences",
@@ -347,7 +347,7 @@
       "source": "dfarq.homeip.net",
       "category": "硬件",
       "link": "https://dfarq.homeip.net/babbages-remembered/?utm_source=rss&utm_medium=rss&utm_campaign=babbages-remembered",
-      "zh_title": "纪念巴贝奇"
+      "zh_title": "缅怀巴贝奇"
     },
     {
       "orig_title": "Het succesvolle Fieldlab van de Nederlandse Digitale Dienst deze week",
@@ -361,7 +361,7 @@
       "source": "Ars Technica - All content",
       "category": "工程与编程",
       "link": "https://arstechnica.com/shopping/2026/11/books-bikes-and-the-burbs-these-are-ars-staffs-holiday-gift-picks-for-2026/",
-      "zh_title": "书籍、自行车与《郊区》：这些是Ars员工2026年的节日礼物精选"
+      "zh_title": "书籍、自行车与郊区：Ars员工2026年节日礼物精选"
     },
     {
       "orig_title": "Kalshi Courts Small Businesses With 'Microinsurance' as State Crackdowns Bite",
@@ -389,14 +389,14 @@
       "source": "CoinDesk",
       "category": "产品、设计与商业",
       "link": "https://www.coindesk.com/markets/2026/11/27/injective-asks-sec-to-allow-order-books-for-tokenized-stock-trading",
-      "zh_title": "Injective请求SEC允许代币化股票交易采用订单簿"
+      "zh_title": "Injective请求SEC允许代币化股票交易使用订单簿"
     },
     {
       "orig_title": "How A.I. Is Transforming Mathematics",
       "source": "Hard Fork",
       "category": "AI 前沿",
       "link": "https://www.nytimes.com/column/hard-fork",
-      "zh_title": "人工智能如何改变数学"
+      "zh_title": "AI如何改变数学"
     },
     {
       "orig_title": "Replay: From Swipe to Scale: How Tinder Became #1 (2024)",
@@ -410,7 +410,7 @@
       "source": "Fast Company",
       "category": "产品、设计与商业",
       "link": "https://www.fastcompany.com/91641672/a-fashion-reporters-favorite-things-of-2026",
-      "zh_title": "一位时尚记者的2026年心水之选"
+      "zh_title": "一位时尚记者的2026年心水好物"
     },
     {
       "orig_title": "5 ways to tidy up your tech setup",
@@ -431,14 +431,14 @@
       "source": "MIT Tech Review",
       "category": "AI 前沿",
       "link": "https://www.technologyreview.com/2026/11/27/1149946/cutting-edge-prosthetics-allow-researchers-to-probe-the-human-mind/",
-      "zh_title": "尖端假肢如何帮助探索人类心智"
+      "zh_title": "尖端假肢技术如何帮助探索人类心智"
     },
     {
       "orig_title": "Google will soon share Android developers' addresses publicly",
       "source": "Engadget",
       "category": "硬件",
       "link": "https://www.engadget.com/2329389/google-will-soon-share-android-developers-addresses-publicly/",
-      "zh_title": "谷歌将很快公开安卓开发者的地址"
+      "zh_title": "谷歌将很快公开Android开发者的地址"
     },
     {
       "orig_title": "How to protect your retirement savings if the AI bubble bursts",
@@ -452,28 +452,21 @@
       "source": "极客公园",
       "category": "产品、设计与商业",
       "link": "http://www.geekpark.net/news/374601",
-      "zh_title": "大厂的应届生名额，正在先让给 AI 预算"
+      "zh_title": "大厂的应届生名额，正在先让给AI预算"
     },
     {
       "orig_title": "NodeWarden – 不用服务器，在 Cloudflare 上免费自建密码管理器【续】",
       "source": "小众软件",
       "category": "产品、设计与商业",
       "link": "https://www.appinn.com/nodewarden-update-1/",
-      "zh_title": "NodeWarden——无需服务器，在 Cloudflare 上免费自建密码管理器【续】"
-    },
-    {
-      "orig_title": "韩国上线卡在分级，素材本地化改了三版还要不要继续？",
-      "source": "白鲸出海",
-      "category": "产品、设计与商业",
-      "link": "https://www.baijing.cn/question/639011",
-      "zh_title": "韩国上线卡在分级，素材本地化改了三版还要不要继续？"
+      "zh_title": "NodeWarden——无需服务器，在Cloudflare上免费自建密码管理器【续】"
     },
     {
       "orig_title": "The mental illness theory of politics is modestly underrated",
       "source": "Marginal REVOLUTION",
       "category": "观点与杂谈",
       "link": "https://marginalrevolution.com/marginalrevolution/2026/11/the-mental-illness-theory-of-politics-is-modestly-underrated.html?utm_source=rss&utm_medium=rss&utm_campaign=the-mental-illness-theory-of-politics-is-modestly-underrated",
-      "zh_title": "政治的精神疾病理论被略微低估了"
+      "zh_title": "政治的心理疾病理论被略微低估了"
     },
     {
       "orig_title": "8 books on the secret world of spies and power",
@@ -487,56 +480,28 @@
       "source": "Fast Company",
       "category": "产品、设计与商业",
       "link": "https://www.fastcompany.com/91648601/how-to-navigate-the-holiday-party-season-while-sober",
-      "zh_title": "如何在清醒状态下应对节日派对季"
-    },
-    {
-      "orig_title": "欧洲支付失败率降了，但广告CPA反而涨了，该砍投放吗？",
-      "source": "白鲸出海",
-      "category": "产品、设计与商业",
-      "link": "https://www.baijing.cn/question/639010",
-      "zh_title": "欧洲支付失败率降了，但广告CPA反而涨了，该砍投放吗？"
+      "zh_title": "如何在清醒状态下应对假日派对季"
     },
     {
       "orig_title": "Huawei’s Next Big AI Move: HBM Workaround",
       "source": "EE Times",
       "category": "硬件",
       "link": "https://www.eetimes.com/huawei-next-big-ai-move-hbm-workaround/",
-      "zh_title": "华为的下一步AI大动作：HBM变通方案"
-    },
-    {
-      "orig_title": "法国 ASA 单次安装成本涨到 4.2 欧，手游团队该继续加预算还是转投别的渠道？",
-      "source": "白鲸出海",
-      "category": "产品、设计与商业",
-      "link": "https://www.baijing.cn/question/639009",
-      "zh_title": "法国 ASA 单次安装成本涨到 4.2 欧，手游团队该继续加预算还是转投别的渠道？"
-    },
-    {
-      "orig_title": "GPSR 责任人信息不全，德国站被下架后这批备货该怎么处理？",
-      "source": "白鲸出海",
-      "category": "产品、设计与商业",
-      "link": "https://www.baijing.cn/question/639008",
-      "zh_title": "GPSR 责任人信息不全，德国站被下架后这批备货该怎么处理？"
+      "zh_title": "华为的下一个大AI动作：HBM变通方案"
     },
     {
       "orig_title": "B 站十几年的家底，在 AI 时代「升值」",
       "source": "极客公园",
       "category": "产品、设计与商业",
       "link": "http://www.geekpark.net/news/374593",
-      "zh_title": "B 站十几年的家底，在 AI 时代「升值」"
-    },
-    {
-      "orig_title": "越南手游版号没下来，发行排期和本地运营人手该怎么排？",
-      "source": "白鲸出海",
-      "category": "产品、设计与商业",
-      "link": "https://www.baijing.cn/question/639007",
-      "zh_title": "越南手游版号没下来，发行排期和本地运营人手该怎么排？"
+      "zh_title": "B站十几年的家底，在AI时代「升值」"
     },
     {
       "orig_title": "SnapFind – 只做截图文字识别的开源工具，本地离线 OCR",
       "source": "小众软件",
       "category": "产品、设计与商业",
       "link": "https://www.appinn.com/snapfind/",
-      "zh_title": "SnapFind——只做截图文字识别的开源工具，本地离线 OCR"
+      "zh_title": "SnapFind——只做截图文字识别的开源工具，本地离线OCR"
     },
     {
       "orig_title": "Volvo's big batteries: We drive its updated 2028 plug-in hybrids",
@@ -544,13 +509,6 @@
       "category": "工程与编程",
       "link": "https://arstechnica.com/cars/2026/11/volvos-big-batteries-we-drive-its-updated-2028-plug-in-hybrids/",
       "zh_title": "沃尔沃的大电池：我们试驾其更新的2028款插电式混合动力车"
-    },
-    {
-      "orig_title": "TikTok Shop 马来短视频挂车 CPA 涨到 18 马币，还要不要继续投？",
-      "source": "白鲸出海",
-      "category": "产品、设计与商业",
-      "link": "https://www.baijing.cn/question/639006",
-      "zh_title": "TikTok Shop 马来短视频挂车 CPA 涨到 18 马币，还要不要继续投？"
     },
     {
       "orig_title": "韦东奕再获大奖！攻克近140年数学难题，获两位院士共同提名",
@@ -574,25 +532,11 @@
       "zh_title": "DeepSeek APP突然更新账单，网友：要收费了？"
     },
     {
-      "orig_title": "孟加拉货到付款签收率只有六成多，投放成本还能压下来吗？",
-      "source": "白鲸出海",
-      "category": "产品、设计与商业",
-      "link": "https://www.baijing.cn/question/639005",
-      "zh_title": "孟加拉货到付款签收率只有六成多，投放成本还能压下来吗？"
-    },
-    {
       "orig_title": "AI 创作，走过产能竞速之后",
       "source": "极客公园",
       "category": "产品、设计与商业",
       "link": "http://www.geekpark.net/news/374584",
-      "zh_title": "AI 创作，走过产能竞速之后"
-    },
-    {
-      "orig_title": "韩国短剧平台上架后分账规则调整，制作方该如何重新核算回本周期？",
-      "source": "白鲸出海",
-      "category": "产品、设计与商业",
-      "link": "https://www.baijing.cn/question/639004",
-      "zh_title": "韩国短剧平台上架后分账规则调整，制作方该如何重新核算回本周期？"
+      "zh_title": "AI创作，走过产能竞速之后"
     },
     {
       "orig_title": "刚刚，首个带跨任务空间记忆的原生基模开源！机器人端侧就能跑",
@@ -606,7 +550,14 @@
       "source": "Fast Company",
       "category": "产品、设计与商业",
       "link": "https://www.fastcompany.com/91648593/julia-fox-wants-to-pay-women-back-for-splitting-bills-on-dates-with-men",
-      "zh_title": "朱莉娅·福克斯想补偿与男性约会时分摊账单的女性"
+      "zh_title": "Julia Fox希望女性在与男性约会分摊账单后获得补偿"
+    },
+    {
+      "orig_title": "今天发射的火箭，下周可持续么？",
+      "source": "集思录",
+      "category": "产品、设计与商业",
+      "link": "https://www.jisilu.cn/question/527331",
+      "zh_title": "今天发射的火箭，下周可持续么？"
     },
     {
       "orig_title": "看来真有国家队",
@@ -616,25 +567,11 @@
       "zh_title": "看来真有国家队"
     },
     {
-      "orig_title": "Temu 墨西哥站选品跑了一个月，CPA 从 18 比索涨到 47 比索，是品类问题还是投放结构问题？",
-      "source": "白鲸出海",
-      "category": "产品、设计与商业",
-      "link": "https://www.baijing.cn/question/639003",
-      "zh_title": "Temu 墨西哥站选品跑了一个月，CPA 从 18 比索涨到 47 比索，是品类问题还是投放结构问题？"
-    },
-    {
-      "orig_title": "欧洲 SaaS 客户要 DPA 和子处理者清单，5 人团队怎么排期才不拖交付？",
-      "source": "白鲸出海",
-      "category": "产品、设计与商业",
-      "link": "https://www.baijing.cn/question/639002",
-      "zh_title": "欧洲 SaaS 客户要 DPA 和子处理者清单，5 人团队怎么排期才不拖交付？"
-    },
-    {
       "orig_title": "In the AI era, dependability is the key to customer loyalty",
       "source": "Fast Company",
       "category": "产品、设计与商业",
       "link": "https://www.fastcompany.com/91642122/in-the-ai-era-dependability-is-the-key-to-customer-loyalty",
-      "zh_title": "在 AI 时代，可靠性是赢得客户忠诚的关键"
+      "zh_title": "在AI时代，可靠性是赢得客户忠诚度的关键"
     },
     {
       "orig_title": "Stop scheduling meetings over lunch",
@@ -648,7 +585,7 @@
       "source": "The Diary Of A CEO",
       "category": "产品、设计与商业",
       "link": "https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/1390/claritaspod.com/measure/p.podderapp.com/2544644999/mgln.ai/e/1651/episode.flightcast.com/01M83ZS5JCXBDPHD85G438F2NR.mp3",
-      "zh_title": "最多回放片段：你看不到的成功部分——汤姆·阿斯皮纳尔"
+      "zh_title": "最常回放时刻：成功中你看不到的部分——汤姆·阿斯皮纳尔"
     },
     {
       "orig_title": "My podcast with Hasan",
@@ -658,18 +595,11 @@
       "zh_title": "我与哈桑的播客"
     },
     {
-      "orig_title": "印尼美妆投放素材被评论区说“不像本地牌子”，清真认证要怎么在短视频里讲清楚？",
-      "source": "白鲸出海",
-      "category": "产品、设计与商业",
-      "link": "https://www.baijing.cn/question/639001",
-      "zh_title": "印尼美妆投放素材被评论区说“不像本地牌子”，清真认证要怎么在短视频里讲清楚？"
-    },
-    {
       "orig_title": "Remotely unplugging a USB device on my Mac, without touching it",
       "source": "jeffgeerling.com",
       "category": "硬件",
       "link": "https://www.jeffgeerling.com/blog/2026/remote-control-usb-hub/",
-      "zh_title": "在 Mac 上远程拔掉 USB 设备，而无需触碰它"
+      "zh_title": "在Mac上远程拔掉USB设备，无需触碰"
     },
     {
       "orig_title": "Vladimir Nabokov on What Makes a Good Reader",
@@ -690,7 +620,7 @@
       "source": "量子位",
       "category": "AI 前沿",
       "link": "https://www.qbitai.com/2026/11/513211.html",
-      "zh_title": "蚂蚁灵波发布LingBot-Map 2.0，模型自己修正“空间记忆”，把地图画更准"
+      "zh_title": "蚂蚁灵波发布LingBot-Map 2.0，模型自己修正“空间记忆”，把地图画得更准"
     },
     {
       "orig_title": "20个AI Agents组队，4天狂跑350次实验，超越ClickBench最佳公开成绩",
@@ -714,13 +644,6 @@
       "zh_title": "腾讯混元发布 Hy3D 3.6：高模表面更整洁、结构更清晰、刻画更细腻"
     },
     {
-      "orig_title": "具身公司抱团回应：通用大模型跨维打击？没那么简单",
-      "source": "量子位",
-      "category": "AI 前沿",
-      "link": "https://www.qbitai.com/2026/11/513125.html",
-      "zh_title": "具身公司抱团回应：通用大模型跨维打击？没那么简单"
-    },
-    {
       "orig_title": "Google cracks recursive self improvement",
       "source": "AI Search",
       "category": "AI 前沿",
@@ -732,7 +655,7 @@
       "source": "集思录",
       "category": "产品、设计与商业",
       "link": "https://www.jisilu.cn/question/527303",
-      "zh_title": "闻泰转债，小幅度下修，我却看到大机会！"
+      "zh_title": "闻泰转债小幅下修，我却看到大机会！"
     },
     {
       "orig_title": "智谱辟谣 GLM-5.5 延期；特斯拉和 SpaceX 冲刺年底合并；18 家平台完成算法协商，覆盖 2500 万新就业形态劳动者｜极客早知道",
@@ -760,42 +683,42 @@
       "source": "martinalderson.com",
       "category": "工程与编程",
       "link": "https://martinalderson.com/posts/the-agent-tax-has-arrived/?utm_source=rss&utm_medium=rss&utm_campaign=feed",
-      "zh_title": "Agent 税来了：Google Workspace 的 MCP 定价"
+      "zh_title": "智能体税已至：Google Workspace 的 MCP 定价"
     },
     {
       "orig_title": "Who gets to decide if something is written by AI?",
       "source": "seangoedecke.com",
       "category": "工程与编程",
       "link": "https://seangoedecke.com/who-gets-to-decide-if-something-is-written-by-ai/",
-      "zh_title": "谁有权判定某样东西是否由 AI 撰写？"
+      "zh_title": "谁有权判定某样东西是否由 AI 写成？"
     },
     {
       "orig_title": "No.235 人到中年，家里的钱怎样安排才让人更心安？",
       "source": "三五环",
       "category": "观点与杂谈",
       "link": "https://www.ximalaya.com/sound/1035848646",
-      "zh_title": "No.235 人到中年，家里的钱怎样安排才让人更心安？"
+      "zh_title": "第235期 人到中年，家里的钱怎样安排才让人更心安？"
     },
     {
       "orig_title": "How Clay Builds GTM Agents — Jeff Barg, Head of AI",
       "source": "Latent.Space",
       "category": "AI 前沿",
       "link": "https://latent.space/p/how-clay-builds-gtm-agents-jeff-barg-head-of-ai/",
-      "zh_title": "Clay 如何构建 GTM Agents——Jeff Barg，AI 负责人"
+      "zh_title": "Clay如何构建GTM智能体——AI负责人杰夫·巴格"
     },
     {
       "orig_title": "Vibecoded GTA 6 PC Ports Are Now Rendering In-Game Graphics Despite Take-Two Crackdown",
       "source": "Decrypt",
       "category": "产品、设计与商业",
       "link": "https://decrypt.co/384061/vibecoded-gta-6-pc-ports-are-now-rendering-in-game-graphics-despite-take-two-crackdown",
-      "zh_title": "氛围编程的 GTA 6 PC 移植版无视 Take-Two 打击，现已渲染出游戏内画面"
+      "zh_title": "Vibecoded的《GTA 6》PC移植版无视Take-Two打击，现已渲染出游戏内画面"
     },
     {
       "orig_title": "Backloggd urges users to change their passwords after a breach",
       "source": "Engadget",
       "category": "硬件",
       "link": "https://www.engadget.com/2329256/backloggd-breach-november-2026-password-reset/",
-      "zh_title": "Backloggd 遭数据泄露后敦促用户修改密码"
+      "zh_title": "Backloggd在数据泄露后敦促用户更改密码"
     },
     {
       "orig_title": "Nvidia hits pause on chip shipments to Southeast Asia",
@@ -809,14 +732,14 @@
       "source": "TechCrunch",
       "category": "AI 前沿",
       "link": "https://techcrunch.com/2026/11/26/is-alice-huang-a-spy-or-not/",
-      "zh_title": "Alice Huang 到底是不是间谍？"
+      "zh_title": "Alice Huang是间谍吗？"
     },
     {
       "orig_title": "1Password says it was hacked but users' vaults are safe",
       "source": "Engadget",
       "category": "硬件",
       "link": "https://www.engadget.com/2329013/1password-hacked-but-users-vaults-are-safe/",
-      "zh_title": "1Password 称遭黑客攻击，但用户保险库安全"
+      "zh_title": "1Password称遭黑客攻击，但用户保险库安全"
     },
     {
       "orig_title": "Amazon workers around the world plan strikes and protests on Black Friday and Cyber Monday",
@@ -830,42 +753,42 @@
       "source": "TechCrunch",
       "category": "AI 前沿",
       "link": "https://techcrunch.com/2026/11/26/x-finally-gets-parental-controls-after-20-years/",
-      "zh_title": "X 在 20 年后终于有了家长控制功能"
+      "zh_title": "X在20年后终于推出家长控制功能"
     },
     {
       "orig_title": "HumanFish — Predicting Who Actually Wins a Human Chess Game",
       "source": "Marginal REVOLUTION",
       "category": "观点与杂谈",
       "link": "https://marginalrevolution.com/marginalrevolution/2026/11/humanfish-predicting-who-actually-wins-a-human-chess-game.html?utm_source=rss&utm_medium=rss&utm_campaign=humanfish-predicting-who-actually-wins-a-human-chess-game",
-      "zh_title": "HumanFish——预测谁真正赢得人类国际象棋比赛"
+      "zh_title": "HumanFish——预测人类国际象棋对局中谁真正获胜"
     },
     {
       "orig_title": "Before the Sell-Off, AI Stocks Showed Dot-Com-Level Bubble Signals: Study",
       "source": "Decrypt",
       "category": "产品、设计与商业",
       "link": "https://decrypt.co/384066/before-the-sell-off-ai-stocks-showed-dot-com-level-bubble-signals-study",
-      "zh_title": "抛售之前，AI股票已显现互联网泡沫级别的泡沫信号：研究"
+      "zh_title": "研究：抛售之前，AI股票已显现互联网泡沫级别的泡沫信号"
     },
     {
       "orig_title": "NVIDIA reportedly halts AI chip shipments to Southeast Asia",
       "source": "Engadget",
       "category": "硬件",
       "link": "https://www.engadget.com/2329200/nvidia-reportedly-halts-chip-shipments-to-southeast-asia/",
-      "zh_title": "据报道英伟达暂停向东南亚出货AI芯片"
+      "zh_title": "据报道英伟达暂停向东南亚发货AI芯片"
     },
     {
       "orig_title": "Ford unveils the GT41 as it hopes to win Le Mans again",
       "source": "Ars Technica - All content",
       "category": "工程与编程",
       "link": "https://arstechnica.com/cars/2026/11/ford-unveils-the-gt41-as-it-hopes-to-win-le-mans-again/",
-      "zh_title": "福特发布GT41，希望再次赢得勒芒"
+      "zh_title": "福特发布GT41，希望再次赢得勒芒冠军"
     },
     {
       "orig_title": "Siemens Adds SoC Verification and Software Debug with Two Planned Deals",
       "source": "EE Times",
       "category": "硬件",
       "link": "https://www.eetimes.com/siemens-adds-soc-verification-and-software-debug-with-two-planned-deals/",
-      "zh_title": "西门子通过两项计划中的交易增加SoC验证和软件调试"
+      "zh_title": "西门子通过两项计划中的交易增加SoC验证和软件调试功能"
     },
     {
       "orig_title": "The Third Thing: Poet Donald Hall on the Secret to Lasting Love",
@@ -900,7 +823,7 @@
       "source": "TechCrunch",
       "category": "AI 前沿",
       "link": "https://techcrunch.com/2026/11/26/as-anthropic-ipos-grand-theft-auto-vi-proves-why-efficiency-isnt-a-virtue/",
-      "zh_title": "《侠盗猎车手VI》证明了为什么效率不是一种美德"
+      "zh_title": "《侠盗猎车手VI》证明了为什么效率并非美德"
     }
   ],
   "filtered": [
