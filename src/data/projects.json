@@ -1,17 +1,15 @@
 {
   "items": [
     {
-      "name": "深度休息 NSDR",
+      "name": "NSDR",
       "description": "非睡眠深度休息：中文语音引导，分 5 个阶段完成身体扫描和深度放松，10 分钟，离线可用。",
       "url": "https://nsdr.deepintox.com",
-      "image": "",
       "badge": "离线可用"
     },
     {
-      "name": "Markdown Editor",
+      "name": "字在",
       "description": "本地优先、所见即所得的 Markdown 编辑器：文件夹就是知识库，选中文字按 ⌘J 调用 AI，自带 Key，兼容 OpenAI、DeepSeek、GLM、Kimi、Ollama。无需账号，纯 .md 文件。",
-      "url": "https://solar-violet-4xkk.here.now/",
-      "image": "",
+      "url": "https://md.deepintox.now/",
       "badge": "本地优先 · 开源"
     }
   ]
